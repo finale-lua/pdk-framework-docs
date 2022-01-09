@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59b1</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransposeChromatic
 <tr class="memdesc:ad81c3331f3c379db8079174231365a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of chromatic steps in the key mode. For predefined keys this is always 12. For custom key signatures it is the number of equal divisions of the octave. EDO-19 returns 19, EDO-31 returns 31, EDO-96 returns 96, etc.  <a href="class_f_c_key_signature.html#ad81c3331f3c379db8079174231365a0d">More...</a><br /></td></tr>
 <tr class="separator:ad81c3331f3c379db8079174231365a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaab3305370dc0c89177cf8293d80b3d7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; eHarmLev &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_key_signature.html#aaab3305370dc0c89177cf8293d80b3d7">CalcDiatonicStepsMap</a> ()</td></tr>
-<tr class="memdesc:aaab3305370dc0c89177cf8293d80b3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array (or table in Lua) specifiying the chromatic step where each diatonic step occurs. The first element is always zero. The elements always increase, and the final element must be less than the <a class="el" href="class_f_c_key_signature.html#ad81c3331f3c379db8079174231365a0d" title="Returns the number of chromatic steps in the key mode. For predefined keys this is always 12....">CalcTotalChromaticSteps</a>. If the array has a number of elements other than 7, it can't easily be represented on a traditional staff, so the chance of a number of elements other than 7 is vanishingly small. But Finale allows it.  <a href="class_f_c_key_signature.html#aaab3305370dc0c89177cf8293d80b3d7">More...</a><br /></td></tr>
+<tr class="memdesc:aaab3305370dc0c89177cf8293d80b3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array (or table in Lua) specifiying the chromatic step where each diatonic step occurs. The first element is always zero. The elements always increase, and the final element must be less than <a class="el" href="class_f_c_key_signature.html#ad81c3331f3c379db8079174231365a0d" title="Returns the number of chromatic steps in the key mode. For predefined keys this is always 12....">CalcTotalChromaticSteps</a>. If the array has a number of elements other than 7, it can't easily be represented on a traditional staff, so the chance of a number of elements other than 7 is vanishingly small. But Finale allows it.  <a href="class_f_c_key_signature.html#aaab3305370dc0c89177cf8293d80b3d7">More...</a><br /></td></tr>
 <tr class="separator:aaab3305370dc0c89177cf8293d80b3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab899537b54884309284563237cf064"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_key_signature.html#a7ab899537b54884309284563237cf064">IsPredefined</a> () const</td></tr>
 <tr class="memdesc:a7ab899537b54884309284563237cf064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the key is a predefined key signature (major or minor).  <a href="class_f_c_key_signature.html#a7ab899537b54884309284563237cf064">More...</a><br /></td></tr>
@@ -652,11 +652,11 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Returns an array (or table in Lua) specifiying the chromatic step where each diatonic step occurs. The first element is always zero. The elements always increase, and the final element must be less than the <a class="el" href="class_f_c_key_signature.html#ad81c3331f3c379db8079174231365a0d" title="Returns the number of chromatic steps in the key mode. For predefined keys this is always 12....">CalcTotalChromaticSteps</a>. If the array has a number of elements other than 7, it can't easily be represented on a traditional staff, so the chance of a number of elements other than 7 is vanishingly small. But Finale allows it. </p>
+<p>Returns an array (or table in Lua) specifiying the chromatic step where each diatonic step occurs. The first element is always zero. The elements always increase, and the final element must be less than <a class="el" href="class_f_c_key_signature.html#ad81c3331f3c379db8079174231365a0d" title="Returns the number of chromatic steps in the key mode. For predefined keys this is always 12....">CalcTotalChromaticSteps</a>. If the array has a number of elements other than 7, it can't easily be represented on a traditional staff, so the chance of a number of elements other than 7 is vanishingly small. But Finale allows it. </p>
 <p >Predefined major keys always return:<code> {0, 2, 4, 5, 7, 9, 11}</code>.<br  />
  Predefined minor keys always return:<code> {0, 2, 3, 5, 7, 8, 10}</code>.</p>
 <p >Lua-supported.</p>
-<dl class="section return"><dt>Returns</dt><dd>An array (or table in Lua) specifying the number of chromatic steps in each diatonic step. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array (or table in Lua) specifying the chromatic step where each diatonic step occurs. </dd></dl>
 
 </div>
 </div>
@@ -1431,7 +1431,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:56:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Jan 8 2022 17:05:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

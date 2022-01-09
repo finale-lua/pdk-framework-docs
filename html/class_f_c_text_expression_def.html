@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59b1</span>
    </div>
   </td>
  </tr>
@@ -903,7 +903,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Assigns the expression definition to a category. </p>
-<p >This goes deeper than just setting the category ID (in terms of controlling the positioning etc), but it does not change the raw text block.</p>
+<p >This is a deep assignment to the category. The positioning is changed to match the category positioning, and the expression is changed to use both category font and positioning. However, the function does not change the font in the raw text block.</p>
+<p >If you simply want to put an expression in the category without changing anything about the expression, use <a class="el" href="class_f_c_text_expression_def.html#afb5007918fa2ac438704e78d36314d7c" title="Sets the category ID for the expression definition.">SetCategoryID</a>. Just be sure call <a class="el" href="class_f_c_text_expression_def.html#a288025b45ad9dd9a68cc5c885dc44033" title="Sets if the &quot;use category positioning&quot; checkbos should be checked or not.">SetUseCategoryPos</a> and <a class="el" href="class_f_c_text_expression_def.html#a3b1b505cca519efe0df84f21a18c9914" title="Sets if the &quot;use category font&quot; should be checked or not.">SetUseCategoryFont</a> appropriately when you do so.</p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if successful. </dd></dl>
 
@@ -2516,7 +2517,7 @@ Offset" value.) CHANGE 2013-04-15: Now enabled in pre-2012 as well if run on the
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:56:27 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Jan 8 2022 17:05:24 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
