@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
    </div>
   </td>
  </tr>
@@ -592,6 +592,7 @@ Additional Inherited Members</h2></td></tr>
 <p >The contents of a tree is created by adding/linking <a class="el" href="class_f_c_tree_node.html" title="Class representing a single node item in a FCCtrlTree control.">FCTreeNode</a> objects. Nodes are added with <a class="el" href="class_f_c_ctrl_tree.html#aac2d861f6a8840f4e9f30d41e4121c6f" title="Adds a node to the tree.">AddNode</a> method. The full tree is starting from an imaginary root node that is invisible. Nodes can be either containers or child items. Containers can include multiple child items. Currently, containers can only appear on root level.</p>
 <p >On Windows, it's a native treeview control. On Mac-Cocoa, it's a NSOutlineView control.</p>
 <p >Programmatically created controls of this class defaults to a width of 150 points and a height of 170 points.</p>
+<p >Lua scripts should create this control in the normal manner with <a class="el" href="class_f_c_custom_window.html#aaebc365e5c71dd5d090b2a485165d876" title="Creates and connects a tree view control to the window.">FCCustomWindow::CreateTree</a>. But they must build and initialize it in the <a class="el" href="class_f_c_custom_lua_window.html#a6249cc15838787417119d3e7bd719454" title="Virtual handler method that is called when a window just has been created, but not yet shown.">FCCustomLuaWindow::InitWindow</a> callback function. That means that any dialog using <a class="el" href="class_f_c_ctrl_tree.html" title="A tree UI control.">FCCtrlTree</a> must be a <a class="el" href="class_f_c_custom_lua_window.html" title="Special FCCustomWindow child class, that provides the additional functionality to hook up JW Lua call...">FCCustomLuaWindow</a>. See <a class="el" href="class_f_c_custom_lua_window.html#a2a04daf21c47505b43b39bac5d81e84a" title="Registers a Lua function to the InitWindow() event handler.">FCCustomLuaWindow::RegisterInitWindow</a>.</p>
 <p >The added <a class="el" href="class_f_c_tree_node.html" title="Class representing a single node item in a FCCtrlTree control.">FCTreeNode</a> objects are owned by the <a class="el" href="class_f_c_ctrl_tree.html" title="A tree UI control.">FCCtrlTree</a> control. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aac2d861f6a8840f4e9f30d41e4121c6f" name="aac2d861f6a8840f4e9f30d41e4121c6f"></a>
@@ -1204,7 +1205,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:56:08 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 14 2022 08:12:23 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

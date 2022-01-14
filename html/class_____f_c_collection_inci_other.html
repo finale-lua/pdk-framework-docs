@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af94298042d784dbe1742890b3baac83b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection_inci_other.html#af94298042d784dbe1742890b3baac83b">SaveAllForItem</a> (CMPER cmper)</td></tr>
 <tr class="memdesc:af94298042d784dbe1742890b3baac83b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the whole collection to a specific item (cmper).  <a href="class_____f_c_collection_inci_other.html#af94298042d784dbe1742890b3baac83b">More...</a><br /></td></tr>
 <tr class="separator:af94298042d784dbe1742890b3baac83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9d3dd48cde4134d0bef8b47c7d2bc4"><td class="memItemLeft" align="right" valign="top">CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection_inci_other.html#afb9d3dd48cde4134d0bef8b47c7d2bc4">SaveAllAsNew</a> ()</td></tr>
+<tr class="memdesc:afb9d3dd48cde4134d0bef8b47c7d2bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the whole collection with a new cmper.  <a href="class_____f_c_collection_inci_other.html#afb9d3dd48cde4134d0bef8b47c7d2bc4">More...</a><br /></td></tr>
+<tr class="separator:afb9d3dd48cde4134d0bef8b47c7d2bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7620fd8a852ab73f49c35fd7f70e4f70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_inci_other.html">__FCInciOther</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection_inci_other.html#a7620fd8a852ab73f49c35fd7f70e4f70">FindItemNo</a> (CMPER cmper, twobyte inci)</td></tr>
 <tr class="memdesc:a7620fd8a852ab73f49c35fd7f70e4f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (first) item that has the indicated item number (CMPER) and inci.  <a href="class_____f_c_collection_inci_other.html#a7620fd8a852ab73f49c35fd7f70e4f70">More...</a><br /></td></tr>
 <tr class="separator:a7620fd8a852ab73f49c35fd7f70e4f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -691,6 +694,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="afb9d3dd48cde4134d0bef8b47c7d2bc4" name="afb9d3dd48cde4134d0bef8b47c7d2bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9d3dd48cde4134d0bef8b47c7d2bc4">&#9670;&nbsp;</a></span>SaveAllAsNew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CMPER __FCCollectionInciOther::SaveAllAsNew </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saves the whole collection with a new cmper. </p>
+<p >The saved inci positions are based on the position in the collection.</p>
+<p >Lua-supported (0.59).</p>
+<dl class="section return"><dt>Returns</dt><dd>The 1-based new cmper that was created or 0 if there was an error </dd></dl>
+
+</div>
+</div>
 <a id="af94298042d784dbe1742890b3baac83b" name="af94298042d784dbe1742890b3baac83b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af94298042d784dbe1742890b3baac83b">&#9670;&nbsp;</a></span>SaveAllForItem()</h2>
 
@@ -716,7 +741,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Saves the whole collection to a specific item (cmper). </p>
-<p >All incis in the current cmper is cleared. The saved inci positions are based on the position in the collection.</p>
+<p >All incis in the current cmper are cleared. The saved inci positions are based on the position in the collection.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -773,7 +798,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:55:59 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 14 2022 08:12:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

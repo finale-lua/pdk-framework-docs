@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
    </div>
   </td>
  </tr>
@@ -350,7 +350,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a599b62a1d7a89e758f6b98bf60675d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the original default category ID upon which this category is based. For default categories, this value is the same as <a class="el" href="class_f_c_category_def.html#addd0a5755b6a1c23ddb5e9dbca0f3bdb" title="Returns the internal category ID. This is a read-only value.">GetID</a>.  <a href="class_f_c_category_def.html#a599b62a1d7a89e758f6b98bf60675d4f">More...</a><br /></td></tr>
 <tr class="separator:a599b62a1d7a89e758f6b98bf60675d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40165705a3a593dd0958ddac5f48f496"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_category_def.html#a40165705a3a593dd0958ddac5f48f496">SaveNewWithType</a> (<a class="el" href="class_f_c_category_def.html#a70897d418aab3b3ef951fea2e3e4689c">CATEGORY_DEFAULTIDS</a> type)</td></tr>
-<tr class="memdesc:a40165705a3a593dd0958ddac5f48f496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new category definition based on the input type.  <a href="class_f_c_category_def.html#a40165705a3a593dd0958ddac5f48f496">More...</a><br /></td></tr>
+<tr class="memdesc:a40165705a3a593dd0958ddac5f48f496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new category definition based on the input type. The new category inherits features of the base type, which is given by one of the <a class="el" href="class_f_c_category_def.html#a70897d418aab3b3ef951fea2e3e4689c" title="The default/predefined category IDs in Finale.">CATEGORY_DEFAULTIDS</a> constants.  <a href="class_f_c_category_def.html#a40165705a3a593dd0958ddac5f48f496">More...</a><br /></td></tr>
 <tr class="separator:a40165705a3a593dd0958ddac5f48f496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd563e41a49158d9ad0501ec8fc784f"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_category_def.html#addd563e41a49158d9ad0501ec8fc784f">GetStaffListID</a> () const</td></tr>
 <tr class="memdesc:addd563e41a49158d9ad0501ec8fc784f"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Only works on Finale 2014b and above.) Returns the staff list ID for the category def.  <a href="class_f_c_category_def.html#addd563e41a49158d9ad0501ec8fc784f">More...</a><br /></td></tr>
@@ -789,7 +789,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for a category definition. </p>
-<p >Please note that Finale does not allow plug-ins to delete category definitions. Creating requires calling <a class="el" href="class_f_c_category_def.html#a40165705a3a593dd0958ddac5f48f496" title="Creates a new category definition based on the input type.">SaveNewWithType</a>. (Loading and saving existing category definitions work normally.) </p>
+<p >Please note that Finale does not allow plug-ins to delete category definitions. Creating requires calling <a class="el" href="class_f_c_category_def.html#a40165705a3a593dd0958ddac5f48f496" title="Creates a new category definition based on the input type. The new category inherits features of the ...">SaveNewWithType</a>. (Loading and saving existing category definitions work normally.) </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a70897d418aab3b3ef951fea2e3e4689c" name="a70897d418aab3b3ef951fea2e3e4689c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70897d418aab3b3ef951fea2e3e4689c">&#9670;&nbsp;</a></span>CATEGORY_DEFAULTIDS</h2>
@@ -1853,12 +1853,12 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new category definition based on the input type. </p>
+<p>Creates a new category definition based on the input type. The new category inherits features of the base type, which is given by one of the <a class="el" href="class_f_c_category_def.html#a70897d418aab3b3ef951fea2e3e4689c" title="The default/predefined category IDs in Finale.">CATEGORY_DEFAULTIDS</a> constants. </p>
 <p >This function requires Finale 2012 or higher.</p>
 <p >Lua-supported (0.58).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The base type on which the new category definition should be based.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Any of the DEFAULTCATID_ constants.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2437,7 +2437,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:56:04 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 14 2022 08:12:18 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

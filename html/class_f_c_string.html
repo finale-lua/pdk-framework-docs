@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
    </div>
   </td>
  </tr>
@@ -261,6 +261,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToPascal</b> (
 <tr class="memitem:aa08ad5a0f40200fc06583aa4413fc18d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa08ad5a0f40200fc06583aa4413fc18d">FindLast</a> (const char *pszSubStr)</td></tr>
 <tr class="memdesc:aa08ad5a0f40200fc06583aa4413fc18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based index for the first occurence of the substring.  <a href="class_f_c_string.html#aa08ad5a0f40200fc06583aa4413fc18d">More...</a><br /></td></tr>
 <tr class="separator:aa08ad5a0f40200fc06583aa4413fc18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecf0420f27b06a2993349a50392ccf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#afecf0420f27b06a2993349a50392ccf4">FormatCStringArgs</a> (const char *fmt, va_list args)</td></tr>
+<tr class="memdesc:afecf0420f27b06a2993349a50392ccf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a string from an args list. Supports either UTF8 or platform encoding.  <a href="class_f_c_string.html#afecf0420f27b06a2993349a50392ccf4">More...</a><br /></td></tr>
+<tr class="separator:afecf0420f27b06a2993349a50392ccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10821656209658b6469fc7d109392d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab10821656209658b6469fc7d109392d4">FormatCString</a> (const char *fmt,...)</td></tr>
 <tr class="memdesc:ab10821656209658b6469fc7d109392d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a string using the same syntax and manner as the printf() function in C. The version of the method doesn't support Unicode UTF16, but it works with UTF8.  <a href="class_f_c_string.html#ab10821656209658b6469fc7d109392d4">More...</a><br /></td></tr>
 <tr class="separator:ab10821656209658b6469fc7d109392d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1907,6 +1910,45 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fmt</td><td>A format string (C style). Additional parameters follow according to syntax of the format string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afecf0420f27b06a2993349a50392ccf4" name="afecf0420f27b06a2993349a50392ccf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecf0420f27b06a2993349a50392ccf4">&#9670;&nbsp;</a></span>FormatCStringArgs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCString::FormatCStringArgs </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Formats a string from an args list. Supports either UTF8 or platform encoding. </p>
+<p >Due to a discrepancy between Standard C++ and Windows in the treatment of s and S, it is better to always do arguments with 8-bit chars, so no similar function is provided for <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> or UTF16.</p>
+<p >Requires the <b>PDK_FRAMEWORK_FORMAT</b> define.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fmt</td><td>A format string (C style). Additional parameters follow according to syntax of the format string. </td></tr>
+    <tr><td class="paramname">args</td><td>A va_list with the args passed from another function with a ... args list </td></tr>
   </table>
   </dd>
 </dl>
@@ -4026,7 +4068,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:56:26 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 14 2022 08:12:43 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a79914bcd28c7e8218db1208fbcf4ce91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_time_signature.html">FCTimeSignature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a79914bcd28c7e8218db1208fbcf4ce91">GetTimeSignature</a> ()</td></tr>
 <tr class="memdesc:a79914bcd28c7e8218db1208fbcf4ce91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the time signature object.  <a href="class_f_c_cell.html#a79914bcd28c7e8218db1208fbcf4ce91">More...</a><br /></td></tr>
 <tr class="separator:a79914bcd28c7e8218db1208fbcf4ce91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4391d481a5677b5cfccb39504e4c2227"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_time_signature.html">FCTimeSignature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a4391d481a5677b5cfccb39504e4c2227">GetTimeSignatureForDisplay</a> ()</td></tr>
+<tr class="memdesc:a4391d481a5677b5cfccb39504e4c2227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the time signature object. If time signature for display shouldn't be used, NULL will be returned.  <a href="class_f_c_cell.html#a4391d481a5677b5cfccb39504e4c2227">More...</a><br /></td></tr>
+<tr class="separator:a4391d481a5677b5cfccb39504e4c2227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d21c2683589467f04d194ffb4f14580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a6d21c2683589467f04d194ffb4f14580">ReAssign</a> (int measure, int staff)</td></tr>
 <tr class="memdesc:a6d21c2683589467f04d194ffb4f14580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reassigns the cell to a different cell position, which will also delete attached cell data.  <a href="class_f_c_cell.html#a6d21c2683589467f04d194ffb4f14580">More...</a><br /></td></tr>
 <tr class="separator:a6d21c2683589467f04d194ffb4f14580"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,8 +134,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa4507d8bbdab3fb147068ec142571562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that the cell has saved indepentent key signature data.  <a href="class_f_c_cell.html#aa4507d8bbdab3fb147068ec142571562">More...</a><br /></td></tr>
 <tr class="separator:aa4507d8bbdab3fb147068ec142571562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5807a859a427d3e2dfbe5e56df516ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_time_signature.html">FCTimeSignature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#af5807a859a427d3e2dfbe5e56df516ce">AssureSavedIndependentTimeSig</a> ()</td></tr>
-<tr class="memdesc:af5807a859a427d3e2dfbe5e56df516ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that the cell has saved indepentent time signature data.  <a href="class_f_c_cell.html#af5807a859a427d3e2dfbe5e56df516ce">More...</a><br /></td></tr>
+<tr class="memdesc:af5807a859a427d3e2dfbe5e56df516ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that the cell has saved independent time signature data.  <a href="class_f_c_cell.html#af5807a859a427d3e2dfbe5e56df516ce">More...</a><br /></td></tr>
 <tr class="separator:af5807a859a427d3e2dfbe5e56df516ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e1f610aaf224da884d8271629b0099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_time_signature.html">FCTimeSignature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a44e1f610aaf224da884d8271629b0099">AssureSavedIndependentTimeSigForDisplay</a> ()</td></tr>
+<tr class="memdesc:a44e1f610aaf224da884d8271629b0099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes sure that the cell has saved independent time signature for display data.  <a href="class_f_c_cell.html#a44e1f610aaf224da884d8271629b0099">More...</a><br /></td></tr>
+<tr class="separator:a44e1f610aaf224da884d8271629b0099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117d892069b593ef81ebbb764f28b335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a117d892069b593ef81ebbb764f28b335">RemoveIndependentTimeSigForDisplay</a> ()</td></tr>
+<tr class="memdesc:a117d892069b593ef81ebbb764f28b335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an independent time signature for display if there is one.  <a href="class_f_c_cell.html#a117d892069b593ef81ebbb764f28b335">More...</a><br /></td></tr>
+<tr class="separator:a117d892069b593ef81ebbb764f28b335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae18a4fe89d1d004ab2405130acd5f15d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#ae18a4fe89d1d004ab2405130acd5f15d">Save</a> ()</td></tr>
 <tr class="memdesc:ae18a4fe89d1d004ab2405130acd5f15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves any independent key and/or time signatures connected with the cell.  <a href="class_f_c_cell.html#ae18a4fe89d1d004ab2405130acd5f15d">More...</a><br /></td></tr>
 <tr class="separator:ae18a4fe89d1d004ab2405130acd5f15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -543,9 +552,30 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Makes sure that the cell has saved indepentent time signature data. </p>
+<p>Makes sure that the cell has saved independent time signature data. </p>
 <p >Lua-supported.</p>
-<dl class="section return"><dt>Returns</dt><dd>NULL if the staff hasn't be set to use indepentent time signatures. Otherwise, the independent time signature for the cell. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL if the staff hasn't be set to use independent time signatures. Otherwise, the independent time signature for the cell. </dd></dl>
+
+</div>
+</div>
+<a id="a44e1f610aaf224da884d8271629b0099" name="a44e1f610aaf224da884d8271629b0099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e1f610aaf224da884d8271629b0099">&#9670;&nbsp;</a></span>AssureSavedIndependentTimeSigForDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_time_signature.html">FCTimeSignature</a> * FCCell::AssureSavedIndependentTimeSigForDisplay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Makes sure that the cell has saved independent time signature for display data. </p>
+<p >Lua-supported (0.59).</p>
+<dl class="section return"><dt>Returns</dt><dd>NULL if the staff hasn't be set to use independent time signatures. Otherwise, the independent time signature for display for the cell. If none existed before, it is created identical to the time signature. </dd></dl>
 
 </div>
 </div>
@@ -855,6 +885,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4391d481a5677b5cfccb39504e4c2227" name="a4391d481a5677b5cfccb39504e4c2227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4391d481a5677b5cfccb39504e4c2227">&#9670;&nbsp;</a></span>GetTimeSignatureForDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_time_signature.html">FCTimeSignature</a> * FCCell::GetTimeSignatureForDisplay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the time signature object. If time signature for display shouldn't be used, NULL will be returned. </p>
+<p >This method takes independent time sigs into account.</p>
+<p >This pointer works in similar ways to the pointer returned at <a class="el" href="class_f_c_cell.html#a79914bcd28c7e8218db1208fbcf4ce91" title="Returns a pointer to the time signature object.">GetTimeSignature()</a>. For more info, please refer to <a class="el" href="class_f_c_cell.html#a79914bcd28c7e8218db1208fbcf4ce91" title="Returns a pointer to the time signature object.">GetTimeSignature()</a>.</p>
+<p >Lua-supported (0.59). </p>
+
+</div>
+</div>
 <a id="a9ecbf44a3e4be735c22113b12fbc8dd1" name="a9ecbf44a3e4be735c22113b12fbc8dd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ecbf44a3e4be735c22113b12fbc8dd1">&#9670;&nbsp;</a></span>HasIndependentKeySig()</h2>
 
@@ -935,6 +987,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a117d892069b593ef81ebbb764f28b335" name="a117d892069b593ef81ebbb764f28b335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117d892069b593ef81ebbb764f28b335">&#9670;&nbsp;</a></span>RemoveIndependentTimeSigForDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCell::RemoveIndependentTimeSigForDisplay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes an independent time signature for display if there is one. </p>
+<p >The cell must be saved with <a class="el" href="class_f_c_cell.html#ae18a4fe89d1d004ab2405130acd5f15d" title="Saves any independent key and/or time signatures connected with the cell.">FCCell::Save</a> for the change to take effect. After calling this function, if you call <a class="el" href="class_f_c_cell.html#a4391d481a5677b5cfccb39504e4c2227" title="Returns a pointer to the time signature object. If time signature for display shouldn&#39;t be used,...">GetTimeSignatureForDisplay</a> or <a class="el" href="class_f_c_cell.html#a44e1f610aaf224da884d8271629b0099" title="Makes sure that the cell has saved independent time signature for display data.">AssureSavedIndependentTimeSigForDisplay</a>, you will need to call this function again for an independent time signature to be removed.</p>
+<p >Lua-supported (0.59). </p>
+
+</div>
+</div>
 <a id="ae18a4fe89d1d004ab2405130acd5f15d" name="ae18a4fe89d1d004ab2405130acd5f15d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae18a4fe89d1d004ab2405130acd5f15d">&#9670;&nbsp;</a></span>Save()</h2>
 
@@ -959,7 +1040,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:56:04 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 14 2022 08:12:19 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

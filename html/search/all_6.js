@@ -1199,7 +1199,8 @@ var searchData=
   ['foreachwithscope_1196',['ForEachWithScope',['../class_f_c_documents.html#aaf0737f7bc0c36983f59974f3b04511e',1,'FCDocuments::ForEachWithScope()'],['../class_f_c_parts.html#a524c99744c2e7a4e63b418d3169b0b2d',1,'FCParts::ForEachWithScope()']]],
   ['formatcharacternumber_1197',['FormatCharacterNumber',['../class_f_c_string.html#aa648a64a8262084190c971386a17f114',1,'FCString']]],
   ['formatcstring_1198',['FormatCString',['../class_f_c_string.html#ab10821656209658b6469fc7d109392d4',1,'FCString']]],
-  ['formatname_1199',['FormatName',['../class_f_c_percussion_note_type.html#ace096ef6817124e9f11545cd67798d61',1,'FCPercussionNoteType']]],
-  ['formatstring_1200',['FormatString',['../class_f_c_string.html#a82639d46c5a390017146e6c7786e8a31',1,'FCString']]],
-  ['freemetrics_1201',['FreeMetrics',['../class_f_c_cell_metrics.html#a3227c2b9b902e8e3b49ea4c7c6027378',1,'FCCellMetrics::FreeMetrics()'],['../class_f_c_entry_metrics.html#a3533159b660b4f0cbd8bdb8c3d8bd80c',1,'FCEntryMetrics::FreeMetrics()']]]
+  ['formatcstringargs_1199',['FormatCStringArgs',['../class_f_c_string.html#afecf0420f27b06a2993349a50392ccf4',1,'FCString']]],
+  ['formatname_1200',['FormatName',['../class_f_c_percussion_note_type.html#ace096ef6817124e9f11545cd67798d61',1,'FCPercussionNoteType']]],
+  ['formatstring_1201',['FormatString',['../class_f_c_string.html#a82639d46c5a390017146e6c7786e8a31',1,'FCString']]],
+  ['freemetrics_1202',['FreeMetrics',['../class_f_c_cell_metrics.html#a3227c2b9b902e8e3b49ea4c7c6027378',1,'FCCellMetrics::FreeMetrics()'],['../class_f_c_entry_metrics.html#a3533159b660b4f0cbd8bdb8c3d8bd80c',1,'FCEntryMetrics::FreeMetrics()']]]
 ];

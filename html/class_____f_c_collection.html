@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.58</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
    </div>
   </td>
  </tr>
@@ -640,6 +640,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destroys all the objects in the collection and empties the collection. </p>
+<p >Lua-supported.</p>
 <p >Use <a class="el" href="class_____f_c_collection.html#a25147a2f6aed72d874a5ee7eab2bc01f" title="Removes all the objects from the collection, without freeing/destroying the objects.">DetachAll</a> to remove the objects without destroying them. </p>
 
 </div>
@@ -661,6 +662,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deletes the object at the index position and disposes the object. Index is 0-based. </p>
+<p >Lua-supported (0.59).</p>
 <p >The object must have the <a class="el" href="class_____f_c_base.html" title="Base class for the Finale Framework classes.">__FCBase</a> class as a base parent.</p>
 <dl class="section return"><dt>Returns</dt><dd><b>True</b> if item was deleted from the collection. If the index value is out of range, <b>false</b> is returned. </dd></dl>
 
@@ -890,8 +892,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the 0-based order index for the object within the collection. </p>
-<dl class="section return"><dt>Returns</dt><dd>-1 if the item isn't found in the collection. Otherwise, the 0-based index value. </dd></dl>
-
+<p >Lua-supported. </p><pre class="fragment">\return -1 if the item isn't found in the collection. Otherwise, the 0-based index value.
+</pre> 
 </div>
 </div>
 <a id="a2021d0725e5805437f23d3b8f7119ff4" name="a2021d0725e5805437f23d3b8f7119ff4"></a>
@@ -1203,7 +1205,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 23 2021 06:55:58 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 14 2022 08:12:11 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
