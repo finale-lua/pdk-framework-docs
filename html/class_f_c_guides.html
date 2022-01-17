@@ -91,7 +91,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9f57d611e5b82667786eaca9e73e34cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_guides.html#a9f57d611e5b82667786eaca9e73e34cc">More...</a><br /></td></tr>
 <tr class="separator:a9f57d611e5b82667786eaca9e73e34cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399f56c0cfe90b18ecb6d638bf0d5934"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934">SaveAll</a> ()</td></tr>
-<tr class="memdesc:a399f56c0cfe90b18ecb6d638bf0d5934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden <a class="el" href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934" title="Overridden SaveAll() method.">SaveAll()</a> method.  <a href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934">More...</a><br /></td></tr>
+<tr class="memdesc:a399f56c0cfe90b18ecb6d638bf0d5934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the guides in Finale 26.2 and higher.  <a href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934">More...</a><br /></td></tr>
 <tr class="separator:a399f56c0cfe90b18ecb6d638bf0d5934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11258da1ed59db8bfb573a7413489d6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_guide.html">FCGuide</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_guides.html#a11258da1ed59db8bfb573a7413489d6a">GetItemAt</a> (int index)</td></tr>
 <tr class="memdesc:a11258da1ed59db8bfb573a7413489d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden <a class="el" href="class_f_c_guides.html#a11258da1ed59db8bfb573a7413489d6a" title="Overridden GetItemAt() method.">GetItemAt()</a> method.  <a href="class_f_c_guides.html#a11258da1ed59db8bfb573a7413489d6a">More...</a><br /></td></tr>
@@ -676,8 +676,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Overridden <a class="el" href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934" title="Overridden SaveAll() method.">SaveAll()</a> method. </p>
-<p >This function only works in Finale 26.2 and higher. In earlier versions of Finale it always returns false.</p>
+<p>Saves the guides in Finale 26.2 and higher. </p>
+<p >This function only works in Finale 26.2 and higher. In earlier versions of Finale it always returns false. For those versions, use <a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb" title="Overloaded version of Save().">FCGridsGuidesPrefs::Save</a> to save the guides.</p>
 <p >Lua-supported (0.60). </p>
 
 </div>
@@ -685,7 +685,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 17 2022 08:29:44 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Jan 17 2022 08:50:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
