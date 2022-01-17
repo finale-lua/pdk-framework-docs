@@ -151,7 +151,7 @@ var searchData=
   ['clonememoryfrom_148',['CloneMemoryFrom',['../class_____f_c_base_data.html#ab996220331dbeb0d29f1d536ce61fb18',1,'__FCBaseData']]],
   ['clonetuplets_149',['CloneTuplets',['../class_f_c_note_entry_layer.html#aa70a8370f70e92141310a547ee2d2696',1,'FCNoteEntryLayer']]],
   ['close_150',['Close',['../class_f_c_document.html#a00bfd4a1eee13886cbef3ba1eb88c036',1,'FCDocument::Close()'],['../class_f_c_p_d_f_writer.html#a57d32422c1587364ba7798ddf0b5b60e',1,'FCPDFWriter::Close()'],['../class_f_c_file_stream.html#a9fcca66db52c3f0ba746807479676468',1,'FCFileStream::Close()']]],
-  ['closebuttonpressed_151',['CloseButtonPressed',['../class_____f_c_user_window.html#a465a2939c1f15b254269e990b59e7020',1,'__FCUserWindow']]],
+  ['closebuttonpressed_151',['CloseButtonPressed',['../class_____f_c_user_window.html#a465a2939c1f15b254269e990b59e7020',1,'__FCUserWindow::CloseButtonPressed()'],['../class_f_c_custom_lua_window.html#a33c9f7da438b43e154875333de948756',1,'FCCustomLuaWindow::CloseButtonPressed()']]],
   ['closecurrentdocumentwindow_152',['CloseCurrentDocumentWindow',['../class_f_c_document.html#a3d011a4266d03d9a04c0a2e2d617025d',1,'FCDocument']]],
   ['closewindow_153',['CloseWindow',['../class_____f_c_user_window.html#a6d399c70058aa570fdbc2552d5bd7b4a',1,'__FCUserWindow::CloseWindow()'],['../class_f_c_resource_window.html#a6d4df390877321e0f1133d9d13415d53',1,'FCResourceWindow::CloseWindow()']]],
   ['collapseallcontainers_154',['CollapseAllContainers',['../class_f_c_ctrl_tree.html#a55be243b752d1748a488041e16b1cd02',1,'FCCtrlTree']]],

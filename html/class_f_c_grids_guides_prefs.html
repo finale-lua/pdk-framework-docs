@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60b1</span>
    </div>
   </td>
  </tr>
@@ -304,6 +304,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCGridsGuidesPref
 <tr class="memitem:acf605760922efd7f8078a86d2ec8a3fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb">Save</a> () override</td></tr>
 <tr class="memdesc:acf605760922efd7f8078a86d2ec8a3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded version of <a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb" title="Overloaded version of Save().">Save()</a>.  <a href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb">More...</a><br /></td></tr>
 <tr class="separator:acf605760922efd7f8078a86d2ec8a3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888861502cfb1bb0b7e6902d3835f6d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_grids_guides_prefs.html#a888861502cfb1bb0b7e6902d3835f6d7">SaveGuides</a> ()</td></tr>
+<tr class="memdesc:a888861502cfb1bb0b7e6902d3835f6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the guides only (if any)  <a href="class_f_c_grids_guides_prefs.html#a888861502cfb1bb0b7e6902d3835f6d7">More...</a><br /></td></tr>
+<tr class="separator:a888861502cfb1bb0b7e6902d3835f6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3d11bada74cfb0480bf0a4991c8b94e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_guides.html">FCGuides</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_grids_guides_prefs.html#ab3d11bada74cfb0480bf0a4991c8b94e">GetHorizontalGuides</a> ()</td></tr>
 <tr class="memdesc:ab3d11bada74cfb0480bf0a4991c8b94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the collection object that contains the horizontal guides.  <a href="class_f_c_grids_guides_prefs.html#ab3d11bada74cfb0480bf0a4991c8b94e">More...</a><br /></td></tr>
 <tr class="separator:ab3d11bada74cfb0480bf0a4991c8b94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1469,9 +1472,32 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Overloaded version of <a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb" title="Overloaded version of Save().">Save()</a>. </p>
-<p >In addition to the standard data saving, it also handles the saving of the guides, if they have been changed. </p>
+<p >In addition to the standard data saving, it also handles the saving of the guides, if they have been changed.</p>
+<p >Due to a bug in Finale 26.2 and higher, you should use <a class="el" href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934" title="Overridden SaveAll() method.">FCGuides::SaveAll</a> to save guides when running in those Finale versions. If you need to save <a class="el" href="class_f_c_grids_guides_prefs.html" title="Class for document preferences related to guides and grids.">FCGridsGuidesPrefs</a> as well, do it in a separate Undo block from saving the guides. Note that this function still attempts to save the guides in Finale 26.2 and higher. (One hopes the bug might be fixed in the future.) Therefore the safest approach for this workaround is probably to reload <a class="el" href="class_f_c_grids_guides_prefs.html" title="Class for document preferences related to guides and grids.">FCGridsGuidesPrefs</a> before saving it, after saving the guides. </p>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_prefs_base.html#a386d5c4d2cf5c45ce6333581cf1462f4">__FCPrefsBase</a>.</p>
+
+</div>
+</div>
+<a id="a888861502cfb1bb0b7e6902d3835f6d7" name="a888861502cfb1bb0b7e6902d3835f6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888861502cfb1bb0b7e6902d3835f6d7">&#9670;&nbsp;</a></span>SaveGuides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGridsGuidesPrefs::SaveGuides </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save the guides only (if any) </p>
+<p >This function saves any guides you have gotten with <a class="el" href="class_f_c_grids_guides_prefs.html#ab3d11bada74cfb0480bf0a4991c8b94e" title="Returns a pointer to the collection object that contains the horizontal guides.">GetHorizontalGuides</a> or <a class="el" href="class_f_c_grids_guides_prefs.html#a409edce2daef6f2aad95038797fcc65f" title="Returns a pointer to the collection object that contains the vertical guides.">GetVerticalGuides</a>. If you have never called either, it does nothing to the guides but returns true. For versions of Finale before 26.2 it saves the <a class="el" href="class_f_c_grids_guides_prefs.html" title="Class for document preferences related to guides and grids.">FCGridsGuidesPrefs</a> record as well, so for those Finale versions this function is identical to <a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb" title="Overloaded version of Save().">Save</a>.</p>
+<p >Due to a bug in Finale 26.2 and higher, you should call this function to save guides and call <a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb" title="Overloaded version of Save().">Save</a> in a separate Undo block if you need to save other properties in <a class="el" href="class_f_c_grids_guides_prefs.html" title="Class for document preferences related to guides and grids.">FCGridsGuidesPrefs</a>.</p>
+<p >Lua-supported (0.60). </p>
 
 </div>
 </div>
@@ -2183,7 +2209,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 14 2022 08:12:28 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Jan 17 2022 08:29:43 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
