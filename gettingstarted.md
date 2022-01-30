@@ -182,7 +182,7 @@ Please note that since the execution of `plugindef()` is completely silent (no e
 
 The `finaleplugin` properties should **only** be set in the `plugindef()` function.
 
-The properties are discussed in details on the [finaleplugin properties](/jwplugins/wiki/doku.php?id=jwlua:finaleplugin_properties "jwlua:finaleplugin_properties") page.
+The properties are discussed in details on the [finaleplugin properties](finaleplugin_properties) page.
 
 print() Redirection
 -------------------
