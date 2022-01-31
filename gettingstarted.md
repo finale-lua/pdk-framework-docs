@@ -187,9 +187,15 @@ The properties are discussed in details on the [finaleplugin properties](finalep
 print() Redirection
 -------------------
 
-The output of the standard Lua `print` function has been redirected to the _JW Lua_ window, so all output from the `print` function will show up there.
+_JW Lua_ redirects the output of the standard Lua `print` function to the _JW Lua_ window, so all output from the `print` function shows up there:
 
-_RGP Lua_ has no output window, but the `print` function can be redirected to an external debugger.
+![JW Lua Window](imgs/jwlua_beta0_01-print.png "JW Lua Window")
+
+_RGP Lua_ has no output window, but there are a number of ways to see output from the `print` function.
+
+* Redirect it to an external debugger. See instructions for setting up a [Development Environment](devenv) for more details. (This works on both `macOS` and `Windows` and is the recommended approach with _RGP Lua_.)
+* Debug Finale under XCode on `macOS`. The `print` output appears in XCode's “Output” window.
+* Run Finale from a `macOS` Terminal prompt. The `print` output appears in the Terminal window.
 
 Additional JW Lua Functions
 ---------------------------
@@ -354,18 +360,27 @@ end
 Memory Management
 -----------------
 
-The Lua language handles memory through a garbage collection: the memory are handled automatically by Lua. However, there are a couple of points that a plug-in programmer should be aware of.
+The Lua language handles memory through garbage collection, so allocated memory is released automatically by Lua. However, there are a couple of points that a plug-in programmer should be aware of.
 
-* Define variables as `local` as often as possible. This becomes particularly important when group scripts are used (global variables survives to the subsequent scripts in the group as well), or when using libraries.
-* The memory allocated by the PDK Framework's `Create` methods are handled automatically in different ways by _RGP Lua_ and _JW Lua_. _JW Lua_ releases these memory objects _after_ the full script has been run. _RGP Lua_ allows the Lua interpreter to release them as part of normal Lua garbage collection.
-* Since the `Create` methods could sometimes result in a huge number of object waiting for release (for example in a tight loop), `Lookup` classes (classes that ends with `Lookup`) are available as a faster and more memory-efficient approach. With _RGP Lua_, calling `Create` methods in tight loops is less of an issue.
-* When using the `FCCellMetrics` or `FCNoteEntryMetrics` class, make sure to call the `FreeMetrics()` method separately for the loaded object as soon as the data is no longer is needed. Finale allocates loaded metrics data internally, and metrics with a garbage collector can otherwise lead to problems in scripts where lots of metrics data are loaded without release.
+* Define variables as `local` as often as possible. This becomes particularly important when group scripts (_JW Lua_ only) are used (global variables survive to the subsequent scripts in the group as well), or when using libraries. However, if you are using `finenv.RetainLuaState` in _RGP Lua_, keep in mind that `local` variables can disappear between invocations of the script. Any cross-invocation state should be held in global variables.
+* The memory allocated by the PDK Framework's `Create` methods is handled automatically in different ways by _RGP Lua_ and _JW Lua_. _JW Lua_ releases these memory objects _after_ the full script has been run. _RGP Lua_ allows the Lua engine to release them as part of normal Lua garbage collection.
+* For _JW Lua_, the `Create` methods can sometimes result in a huge number of objects waiting for release, for example, in a tight loop. `Lookup` classes (classes that end with `Lookup`) are available as a faster and more memory-efficient approach.
+* For _RGP Lua_, calling `Create` methods in tight loops is less of an issue, since Lua garbage collection releases unused items as the loop progresses. However the same `Lookup` classes are supported as in _JW Lua_.
+* When using the `FCCellMetrics` or `FCNoteEntryMetrics` class, make sure to call the `FreeMetrics()` method separately for the loaded object as soon as the data is no longer is needed. Finale allocates loaded metrics data internally, and metrics with a garbage collector can otherwise impact performance in scripts where lots of metrics data are loaded without release. This is not as big of an issue in _RGP Lua_ because Lua garbage collection also releases the internal metrics data, but `FreeMetrics()` still gives you the control to free it as soon as you no longer need it.
 
 Tips
 ----
 
 * If you don't need a collection object anymore, you can set it to `nil`. That might benefit the performance in large scripts with huge collections of data (since it signals to the garbage collector that it can free the allocated memory).
 * There's virtually no performance penalty to put lots of comments in the script code. Once the script has been loaded into the Lua engine, the code resides in (quite efficient) bytecode where only the actual execution code appears.
-* An alternative syntax for properties is to use the property name as a string table index with the object as a table. For example, the syntax `mymeasure.Width` is equivalent to `mymeasure["Width"]`. This alternative syntax might be useful when referencing properties dynamically through the code.
+* An alternative syntax for properties is to use the property name as a string table index with the object as a table. For example, the syntax `mymeasure.Width` is equivalent to `mymeasure["Width"]`. This alternative syntax might be useful when referencing properties dynamically through the code, especially in string variables. Example:
+
+```lua
+function print_property(obj, property_name)
+    print(tostring(obj[property_name])
+end
+
+print_property(mymeasure, "Width")
+```
 
 (Most of this content was copied from [Jari Williamsson's site](http://jwmusic.nu/jwplugins/wiki/doku.php?id=jwlua:development) and will be removed or revised if so requested.)
