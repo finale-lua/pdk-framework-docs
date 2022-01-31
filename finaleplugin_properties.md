@@ -49,7 +49,7 @@ Setting this value to `true` causes _RGP Lua_ to load `luasocket` in the the Lua
 ```lua
 finaleplugin.Debug = true
 ```
-Default is the script's "Enable Debug" setting in the _RGP Lua_ configuration dialog.
+Default is the script's “Enable Debug” setting in the _RGP Lua_ configuration dialog.
 
 #### HandlesUndo\* (boolean)
 
@@ -67,7 +67,7 @@ Setting this value to `true` tells _RGP Lua_ to load the script into an internal
 ```lua
 finaleplugin.LoadAsString = true
 ```
-Default is the script's "Load As String" setting in the _RGP Lua_ configuration dialog.
+Default is the script's “Load As String” setting in the _RGP Lua_ configuration dialog.
 
 #### MinFinaleVersion (number)
 
