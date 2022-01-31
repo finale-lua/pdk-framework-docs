@@ -3,7 +3,7 @@ var searchData=
   ['make0linefullbarlinestaff_0',['Make0LineFullBarlineStaff',['../class_____f_c_staff_base.html#a3fd6467d08111c0fcc2d825bd46d6fb1',1,'__FCStaffBase']]],
   ['make1linefullbarlinestaff_1',['Make1LineFullBarlineStaff',['../class_____f_c_staff_base.html#a076ade8390630818451e5ed9f24a9ca8',1,'__FCStaffBase']]],
   ['make1lineshortbarlinestaff_2',['Make1LineShortBarlineStaff',['../class_____f_c_staff_base.html#a8ecf30585ea0d2d8a78b122e6bf116d6',1,'__FCStaffBase']]],
-  ['makecellsingleclef_3',['MakeCellSingleClef',['../class_f_c_cell_frame_hold.html#a16c13fe7a5b6656f631a4df566c19f7a',1,'FCCellFrameHold']]],
+  ['makecellsingleclef_3',['MakeCellSingleClef',['../class_f_c_cell_frame_hold.html#a05147ddf2a1d7cdea937dbbf432407ad',1,'FCCellFrameHold']]],
   ['makedefaultmusicfont_4',['MakeDefaultMusicFont',['../class_f_c_font_info.html#af475313f4762e9a2a377d945f12d0a10',1,'FCFontInfo']]],
   ['makeenigmasizestring_5',['MakeEnigmaSizeString',['../class_f_c_font_info.html#aeddfe75feccf0718a87aaf6937847bf3',1,'FCFontInfo']]],
   ['makeenigmastring_6',['MakeEnigmaString',['../class_f_c_font_info.html#a1e5b54735f71e6bf9a65e9820f36ab13',1,'FCFontInfo']]],
