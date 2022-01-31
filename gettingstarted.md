@@ -15,7 +15,7 @@ The fastest way to get a feel for how the Lua script language works is probably 
 PDK Framework
 -------------
 
-Both _RGP Lua_ and _JW Lua_ map the Lua script language to the [PDK Framework](https://pdk.finalelua.com) (created by [Jari Williamsson](http://finaletips.nu). For more info about how to interpret the PDK Framework documentation for scripting in _JW Lua_, please refer to [this page](http://jwmusic.nu//jwplugins/wiki/doku.php?id=jwlua:frameworkdocs "jwlua:frameworkdocs").
+Both _RGP Lua_ and _JW Lua_ map the Lua script language to the [PDK Framework](https://pdk.finalelua.com) (created by [Jari Williamsson](http://finaletips.nu)). For more info about how to interpret the PDK Framework documentation for scripting in _JW Lua_, please refer to [this page](http://jwmusic.nu//jwplugins/wiki/doku.php?id=jwlua:frameworkdocs "jwlua:frameworkdocs").
 
 All accessible PDK Framework classes starts with the `FC` prefix, such as [`FCMeasure`](https://pdk.finalelua.com/class_f_c_measure.html), [`FCMusicRegion`](https://pdk.finalelua.com/class_f_c_music_region.html), [`FCNoteEntry`](https://pdk.finalelua.com/class_f_c_note_entry.html), etc.
 
