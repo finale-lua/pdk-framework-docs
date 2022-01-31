@@ -217,7 +217,7 @@ finaleplugin.Notes = [[
 ]]
 ```
 
-Notes may contain simple Markdown syntax for creating paragraph breaks (two newlines), line breaks (two spaces at the end of lines), and numbered or bullet lists. These will be interpreted correctly at the [Finale Lua](https://finalelua.com) site if the script it uploaded there.
+Notes may contain simple Markdown syntax for creating paragraph breaks (two newlines), line breaks (two spaces at the end of lines), and numbered or bullet lists. These will be interpreted correctly at the [Finale Lua](https://finalelua.com) site if the script is uploaded there.
 
 #### RevisionNotes (multiline string)
 
@@ -232,7 +232,7 @@ July 28, 2013: Version 1.01
 
 #### AuthorURL (string)
 
-An URL to the script's home page. Example:
+A URL to the script's home page. Example:
 
 ```lua
 finaleplugin.AuthorURL = "http://www.theurl.com"
