@@ -57,12 +57,12 @@ page = finale.FCPage()
 The 'finenv' namespace
 ----------------------
 
-The `finenv` namespace has been created to provide programming shortcuts to some objects that are often needed for a Finale Lua scripts. `finenv` currently contains these functions:
+The `finenv` namespace has been created to provide “programming shortcuts” to some objects that are often needed for a Finale Lua scripts. `finenv` currently contains these functions:
 
 |Member|Description|
 |----------|---------------|
 |finenv.Region()|Returns an object with the currently selected region (in the document/part currently in editing scope), without the need for any other method calls. When running a modeless dialog in _RGP Lua_, this value is reinitialized to the current selected region every time you call the function. This could have side-effects if you have assigned it to a Lua variable, because the assigned variable will change as well.|
-|finenv.UI()|Returns the global user interface object (of the [`FCUI`](https://pdk.finalelua.com/class_f_c_u_i.html) class). The `FCUI` class contains Finale and system-global tasks, such as displaying alert boxes, sounding a system beep, or getting the width of the screen, etc.|
+|finenv.UI()|Returns the global “user interface” object (of the [`FCUI`](https://pdk.finalelua.com/class_f_c_u_i.html) class). The `FCUI` class contains Finale and system-global tasks, such as displaying alert boxes, sounding a system beep, or getting the width of the screen, etc.|
 |finenv.UserValueInput()|Not supported in _RGP Lua_. Instead, it displays an error message box and returns `nil`.|
 |finenv.StartNewUndoBlock(string, bool)|Ends the currently active Undo/Redo block in Finale (if any) and starts a new one with a new undo text. The first parameter (a Lua string) is the name of the new Undo/Redo block. The second parameter (optional, default is true) is a boolean, indicating if the edits in the previous Undo/Redo block should be stored (=true) or canceled (=false). Finale will only store Undo/Redo blocks that contain edit changes to the documents. These calls cannot be nested. If your script has set `finaleplugin.NoStore = true`, then this function has no effect and any changes to the document are rolled back.|
 |finenv.EndUndoBlock(bool)|Ends the currently active Undo/Redo block in Finale (if any). The parameter indicates if the edits in the previous Undo/Redo block should be stored (=true) or canceled (=false). Finale will only store Undo/Redo blocks that contain edit changes to the documents. These calls cannot be nested. If your script will make further changes to the document after this call, it should call `StartNewUndoBlock()` again before making them. Otherwise, Finale's Undo stack could become corrupted.|
@@ -70,7 +70,7 @@ The `finenv` namespace has been created to provide programming shortcuts to 
 |finenv.RunningLuaFolderPath()\*|A function that returns a Lua string containing the full folder path of the current running script.|
 |finenv.QueryInvokedModifierKeys(value)\*|A function that returns `true` if the input modifier key(s) were pressed when the menu item was invoked that started the script. The input value is any combination of [COMMAND\_MOD\_KEYS](https://pdk.finalelua.com/class_____f_c_user_window.html#af07ed05132bac987ff3acab63a001e47).|
 |finenv.RegisterModelessDialog(dialog)\*|Registers a newly created [`FCCustomLuaWindow`](https://pdk.finalelua.com/class_f_c_custom_lua_window.html) dialog box with _RGP Lua_ so that you can then display it as a modeless window with [`ShowModeless`](https://pdk.finalelua.com/class_f_c_custom_lua_window.html#a002f165377f6191657f809a30e42b0ad). You can register more than one dialog. The script terminates when all its modeless windows close.|
-|finenv.FinaleVersion|A read-only property with the running Finale year version, such as 2011, 2012, etc. For Finale 25 and later, _JW Lua_ returns this value as 9999. However, _RGP Lua_ (starting with v0.56) returns the major version + 10000. So Finale 25 returns 10025, Finale 26 returns 10026, etc.|
+|finenv.FinaleVersion|A read-only property with the running Finale “year” version, such as 2011, 2012, etc. For Finale 25 and later, _JW Lua_ returns this value as 9999. However, _RGP Lua_ (starting with v0.56) returns the major version + 10000. So Finale 25 returns 10025, Finale 26 returns 10026, etc.|
 |finenv.RawFinaleVersion|A read-only property with the full Finale version number. It's constructed as 4 bytes with different version info. The highest byte is the major version, the next is subversion, etc. Use this only if you need the revision number of a specific major Finale version.|
 |finenv.MajorVersion|A read-only property with the major version number of _RGP/JW Lua_. Beta versions return 0, version 1.xx gives 1, etc.|
 |finenv.MinorVersion|A read-only property with the minor version number of _RGP/JW Lua_. A version 1.07 would give 7, etc.|
@@ -124,8 +124,8 @@ Class Concepts
 An important concept in the PDK Framework is the **collection**. Usually, collection classes ends with a plural 's' version of the “single-object” version. For example:
 
 ```lua
-measure = finale.FCMeasure()      \-\- A single measure
-measures = finale.FCMeasures()    \-\- A collection of multiple measures
+measure = finale.FCMeasure()      -- A single measure
+measures = finale.FCMeasures()    -- A collection of multiple measures
 ```
 
 Collections are not compatible with Lua tables, but they can be converted to Lua tables with the `coll2table()` function (see below).
@@ -268,7 +268,7 @@ The second parameter is optional, but can be used to indicate the note entry lay
 | -1  | All layers, regardless if they're visible or not. |
 | 0   | All visible layer(s). This is the default. |
 | 1 through 4 | Load only the one-based layer number. The layer is loaded regardless of the layer visibility. |
-| A bit mask combination of hex values 0x100, 0x200, 0x400, 0x800 | The layers 1-4 in any combination. |
+| A bit mask combination of hex values `0x100`, `0x200`, `0x400`, `0x800` | The layers 1-4 in any combination. |
 
 Example:
 
@@ -366,6 +366,6 @@ Tips
 
 * If you don't need a collection object anymore, you can set it to `nil`. That might benefit the performance in large scripts with huge collections of data (since it signals to the garbage collector that it can free the allocated memory).
 * There's virtually no performance penalty to put lots of comments in the script code. Once the script has been loaded into the Lua engine, the code resides in (quite efficient) bytecode where only the actual execution code appears.
-* An alternative syntax for properties is to use the property name as a string table index with the object as a table. For example, the syntax `mymeasure.Width` is equivalent to `mymeasure[“Width”]`. This alternative syntax might be useful when referencing properties dynamically through the code.
+* An alternative syntax for properties is to use the property name as a string table index with the object as a table. For example, the syntax `mymeasure.Width` is equivalent to `mymeasure["Width"]`. This alternative syntax might be useful when referencing properties dynamically through the code.
 
 (Most of this content was copied from [Jari Williamsson's site](http://jwmusic.nu/jwplugins/wiki/doku.php?id=jwlua:development) and will be removed or revised if so requested.)
