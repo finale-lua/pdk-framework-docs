@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
    </div>
   </td>
  </tr>
@@ -1469,7 +1469,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Overloaded version of <a class="el" href="class_f_c_grids_guides_prefs.html#acf605760922efd7f8078a86d2ec8a3fb" title="Overloaded version of Save().">Save()</a>. </p>
-<p >In addition to the standard data saving, it also handles the saving of the guides, if they have been changed. </p>
+<p >In addition to the standard data saving, it also handles the saving of the guides, if they have been changed.</p>
+<p >Due to a bug in Finale 26.2 and higher, you should use <a class="el" href="class_f_c_guides.html#a399f56c0cfe90b18ecb6d638bf0d5934" title="Saves the guides in Finale 26.2 and higher.">FCGuides::SaveAll</a> to save guides when running in those Finale versions. If you need to save <a class="el" href="class_f_c_grids_guides_prefs.html" title="Class for document preferences related to guides and grids.">FCGridsGuidesPrefs</a> as well, do it in a separate Undo block from saving the guides. Note that this function still attempts to save the guides in Finale 26.2 and higher. (One hopes the bug might be fixed in the future.) Therefore the safest approach for this workaround is probably to reload <a class="el" href="class_f_c_grids_guides_prefs.html" title="Class for document preferences related to guides and grids.">FCGridsGuidesPrefs</a> before saving it, after saving the guides. </p>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_prefs_base.html#a386d5c4d2cf5c45ce6333581cf1462f4">__FCPrefsBase</a>.</p>
 
@@ -2183,7 +2184,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 14 2022 08:12:28 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Feb 1 2022 08:29:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

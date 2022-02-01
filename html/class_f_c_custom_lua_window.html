@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.59</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
    </div>
   </td>
  </tr>
@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a04daf21c47505b43b39bac5d81e84a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a2a04daf21c47505b43b39bac5d81e84a">RegisterInitWindow</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a2a04daf21c47505b43b39bac5d81e84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a6249cc15838787417119d3e7bd719454" title="Virtual handler method that is called when a window just has been created, but not yet shown.">InitWindow()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a2a04daf21c47505b43b39bac5d81e84a">More...</a><br /></td></tr>
 <tr class="separator:a2a04daf21c47505b43b39bac5d81e84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99161b9d5491f62dbe768115d8d8a49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aa99161b9d5491f62dbe768115d8d8a49">RegisterCloseWindow</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:aa99161b9d5491f62dbe768115d8d8a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f" title="Virtual handler method that is called when a window is closing. The Lua handler is called first.">CloseWindow()</a> event handler.  <a href="class_f_c_custom_lua_window.html#aa99161b9d5491f62dbe768115d8d8a49">More...</a><br /></td></tr>
+<tr class="separator:aa99161b9d5491f62dbe768115d8d8a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85578f7b660f9d6b037568a8728388f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a85578f7b660f9d6b037568a8728388f1">RegisterHandleTimer</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a85578f7b660f9d6b037568a8728388f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb" title="Virtual handler method that is called for each timer event.">HandleTimer()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a85578f7b660f9d6b037568a8728388f1">More...</a><br /></td></tr>
 <tr class="separator:a85578f7b660f9d6b037568a8728388f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6249cc15838787417119d3e7bd719454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a6249cc15838787417119d3e7bd719454">InitWindow</a> () override</td></tr>
 <tr class="memdesc:a6249cc15838787417119d3e7bd719454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a window just has been created, but not yet shown.  <a href="class_f_c_custom_lua_window.html#a6249cc15838787417119d3e7bd719454">More...</a><br /></td></tr>
 <tr class="separator:a6249cc15838787417119d3e7bd719454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95064c4c4c43fc2019fec781ff51812f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f">CloseWindow</a> () override</td></tr>
+<tr class="memdesc:a95064c4c4c43fc2019fec781ff51812f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a window is closing. The Lua handler is called first.  <a href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f">More...</a><br /></td></tr>
+<tr class="separator:a95064c4c4c43fc2019fec781ff51812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb">HandleTimer</a> (twobyte timerID) override</td></tr>
 <tr class="memdesc:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called for each timer event.  <a href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb">More...</a><br /></td></tr>
 <tr class="separator:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +243,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyWindow</b> ()<
 <tr class="memdesc:a6e83710c3b07f45b0bef215b19ba2424 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the window. Mainly for internal use. <br  />
  <br /></td></tr>
 <tr class="separator:a6e83710c3b07f45b0bef215b19ba2424 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4df390877321e0f1133d9d13415d53 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_resource_window.html#a6d4df390877321e0f1133d9d13415d53">CloseWindow</a> () override</td></tr>
-<tr class="memdesc:a6d4df390877321e0f1133d9d13415d53 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the window. This method is usually not overridden. Use methods like <a class="el" href="class_____f_c_user_window.html#a752ea07d70bda71e6811014dfd276d67" title="Virtual method that decides if the window can close or not.">CanClose()</a> instead.  <a href="class_f_c_resource_window.html#a6d4df390877321e0f1133d9d13415d53">More...</a><br /></td></tr>
-<tr class="separator:a6d4df390877321e0f1133d9d13415d53 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622cb1d4ea9847c17150da1bff7160f2 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="a622cb1d4ea9847c17150da1bff7160f2" name="a622cb1d4ea9847c17150da1bff7160f2"></a>
 <a class="el" href="class_____f_c_user_window.html">__FCUserWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetParent</b> ()</td></tr>
 <tr class="memdesc:a622cb1d4ea9847c17150da1bff7160f2 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent window object. <br /></td></tr>
@@ -462,30 +465,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisible</b> ()</td>
 <tr class="memitem:a624bf8a8c19db0f267d35fddb08b90aa inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a624bf8a8c19db0f267d35fddb08b90aa">RestorePosition</a> ()</td></tr>
 <tr class="memdesc:a624bf8a8c19db0f267d35fddb08b90aa inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the window's position and size (if the size is stored).  <a href="class_____f_c_user_window.html#a624bf8a8c19db0f267d35fddb08b90aa">More...</a><br /></td></tr>
 <tr class="separator:a624bf8a8c19db0f267d35fddb08b90aa inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad09465d9e4ee4910ce65ef8f563b2a4c inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="ad09465d9e4ee4910ce65ef8f563b2a4c" name="ad09465d9e4ee4910ce65ef8f563b2a4c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRestorePositionData</b> (float x, float y, float width, float height)</td></tr>
-<tr class="memdesc:ad09465d9e4ee4910ce65ef8f563b2a4c inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the restore position and size. <br /></td></tr>
+<tr class="memitem:ad09465d9e4ee4910ce65ef8f563b2a4c inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#ad09465d9e4ee4910ce65ef8f563b2a4c">SetRestorePositionData</a> (float x, float y, float width, float height)</td></tr>
+<tr class="memdesc:ad09465d9e4ee4910ce65ef8f563b2a4c inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the restore position and size.  <a href="class_____f_c_user_window.html#ad09465d9e4ee4910ce65ef8f563b2a4c">More...</a><br /></td></tr>
 <tr class="separator:ad09465d9e4ee4910ce65ef8f563b2a4c inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9f085cd4d7fe7fc795f616bafd865d2 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="af9f085cd4d7fe7fc795f616bafd865d2" name="af9f085cd4d7fe7fc795f616bafd865d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRestorePositionOnlyData</b> (float x, float y)</td></tr>
-<tr class="memdesc:af9f085cd4d7fe7fc795f616bafd865d2 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the restore position, but with no size. <br /></td></tr>
+<tr class="memitem:af9f085cd4d7fe7fc795f616bafd865d2 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#af9f085cd4d7fe7fc795f616bafd865d2">SetRestorePositionOnlyData</a> (float x, float y)</td></tr>
+<tr class="memdesc:af9f085cd4d7fe7fc795f616bafd865d2 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the restore position, but with no size.  <a href="class_____f_c_user_window.html#af9f085cd4d7fe7fc795f616bafd865d2">More...</a><br /></td></tr>
 <tr class="separator:af9f085cd4d7fe7fc795f616bafd865d2 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabf7ca611bd4c7f96828708c1b774558 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="aabf7ca611bd4c7f96828708c1b774558" name="aabf7ca611bd4c7f96828708c1b774558"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStoredX</b> ()</td></tr>
-<tr class="memdesc:aabf7ca611bd4c7f96828708c1b774558 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored horizonal position, for use in the restore feature. <br /></td></tr>
-<tr class="separator:aabf7ca611bd4c7f96828708c1b774558 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65dba0e924d762856a2395104d12e40d inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a65dba0e924d762856a2395104d12e40d" name="a65dba0e924d762856a2395104d12e40d"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStoredY</b> ()</td></tr>
-<tr class="memdesc:a65dba0e924d762856a2395104d12e40d inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored vertical position, for use in the restore feature. <br /></td></tr>
-<tr class="separator:a65dba0e924d762856a2395104d12e40d inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f6782f3600214802fc2e84736ab9562 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a4f6782f3600214802fc2e84736ab9562" name="a4f6782f3600214802fc2e84736ab9562"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStoredWidth</b> ()</td></tr>
-<tr class="memdesc:a4f6782f3600214802fc2e84736ab9562 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored width. -1 if no width has been stored. <br /></td></tr>
-<tr class="separator:a4f6782f3600214802fc2e84736ab9562 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba436e985b6043670b7c4893e33b50ea inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="aba436e985b6043670b7c4893e33b50ea" name="aba436e985b6043670b7c4893e33b50ea"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetStoredHeight</b> ()</td></tr>
-<tr class="memdesc:aba436e985b6043670b7c4893e33b50ea inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored height. -1 if no height has been stored. <br /></td></tr>
-<tr class="separator:aba436e985b6043670b7c4893e33b50ea inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b755de0e3a7a88cc6d9d03ae1783a84 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a6b755de0e3a7a88cc6d9d03ae1783a84">GetStoredX</a> () const</td></tr>
+<tr class="memdesc:a6b755de0e3a7a88cc6d9d03ae1783a84 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored horizonal position, for use in the restore feature.  <a href="class_____f_c_user_window.html#a6b755de0e3a7a88cc6d9d03ae1783a84">More...</a><br /></td></tr>
+<tr class="separator:a6b755de0e3a7a88cc6d9d03ae1783a84 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0dec923a8cd6ad961f1f6187b98eda7 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#ac0dec923a8cd6ad961f1f6187b98eda7">GetStoredY</a> () const</td></tr>
+<tr class="memdesc:ac0dec923a8cd6ad961f1f6187b98eda7 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored vertical position, for use in the restore feature.  <a href="class_____f_c_user_window.html#ac0dec923a8cd6ad961f1f6187b98eda7">More...</a><br /></td></tr>
+<tr class="separator:ac0dec923a8cd6ad961f1f6187b98eda7 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3c12635b0b07cf18f57cfc1fdb378c inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a6e3c12635b0b07cf18f57cfc1fdb378c">GetStoredWidth</a> () const</td></tr>
+<tr class="memdesc:a6e3c12635b0b07cf18f57cfc1fdb378c inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored width. -1 if no width has been stored.  <a href="class_____f_c_user_window.html#a6e3c12635b0b07cf18f57cfc1fdb378c">More...</a><br /></td></tr>
+<tr class="separator:a6e3c12635b0b07cf18f57cfc1fdb378c inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed0016a02544fbf144e79326d7010d1 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a0ed0016a02544fbf144e79326d7010d1">GetStoredHeight</a> () const</td></tr>
+<tr class="memdesc:a0ed0016a02544fbf144e79326d7010d1 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stored height. -1 if no height has been stored.  <a href="class_____f_c_user_window.html#a0ed0016a02544fbf144e79326d7010d1">More...</a><br /></td></tr>
+<tr class="separator:a0ed0016a02544fbf144e79326d7010d1 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d22ce91eda46f156cfc744dbecc4ac inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a31d22ce91eda46f156cfc744dbecc4ac" name="a31d22ce91eda46f156cfc744dbecc4ac"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsWindowshade</b> ()</td></tr>
 <tr class="memdesc:a31d22ce91eda46f156cfc744dbecc4ac inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the window is in window shade mode. <br /></td></tr>
@@ -1051,6 +1048,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a95064c4c4c43fc2019fec781ff51812f" name="a95064c4c4c43fc2019fec781ff51812f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95064c4c4c43fc2019fec781ff51812f">&#9670;&nbsp;</a></span>CloseWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::CloseWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when a window is closing. The Lua handler is called first. </p>
+<p >Lua-supported through a callback function. </p>
+
+<p>Reimplemented from <a class="el" href="class_f_c_resource_window.html#a6d4df390877321e0f1133d9d13415d53">FCResourceWindow</a>.</p>
+
+</div>
+</div>
 <a id="ab1cb54662cbdec351cae106e5a3a480f" name="ab1cb54662cbdec351cae106e5a3a480f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1cb54662cbdec351cae106e5a3a480f">&#9670;&nbsp;</a></span>HandleCommand()</h2>
 
@@ -1359,6 +1386,42 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported through a callback function. </p>
 
 <p>Reimplemented from <a class="el" href="class_f_c_custom_window.html#a7dfeec59b97963f8c7939f0d893f05c4">FCCustomWindow</a>.</p>
+
+</div>
+</div>
+<a id="aa99161b9d5491f62dbe768115d8d8a49" name="aa99161b9d5491f62dbe768115d8d8a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99161b9d5491f62dbe768115d8d8a49">&#9670;&nbsp;</a></span>RegisterCloseWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterCloseWindow </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f" title="Virtual handler method that is called when a window is closing. The Lua handler is called first.">CloseWindow()</a> event handler. </p>
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a6249cc15838787417119d3e7bd719454" title="Virtual handler method that is called when a window just has been created, but not yet shown.">InitWindow</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
 
 </div>
 </div>
@@ -1742,7 +1805,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">global_dialog:RegisterHandleControlEvent (</div>
 <div class="line">    hello_world_button,</div>
 <div class="line">    function(control)</div>
-<div class="line">        -- if this modifies the Finale document, first call finenv.StartNewUndoBlock(&quot;My Undo Text&quot;)</div>
+<div class="line">        -- if this modifies the Finale document, first call finenv.StartNewUndoBlock(&quot;My Undo Text&quot;, false)</div>
 <div class="line">        finenv.UI():AlertInfo(&quot;Hello World&quot;, &quot;&quot;) -- replace this with something productive</div>
 <div class="line">        -- if updates were successful, call finenv.EndUndoBlock(true)</div>
 <div class="line">        -- if updates were not successful, call finenv.EndUndoBlock(false)</div>
@@ -1758,7 +1821,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 14 2022 08:12:24 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Feb 1 2022 08:29:02 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

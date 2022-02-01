@@ -170,7 +170,7 @@ var searchData=
   ['close_167',['Close',['../class_f_c_document.html#a00bfd4a1eee13886cbef3ba1eb88c036',1,'FCDocument::Close()'],['../class_f_c_p_d_f_writer.html#a57d32422c1587364ba7798ddf0b5b60e',1,'FCPDFWriter::Close()'],['../class_f_c_file_stream.html#a9fcca66db52c3f0ba746807479676468',1,'FCFileStream::Close()']]],
   ['closebuttonpressed_168',['CloseButtonPressed',['../class_____f_c_user_window.html#a465a2939c1f15b254269e990b59e7020',1,'__FCUserWindow']]],
   ['closecurrentdocumentwindow_169',['CloseCurrentDocumentWindow',['../class_f_c_document.html#a3d011a4266d03d9a04c0a2e2d617025d',1,'FCDocument']]],
-  ['closewindow_170',['CloseWindow',['../class_____f_c_user_window.html#a6d399c70058aa570fdbc2552d5bd7b4a',1,'__FCUserWindow::CloseWindow()'],['../class_f_c_resource_window.html#a6d4df390877321e0f1133d9d13415d53',1,'FCResourceWindow::CloseWindow()']]],
+  ['closewindow_170',['CloseWindow',['../class_____f_c_user_window.html#a6d399c70058aa570fdbc2552d5bd7b4a',1,'__FCUserWindow::CloseWindow()'],['../class_f_c_resource_window.html#a6d4df390877321e0f1133d9d13415d53',1,'FCResourceWindow::CloseWindow()'],['../class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f',1,'FCCustomLuaWindow::CloseWindow()']]],
   ['cmdmodkey_5falt_171',['CMDMODKEY_ALT',['../class_____f_c_user_window.html#af07ed05132bac987ff3acab63a001e47ae741fa748fc87a22f40b1f98e21c817e',1,'__FCUserWindow']]],
   ['cmdmodkey_5fcommand_172',['CMDMODKEY_COMMAND',['../class_____f_c_user_window.html#af07ed05132bac987ff3acab63a001e47af2c5b5c8ac718771f37a98a8aa64b663',1,'__FCUserWindow']]],
   ['cmdmodkey_5fctrl_173',['CMDMODKEY_CTRL',['../class_____f_c_user_window.html#af07ed05132bac987ff3acab63a001e47a71a939cf7bba916a9d3c80c488854e7a',1,'__FCUserWindow']]],
