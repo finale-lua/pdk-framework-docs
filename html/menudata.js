@@ -120,4 +120,5 @@ var menudata={children:[
 {text:"s",url:"functions_eval_s.html#index_s"},
 {text:"t",url:"functions_eval_t.html#index_t"},
 {text:"u",url:"functions_eval_u.html#index_u"},
+{text:"v",url:"functions_eval_v.html#index_v"},
 {text:"y",url:"functions_eval_y.html#index_y"}]}]}]}]}

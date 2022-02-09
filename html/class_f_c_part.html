@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61b1</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Class that represent one part in a document. The class also provides methods to switch between parts.  
+<p>Class that represents one part in a document. The class also provides methods to switch between parts.  
  <a href="class_f_c_part.html#details">More...</a></p>
 
 <p><code>#include &lt;ff_parts.h&gt;</code></p>
@@ -193,59 +193,61 @@ Public Types</h2></td></tr>
 , <b>FCID_PARTEXTRACTPREFS</b>
 , <br />
 &#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
 , <br />
-&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
 , <b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
 , <b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
 , <b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
 , <b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSYSTEM</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
 , <b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <br />
-&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
 , <b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTBLOCK</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
 , <b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
 , <br />
-&#160;&#160;<b>FCID_TIEMOD</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
 , <b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
 , <b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+, <br />
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -695,7 +697,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <tr class="separator:a46738377792b605baa81dec7fc18ca67 inherit pro_attribs_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class that represent one part in a document. The class also provides methods to switch between parts. </p>
+<div class="textblock"><p >Class that represents one part in a document. The class also provides methods to switch between parts. </p>
 <p >Finale allows other parts than the currently visible part to get the editing focus. If the <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">SwitchTo</a> method is used, make <b>absolutely sure</b> that a <a class="el" href="class_f_c_part.html#a26764360703ff180d3972fbc6a7111a0" title="Switches back yo the &quot;original&quot; current part, that was in focus at the call to SwitchTo.">SwitchBack</a> call follows! </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a2dc3448d01aacab340a20bddf6fe3aee" name="a2dc3448d01aacab340a20bddf6fe3aee"></a>
@@ -1780,7 +1782,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 1 2022 08:29:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Feb 8 2022 14:41:19 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
