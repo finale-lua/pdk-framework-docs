@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61</span>
    </div>
   </td>
  </tr>
@@ -992,7 +992,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the Beaming Style mode where the beam data will be "active". This mode is controlled by Document Options/Beams. </p>
-<p >Lua-supported (also as read-only property) (0.55).</p>
+<p >Lua-supported (also as property) (0.55).</p>
 <dl class="section return"><dt>Returns</dt><dd>One of the BEAMSTYLE_ constants.<ul>
 <li>Mode 0 (BEAMSTYLE_ENDNOTESONLY) is "Base Slope on End Notes Only"</li>
 <li>Mode 1 (BEAMSTYLE_FLATTENALL) is "Flatten All Beams"</li>
@@ -1411,12 +1411,14 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the Beaming Style mode where the beam data will be "active". This mode is controlled by Document Options/Beams (the <a class="el" href="class_f_c_misc_doc_prefs.html#aed64e3725e359711efd3c3dc4ab83bf2" title="Returns the beam slope style.">FCMiscDocPrefs::GetBeamSlopeStyle</a> method). </p>
+<p >Since the beam data will not be active (<em>i.e.</em>, visible) unless its mode matches the saved mode in <a class="el" href="class_f_c_misc_doc_prefs.html#aed64e3725e359711efd3c3dc4ab83bf2" title="Returns the beam slope style.">FCMiscDocPrefs::GetBeamSlopeStyle</a>, you should generally prefer <a class="el" href="class_f_c_beam_mod.html#a4972397503ccd65b72787bf4bb021cfd" title="Sets the beaming mode of the beam to document&#39;s default.">SetDefaultMode</a> to this method. However, in a case where you already know the mode you need and wish to change a collection of <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a> in one batch, you can use this method instead for a slight gain in efficiency. You can also, of course, make the <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a> intentionally inactive by changing the mode to a different value here.</p>
 <ul>
 <li>Mode 0 (BEAMSTYLE_ENDNOTESONLY) is "Base Slope on End Notes Only"</li>
 <li>Mode 1 (BEAMSTYLE_FLATTENALL) is "Flatten All Beams"</li>
 <li>Mode 2 (BEAMSTYLE_FLATTENSTANDARD) is "Flatten Beams Based on Standard Note"</li>
 <li>Mode 3 (BEAMSTYLE_FLATTENEXTREME) is "Flatten Beams Based on Extreme Note"</li>
 </ul>
+<p >Lua-supported (also as property) (0.61).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Valid values are 0-3. </td></tr>
@@ -1552,7 +1554,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 8 2022 14:41:04 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Mar 1 2022 10:42:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61</span>
    </div>
   </td>
  </tr>
@@ -1084,6 +1084,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Loads the metrics for the string and font. </p>
+<p ><b>WARNING for C/C++ programmers</b>:<br  />
+ Visual Studio (Win) converts "LoadString" to "LoadStringA" or "LoadStringW", depending on your Character Set setting. (Or you can suppress this by undefining the <code>LoadString</code> macro.) However, as long as all callers compile with the same Character Set, you will likely not notice.</p>
+<p >For Lua scripts it is always "LoadString".</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1146,7 +1149,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 8 2022 14:41:21 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Mar 1 2022 10:43:19 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
