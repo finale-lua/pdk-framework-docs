@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61</span>
    </div>
   </td>
  </tr>
@@ -276,6 +276,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToPascal</b> (
 <tr class="memitem:a84d145b7b1215627dfcc475024854307"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a84d145b7b1215627dfcc475024854307">GetCString</a> () const</td></tr>
 <tr class="memdesc:a84d145b7b1215627dfcc475024854307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a C-string version of the string.  <a href="class_f_c_string.html#a84d145b7b1215627dfcc475024854307">More...</a><br /></td></tr>
 <tr class="separator:a84d145b7b1215627dfcc475024854307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69a43f6e984545f566a435dad049d70"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae69a43f6e984545f566a435dad049d70">GetLuaString</a> () const</td></tr>
+<tr class="memdesc:ae69a43f6e984545f566a435dad049d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a Lua version of the string in UTF-8 format.  <a href="class_f_c_string.html#ae69a43f6e984545f566a435dad049d70">More...</a><br /></td></tr>
+<tr class="separator:ae69a43f6e984545f566a435dad049d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47eab741bc102d5ccdb5aa2fdd116bf4"><td class="memItemLeft" align="right" valign="top"><a id="a47eab741bc102d5ccdb5aa2fdd116bf4" name="a47eab741bc102d5ccdb5aa2fdd116bf4"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetUTF8String</b> () const</td></tr>
 <tr class="memdesc:a47eab741bc102d5ccdb5aa2fdd116bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a C-string UTF-8 version of the string. <br /></td></tr>
@@ -391,6 +394,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEqualCString</b> (c
 <tr class="memdesc:a58ed5724014e79f1d7b0304b4538b475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string, using a C-string version of the string. <br  />
   <a href="class_f_c_string.html#a58ed5724014e79f1d7b0304b4538b475">More...</a><br /></td></tr>
 <tr class="separator:a58ed5724014e79f1d7b0304b4538b475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067a72353fcc8aa3b2f7cd263401564d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a067a72353fcc8aa3b2f7cd263401564d">SetLuaString</a> (const char *pszBuffer)</td></tr>
+<tr class="memdesc:a067a72353fcc8aa3b2f7cd263401564d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string, using a Lua string version of the string (as UTF-8).  <a href="class_f_c_string.html#a067a72353fcc8aa3b2f7cd263401564d">More...</a><br /></td></tr>
+<tr class="separator:a067a72353fcc8aa3b2f7cd263401564d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8ab3b9a3475139a644c0518a302a438"><td class="memItemLeft" align="right" valign="top"><a id="aa8ab3b9a3475139a644c0518a302a438" name="aa8ab3b9a3475139a644c0518a302a438"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUTF8String</b> (const char *pszBuffer)</td></tr>
 <tr class="memdesc:aa8ab3b9a3475139a644c0518a302a438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string, using a UTF8 C-style string. <br /></td></tr>
@@ -682,59 +688,61 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_PARTEXTRACTPREFS</b>
 , <br />
 &#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
 , <br />
-&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
 , <b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
 , <b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
 , <b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
 , <b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSYSTEM</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
 , <b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <br />
-&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
 , <b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTBLOCK</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
 , <b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
 , <br />
-&#160;&#160;<b>FCID_TIEMOD</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
 , <b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
 , <b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+, <br />
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -2199,6 +2207,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae69a43f6e984545f566a435dad049d70" name="ae69a43f6e984545f566a435dad049d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69a43f6e984545f566a435dad049d70">&#9670;&nbsp;</a></span>GetLuaString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * FCString::GetLuaString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a Lua version of the string in UTF-8 format. </p>
+<p >Lua-supported (also as property).</p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a Lua version of the string in UTF-8 format. This pointer is permanent until GetLuaString is called again, or until the string object is destroyed. </dd></dl>
+
+</div>
+</div>
 <a id="a4d07ffc2ed8416efb8f4e64605eb6e23" name="a4d07ffc2ed8416efb8f4e64605eb6e23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d07ffc2ed8416efb8f4e64605eb6e23">&#9670;&nbsp;</a></span>GetMeasurement()</h2>
 
@@ -3325,6 +3354,41 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a067a72353fcc8aa3b2f7cd263401564d" name="a067a72353fcc8aa3b2f7cd263401564d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067a72353fcc8aa3b2f7cd263401564d">&#9670;&nbsp;</a></span>SetLuaString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCString::SetLuaString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszBuffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the string, using a Lua string version of the string (as UTF-8). </p>
+<p >Lua-supported (also as property).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pszBuffer</td><td>Pointer to a UTF-8 Lua string character buffer. If it's NULL, an empty string will be created. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a70ac1239dd30806a8386820a15b57c5f" name="a70ac1239dd30806a8386820a15b57c5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70ac1239dd30806a8386820a15b57c5f">&#9670;&nbsp;</a></span>SetMeasurement()</h2>
 
@@ -4068,7 +4132,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 1 2022 08:29:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Mar 1 2022 10:43:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

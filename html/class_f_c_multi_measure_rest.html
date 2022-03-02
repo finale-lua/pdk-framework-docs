@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1622c3eeea5dc09839345b92e1a6cb7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of measures for the "Use symbols for rests
 less than" option.  <a href="class_f_c_multi_measure_rest.html#a1622c3eeea5dc09839345b92e1a6cb7c">More...</a><br /></td></tr>
 <tr class="separator:a1622c3eeea5dc09839345b92e1a6cb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e26791e1c3819606526786aaa86a1d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest.html#a5e26791e1c3819606526786aaa86a1d0">GetStretchHorizontally</a> () const</td></tr>
+<tr class="memdesc:a5e26791e1c3819606526786aaa86a1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if shape should be stretched horizontally for the MM rest.  <a href="class_f_c_multi_measure_rest.html#a5e26791e1c3819606526786aaa86a1d0">More...</a><br /></td></tr>
+<tr class="separator:a5e26791e1c3819606526786aaa86a1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73107d3650c804e00e9a71575174ffa8"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest.html#a73107d3650c804e00e9a71575174ffa8">GetShapeEndAdjust</a> () const</td></tr>
 <tr class="memdesc:a73107d3650c804e00e9a71575174ffa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the right-side adjustment for multimeasure shapes.  <a href="class_f_c_multi_measure_rest.html#a73107d3650c804e00e9a71575174ffa8">More...</a><br /></td></tr>
 <tr class="separator:a73107d3650c804e00e9a71575174ffa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,9 @@ less than" option.  <a href="class_f_c_multi_measure_rest.html#a1622c3eeea5dc098
 <tr class="memdesc:aad8cd15a76134d7a8baebee18dacae09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of measures for the "Use symbols for rests
 less than" option.  <a href="class_f_c_multi_measure_rest.html#aad8cd15a76134d7a8baebee18dacae09">More...</a><br /></td></tr>
 <tr class="separator:aad8cd15a76134d7a8baebee18dacae09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa04bc8f18ce4fb65b3af8d820bf536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest.html#a5aa04bc8f18ce4fb65b3af8d820bf536">SetStretchHorizontally</a> (bool value)</td></tr>
+<tr class="memdesc:a5aa04bc8f18ce4fb65b3af8d820bf536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if shape should be stretched horizontally for the MM rest.  <a href="class_f_c_multi_measure_rest.html#a5aa04bc8f18ce4fb65b3af8d820bf536">More...</a><br /></td></tr>
+<tr class="separator:a5aa04bc8f18ce4fb65b3af8d820bf536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9073addc904155def24f52545404d700"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest.html#a9073addc904155def24f52545404d700">SetSymbolSpace</a> (twobyte space)</td></tr>
 <tr class="memdesc:a9073addc904155def24f52545404d700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the space between multimeasure rest symbols.  <a href="class_f_c_multi_measure_rest.html#a9073addc904155def24f52545404d700">More...</a><br /></td></tr>
 <tr class="separator:a9073addc904155def24f52545404d700"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -515,59 +521,61 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_PARTEXTRACTPREFS</b>
 , <br />
 &#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
 , <br />
-&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
 , <b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
 , <b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
 , <b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
 , <b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSYSTEM</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
 , <b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <br />
-&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
 , <b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTBLOCK</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
 , <b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
 , <br />
-&#160;&#160;<b>FCID_TIEMOD</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
 , <b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
 , <b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+, <br />
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -1049,6 +1057,27 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a5e26791e1c3819606526786aaa86a1d0" name="a5e26791e1c3819606526786aaa86a1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e26791e1c3819606526786aaa86a1d0">&#9670;&nbsp;</a></span>GetStretchHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCMultiMeasureRest::GetStretchHorizontally </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns if shape should be stretched horizontally for the MM rest. </p>
+<p >In versions of Finale before Finale 27.2, this value is always <code>true</code>.</p>
+<p >Lua-supported (also as property) (0.61). </p>
+
+</div>
+</div>
 <a id="a8cf80ec8e5a7a7dc490d8a13e9cd032e" name="a8cf80ec8e5a7a7dc490d8a13e9cd032e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cf80ec8e5a7a7dc490d8a13e9cd032e">&#9670;&nbsp;</a></span>GetSymbolSpace()</h2>
 
@@ -1479,6 +1508,28 @@ less than" option. </p>
 
 </div>
 </div>
+<a id="a5aa04bc8f18ce4fb65b3af8d820bf536" name="a5aa04bc8f18ce4fb65b3af8d820bf536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa04bc8f18ce4fb65b3af8d820bf536">&#9670;&nbsp;</a></span>SetStretchHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCMultiMeasureRest::SetStretchHorizontally </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if shape should be stretched horizontally for the MM rest. </p>
+<p >Changing this value has no effect in versions of Finale before 27.2.</p>
+<p >Lua-supported (also as property) (0.61). </p>
+
+</div>
+</div>
 <a id="a9073addc904155def24f52545404d700" name="a9073addc904155def24f52545404d700"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9073addc904155def24f52545404d700">&#9670;&nbsp;</a></span>SetSymbolSpace()</h2>
 
@@ -1599,7 +1650,7 @@ less than" option. </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 1 2022 08:29:10 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Mar 1 2022 10:43:04 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e3fac7666cf378ad11c9cdab39601a8"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest_prefs.html#a7e3fac7666cf378ad11c9cdab39601a8">GetUseSymbolsLessThan</a> () const</td></tr>
 <tr class="memdesc:a7e3fac7666cf378ad11c9cdab39601a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the threshold measure where symbols should be used instead of shapes.  <a href="class_f_c_multi_measure_rest_prefs.html#a7e3fac7666cf378ad11c9cdab39601a8">More...</a><br /></td></tr>
 <tr class="separator:a7e3fac7666cf378ad11c9cdab39601a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62da394c6f4da54e7f291ef2ea5102c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest_prefs.html#a62da394c6f4da54e7f291ef2ea5102c4">GetStretchHorizontally</a> () const</td></tr>
+<tr class="memdesc:a62da394c6f4da54e7f291ef2ea5102c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if shape should be stretched horizontally for MM rests.  <a href="class_f_c_multi_measure_rest_prefs.html#a62da394c6f4da54e7f291ef2ea5102c4">More...</a><br /></td></tr>
+<tr class="separator:a62da394c6f4da54e7f291ef2ea5102c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c44d9cda546523404178f4a45b0a37"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest_prefs.html#a78c44d9cda546523404178f4a45b0a37">GetStartNumberingAt</a> () const</td></tr>
 <tr class="memdesc:a78c44d9cda546523404178f4a45b0a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the threshold number where mm rests should start to be created.  <a href="class_f_c_multi_measure_rest_prefs.html#a78c44d9cda546523404178f4a45b0a37">More...</a><br /></td></tr>
 <tr class="separator:a78c44d9cda546523404178f4a45b0a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc1efff5c1d4897ea10a44d8db12b189"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest_prefs.html#abc1efff5c1d4897ea10a44d8db12b189">SetUseSymbolsLessThan</a> (twobyte value)</td></tr>
 <tr class="memdesc:abc1efff5c1d4897ea10a44d8db12b189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the threshold measure where symbols should be used instead of shapes.  <a href="class_f_c_multi_measure_rest_prefs.html#abc1efff5c1d4897ea10a44d8db12b189">More...</a><br /></td></tr>
 <tr class="separator:abc1efff5c1d4897ea10a44d8db12b189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa004dbb7b617a2c62cca3aeef86eebee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest_prefs.html#aa004dbb7b617a2c62cca3aeef86eebee">SetStretchHorizontally</a> (bool value)</td></tr>
+<tr class="memdesc:aa004dbb7b617a2c62cca3aeef86eebee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if shape should be stretched horizontally for MM rests.  <a href="class_f_c_multi_measure_rest_prefs.html#aa004dbb7b617a2c62cca3aeef86eebee">More...</a><br /></td></tr>
+<tr class="separator:aa004dbb7b617a2c62cca3aeef86eebee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c78182b2c2bbf61365d425f5d12a370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_multi_measure_rest_prefs.html#a4c78182b2c2bbf61365d425f5d12a370">SetStartNumberingAt</a> (twobyte value)</td></tr>
 <tr class="memdesc:a4c78182b2c2bbf61365d425f5d12a370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the threshold number where mm rests should start to be created.  <a href="class_f_c_multi_measure_rest_prefs.html#a4c78182b2c2bbf61365d425f5d12a370">More...</a><br /></td></tr>
 <tr class="separator:a4c78182b2c2bbf61365d425f5d12a370"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,59 +470,61 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_PARTEXTRACTPREFS</b>
 , <br />
 &#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
 , <br />
-&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
 , <b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
 , <b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
 , <b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
 , <b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSYSTEM</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
 , <b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <br />
-&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
 , <b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTBLOCK</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
 , <b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
 , <br />
-&#160;&#160;<b>FCID_TIEMOD</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
 , <b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
 , <b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+, <br />
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -984,6 +992,27 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a62da394c6f4da54e7f291ef2ea5102c4" name="a62da394c6f4da54e7f291ef2ea5102c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62da394c6f4da54e7f291ef2ea5102c4">&#9670;&nbsp;</a></span>GetStretchHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCMultiMeasureRestPrefs::GetStretchHorizontally </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns if shape should be stretched horizontally for MM rests. </p>
+<p >In versions of Finale before Finale 27.2, this value is always <code>true</code>.</p>
+<p >Lua-supported (also as property) (0.61). </p>
+
+</div>
+</div>
 <a id="a5a5664466829099e6fe5c192f9f5287e" name="a5a5664466829099e6fe5c192f9f5287e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a5664466829099e6fe5c192f9f5287e">&#9670;&nbsp;</a></span>GetSymbolSpace()</h2>
 
@@ -1306,6 +1335,28 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="aa004dbb7b617a2c62cca3aeef86eebee" name="aa004dbb7b617a2c62cca3aeef86eebee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa004dbb7b617a2c62cca3aeef86eebee">&#9670;&nbsp;</a></span>SetStretchHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCMultiMeasureRestPrefs::SetStretchHorizontally </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets if shape should be stretched horizontally for MM rests. </p>
+<p >Changing this value has no effect in versions of Finale before 27.2.</p>
+<p >Lua-supported (also as property) (0.61). </p>
+
+</div>
+</div>
 <a id="a0f5202d7c4400632c9bb26a2d57c75cd" name="a0f5202d7c4400632c9bb26a2d57c75cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f5202d7c4400632c9bb26a2d57c75cd">&#9670;&nbsp;</a></span>SetSymbolSpace()</h2>
 
@@ -1426,7 +1477,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 1 2022 08:29:10 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Mar 1 2022 10:43:04 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

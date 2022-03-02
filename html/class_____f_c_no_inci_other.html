@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.60</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.61</span>
    </div>
   </td>
  </tr>
@@ -101,18 +101,19 @@ Inheritance diagram for __FCNoInciOther:</div>
 <area href="class_f_c_multi_measure_rest.html" title="Class for a multi-measure rest instance." alt="FCMultiMeasureRest" shape="rect" coords="174,1120,338,1144"/>
 <area href="class_f_c_multi_staff_instrument.html" title="Class for a multi-staff instrument defined in the Score Manager." alt="FCMultiStaffInstrument" shape="rect" coords="174,1176,338,1200"/>
 <area href="class_f_c_page.html" title="The class representing a physical page in Finale." alt="FCPage" shape="rect" coords="174,1232,338,1256"/>
-<area href="class_f_c_part.html" title="Class that represent one part in a document. The class also provides methods to switch between parts." alt="FCPart" shape="rect" coords="174,1288,338,1312"/>
-<area href="class_f_c_percussion_staff.html" title="Class that stores the information for drum mapping, either for a staff or staff style." alt="FCPercussionStaff" shape="rect" coords="174,1344,338,1368"/>
-<area href="class_f_c_shape_def.html" title="Class for a shape definition (as in Finale&#39;s Shape selection dialog)." alt="FCShapeDef" shape="rect" coords="174,1400,338,1424"/>
-<area href="class_f_c_shape_expression_def.html" title="Class for a shape expression definition." alt="FCShapeExpressionDef" shape="rect" coords="174,1456,338,1480"/>
-<area href="class_f_c_smart_shape.html" title="A record that represents a smart shape in the score. It&#39;s connected to a score through FCSmartShapeMe..." alt="FCSmartShape" shape="rect" coords="174,1512,338,1536"/>
-<area href="class_f_c_staff_list.html" title="An object that contains one staff list section (out of 4). Before data is loaded/saved,..." alt="FCStaffList" shape="rect" coords="174,1568,338,1592"/>
-<area href="class_f_c_staff_name_position.html" title="Class for staff (or staff style) name positioning data." alt="FCStaffNamePosition" shape="rect" coords="174,1624,338,1648"/>
-<area href="class_f_c_staff_system.html" title="The class for a staff system on a page." alt="FCStaffSystem" shape="rect" coords="174,1680,338,1704"/>
-<area href="class_f_c_text_block.html" title="Class for a text block." alt="FCTextBlock" shape="rect" coords="174,1736,338,1760"/>
-<area href="class_f_c_text_expression_def.html" title="Class for a text expression definition." alt="FCTextExpressionDef" shape="rect" coords="174,1792,338,1816"/>
-<area href="class_f_c_text_repeat_def.html" title="The class for a text repeat definition." alt="FCTextRepeatDef" shape="rect" coords="174,1848,338,1872"/>
-<area href="class_____f_c_staff_base.html" title="The base class for FCStaff (and its subclass FCCurrentStaffSpec), as well FCStaffStyleDef." alt="__FCStaffBase" shape="rect" coords="174,1904,338,1928"/>
+<area href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts..." alt="FCPart" shape="rect" coords="174,1288,338,1312"/>
+<area href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part." alt="FCPartStaffVoicing" shape="rect" coords="174,1344,338,1368"/>
+<area href="class_f_c_percussion_staff.html" title="Class that stores the information for drum mapping, either for a staff or staff style." alt="FCPercussionStaff" shape="rect" coords="174,1400,338,1424"/>
+<area href="class_f_c_shape_def.html" title="Class for a shape definition (as in Finale&#39;s Shape selection dialog)." alt="FCShapeDef" shape="rect" coords="174,1456,338,1480"/>
+<area href="class_f_c_shape_expression_def.html" title="Class for a shape expression definition." alt="FCShapeExpressionDef" shape="rect" coords="174,1512,338,1536"/>
+<area href="class_f_c_smart_shape.html" title="A record that represents a smart shape in the score. It&#39;s connected to a score through FCSmartShapeMe..." alt="FCSmartShape" shape="rect" coords="174,1568,338,1592"/>
+<area href="class_f_c_staff_list.html" title="An object that contains one staff list section (out of 4). Before data is loaded/saved,..." alt="FCStaffList" shape="rect" coords="174,1624,338,1648"/>
+<area href="class_f_c_staff_name_position.html" title="Class for staff (or staff style) name positioning data." alt="FCStaffNamePosition" shape="rect" coords="174,1680,338,1704"/>
+<area href="class_f_c_staff_system.html" title="The class for a staff system on a page." alt="FCStaffSystem" shape="rect" coords="174,1736,338,1760"/>
+<area href="class_f_c_text_block.html" title="Class for a text block." alt="FCTextBlock" shape="rect" coords="174,1792,338,1816"/>
+<area href="class_f_c_text_expression_def.html" title="Class for a text expression definition." alt="FCTextExpressionDef" shape="rect" coords="174,1848,338,1872"/>
+<area href="class_f_c_text_repeat_def.html" title="The class for a text repeat definition." alt="FCTextRepeatDef" shape="rect" coords="174,1904,338,1928"/>
+<area href="class_____f_c_staff_base.html" title="The base class for FCStaff (and its subclass FCCurrentStaffSpec), as well FCStaffStyleDef." alt="__FCStaffBase" shape="rect" coords="174,1960,338,1984"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -455,59 +456,61 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_PARTEXTRACTPREFS</b>
 , <br />
 &#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
 , <br />
-&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
 , <b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
 , <b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
 , <b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
 , <b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSYSTEM</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
 , <b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <br />
-&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
 , <b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTBLOCK</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
 , <b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
 , <br />
-&#160;&#160;<b>FCID_TIEMOD</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
 , <b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
 , <b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+, <br />
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -642,7 +645,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Reimplemented from <a class="el" href="class_____f_c_other.html#aad17ffaee4f04f49e94da6243202360d">__FCOther</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_shape_def.html#aefc2fa1d647699d618eb1f7c3bee70ad">FCShapeDef</a>, <a class="el" href="class_f_c_enclosure.html#a19c309e16de09b61143dc35e8e65beb7">FCEnclosure</a>, <a class="el" href="class_f_c_page.html#add0c2ec32d680cfe03e3d7afbf3e5e8c">FCPage</a>, <a class="el" href="class_f_c_staff_system.html#a0bcf8336dbb4f2f20f2461df890dba7a">FCStaffSystem</a>, <a class="el" href="class_f_c_measure.html#ae29f39ae0622dc424eca07d256c9ba7c">FCMeasure</a>, <a class="el" href="class_f_c_measure_number_region.html#a2359661268764d9fb6a715cabe2af2a5">FCMeasureNumberRegion</a>, <a class="el" href="class_f_c_percussion_staff.html#a3bd469afb0ca0bf105cb350958d6588c">FCPercussionStaff</a>, <a class="el" href="class_f_c_staff_name_position.html#a920bc798745633bdb3ab1f1b977baa87">FCStaffNamePosition</a>, <a class="el" href="class_____f_c_staff_base.html#ae58fef61c33aa6e77d7cd2b2e1b1e75d">__FCStaffBase</a>, <a class="el" href="class_f_c_staff.html#afb9662a834c24e18d75fba8786a8f9cf">FCStaff</a>, <a class="el" href="class_f_c_current_staff_spec.html#a6a93de9061ddaa946e4afea2e9e2e5dc">FCCurrentStaffSpec</a>, <a class="el" href="class_f_c_articulation_def.html#afaf1ec79eeebf2e5c3242bb8da9ed01a">FCArticulationDef</a>, <a class="el" href="class_f_c_category_def.html#afcddd211958cab30d36beedf28bd23cd">FCCategoryDef</a>, <a class="el" href="class_f_c_freeze_system.html#aa97eb7749ee48aee0ece4239f6815d89">FCFreezeSystem</a>, <a class="el" href="class_f_c_text_expression_def.html#abb1bc66b1c74c613051b24a43f16b37b">FCTextExpressionDef</a>, <a class="el" href="class_f_c_text_block.html#a3736fa7fc3b50b0cc786101f0ac5bbda">FCTextBlock</a>, <a class="el" href="class_f_c_staff_style_def.html#ad7593e469c4cc0e5cd458d7138bec02e">FCStaffStyleDef</a>, <a class="el" href="class_f_c_multi_measure_rest.html#a73bdd330ca16b39d98e1c397a3b1e364">FCMultiMeasureRest</a>, <a class="el" href="class_f_c_multi_staff_instrument.html#af861f393ac5627e5122fbb845bf8ac03">FCMultiStaffInstrument</a>, <a class="el" href="class_f_c_allotment.html#a655d71d0a009f2fcd8db504039c2788c">FCAllotment</a>, <a class="el" href="class_f_c_text_repeat_def.html#a9f5d925f41a4b4cb1212929d684a01c4">FCTextRepeatDef</a>, <a class="el" href="class_f_c_executable_shape_def.html#ae0aa2726f320d1bf458118deccced4c2">FCExecutableShapeDef</a>, <a class="el" href="class_f_c_fretboard_style_def.html#a1d29fa59e941357be83457be85e2dc4a">FCFretboardStyleDef</a>, <a class="el" href="class_f_c_ending_repeat.html#afa15e9ca2109b6696b6857f06a81d6db">FCEndingRepeat</a>, <a class="el" href="class_f_c_backward_repeat.html#abec6130ce3d789647b84c7e939917e96">FCBackwardRepeat</a>, <a class="el" href="class_f_c_instrument_def.html#a006bc6b443c0cd2c029e7811e73fceb0">FCInstrumentDef</a>, <a class="el" href="class_f_c_instrument_playback_data.html#ac9a9f76f5f0d27f9108754c780a6a8e4">FCInstrumentPlaybackData</a>, <a class="el" href="class_f_c_staff_list.html#a5324e04df8354438e90005c4eb98946a">FCStaffList</a>, <a class="el" href="class_f_c_fret_instrument_def.html#af1eb0fa355752f40d8a152a025ccd9dc">FCFretInstrumentDef</a>, <a class="el" href="class_f_c_metatool_assignment.html#acda6ce6c66d9c6a255da1ef44100ab3b">FCMetatoolAssignment</a>, <a class="el" href="class_f_c_part.html#a94a2e3969f396b6233fc7039dd764039">FCPart</a>, <a class="el" href="class_f_c_smart_shape.html#ac462eaf76a71158fd163aaf437f6afe9">FCSmartShape</a>, and <a class="el" href="class_f_c_custom_smart_line_def.html#a615c297df25545def183fc7b87b8ac9c">FCCustomSmartLineDef</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_shape_def.html#aefc2fa1d647699d618eb1f7c3bee70ad">FCShapeDef</a>, <a class="el" href="class_f_c_enclosure.html#a19c309e16de09b61143dc35e8e65beb7">FCEnclosure</a>, <a class="el" href="class_f_c_page.html#add0c2ec32d680cfe03e3d7afbf3e5e8c">FCPage</a>, <a class="el" href="class_f_c_staff_system.html#a0bcf8336dbb4f2f20f2461df890dba7a">FCStaffSystem</a>, <a class="el" href="class_f_c_measure.html#ae29f39ae0622dc424eca07d256c9ba7c">FCMeasure</a>, <a class="el" href="class_f_c_measure_number_region.html#a2359661268764d9fb6a715cabe2af2a5">FCMeasureNumberRegion</a>, <a class="el" href="class_f_c_percussion_staff.html#a3bd469afb0ca0bf105cb350958d6588c">FCPercussionStaff</a>, <a class="el" href="class_f_c_staff_name_position.html#a920bc798745633bdb3ab1f1b977baa87">FCStaffNamePosition</a>, <a class="el" href="class_____f_c_staff_base.html#ae58fef61c33aa6e77d7cd2b2e1b1e75d">__FCStaffBase</a>, <a class="el" href="class_f_c_staff.html#afb9662a834c24e18d75fba8786a8f9cf">FCStaff</a>, <a class="el" href="class_f_c_current_staff_spec.html#a6a93de9061ddaa946e4afea2e9e2e5dc">FCCurrentStaffSpec</a>, <a class="el" href="class_f_c_articulation_def.html#afaf1ec79eeebf2e5c3242bb8da9ed01a">FCArticulationDef</a>, <a class="el" href="class_f_c_category_def.html#afcddd211958cab30d36beedf28bd23cd">FCCategoryDef</a>, <a class="el" href="class_f_c_freeze_system.html#aa97eb7749ee48aee0ece4239f6815d89">FCFreezeSystem</a>, <a class="el" href="class_f_c_text_expression_def.html#abb1bc66b1c74c613051b24a43f16b37b">FCTextExpressionDef</a>, <a class="el" href="class_f_c_text_block.html#a3736fa7fc3b50b0cc786101f0ac5bbda">FCTextBlock</a>, <a class="el" href="class_f_c_staff_style_def.html#ad7593e469c4cc0e5cd458d7138bec02e">FCStaffStyleDef</a>, <a class="el" href="class_f_c_multi_measure_rest.html#a73bdd330ca16b39d98e1c397a3b1e364">FCMultiMeasureRest</a>, <a class="el" href="class_f_c_multi_staff_instrument.html#af861f393ac5627e5122fbb845bf8ac03">FCMultiStaffInstrument</a>, <a class="el" href="class_f_c_allotment.html#a655d71d0a009f2fcd8db504039c2788c">FCAllotment</a>, <a class="el" href="class_f_c_text_repeat_def.html#a9f5d925f41a4b4cb1212929d684a01c4">FCTextRepeatDef</a>, <a class="el" href="class_f_c_executable_shape_def.html#ae0aa2726f320d1bf458118deccced4c2">FCExecutableShapeDef</a>, <a class="el" href="class_f_c_fretboard_style_def.html#a1d29fa59e941357be83457be85e2dc4a">FCFretboardStyleDef</a>, <a class="el" href="class_f_c_ending_repeat.html#afa15e9ca2109b6696b6857f06a81d6db">FCEndingRepeat</a>, <a class="el" href="class_f_c_backward_repeat.html#abec6130ce3d789647b84c7e939917e96">FCBackwardRepeat</a>, <a class="el" href="class_f_c_instrument_def.html#a006bc6b443c0cd2c029e7811e73fceb0">FCInstrumentDef</a>, <a class="el" href="class_f_c_instrument_playback_data.html#ac9a9f76f5f0d27f9108754c780a6a8e4">FCInstrumentPlaybackData</a>, <a class="el" href="class_f_c_staff_list.html#a5324e04df8354438e90005c4eb98946a">FCStaffList</a>, <a class="el" href="class_f_c_fret_instrument_def.html#af1eb0fa355752f40d8a152a025ccd9dc">FCFretInstrumentDef</a>, <a class="el" href="class_f_c_metatool_assignment.html#acda6ce6c66d9c6a255da1ef44100ab3b">FCMetatoolAssignment</a>, <a class="el" href="class_f_c_part.html#a94a2e3969f396b6233fc7039dd764039">FCPart</a>, <a class="el" href="class_f_c_part_staff_voicing.html#a1cb5d30ea71c9543a2d9eb9db7679fab">FCPartStaffVoicing</a>, <a class="el" href="class_f_c_smart_shape.html#ac462eaf76a71158fd163aaf437f6afe9">FCSmartShape</a>, and <a class="el" href="class_f_c_custom_smart_line_def.html#a615c297df25545def183fc7b87b8ac9c">FCCustomSmartLineDef</a>.</p>
 
 </div>
 </div>
@@ -675,7 +678,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Reimplemented from <a class="el" href="class_____f_c_base_data.html#ab13555df57774bb20a736390ad486fad">__FCBaseData</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_shape_def.html#a812eedd7d791be260075ec3a91f6ddc4">FCShapeDef</a>, <a class="el" href="class_f_c_enclosure.html#aa5d0e252b9da04d401c55e4fd9e9e0d9">FCEnclosure</a>, <a class="el" href="class_f_c_page.html#ab99e65411c75b9183fd0ed2cfdcefc8c">FCPage</a>, <a class="el" href="class_f_c_staff_system.html#ae09292f3f456fc8d7ac23ad526883f1d">FCStaffSystem</a>, <a class="el" href="class_f_c_measure_number_region.html#a649bc7def6cf8d757bc477be65c66cc0">FCMeasureNumberRegion</a>, <a class="el" href="class_f_c_percussion_staff.html#a1fe8d0ef5fb729d93667e67560656b7d">FCPercussionStaff</a>, <a class="el" href="class_f_c_staff.html#adf7c998c66edff111697a2628e7178c0">FCStaff</a>, <a class="el" href="class_f_c_articulation_def.html#a2ba393637078726bb427ce8c8a20e6ad">FCArticulationDef</a>, <a class="el" href="class_f_c_category_def.html#afdd4196fe80fbcf84a2334888efc6964">FCCategoryDef</a>, <a class="el" href="class_f_c_freeze_system.html#a5bf04b189fd753b633c693adb226bedb">FCFreezeSystem</a>, <a class="el" href="class_f_c_text_expression_def.html#a97c7585bc8242669426e936489f3d90e">FCTextExpressionDef</a>, <a class="el" href="class_f_c_shape_expression_def.html#a226100c30d70dd5fa1ade973a8b9efc0">FCShapeExpressionDef</a>, <a class="el" href="class_f_c_text_block.html#ac19e01abf3698d2f32b2cdc378a0f0f7">FCTextBlock</a>, <a class="el" href="class_f_c_staff_style_def.html#a2e40ad340c824c6e331a8bd4d71478bc">FCStaffStyleDef</a>, <a class="el" href="class_f_c_multi_measure_rest.html#ae0a57ec452f1b37cee564bfc9b78139c">FCMultiMeasureRest</a>, <a class="el" href="class_f_c_multi_staff_instrument.html#a39ba68058a6ed3c0ea8d9c8ea06982dd">FCMultiStaffInstrument</a>, <a class="el" href="class_f_c_allotment.html#a50a550839878b3f55132a2c0c06b06d9">FCAllotment</a>, <a class="el" href="class_f_c_text_repeat_def.html#af54497ffa9cb10f54a453b07f893880b">FCTextRepeatDef</a>, <a class="el" href="class_f_c_executable_shape_def.html#a1eccc90def00610707dcf074d94e90b5">FCExecutableShapeDef</a>, <a class="el" href="class_f_c_fretboard_style_def.html#a5aa67c1db7488f2abe286abaaac03034">FCFretboardStyleDef</a>, <a class="el" href="class_f_c_instrument_def.html#abc4e0fae78481ee5df7d96e1e9ea1de0">FCInstrumentDef</a>, <a class="el" href="class_f_c_instrument_playback_data.html#a3ba2fa082a60f45a7e4ba0992d3755ba">FCInstrumentPlaybackData</a>, <a class="el" href="class_f_c_staff_list.html#a0a5a71912a31530c555ef7b6de9d7f55">FCStaffList</a>, <a class="el" href="class_f_c_fret_instrument_def.html#a59fadd94cbdcec8c4df60e3384fd36bc">FCFretInstrumentDef</a>, <a class="el" href="class_f_c_metatool_assignment.html#aad2656f852c3af7da09391b2631a08ae">FCMetatoolAssignment</a>, <a class="el" href="class_f_c_part.html#aea29763e85a11868d35e23c516b68ea9">FCPart</a>, <a class="el" href="class_f_c_smart_shape.html#accf157df6e6a890266c553838fa8c057">FCSmartShape</a>, and <a class="el" href="class_f_c_custom_smart_line_def.html#ac35b40d40f24913038206defedabddfb">FCCustomSmartLineDef</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_shape_def.html#a812eedd7d791be260075ec3a91f6ddc4">FCShapeDef</a>, <a class="el" href="class_f_c_enclosure.html#aa5d0e252b9da04d401c55e4fd9e9e0d9">FCEnclosure</a>, <a class="el" href="class_f_c_page.html#ab99e65411c75b9183fd0ed2cfdcefc8c">FCPage</a>, <a class="el" href="class_f_c_staff_system.html#ae09292f3f456fc8d7ac23ad526883f1d">FCStaffSystem</a>, <a class="el" href="class_f_c_measure_number_region.html#a649bc7def6cf8d757bc477be65c66cc0">FCMeasureNumberRegion</a>, <a class="el" href="class_f_c_percussion_staff.html#a1fe8d0ef5fb729d93667e67560656b7d">FCPercussionStaff</a>, <a class="el" href="class_f_c_staff.html#adf7c998c66edff111697a2628e7178c0">FCStaff</a>, <a class="el" href="class_f_c_articulation_def.html#a2ba393637078726bb427ce8c8a20e6ad">FCArticulationDef</a>, <a class="el" href="class_f_c_category_def.html#afdd4196fe80fbcf84a2334888efc6964">FCCategoryDef</a>, <a class="el" href="class_f_c_freeze_system.html#a5bf04b189fd753b633c693adb226bedb">FCFreezeSystem</a>, <a class="el" href="class_f_c_text_expression_def.html#a97c7585bc8242669426e936489f3d90e">FCTextExpressionDef</a>, <a class="el" href="class_f_c_shape_expression_def.html#a226100c30d70dd5fa1ade973a8b9efc0">FCShapeExpressionDef</a>, <a class="el" href="class_f_c_text_block.html#ac19e01abf3698d2f32b2cdc378a0f0f7">FCTextBlock</a>, <a class="el" href="class_f_c_staff_style_def.html#a2e40ad340c824c6e331a8bd4d71478bc">FCStaffStyleDef</a>, <a class="el" href="class_f_c_multi_measure_rest.html#ae0a57ec452f1b37cee564bfc9b78139c">FCMultiMeasureRest</a>, <a class="el" href="class_f_c_multi_staff_instrument.html#a39ba68058a6ed3c0ea8d9c8ea06982dd">FCMultiStaffInstrument</a>, <a class="el" href="class_f_c_allotment.html#a50a550839878b3f55132a2c0c06b06d9">FCAllotment</a>, <a class="el" href="class_f_c_text_repeat_def.html#af54497ffa9cb10f54a453b07f893880b">FCTextRepeatDef</a>, <a class="el" href="class_f_c_executable_shape_def.html#a1eccc90def00610707dcf074d94e90b5">FCExecutableShapeDef</a>, <a class="el" href="class_f_c_fretboard_style_def.html#a5aa67c1db7488f2abe286abaaac03034">FCFretboardStyleDef</a>, <a class="el" href="class_f_c_instrument_def.html#abc4e0fae78481ee5df7d96e1e9ea1de0">FCInstrumentDef</a>, <a class="el" href="class_f_c_instrument_playback_data.html#a3ba2fa082a60f45a7e4ba0992d3755ba">FCInstrumentPlaybackData</a>, <a class="el" href="class_f_c_staff_list.html#a0a5a71912a31530c555ef7b6de9d7f55">FCStaffList</a>, <a class="el" href="class_f_c_fret_instrument_def.html#a59fadd94cbdcec8c4df60e3384fd36bc">FCFretInstrumentDef</a>, <a class="el" href="class_f_c_metatool_assignment.html#aad2656f852c3af7da09391b2631a08ae">FCMetatoolAssignment</a>, <a class="el" href="class_f_c_part.html#aea29763e85a11868d35e23c516b68ea9">FCPart</a>, <a class="el" href="class_f_c_part_staff_voicing.html#a8a7ce540ad647130a1f931684e5ae98e">FCPartStaffVoicing</a>, <a class="el" href="class_f_c_smart_shape.html#accf157df6e6a890266c553838fa8c057">FCSmartShape</a>, and <a class="el" href="class_f_c_custom_smart_line_def.html#ac35b40d40f24913038206defedabddfb">FCCustomSmartLineDef</a>.</p>
 
 </div>
 </div>
@@ -958,7 +961,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 1 2022 08:28:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Mar 1 2022 10:42:45 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
