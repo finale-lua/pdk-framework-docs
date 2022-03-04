@@ -792,6 +792,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Encapsulates a staff group. </p>
 <p >There is a big difference on how groups are loaded/saved in Finale 2011 and above, compared with earlier Finale versions. In pre-2011 groups are connected to a specific staff system for optimized systems (or to staff set 0 if it's a global group). In Finale 2011, all groups are saved to the global staff set (0) and <a class="el" href="class_____f_c_collection_data.html#a29982002e204663d6ca14ca93cdb4d63" title="Loads all available data into the collection.">FCGroups.LoadAll()</a> works.</p>
+<p >With versions of Finale after Finale 2011, the <a class="el" href="class_____f_c_no_inci_detail.html#a3a3f2bfb26068c69b38b84b8b2ec2299" title="Loads a record with cmper1 and cmper2.">__FCNoInciDetail::Load</a> method requires 0 in the first cmper and the group id in the second cmper.</p>
 <p >Please also note that Finale 2011 and later contains an optimization when adjacent group regions are saved: if there is no difference in settings between two adjacent groups, they will automatically be merged as one. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ab7c6e13f626bb586c5462e4d9d7e0e90" name="ab7c6e13f626bb586c5462e4d9d7e0e90"></a>
@@ -2929,7 +2930,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 1 2022 10:43:00 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Mar 4 2022 09:35:00 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
