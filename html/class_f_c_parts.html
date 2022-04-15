@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Collection class for <a class="el" href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts...">FCPart</a> objects.  
+<p>Collection class for <a class="el" href="class_f_c_part.html" title="Class that represents one linked part in a document. The class also provides methods to switch betwee...">FCPart</a> objects.  
  <a href="class_f_c_parts.html#details">More...</a></p>
 
 <p><code>#include &lt;ff_parts.h&gt;</code></p>
@@ -117,7 +117,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ForEachWithScope</b> (
 <tr class="memdesc:ac7a6fd1363b3ef9456017b776c790eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the loaded collection by order ID, which will result in the same order as in the parts definition dialog box.  <a href="class_f_c_parts.html#ac7a6fd1363b3ef9456017b776c790eaf">More...</a><br /></td></tr>
 <tr class="separator:ac7a6fd1363b3ef9456017b776c790eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade8babe84de98bb51609a5e5b8fa7988"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_part.html">FCPart</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_parts.html#ade8babe84de98bb51609a5e5b8fa7988">FindPart</a> (<a class="el" href="class_f_c_part.html">FCPart</a> *pPartFind)</td></tr>
-<tr class="memdesc:ade8babe84de98bb51609a5e5b8fa7988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a part by matching against a <a class="el" href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts...">FCPart</a> object.  <a href="class_f_c_parts.html#ade8babe84de98bb51609a5e5b8fa7988">More...</a><br /></td></tr>
+<tr class="memdesc:ade8babe84de98bb51609a5e5b8fa7988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a part by matching against a <a class="el" href="class_f_c_part.html" title="Class that represents one linked part in a document. The class also provides methods to switch betwee...">FCPart</a> object.  <a href="class_f_c_parts.html#ade8babe84de98bb51609a5e5b8fa7988">More...</a><br /></td></tr>
 <tr class="separator:ade8babe84de98bb51609a5e5b8fa7988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e3a2be34c65a1089589b60cc338a45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_part.html">FCPart</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_parts.html#ab9e3a2be34c65a1089589b60cc338a45">FindID</a> (EPARTID partid)</td></tr>
 <tr class="memdesc:ab9e3a2be34c65a1089589b60cc338a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a part by matching against a part ID.  <a href="class_f_c_parts.html#ab9e3a2be34c65a1089589b60cc338a45">More...</a><br /></td></tr>
@@ -329,6 +329,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e40b170ea979fc60f96472540f586b0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_parts.html#a9e40b170ea979fc60f96472540f586b0">CountPartsOnly</a> ()</td></tr>
 <tr class="memdesc:a9e40b170ea979fc60f96472540f586b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available parts in the active document, without loading any parts. The score is NOT included in the counting.  <a href="class_f_c_parts.html#a9e40b170ea979fc60f96472540f586b0">More...</a><br /></td></tr>
 <tr class="separator:a9e40b170ea979fc60f96472540f586b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5424737d07ff0f9dc7afb919cb9e7f0c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_parts.html#a5424737d07ff0f9dc7afb919cb9e7f0c">GenerateParts</a> ()</td></tr>
+<tr class="memdesc:a5424737d07ff0f9dc7afb919cb9e7f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function that generates linked parts in the current document. It deletes any linked parts that already exist, so use with care.  <a href="class_f_c_parts.html#a5424737d07ff0f9dc7afb919cb9e7f0c">More...</a><br /></td></tr>
+<tr class="separator:a5424737d07ff0f9dc7afb919cb9e7f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">DebugOutPtr</a> (const char *pszPrefixText, void *ptr)</td></tr>
 <tr class="memdesc:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The prefix text appears with the extra ptr (in hexadeximal representation) appearing afterwards.  <a href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">More...</a><br /></td></tr>
@@ -542,8 +545,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Collection class for <a class="el" href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts...">FCPart</a> objects. </p>
-<p >Please note that although <a class="el" href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts...">FCPart</a> is a <a class="el" href="class_____f_c_no_inci_other.html" title="Base class for the &quot;Other&quot; (ot_*) Enigma structures that don&#39;t use the inci parameter.">__FCNoInciOther</a> ancestor, <a class="el" href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts...">FCPart</a> is a traditional collection (since parts are very special data objects). Use <a class="el" href="class_f_c_parts.html#a678096df32ed07887f0e6e17f9e71778" title="Loads all parts (including the &quot;score part&quot;) for the document.">LoadAll()</a> to get all part objects. </p>
+<div class="textblock"><p >Collection class for <a class="el" href="class_f_c_part.html" title="Class that represents one linked part in a document. The class also provides methods to switch betwee...">FCPart</a> objects. </p>
+<p >Please note that although <a class="el" href="class_f_c_part.html" title="Class that represents one linked part in a document. The class also provides methods to switch betwee...">FCPart</a> is a <a class="el" href="class_____f_c_no_inci_other.html" title="Base class for the &quot;Other&quot; (ot_*) Enigma structures that don&#39;t use the inci parameter.">__FCNoInciOther</a> ancestor, <a class="el" href="class_f_c_part.html" title="Class that represents one linked part in a document. The class also provides methods to switch betwee...">FCPart</a> is a traditional collection (since parts are very special data objects). Use <a class="el" href="class_f_c_parts.html#a678096df32ed07887f0e6e17f9e71778" title="Loads all parts (including the &quot;score part&quot;) for the document.">LoadAll()</a> to get all part objects. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab797bfd8a260e5aaee925ced7b9b040" name="aab797bfd8a260e5aaee925ced7b9b040"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab797bfd8a260e5aaee925ced7b9b040">&#9670;&nbsp;</a></span>FCParts()</h2>
@@ -691,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Finds a part by matching against a <a class="el" href="class_f_c_part.html" title="Class that represents one part in a document. The class also provides methods to switch between parts...">FCPart</a> object. </p>
+<p>Finds a part by matching against a <a class="el" href="class_f_c_part.html" title="Class that represents one linked part in a document. The class also provides methods to switch betwee...">FCPart</a> object. </p>
 <p >Both the part ID and the document ID needs to be matched for a successful return.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -700,6 +703,36 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5424737d07ff0f9dc7afb919cb9e7f0c" name="a5424737d07ff0f9dc7afb919cb9e7f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5424737d07ff0f9dc7afb919cb9e7f0c">&#9670;&nbsp;</a></span>GenerateParts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool FCParts::GenerateParts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static function that generates linked parts in the current document. It deletes any linked parts that already exist, so use with care. </p>
+<p >This function does nothing (and returns false) when running on versions of Finale less than Finale 26.1.</p>
+<p >Lua-supported (0.62).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if success. </dd></dl>
 
 </div>
 </div>
@@ -846,7 +879,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 16 2022 11:00:57 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Apr 13 2022 07:31:25 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
