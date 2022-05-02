@@ -712,6 +712,13 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class with adjustments to the ties (in Finale's Special Tools). </p>
+<p >The PDK Framework as of 0.62 supports loading, modifying, and deleting existing <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> records. You can also create new records, but there are some limitations on which fields you can edit. Some fields do not require activation, and they can be created and assigned values normally. However, the following categories require activation.</p>
+<ul>
+<li>Start Tie Placement</li>
+<li>End Tie Placement</li>
+<li>Tie Contour</li>
+</ul>
+<p >Activation can only be achieved by manually editing the tie in Finale or using a specialty plugin that knows how to activate them, such as Patterson's Tie Mover plugin. The categories can be independently activated. Even if you have manually edited the tie in Finale, not all of them will necessarily have been activated. The functions <a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb" title="Returns true if the start point is active.">IsStartPointActive</a>, <a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004" title="Returns true if the end point is active.">IsEndPointActive</a>, and <a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521" title="Returns true if the tie contour adjustment fields are active.">IsContourActive</a> allow you to determine if the fields of a specific category have been activated.</p>
 <p >This class requires PDK_FRAMEWORK_ENTRIES to be defined. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8fd213af279301513c31488ace6b8331" name="a8fd213af279301513c31488ace6b8331"></a>
@@ -1902,7 +1909,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 2 2022 13:38:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon May 2 2022 15:01:03 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
