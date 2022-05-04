@@ -718,7 +718,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <li>End Tie Placement</li>
 <li>Tie Contour</li>
 </ul>
-<p >Activation can only be achieved by manually editing the tie in Finale or using a specialty plugin that knows how to activate them, such as Patterson's Tie Mover plugin. The categories can be independently activated. Even if you have manually edited the tie in Finale, not all of them will necessarily have been activated. The functions <a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb" title="Returns true if the start point is active.">IsStartPointActive</a>, <a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004" title="Returns true if the end point is active.">IsEndPointActive</a>, and <a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521" title="Returns true if the tie contour adjustment fields are active.">IsContourActive</a> allow you to determine if the fields of a specific category have been activated.</p>
+<p >Activation can only be achieved by manually editing the tie in Finale or using a specialty plugin that knows how to activate them, such as Patterson's Tie Mover plugin. The categories can be independently activated. Even if you have manually edited the tie in Finale, not all of them will necessarily have been activated. The methods <a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb" title="Returns true if the start point is active.">IsStartPointActive</a>, <a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004" title="Returns true if the end point is active.">IsEndPointActive</a>, and <a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521" title="Returns true if the tie contour adjustment fields are active.">IsContourActive</a> allow you to determine if the fields of a specific category have been activated.</p>
 <p >This class requires PDK_FRAMEWORK_ENTRIES to be defined. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a8fd213af279301513c31488ace6b8331" name="a8fd213af279301513c31488ace6b8331"></a>
@@ -797,6 +797,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>The constructor. </p>
+<p ><b>WARNING:</b></p>
+<p >The Lua language does not require that you pass in the starttie boolean. Instead it takes false as the default value, which is not likely to be what you are expecting if you omit the parameter by mistake.</p>
 <p >Lua-supported (0.62).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1909,7 +1911,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 2 2022 15:01:03 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed May 4 2022 09:57:42 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
