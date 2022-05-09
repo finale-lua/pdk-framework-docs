@@ -89,6 +89,11 @@ Inheritance diagram for FCTieMod:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a176c37d72bfa9deabed7bd3b54674662"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662">TIEMOD_TIETYPES</a> { <a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662a336f71fe0c0814acce405abde7fae0d9">TIEMODTYPE_TIEEND</a> = 0
+, <a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662a3f3b250efb1ed5fd8ffa3d6c357a265c">TIEMODTYPE_TIESTART</a> = 1
+ }</td></tr>
+<tr class="memdesc:a176c37d72bfa9deabed7bd3b54674662"><td class="mdescLeft">&#160;</td><td class="mdescRight">TieMod types.  <a href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662">More...</a><br /></td></tr>
+<tr class="separator:a176c37d72bfa9deabed7bd3b54674662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0fac682eea67d8b5d98bb0333de3e88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88">TIEMOD_SELECTOR</a> { <a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88a1e6196c4475ff8015068b9cb0be004fa">TIEMODSEL_DEFAULT</a> = 0
 , <a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88a3dd7fbb18f764a068843ac18d1351821">TIEMODSEL_ON</a> = 1
 , <a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88a9956bb475800e0467e3c8afb457fa37a">TIEMODSEL_OFF</a> = 2
@@ -281,9 +286,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acbe8171841b8565bb7d512dc49f41768"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#acbe8171841b8565bb7d512dc49f41768">GetClassID</a> () const override</td></tr>
 <tr class="memdesc:acbe8171841b8565bb7d512dc49f41768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_f_c_tie_mod.html#acbe8171841b8565bb7d512dc49f41768">More...</a><br /></td></tr>
 <tr class="separator:acbe8171841b8565bb7d512dc49f41768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f41db68ec81bacf03a3fa3cc23ec85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#af3f41db68ec81bacf03a3fa3cc23ec85">FCTieMod</a> (bool starttie)</td></tr>
-<tr class="memdesc:af3f41db68ec81bacf03a3fa3cc23ec85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_tie_mod.html#af3f41db68ec81bacf03a3fa3cc23ec85">More...</a><br /></td></tr>
-<tr class="separator:af3f41db68ec81bacf03a3fa3cc23ec85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab225f9c9a67d0671d0539af00701fbfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#ab225f9c9a67d0671d0539af00701fbfa">FCTieMod</a> (<a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662">TIEMOD_TIETYPES</a> tietype)</td></tr>
+<tr class="memdesc:ab225f9c9a67d0671d0539af00701fbfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_tie_mod.html#ab225f9c9a67d0671d0539af00701fbfa">More...</a><br /></td></tr>
+<tr class="separator:ab225f9c9a67d0671d0539af00701fbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13021bd654baecfb5960e52423d52034"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a13021bd654baecfb5960e52423d52034">IsStartTie</a> () const</td></tr>
 <tr class="memdesc:a13021bd654baecfb5960e52423d52034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> instance is for regular start tie settings (defined as a parameter to the constructor). Otherwise it is settings for a tie end (backwards tie).  <a href="class_f_c_tie_mod.html#a13021bd654baecfb5960e52423d52034">More...</a><br /></td></tr>
 <tr class="separator:a13021bd654baecfb5960e52423d52034"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,7 +386,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aec936bb3dcc3835debc654929353d9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Avoid Staff Lines selection.  <a href="class_f_c_tie_mod.html#aec936bb3dcc3835debc654929353d9d4">More...</a><br /></td></tr>
 <tr class="separator:aec936bb3dcc3835debc654929353d9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a940e8ee9471e982ac67746d616705267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a940e8ee9471e982ac67746d616705267">SetNoteID</a> (twobyte id) override</td></tr>
-<tr class="memdesc:a940e8ee9471e982ac67746d616705267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the note ID for the dot, so it maps to the note.  <a href="class_f_c_tie_mod.html#a940e8ee9471e982ac67746d616705267">More...</a><br /></td></tr>
+<tr class="memdesc:a940e8ee9471e982ac67746d616705267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the note ID for the tie, so it maps to the note.  <a href="class_f_c_tie_mod.html#a940e8ee9471e982ac67746d616705267">More...</a><br /></td></tr>
 <tr class="separator:a940e8ee9471e982ac67746d616705267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_____f_c_entry_detail_note_i_d"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_____f_c_entry_detail_note_i_d')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_____f_c_entry_detail_note_i_d.html">__FCEntryDetailNoteID</a></td></tr>
 <tr class="memitem:a125c821207e5fdf09ea043945b5451b6 inherit pub_methods_class_____f_c_entry_detail_note_i_d"><td class="memItemLeft" align="right" valign="top"><a id="a125c821207e5fdf09ea043945b5451b6" name="a125c821207e5fdf09ea043945b5451b6"></a>
@@ -771,9 +776,32 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a176c37d72bfa9deabed7bd3b54674662" name="a176c37d72bfa9deabed7bd3b54674662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a176c37d72bfa9deabed7bd3b54674662">&#9670;&nbsp;</a></span>TIEMOD_TIETYPES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662">FCTieMod::TIEMOD_TIETYPES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>TieMod types. </p>
+<p >Lua-supported (0.62). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a176c37d72bfa9deabed7bd3b54674662a336f71fe0c0814acce405abde7fae0d9" name="a176c37d72bfa9deabed7bd3b54674662a336f71fe0c0814acce405abde7fae0d9"></a>TIEMODTYPE_TIEEND&#160;</td><td class="fielddoc"><p >Tie End (visible at starts of systems) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a176c37d72bfa9deabed7bd3b54674662a3f3b250efb1ed5fd8ffa3d6c357a265c" name="a176c37d72bfa9deabed7bd3b54674662a3f3b250efb1ed5fd8ffa3d6c357a265c"></a>TIEMODTYPE_TIESTART&#160;</td><td class="fielddoc"><p >Tie Start (normal tie) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af3f41db68ec81bacf03a3fa3cc23ec85" name="af3f41db68ec81bacf03a3fa3cc23ec85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f41db68ec81bacf03a3fa3cc23ec85">&#9670;&nbsp;</a></span>FCTieMod()</h2>
+<a id="ab225f9c9a67d0671d0539af00701fbfa" name="ab225f9c9a67d0671d0539af00701fbfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab225f9c9a67d0671d0539af00701fbfa">&#9670;&nbsp;</a></span>FCTieMod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,8 +812,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
         <tr>
           <td class="memname">FCTieMod::FCTieMod </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>starttie</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662">TIEMOD_TIETYPES</a>&#160;</td>
+          <td class="paramname"><em>tietype</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -797,12 +825,10 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>The constructor. </p>
-<p ><b>WARNING:</b></p>
-<p >The Lua language does not require that you pass in the starttie boolean. Instead it takes false as the default value, which is not likely to be what you are expecting if you omit the parameter by mistake.</p>
 <p >Lua-supported (0.62).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">starttie</td><td>If true, this is a record for a regular start/forwards tie. If false it is a record for a tie end (backwards tie), which is only visible at the start of a system. </td></tr>
+    <tr><td class="paramname">tietype</td><td>One of the <a class="el" href="class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662" title="TieMod types.">TIEMOD_TIETYPES</a> constants </td></tr>
   </table>
   </dd>
 </dl>
@@ -1690,7 +1716,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Sets the note ID for the dot, so it maps to the note. </p>
+<p>Sets the note ID for the tie, so it maps to the note. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>The note ID. This shoud be the same as the note ID in the <a class="el" href="class_f_c_note.html" title="Encapsulates one note in a note entry (from the FCNoteEntry class).">FCNote</a> class. </td></tr>
@@ -1911,7 +1937,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 4 2022 09:57:42 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon May 9 2022 10:37:56 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

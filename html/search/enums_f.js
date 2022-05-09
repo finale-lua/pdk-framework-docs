@@ -11,5 +11,6 @@ var searchData=
   ['tie_5fseconds_5fconstants_8',['TIE_SECONDS_CONSTANTS',['../class_f_c_tie_prefs.html#a5e1e182e41edce64c31c37080e49ef6a',1,'FCTiePrefs']]],
   ['tiemod_5fdirection_9',['TIEMOD_DIRECTION',['../class_f_c_tie_mod.html#a8fd213af279301513c31488ace6b8331',1,'FCTieMod']]],
   ['tiemod_5fselector_10',['TIEMOD_SELECTOR',['../class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88',1,'FCTieMod']]],
-  ['tieplacement_5findexes_11',['TIEPLACEMENT_INDEXES',['../class_f_c_tie_placement_prefs.html#a584f4d57d231c3cb9a112de29ce82639',1,'FCTiePlacementPrefs']]]
+  ['tiemod_5ftietypes_11',['TIEMOD_TIETYPES',['../class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662',1,'FCTieMod']]],
+  ['tieplacement_5findexes_12',['TIEPLACEMENT_INDEXES',['../class_f_c_tie_placement_prefs.html#a584f4d57d231c3cb9a112de29ce82639',1,'FCTiePlacementPrefs']]]
 ];
