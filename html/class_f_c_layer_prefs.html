@@ -110,7 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a64b87838b5ff7032abf394ac7222b8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the vertical rest offset should be used.  <a href="class_f_c_layer_prefs.html#a64b87838b5ff7032abf394ac7222b8cf">More...</a><br /></td></tr>
 <tr class="separator:a64b87838b5ff7032abf394ac7222b8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57df3daf6a14addf68a36ea789e6e835"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835">GetUseRestOffsetInMultiple</a> () const</td></tr>
-<tr class="memdesc:a57df3daf6a14addf68a36ea789e6e835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the vertical rest offset should be used only if multiple layers have music.  <a href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835">More...</a><br /></td></tr>
+<tr class="memdesc:a57df3daf6a14addf68a36ea789e6e835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "Apply settings only if Notes are in other Layers" choice.  <a href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835">More...</a><br /></td></tr>
 <tr class="separator:a57df3daf6a14addf68a36ea789e6e835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0127381d52af0ba79d14da2674cc1c75"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_layer_prefs.html#a0127381d52af0ba79d14da2674cc1c75">GetUseFreezeStemsTies</a> () const</td></tr>
 <tr class="memdesc:a0127381d52af0ba79d14da2674cc1c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the freeze stems and ties should be frozen.  <a href="class_f_c_layer_prefs.html#a0127381d52af0ba79d14da2674cc1c75">More...</a><br /></td></tr>
@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a65e42c6b4e514d86cbc4eeb73814d72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the vertical rest offset should be used.  <a href="class_f_c_layer_prefs.html#a65e42c6b4e514d86cbc4eeb73814d72f">More...</a><br /></td></tr>
 <tr class="separator:a65e42c6b4e514d86cbc4eeb73814d72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9793bc898bc30738ae267e35c868784b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_layer_prefs.html#a9793bc898bc30738ae267e35c868784b">SetUseRestOffsetInMultiple</a> (bool state)</td></tr>
-<tr class="memdesc:a9793bc898bc30738ae267e35c868784b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the vertical rest offset should be used only if multiple layers have music.  <a href="class_f_c_layer_prefs.html#a9793bc898bc30738ae267e35c868784b">More...</a><br /></td></tr>
+<tr class="memdesc:a9793bc898bc30738ae267e35c868784b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the "Apply settings only if Notes are in other Layers" choice.  <a href="class_f_c_layer_prefs.html#a9793bc898bc30738ae267e35c868784b">More...</a><br /></td></tr>
 <tr class="separator:a9793bc898bc30738ae267e35c868784b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7789ca42dcc6abc8b6522c778bc2b176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_layer_prefs.html#a7789ca42dcc6abc8b6522c778bc2b176">SetUseFreezeStemsTies</a> (bool state)</td></tr>
 <tr class="memdesc:a7789ca42dcc6abc8b6522c778bc2b176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the freeze stems and ties should be frozen.  <a href="class_f_c_layer_prefs.html#a7789ca42dcc6abc8b6522c778bc2b176">More...</a><br /></td></tr>
@@ -829,7 +829,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the "Ignore hidden layers" state. </p>
-<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns true if the vertical rest offset should be used only if multiple layers have music.">GetUseRestOffsetInMultiple()</a> returns true.</p>
+<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns the &quot;Apply settings only if Notes are in other Layers&quot; choice.">GetUseRestOffsetInMultiple()</a> returns true.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -858,7 +858,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the "Ignore Layers Containing Only Hidden Notes" state. </p>
-<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns true if the vertical rest offset should be used only if multiple layers have music.">GetUseRestOffsetInMultiple()</a> returns true.</p>
+<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns the &quot;Apply settings only if Notes are in other Layers&quot; choice.">GetUseRestOffsetInMultiple()</a> returns true.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -1111,7 +1111,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the vertical rest offset should be used only if multiple layers have music. </p>
+<p>Returns the "Apply settings only if Notes are in other Layers" choice. </p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -1236,7 +1236,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the "ignore hidden layers" state. </p>
-<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns true if the vertical rest offset should be used only if multiple layers have music.">GetUseRestOffsetInMultiple()</a> returns true.</p>
+<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns the &quot;Apply settings only if Notes are in other Layers&quot; choice.">GetUseRestOffsetInMultiple()</a> returns true.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -1266,7 +1266,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the "Ignore Layers Containing Only Hidden Notes" state. </p>
-<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns true if the vertical rest offset should be used only if multiple layers have music.">GetUseRestOffsetInMultiple()</a> returns true.</p>
+<p >This is used only when <a class="el" href="class_f_c_layer_prefs.html#a57df3daf6a14addf68a36ea789e6e835" title="Returns the &quot;Apply settings only if Notes are in other Layers&quot; choice.">GetUseRestOffsetInMultiple()</a> returns true.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -1440,7 +1440,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Sets if the vertical rest offset should be used only if multiple layers have music. </p>
+<p>Sets if the "Apply settings only if Notes are in other Layers" choice. </p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -1448,7 +1448,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 9 2022 10:37:55 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 14 2022 18:03:00 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a34d4f3eaa41054f60bdcbaab4aa2171c"><td class="memItemLeft" align="right" valign="top">eNoteID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a34d4f3eaa41054f60bdcbaab4aa2171c">GetNoteID</a> () const</td></tr>
 <tr class="memdesc:a34d4f3eaa41054f60bdcbaab4aa2171c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unique note ID.  <a href="class_f_c_note.html#a34d4f3eaa41054f60bdcbaab4aa2171c">More...</a><br /></td></tr>
 <tr class="separator:a34d4f3eaa41054f60bdcbaab4aa2171c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a6e93496bc87684dd239cda4dae4ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a57a6e93496bc87684dd239cda4dae4ba">GetNoteIndex</a> () const</td></tr>
+<tr class="memdesc:a57a6e93496bc87684dd239cda4dae4ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the note within its <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a>.  <a href="class_f_c_note.html#a57a6e93496bc87684dd239cda4dae4ba">More...</a><br /></td></tr>
+<tr class="separator:a57a6e93496bc87684dd239cda4dae4ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7466b4cda0c3a8da68bd1b09a15c6f38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a7466b4cda0c3a8da68bd1b09a15c6f38">GetString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString, <a class="el" href="class_f_c_key_signature.html">FCKeySignature</a> *pKey, bool simplifydoublesharp=false, bool writtenpitch=false)</td></tr>
 <tr class="memdesc:a7466b4cda0c3a8da68bd1b09a15c6f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string representation of the note.  <a href="class_f_c_note.html#a7466b4cda0c3a8da68bd1b09a15c6f38">More...</a><br /></td></tr>
 <tr class="separator:a7466b4cda0c3a8da68bd1b09a15c6f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +237,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8472b220284325800e99a396ae438b23"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a8472b220284325800e99a396ae438b23">IsLowerPitchThan</a> (<a class="el" href="class_f_c_note.html">FCNote</a> *pPitchCompareNote)</td></tr>
 <tr class="memdesc:a8472b220284325800e99a396ae438b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pitch is lower than the pitch in the parameter's note.  <a href="class_f_c_note.html#a8472b220284325800e99a396ae438b23">More...</a><br /></td></tr>
 <tr class="separator:a8472b220284325800e99a396ae438b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c063012ce1a35bc8380bff610004a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a23c063012ce1a35bc8380bff610004a2">IsUpper2nd</a> () const</td></tr>
+<tr class="memdesc:a23c063012ce1a35bc8380bff610004a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this note is an upper 2nd in a chord.  <a href="class_f_c_note.html#a23c063012ce1a35bc8380bff610004a2">More...</a><br /></td></tr>
+<tr class="separator:a23c063012ce1a35bc8380bff610004a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af139858c39343ca7cf1be61ab1cb1cd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#af139858c39343ca7cf1be61ab1cb1cd8">IsLower2nd</a> () const</td></tr>
+<tr class="memdesc:af139858c39343ca7cf1be61ab1cb1cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this note is a lower 2nd in a chord.  <a href="class_f_c_note.html#af139858c39343ca7cf1be61ab1cb1cd8">More...</a><br /></td></tr>
+<tr class="separator:af139858c39343ca7cf1be61ab1cb1cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee9a1fabb723a12f4a4a4167799883a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a9ee9a1fabb723a12f4a4a4167799883a">IsNonAligned2nd</a> () const</td></tr>
+<tr class="memdesc:a9ee9a1fabb723a12f4a4a4167799883a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this note is not aligned with its entry.  <a href="class_f_c_note.html#a9ee9a1fabb723a12f4a4a4167799883a">More...</a><br /></td></tr>
+<tr class="separator:a9ee9a1fabb723a12f4a4a4167799883a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a5cad2cc5fb5e4077aefa7b5374435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a82a5cad2cc5fb5e4077aefa7b5374435">MarkForErase</a> ()</td></tr>
 <tr class="memdesc:a82a5cad2cc5fb5e4077aefa7b5374435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the note for erase when the entry is saved.  <a href="class_f_c_note.html#a82a5cad2cc5fb5e4077aefa7b5374435">More...</a><br /></td></tr>
 <tr class="separator:a82a5cad2cc5fb5e4077aefa7b5374435"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,8 +582,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Encapsulates one note in a note entry (from the <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a> class). </p>
 <p >This class requires PDK_FRAMEWORK_ENTRIES to be defined.</p>
-<p ><b>NOTE!</b> Objects of this class should not be created directly, they are created by the methods in the <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a> class.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Add a Create routine that constructs an instance of <a class="el" href="class_f_c_note_entry_layer.html" title="Class to load a layer on the same staff. This class is for example suitable when working with music l...">FCNoteEntryLayer</a> that is guaranteed to contain the tied-from and tied-to notes of this note. </dd></dl>
+<p ><b>NOTE!</b> Objects of this class should not be created directly, they are created by the methods in the <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a> class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad03a5d0ae8c3af5ece0b068d4ad6820c" name="ad03a5d0ae8c3af5ece0b068d4ad6820c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad03a5d0ae8c3af5ece0b068d4ad6820c">&#9670;&nbsp;</a></span>CalcAccidental()</h2>
@@ -1218,6 +1229,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a57a6e93496bc87684dd239cda4dae4ba" name="a57a6e93496bc87684dd239cda4dae4ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57a6e93496bc87684dd239cda4dae4ba">&#9670;&nbsp;</a></span>GetNoteIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCNote::GetNoteIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the index of the note within its <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a>. </p>
+<p >Lua-supported (also as read-only property) (0.62). </p>
+
+</div>
+</div>
 <a id="af6a873c03568ed610f1caa6177d51897" name="af6a873c03568ed610f1caa6177d51897"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6a873c03568ed610f1caa6177d51897">&#9670;&nbsp;</a></span>GetPlayback()</h2>
 
@@ -1524,6 +1563,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af139858c39343ca7cf1be61ab1cb1cd8" name="af139858c39343ca7cf1be61ab1cb1cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af139858c39343ca7cf1be61ab1cb1cd8">&#9670;&nbsp;</a></span>IsLower2nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::IsLower2nd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this note is a lower 2nd in a chord. </p>
+<p >Lua-supported (0.62). </p>
+
+</div>
+</div>
 <a id="a8472b220284325800e99a396ae438b23" name="a8472b220284325800e99a396ae438b23"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8472b220284325800e99a396ae438b23">&#9670;&nbsp;</a></span>IsLowerPitchThan()</h2>
 
@@ -1542,6 +1601,46 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns true if the pitch is lower than the pitch in the parameter's note. </p>
 <p >Lua-supported. </p>
+
+</div>
+</div>
+<a id="a9ee9a1fabb723a12f4a4a4167799883a" name="a9ee9a1fabb723a12f4a4a4167799883a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee9a1fabb723a12f4a4a4167799883a">&#9670;&nbsp;</a></span>IsNonAligned2nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::IsNonAligned2nd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this note is not aligned with its entry. </p>
+<p >Lua-supported (0.62). </p>
+
+</div>
+</div>
+<a id="a23c063012ce1a35bc8380bff610004a2" name="a23c063012ce1a35bc8380bff610004a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c063012ce1a35bc8380bff610004a2">&#9670;&nbsp;</a></span>IsUpper2nd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::IsUpper2nd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this note is an upper 2nd in a chord. </p>
+<p >Lua-supported (0.62). </p>
 
 </div>
 </div>
@@ -1694,7 +1793,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the cross staff state for the note. </p>
-<p >(More than this is required to actually make it cross-staff...) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Improve docs on how to make cross staff.</dd></dl>
+<p >(More than this is required to actually make it cross-staff...) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Improve docs on how to make cross staff.</dd></dl>
 <p >Lua-supported (also as property).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2089,7 +2188,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 9 2022 10:37:55 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 14 2022 18:03:01 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

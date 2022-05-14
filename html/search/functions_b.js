@@ -53,5 +53,6 @@ var searchData=
   ['loadsymbol_50',['LoadSymbol',['../class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5',1,'FCTextMetrics']]],
   ['loadsymbolfonts_51',['LoadSymbolFonts',['../class_f_c_strings.html#a672180a4f1357b256b84cc97f1cbeec6',1,'FCStrings']]],
   ['loadsystemfontnames_52',['LoadSystemFontNames',['../class_f_c_strings.html#aa0970dc9d9df83ac5847dc03eddcb7b7',1,'FCStrings']]],
-  ['loadtitle_53',['LoadTitle',['../class_f_c_file_info_text.html#a74aa25c3df020c3eb4a1e0da4b950304',1,'FCFileInfoText']]]
+  ['loadtitle_53',['LoadTitle',['../class_f_c_file_info_text.html#a74aa25c3df020c3eb4a1e0da4b950304',1,'FCFileInfoText']]],
+  ['localizefrompreferences_54',['LocalizeFromPreferences',['../class_f_c_tie_mod.html#a07690d11eb4cce6e8d82d2e6147cc96b',1,'FCTieMod']]]
 ];

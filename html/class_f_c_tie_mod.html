@@ -106,6 +106,32 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a8fd213af279301513c31488ace6b8331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tie Direction: Automatic, Over, Under.  <a href="class_f_c_tie_mod.html#a8fd213af279301513c31488ace6b8331">More...</a><br /></td></tr>
 <tr class="separator:a8fd213af279301513c31488ace6b8331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf131d355cadab7f41bc081f1caf64"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">TIEMOD_CONNECTION_CODES</a> { <br />
+&#160;&#160;<a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a255baeafb17c5fd12e4e3edf34cbc883">TIEMODCNCT_NONE</a> = TIE_ENTCNCT_NONE
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a06595baf6ff3e87144addbbcdb82b9c2">TIEMODCNCT_ENTRYLEFT_NOTECENTER</a> = TIE_ENTRYLEFT_NOTECENTER
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a06aed71c15ad35a0eda35555e7745bf4">TIEMODCNCT_ENTRYRIGHT_NOTECENTER</a> = TIE_ENTRYRIGHT_NOTECENTER
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a7d3d8a1406bfdb825bbd09d19dd57fc9">TIEMODCNCT_NOTELEFT_NOTECENTER</a> = TIE_NOTELEFT_NOTECENTER
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64adc0178e9b20928056e208c48709623b8">TIEMODCNCT_NOTERIGHT_NOTECENTER</a> = TIE_NOTERIGHT_NOTECENTER
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a4c6091e9f3863020b6efe296ce7e65f6">TIEMODCNCT_NOTECENTER_NOTEBOTTOM</a> = TIE_NOTECENTER_NOTEBOTTOM
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64aa477f57883930e8dce91588203328ebe">TIEMODCNCT_NOTECENTER_NOTETOP</a> = TIE_NOTECENTER_NOTETOP
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64ab64000bba9d269d6dd9346a768f73cd9">TIEMODCNCT_DOTRIGHT_NOTECENTER</a> = TIE_DOTRIGHT_NOTECENTER
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a1f9745349d22c543c57ce8125bc8122b">TIEMODCNCT_ACCILEFT_NOTECENTER</a> = TIE_ACCILEFT_NOTECENTER
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64aff6971028aad06eb83099ec7870b48a1">TIEMODCNCT_ENTRYCENTER_NOTEBOTTOM</a> = TIE_ENTRYCENTER_NOTEBOTTOM
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a9d81a76f73d0f3e11620a7dd12b5dc28">TIEMODCNCT_ENTRYCENTER_NOTETOP</a> = TIE_ENTRYCENTER_NOTETOP
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a7a165c5c9f11f965fb0a840943849d7d">TIEMODCNCT_NOTELEFT_NOTEBOTTOM</a> = TIE_NOTELEFT_NOTEBOTTOM
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a46af352aff17e71032d1af8c282bbcd8">TIEMODCNCT_NOTERIGHT_NOTEBOTTOM</a> = TIE_NOTERIGHT_NOTEBOTTOM
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64aa048ce9d5d1c602fdce1ee48ac92a445">TIEMODCNCT_NOTELEFT_NOTETOP</a> = TIE_NOTELEFT_NOTETOP
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64ae6d2ab2ef6a7b61e2670e23f012376a7">TIEMODCNCT_NOTERIGHT_NOTETOP</a> = TIE_NOTERIGHT_NOTETOP
+, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64a4220b971b2d0111c746b9e004c8a3bfc">TIEMODCNCT_SYSTEMEND</a> = TIE_SYSTEMEND
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64ada12fc30884634a65060a316773730cc">TIEMODCNCT_SYSTEMSTART</a> = TIE_SYSTEMSTART
+<br />
+ }</td></tr>
+<tr class="memdesc:a0ddf131d355cadab7f41bc081f1caf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tie Connection Codes. These are used to activate Start Point and End Point fields. If the code does not match the current context, Finale does not apply the endpoint data to the tie.  <a href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">More...</a><br /></td></tr>
+<tr class="separator:a0ddf131d355cadab7f41bc081f1caf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
@@ -295,18 +321,45 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a751511459ef863c0e1fe932ffe77fccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb">IsStartPointActive</a> () const</td></tr>
 <tr class="memdesc:a751511459ef863c0e1fe932ffe77fccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the start point is active.  <a href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb">More...</a><br /></td></tr>
 <tr class="separator:a751511459ef863c0e1fe932ffe77fccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f05418ce5b2f2707f65c9cd716fe7b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a5f05418ce5b2f2707f65c9cd716fe7b4">ActivateStartPoint</a> (bool fortieover, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">TIEMOD_CONNECTION_CODES</a> connectioncode, Evpu16 hoffset, Evpu16 voffset)</td></tr>
+<tr class="memdesc:a5f05418ce5b2f2707f65c9cd716fe7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the start placement fields and initializes them with the input values.  <a href="class_f_c_tie_mod.html#a5f05418ce5b2f2707f65c9cd716fe7b4">More...</a><br /></td></tr>
+<tr class="separator:a5f05418ce5b2f2707f65c9cd716fe7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4be3d82b32af1bdbc0541c5d4d6cf35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#aa4be3d82b32af1bdbc0541c5d4d6cf35">DeactivateStartPoint</a> ()</td></tr>
+<tr class="memdesc:aa4be3d82b32af1bdbc0541c5d4d6cf35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates the start placement fields and initializes them with zero.  <a href="class_f_c_tie_mod.html#aa4be3d82b32af1bdbc0541c5d4d6cf35">More...</a><br /></td></tr>
+<tr class="separator:aa4be3d82b32af1bdbc0541c5d4d6cf35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a837ecf40d0435dd29312ae23d2b73004"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004">IsEndPointActive</a> () const</td></tr>
 <tr class="memdesc:a837ecf40d0435dd29312ae23d2b73004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the end point is active.  <a href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004">More...</a><br /></td></tr>
 <tr class="separator:a837ecf40d0435dd29312ae23d2b73004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccc33fabf9cce5f6b47f1ef31fcaedf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a9ccc33fabf9cce5f6b47f1ef31fcaedf">ActivateEndPoint</a> (bool fortieover, <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">TIEMOD_CONNECTION_CODES</a> connectioncode, Evpu16 hoffset, Evpu16 voffset)</td></tr>
+<tr class="memdesc:a9ccc33fabf9cce5f6b47f1ef31fcaedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the end placement fields and initializes them with the input values.  <a href="class_f_c_tie_mod.html#a9ccc33fabf9cce5f6b47f1ef31fcaedf">More...</a><br /></td></tr>
+<tr class="separator:a9ccc33fabf9cce5f6b47f1ef31fcaedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4406337c93e7ba46d2ffd9e9a0c65bfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a4406337c93e7ba46d2ffd9e9a0c65bfb">DeactivateEndPoint</a> ()</td></tr>
+<tr class="memdesc:a4406337c93e7ba46d2ffd9e9a0c65bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates the end placement fields and initializes them with zero.  <a href="class_f_c_tie_mod.html#a4406337c93e7ba46d2ffd9e9a0c65bfb">More...</a><br /></td></tr>
+<tr class="separator:a4406337c93e7ba46d2ffd9e9a0c65bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07690d11eb4cce6e8d82d2e6147cc96b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a07690d11eb4cce6e8d82d2e6147cc96b">LocalizeFromPreferences</a> ()</td></tr>
+<tr class="memdesc:a07690d11eb4cce6e8d82d2e6147cc96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Localizes all settings for this <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> from <a class="el" href="class_f_c_tie_prefs.html" title="The preferences for ties (includes options both from tie options and tie contour options).">FCTiePrefs</a>.  <a href="class_f_c_tie_mod.html#a07690d11eb4cce6e8d82d2e6147cc96b">More...</a><br /></td></tr>
+<tr class="separator:a07690d11eb4cce6e8d82d2e6147cc96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fc4aa6a38556eb77f16ff38485ca521"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521">IsContourActive</a> () const</td></tr>
 <tr class="memdesc:a9fc4aa6a38556eb77f16ff38485ca521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the tie contour adjustment fields are active.  <a href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521">More...</a><br /></td></tr>
 <tr class="separator:a9fc4aa6a38556eb77f16ff38485ca521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459d0c73c22062fb24c630c552aa64bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a459d0c73c22062fb24c630c552aa64bf">ActivateContour</a> (twobyte insetleft, twobyte heightleft, twobyte insetright, twobyte heightright, bool fixedinset=false)</td></tr>
+<tr class="memdesc:a459d0c73c22062fb24c630c552aa64bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the contour adjustment fields and initializes them with the input values.  <a href="class_f_c_tie_mod.html#a459d0c73c22062fb24c630c552aa64bf">More...</a><br /></td></tr>
+<tr class="separator:a459d0c73c22062fb24c630c552aa64bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163a355fde433ff10a5e566382a39b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a163a355fde433ff10a5e566382a39b08">DeactivateContour</a> ()</td></tr>
+<tr class="memdesc:a163a355fde433ff10a5e566382a39b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates the contour adjustment fields and initializes them with zero.  <a href="class_f_c_tie_mod.html#a163a355fde433ff10a5e566382a39b08">More...</a><br /></td></tr>
+<tr class="separator:a163a355fde433ff10a5e566382a39b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7d43cc25b42e4c6244220ed18a4ea5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#aff7d43cc25b42e4c6244220ed18a4ea5">GetStartConnectionCode</a> () const</td></tr>
+<tr class="memdesc:aff7d43cc25b42e4c6244220ed18a4ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the connection code for the start point.  <a href="class_f_c_tie_mod.html#aff7d43cc25b42e4c6244220ed18a4ea5">More...</a><br /></td></tr>
+<tr class="separator:aff7d43cc25b42e4c6244220ed18a4ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f9541aab6ae600fccc72bb65b4b9d8d"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a7f9541aab6ae600fccc72bb65b4b9d8d">GetStartVerticalPos</a> () const</td></tr>
 <tr class="memdesc:a7f9541aab6ae600fccc72bb65b4b9d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the vertical offset of the tie start.  <a href="class_f_c_tie_mod.html#a7f9541aab6ae600fccc72bb65b4b9d8d">More...</a><br /></td></tr>
 <tr class="separator:a7f9541aab6ae600fccc72bb65b4b9d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a136b52be9fa30e5bc509b7d050df1b3f"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a136b52be9fa30e5bc509b7d050df1b3f">GetStartHorizontalPos</a> () const</td></tr>
 <tr class="memdesc:a136b52be9fa30e5bc509b7d050df1b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the horizonal offset of the start point.  <a href="class_f_c_tie_mod.html#a136b52be9fa30e5bc509b7d050df1b3f">More...</a><br /></td></tr>
 <tr class="separator:a136b52be9fa30e5bc509b7d050df1b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef909394aa9e72a76a255056dfe309a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#aef909394aa9e72a76a255056dfe309a1">GetEndConnectionCode</a> () const</td></tr>
+<tr class="memdesc:aef909394aa9e72a76a255056dfe309a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the connection code for the end point.  <a href="class_f_c_tie_mod.html#aef909394aa9e72a76a255056dfe309a1">More...</a><br /></td></tr>
+<tr class="separator:aef909394aa9e72a76a255056dfe309a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6a057eb9ade33f8b940af0fdba50ff"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a0b6a057eb9ade33f8b940af0fdba50ff">GetEndVerticalPos</a> () const</td></tr>
 <tr class="memdesc:a0b6a057eb9ade33f8b940af0fdba50ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the vertical offset of the end point.  <a href="class_f_c_tie_mod.html#a0b6a057eb9ade33f8b940af0fdba50ff">More...</a><br /></td></tr>
 <tr class="separator:a0b6a057eb9ade33f8b940af0fdba50ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,7 +409,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a16e254234705d398b7a312d383ab0ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the horizontal offset of the end point.  <a href="class_f_c_tie_mod.html#a16e254234705d398b7a312d383ab0ddc">More...</a><br /></td></tr>
 <tr class="separator:a16e254234705d398b7a312d383ab0ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc99cc241e53ab759f3741e9a4ca8b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#a5bc99cc241e53ab759f3741e9a4ca8b7">SetFixedInsetStyle</a> (bool value)</td></tr>
-<tr class="memdesc:a5bc99cc241e53ab759f3741e9a4ca8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local fixed inset style for the tie. This value overrides the value in.  <a href="class_f_c_tie_mod.html#a5bc99cc241e53ab759f3741e9a4ca8b7">More...</a><br /></td></tr>
+<tr class="memdesc:a5bc99cc241e53ab759f3741e9a4ca8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local fixed inset style for the tie. This value overrides the style value in <a class="el" href="class_f_c_tie_prefs.html#a1ae99774017565282ad648a457d88875" title="Returns if the inset style is fixed or in percent (in the tie contour options).">FCTiePrefs::GetFixedInsetStyle</a>.  <a href="class_f_c_tie_mod.html#a5bc99cc241e53ab759f3741e9a4ca8b7">More...</a><br /></td></tr>
 <tr class="separator:a5bc99cc241e53ab759f3741e9a4ca8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8defdd9de0a7f6875c61b8f14bf813c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_tie_mod.html#ad8defdd9de0a7f6875c61b8f14bf813c">SetLeftHeight</a> (twobyte value)</td></tr>
 <tr class="memdesc:ad8defdd9de0a7f6875c61b8f14bf813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the left height contour value for the tie.  <a href="class_f_c_tie_mod.html#ad8defdd9de0a7f6875c61b8f14bf813c">More...</a><br /></td></tr>
@@ -717,15 +770,71 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class with adjustments to the ties (in Finale's Special Tools). </p>
-<p >The PDK Framework as of 0.62 supports loading, modifying, and deleting existing <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> records. You can also create new records, but there are some limitations on which fields you can edit. Some fields do not require activation, and they can be created and assigned values normally. However, the following categories require activation.</p>
+<p >The PDK Framework as of 0.62 supports creating, loading, modifying, and deleting existing <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> records. Some fields do not require activation, and they can be created and assigned values easily. However, the following categories require activation.</p>
 <ul>
 <li>Start Tie Placement</li>
 <li>End Tie Placement</li>
 <li>Tie Contour</li>
 </ul>
-<p >Activation can only be achieved by manually editing the tie in Finale or using a specialty plugin that knows how to activate them, such as Patterson's Tie Mover plugin. The categories can be independently activated. Even if you have manually edited the tie in Finale, not all of them will necessarily have been activated. The methods <a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb" title="Returns true if the start point is active.">IsStartPointActive</a>, <a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004" title="Returns true if the end point is active.">IsEndPointActive</a>, and <a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521" title="Returns true if the tie contour adjustment fields are active.">IsContourActive</a> allow you to determine if the fields of a specific category have been activated.</p>
+<p >The methods <a class="el" href="class_f_c_tie_mod.html#a5f05418ce5b2f2707f65c9cd716fe7b4" title="Activates the start placement fields and initializes them with the input values.">ActivateStartPoint</a>, <a class="el" href="class_f_c_tie_mod.html#a9ccc33fabf9cce5f6b47f1ef31fcaedf" title="Activates the end placement fields and initializes them with the input values.">ActivateEndPoint</a>, and <a class="el" href="class_f_c_tie_mod.html#a459d0c73c22062fb24c630c552aa64bf" title="Activates the contour adjustment fields and initializes them with the input values.">ActivateContour</a> activate each of these respectively. To initialize the fields the way Finale does requires considerable analysis and reverse-engineering of how Finale behaves. Unfortuately, the Finale PDK does not provide its initialization logic to plugins.</p>
+<p >Robert Patterson has provided a <b>tie.lua</b> library that re-implements Finale's behavior (based on reverse engineering) and calculates usable values for all the variables needed for activations. The library includes activation functions that eliminate any requirement to provide difficult-to-obtain inputs. It is highly recommend to use it rather than writing code from scratch. The library code itself is at the <a href="https://github.com/finale-lua/lua-scripts" target="_blank">Github repository</a>. Documentation can be found at the <a href=" http://finalelua.com" target="_blank">Finale Lua website</a>.</p>
+<p >The methods <a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb" title="Returns true if the start point is active.">IsStartPointActive</a>, <a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004" title="Returns true if the end point is active.">IsEndPointActive</a>, and <a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521" title="Returns true if the tie contour adjustment fields are active.">IsContourActive</a> allow you to determine if the fields of a specific category have been activated.</p>
+<p >The methods <a class="el" href="class_f_c_tie_mod.html#aa4be3d82b32af1bdbc0541c5d4d6cf35" title="Deactivates the start placement fields and initializes them with zero.">DeactivateStartPoint</a>, <a class="el" href="class_f_c_tie_mod.html#a4406337c93e7ba46d2ffd9e9a0c65bfb" title="Deactivates the end placement fields and initializes them with zero.">DeactivateEndPoint</a>, and <a class="el" href="class_f_c_tie_mod.html#a163a355fde433ff10a5e566382a39b08" title="Deactivates the contour adjustment fields and initializes them with zero.">DeactivateContour</a> deactivate their respective fields and set them all to zero.</p>
 <p >This class requires PDK_FRAMEWORK_ENTRIES to be defined. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a0ddf131d355cadab7f41bc081f1caf64" name="a0ddf131d355cadab7f41bc081f1caf64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf131d355cadab7f41bc081f1caf64">&#9670;&nbsp;</a></span>TIEMOD_CONNECTION_CODES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">FCTieMod::TIEMOD_CONNECTION_CODES</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tie Connection Codes. These are used to activate Start Point and End Point fields. If the code does not match the current context, Finale does not apply the endpoint data to the tie. </p>
+<p >Lua-supported (0.62). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a255baeafb17c5fd12e4e3edf34cbc883" name="a0ddf131d355cadab7f41bc081f1caf64a255baeafb17c5fd12e4e3edf34cbc883"></a>TIEMODCNCT_NONE&#160;</td><td class="fielddoc"><p >No connection </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a06595baf6ff3e87144addbbcdb82b9c2" name="a0ddf131d355cadab7f41bc081f1caf64a06595baf6ff3e87144addbbcdb82b9c2"></a>TIEMODCNCT_ENTRYLEFT_NOTECENTER&#160;</td><td class="fielddoc"><p >Left of entry, center of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a06aed71c15ad35a0eda35555e7745bf4" name="a0ddf131d355cadab7f41bc081f1caf64a06aed71c15ad35a0eda35555e7745bf4"></a>TIEMODCNCT_ENTRYRIGHT_NOTECENTER&#160;</td><td class="fielddoc"><p >Right of entry, center of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a7d3d8a1406bfdb825bbd09d19dd57fc9" name="a0ddf131d355cadab7f41bc081f1caf64a7d3d8a1406bfdb825bbd09d19dd57fc9"></a>TIEMODCNCT_NOTELEFT_NOTECENTER&#160;</td><td class="fielddoc"><p >Left of note, center of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64adc0178e9b20928056e208c48709623b8" name="a0ddf131d355cadab7f41bc081f1caf64adc0178e9b20928056e208c48709623b8"></a>TIEMODCNCT_NOTERIGHT_NOTECENTER&#160;</td><td class="fielddoc"><p >Right of note, center of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a4c6091e9f3863020b6efe296ce7e65f6" name="a0ddf131d355cadab7f41bc081f1caf64a4c6091e9f3863020b6efe296ce7e65f6"></a>TIEMODCNCT_NOTECENTER_NOTEBOTTOM&#160;</td><td class="fielddoc"><p >Horizontal center of note, bottom of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64aa477f57883930e8dce91588203328ebe" name="a0ddf131d355cadab7f41bc081f1caf64aa477f57883930e8dce91588203328ebe"></a>TIEMODCNCT_NOTECENTER_NOTETOP&#160;</td><td class="fielddoc"><p >Horizontal center of note, top of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64ab64000bba9d269d6dd9346a768f73cd9" name="a0ddf131d355cadab7f41bc081f1caf64ab64000bba9d269d6dd9346a768f73cd9"></a>TIEMODCNCT_DOTRIGHT_NOTECENTER&#160;</td><td class="fielddoc"><p >Right of dot(s), center of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a1f9745349d22c543c57ce8125bc8122b" name="a0ddf131d355cadab7f41bc081f1caf64a1f9745349d22c543c57ce8125bc8122b"></a>TIEMODCNCT_ACCILEFT_NOTECENTER&#160;</td><td class="fielddoc"><p >Left of accidental, center of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64aff6971028aad06eb83099ec7870b48a1" name="a0ddf131d355cadab7f41bc081f1caf64aff6971028aad06eb83099ec7870b48a1"></a>TIEMODCNCT_ENTRYCENTER_NOTEBOTTOM&#160;</td><td class="fielddoc"><p >Horizontal center of entry, bottom of note (possibly not used by Finale) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a9d81a76f73d0f3e11620a7dd12b5dc28" name="a0ddf131d355cadab7f41bc081f1caf64a9d81a76f73d0f3e11620a7dd12b5dc28"></a>TIEMODCNCT_ENTRYCENTER_NOTETOP&#160;</td><td class="fielddoc"><p >Horizontal center of entry, top of note (possibly not used by Finale) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a7a165c5c9f11f965fb0a840943849d7d" name="a0ddf131d355cadab7f41bc081f1caf64a7a165c5c9f11f965fb0a840943849d7d"></a>TIEMODCNCT_NOTELEFT_NOTEBOTTOM&#160;</td><td class="fielddoc"><p >Left of note, bottom of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a46af352aff17e71032d1af8c282bbcd8" name="a0ddf131d355cadab7f41bc081f1caf64a46af352aff17e71032d1af8c282bbcd8"></a>TIEMODCNCT_NOTERIGHT_NOTEBOTTOM&#160;</td><td class="fielddoc"><p >Right of note, bottom of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64aa048ce9d5d1c602fdce1ee48ac92a445" name="a0ddf131d355cadab7f41bc081f1caf64aa048ce9d5d1c602fdce1ee48ac92a445"></a>TIEMODCNCT_NOTELEFT_NOTETOP&#160;</td><td class="fielddoc"><p >Left of note, top of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64ae6d2ab2ef6a7b61e2670e23f012376a7" name="a0ddf131d355cadab7f41bc081f1caf64ae6d2ab2ef6a7b61e2670e23f012376a7"></a>TIEMODCNCT_NOTERIGHT_NOTETOP&#160;</td><td class="fielddoc"><p >Right of note, top of note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64a4220b971b2d0111c746b9e004c8a3bfc" name="a0ddf131d355cadab7f41bc081f1caf64a4220b971b2d0111c746b9e004c8a3bfc"></a>TIEMODCNCT_SYSTEMEND&#160;</td><td class="fielddoc"><p >System end (for the right side across systems </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0ddf131d355cadab7f41bc081f1caf64ada12fc30884634a65060a316773730cc" name="a0ddf131d355cadab7f41bc081f1caf64ada12fc30884634a65060a316773730cc"></a>TIEMODCNCT_SYSTEMSTART&#160;</td><td class="fielddoc"><p >System start (for the left side of tie ends) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a8fd213af279301513c31488ace6b8331" name="a8fd213af279301513c31488ace6b8331"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fd213af279301513c31488ace6b8331">&#9670;&nbsp;</a></span>TIEMOD_DIRECTION</h2>
 
@@ -836,6 +945,195 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a459d0c73c22062fb24c630c552aa64bf" name="a459d0c73c22062fb24c630c552aa64bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a459d0c73c22062fb24c630c552aa64bf">&#9670;&nbsp;</a></span>ActivateContour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::ActivateContour </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>insetleft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>heightleft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>insetright</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>heightright</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fixedinset</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activates the contour adjustment fields and initializes them with the input values. </p>
+<p >Lua-supported (0.62).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">insetleft</td><td>Left inset value. See comments at <a class="el" href="class_f_c_tie_mod.html#a6a7f4823cea70537a4c80220f8ced06b" title="Gets the left inset contour value for the tie.">GetLeftInset</a> for how to interpret this value. </td></tr>
+    <tr><td class="paramname">heightleft</td><td>Left height value (evpu). </td></tr>
+    <tr><td class="paramname">insetright</td><td>Right inset value. See comments at <a class="el" href="class_f_c_tie_mod.html#a6a7f4823cea70537a4c80220f8ced06b" title="Gets the left inset contour value for the tie.">GetLeftInset</a> for how to interpret this value. </td></tr>
+    <tr><td class="paramname">heightright</td><td>Right height value (evpu). </td></tr>
+    <tr><td class="paramname">fixedinset</td><td>See comments at <a class="el" href="class_f_c_tie_mod.html#a5bc99cc241e53ab759f3741e9a4ca8b7" title="Sets the local fixed inset style for the tie. This value overrides the style value in FCTiePrefs::Get...">SetFixedInsetStyle</a>. This parameter may be omitted, including in Lua scripts, and it defaults to false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9ccc33fabf9cce5f6b47f1ef31fcaedf" name="a9ccc33fabf9cce5f6b47f1ef31fcaedf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ccc33fabf9cce5f6b47f1ef31fcaedf">&#9670;&nbsp;</a></span>ActivateEndPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::ActivateEndPoint </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fortieover</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">TIEMOD_CONNECTION_CODES</a>&#160;</td>
+          <td class="paramname"><em>connectioncode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>hoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>voffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activates the end placement fields and initializes them with the input values. </p>
+<p >The input direction and connection code must match that of the tie being modified. Otherwise, Finale ignores the values in the horizontal and vertical fields.</p>
+<p >Lua-supported (0.62).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fortieover</td><td>True if this is for a tie-over and false if for a tie-under. </td></tr>
+    <tr><td class="paramname">connectioncode</td><td>One of the <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64" title="Tie Connection Codes. These are used to activate Start Point and End Point fields....">TIEMOD_CONNECTION_CODES</a> values. </td></tr>
+    <tr><td class="paramname">hoffset</td><td>Horizontal offset value (evpu). </td></tr>
+    <tr><td class="paramname">voffset</td><td>Vertical offset value (evpu). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5f05418ce5b2f2707f65c9cd716fe7b4" name="a5f05418ce5b2f2707f65c9cd716fe7b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f05418ce5b2f2707f65c9cd716fe7b4">&#9670;&nbsp;</a></span>ActivateStartPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::ActivateStartPoint </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fortieover</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64">TIEMOD_CONNECTION_CODES</a>&#160;</td>
+          <td class="paramname"><em>connectioncode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>hoffset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>voffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Activates the start placement fields and initializes them with the input values. </p>
+<p >The input direction and connection code must match that of the tie being modified. Otherwise, Finale ignores the values in the horizontal and vertical fields.</p>
+<p >Lua-supported (0.62).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fortieover</td><td>True if this is for a tie-over and false if for a tie-under. </td></tr>
+    <tr><td class="paramname">connectioncode</td><td>One of the <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64" title="Tie Connection Codes. These are used to activate Start Point and End Point fields....">TIEMOD_CONNECTION_CODES</a> values. </td></tr>
+    <tr><td class="paramname">hoffset</td><td>Horizontal offset value (evpu). </td></tr>
+    <tr><td class="paramname">voffset</td><td>Vertical offset value (evpu). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af63fee1957f5f8eb54cc0eecaad4787a" name="af63fee1957f5f8eb54cc0eecaad4787a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af63fee1957f5f8eb54cc0eecaad4787a">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -863,6 +1161,90 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Lua-supported. </p>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_entry_detail_note_i_d.html#aabc9b467a830518c29faf85622d6583c">__FCEntryDetailNoteID</a>.</p>
+
+</div>
+</div>
+<a id="a163a355fde433ff10a5e566382a39b08" name="a163a355fde433ff10a5e566382a39b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163a355fde433ff10a5e566382a39b08">&#9670;&nbsp;</a></span>DeactivateContour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::DeactivateContour </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deactivates the contour adjustment fields and initializes them with zero. </p>
+<p >Lua-supported (0.62). </p>
+
+</div>
+</div>
+<a id="a4406337c93e7ba46d2ffd9e9a0c65bfb" name="a4406337c93e7ba46d2ffd9e9a0c65bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4406337c93e7ba46d2ffd9e9a0c65bfb">&#9670;&nbsp;</a></span>DeactivateEndPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::DeactivateEndPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deactivates the end placement fields and initializes them with zero. </p>
+<p >Lua-supported (0.62). </p>
+
+</div>
+</div>
+<a id="aa4be3d82b32af1bdbc0541c5d4d6cf35" name="aa4be3d82b32af1bdbc0541c5d4d6cf35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4be3d82b32af1bdbc0541c5d4d6cf35">&#9670;&nbsp;</a></span>DeactivateStartPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::DeactivateStartPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deactivates the start placement fields and initializes them with zero. </p>
+<p >Lua-supported (0.62). </p>
 
 </div>
 </div>
@@ -981,6 +1363,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Lua-supported (also read-only property) (0.55). </p>
 
 <p>Implements <a class="el" href="class_____f_c_base_data.html#a3ddb98d5afd4e9ccf7f102419ba245a0">__FCBaseData</a>.</p>
+
+</div>
+</div>
+<a id="aef909394aa9e72a76a255056dfe309a1" name="aef909394aa9e72a76a255056dfe309a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef909394aa9e72a76a255056dfe309a1">&#9670;&nbsp;</a></span>GetEndConnectionCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCTieMod::GetEndConnectionCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the connection code for the end point. </p>
+<p >Lua-supported (also as read-only property) (0.62)</p>
+<dl class="section return"><dt>Returns</dt><dd>One of the <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64" title="Tie Connection Codes. These are used to activate Start Point and End Point fields....">TIEMOD_CONNECTION_CODES</a> values. </dd></dl>
 
 </div>
 </div>
@@ -1127,7 +1538,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Gets the left inset contour value for the tie. </p>
-<p >If the inset style is percent (most common), this value is percent * 2048. If the inset style is fixed (<a class="el" href="class_f_c_tie_mod.html#a90f2158ad816ba404e955fc74e7e2ee7" title="Gets the local fixed inset style for the tie.">GetFixedInsetStyle</a> is true), it is an EVPU value.</p>
+<p >If the inset style is percent (most common), this value is the raw percentage value, which is the percent * 2048. If the inset style is fixed (<a class="el" href="class_f_c_tie_mod.html#a90f2158ad816ba404e955fc74e7e2ee7" title="Gets the local fixed inset style for the tie.">GetFixedInsetStyle</a> is true), it is an EVPU value.</p>
 <p >If the contour fields are not active, returns 0.</p>
 <p >Lua-supported (also as property) (0.62).</p>
 <dl class="section return"><dt>Returns</dt><dd>left height in EVPU </dd></dl>
@@ -1158,6 +1569,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the Outer Placement selection. </p>
+<p >If the note is an inner note of a chord, Finale always uses Inner placement, even if the placement has been overridden to Outer. This function returns <a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88a3dd7fbb18f764a068843ac18d1351821">TIEMODSEL_ON</a> in that case, even though Finale behaves as if the value were <a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88a9956bb475800e0467e3c8afb457fa37a">TIEMODSEL_OFF</a>.</p>
 <p >Lua-supported (also as property) (0.62).</p>
 <dl class="section return"><dt>Returns</dt><dd>Any of the <a class="el" href="class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88" title="Selector values: Default, On, Off.">TIEMOD_SELECTOR</a> constants. </dd></dl>
 
@@ -1217,10 +1629,39 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Gets the right inset contour value for the tie. </p>
-<p >See comments at <a class="el" href="class_f_c_tie_mod.html#a65193dce427816ada294613c8b6b11cd" title="Gets the right inset contour value for the tie.">GetRightInset</a> for how to interpret this value.</p>
+<p >See comments at <a class="el" href="class_f_c_tie_mod.html#a6a7f4823cea70537a4c80220f8ced06b" title="Gets the left inset contour value for the tie.">GetLeftInset</a> for how to interpret this value.</p>
 <p >If the contour fields are not active, returns 0.</p>
 <p >Lua-supported (also as property) (0.62).</p>
 <dl class="section return"><dt>Returns</dt><dd>right height in EVPU </dd></dl>
+
+</div>
+</div>
+<a id="aff7d43cc25b42e4c6244220ed18a4ea5" name="aff7d43cc25b42e4c6244220ed18a4ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7d43cc25b42e4c6244220ed18a4ea5">&#9670;&nbsp;</a></span>GetStartConnectionCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCTieMod::GetStartConnectionCode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the connection code for the start point. </p>
+<p >Lua-supported (also as read-only property) (0.62)</p>
+<dl class="section return"><dt>Returns</dt><dd>One of the <a class="el" href="class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64" title="Tie Connection Codes. These are used to activate Start Point and End Point fields....">TIEMOD_CONNECTION_CODES</a> values. </dd></dl>
 
 </div>
 </div>
@@ -1425,6 +1866,29 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a07690d11eb4cce6e8d82d2e6147cc96b" name="a07690d11eb4cce6e8d82d2e6147cc96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07690d11eb4cce6e8d82d2e6147cc96b">&#9670;&nbsp;</a></span>LocalizeFromPreferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTieMod::LocalizeFromPreferences </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Localizes all settings for this <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> from <a class="el" href="class_f_c_tie_prefs.html" title="The preferences for ties (includes options both from tie options and tie contour options).">FCTiePrefs</a>. </p>
+<p >If you do not localize your settings, subsequent changes to the Tie Preferences can make the connecton codes invalid. If an endpoint's code is invalid, Finale stops rendering the <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a> settings for that endpoint. Localizing locks in the context at the time the connection codes were calculated so that future changes to the Tie Preferences, at least, cannot affect this <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a>. (Other types of changes, such as flipping stem direction or changing the number of notes in the chord, will still cause connection codes to be invalid. At that point you may be better off deactivating and reactivating your endpoints.)</p>
+<p >This function changes the <a class="el" href="class_f_c_tie_mod.html" title="Class with adjustments to the ties (in Finale&#39;s Special Tools).">FCTieMod</a>'s Outer placement to match that of <a class="el" href="class_f_c_tie_prefs.html#a68d8e65e868d9ba6fd028db0625d1fec" title="Returns the &quot;Use outer placement&quot; value.">FCTiePrefs::GetUseOuterPlacement</a>. Localization normally should be done as part of activating the start and end points and then left alone after that.</p>
+<p >This method requires PDK_FRAMEWORK_PREFS to be defined.</p>
+<p >Lua-supported (0.62). </p>
+
+</div>
+</div>
 <a id="aec936bb3dcc3835debc654929353d9d4" name="aec936bb3dcc3835debc654929353d9d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec936bb3dcc3835debc654929353d9d4">&#9670;&nbsp;</a></span>SetAvoidStaffLines()</h2>
 
@@ -1620,7 +2084,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Sets the local fixed inset style for the tie. This value overrides the value in. </p>
+<p>Sets the local fixed inset style for the tie. This value overrides the style value in <a class="el" href="class_f_c_tie_prefs.html#a1ae99774017565282ad648a457d88875" title="Returns if the inset style is fixed or in percent (in the tie contour options).">FCTiePrefs::GetFixedInsetStyle</a>. </p>
 <p >If the contour fields have not been actived, this method does nothing.</p>
 <p >Lua-supported (also as property) (0.62). </p>
 
@@ -1685,7 +2149,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Lua-supported (also as property) (0.62).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>See comments at <a class="el" href="class_f_c_tie_mod.html#a65193dce427816ada294613c8b6b11cd" title="Gets the right inset contour value for the tie.">GetRightInset</a> for how to interpret this value. </td></tr>
+    <tr><td class="paramname">value</td><td>See comments at <a class="el" href="class_f_c_tie_mod.html#a6a7f4823cea70537a4c80220f8ced06b" title="Gets the left inset contour value for the tie.">GetLeftInset</a> for how to interpret this value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1751,6 +2215,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the Outer Placement selection. </p>
+<p >If the note is an inner note of a chord, Finale always uses Inner placement, even if the placement has been overridden to Outer.</p>
 <p >Lua-supported (also as property) (0.62).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1820,7 +2285,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Lua-supported (also as property) (0.62).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>See comments at <a class="el" href="class_f_c_tie_mod.html#a65193dce427816ada294613c8b6b11cd" title="Gets the right inset contour value for the tie.">GetRightInset</a> for how to interpret this value. </td></tr>
+    <tr><td class="paramname">value</td><td>See comments at <a class="el" href="class_f_c_tie_mod.html#a6a7f4823cea70537a4c80220f8ced06b" title="Gets the left inset contour value for the tie.">GetLeftInset</a> for how to interpret this value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1937,7 +2402,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 9 2022 10:37:56 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 14 2022 18:03:02 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -2772,7 +2772,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The class for a staff in the score. It is also a base class for staff styles. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Add methods and properties for autonumbered names. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add methods and properties for autonumbered names. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ae67e6d274966076c15c594787502604b" name="ae67e6d274966076c15c594787502604b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae67e6d274966076c15c594787502604b">&#9670;&nbsp;</a></span>STAFFAUTONUMBER_STYLE</h2>
@@ -2946,6 +2946,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Creates the instrument definition object for the staff or staff style. </p>
 <p >Might return NULL on internal mapping errors (or if the layer is out of range).</p>
 <p >It's the caller's responsibility to delete the created object from the heap after use.</p>
+<p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">layer</td><td>The 1-based layer number. </td></tr>
@@ -3025,7 +3026,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Gets the name position object for the abbreviated staff name. The object is of the <a class="el" href="class_f_c_staff_name_position.html" title="Class for staff (or staff style) name positioning data.">FCStaffNamePosition</a> class. </p>
 <p >The returned object is saved automatically through <a class="el" href="class_f_c_staff.html" title="The class for a staff in the score. It is also a base class for staff styles.">FCStaff</a>:<a class="el" href="class_f_c_staff.html#a079eb0729222be0f901e6fc8e995968e" title="Overloaded version of the Save method, that saves any attached objects.">Save()</a></p>
-<p >Requires PDK_FRAMEWORK_PREFS defined. </p>
+<p >Requires PDK_FRAMEWORK_PREFS defined.</p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -3107,7 +3109,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Gets the name position object for the full staff name. The object is of the <a class="el" href="class_f_c_staff_name_position.html" title="Class for staff (or staff style) name positioning data.">FCStaffNamePosition</a> class. </p>
 <p >The returned object is saved automatically through <a class="el" href="class_f_c_staff.html" title="The class for a staff in the score. It is also a base class for staff styles.">FCStaff</a>:<a class="el" href="class_f_c_staff.html#a079eb0729222be0f901e6fc8e995968e" title="Overloaded version of the Save method, that saves any attached objects.">Save()</a></p>
-<p >Requires PDK_FRAMEWORK_PREFS defined. </p>
+<p >Requires PDK_FRAMEWORK_PREFS defined.</p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -3197,6 +3200,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets up and saves a percussion staff. The supplied percussion layout ID will be used. Please note that the <a class="el" href="class_f_c_staff.html" title="The class for a staff in the score. It is also a base class for staff styles.">FCStaff</a> object must be saved afterwards as well. </p>
+<p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">layoutID</td><td>An existing percussion layout ID. </td></tr>
@@ -3279,7 +3283,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 9 2022 10:37:56 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 14 2022 18:03:02 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

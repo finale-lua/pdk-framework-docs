@@ -140,6 +140,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aabed8702b334ee141ceb643d2a4ab055"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_metrics.html#aabed8702b334ee141ceb643d2a4ab055">GetRightBarlineWidth</a> () const</td></tr>
 <tr class="memdesc:aabed8702b334ee141ceb643d2a4ab055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the combined total width of the right barline, including double or final barlines and the gap between them (if any).  <a href="class_f_c_cell_metrics.html#aabed8702b334ee141ceb643d2a4ab055">More...</a><br /></td></tr>
 <tr class="separator:aabed8702b334ee141ceb643d2a4ab055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6332250eb0e43b37aa9b23123b58b45f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_metrics.html#a6332250eb0e43b37aa9b23123b58b45f">GetStaffSystem</a> () const</td></tr>
+<tr class="memdesc:a6332250eb0e43b37aa9b23123b58b45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the staff system number for the cell.  <a href="class_f_c_cell_metrics.html#a6332250eb0e43b37aa9b23123b58b45f">More...</a><br /></td></tr>
+<tr class="separator:a6332250eb0e43b37aa9b23123b58b45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6c71be290b48d72da708e6cac425fd"><td class="memItemLeft" align="right" valign="top">Evpu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_metrics.html#a1b6c71be290b48d72da708e6cac425fd">GetSystemTopPos</a> () const</td></tr>
+<tr class="memdesc:a1b6c71be290b48d72da708e6cac425fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the top of the system. The coordinate is referenced from the bottom of the page.  <a href="class_f_c_cell_metrics.html#a1b6c71be290b48d72da708e6cac425fd">More...</a><br /></td></tr>
+<tr class="separator:a1b6c71be290b48d72da708e6cac425fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf024f9458e5ce6d274e0ae5fd48d64c"><td class="memItemLeft" align="right" valign="top">Evpu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_metrics.html#abf024f9458e5ce6d274e0ae5fd48d64c">GetSlotNumber</a> () const</td></tr>
+<tr class="memdesc:abf024f9458e5ce6d274e0ae5fd48d64c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 1-based slot number within its system for the cell's staff. Subtract 1 to get an index to pass to <a class="el" href="class_f_c_system_staves.html#a11fc48b67a81e8fdd0cc813572158e37" title="Overridden GetItemAt() method.">FCSystemStaves::GetItemAt</a>.  <a href="class_f_c_cell_metrics.html#abf024f9458e5ce6d274e0ae5fd48d64c">More...</a><br /></td></tr>
+<tr class="separator:abf024f9458e5ce6d274e0ae5fd48d64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2b78ad525172f3562c7a57febf4d87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_metrics.html#a6a2b78ad525172f3562c7a57febf4d87">GetAttachment</a> (<a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *pBaseDataObject, fourbyte the_id, EAttachment *pAttachment, bool stop=false)</td></tr>
 <tr class="memdesc:a6a2b78ad525172f3562c7a57febf4d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a buffer with the attachment data for an element.  <a href="class_f_c_cell_metrics.html#a6a2b78ad525172f3562c7a57febf4d87">More...</a><br /></td></tr>
 <tr class="separator:a6a2b78ad525172f3562c7a57febf4d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -943,6 +952,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="abf024f9458e5ce6d274e0ae5fd48d64c" name="abf024f9458e5ce6d274e0ae5fd48d64c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf024f9458e5ce6d274e0ae5fd48d64c">&#9670;&nbsp;</a></span>GetSlotNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu32 FCCellMetrics::GetSlotNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the 1-based slot number within its system for the cell's staff. Subtract 1 to get an index to pass to <a class="el" href="class_f_c_system_staves.html#a11fc48b67a81e8fdd0cc813572158e37" title="Overridden GetItemAt() method.">FCSystemStaves::GetItemAt</a>. </p>
+<p >Lua-supported (also as a read-only property) (0.62). </p>
+
+</div>
+</div>
 <a id="a70ba11b4193e1575c7a0ee0607f85cf0" name="a70ba11b4193e1575c7a0ee0607f85cf0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70ba11b4193e1575c7a0ee0607f85cf0">&#9670;&nbsp;</a></span>GetStaffScaling()</h2>
 
@@ -972,6 +1009,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6332250eb0e43b37aa9b23123b58b45f" name="a6332250eb0e43b37aa9b23123b58b45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6332250eb0e43b37aa9b23123b58b45f">&#9670;&nbsp;</a></span>GetStaffSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCCellMetrics::GetStaffSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the staff system number for the cell. </p>
+<p >Lua-supported (also as a read-only property) (0.62). </p>
+
+</div>
+</div>
 <a id="a908a2078ae9ef2861dba9dc3edf1c69a" name="a908a2078ae9ef2861dba9dc3edf1c69a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a908a2078ae9ef2861dba9dc3edf1c69a">&#9670;&nbsp;</a></span>GetSystemScaling()</h2>
 
@@ -998,6 +1063,34 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the accumulated system scaling, in 100th of a percent. </p>
 <p >Lua-supported (also as a read-only property). <br  />
  </p>
+
+</div>
+</div>
+<a id="a1b6c71be290b48d72da708e6cac425fd" name="a1b6c71be290b48d72da708e6cac425fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6c71be290b48d72da708e6cac425fd">&#9670;&nbsp;</a></span>GetSystemTopPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu32 FCCellMetrics::GetSystemTopPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the position of the top of the system. The coordinate is referenced from the bottom of the page. </p>
+<p >Lua-supported (also as a read-only property) (0.62). </p>
 
 </div>
 </div>
@@ -1132,7 +1225,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 9 2022 10:37:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 14 2022 18:02:59 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
