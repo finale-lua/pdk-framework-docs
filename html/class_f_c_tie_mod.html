@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62b2</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
    </div>
   </td>
  </tr>
@@ -777,7 +777,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <li>Tie Contour</li>
 </ul>
 <p >The methods <a class="el" href="class_f_c_tie_mod.html#a5f05418ce5b2f2707f65c9cd716fe7b4" title="Activates the start placement fields and initializes them with the input values.">ActivateStartPoint</a>, <a class="el" href="class_f_c_tie_mod.html#a9ccc33fabf9cce5f6b47f1ef31fcaedf" title="Activates the end placement fields and initializes them with the input values.">ActivateEndPoint</a>, and <a class="el" href="class_f_c_tie_mod.html#a459d0c73c22062fb24c630c552aa64bf" title="Activates the contour adjustment fields and initializes them with the input values.">ActivateContour</a> activate each of these respectively. To initialize the fields the way Finale does requires considerable analysis and reverse-engineering of how Finale behaves. Unfortuately, the Finale PDK does not provide its initialization logic to plugins.</p>
-<p >Robert Patterson has provided a <b>tie.lua</b> library that re-implements Finale's behavior (based on reverse engineering) and calculates usable values for all the variables needed for activations. The library includes activation functions that eliminate any requirement to provide difficult-to-obtain inputs. It is highly recommend to use it rather than writing code from scratch. The library code itself is at the <a href="https://github.com/finale-lua/lua-scripts" target="_blank">Github repository</a>. Documentation can be found at the <a href=" http://finalelua.com" target="_blank">Finale Lua website</a>.</p>
+<p >Robert Patterson has provided a <b>tie.lua</b> library that re-implements Finale's behavior (based on reverse engineering) and calculates usable values for all the variables needed for activations. The library includes activation functions that eliminate any requirement to provide difficult-to-obtain inputs. It is highly recommended to use it rather than writing code from scratch. The library code itself is at the <a href="https://github.com/finale-lua/lua-scripts" target="_blank">Github repository</a>. Documentation can be found at the <a href=" http://finalelua.com" target="_blank">Finale Lua website</a>.</p>
 <p >The methods <a class="el" href="class_f_c_tie_mod.html#a751511459ef863c0e1fe932ffe77fccb" title="Returns true if the start point is active.">IsStartPointActive</a>, <a class="el" href="class_f_c_tie_mod.html#a837ecf40d0435dd29312ae23d2b73004" title="Returns true if the end point is active.">IsEndPointActive</a>, and <a class="el" href="class_f_c_tie_mod.html#a9fc4aa6a38556eb77f16ff38485ca521" title="Returns true if the tie contour adjustment fields are active.">IsContourActive</a> allow you to determine if the fields of a specific category have been activated.</p>
 <p >The methods <a class="el" href="class_f_c_tie_mod.html#aa4be3d82b32af1bdbc0541c5d4d6cf35" title="Deactivates the start placement fields and initializes them with zero.">DeactivateStartPoint</a>, <a class="el" href="class_f_c_tie_mod.html#a4406337c93e7ba46d2ffd9e9a0c65bfb" title="Deactivates the end placement fields and initializes them with zero.">DeactivateEndPoint</a>, and <a class="el" href="class_f_c_tie_mod.html#a163a355fde433ff10a5e566382a39b08" title="Deactivates the contour adjustment fields and initializes them with zero.">DeactivateContour</a> deactivate their respective fields and set them all to zero.</p>
 <p >This class requires PDK_FRAMEWORK_ENTRIES to be defined. </p>
@@ -2402,7 +2402,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 14 2022 18:03:02 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 17 2022 13:59:53 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
