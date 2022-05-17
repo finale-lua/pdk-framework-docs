@@ -10,8 +10,9 @@ var searchData=
   ['smartshape_5ftypes_7',['SMARTSHAPE_TYPES',['../class_f_c_smart_shape.html#a29b94a28426154f61cb5bf57d14a8b42',1,'FCSmartShape']]],
   ['stackingmode_8',['STACKINGMODE',['../class_f_c_articulation.html#a5f9bc527a4b8631a856bf21582e4cf02',1,'FCArticulation']]],
   ['staff_5fhidemodes_9',['STAFF_HIDEMODES',['../class_____f_c_staff_base.html#af6d2a995255b54fc33171caf5842f2fb',1,'__FCStaffBase']]],
-  ['stafflist_5fmodes_10',['STAFFLIST_MODES',['../class_f_c_staff_list.html#addd36a6ac81bf72dc0038d61e4841170',1,'FCStaffList']]],
-  ['staffnotation_5fstyle_11',['STAFFNOTATION_STYLE',['../class_____f_c_staff_base.html#a262557f0eaf1ef6150e5420f6d09e480',1,'__FCStaffBase']]],
-  ['syllablealigns_12',['SYLLABLEALIGNS',['../class_f_c_syllable_entry_mod.html#a1bfdb3184b8d8928f49789f30721cdbe',1,'FCSyllableEntryMod']]],
-  ['syllablejustifications_13',['SYLLABLEJUSTIFICATIONS',['../class_f_c_syllable_entry_mod.html#a3817af1aa51a303b83e18250cec7ae65',1,'FCSyllableEntryMod']]]
+  ['staffautonumber_5fstyle_10',['STAFFAUTONUMBER_STYLE',['../class_f_c_staff.html#ae67e6d274966076c15c594787502604b',1,'FCStaff']]],
+  ['stafflist_5fmodes_11',['STAFFLIST_MODES',['../class_f_c_staff_list.html#addd36a6ac81bf72dc0038d61e4841170',1,'FCStaffList']]],
+  ['staffnotation_5fstyle_12',['STAFFNOTATION_STYLE',['../class_____f_c_staff_base.html#a262557f0eaf1ef6150e5420f6d09e480',1,'__FCStaffBase']]],
+  ['syllablealigns_13',['SYLLABLEALIGNS',['../class_f_c_syllable_entry_mod.html#a1bfdb3184b8d8928f49789f30721cdbe',1,'FCSyllableEntryMod']]],
+  ['syllablejustifications_14',['SYLLABLEJUSTIFICATIONS',['../class_f_c_syllable_entry_mod.html#a3817af1aa51a303b83e18250cec7ae65',1,'FCSyllableEntryMod']]]
 ];

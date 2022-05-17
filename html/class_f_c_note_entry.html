@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
    </div>
   </td>
  </tr>
@@ -675,6 +675,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSameMeasurePosAs</b
 <tr class="memdesc:a194f0630fcb1ba350f985401dc9dd650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the resize percent for the note entry.  <a href="class_f_c_note_entry.html#a194f0630fcb1ba350f985401dc9dd650">More...</a><br /></td></tr>
 <tr class="separator:a194f0630fcb1ba350f985401dc9dd650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3264ae0bb81c38936eab9de2dd4d6fa5"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a3264ae0bb81c38936eab9de2dd4d6fa5">CalcStemLength</a> ()</td></tr>
+<tr class="memdesc:a3264ae0bb81c38936eab9de2dd4d6fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the stem length, based on the entry metrics.  <a href="class_f_c_note_entry.html#a3264ae0bb81c38936eab9de2dd4d6fa5">More...</a><br /></td></tr>
 <tr class="separator:a3264ae0bb81c38936eab9de2dd4d6fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41109f718941fbcea52c0904d85cb9b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a41109f718941fbcea52c0904d85cb9b1">IsTied</a> ()</td></tr>
 <tr class="memdesc:a41109f718941fbcea52c0904d85cb9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <b>any</b> of the notes in the chord is tied to the next entry.  <a href="class_f_c_note_entry.html#a41109f718941fbcea52c0904d85cb9b1">More...</a><br /></td></tr>
@@ -1778,7 +1779,6 @@ the entry's chord.
 </div><div class="memdoc">
 
 <p>Returns true if the entry is in a cell with multiple layers of music. </p>
-<p >Current implementation is extremely slow!</p>
 <p >Lua-supported. </p>
 
 </div>
@@ -1926,7 +1926,8 @@ the entry's chord.
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Calculates the stem length, based on the entry metrics.</p>
+
+<p>Calculates the stem length, based on the entry metrics. </p>
 <p >Call the <a class="el" href="class_f_c_note_entry.html#afce30991c44a98750785a9ccbff56dc0" title="Static method that mark that the entry-related layout info needs to be rebuilt (for CalcStemUp(),...">MarkEntryMetricsForUpdate</a> method if the entry-related layout info needs to be rebuilt.</p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>-1 on error or if it's a rest. Otherwise, the stem length in EVPUs. </dd></dl>
@@ -2173,7 +2174,7 @@ the entry's chord.
 <li>Accidental mods</li>
 <li>Dot mods</li>
 <li>MIDI performance data</li>
-<li>Tie start+end mods</li>
+<li>Tie start mods</li>
 <li>Tie end mods</li>
 </ul>
 <p >Lua-supported. </p>
@@ -5500,7 +5501,7 @@ the entry's chord.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 16 2022 11:00:57 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 17 2022 13:59:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
    </div>
   </td>
  </tr>
@@ -120,12 +120,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2867ae01c621495eac28a9dba37263cd"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_text.html#a2867ae01c621495eac28a9dba37263cd">GetVerticalPos</a> () const</td></tr>
 <tr class="memdesc:a2867ae01c621495eac28a9dba37263cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertical position from the baseline in EVPUs.  <a href="class_f_c_cell_text.html#a2867ae01c621495eac28a9dba37263cd">More...</a><br /></td></tr>
 <tr class="separator:a2867ae01c621495eac28a9dba37263cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239b1eb72d67571007160744fbcff3bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_text.html#a239b1eb72d67571007160744fbcff3bf">GetVisible</a> () const</td></tr>
+<tr class="memdesc:a239b1eb72d67571007160744fbcff3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the text block is visible (in the score/part that's currently in focus).  <a href="class_f_c_cell_text.html#a239b1eb72d67571007160744fbcff3bf">More...</a><br /></td></tr>
+<tr class="separator:a239b1eb72d67571007160744fbcff3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32714a4625d7beebc6199ad0b1682e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_text.html#a32714a4625d7beebc6199ad0b1682e7b">SetMeasurePos</a> (TimeEdu32 value)</td></tr>
 <tr class="memdesc:a32714a4625d7beebc6199ad0b1682e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the measure position in EDUs.  <a href="class_f_c_cell_text.html#a32714a4625d7beebc6199ad0b1682e7b">More...</a><br /></td></tr>
 <tr class="separator:a32714a4625d7beebc6199ad0b1682e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8be0a00b64dbe0a189b416f271b43fd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_text.html#a8be0a00b64dbe0a189b416f271b43fd7">SetVerticalPos</a> (twobyte value)</td></tr>
 <tr class="memdesc:a8be0a00b64dbe0a189b416f271b43fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vertical position from the baseline in EVPUs.  <a href="class_f_c_cell_text.html#a8be0a00b64dbe0a189b416f271b43fd7">More...</a><br /></td></tr>
 <tr class="separator:a8be0a00b64dbe0a189b416f271b43fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5ab77f2620ed94a52ffcf080f5e475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_text.html#a8e5ab77f2620ed94a52ffcf080f5e475">SetVisible</a> (bool visible)</td></tr>
+<tr class="memdesc:a8e5ab77f2620ed94a52ffcf080f5e475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the text block should be visible or not (in the score/part that's currently in focus - works in Fin2012).  <a href="class_f_c_cell_text.html#a8e5ab77f2620ed94a52ffcf080f5e475">More...</a><br /></td></tr>
+<tr class="separator:a8e5ab77f2620ed94a52ffcf080f5e475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92dc99ec51dd0416db4463898533a6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_text.html#a92dc99ec51dd0416db4463898533a6be">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a92dc99ec51dd0416db4463898533a6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_f_c_cell_text.html#a92dc99ec51dd0416db4463898533a6be">More...</a><br /></td></tr>
 <tr class="separator:a92dc99ec51dd0416db4463898533a6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -879,6 +885,34 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a239b1eb72d67571007160744fbcff3bf" name="a239b1eb72d67571007160744fbcff3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239b1eb72d67571007160744fbcff3bf">&#9670;&nbsp;</a></span>GetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCellText::GetVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the text block is visible (in the score/part that's currently in focus). </p>
+<p >Lua-supported (also as property) (0.62). </p>
+
+</div>
+</div>
 <a id="a827c8d8057c48b22947d6b61c0a4aa60" name="a827c8d8057c48b22947d6b61c0a4aa60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a827c8d8057c48b22947d6b61c0a4aa60">&#9670;&nbsp;</a></span>SaveNewTextBlock()</h2>
 
@@ -980,10 +1014,39 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a8e5ab77f2620ed94a52ffcf080f5e475" name="a8e5ab77f2620ed94a52ffcf080f5e475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e5ab77f2620ed94a52ffcf080f5e475">&#9670;&nbsp;</a></span>SetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCellText::SetVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>visible</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the text block should be visible or not (in the score/part that's currently in focus - works in Fin2012). </p>
+<p >Lua-supported (also as property) (0.62). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 16 2022 11:00:53 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 17 2022 13:59:50 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

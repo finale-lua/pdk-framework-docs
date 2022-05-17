@@ -9,5 +9,9 @@ var searchData=
   ['tie_5fchord_5fdirections_6',['TIE_CHORD_DIRECTIONS',['../class_f_c_tie_prefs.html#a1832f2046369199ee38640d4ffcee565',1,'FCTiePrefs']]],
   ['tie_5fmixed_5fstem_5ftypes_7',['TIE_MIXED_STEM_TYPES',['../class_f_c_tie_prefs.html#a451811bcae30218a92d27100b2b49bc3',1,'FCTiePrefs']]],
   ['tie_5fseconds_5fconstants_8',['TIE_SECONDS_CONSTANTS',['../class_f_c_tie_prefs.html#a5e1e182e41edce64c31c37080e49ef6a',1,'FCTiePrefs']]],
-  ['tieplacement_5findexes_9',['TIEPLACEMENT_INDEXES',['../class_f_c_tie_placement_prefs.html#a584f4d57d231c3cb9a112de29ce82639',1,'FCTiePlacementPrefs']]]
+  ['tiemod_5fconnection_5fcodes_9',['TIEMOD_CONNECTION_CODES',['../class_f_c_tie_mod.html#a0ddf131d355cadab7f41bc081f1caf64',1,'FCTieMod']]],
+  ['tiemod_5fdirection_10',['TIEMOD_DIRECTION',['../class_f_c_tie_mod.html#a8fd213af279301513c31488ace6b8331',1,'FCTieMod']]],
+  ['tiemod_5fselector_11',['TIEMOD_SELECTOR',['../class_f_c_tie_mod.html#ad0fac682eea67d8b5d98bb0333de3e88',1,'FCTieMod']]],
+  ['tiemod_5ftietypes_12',['TIEMOD_TIETYPES',['../class_f_c_tie_mod.html#a176c37d72bfa9deabed7bd3b54674662',1,'FCTieMod']]],
+  ['tieplacement_5findexes_13',['TIEPLACEMENT_INDEXES',['../class_f_c_tie_placement_prefs.html#a584f4d57d231c3cb9a112de29ce82639',1,'FCTiePlacementPrefs']]]
 ];

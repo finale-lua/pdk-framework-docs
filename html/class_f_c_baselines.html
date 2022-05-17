@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb5972624de14304e1185f44250fb3d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_baselines.html#aeb5972624de14304e1185f44250fb3d2">FCBaselines</a> ()</td></tr>
 <tr class="memdesc:aeb5972624de14304e1185f44250fb3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_baselines.html#aeb5972624de14304e1185f44250fb3d2">More...</a><br /></td></tr>
 <tr class="separator:aeb5972624de14304e1185f44250fb3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d684506c6b60c2eac9ed73055bbce12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_baselines.html#a1d684506c6b60c2eac9ed73055bbce12">LoadAllForSystemStaff</a> (<a class="el" href="class_f_c_baseline.html#a5210bd1c32a80e6627f03d473d3b6f4f">FCBaseline::BASELINEMODES</a> mode, eSsys systemno, eStaff staffno)</td></tr>
+<tr class="memdesc:a1d684506c6b60c2eac9ed73055bbce12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all baseline objects for the staff system in a single staff. These objects are part-specific. You can pass zero in for the staff number to get all staves in the system. This is identical to calling <a class="el" href="class_f_c_baselines.html#aaf655c1027bea02cfabe96d9fdd61fe3" title="Loads all baseline objects for the staff system. These objects are part-specific.">LoadAllForSystem</a>.  <a href="class_f_c_baselines.html#a1d684506c6b60c2eac9ed73055bbce12">More...</a><br /></td></tr>
+<tr class="separator:a1d684506c6b60c2eac9ed73055bbce12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf655c1027bea02cfabe96d9fdd61fe3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_baselines.html#aaf655c1027bea02cfabe96d9fdd61fe3">LoadAllForSystem</a> (<a class="el" href="class_f_c_baseline.html#a5210bd1c32a80e6627f03d473d3b6f4f">FCBaseline::BASELINEMODES</a> mode, eSsys systemno)</td></tr>
 <tr class="memdesc:aaf655c1027bea02cfabe96d9fdd61fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads all baseline objects for the staff system. These objects are part-specific.  <a href="class_f_c_baselines.html#aaf655c1027bea02cfabe96d9fdd61fe3">More...</a><br /></td></tr>
 <tr class="separator:aaf655c1027bea02cfabe96d9fdd61fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -957,6 +960,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int FCBaselines::LoadAllForSystem </td>
@@ -976,6 +982,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Loads all baseline objects for the staff system. These objects are part-specific. </p>
@@ -991,10 +1002,56 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a1d684506c6b60c2eac9ed73055bbce12" name="a1d684506c6b60c2eac9ed73055bbce12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d684506c6b60c2eac9ed73055bbce12">&#9670;&nbsp;</a></span>LoadAllForSystemStaff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCBaselines::LoadAllForSystemStaff </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_baseline.html#a5210bd1c32a80e6627f03d473d3b6f4f">FCBaseline::BASELINEMODES</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">eSsys&#160;</td>
+          <td class="paramname"><em>systemno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">eStaff&#160;</td>
+          <td class="paramname"><em>staffno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads all baseline objects for the staff system in a single staff. These objects are part-specific. You can pass zero in for the staff number to get all staves in the system. This is identical to calling <a class="el" href="class_f_c_baselines.html#aaf655c1027bea02cfabe96d9fdd61fe3" title="Loads all baseline objects for the staff system. These objects are part-specific.">LoadAllForSystem</a>. </p>
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>And of the BASELINEMODE_ constants, found in the <a class="el" href="class_f_c_baseline.html" title="Encapsulates baselines offset values for lyrics, expressions, fretboards and chords.">FCBaseline</a> class.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">systemno</td><td>The 1-based system number.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">staffno</td><td>The 1-based staff number, or zero for the entire system.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of loaded items. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 16 2022 11:00:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 17 2022 13:59:50 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
