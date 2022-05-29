@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63b1</span>
    </div>
   </td>
  </tr>
@@ -295,6 +295,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCMusicRegion</b>
 <tr class="memitem:a4f3405c2cedd989016d1d18c2d614c53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a4f3405c2cedd989016d1d18c2d614c53">IsSinglePos</a> () const</td></tr>
 <tr class="memdesc:a4f3405c2cedd989016d1d18c2d614c53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the region is empty, but represents a single horizontal location in the document.  <a href="class_f_c_music_region.html#a4f3405c2cedd989016d1d18c2d614c53">More...</a><br /></td></tr>
 <tr class="separator:a4f3405c2cedd989016d1d18c2d614c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0eebd41b4946d0e28a6ae9d41defe2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#ab0eebd41b4946d0e28a6ae9d41defe2a">IsEmptyAndNotSinglePos</a> () const</td></tr>
+<tr class="memdesc:ab0eebd41b4946d0e28a6ae9d41defe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the region is empty and it is <em>not</em> a single-position region. Finale itself treats single-position regions as non-empty, so use this function if you need to find out if the region is empty from a Finale perspective.  <a href="class_f_c_music_region.html#ab0eebd41b4946d0e28a6ae9d41defe2a">More...</a><br /></td></tr>
+<tr class="separator:ab0eebd41b4946d0e28a6ae9d41defe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8aa6dab37a9688a158f4efac24d76e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a8d8aa6dab37a9688a158f4efac24d76e">IsMeasureIncluded</a> (twobyte measureno)</td></tr>
 <tr class="memdesc:a8d8aa6dab37a9688a158f4efac24d76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the measure number is with the region. Please note that it doesn't check for partial measures.  <a href="class_f_c_music_region.html#a8d8aa6dab37a9688a158f4efac24d76e">More...</a><br /></td></tr>
 <tr class="separator:a8d8aa6dab37a9688a158f4efac24d76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1510,6 +1513,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ab0eebd41b4946d0e28a6ae9d41defe2a" name="ab0eebd41b4946d0e28a6ae9d41defe2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0eebd41b4946d0e28a6ae9d41defe2a">&#9670;&nbsp;</a></span>IsEmptyAndNotSinglePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCMusicRegion::IsEmptyAndNotSinglePos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the region is empty and it is <em>not</em> a single-position region. Finale itself treats single-position regions as non-empty, so use this function if you need to find out if the region is empty from a Finale perspective. </p>
+<p >Lua-supported (0.63). </p>
+
+</div>
+</div>
 <a id="af6f475d97e28a68fe366c1a23d6f0512" name="af6f475d97e28a68fe366c1a23d6f0512"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6f475d97e28a68fe366c1a23d6f0512">&#9670;&nbsp;</a></span>IsEntryPosWithin()</h2>
 
@@ -2516,7 +2547,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:41 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun May 29 2022 09:17:39 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
