@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['finale_20pdk_20framework_0',['Finale PDK Framework',['../index.html',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]]
 ];

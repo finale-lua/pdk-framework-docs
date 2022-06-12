@@ -322,6 +322,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ea8891e9cf0ae1595ce2f2f70ca40ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_group.html#a4ea8891e9cf0ae1595ce2f2f70ca40ef">CreateDisplayFullNameString</a> ()</td></tr>
 <tr class="memdesc:a4ea8891e9cf0ae1595ce2f2f70ca40ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a group name for display purposes.  <a href="class_f_c_group.html#a4ea8891e9cf0ae1595ce2f2f70ca40ef">More...</a><br /></td></tr>
 <tr class="separator:a4ea8891e9cf0ae1595ce2f2f70ca40ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239cd586952c62ae207a88294af09039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_music_region.html">FCMusicRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_group.html#a239cd586952c62ae207a88294af09039">CreateMusicRegion</a> () const</td></tr>
+<tr class="memdesc:a239cd586952c62ae207a88294af09039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a region corresponding to the <a class="el" href="class_f_c_group.html" title="Encapsulates a staff group.">FCGroup</a> instance in Scroll View.  <a href="class_f_c_group.html#a239cd586952c62ae207a88294af09039">More...</a><br /></td></tr>
+<tr class="separator:a239cd586952c62ae207a88294af09039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9e63192748ffbcc11b974c53877f75"><td class="memItemLeft" align="right" valign="top">CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_group.html#a1d9e63192748ffbcc11b974c53877f75">GetAbbreviatedNameID</a> () const</td></tr>
 <tr class="memdesc:a1d9e63192748ffbcc11b974c53877f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw text ID for the abbreviated group name.  <a href="class_f_c_group.html#a1d9e63192748ffbcc11b974c53877f75">More...</a><br /></td></tr>
 <tr class="separator:a1d9e63192748ffbcc11b974c53877f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1076,6 +1079,28 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Creates a string object of the full group name (including the Enigma text tags). </p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a created string object. This pointer must be deleted from the heap after use. </dd></dl>
+
+</div>
+</div>
+<a id="a239cd586952c62ae207a88294af09039" name="a239cd586952c62ae207a88294af09039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239cd586952c62ae207a88294af09039">&#9670;&nbsp;</a></span>CreateMusicRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_music_region.html">FCMusicRegion</a> * FCGroup::CreateMusicRegion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a region corresponding to the <a class="el" href="class_f_c_group.html" title="Encapsulates a staff group.">FCGroup</a> instance in Scroll View. </p>
+<p >You can use this, for example, to iterate through the staves defined for the <a class="el" href="class_f_c_group.html" title="Encapsulates a staff group.">FCGroup</a>.</p>
+<p >Lua-supported (0.63).</p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a created <a class="el" href="class_f_c_music_region.html" title="Class that encapsulates EREGION and provides additional functionality to region handling.">FCMusicRegion</a> object or NULL if error. Callers other than Lua scripts must delete this pointer from the heap after use. </dd></dl>
 
 </div>
 </div>
@@ -2930,7 +2955,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 31 2022 12:55:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Jun 12 2022 11:27:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

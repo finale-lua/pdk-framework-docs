@@ -929,13 +929,13 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Saves a new inci and sets the correct flag in the associated note entry. </p>
 <p >The <a class="el" href="class_____f_c_entry_detail.html#a57effd98d57f20fcf61ce9f0b417aeda" title="Maps the data to an entry.">SetNoteEntry</a> method should be called prior to using <a class="el" href="class_____f_c_entry_detail.html#a123448ac5cf510c05568fed350607bb9" title="Saves a new inci and sets the correct flag in the associated note entry.">SaveNew()</a>.</p>
 <ul>
-<li><p class="startli">It's <b>very important</b> to save the associated note frame as well after this method call! Otherwise, the entry status bits might be incorrect!</p>
-<p class="startli">For some subclasses (namely <a class="el" href="class_f_c_stem_mod.html" title="Class for manual stem adjustments (in Finale&#39;s Special Tools).">FCStemMod</a>), this method must not be called if there's already a stem mod that can be accessed with <a class="el" href="class_____f_c_entry_detail.html#a63538b5b69ff9e66333dac1e6b01de5c" title="Overloaded version of LoadFirst that will load the first inci for the entry. SetNoteEntry must be cal...">FCStemMod::LoadFirst()</a>. A pattern to ensure this is: </p><pre class="fragment">if not stemMod:LoadFirst() then
-stemMod:SaveNew()
-</pre><p> end</p>
-</li>
+<li>It is <b>very important</b> to save the associated note frame as well after this method call! Otherwise, the entry status bits might be incorrect!</li>
 </ul>
-<p >Lua-supported.</p>
+<p >For some subclasses (namely <a class="el" href="class_f_c_stem_mod.html" title="Class for manual stem adjustments (in Finale&#39;s Special Tools).">FCStemMod</a>), this method must not be called if there's already a stem mod that can be accessed with <a class="el" href="class_____f_c_entry_detail.html#a63538b5b69ff9e66333dac1e6b01de5c" title="Overloaded version of LoadFirst that will load the first inci for the entry. SetNoteEntry must be cal...">FCStemMod::LoadFirst()</a>. A pattern to ensure this is:</p>
+<div class="fragment"><div class="line">if not stemMod:LoadFirst() then</div>
+<div class="line">   stemMod:SaveNew()</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on successful save. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_____f_c_entry_detail_note_i_d.html#aaec696d010d0d79143a3caa28756aa6a">__FCEntryDetailNoteID</a>, and <a class="el" href="class_f_c_beam_mod.html#af999e83a8e3a7697a35455b0fd84d2a6">FCBeamMod</a>.</p>
@@ -977,7 +977,7 @@ stemMod:SaveNew()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 31 2022 12:55:03 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Jun 12 2022 11:27:03 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

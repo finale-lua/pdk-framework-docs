@@ -369,6 +369,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_ClearCenterShapes</b
 <tr class="memitem:a12a20b1defe227c389052872d92d9635"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_smart_shape.html#a12a20b1defe227c389052872d92d9635">GetEntryBased</a> () const</td></tr>
 <tr class="memdesc:a12a20b1defe227c389052872d92d9635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the smart shape is a note entry-connected shape.  <a href="class_f_c_smart_shape.html#a12a20b1defe227c389052872d92d9635">More...</a><br /></td></tr>
 <tr class="separator:a12a20b1defe227c389052872d92d9635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c218f3f6c9b049dbd9db9fec084853"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_smart_shape.html#a19c218f3f6c9b049dbd9db9fec084853">CalcLyricBased</a> () const</td></tr>
+<tr class="memdesc:a19c218f3f6c9b049dbd9db9fec084853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the smart shape is a lyric-connected shape. This is dependent on a number of factors. Lyric-based smart shapes (word extensions and hyphens) are entirely controlled by Finale, and Lua scripts and plugins should leave them alone.  <a href="class_f_c_smart_shape.html#a19c218f3f6c9b049dbd9db9fec084853">More...</a><br /></td></tr>
+<tr class="separator:a19c218f3f6c9b049dbd9db9fec084853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a227deca3949855c09a2748aef60853c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_smart_shape.html#a227deca3949855c09a2748aef60853c9">GetPresetShape</a> () const</td></tr>
 <tr class="memdesc:a227deca3949855c09a2748aef60853c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the shape is preset or custom.  <a href="class_f_c_smart_shape.html#a227deca3949855c09a2748aef60853c9">More...</a><br /></td></tr>
 <tr class="separator:a227deca3949855c09a2748aef60853c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1128,6 +1131,26 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Calculates the left-side metrics position for a note-attached smart shape. </p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>true on success. </dd></dl>
+
+</div>
+</div>
+<a id="a19c218f3f6c9b049dbd9db9fec084853" name="a19c218f3f6c9b049dbd9db9fec084853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c218f3f6c9b049dbd9db9fec084853">&#9670;&nbsp;</a></span>CalcLyricBased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCSmartShape::CalcLyricBased </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the smart shape is a lyric-connected shape. This is dependent on a number of factors. Lyric-based smart shapes (word extensions and hyphens) are entirely controlled by Finale, and Lua scripts and plugins should leave them alone. </p>
+<p >Lua-supported (0.63). </p>
 
 </div>
 </div>
@@ -2558,7 +2581,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 31 2022 12:55:06 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Jun 12 2022 11:27:06 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

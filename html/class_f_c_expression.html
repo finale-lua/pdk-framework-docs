@@ -296,6 +296,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba44e5a5e55f3835d8f3a0b6eb6bcf98"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_expression.html#aba44e5a5e55f3835d8f3a0b6eb6bcf98">GetStaff</a> () const override</td></tr>
 <tr class="memdesc:aba44e5a5e55f3835d8f3a0b6eb6bcf98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 1-based staff number that the expression is assigned to.  <a href="class_f_c_expression.html#aba44e5a5e55f3835d8f3a0b6eb6bcf98">More...</a><br /></td></tr>
 <tr class="separator:aba44e5a5e55f3835d8f3a0b6eb6bcf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa354e644b727e757c6923b3e3790f0cc"><td class="memItemLeft" align="right" valign="top">eStaff&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_expression.html#aa354e644b727e757c6923b3e3790f0cc">CalcStaffInPageView</a> () const</td></tr>
+<tr class="memdesc:aa354e644b727e757c6923b3e3790f0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 1-based staff number that the expression is assigned to, taking into account assignment to top/bottom staff for the staff system in page view.  <a href="class_f_c_expression.html#aa354e644b727e757c6923b3e3790f0cc">More...</a><br /></td></tr>
+<tr class="separator:aa354e644b727e757c6923b3e3790f0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0000abbc56ca1bf1ea030b33704c7ca"><td class="memItemLeft" align="right" valign="top">eStaff&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_expression.html#ac0000abbc56ca1bf1ea030b33704c7ca">CalcStaffInScrollView</a> () const</td></tr>
+<tr class="memdesc:ac0000abbc56ca1bf1ea030b33704c7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 1-based staff number that the expression is assigned to, taking into account assignment to top/bottom staff for the current staff set in scroll view. (Also studio view.)  <a href="class_f_c_expression.html#ac0000abbc56ca1bf1ea030b33704c7ca">More...</a><br /></td></tr>
+<tr class="separator:ac0000abbc56ca1bf1ea030b33704c7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5027606eadfc9767e67511813f9435fc"><td class="memItemLeft" align="right" valign="top">eStaff&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_expression.html#a5027606eadfc9767e67511813f9435fc">CalcStaffInCurrentView</a> () const</td></tr>
+<tr class="memdesc:a5027606eadfc9767e67511813f9435fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 1-based staff number that the expression is assigned to in the current view.  <a href="class_f_c_expression.html#a5027606eadfc9767e67511813f9435fc">More...</a><br /></td></tr>
+<tr class="separator:a5027606eadfc9767e67511813f9435fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2aa8b9e87c282ab2f5dfc3c1a17fdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_expression.html#a5c2aa8b9e87c282ab2f5dfc3c1a17fdd">HasStaffValue</a> () const override</td></tr>
 <tr class="memdesc:a5c2aa8b9e87c282ab2f5dfc3c1a17fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden version, since this class supports staff returns.  <a href="class_f_c_expression.html#a5c2aa8b9e87c282ab2f5dfc3c1a17fdd">More...</a><br /></td></tr>
 <tr class="separator:a5c2aa8b9e87c282ab2f5dfc3c1a17fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -854,6 +863,72 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 slow.
 </pre><p> Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+
+</div>
+</div>
+<a id="a5027606eadfc9767e67511813f9435fc" name="a5027606eadfc9767e67511813f9435fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5027606eadfc9767e67511813f9435fc">&#9670;&nbsp;</a></span>CalcStaffInCurrentView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">eStaff FCExpression::CalcStaffInCurrentView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 1-based staff number that the expression is assigned to in the current view. </p>
+<p >If the expression is explicitly assigned to a staff, then this function is the same as calling <a class="el" href="class_f_c_expression.html#aba44e5a5e55f3835d8f3a0b6eb6bcf98" title="Returns the 1-based staff number that the expression is assigned to.">GetStaff</a>. If the expression is assigned to the top or bottom staff, this function returns the top or bottom staff where the expression is assigned currently in view.</p>
+<p >Lua-supported (0.63).</p>
+<dl class="section return"><dt>Returns</dt><dd>calculated 1-based staff number or 0 if error </dd></dl>
+
+</div>
+</div>
+<a id="aa354e644b727e757c6923b3e3790f0cc" name="aa354e644b727e757c6923b3e3790f0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa354e644b727e757c6923b3e3790f0cc">&#9670;&nbsp;</a></span>CalcStaffInPageView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">eStaff FCExpression::CalcStaffInPageView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 1-based staff number that the expression is assigned to, taking into account assignment to top/bottom staff for the staff system in page view. </p>
+<p >If the expression is explicitly assigned to a staff, then this function is the same as calling <a class="el" href="class_f_c_expression.html#aba44e5a5e55f3835d8f3a0b6eb6bcf98" title="Returns the 1-based staff number that the expression is assigned to.">GetStaff</a>. If the expression is assigned to the top or bottom staff, this function returns the top or bottom staff of the system in page view (for the current part or score) where the expression is assigned.</p>
+<p >Lua-supported (0.63).</p>
+<dl class="section return"><dt>Returns</dt><dd>calculated 1-based staff number or 0 if error </dd></dl>
+
+</div>
+</div>
+<a id="ac0000abbc56ca1bf1ea030b33704c7ca" name="ac0000abbc56ca1bf1ea030b33704c7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0000abbc56ca1bf1ea030b33704c7ca">&#9670;&nbsp;</a></span>CalcStaffInScrollView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">eStaff FCExpression::CalcStaffInScrollView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 1-based staff number that the expression is assigned to, taking into account assignment to top/bottom staff for the current staff set in scroll view. (Also studio view.) </p>
+<p >If the expression is explicitly assigned to a staff, then this function is the same as calling <a class="el" href="class_f_c_expression.html#aba44e5a5e55f3835d8f3a0b6eb6bcf98" title="Returns the 1-based staff number that the expression is assigned to.">GetStaff</a>. If the expression is assigned to the top or bottom staff, this function returns the top or bottom staff of the current staff set in scroll view (for the current part or score).</p>
+<p >Lua-supported (0.63).</p>
+<dl class="section return"><dt>Returns</dt><dd>calculated 1-based staff number or 0 if error </dd></dl>
 
 </div>
 </div>
@@ -2265,7 +2340,7 @@ slow.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 31 2022 12:55:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Jun 12 2022 11:27:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

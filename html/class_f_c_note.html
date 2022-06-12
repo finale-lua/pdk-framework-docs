@@ -1310,7 +1310,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the raised/lowered state of the note. </p>
-<p >Also please look the <a class="el" href="class_f_c_note.html#a829a294a3d5ee69cef237801f667c4be" title="Returns the number of sharps or flats the note actually has in the key signature.">CalcPitchRaiseLower</a> method.</p>
+<p >See also the <a class="el" href="class_f_c_note.html#a829a294a3d5ee69cef237801f667c4be" title="Returns the number of sharps or flats the note actually has in the key signature.">CalcPitchRaiseLower</a> method.</p>
 <p >Lua-supported (also as property).</p>
 <dl class="section return"><dt>Returns</dt><dd>0 is a normal note in the key. 1 is raised by one step. -1 is lowered by one step. 2 is double-raised, and so on. </dd></dl>
 
@@ -1389,7 +1389,8 @@ Additional Inherited Members</h2></td></tr>
 <li>Accidental sign, if available: #, b, ##, bb, ###, bbb, etc...</li>
 <li>Octave number</li>
 </ul>
-<p >This method requires the <b>PDK_FRAMEWORK_PREFS</b> define.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Due to some strange Finale behavior with how it simplifies key signatures, the written-pitch string may indicate a different octave than Finale shows when a key signature is simplified. This seems specifically to affect written keys with exactly 7 sharps or 7 flats. Concert-pitch strings are not affected.</dd></dl>
+<p>This method requires the <b>PDK_FRAMEWORK_PREFS</b> define.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2188,7 +2189,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 31 2022 12:55:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Jun 12 2022 11:27:06 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
