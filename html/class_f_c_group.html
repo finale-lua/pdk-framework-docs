@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
    </div>
   </td>
  </tr>
@@ -225,52 +225,53 @@ Public Types</h2></td></tr>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -322,6 +323,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ea8891e9cf0ae1595ce2f2f70ca40ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_group.html#a4ea8891e9cf0ae1595ce2f2f70ca40ef">CreateDisplayFullNameString</a> ()</td></tr>
 <tr class="memdesc:a4ea8891e9cf0ae1595ce2f2f70ca40ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a group name for display purposes.  <a href="class_f_c_group.html#a4ea8891e9cf0ae1595ce2f2f70ca40ef">More...</a><br /></td></tr>
 <tr class="separator:a4ea8891e9cf0ae1595ce2f2f70ca40ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239cd586952c62ae207a88294af09039"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_music_region.html">FCMusicRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_group.html#a239cd586952c62ae207a88294af09039">CreateMusicRegion</a> () const</td></tr>
+<tr class="memdesc:a239cd586952c62ae207a88294af09039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a region corresponding to the <a class="el" href="class_f_c_group.html" title="Encapsulates a staff group.">FCGroup</a> instance in Scroll View.  <a href="class_f_c_group.html#a239cd586952c62ae207a88294af09039">More...</a><br /></td></tr>
+<tr class="separator:a239cd586952c62ae207a88294af09039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9e63192748ffbcc11b974c53877f75"><td class="memItemLeft" align="right" valign="top">CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_group.html#a1d9e63192748ffbcc11b974c53877f75">GetAbbreviatedNameID</a> () const</td></tr>
 <tr class="memdesc:a1d9e63192748ffbcc11b974c53877f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw text ID for the abbreviated group name.  <a href="class_f_c_group.html#a1d9e63192748ffbcc11b974c53877f75">More...</a><br /></td></tr>
 <tr class="separator:a1d9e63192748ffbcc11b974c53877f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1076,6 +1080,28 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Creates a string object of the full group name (including the Enigma text tags). </p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a created string object. This pointer must be deleted from the heap after use. </dd></dl>
+
+</div>
+</div>
+<a id="a239cd586952c62ae207a88294af09039" name="a239cd586952c62ae207a88294af09039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239cd586952c62ae207a88294af09039">&#9670;&nbsp;</a></span>CreateMusicRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_music_region.html">FCMusicRegion</a> * FCGroup::CreateMusicRegion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a region corresponding to the <a class="el" href="class_f_c_group.html" title="Encapsulates a staff group.">FCGroup</a> instance in Scroll View. </p>
+<p >You can use this, for example, to iterate through the staves defined for the <a class="el" href="class_f_c_group.html" title="Encapsulates a staff group.">FCGroup</a>.</p>
+<p >Lua-supported (0.63).</p>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to a created <a class="el" href="class_f_c_music_region.html" title="Class that encapsulates EREGION and provides additional functionality to region handling.">FCMusicRegion</a> object or NULL if error. Callers other than Lua scripts must delete this pointer from the heap after use. </dd></dl>
 
 </div>
 </div>
@@ -2930,7 +2956,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:40 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 8 2022 19:38:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

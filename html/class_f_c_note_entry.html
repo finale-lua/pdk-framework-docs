@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
    </div>
   </td>
  </tr>
@@ -220,52 +220,53 @@ Public Types</h2></td></tr>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -430,6 +431,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7647e5e8c627348333da538cb1e84f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#aa7647e5e8c627348333da538cb1e84f1">SetSecondaryBeamFlag</a> (bool state)</td></tr>
 <tr class="memdesc:aa7647e5e8c627348333da538cb1e84f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the flag state for secondary beam detail records.  <a href="class_f_c_note_entry.html#aa7647e5e8c627348333da538cb1e84f1">More...</a><br /></td></tr>
 <tr class="separator:aa7647e5e8c627348333da538cb1e84f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a044c35e589e42ca9753c7b867319b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a6a044c35e589e42ca9753c7b867319b5">SetBeamExtensionFlag</a> (bool state)</td></tr>
+<tr class="memdesc:a6a044c35e589e42ca9753c7b867319b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the flag state for beam extension detail records.  <a href="class_f_c_note_entry.html#a6a044c35e589e42ca9753c7b867319b5">More...</a><br /></td></tr>
+<tr class="separator:a6a044c35e589e42ca9753c7b867319b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8db844a7606d04425ce144bad6347b93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a8db844a7606d04425ce144bad6347b93">SetActualDuration</a> (TimeEdu32 value)</td></tr>
 <tr class="memdesc:a8db844a7606d04425ce144bad6347b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the actual duration for the entry.  <a href="class_f_c_note_entry.html#a8db844a7606d04425ce144bad6347b93">More...</a><br /></td></tr>
 <tr class="separator:a8db844a7606d04425ce144bad6347b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -598,6 +602,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1688340d1d0f93d56f47ba9aa949112d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a1688340d1d0f93d56f47ba9aa949112d">GetSecondaryBeamFlag</a> () const</td></tr>
 <tr class="memdesc:a1688340d1d0f93d56f47ba9aa949112d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true for secondary beam detail records.  <a href="class_f_c_note_entry.html#a1688340d1d0f93d56f47ba9aa949112d">More...</a><br /></td></tr>
 <tr class="separator:a1688340d1d0f93d56f47ba9aa949112d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1840580accf0461f103882510698d716"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a1840580accf0461f103882510698d716">GetBeamExtensionFlag</a> () const</td></tr>
+<tr class="memdesc:a1840580accf0461f103882510698d716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true for beam extension detail records.  <a href="class_f_c_note_entry.html#a1840580accf0461f103882510698d716">More...</a><br /></td></tr>
+<tr class="separator:a1840580accf0461f103882510698d716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bd17adc39f69c61266fff9636d309e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a4bd17adc39f69c61266fff9636d309e2">GetArticulationFlag</a> () const</td></tr>
 <tr class="memdesc:a4bd17adc39f69c61266fff9636d309e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the entry is marked to contain articulations.  <a href="class_f_c_note_entry.html#a4bd17adc39f69c61266fff9636d309e2">More...</a><br /></td></tr>
 <tr class="separator:a4bd17adc39f69c61266fff9636d309e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2562,6 +2569,35 @@ the entry's chord.
 
 </div>
 </div>
+<a id="a1840580accf0461f103882510698d716" name="a1840580accf0461f103882510698d716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1840580accf0461f103882510698d716">&#9670;&nbsp;</a></span>GetBeamExtensionFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNoteEntry::GetBeamExtensionFlag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true for beam extension detail records. </p>
+<p >Lua-supported (also as property).</p>
+<dl class="section return"><dt>Returns</dt><dd>True = there is beam extension detail data. </dd></dl>
+
+</div>
+</div>
 <a id="ac4fc0d7bf38143487e3fd6aa31f54f36" name="ac4fc0d7bf38143487e3fd6aa31f54f36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4fc0d7bf38143487e3fd6aa31f54f36">&#9670;&nbsp;</a></span>GetCheckAccidentals()</h2>
 
@@ -4366,6 +4402,41 @@ the entry's chord.
 
 </div>
 </div>
+<a id="a6a044c35e589e42ca9753c7b867319b5" name="a6a044c35e589e42ca9753c7b867319b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a044c35e589e42ca9753c7b867319b5">&#9670;&nbsp;</a></span>SetBeamExtensionFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCNoteEntry::SetBeamExtensionFlag </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the flag state for beam extension detail records. </p>
+<p >Lua-supported (also as property).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>True = there is beam extension detail data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aabb4a963da2e33a387d44a0b9ca2cc49" name="aabb4a963da2e33a387d44a0b9ca2cc49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabb4a963da2e33a387d44a0b9ca2cc49">&#9670;&nbsp;</a></span>SetCheckAccidentals()</h2>
 
@@ -5501,7 +5572,7 @@ the entry's chord.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:41 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 8 2022 19:38:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

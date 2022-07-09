@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
    </div>
   </td>
  </tr>
@@ -210,52 +210,53 @@ Public Types</h2></td></tr>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -330,6 +331,9 @@ HWND&#160;</td><td class="memItemRight" valign="bottom"><b>_GetWinControlHandle<
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBold</b> (bool state)</td></tr>
 <tr class="memdesc:ad340219136406d00c2e1abeffc683cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the boldface appearance for the control. <br /></td></tr>
 <tr class="separator:ad340219136406d00c2e1abeffc683cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab89944f4d291e1e3d05d323075e3d85f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f">SetFont</a> (const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *fontInfo)</td></tr>
+<tr class="memdesc:ab89944f4d291e1e3d05d323075e3d85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font information for the text of the control.  <a href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f">More...</a><br /></td></tr>
+<tr class="separator:ab89944f4d291e1e3d05d323075e3d85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af97ed9961e4df337d2484c14e6ce1ea3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#af97ed9961e4df337d2484c14e6ce1ea3">SetKeyboardFocus</a> ()</td></tr>
 <tr class="memdesc:af97ed9961e4df337d2484c14e6ce1ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the keyboard focus to the control.  <a href="class_f_c_control.html#af97ed9961e4df337d2484c14e6ce1ea3">More...</a><br /></td></tr>
 <tr class="separator:af97ed9961e4df337d2484c14e6ce1ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -928,6 +932,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Moves the control in absolute coordinates. </p>
+<p >Lua-supported (0.63).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Position for the left side. </td></tr>
@@ -965,6 +970,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Moves the control relatively to the current position. </p>
+<p >Lua-supported (0.63).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">horizmove</td><td>Units that the control should be moved horizontally. Positive is to the right. </td></tr>
@@ -1040,6 +1046,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resizes the control relatively to the current size. Top left corner will stay fixed. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Resizing vertically does not always work correctly for <a class="el" href="class_f_c_ctrl_button.html" title="Control class for push buttons. It inherits the FCCtrlCheckbox class, so the checked state can be set...">FCCtrlButton</a> controls on macOS.</dd></dl>
+<p >Lua-supported (0.63).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">horizresize</td><td>Units that the control should be resized horizontally. </td></tr>
@@ -1106,6 +1114,43 @@ Additional Inherited Members</h2></td></tr>
 <p>Sets the enable/grayed state of the control (if user input should be allowed or not). </p>
 <p >Technical: This version is virtual, so child classes can override with custom functionality. (If child classes overwrite, this implementation must be called if <a class="el" href="class_f_c_control.html#abaf474fa24351ac10193d26760510ef7" title="Returns true if a valid parent window handle (and control handle) is available.">WindowExists()</a> returns false.)</p>
 <p >Lua-supported </p>
+
+</div>
+</div>
+<a id="ab89944f4d291e1e3d05d323075e3d85f" name="ab89944f4d291e1e3d05d323075e3d85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89944f4d291e1e3d05d323075e3d85f">&#9670;&nbsp;</a></span>SetFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::SetFont </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
+          <td class="paramname"><em>fontInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the font information for the text of the control. </p>
+<p >The following information is set:</p><ul>
+<li>Font Family Name</li>
+<li>Size</li>
+<li>Bold State</li>
+<li>Italic State</li>
+<li>StrikeOut State (Windows only)</li>
+<li>Underline State (Windows only)</li>
+</ul>
+<p >Note that for macOS you must use the font family name (e.g., "Helvetica") rather than a name that contains the style (e.g., "Helvetica Bold"). It is recommended to do the same for Windows. Also, bold, italic, or combined only works on macOS if the font family contains a font with that style or combination of styles.</p>
+<p >There is variation in behavior between macOS and Windows with custom fonts. However, you can at least achieve fairly consistent cross-platform behavior with <a class="el" href="class_f_c_ctrl_static.html" title="UI class that handles a control with static text.">FCCtrlStatic</a> and <a class="el" href="class_f_c_ctrl_edit.html" title="Class that handles edit controls.">FCCtrlEdit</a>.</p>
+<p >Lua-supported (0.63)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fontInfo</td><td>The <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> instance containing the new font information. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1290,7 +1335,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:39 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 8 2022 19:38:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

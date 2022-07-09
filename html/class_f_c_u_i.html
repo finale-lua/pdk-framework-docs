@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
    </div>
   </td>
  </tr>
@@ -289,52 +289,53 @@ Public Types</h2></td></tr>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -428,12 +429,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a38184a0ad5c2195319a35ba1270346ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a38184a0ad5c2195319a35ba1270346ce">RedrawDocument</a> ()</td></tr>
 <tr class="memdesc:a38184a0ad5c2195319a35ba1270346ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visually redraws the current document.  <a href="class_f_c_u_i.html#a38184a0ad5c2195319a35ba1270346ce">More...</a><br /></td></tr>
 <tr class="separator:a38184a0ad5c2195319a35ba1270346ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab819422f4a10f1b4b64e8852c255b7af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#ab819422f4a10f1b4b64e8852c255b7af">IsPageView</a> ()</td></tr>
-<tr class="memdesc:ab819422f4a10f1b4b64e8852c255b7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current view for the current document is Page View.  <a href="class_f_c_u_i.html#ab819422f4a10f1b4b64e8852c255b7af">More...</a><br /></td></tr>
-<tr class="separator:ab819422f4a10f1b4b64e8852c255b7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9e691e32f8aa6e172ad248bebb5aa9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#af9e691e32f8aa6e172ad248bebb5aa9f">IsPartView</a> ()</td></tr>
-<tr class="memdesc:af9e691e32f8aa6e172ad248bebb5aa9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current view is in a part (=not in the score).  <a href="class_f_c_u_i.html#af9e691e32f8aa6e172ad248bebb5aa9f">More...</a><br /></td></tr>
-<tr class="separator:af9e691e32f8aa6e172ad248bebb5aa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2101ccade59bf50712f330e1717c5a0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#ab2101ccade59bf50712f330e1717c5a0">IsPageView</a> () const</td></tr>
+<tr class="memdesc:ab2101ccade59bf50712f330e1717c5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current view for the current document is Page View.  <a href="class_f_c_u_i.html#ab2101ccade59bf50712f330e1717c5a0">More...</a><br /></td></tr>
+<tr class="separator:ab2101ccade59bf50712f330e1717c5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155b5692d1f3b1f3d5f46a196d035bfe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a155b5692d1f3b1f3d5f46a196d035bfe">IsPartView</a> () const</td></tr>
+<tr class="memdesc:a155b5692d1f3b1f3d5f46a196d035bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current view is in a part (=not in the score).  <a href="class_f_c_u_i.html#a155b5692d1f3b1f3d5f46a196d035bfe">More...</a><br /></td></tr>
+<tr class="separator:a155b5692d1f3b1f3d5f46a196d035bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab638ce7de614139ca3125dd4154d0a46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#ab638ce7de614139ca3125dd4154d0a46">IsLayerVisible</a> (twobyte layernum) const</td></tr>
+<tr class="memdesc:ab638ce7de614139ca3125dd4154d0a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true for any valid layer number unless "Show Active Layer Only" is checked. Then it returns true for the active layer and false for any other layer.  <a href="class_f_c_u_i.html#ab638ce7de614139ca3125dd4154d0a46">More...</a><br /></td></tr>
+<tr class="separator:ab638ce7de614139ca3125dd4154d0a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f79005d803ecf8bb47b63214140633c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a4f79005d803ecf8bb47b63214140633c">GetDecimalSeparator</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a4f79005d803ecf8bb47b63214140633c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> with the decimal separator used for the current user's locale.  <a href="class_f_c_u_i.html#a4f79005d803ecf8bb47b63214140633c">More...</a><br /></td></tr>
 <tr class="separator:a4f79005d803ecf8bb47b63214140633c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,12 +447,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf38d011af23bf09aa58fc7e0996b3f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#aaf38d011af23bf09aa58fc7e0996b3f1">GetUseIsFontAvailableAPI</a> () const</td></tr>
 <tr class="memdesc:aaf38d011af23bf09aa58fc7e0996b3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if Finale's own API for checking font availability should be used for <a class="el" href="class_f_c_u_i.html#ab27513f9bbba2692a7381d88a377e371" title="Returns true if the font name exists on the running system.">IsFontAvailable()</a>.  <a href="class_f_c_u_i.html#aaf38d011af23bf09aa58fc7e0996b3f1">More...</a><br /></td></tr>
 <tr class="separator:aaf38d011af23bf09aa58fc7e0996b3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fedcc5fd2d8e537e10d664d0242150d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a8fedcc5fd2d8e537e10d664d0242150d">IsOnWindows</a> ()</td></tr>
-<tr class="memdesc:a8fedcc5fd2d8e537e10d664d0242150d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user runs on Windows.  <a href="class_f_c_u_i.html#a8fedcc5fd2d8e537e10d664d0242150d">More...</a><br /></td></tr>
-<tr class="separator:a8fedcc5fd2d8e537e10d664d0242150d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f44d5bdf5acf16992407f2005749109"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a8f44d5bdf5acf16992407f2005749109">IsOnMac</a> ()</td></tr>
-<tr class="memdesc:a8f44d5bdf5acf16992407f2005749109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user runs on the Mac.  <a href="class_f_c_u_i.html#a8f44d5bdf5acf16992407f2005749109">More...</a><br /></td></tr>
-<tr class="separator:a8f44d5bdf5acf16992407f2005749109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31464429df573abc3e0e46c88558534"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534">IsOnWindows</a> () const</td></tr>
+<tr class="memdesc:aa31464429df573abc3e0e46c88558534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user runs on Windows.  <a href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534">More...</a><br /></td></tr>
+<tr class="separator:aa31464429df573abc3e0e46c88558534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081813059cbc9620b0287ee71a028f87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87">IsOnMac</a> () const</td></tr>
+<tr class="memdesc:a081813059cbc9620b0287ee71a028f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user runs on the Mac.  <a href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87">More...</a><br /></td></tr>
+<tr class="separator:a081813059cbc9620b0287ee71a028f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a87597779f2130f9209c4cc357a2bdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a1a87597779f2130f9209c4cc357a2bdf">TextToClipboard</a> (const char *pszText)</td></tr>
 <tr class="memdesc:a1a87597779f2130f9209c4cc357a2bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies text to the operating system's clipboard.  <a href="class_f_c_u_i.html#a1a87597779f2130f9209c4cc357a2bdf">More...</a><br /></td></tr>
 <tr class="separator:a1a87597779f2130f9209c4cc357a2bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1827,8 +1831,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes an OS menu command returned by <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">GetOSMenuCommandFromItemText</a>. </p>
-<p >On macOS, some menu items may only work if the Finale document window is in focus.</p>
-<p >Lua-supported (0.58).</p>
+<p >An OS menu command is a fixed numeric value that selects a specific menu option. It does not change from version to version of Finale, and it does not vary according to locale or Language. However, please note that Windows and macOS use <em>different</em> menu codes. Your program can interrogate <a class="el" href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534" title="Returns true if the user runs on Windows.">IsOnWindows</a> or <a class="el" href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87" title="Returns true if the user runs on the Mac.">IsOnMac</a> to determine which menu code to use.</p>
+<dl class="section warning"><dt>Warning</dt><dd>On macOS, some menu items may only work if the Finale document window is in focus.</dd></dl>
+<p>Lua-supported (0.58).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">osmenucmd</td><td>The value returned by <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">GetOSMenuCommandFromItemText</a> for the menu item.</td></tr>
@@ -2006,17 +2011,17 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the OS-dependent menu command for a specific item in one of Finale's main menus. </p>
-<p ><b>NOTE!</b> Because menu item locations may differ between Finale versions and platforms, it is recommended to use this function only as part of code development. Hardcode the return value from this function in your source code and then pass that hardcoded value to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> in the production version of your script or program.</p>
-<p >This function is dependent on the language in which Finale is running. Pass the menu item text for the currently running Finale, whichever language it happens to be. The strings should be encoded utf-8. For Lua scripts, the script file itself may be encoded utf-8 if it contains non-ASCII characters.</p>
-<p >OS menu command values remain constant from version to version of Finale, and they remain the same regardless of the language in which Finale is running. But they are different on macOS and Windows. If your code supports both operating systems, hardcode the value returned by this function on each platform and then use <a class="el" href="class_f_c_u_i.html#a8fedcc5fd2d8e537e10d664d0242150d" title="Returns true if the user runs on Windows.">IsOnWindows</a> or <a class="el" href="class_f_c_u_i.html#a8f44d5bdf5acf16992407f2005749109" title="Returns true if the user runs on the Mac.">IsOnMac</a> to determine which value to pass to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Because menu item text differs between languages and sometimes even between Finale versions and platforms, it is recommended to use this function only as part of code development. Hardcode the return value from this function in your source code and then pass that hardcoded value to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> in the production version of your script or program.</dd></dl>
+<p>This function is dependent on the language in which Finale is running. Pass the menu item text for the currently running Finale, whichever language it happens to be. The strings should be encoded utf-8. For Lua scripts, the script file itself may be encoded utf-8 if it contains non-ASCII characters.</p>
+<p >OS menu command values remain constant from version to version of Finale, and they remain the same regardless of the language in which Finale is running. But they are different on macOS and Windows. If your code supports both operating systems, hardcode the value returned by this function on each platform and then use <a class="el" href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534" title="Returns true if the user runs on Windows.">IsOnWindows</a> or <a class="el" href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87" title="Returns true if the user runs on the Mac.">IsOnMac</a> to determine which value to pass to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a>.</p>
 <p >For macOS, only Finale 2012 and later versions are supported.</p>
 <p >On Windows, menu hotkeys are ignored. Send the string the way it looks on screen. This allows the same text to work on either operating system.</p>
 <p >You only need to supply enough characters to uniquely identify the menu item. For example, if the menu item is "Open..." you only need to pass in "Open". Or if the top menu is "MIDI/Audio" you only need to pass in "MIDI". A match occurs when the first item is found whose text starts with the input string.</p>
 <p >Lua-supported (0.58).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pszTopMenu</td><td>The utf-8 encoded text of the top menu item to search, e.g., "File", "Edit", "Utilities", etc. (for English-language Finale).</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pszItemText</td><td>The utf-8 encoded text of the item to find. Any submenus under the top menu item are searched as well.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pszTopMenu</td><td>The utf-8 encoded text of the top menu item to search in the language Finale is currently running. For English this would be, e.g., "File", "Edit", "Utilities", etc.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pszItemText</td><td>The utf-8 encoded text of the item to find in the language Finale is currently running. Any submenus under the top menu item are searched as well.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2165,8 +2170,43 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f44d5bdf5acf16992407f2005749109" name="a8f44d5bdf5acf16992407f2005749109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f44d5bdf5acf16992407f2005749109">&#9670;&nbsp;</a></span>IsOnMac()</h2>
+<a id="ab638ce7de614139ca3125dd4154d0a46" name="ab638ce7de614139ca3125dd4154d0a46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab638ce7de614139ca3125dd4154d0a46">&#9670;&nbsp;</a></span>IsLayerVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCUI::IsLayerVisible </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>layernum</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true for any valid layer number unless "Show Active Layer Only" is checked. Then it returns true for the active layer and false for any other layer. </p>
+<p >Lua-supported (0.63).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layernum</td><td>The 1-based layer number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a081813059cbc9620b0287ee71a028f87" name="a081813059cbc9620b0287ee71a028f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081813059cbc9620b0287ee71a028f87">&#9670;&nbsp;</a></span>IsOnMac()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2178,7 +2218,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool FCUI::IsOnMac </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -2193,8 +2233,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8fedcc5fd2d8e537e10d664d0242150d" name="a8fedcc5fd2d8e537e10d664d0242150d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fedcc5fd2d8e537e10d664d0242150d">&#9670;&nbsp;</a></span>IsOnWindows()</h2>
+<a id="aa31464429df573abc3e0e46c88558534" name="aa31464429df573abc3e0e46c88558534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31464429df573abc3e0e46c88558534">&#9670;&nbsp;</a></span>IsOnWindows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2206,7 +2246,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool FCUI::IsOnWindows </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -2221,8 +2261,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab819422f4a10f1b4b64e8852c255b7af" name="ab819422f4a10f1b4b64e8852c255b7af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab819422f4a10f1b4b64e8852c255b7af">&#9670;&nbsp;</a></span>IsPageView()</h2>
+<a id="ab2101ccade59bf50712f330e1717c5a0" name="ab2101ccade59bf50712f330e1717c5a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2101ccade59bf50712f330e1717c5a0">&#9670;&nbsp;</a></span>IsPageView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2231,7 +2271,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool FCUI::IsPageView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2241,8 +2281,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af9e691e32f8aa6e172ad248bebb5aa9f" name="af9e691e32f8aa6e172ad248bebb5aa9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9e691e32f8aa6e172ad248bebb5aa9f">&#9670;&nbsp;</a></span>IsPartView()</h2>
+<a id="a155b5692d1f3b1f3d5f46a196d035bfe" name="a155b5692d1f3b1f3d5f46a196d035bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155b5692d1f3b1f3d5f46a196d035bfe">&#9670;&nbsp;</a></span>IsPartView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2254,7 +2294,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool FCUI::IsPartView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -2332,7 +2372,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Executes a menu command from a specific location in Finale's menu. Use this method with care! </p>
 <p ><b>NOTE!</b> If possible, use <a class="el" href="class_f_c_u_i.html#a336e6328a0c420c5e680a447820df470" title="Executes a supported menu command from Finale&#39;s menu.">MenuCommand</a> or <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> instead of this method. Be aware that menu item locations may differ between Finale versions and even between operating systems.</p>
 <p >On macOS, some menu items will only work if the Finale document window is in focus. Also, only macOS versions Finale 2012 and later are supported.</p>
-<p >This method is <b>deprecated</b> in 0.58 and higher versions. Use <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">GetOSMenuCommandFromItemText</a> and <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> instead.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This method is <b>deprecated</b> in 0.58 and higher versions. Use <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">GetOSMenuCommandFromItemText</a> and <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> instead.</dd></dl>
 <p >Lua-supported (deprecated 0.58).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2501,7 +2541,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:42 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 8 2022 19:38:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

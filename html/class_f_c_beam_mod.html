@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
    </div>
   </td>
  </tr>
@@ -171,6 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8b77bc06fc39250557e4e8a9a67dc64f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_mod.html#a8b77bc06fc39250557e4e8a9a67dc64f">IsUpStem</a> ()</td></tr>
 <tr class="memdesc:a8b77bc06fc39250557e4e8a9a67dc64f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data is connected to up-stem data, otherwise it's connected to down-stem data.  <a href="class_f_c_beam_mod.html#a8b77bc06fc39250557e4e8a9a67dc64f">More...</a><br /></td></tr>
 <tr class="separator:a8b77bc06fc39250557e4e8a9a67dc64f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a0bef9e670df7d25f7f648eefad8c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_mod.html#ab4a0bef9e670df7d25f7f648eefad8c3">LoadForBeamNumber</a> (int beamnumber)</td></tr>
+<tr class="memdesc:ab4a0bef9e670df7d25f7f648eefad8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the data for the specified 1-based beam number.  <a href="class_f_c_beam_mod.html#ab4a0bef9e670df7d25f7f648eefad8c3">More...</a><br /></td></tr>
+<tr class="separator:ab4a0bef9e670df7d25f7f648eefad8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af64f0472737728c8f4aa0a092e8b1a2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_mod.html#af64f0472737728c8f4aa0a092e8b1a2f">DebugDump</a> () override</td></tr>
 <tr class="memdesc:af64f0472737728c8f4aa0a092e8b1a2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_f_c_beam_mod.html#af64f0472737728c8f4aa0a092e8b1a2f">More...</a><br /></td></tr>
 <tr class="separator:af64f0472737728c8f4aa0a092e8b1a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -495,52 +498,53 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -647,7 +651,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <div class="textblock"><p >Class for custom beam adjustments (in Finale's Special Tools). </p>
 <p >This class must be set to the correct beaming mode (controlled by the user in the Beaming Style in Document Options), using the <a class="el" href="class_f_c_beam_mod.html#a6dc233c1edcf3bb549649d7b5b4dbe69" title="Sets the Beaming Style mode where the beam data will be &quot;active&quot;. This mode is controlled by Document...">SetMode</a> method for the beam data to "be active".</p>
 <p >For secondary beams, this class controls only the left and right vertical position offsets, not the beam width.</p>
-<p >This class use many different Enigma tags, but this is handled automatically by the constructor and <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>.</p>
+<p >This class uses many different Enigma tags, but this is handled automatically by the constructor and <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>.</p>
 <p >New data for secondary beams must be connected with the <a class="el" href="class_f_c_beam_mod.html#a9f3218eea87fd4e38f75287cbb2f5675" title="Sets the 1-based beam that the data is connected to. Don&#39;t change this for loaded data.">SetBeamNumber</a> method. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaf66ffc422f46fc1fd799d99c512541a" name="aaf66ffc422f46fc1fd799d99c512541a"></a>
@@ -713,16 +717,13 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Calculates the secondary beam's vertical left position compared to the primary beam's vertical left pos. </p>
 <p >Lua-supported.</p>
-<ul>
-<li><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">default_separation</td><td>The document's default beam separation value, as found in <a class="el" href="class_f_c_distance_prefs.html" title="Class for preferences values that controls distances (between objects, etc)">FCDistancePrefs</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>For primary beams, this method will always return 0. For secondary beams, the position relative to the primary beam will be returned. Positive values are above the primary beam. </dd></dl>
-</li>
-</ul>
 
 </div>
 </div>
@@ -1084,7 +1085,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Returns the beam thickness. This can ONLY be set for primary beam data. </p>
 <p >Lua-supported (also as property).</p>
-<dl class="section return"><dt>Returns</dt><dd>The beam thickness (for primary beam data). For secondary beam data or for default thickness, this method returns -1. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The beam thickness (for primary beam data) in EFIX (1/64 EVPU). For secondary beam data or for default thickness, this method returns -1. </dd></dl>
 
 </div>
 </div>
@@ -1182,6 +1183,42 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_entry_detail.html#a2b625653b47ca646a878837e94fe7328">__FCEntryDetail</a>.</p>
+
+</div>
+</div>
+<a id="ab4a0bef9e670df7d25f7f648eefad8c3" name="ab4a0bef9e670df7d25f7f648eefad8c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a0bef9e670df7d25f7f648eefad8c3">&#9670;&nbsp;</a></span>LoadForBeamNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCBeamMod::LoadForBeamNumber </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>beamnumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the data for the specified 1-based beam number. </p>
+<p >This method is primarily useful for secondary beams, but it works for a primary beam as well, if the input value is 1. The <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a> instance must have been constructed correctly as a primary beam (for an input value of 1) or secondary beam (for an input value greater than 1).</p>
+<p >Lua-supported (0.63).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beamnumber</td><td>A 1-based number, such as 2 for 16th beams, 3 for 32nd beams, etc. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1352,7 +1389,10 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the horizontal left-side offset. </p>
-<p >Lua-supported (also as property). <br  />
+<dl class="section remark"><dt>Remarks</dt><dd>This field cannot be edited in the Finale UI and therefore is almost always zero. However, you can change it to a non-zero value to get finer control over the angle of the beam. The beam itself still begins or ends at the 0 horizontal location, but the angle behaves as though the horizontal location were offset by this amount.</dd>
+<dd>
+For primary beams, the UI does not show this value, even though it is there. For secondary beams, the UI does show this value, though it cannot be modified from the UI.</dd></dl>
+<p>Lua-supported (also as property). <br  />
  </p>
 
 </div>
@@ -1483,7 +1523,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the horizontal right-side offset. </p>
-<p >Lua-supported (also as property). </p>
+<dl class="section remark"><dt>Remarks</dt><dd>See remarks at <a class="el" href="class_f_c_beam_mod.html#a6a35a4391b57dedcafb32ee01a0bc498" title="Sets the horizontal left-side offset.">SetLeftHorizontalOffset</a>.</dd></dl>
+<p>Lua-supported (also as property). </p>
 
 </div>
 </div>
@@ -1547,14 +1588,20 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the beam thickness. This can ONLY be set for primary beam data. </p>
-<p >Lua-supported (also as property). </p>
+<p >Lua-supported (also as property).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thickness</td><td>Beam thickness in EFIX (1/64 EVPU), or -1 for the default. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:39 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 8 2022 19:38:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

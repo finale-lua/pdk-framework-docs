@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.62</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
    </div>
   </td>
  </tr>
@@ -82,17 +82,18 @@ Inheritance diagram for __FCEntryDetail:</div>
 <area href="class_____f_c_base_data.html" title="Base class for all data-related classes (that handles Finale data)." alt="__FCBaseData" shape="rect" coords="0,56,180,80"/>
 <area href="class_____f_c_base.html" title="Base class for the Finale Framework classes." alt="__FCBase" shape="rect" coords="0,0,180,24"/>
 <area href="class_f_c_articulation.html" title="Class for attaching an articulation definition to an entry." alt="FCArticulation" shape="rect" coords="190,168,370,192"/>
-<area href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools)." alt="FCBeamMod" shape="rect" coords="190,224,370,248"/>
-<area href="class_f_c_broken_beam_mod.html" title="Class for manually broken beam adjustments (in Finale&#39;s Special Tools)." alt="FCBrokenBeamMod" shape="rect" coords="190,280,370,304"/>
-<area href="class_f_c_custom_stem_mod.html" title="Class for custom stem shapes (in Finale&#39;s Special Tools). The data is connected to either an upstem o..." alt="FCCustomStemMod" shape="rect" coords="190,336,370,360"/>
-<area href="class_f_c_entry_alter_mod.html" title="Class for (what it seems) the sole purpose of note entry resize." alt="FCEntryAlterMod" shape="rect" coords="190,392,370,416"/>
-<area href="class_f_c_secondary_beam_break_mod.html" title="Class for secondary beam breaks (in Finale&#39;s Special Tools)." alt="FCSecondaryBeamBreakMod" shape="rect" coords="190,448,370,472"/>
-<area href="class_f_c_smart_shape_entry_mark.html" title="Class for smartshape assignments/connections to an entry." alt="FCSmartShapeEntryMark" shape="rect" coords="190,504,370,528"/>
-<area href="class_f_c_stem_mod.html" title="Class for manual stem adjustments (in Finale&#39;s Special Tools)." alt="FCStemMod" shape="rect" coords="190,560,370,584"/>
-<area href="class_f_c_syllable_base.html" title="Base class for attaching an syllable to an entry." alt="FCSyllableBase" shape="rect" coords="190,616,370,640"/>
-<area href="class_f_c_syllable_entry_mod.html" title="Class for controlling justification/alignment for all syllables that are connected to an entry." alt="FCSyllableEntryMod" shape="rect" coords="190,672,370,696"/>
-<area href="class_f_c_tuplet.html" title="Class for attaching an tuplet to an entry." alt="FCTuplet" shape="rect" coords="190,728,370,752"/>
-<area href="class_____f_c_entry_detail_note_i_d.html" title="Base class that provide entry details that are based on noteIDs, such as notehead modifications,..." alt="__FCEntryDetailNoteID" shape="rect" coords="190,784,370,808"/>
+<area href="class_f_c_beam_extension_mod.html" title="Class for beam extensions (in Finale&#39;s Special Tools)." alt="FCBeamExtensionMod" shape="rect" coords="190,224,370,248"/>
+<area href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools)." alt="FCBeamMod" shape="rect" coords="190,280,370,304"/>
+<area href="class_f_c_broken_beam_mod.html" title="Class for manually broken beam adjustments (in Finale&#39;s Special Tools)." alt="FCBrokenBeamMod" shape="rect" coords="190,336,370,360"/>
+<area href="class_f_c_custom_stem_mod.html" title="Class for custom stem shapes (in Finale&#39;s Special Tools). The data is connected to either an upstem o..." alt="FCCustomStemMod" shape="rect" coords="190,392,370,416"/>
+<area href="class_f_c_entry_alter_mod.html" title="Class for (what it seems) the sole purpose of note entry resize." alt="FCEntryAlterMod" shape="rect" coords="190,448,370,472"/>
+<area href="class_f_c_secondary_beam_break_mod.html" title="Class for secondary beam breaks (in Finale&#39;s Special Tools)." alt="FCSecondaryBeamBreakMod" shape="rect" coords="190,504,370,528"/>
+<area href="class_f_c_smart_shape_entry_mark.html" title="Class for smartshape assignments/connections to an entry." alt="FCSmartShapeEntryMark" shape="rect" coords="190,560,370,584"/>
+<area href="class_f_c_stem_mod.html" title="Class for manual stem adjustments (in Finale&#39;s Special Tools)." alt="FCStemMod" shape="rect" coords="190,616,370,640"/>
+<area href="class_f_c_syllable_base.html" title="Base class for attaching an syllable to an entry." alt="FCSyllableBase" shape="rect" coords="190,672,370,696"/>
+<area href="class_f_c_syllable_entry_mod.html" title="Class for controlling justification/alignment for all syllables that are connected to an entry." alt="FCSyllableEntryMod" shape="rect" coords="190,728,370,752"/>
+<area href="class_f_c_tuplet.html" title="Class for attaching an tuplet to an entry." alt="FCTuplet" shape="rect" coords="190,784,370,808"/>
+<area href="class_____f_c_entry_detail_note_i_d.html" title="Base class that provide entry details that are based on noteIDs, such as notehead modifications,..." alt="__FCEntryDetailNoteID" shape="rect" coords="190,840,370,864"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -439,52 +440,53 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -619,7 +621,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Reimplemented from <a class="el" href="class_____f_c_base_data.html#a6bdcc52c0f70a66fa7603fce2af27a49">__FCBaseData</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_____f_c_entry_detail_note_i_d.html#aabc9b467a830518c29faf85622d6583c">__FCEntryDetailNoteID</a>, <a class="el" href="class_f_c_notehead_mod.html#a1374c8efc0512a516836c5fc80af608f">FCNoteheadMod</a>, <a class="el" href="class_f_c_dot_mod.html#a760c7f0eb7625cd6c90f1c7472f107a8">FCDotMod</a>, <a class="el" href="class_f_c_cross_staff_mod.html#ac42b1dbbff34aed8adfd4936f2384c87">FCCrossStaffMod</a>, <a class="el" href="class_f_c_secondary_beam_break_mod.html#ad8ba2a6ded041222d5c2a05a36657b9e">FCSecondaryBeamBreakMod</a>, <a class="el" href="class_f_c_stem_mod.html#a52b7e0198b88cf75c36c32dfd532ebd8">FCStemMod</a>, <a class="el" href="class_f_c_articulation.html#a36a9d9269f6cc8d148c2ef7e9897a3c5">FCArticulation</a>, <a class="el" href="class_f_c_tuplet.html#a5befcc6dbeddbc6603d5c93ac55ce979">FCTuplet</a>, <a class="el" href="class_f_c_syllable_base.html#a30f22f8acba1d5dc4211e8cdfb9b417c">FCSyllableBase</a>, <a class="el" href="class_f_c_verse_syllable.html#a3c9234afa9a62d7299ca494811c53fe9">FCVerseSyllable</a>, <a class="el" href="class_f_c_chorus_syllable.html#a99b78eb74ab62b5912c181af69a6d2af">FCChorusSyllable</a>, <a class="el" href="class_f_c_section_syllable.html#aba40c008992eb52e324a330f1446da1e">FCSectionSyllable</a>, <a class="el" href="class_f_c_syllable_entry_mod.html#a979c0570d370aacfaa47b446f944ba08">FCSyllableEntryMod</a>, <a class="el" href="class_f_c_entry_alter_mod.html#a0a9af0d63ac8d93416204c55c7da4bbf">FCEntryAlterMod</a>, <a class="el" href="class_f_c_accidental_mod.html#a78160220ee69d8f3dbf854627dedddb5">FCAccidentalMod</a>, <a class="el" href="class_f_c_percussion_note_mod.html#a1bfdfc4521e21a9afda6bb0e1aab120c">FCPercussionNoteMod</a>, <a class="el" href="class_f_c_custom_stem_mod.html#a8151337d577cf5ffe18ffca630a16487">FCCustomStemMod</a>, <a class="el" href="class_f_c_beam_mod.html#a63323d8fca78541da4fd111dd6733c15">FCBeamMod</a>, <a class="el" href="class_f_c_performance_mod.html#aba38e408a5822eedd756c1c9e2c817aa">FCPerformanceMod</a>, <a class="el" href="class_f_c_tie_mod.html#af63fee1957f5f8eb54cc0eecaad4787a">FCTieMod</a>, <a class="el" href="class_f_c_broken_beam_mod.html#a04f2f084580d1efaca1c02f6180bc831">FCBrokenBeamMod</a>, <a class="el" href="class_f_c_tablature_note_mod.html#ac84a07317a945145c041f46a3df3f97f">FCTablatureNoteMod</a>, and <a class="el" href="class_f_c_smart_shape_entry_mark.html#aacc716422393f0e505c1da3dbb2fdc9d">FCSmartShapeEntryMark</a>.</p>
+<p>Reimplemented in <a class="el" href="class_____f_c_entry_detail_note_i_d.html#aabc9b467a830518c29faf85622d6583c">__FCEntryDetailNoteID</a>, <a class="el" href="class_f_c_notehead_mod.html#a1374c8efc0512a516836c5fc80af608f">FCNoteheadMod</a>, <a class="el" href="class_f_c_dot_mod.html#a760c7f0eb7625cd6c90f1c7472f107a8">FCDotMod</a>, <a class="el" href="class_f_c_cross_staff_mod.html#ac42b1dbbff34aed8adfd4936f2384c87">FCCrossStaffMod</a>, <a class="el" href="class_f_c_secondary_beam_break_mod.html#ad8ba2a6ded041222d5c2a05a36657b9e">FCSecondaryBeamBreakMod</a>, <a class="el" href="class_f_c_beam_extension_mod.html#ac026b2f1299ddda8205d116493931f8b">FCBeamExtensionMod</a>, <a class="el" href="class_f_c_stem_mod.html#a52b7e0198b88cf75c36c32dfd532ebd8">FCStemMod</a>, <a class="el" href="class_f_c_articulation.html#a36a9d9269f6cc8d148c2ef7e9897a3c5">FCArticulation</a>, <a class="el" href="class_f_c_tuplet.html#a5befcc6dbeddbc6603d5c93ac55ce979">FCTuplet</a>, <a class="el" href="class_f_c_syllable_base.html#a30f22f8acba1d5dc4211e8cdfb9b417c">FCSyllableBase</a>, <a class="el" href="class_f_c_verse_syllable.html#a3c9234afa9a62d7299ca494811c53fe9">FCVerseSyllable</a>, <a class="el" href="class_f_c_chorus_syllable.html#a99b78eb74ab62b5912c181af69a6d2af">FCChorusSyllable</a>, <a class="el" href="class_f_c_section_syllable.html#aba40c008992eb52e324a330f1446da1e">FCSectionSyllable</a>, <a class="el" href="class_f_c_syllable_entry_mod.html#a979c0570d370aacfaa47b446f944ba08">FCSyllableEntryMod</a>, <a class="el" href="class_f_c_entry_alter_mod.html#a0a9af0d63ac8d93416204c55c7da4bbf">FCEntryAlterMod</a>, <a class="el" href="class_f_c_accidental_mod.html#a78160220ee69d8f3dbf854627dedddb5">FCAccidentalMod</a>, <a class="el" href="class_f_c_percussion_note_mod.html#a1bfdfc4521e21a9afda6bb0e1aab120c">FCPercussionNoteMod</a>, <a class="el" href="class_f_c_custom_stem_mod.html#a8151337d577cf5ffe18ffca630a16487">FCCustomStemMod</a>, <a class="el" href="class_f_c_beam_mod.html#a63323d8fca78541da4fd111dd6733c15">FCBeamMod</a>, <a class="el" href="class_f_c_performance_mod.html#aba38e408a5822eedd756c1c9e2c817aa">FCPerformanceMod</a>, <a class="el" href="class_f_c_tie_mod.html#af63fee1957f5f8eb54cc0eecaad4787a">FCTieMod</a>, <a class="el" href="class_f_c_broken_beam_mod.html#a04f2f084580d1efaca1c02f6180bc831">FCBrokenBeamMod</a>, <a class="el" href="class_f_c_tablature_note_mod.html#ac84a07317a945145c041f46a3df3f97f">FCTablatureNoteMod</a>, and <a class="el" href="class_f_c_smart_shape_entry_mark.html#aacc716422393f0e505c1da3dbb2fdc9d">FCSmartShapeEntryMark</a>.</p>
 
 </div>
 </div>
@@ -929,13 +931,13 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Saves a new inci and sets the correct flag in the associated note entry. </p>
 <p >The <a class="el" href="class_____f_c_entry_detail.html#a57effd98d57f20fcf61ce9f0b417aeda" title="Maps the data to an entry.">SetNoteEntry</a> method should be called prior to using <a class="el" href="class_____f_c_entry_detail.html#a123448ac5cf510c05568fed350607bb9" title="Saves a new inci and sets the correct flag in the associated note entry.">SaveNew()</a>.</p>
 <ul>
-<li><p class="startli">It's <b>very important</b> to save the associated note frame as well after this method call! Otherwise, the entry status bits might be incorrect!</p>
-<p class="startli">For some subclasses (namely <a class="el" href="class_f_c_stem_mod.html" title="Class for manual stem adjustments (in Finale&#39;s Special Tools).">FCStemMod</a>), this method must not be called if there's already a stem mod that can be accessed with <a class="el" href="class_____f_c_entry_detail.html#a63538b5b69ff9e66333dac1e6b01de5c" title="Overloaded version of LoadFirst that will load the first inci for the entry. SetNoteEntry must be cal...">FCStemMod::LoadFirst()</a>. A pattern to ensure this is: </p><pre class="fragment">if not stemMod:LoadFirst() then
-stemMod:SaveNew()
-</pre><p> end</p>
-</li>
+<li>It is <b>very important</b> to save the associated note frame as well after this method call! Otherwise, the entry status bits might be incorrect!</li>
 </ul>
-<p >Lua-supported.</p>
+<p >For some subclasses (namely <a class="el" href="class_f_c_stem_mod.html" title="Class for manual stem adjustments (in Finale&#39;s Special Tools).">FCStemMod</a>), this method must not be called if there's already a stem mod that can be accessed with <a class="el" href="class_____f_c_entry_detail.html#a63538b5b69ff9e66333dac1e6b01de5c" title="Overloaded version of LoadFirst that will load the first inci for the entry. SetNoteEntry must be cal...">FCStemMod::LoadFirst()</a>. A pattern to ensure this is:</p>
+<div class="fragment"><div class="line">if not stemMod:LoadFirst() then</div>
+<div class="line">   stemMod:SaveNew()</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on successful save. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_____f_c_entry_detail_note_i_d.html#aaec696d010d0d79143a3caa28756aa6a">__FCEntryDetailNoteID</a>, and <a class="el" href="class_f_c_beam_mod.html#af999e83a8e3a7697a35455b0fd84d2a6">FCBeamMod</a>.</p>
@@ -970,14 +972,14 @@ stemMod:SaveNew()
 <p >Call this method before a load or save operation.</p>
 <p >Lua-supported. </p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637">FCBeamMod</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232">FCBeamExtensionMod</a>, and <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637">FCBeamMod</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 29 2022 08:59:39 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 8 2022 19:38:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
