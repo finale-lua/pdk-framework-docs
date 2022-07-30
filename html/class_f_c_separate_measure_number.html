@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b1</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81c759395fa02481c83d62b2d0314489"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_separate_measure_number.html#a81c759395fa02481c83d62b2d0314489">GetUseEnclosure</a> () const</td></tr>
 <tr class="memdesc:a81c759395fa02481c83d62b2d0314489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the separate enclosure data should be used.  <a href="class_f_c_separate_measure_number.html#a81c759395fa02481c83d62b2d0314489">More...</a><br /></td></tr>
 <tr class="separator:a81c759395fa02481c83d62b2d0314489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719256e361a3289bf98f43838011c7a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_separate_measure_number.html#a719256e361a3289bf98f43838011c7a3">GetIsAlternateNumber</a> () const</td></tr>
+<tr class="memdesc:a719256e361a3289bf98f43838011c7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this is the instance of <a class="el" href="class_f_c_separate_measure_number.html" title="Class for a manually added or edited measure number in a cell.">FCSeparateMeasureNumber</a> for the alternate measure number.  <a href="class_f_c_separate_measure_number.html#a719256e361a3289bf98f43838011c7a3">More...</a><br /></td></tr>
+<tr class="separator:a719256e361a3289bf98f43838011c7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ec02ba047d82439e2448ff4a9d509a"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_separate_measure_number.html#a34ec02ba047d82439e2448ff4a9d509a">GetHorizontalPosition</a> () const</td></tr>
 <tr class="memdesc:a34ec02ba047d82439e2448ff4a9d509a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the horizontal position offset.  <a href="class_f_c_separate_measure_number.html#a34ec02ba047d82439e2448ff4a9d509a">More...</a><br /></td></tr>
 <tr class="separator:a34ec02ba047d82439e2448ff4a9d509a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef8bed583167a6c6d9312bbffdbfeaff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_separate_measure_number.html#aef8bed583167a6c6d9312bbffdbfeaff">SetUseEnclosure</a> (bool state)</td></tr>
 <tr class="memdesc:aef8bed583167a6c6d9312bbffdbfeaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the separate enclosure data should be used.  <a href="class_f_c_separate_measure_number.html#aef8bed583167a6c6d9312bbffdbfeaff">More...</a><br /></td></tr>
 <tr class="separator:aef8bed583167a6c6d9312bbffdbfeaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562019694dbcd7d6f2ac3b3f6aa2f7bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_separate_measure_number.html#a562019694dbcd7d6f2ac3b3f6aa2f7bc">SetIsAlternateNumber</a> (bool state)</td></tr>
+<tr class="memdesc:a562019694dbcd7d6f2ac3b3f6aa2f7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if this is the instance of <a class="el" href="class_f_c_separate_measure_number.html" title="Class for a manually added or edited measure number in a cell.">FCSeparateMeasureNumber</a> for the alternate measure number.  <a href="class_f_c_separate_measure_number.html#a562019694dbcd7d6f2ac3b3f6aa2f7bc">More...</a><br /></td></tr>
+<tr class="separator:a562019694dbcd7d6f2ac3b3f6aa2f7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d1c93a1b283f5afd8c7f5a405dbfb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_separate_measure_number.html#af8d1c93a1b283f5afd8c7f5a405dbfb2">SetHorizontalPosition</a> (twobyte value)</td></tr>
 <tr class="memdesc:af8d1c93a1b283f5afd8c7f5a405dbfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the horizontal position offset.  <a href="class_f_c_separate_measure_number.html#af8d1c93a1b283f5afd8c7f5a405dbfb2">More...</a><br /></td></tr>
 <tr class="separator:af8d1c93a1b283f5afd8c7f5a405dbfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -854,6 +860,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a719256e361a3289bf98f43838011c7a3" name="a719256e361a3289bf98f43838011c7a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719256e361a3289bf98f43838011c7a3">&#9670;&nbsp;</a></span>GetIsAlternateNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCSeparateMeasureNumber::GetIsAlternateNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if this is the instance of <a class="el" href="class_f_c_separate_measure_number.html" title="Class for a manually added or edited measure number in a cell.">FCSeparateMeasureNumber</a> for the alternate measure number. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>An alternate number is a second measure number for the same measure number region on the same measure. The most common use case is a boxed number combined with a multimeasure rest range. This is when a boxed number appears at the beginning of a multimeasure rest and a range appears beneath the multimeasure rest. In this case, the boxed number is the alternate number.</dd></dl>
+<p>Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
 <a id="a27ec3bad0a6616317283615757199132" name="a27ec3bad0a6616317283615757199132"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27ec3bad0a6616317283615757199132">&#9670;&nbsp;</a></span>GetRegionNumberID()</h2>
 
@@ -1025,6 +1060,36 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a562019694dbcd7d6f2ac3b3f6aa2f7bc" name="a562019694dbcd7d6f2ac3b3f6aa2f7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562019694dbcd7d6f2ac3b3f6aa2f7bc">&#9670;&nbsp;</a></span>SetIsAlternateNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCSeparateMeasureNumber::SetIsAlternateNumber </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if this is the instance of <a class="el" href="class_f_c_separate_measure_number.html" title="Class for a manually added or edited measure number in a cell.">FCSeparateMeasureNumber</a> for the alternate measure number. </p>
+<p >See remarks at <a class="el" href="class_f_c_separate_measure_number.html#a719256e361a3289bf98f43838011c7a3" title="Return true if this is the instance of FCSeparateMeasureNumber for the alternate measure number.">GetIsAlternateNumber</a> for more information about this value.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
 <a id="ab73ee3eec1a9a9ef4a790c9c93bf81c3" name="ab73ee3eec1a9a9ef4a790c9c93bf81c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab73ee3eec1a9a9ef4a790c9c93bf81c3">&#9670;&nbsp;</a></span>SetRegionNumberID()</h2>
 
@@ -1150,7 +1215,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 12 2022 11:29:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 29 2022 21:11:28 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

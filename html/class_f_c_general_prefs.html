@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b1</span>
    </div>
   </td>
  </tr>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_f_c_general_prefs-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">FCGeneralPrefs Class Reference<div class="ingroups"><a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
@@ -85,6 +86,200 @@ Inheritance diagram for FCGeneralPrefs:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a54c0ffb184f7b0a416a60a3eab68fb62"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62">GRACENOTE_QUANTIZATIONMODE</a> { <a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62ace261bbafc15997c273cd7dfa52f21a8">GRACEQUANTMODE_ALLOW</a> = 0
+, <a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62aed3267669a5280b48ad453bc9bfc73b7">GRACEQUANTMODE_REMOVE</a> = 1
+, <a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62ab8f6d8316cd850c9886c06d7bb73d410">GRACEQUANTMODE_CONVERT</a> = 2
+ }</td></tr>
+<tr class="memdesc:a54c0ffb184f7b0a416a60a3eab68fb62"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grace note spacing constants used by <a class="el" href="class_f_c_general_prefs.html#aec94f78df65ee4b09bc4a4eb24ac549d" title="Return the quantization mode for grace notes.">GetQuantizationGraceNoteMode</a>.  <a href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62">More...</a><br /></td></tr>
+<tr class="separator:a54c0ffb184f7b0a416a60a3eab68fb62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea52201dfb15e7b5c2ad0bcb03542a5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5">QUANTIZATIONMODE</a> { <a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5a4d076d7c558bb438bcc9a97c1b6de3ba">QUANTIZATIONMODE_NOTUPLETS</a> = FQ_NOTUPLETS
+, <a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5ae2c547c155665e7fe287275e2925b28b">QUANTIZATIONMODE_MIXRHYTHMS</a> = FQ_MIXRHYTHMS
+, <a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5af4a0d2bf35d5bf763d303a84b1fae2e5">QUANTIZATIONMODE_SPACEEVENLY</a> = FQ_SPACEEVENLY
+ }</td></tr>
+<tr class="memdesc:a5ea52201dfb15e7b5c2ad0bcb03542a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The quantization mode constants used by <a class="el" href="class_f_c_general_prefs.html#ace2bb261935a5a03746a23b60c7aff9e" title="Return the mode for quantization.">GetQuantizationMode</a>.  <a href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5">More...</a><br /></td></tr>
+<tr class="separator:a5ea52201dfb15e7b5c2ad0bcb03542a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9851a2f8438e48ee86be6e84e7d7e298"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298">UNDOSTATE</a> { <a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298a4f72e1a2a393cb5dd2887e40b1e317ec">UNDOSTATE_OFF</a> = ::UNDO_OFF
+, <a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298a6a8ea8d4dba1f52ab88a76d2ba2ddfe6">UNDOSTATE_DISABLED</a> = ::UNDO_DISABLED
+, <a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298ad25bdb0253e2ccb426c4dc2fc179c291">UNDOSTATE_ENABLED</a> = ::UNDO_ENABLED
+, <a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298ae8aef469ada3c52475c7c9cb3555103d">UNDOSTATE_SUSPENDED</a> = ::UNDO_SUSPENDED
+ }</td></tr>
+<tr class="memdesc:a9851a2f8438e48ee86be6e84e7d7e298"><td class="mdescLeft">&#160;</td><td class="mdescRight">The undo state constants used by <a class="el" href="class_f_c_general_prefs.html#a0528c1626fc11f9985aecc4565e55a93" title="Return current Undo state.">GetUndoState</a>.  <a href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298">More...</a><br /></td></tr>
+<tr class="separator:a9851a2f8438e48ee86be6e84e7d7e298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
+<tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
+&#160;&#160;<b>FCID_UNKNOWN</b> = 0
+, <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ALLOTMENT</b>
+, <b>FCID_ARTICULATION</b>
+, <br />
+&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+, <b>FCID_BACKWARDREPEAT</b>
+, <b>FCID_BASELINE</b>
+, <b>FCID_BEAMMOD</b>
+, <br />
+&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BROKENBEAMMOD</b>
+, <b>FCID_CATEGORYDEF</b>
+, <b>FCID_CELLCLEFCHANGE</b>
+, <br />
+&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLGRAPHIC</b>
+, <b>FCID_CELLTEXT</b>
+, <b>FCID_CENTERSMARTSHAPE</b>
+, <br />
+&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORDPREFS</b>
+, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <b>FCID_CHORUSSYLLABLE</b>
+, <br />
+&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
+, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <b>FCID_CROSSSTAFFMOD</b>
+, <br />
+&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSTEMMOD</b>
+, <b>FCID_DISTANCEPREFS</b>
+, <b>FCID_DOTMOD</b>
+, <br />
+&#160;&#160;<b>FCID_ENCLOSURE</b>
+, <b>FCID_ENDINGREPEAT</b>
+, <b>FCID_ENTRYALTERMOD</b>
+, <b>FCID_EXECUTABLESHAPEDEF</b>
+, <br />
+&#160;&#160;<b>FCID_EXPRESSION</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
+, <b>FCID_FONTPREFS</b>
+, <b>FCID_FREEZESYSTEM</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
+, <b>FCID_FRETBOARDSTYLEDEFS</b>
+, <b>FCID_FRETBOARDGROUPDEF</b>
+, <b>FCID_FRETBOARDGROUPDEFS</b>
+, <br />
+&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
+, <b>FCID_GENERALPREFS</b>
+, <b>FCID_GRIDSGUIDESPREFS</b>
+, <b>FCID_GROUP</b>
+, <br />
+&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <b>FCID_HUMANPLAYBACKPREFS</b>
+, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <b>FCID_INSTRUMENTDEF</b>
+, <br />
+&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <b>FCID_KEYSIGNATURE</b>
+, <b>FCID_LAYERPREFS</b>
+, <b>FCID_LYRICSBASELINE</b>
+, <br />
+&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_MEASURE</b>
+, <b>FCID_MEASURENUMBERREGION</b>
+, <b>FCID_METATOOLASSIGNMENT</b>
+, <br />
+&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MISCDOCPREFS</b>
+, <b>FCID_MULTIMEASUREREST</b>
+, <b>FCID_MULTIMEASURERESTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENTS</b>
+, <b>FCID_MUSICCHARACTERPREFS</b>
+, <b>FCID_MUSICSPACINGPREFS</b>
+, <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <b>FCID_NOTEHEADMOD</b>
+, <b>FCID_OTHERINCI</b>
+, <b>FCID_PERCUSSIONLAYOUTNOTE</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERFORMANCEMOD</b>
+, <b>FCID_PAGE</b>
+, <b>FCID_PAGEFORMATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGETEXT</b>
+, <b>FCID_PART</b>
+, <b>FCID_PARTEXTRACTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
+, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <b>FCID_PIANOBRACEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
+, <b>FCID_REPEATPREFS</b>
+, <b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <br />
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <b>FCID_SEPARATEPLACEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
+, <b>FCID_SIZEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <b>FCID_SMARTSHAPEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
+, <b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
+, <b>FCID_STEMCONNECTIONTABLE</b>
+, <br />
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
+, <b>FCID_SYSTEMSTAFF</b>
+, <br />
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
+, <b>FCID_TEXTEXPRESSIONDEF</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
+, <b>FCID_TIEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <br />
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
+<tr class="separator:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a> { <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a707eba9499cef193373ede69bfef3736">MEASUREMENTUNIT_DEFAULT</a> = UNIT_DEFAULT
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a0b105c0bf10993d38a0bb6fdb30a5478">MEASUREMENTUNIT_EVPUS</a> = UNIT_EVPUS
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6afbf3b5209071bd18acbf1fb1ca6909d3">MEASUREMENTUNIT_INCHES</a> = UNIT_INCHES
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a22fedb5fa471001b099cc7d8dafd3ca1">MEASUREMENTUNIT_CENTIMETERS</a> = UNIT_CENTS
+, <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36e86e89f3029e219b9cc1723626faa">MEASUREMENTUNIT_POINTS</a> = UNIT_POINTS
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6af382bf4d11095cdd20603b966ba92b16">MEASUREMENTUNIT_PICAS</a> = UNIT_PICAS
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36860d891171922f1fdf33c912daee5">MEASUREMENTUNIT_SPACES</a> = UNIT_SPACES
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a9eb7891cfe1766026f0a3f6b747f64a0">MEASUREMENTUNIT_MILLIMETERS</a> = 100
+<br />
+ }</td></tr>
+<tr class="memdesc:a9c34d7730c8104ce6e2275c55fc04de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for Finale's standard measurement units.  <a href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">More...</a><br /></td></tr>
+<tr class="separator:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a31672012e56a548891bad7922f4405f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a31672012e56a548891bad7922f4405f3">ClassName</a> () override</td></tr>
@@ -131,6 +326,69 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4046873805e1f388391d8cfe1e97417e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a4046873805e1f388391d8cfe1e97417e">GetRebarWhenTimeSigChanged</a> () const</td></tr>
 <tr class="memdesc:a4046873805e1f388391d8cfe1e97417e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if measures should rebar when the Time Signature Tool changes the time signature.  <a href="class_f_c_general_prefs.html#a4046873805e1f388391d8cfe1e97417e">More...</a><br /></td></tr>
 <tr class="separator:a4046873805e1f388391d8cfe1e97417e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72f09aa7f61959e84800e576308b25f"><td class="memItemLeft" align="right" valign="top">TimeEdu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ae72f09aa7f61959e84800e576308b25f">GetQuantizationSmallestNoteValue</a> () const</td></tr>
+<tr class="memdesc:ae72f09aa7f61959e84800e576308b25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the smallest note value for quantization.  <a href="class_f_c_general_prefs.html#ae72f09aa7f61959e84800e576308b25f">More...</a><br /></td></tr>
+<tr class="separator:ae72f09aa7f61959e84800e576308b25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2bb261935a5a03746a23b60c7aff9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5">QUANTIZATIONMODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ace2bb261935a5a03746a23b60c7aff9e">GetQuantizationMode</a> () const</td></tr>
+<tr class="memdesc:ace2bb261935a5a03746a23b60c7aff9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the mode for quantization.  <a href="class_f_c_general_prefs.html#ace2bb261935a5a03746a23b60c7aff9e">More...</a><br /></td></tr>
+<tr class="separator:ace2bb261935a5a03746a23b60c7aff9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec94f78df65ee4b09bc4a4eb24ac549d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62">GRACENOTE_QUANTIZATIONMODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#aec94f78df65ee4b09bc4a4eb24ac549d">GetQuantizationGraceNoteMode</a> () const</td></tr>
+<tr class="memdesc:aec94f78df65ee4b09bc4a4eb24ac549d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the quantization mode for grace notes.  <a href="class_f_c_general_prefs.html#aec94f78df65ee4b09bc4a4eb24ac549d">More...</a><br /></td></tr>
+<tr class="separator:aec94f78df65ee4b09bc4a4eb24ac549d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cce0f478c4c88e88ca014e490956642"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a6cce0f478c4c88e88ca014e490956642">GetDottedRestsAreLegalInSimpleMeter</a> () const</td></tr>
+<tr class="memdesc:a6cce0f478c4c88e88ca014e490956642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if simple meters can contain dotted rests.  <a href="class_f_c_general_prefs.html#a6cce0f478c4c88e88ca014e490956642">More...</a><br /></td></tr>
+<tr class="separator:a6cce0f478c4c88e88ca014e490956642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afece9f0a6ccb4351bd29b5907ae63e88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#afece9f0a6ccb4351bd29b5907ae63e88">GetDottedRestsAreLegalInCompoundMeter</a> () const</td></tr>
+<tr class="memdesc:afece9f0a6ccb4351bd29b5907ae63e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if compound meters can contain dotted rests.  <a href="class_f_c_general_prefs.html#afece9f0a6ccb4351bd29b5907ae63e88">More...</a><br /></td></tr>
+<tr class="separator:afece9f0a6ccb4351bd29b5907ae63e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f7d57ce08c0c6f88cebddf8f371d679"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a6f7d57ce08c0c6f88cebddf8f371d679">GetQuantizationRetainKeyVelocities</a> () const</td></tr>
+<tr class="memdesc:a6f7d57ce08c0c6f88cebddf8f371d679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if key velocities should be retained in quantization.  <a href="class_f_c_general_prefs.html#a6f7d57ce08c0c6f88cebddf8f371d679">More...</a><br /></td></tr>
+<tr class="separator:a6f7d57ce08c0c6f88cebddf8f371d679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2826ebc1009e4c22c30fba2233945e8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a2826ebc1009e4c22c30fba2233945e8b">GetQuantizationRetainNoteDurations</a> () const</td></tr>
+<tr class="memdesc:a2826ebc1009e4c22c30fba2233945e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if note durations should be retained in quantization.  <a href="class_f_c_general_prefs.html#a2826ebc1009e4c22c30fba2233945e8b">More...</a><br /></td></tr>
+<tr class="separator:a2826ebc1009e4c22c30fba2233945e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b417f79f4f898cc2fdfe0ac7879288f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a5b417f79f4f898cc2fdfe0ac7879288f">GetQuantizationIncludeVoiceTwo</a> () const</td></tr>
+<tr class="memdesc:a5b417f79f4f898cc2fdfe0ac7879288f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if Voice Two should be used in quantization.  <a href="class_f_c_general_prefs.html#a5b417f79f4f898cc2fdfe0ac7879288f">More...</a><br /></td></tr>
+<tr class="separator:a5b417f79f4f898cc2fdfe0ac7879288f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888ed17c120bef25cd9db61623262a74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a888ed17c120bef25cd9db61623262a74">GetQuantizationSoftenSyncopations</a> () const</td></tr>
+<tr class="memdesc:a888ed17c120bef25cd9db61623262a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if quantization should soften syncopations (use fewer ties).  <a href="class_f_c_general_prefs.html#a888ed17c120bef25cd9db61623262a74">More...</a><br /></td></tr>
+<tr class="separator:a888ed17c120bef25cd9db61623262a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bc12627d400b5e0d23995e56202f2a"><td class="memItemLeft" align="right" valign="top">TimeEdu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a71bc12627d400b5e0d23995e56202f2a">GetQuantizationSensitivityLevel</a> () const</td></tr>
+<tr class="memdesc:a71bc12627d400b5e0d23995e56202f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sensitivity level value for quantization.  <a href="class_f_c_general_prefs.html#a71bc12627d400b5e0d23995e56202f2a">More...</a><br /></td></tr>
+<tr class="separator:a71bc12627d400b5e0d23995e56202f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e26bdbc4c7efab88bebad7fe6f61dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a85e26bdbc4c7efab88bebad7fe6f61dc">GetIncludeMIDITempoChanges</a> () const</td></tr>
+<tr class="memdesc:a85e26bdbc4c7efab88bebad7fe6f61dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if tempo changes should be included in MIDI import.  <a href="class_f_c_general_prefs.html#a85e26bdbc4c7efab88bebad7fe6f61dc">More...</a><br /></td></tr>
+<tr class="separator:a85e26bdbc4c7efab88bebad7fe6f61dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83a81d14a914f898f2cb93d401c9818"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#af83a81d14a914f898f2cb93d401c9818">GetIncludeMIDIContinuousData</a> () const</td></tr>
+<tr class="memdesc:af83a81d14a914f898f2cb93d401c9818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if continuous data should be included in MIDI import.  <a href="class_f_c_general_prefs.html#af83a81d14a914f898f2cb93d401c9818">More...</a><br /></td></tr>
+<tr class="separator:af83a81d14a914f898f2cb93d401c9818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207f55ef72b94a989ef68e82ed213fa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a207f55ef72b94a989ef68e82ed213fa3">GetRebarStopOnlyAtEndOfPiece</a> () const</td></tr>
+<tr class="memdesc:a207f55ef72b94a989ef68e82ed213fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should stop only at the end of the document.  <a href="class_f_c_general_prefs.html#a207f55ef72b94a989ef68e82ed213fa3">More...</a><br /></td></tr>
+<tr class="separator:a207f55ef72b94a989ef68e82ed213fa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1d5a9992919b94fc2a765d3c9f0d3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#abc1d5a9992919b94fc2a765d3c9f0d3e">GetRebarStopAtEndOfRegion</a> () const</td></tr>
+<tr class="memdesc:abc1d5a9992919b94fc2a765d3c9f0d3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should stop at the end of the selected region.  <a href="class_f_c_general_prefs.html#abc1d5a9992919b94fc2a765d3c9f0d3e">More...</a><br /></td></tr>
+<tr class="separator:abc1d5a9992919b94fc2a765d3c9f0d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4cb0ffc047cd94eca58f8205ab30cc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#af4cb0ffc047cd94eca58f8205ab30cc3">GetRebarStopAtKeyChange</a> () const</td></tr>
+<tr class="memdesc:af4cb0ffc047cd94eca58f8205ab30cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should stop at the next key change.  <a href="class_f_c_general_prefs.html#af4cb0ffc047cd94eca58f8205ab30cc3">More...</a><br /></td></tr>
+<tr class="separator:af4cb0ffc047cd94eca58f8205ab30cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5b5c972a6ca2c537598f5b50c38da4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#aff5b5c972a6ca2c537598f5b50c38da4">GetRebarStopAtTimeChange</a> () const</td></tr>
+<tr class="memdesc:aff5b5c972a6ca2c537598f5b50c38da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should stop at the next meter change.  <a href="class_f_c_general_prefs.html#aff5b5c972a6ca2c537598f5b50c38da4">More...</a><br /></td></tr>
+<tr class="separator:aff5b5c972a6ca2c537598f5b50c38da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238c8bb3513dbbfba503204b013e82d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a238c8bb3513dbbfba503204b013e82d7">GetRebarStopAtSpecialBarline</a> () const</td></tr>
+<tr class="memdesc:a238c8bb3513dbbfba503204b013e82d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should stop at special barlines.  <a href="class_f_c_general_prefs.html#a238c8bb3513dbbfba503204b013e82d7">More...</a><br /></td></tr>
+<tr class="separator:a238c8bb3513dbbfba503204b013e82d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f0daa6559c84b9bd9844786e325762"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a50f0daa6559c84b9bd9844786e325762">GetRebarStopAtEmptyFrame</a> () const</td></tr>
+<tr class="memdesc:a50f0daa6559c84b9bd9844786e325762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should stop at empty frames.  <a href="class_f_c_general_prefs.html#a50f0daa6559c84b9bd9844786e325762">More...</a><br /></td></tr>
+<tr class="separator:a50f0daa6559c84b9bd9844786e325762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c1e4ab660abbb92758a8e61357fa11e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a5c1e4ab660abbb92758a8e61357fa11e">GetRebeamOnRebar</a> () const</td></tr>
+<tr class="memdesc:a5c1e4ab660abbb92758a8e61357fa11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if rebar music should also rebeam music.  <a href="class_f_c_general_prefs.html#a5c1e4ab660abbb92758a8e61357fa11e">More...</a><br /></td></tr>
+<tr class="separator:a5c1e4ab660abbb92758a8e61357fa11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5745fe0a886a0b3d9126cab6944f3bf"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ae5745fe0a886a0b3d9126cab6944f3bf">GetKeyboardSplitPoint</a> () const</td></tr>
+<tr class="memdesc:ae5745fe0a886a0b3d9126cab6944f3bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the MIDI note (0-127) that defines the Hyperscribe fixed keyboard split point.  <a href="class_f_c_general_prefs.html#ae5745fe0a886a0b3d9126cab6944f3bf">More...</a><br /></td></tr>
+<tr class="separator:ae5745fe0a886a0b3d9126cab6944f3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0528c1626fc11f9985aecc4565e55a93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298">UNDOSTATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a0528c1626fc11f9985aecc4565e55a93">GetUndoState</a> () const</td></tr>
+<tr class="memdesc:a0528c1626fc11f9985aecc4565e55a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return current Undo state.  <a href="class_f_c_general_prefs.html#a0528c1626fc11f9985aecc4565e55a93">More...</a><br /></td></tr>
+<tr class="separator:a0528c1626fc11f9985aecc4565e55a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2137dc9b200fe4d374dd5e136b2fb6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#aa2137dc9b200fe4d374dd5e136b2fb6a">SetPitchRepresentationType</a> (twobyte value)</td></tr>
 <tr class="memdesc:aa2137dc9b200fe4d374dd5e136b2fb6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the preferred Pitch representation type for MIDI notes in Finale. The setting is called "Pitch Representation" in the Finale Preferences.  <a href="class_f_c_general_prefs.html#aa2137dc9b200fe4d374dd5e136b2fb6a">More...</a><br /></td></tr>
 <tr class="separator:aa2137dc9b200fe4d374dd5e136b2fb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +422,66 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9725f9de47d44f9ba19cc7e443016aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ad9725f9de47d44f9ba19cc7e443016aa">SetRebarWhenTimeSigChanged</a> (bool state)</td></tr>
 <tr class="memdesc:ad9725f9de47d44f9ba19cc7e443016aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if measures should rebar when the Time Signature Tool changes the time signature.  <a href="class_f_c_general_prefs.html#ad9725f9de47d44f9ba19cc7e443016aa">More...</a><br /></td></tr>
 <tr class="separator:ad9725f9de47d44f9ba19cc7e443016aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a716f433124e10d67b9960395d99471bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a716f433124e10d67b9960395d99471bb">SetQuantizationSmallestNoteValue</a> (TimeEdu16 value)</td></tr>
+<tr class="memdesc:a716f433124e10d67b9960395d99471bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the smallest note value for quantization.  <a href="class_f_c_general_prefs.html#a716f433124e10d67b9960395d99471bb">More...</a><br /></td></tr>
+<tr class="separator:a716f433124e10d67b9960395d99471bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f0e075840f30f828c3863ca1825b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ae6f0e075840f30f828c3863ca1825b45">SetQuantizationMode</a> (twobyte value)</td></tr>
+<tr class="memdesc:ae6f0e075840f30f828c3863ca1825b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the mode for quantization.  <a href="class_f_c_general_prefs.html#ae6f0e075840f30f828c3863ca1825b45">More...</a><br /></td></tr>
+<tr class="separator:ae6f0e075840f30f828c3863ca1825b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae259c727cc7fcd52aea531f03e716955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ae259c727cc7fcd52aea531f03e716955">SetQuantizationGraceNoteMode</a> (twobyte value)</td></tr>
+<tr class="memdesc:ae259c727cc7fcd52aea531f03e716955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the quantization mode for grace notes.  <a href="class_f_c_general_prefs.html#ae259c727cc7fcd52aea531f03e716955">More...</a><br /></td></tr>
+<tr class="separator:ae259c727cc7fcd52aea531f03e716955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc73aa97768ee383105d23c21eed60e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#acc73aa97768ee383105d23c21eed60e0">SetDottedRestsAreLegalInSimpleMeter</a> (bool state)</td></tr>
+<tr class="memdesc:acc73aa97768ee383105d23c21eed60e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if simple meters can contain dotted rests.  <a href="class_f_c_general_prefs.html#acc73aa97768ee383105d23c21eed60e0">More...</a><br /></td></tr>
+<tr class="separator:acc73aa97768ee383105d23c21eed60e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe73d2a2e817177e2059b947c2d4f6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#aefe73d2a2e817177e2059b947c2d4f6a">SetDottedRestsAreLegalInCompoundMeter</a> (bool state)</td></tr>
+<tr class="memdesc:aefe73d2a2e817177e2059b947c2d4f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if compound meters can contain dotted rests.  <a href="class_f_c_general_prefs.html#aefe73d2a2e817177e2059b947c2d4f6a">More...</a><br /></td></tr>
+<tr class="separator:aefe73d2a2e817177e2059b947c2d4f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f5253dcf76ffca4662dd123f4547e9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a3f5253dcf76ffca4662dd123f4547e9e">SetQuantizationRetainKeyVelocities</a> (bool state)</td></tr>
+<tr class="memdesc:a3f5253dcf76ffca4662dd123f4547e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if key velocities should be retained in quantization.  <a href="class_f_c_general_prefs.html#a3f5253dcf76ffca4662dd123f4547e9e">More...</a><br /></td></tr>
+<tr class="separator:a3f5253dcf76ffca4662dd123f4547e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0399bee2d47612ec60ed4cb9bff0bbf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a0399bee2d47612ec60ed4cb9bff0bbf7">SetQuantizationRetainNoteDurations</a> (bool state)</td></tr>
+<tr class="memdesc:a0399bee2d47612ec60ed4cb9bff0bbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if note durations should be retained in quantization.  <a href="class_f_c_general_prefs.html#a0399bee2d47612ec60ed4cb9bff0bbf7">More...</a><br /></td></tr>
+<tr class="separator:a0399bee2d47612ec60ed4cb9bff0bbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9c07a2154c948e85b8c41f19439a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a2d9c07a2154c948e85b8c41f19439a44">SetQuantizationIncludeVoiceTwo</a> (bool state)</td></tr>
+<tr class="memdesc:a2d9c07a2154c948e85b8c41f19439a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if Voice Two should be used in quantization.  <a href="class_f_c_general_prefs.html#a2d9c07a2154c948e85b8c41f19439a44">More...</a><br /></td></tr>
+<tr class="separator:a2d9c07a2154c948e85b8c41f19439a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12cc321414c7d2562f55e66bd1ee7b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ad12cc321414c7d2562f55e66bd1ee7b9">SetQuantizationSoftenSyncopations</a> (bool state)</td></tr>
+<tr class="memdesc:ad12cc321414c7d2562f55e66bd1ee7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if quantization should soften syncopations (use fewer ties).  <a href="class_f_c_general_prefs.html#ad12cc321414c7d2562f55e66bd1ee7b9">More...</a><br /></td></tr>
+<tr class="separator:ad12cc321414c7d2562f55e66bd1ee7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3435442eb08fde8955c7c574fc4b443"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#ad3435442eb08fde8955c7c574fc4b443">SetQuantizationSensitivityLevel</a> (TimeEdu16 value)</td></tr>
+<tr class="memdesc:ad3435442eb08fde8955c7c574fc4b443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the sensitivity level value for quantization.  <a href="class_f_c_general_prefs.html#ad3435442eb08fde8955c7c574fc4b443">More...</a><br /></td></tr>
+<tr class="separator:ad3435442eb08fde8955c7c574fc4b443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794e58d4111f44d0621374868ddd0bea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a794e58d4111f44d0621374868ddd0bea">SetIncludeMIDITempoChanges</a> (bool state)</td></tr>
+<tr class="memdesc:a794e58d4111f44d0621374868ddd0bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if tempo changes should be included in MIDI import.  <a href="class_f_c_general_prefs.html#a794e58d4111f44d0621374868ddd0bea">More...</a><br /></td></tr>
+<tr class="separator:a794e58d4111f44d0621374868ddd0bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa78fd0392822032dcc134f1d0f6d9096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#aa78fd0392822032dcc134f1d0f6d9096">SetIncludeMIDIContinuousData</a> (bool state)</td></tr>
+<tr class="memdesc:aa78fd0392822032dcc134f1d0f6d9096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if continuous data should be included in MIDI import.  <a href="class_f_c_general_prefs.html#aa78fd0392822032dcc134f1d0f6d9096">More...</a><br /></td></tr>
+<tr class="separator:aa78fd0392822032dcc134f1d0f6d9096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3ba9bf7623f7b90b896bd3c7f0cf48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#afa3ba9bf7623f7b90b896bd3c7f0cf48">SetRebarStopAtEndOfRegion</a> (bool state)</td></tr>
+<tr class="memdesc:afa3ba9bf7623f7b90b896bd3c7f0cf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if rebar music should stop at the end of the selected region.  <a href="class_f_c_general_prefs.html#afa3ba9bf7623f7b90b896bd3c7f0cf48">More...</a><br /></td></tr>
+<tr class="separator:afa3ba9bf7623f7b90b896bd3c7f0cf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef41e3aadc5848040170c2aa7b560b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#aef41e3aadc5848040170c2aa7b560b5d">SetRebarStopAtKeyChange</a> (bool state)</td></tr>
+<tr class="memdesc:aef41e3aadc5848040170c2aa7b560b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if rebar music should stop at the next key change.  <a href="class_f_c_general_prefs.html#aef41e3aadc5848040170c2aa7b560b5d">More...</a><br /></td></tr>
+<tr class="separator:aef41e3aadc5848040170c2aa7b560b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0164cac12ac03ea2d0df66322d832cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a0164cac12ac03ea2d0df66322d832cd8">SetRebarStopAtTimeChange</a> (bool state)</td></tr>
+<tr class="memdesc:a0164cac12ac03ea2d0df66322d832cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if rebar music should stop at the next meter change.  <a href="class_f_c_general_prefs.html#a0164cac12ac03ea2d0df66322d832cd8">More...</a><br /></td></tr>
+<tr class="separator:a0164cac12ac03ea2d0df66322d832cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a969b41980c129dd50d09a3ffd812db70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a969b41980c129dd50d09a3ffd812db70">SetRebarStopAtSpecialBarline</a> (bool state)</td></tr>
+<tr class="memdesc:a969b41980c129dd50d09a3ffd812db70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if rebar music should stop at special barlines.  <a href="class_f_c_general_prefs.html#a969b41980c129dd50d09a3ffd812db70">More...</a><br /></td></tr>
+<tr class="separator:a969b41980c129dd50d09a3ffd812db70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f0909dfa791842f410bb33efcdbed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a21f0909dfa791842f410bb33efcdbed6">SetRebarStopAtEmptyFrame</a> (bool state)</td></tr>
+<tr class="memdesc:a21f0909dfa791842f410bb33efcdbed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if rebar music should stop at empty frames.  <a href="class_f_c_general_prefs.html#a21f0909dfa791842f410bb33efcdbed6">More...</a><br /></td></tr>
+<tr class="separator:a21f0909dfa791842f410bb33efcdbed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add731205f63bae58d08d68d71a7f825e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#add731205f63bae58d08d68d71a7f825e">SetRebeamOnRebar</a> (bool state)</td></tr>
+<tr class="memdesc:add731205f63bae58d08d68d71a7f825e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if rebar music should also rebeam music.  <a href="class_f_c_general_prefs.html#add731205f63bae58d08d68d71a7f825e">More...</a><br /></td></tr>
+<tr class="separator:add731205f63bae58d08d68d71a7f825e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbbe33bba9bfaec4073ee4584a6aeafe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#abbbe33bba9bfaec4073ee4584a6aeafe">SetKeyboardSplitPoint</a> (twobyte value)</td></tr>
+<tr class="memdesc:abbbe33bba9bfaec4073ee4584a6aeafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the MIDI note (0-127) that defines the Hyperscribe fixed keyboard split point.  <a href="class_f_c_general_prefs.html#abbbe33bba9bfaec4073ee4584a6aeafe">More...</a><br /></td></tr>
+<tr class="separator:abbbe33bba9bfaec4073ee4584a6aeafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58024bfafb0b45cd60680735289fe633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_general_prefs.html#a58024bfafb0b45cd60680735289fe633">ClearRebarStopAtOptions</a> ()</td></tr>
+<tr class="memdesc:a58024bfafb0b45cd60680735289fe633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all Stop At options in the Rebar Options dialog box.  <a href="class_f_c_general_prefs.html#a58024bfafb0b45cd60680735289fe633">More...</a><br /></td></tr>
+<tr class="separator:a58024bfafb0b45cd60680735289fe633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_____f_c_prefs_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_____f_c_prefs_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_____f_c_prefs_base.html">__FCPrefsBase</a></td></tr>
 <tr class="memitem:a8577911b5f3e7ea185739f6404e1236e inherit pub_methods_class_____f_c_prefs_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_prefs_base.html#a8577911b5f3e7ea185739f6404e1236e">Reload</a> () override</td></tr>
 <tr class="memdesc:a8577911b5f3e7ea185739f6404e1236e inherit pub_methods_class_____f_c_prefs_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden version of <a class="el" href="class_____f_c_prefs_base.html#a8577911b5f3e7ea185739f6404e1236e" title="Overridden version of Reload(), that handles prefs from multiple sources.">Reload()</a>, that handles prefs from multiple sources.  <a href="class_____f_c_prefs_base.html#a8577911b5f3e7ea185739f6404e1236e">More...</a><br /></td></tr>
@@ -359,178 +677,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
-<tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
-&#160;&#160;<b>FCID_UNKNOWN</b> = 0
-, <b>FCID_ACCIDENTALMOD</b>
-, <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
-, <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
-, <b>FCID_BACKWARDREPEAT</b>
-, <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
-, <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
-, <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
-, <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
-, <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
-, <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
-, <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
-, <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
-, <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
-, <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
-, <b>FCID_DOTMOD</b>
-, <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
-, <b>FCID_ENDINGREPEAT</b>
-, <b>FCID_ENTRYALTERMOD</b>
-, <b>FCID_EXECUTABLESHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
-, <b>FCID_FREEZESYSTEM</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
-, <b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
-, <b>FCID_FRETBOARDGROUPDEFS</b>
-, <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
-, <b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
-, <b>FCID_GROUP</b>
-, <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
-, <b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
-, <b>FCID_INSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
-, <b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
-, <b>FCID_LYRICSBASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
-, <b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
-, <b>FCID_METATOOLASSIGNMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
-, <b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
-, <b>FCID_MULTIMEASURERESTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
-, <b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
-, <b>FCID_MUSICSPACINGPREFS</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
-, <b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
-, <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
-, <b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
-, <b>FCID_PAGEFORMATPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
-, <b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
-, <b>FCID_PARTEXTRACTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
-, <b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
-, <b>FCID_PIANOBRACEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
-, <b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
-, <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
-, <b>FCID_SEPARATEPLACEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
-, <b>FCID_SIZEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
-, <b>FCID_SMARTSHAPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
-, <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
-, <b>FCID_STEMCONNECTIONTABLE</b>
-, <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
-, <b>FCID_SYSTEMSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
-, <b>FCID_TEXTEXPRESSIONDEF</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
-, <b>FCID_TIEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
-, <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
-<br />
- }</td></tr>
-<tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
-<tr class="separator:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a> { <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a707eba9499cef193373ede69bfef3736">MEASUREMENTUNIT_DEFAULT</a> = UNIT_DEFAULT
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a0b105c0bf10993d38a0bb6fdb30a5478">MEASUREMENTUNIT_EVPUS</a> = UNIT_EVPUS
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6afbf3b5209071bd18acbf1fb1ca6909d3">MEASUREMENTUNIT_INCHES</a> = UNIT_INCHES
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a22fedb5fa471001b099cc7d8dafd3ca1">MEASUREMENTUNIT_CENTIMETERS</a> = UNIT_CENTS
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36e86e89f3029e219b9cc1723626faa">MEASUREMENTUNIT_POINTS</a> = UNIT_POINTS
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6af382bf4d11095cdd20603b966ba92b16">MEASUREMENTUNIT_PICAS</a> = UNIT_PICAS
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36860d891171922f1fdf33c912daee5">MEASUREMENTUNIT_SPACES</a> = UNIT_SPACES
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a9eb7891cfe1766026f0a3f6b747f64a0">MEASUREMENTUNIT_MILLIMETERS</a> = 100
-<br />
- }</td></tr>
-<tr class="memdesc:a9c34d7730c8104ce6e2275c55fc04de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for Finale's standard measurement units.  <a href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">More...</a><br /></td></tr>
-<tr class="separator:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">DebugOutPtr</a> (const char *pszPrefixText, void *ptr)</td></tr>
 <tr class="memdesc:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The prefix text appears with the extra ptr (in hexadeximal representation) appearing afterwards.  <a href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">More...</a><br /></td></tr>
@@ -612,7 +758,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The "Program Options" (program-wide options that is not stored in the document). </p>
-<p >Please note that these options are global. Make sure to notify the user if a options is changed.</p>
+<p >Please note that these options are global. Make sure to notify the user if an option is changed.</p>
 <p >The <b>Reflow Measures</b> settings in the Finale Preferences needs a special combination of values, as outlined below:</p>
 <p ><b>Do Not Reflow:</b></p><ul>
 <li><a class="el" href="class_f_c_general_prefs.html#a4db243044aa8abf8a7dea3785f107627" title="Return true if measure layout should be recalculated when the layout is updated.">GetRecalcMeasures()</a> = false</li>
@@ -634,7 +780,86 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <li><a class="el" href="class_f_c_general_prefs.html#ae182a8f78a4246d3bc5e18f26e337581" title="Returns true if measures should reflow within a system at a layout update.">GetRespaceMeasureLayout()</a> = false</li>
 <li><a class="el" href="class_f_c_general_prefs.html#a6769ae000c89eaf241b1a1fc1aac4e2c" title="Return true if frozen systems should be retained when the layout is updated.">GetRetainFrozenMeasures()</a> = false </li>
 </ul>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a54c0ffb184f7b0a416a60a3eab68fb62" name="a54c0ffb184f7b0a416a60a3eab68fb62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c0ffb184f7b0a416a60a3eab68fb62">&#9670;&nbsp;</a></span>GRACENOTE_QUANTIZATIONMODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62">FCGeneralPrefs::GRACENOTE_QUANTIZATIONMODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The grace note spacing constants used by <a class="el" href="class_f_c_general_prefs.html#aec94f78df65ee4b09bc4a4eb24ac549d" title="Return the quantization mode for grace notes.">GetQuantizationGraceNoteMode</a>. </p>
+<p >Lua-supported. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a54c0ffb184f7b0a416a60a3eab68fb62ace261bbafc15997c273cd7dfa52f21a8" name="a54c0ffb184f7b0a416a60a3eab68fb62ace261bbafc15997c273cd7dfa52f21a8"></a>GRACEQUANTMODE_ALLOW&#160;</td><td class="fielddoc"><p >Allow grace notes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a54c0ffb184f7b0a416a60a3eab68fb62aed3267669a5280b48ad453bc9bfc73b7" name="a54c0ffb184f7b0a416a60a3eab68fb62aed3267669a5280b48ad453bc9bfc73b7"></a>GRACEQUANTMODE_REMOVE&#160;</td><td class="fielddoc"><p >Remove grace notes. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a54c0ffb184f7b0a416a60a3eab68fb62ab8f6d8316cd850c9886c06d7bb73d410" name="a54c0ffb184f7b0a416a60a3eab68fb62ab8f6d8316cd850c9886c06d7bb73d410"></a>GRACEQUANTMODE_CONVERT&#160;</td><td class="fielddoc"><p >Convert grace notes to real notes. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5ea52201dfb15e7b5c2ad0bcb03542a5" name="a5ea52201dfb15e7b5c2ad0bcb03542a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea52201dfb15e7b5c2ad0bcb03542a5">&#9670;&nbsp;</a></span>QUANTIZATIONMODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5">FCGeneralPrefs::QUANTIZATIONMODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The quantization mode constants used by <a class="el" href="class_f_c_general_prefs.html#ace2bb261935a5a03746a23b60c7aff9e" title="Return the mode for quantization.">GetQuantizationMode</a>. </p>
+<p >Lua-supported. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ea52201dfb15e7b5c2ad0bcb03542a5a4d076d7c558bb438bcc9a97c1b6de3ba" name="a5ea52201dfb15e7b5c2ad0bcb03542a5a4d076d7c558bb438bcc9a97c1b6de3ba"></a>QUANTIZATIONMODE_NOTUPLETS&#160;</td><td class="fielddoc"><p >No Tuplets </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ea52201dfb15e7b5c2ad0bcb03542a5ae2c547c155665e7fe287275e2925b28b" name="a5ea52201dfb15e7b5c2ad0bcb03542a5ae2c547c155665e7fe287275e2925b28b"></a>QUANTIZATIONMODE_MIXRHYTHMS&#160;</td><td class="fielddoc"><p >Mix Rhythms </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5ea52201dfb15e7b5c2ad0bcb03542a5af4a0d2bf35d5bf763d303a84b1fae2e5" name="a5ea52201dfb15e7b5c2ad0bcb03542a5af4a0d2bf35d5bf763d303a84b1fae2e5"></a>QUANTIZATIONMODE_SPACEEVENLY&#160;</td><td class="fielddoc"><p >Space Notes Evenly in Beat </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9851a2f8438e48ee86be6e84e7d7e298" name="a9851a2f8438e48ee86be6e84e7d7e298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9851a2f8438e48ee86be6e84e7d7e298">&#9670;&nbsp;</a></span>UNDOSTATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298">FCGeneralPrefs::UNDOSTATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The undo state constants used by <a class="el" href="class_f_c_general_prefs.html#a0528c1626fc11f9985aecc4565e55a93" title="Return current Undo state.">GetUndoState</a>. </p>
+<p >Lua-supported. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9851a2f8438e48ee86be6e84e7d7e298a4f72e1a2a393cb5dd2887e40b1e317ec" name="a9851a2f8438e48ee86be6e84e7d7e298a4f72e1a2a393cb5dd2887e40b1e317ec"></a>UNDOSTATE_OFF&#160;</td><td class="fielddoc"><p >This state occurs internally within Finale, but plugins possibly never see it. <br  />
+ </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9851a2f8438e48ee86be6e84e7d7e298a6a8ea8d4dba1f52ab88a76d2ba2ddfe6" name="a9851a2f8438e48ee86be6e84e7d7e298a6a8ea8d4dba1f52ab88a76d2ba2ddfe6"></a>UNDOSTATE_DISABLED&#160;</td><td class="fielddoc"><p >User unchecked "Allow Undo" in Finale Preferences Edit pane. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9851a2f8438e48ee86be6e84e7d7e298ad25bdb0253e2ccb426c4dc2fc179c291" name="a9851a2f8438e48ee86be6e84e7d7e298ad25bdb0253e2ccb426c4dc2fc179c291"></a>UNDOSTATE_ENABLED&#160;</td><td class="fielddoc"><p >User checked "Allow Undo" in Finale Preferences Edit pane. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9851a2f8438e48ee86be6e84e7d7e298ae8aef469ada3c52475c7c9cb3555103d" name="a9851a2f8438e48ee86be6e84e7d7e298ae8aef469ada3c52475c7c9cb3555103d"></a>UNDOSTATE_SUSPENDED&#160;</td><td class="fielddoc"><p >Undo is temporarily disabled until next Finale launch. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a31672012e56a548891bad7922f4405f3" name="a31672012e56a548891bad7922f4405f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a31672012e56a548891bad7922f4405f3">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -662,6 +887,34 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Lua-supported. </p>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_prefs_base.html#aecd36c14ec77186ba178d9c5af810a8b">__FCPrefsBase</a>.</p>
+
+</div>
+</div>
+<a id="a58024bfafb0b45cd60680735289fe633" name="a58024bfafb0b45cd60680735289fe633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58024bfafb0b45cd60680735289fe633">&#9670;&nbsp;</a></span>ClearRebarStopAtOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::ClearRebarStopAtOptions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears all Stop At options in the Rebar Options dialog box. </p>
+<p >Lua-supported (0.64). </p>
 
 </div>
 </div>
@@ -721,6 +974,151 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Lua-supported (also read-only property) (0.55). </p>
 
 <p>Implements <a class="el" href="class_____f_c_base_data.html#a3ddb98d5afd4e9ccf7f102419ba245a0">__FCBaseData</a>.</p>
+
+</div>
+</div>
+<a id="afece9f0a6ccb4351bd29b5907ae63e88" name="afece9f0a6ccb4351bd29b5907ae63e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afece9f0a6ccb4351bd29b5907ae63e88">&#9670;&nbsp;</a></span>GetDottedRestsAreLegalInCompoundMeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetDottedRestsAreLegalInCompoundMeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if compound meters can contain dotted rests. </p>
+<p >The setting is called "Allow Dotted Rests in Compound Meters" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a6cce0f478c4c88e88ca014e490956642" name="a6cce0f478c4c88e88ca014e490956642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cce0f478c4c88e88ca014e490956642">&#9670;&nbsp;</a></span>GetDottedRestsAreLegalInSimpleMeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetDottedRestsAreLegalInSimpleMeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if simple meters can contain dotted rests. </p>
+<p >The setting is called "Allow Dotted Rests in Simple Meters" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="af83a81d14a914f898f2cb93d401c9818" name="af83a81d14a914f898f2cb93d401c9818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83a81d14a914f898f2cb93d401c9818">&#9670;&nbsp;</a></span>GetIncludeMIDIContinuousData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetIncludeMIDIContinuousData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if continuous data should be included in MIDI import. </p>
+<p >The setting is called "Include Continuous Data" in the Import MIDI FIle Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a85e26bdbc4c7efab88bebad7fe6f61dc" name="a85e26bdbc4c7efab88bebad7fe6f61dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e26bdbc4c7efab88bebad7fe6f61dc">&#9670;&nbsp;</a></span>GetIncludeMIDITempoChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetIncludeMIDITempoChanges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if tempo changes should be included in MIDI import. </p>
+<p >The setting is called "Include Tempo Changes" in the Import MIDI FIle Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ae5745fe0a886a0b3d9126cab6944f3bf" name="ae5745fe0a886a0b3d9126cab6944f3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5745fe0a886a0b3d9126cab6944f3bf">&#9670;&nbsp;</a></span>GetKeyboardSplitPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">twobyte FCGeneralPrefs::GetKeyboardSplitPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the MIDI note (0-127) that defines the Hyperscribe fixed keyboard split point. </p>
+<p >The setting is called "Split at MIDI Note" in the Fixed Split Point dialog box (Hyperscribe Tool).</p>
+<p >Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -811,6 +1209,414 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="aec94f78df65ee4b09bc4a4eb24ac549d" name="aec94f78df65ee4b09bc4a4eb24ac549d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec94f78df65ee4b09bc4a4eb24ac549d">&#9670;&nbsp;</a></span>GetQuantizationGraceNoteMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62">GRACENOTE_QUANTIZATIONMODE</a> FCGeneralPrefs::GetQuantizationGraceNoteMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the quantization mode for grace notes. </p>
+<p >The setting is part of the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64).</p>
+<dl class="section return"><dt>Returns</dt><dd>Any of the <a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62" title="The grace note spacing constants used by GetQuantizationGraceNoteMode.">GRACENOTE_QUANTIZATIONMODE</a> constants. </dd></dl>
+
+</div>
+</div>
+<a id="a5b417f79f4f898cc2fdfe0ac7879288f" name="a5b417f79f4f898cc2fdfe0ac7879288f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b417f79f4f898cc2fdfe0ac7879288f">&#9670;&nbsp;</a></span>GetQuantizationIncludeVoiceTwo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetQuantizationIncludeVoiceTwo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if Voice Two should be used in quantization. </p>
+<p >The setting is called "Include Voice Two" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ace2bb261935a5a03746a23b60c7aff9e" name="ace2bb261935a5a03746a23b60c7aff9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2bb261935a5a03746a23b60c7aff9e">&#9670;&nbsp;</a></span>GetQuantizationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5">QUANTIZATIONMODE</a> FCGeneralPrefs::GetQuantizationMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the mode for quantization. </p>
+<p >The setting is called "Play This...And Get This" in the Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64).</p>
+<dl class="section return"><dt>Returns</dt><dd>Any of the <a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5" title="The quantization mode constants used by GetQuantizationMode.">QUANTIZATIONMODE</a> constants. </dd></dl>
+
+</div>
+</div>
+<a id="a6f7d57ce08c0c6f88cebddf8f371d679" name="a6f7d57ce08c0c6f88cebddf8f371d679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f7d57ce08c0c6f88cebddf8f371d679">&#9670;&nbsp;</a></span>GetQuantizationRetainKeyVelocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetQuantizationRetainKeyVelocities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if key velocities should be retained in quantization. </p>
+<p >The setting is called "Retain Key Velocities" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a2826ebc1009e4c22c30fba2233945e8b" name="a2826ebc1009e4c22c30fba2233945e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2826ebc1009e4c22c30fba2233945e8b">&#9670;&nbsp;</a></span>GetQuantizationRetainNoteDurations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetQuantizationRetainNoteDurations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if note durations should be retained in quantization. </p>
+<p >The setting is called "Retain Note Durations" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a71bc12627d400b5e0d23995e56202f2a" name="a71bc12627d400b5e0d23995e56202f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71bc12627d400b5e0d23995e56202f2a">&#9670;&nbsp;</a></span>GetQuantizationSensitivityLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeEdu16 FCGeneralPrefs::GetQuantizationSensitivityLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the sensitivity level value for quantization. </p>
+<p >This is the value for "Sensitivity Level" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ae72f09aa7f61959e84800e576308b25f" name="ae72f09aa7f61959e84800e576308b25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae72f09aa7f61959e84800e576308b25f">&#9670;&nbsp;</a></span>GetQuantizationSmallestNoteValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeEdu16 FCGeneralPrefs::GetQuantizationSmallestNoteValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the smallest note value for quantization. </p>
+<p >The setting is part of the Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a888ed17c120bef25cd9db61623262a74" name="a888ed17c120bef25cd9db61623262a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888ed17c120bef25cd9db61623262a74">&#9670;&nbsp;</a></span>GetQuantizationSoftenSyncopations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetQuantizationSoftenSyncopations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if quantization should soften syncopations (use fewer ties). </p>
+<p >The setting is called "Soften Syncopations" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a50f0daa6559c84b9bd9844786e325762" name="a50f0daa6559c84b9bd9844786e325762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f0daa6559c84b9bd9844786e325762">&#9670;&nbsp;</a></span>GetRebarStopAtEmptyFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebarStopAtEmptyFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should stop at empty frames. </p>
+<p >The setting is called "Empty Frames" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="abc1d5a9992919b94fc2a765d3c9f0d3e" name="abc1d5a9992919b94fc2a765d3c9f0d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1d5a9992919b94fc2a765d3c9f0d3e">&#9670;&nbsp;</a></span>GetRebarStopAtEndOfRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebarStopAtEndOfRegion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should stop at the end of the selected region. </p>
+<p >The setting is called "The End of the Region" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="af4cb0ffc047cd94eca58f8205ab30cc3" name="af4cb0ffc047cd94eca58f8205ab30cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4cb0ffc047cd94eca58f8205ab30cc3">&#9670;&nbsp;</a></span>GetRebarStopAtKeyChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebarStopAtKeyChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should stop at the next key change. </p>
+<p >The setting is called "Key Signature Changes" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a238c8bb3513dbbfba503204b013e82d7" name="a238c8bb3513dbbfba503204b013e82d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238c8bb3513dbbfba503204b013e82d7">&#9670;&nbsp;</a></span>GetRebarStopAtSpecialBarline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebarStopAtSpecialBarline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should stop at special barlines. </p>
+<p >The setting is called "Special or Repeat Barlines, or Forward Repeats" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="aff5b5c972a6ca2c537598f5b50c38da4" name="aff5b5c972a6ca2c537598f5b50c38da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5b5c972a6ca2c537598f5b50c38da4">&#9670;&nbsp;</a></span>GetRebarStopAtTimeChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebarStopAtTimeChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should stop at the next meter change. </p>
+<p >The setting is called "Time Signature Changes" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a207f55ef72b94a989ef68e82ed213fa3" name="a207f55ef72b94a989ef68e82ed213fa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207f55ef72b94a989ef68e82ed213fa3">&#9670;&nbsp;</a></span>GetRebarStopOnlyAtEndOfPiece()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebarStopOnlyAtEndOfPiece </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should stop only at the end of the document. </p>
+<p >If this setting is true, then none of the Stop At options are set in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as read-only property) (0.64). </p>
+
+</div>
+</div>
 <a id="a4046873805e1f388391d8cfe1e97417e" name="a4046873805e1f388391d8cfe1e97417e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4046873805e1f388391d8cfe1e97417e">&#9670;&nbsp;</a></span>GetRebarWhenTimeSigChanged()</h2>
 
@@ -837,6 +1643,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Return true if measures should rebar when the Time Signature Tool changes the time signature. </p>
 <p >The setting is called "Rebar" in the Time Signature dialog box.</p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a5c1e4ab660abbb92758a8e61357fa11e" name="a5c1e4ab660abbb92758a8e61357fa11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c1e4ab660abbb92758a8e61357fa11e">&#9670;&nbsp;</a></span>GetRebeamOnRebar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCGeneralPrefs::GetRebeamOnRebar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if rebar music should also rebeam music. </p>
+<p >The setting is called "Rebeam" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -1012,6 +1847,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a0528c1626fc11f9985aecc4565e55a93" name="a0528c1626fc11f9985aecc4565e55a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0528c1626fc11f9985aecc4565e55a93">&#9670;&nbsp;</a></span>GetUndoState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298">UNDOSTATE</a> FCGeneralPrefs::GetUndoState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return current Undo state. </p>
+<p >Lua-supported (also as read-only property) (0.64).</p>
+<dl class="section return"><dt>Returns</dt><dd>Any of the <a class="el" href="class_f_c_general_prefs.html#a9851a2f8438e48ee86be6e84e7d7e298" title="The undo state constants used by GetUndoState.">UNDOSTATE</a> constants. </dd></dl>
+
+</div>
+</div>
 <a id="a2214626157251d87ffdb5d814177c8f8" name="a2214626157251d87ffdb5d814177c8f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2214626157251d87ffdb5d814177c8f8">&#9670;&nbsp;</a></span>SetAutomaticUpdateLayout()</h2>
 
@@ -1038,6 +1902,156 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Sets if "Automatic Update Layout" is set in the Program Options. </p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="aefe73d2a2e817177e2059b947c2d4f6a" name="aefe73d2a2e817177e2059b947c2d4f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe73d2a2e817177e2059b947c2d4f6a">&#9670;&nbsp;</a></span>SetDottedRestsAreLegalInCompoundMeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetDottedRestsAreLegalInCompoundMeter </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if compound meters can contain dotted rests. </p>
+<p >The setting is called "Allow Dotted Rests in Compound Meters" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="acc73aa97768ee383105d23c21eed60e0" name="acc73aa97768ee383105d23c21eed60e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc73aa97768ee383105d23c21eed60e0">&#9670;&nbsp;</a></span>SetDottedRestsAreLegalInSimpleMeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetDottedRestsAreLegalInSimpleMeter </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if simple meters can contain dotted rests. </p>
+<p >The setting is called "Allow Dotted Rests in Simple Meters" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="aa78fd0392822032dcc134f1d0f6d9096" name="aa78fd0392822032dcc134f1d0f6d9096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa78fd0392822032dcc134f1d0f6d9096">&#9670;&nbsp;</a></span>SetIncludeMIDIContinuousData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetIncludeMIDIContinuousData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if continuous data should be included in MIDI import. </p>
+<p >The setting is called "Include Continuous Data" in the Import MIDI FIle Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a794e58d4111f44d0621374868ddd0bea" name="a794e58d4111f44d0621374868ddd0bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a794e58d4111f44d0621374868ddd0bea">&#9670;&nbsp;</a></span>SetIncludeMIDITempoChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetIncludeMIDITempoChanges </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set if tempo changes should be included in MIDI import. </p>
+<p >The setting is called "Include Tempo Changes" in the Import MIDI FIle Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="abbbe33bba9bfaec4073ee4584a6aeafe" name="abbbe33bba9bfaec4073ee4584a6aeafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbbe33bba9bfaec4073ee4584a6aeafe">&#9670;&nbsp;</a></span>SetKeyboardSplitPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetKeyboardSplitPoint </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the MIDI note (0-127) that defines the Hyperscribe fixed keyboard split point. </p>
+<p >The setting is called "Split at MIDI Note" in the Fixed Split Point dialog box (Hyperscribe Tool).</p>
+<p >Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -1146,6 +2160,408 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="ae259c727cc7fcd52aea531f03e716955" name="ae259c727cc7fcd52aea531f03e716955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae259c727cc7fcd52aea531f03e716955">&#9670;&nbsp;</a></span>SetQuantizationGraceNoteMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationGraceNoteMode </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the quantization mode for grace notes. </p>
+<p >The setting is part of the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Any of the <a class="el" href="class_f_c_general_prefs.html#a54c0ffb184f7b0a416a60a3eab68fb62" title="The grace note spacing constants used by GetQuantizationGraceNoteMode.">GRACENOTE_QUANTIZATIONMODE</a> constants. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d9c07a2154c948e85b8c41f19439a44" name="a2d9c07a2154c948e85b8c41f19439a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9c07a2154c948e85b8c41f19439a44">&#9670;&nbsp;</a></span>SetQuantizationIncludeVoiceTwo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationIncludeVoiceTwo </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if Voice Two should be used in quantization. </p>
+<p >The setting is called "Include Voice Two" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ae6f0e075840f30f828c3863ca1825b45" name="ae6f0e075840f30f828c3863ca1825b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f0e075840f30f828c3863ca1825b45">&#9670;&nbsp;</a></span>SetQuantizationMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationMode </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the mode for quantization. </p>
+<p >The setting is called "Play This...And Get This" in the Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Any of the <a class="el" href="class_f_c_general_prefs.html#a5ea52201dfb15e7b5c2ad0bcb03542a5" title="The quantization mode constants used by GetQuantizationMode.">QUANTIZATIONMODE</a> constants. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3f5253dcf76ffca4662dd123f4547e9e" name="a3f5253dcf76ffca4662dd123f4547e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f5253dcf76ffca4662dd123f4547e9e">&#9670;&nbsp;</a></span>SetQuantizationRetainKeyVelocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationRetainKeyVelocities </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if key velocities should be retained in quantization. </p>
+<p >The setting is called "Retain Key Velocities" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a0399bee2d47612ec60ed4cb9bff0bbf7" name="a0399bee2d47612ec60ed4cb9bff0bbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0399bee2d47612ec60ed4cb9bff0bbf7">&#9670;&nbsp;</a></span>SetQuantizationRetainNoteDurations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationRetainNoteDurations </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if note durations should be retained in quantization. </p>
+<p >The setting is called "Retain Note Durations" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ad3435442eb08fde8955c7c574fc4b443" name="ad3435442eb08fde8955c7c574fc4b443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3435442eb08fde8955c7c574fc4b443">&#9670;&nbsp;</a></span>SetQuantizationSensitivityLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationSensitivityLevel </td>
+          <td>(</td>
+          <td class="paramtype">TimeEdu16&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the sensitivity level value for quantization. </p>
+<p >This is the value for "Sensitivity Level" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a716f433124e10d67b9960395d99471bb" name="a716f433124e10d67b9960395d99471bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716f433124e10d67b9960395d99471bb">&#9670;&nbsp;</a></span>SetQuantizationSmallestNoteValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationSmallestNoteValue </td>
+          <td>(</td>
+          <td class="paramtype">TimeEdu16&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the smallest note value for quantization. </p>
+<p >The setting is part of the Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ad12cc321414c7d2562f55e66bd1ee7b9" name="ad12cc321414c7d2562f55e66bd1ee7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12cc321414c7d2562f55e66bd1ee7b9">&#9670;&nbsp;</a></span>SetQuantizationSoftenSyncopations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetQuantizationSoftenSyncopations </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if quantization should soften syncopations (use fewer ties). </p>
+<p >The setting is called "Soften Syncopations" in the More Quantization Settings dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a21f0909dfa791842f410bb33efcdbed6" name="a21f0909dfa791842f410bb33efcdbed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f0909dfa791842f410bb33efcdbed6">&#9670;&nbsp;</a></span>SetRebarStopAtEmptyFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetRebarStopAtEmptyFrame </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if rebar music should stop at empty frames. </p>
+<p >The setting is called "Empty Frames" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="afa3ba9bf7623f7b90b896bd3c7f0cf48" name="afa3ba9bf7623f7b90b896bd3c7f0cf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3ba9bf7623f7b90b896bd3c7f0cf48">&#9670;&nbsp;</a></span>SetRebarStopAtEndOfRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetRebarStopAtEndOfRegion </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if rebar music should stop at the end of the selected region. </p>
+<p >The setting is called "The End of the Region" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="aef41e3aadc5848040170c2aa7b560b5d" name="aef41e3aadc5848040170c2aa7b560b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef41e3aadc5848040170c2aa7b560b5d">&#9670;&nbsp;</a></span>SetRebarStopAtKeyChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetRebarStopAtKeyChange </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if rebar music should stop at the next key change. </p>
+<p >The setting is called "Key Signature Changes" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a969b41980c129dd50d09a3ffd812db70" name="a969b41980c129dd50d09a3ffd812db70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a969b41980c129dd50d09a3ffd812db70">&#9670;&nbsp;</a></span>SetRebarStopAtSpecialBarline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetRebarStopAtSpecialBarline </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if rebar music should stop at special barlines. </p>
+<p >The setting is called "Special or Repeat Barlines, or Forward Repeats" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a0164cac12ac03ea2d0df66322d832cd8" name="a0164cac12ac03ea2d0df66322d832cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0164cac12ac03ea2d0df66322d832cd8">&#9670;&nbsp;</a></span>SetRebarStopAtTimeChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetRebarStopAtTimeChange </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if rebar music should stop at the next meter change. </p>
+<p >The setting is called "Time Signature Changes" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
 <a id="ad9725f9de47d44f9ba19cc7e443016aa" name="ad9725f9de47d44f9ba19cc7e443016aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9725f9de47d44f9ba19cc7e443016aa">&#9670;&nbsp;</a></span>SetRebarWhenTimeSigChanged()</h2>
 
@@ -1173,6 +2589,36 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Sets if measures should rebar when the Time Signature Tool changes the time signature. </p>
 <p >The setting is called "Rebar" in the Time Signature dialog box.</p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="add731205f63bae58d08d68d71a7f825e" name="add731205f63bae58d08d68d71a7f825e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add731205f63bae58d08d68d71a7f825e">&#9670;&nbsp;</a></span>SetRebeamOnRebar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCGeneralPrefs::SetRebeamOnRebar </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if rebar music should also rebeam music. </p>
+<p >The setting is called "Rebeam" in the Rebar Options dialog box.</p>
+<p >Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -1356,7 +2802,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 12 2022 11:29:46 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 29 2022 21:11:26 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

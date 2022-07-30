@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.63</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b1</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_f_c_string-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">FCString Class Reference<div class="ingroups"><a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
 </div><!--header-->
@@ -441,6 +442,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFloat</b> (float f
 <tr class="memitem:a3f264c06eb59fa3d71201e5c1a4e7411"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a3f264c06eb59fa3d71201e5c1a4e7411">EndsWith</a> (const char *pszString) const</td></tr>
 <tr class="memdesc:a3f264c06eb59fa3d71201e5c1a4e7411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string ends with the parameter string.  <a href="class_f_c_string.html#a3f264c06eb59fa3d71201e5c1a4e7411">More...</a><br /></td></tr>
 <tr class="separator:a3f264c06eb59fa3d71201e5c1a4e7411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296cf191498e316439d47af884de308a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a296cf191498e316439d47af884de308a">EndsWithString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
+<tr class="memdesc:a296cf191498e316439d47af884de308a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string ends with the parameter string.  <a href="class_f_c_string.html#a296cf191498e316439d47af884de308a">More...</a><br /></td></tr>
+<tr class="separator:a296cf191498e316439d47af884de308a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ee54b3b8fb90c6621519c0db42ab416"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a4ee54b3b8fb90c6621519c0db42ab416">StartsWith</a> (const char *pszString) const</td></tr>
 <tr class="memdesc:a4ee54b3b8fb90c6621519c0db42ab416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string starts with the parameter string.  <a href="class_f_c_string.html#a4ee54b3b8fb90c6621519c0db42ab416">More...</a><br /></td></tr>
 <tr class="separator:a4ee54b3b8fb90c6621519c0db42ab416"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,6 +591,52 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 <tr class="memitem:a3bcbdb67c123cf1fc63c068ccef32e04 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a3bcbdb67c123cf1fc63c068ccef32e04">ReadXML_FloatAttribute</a> (tinyxml2::XMLElement *pNode, const char *pszAttributeName, float *pValue)</td></tr>
 <tr class="memdesc:a3bcbdb67c123cf1fc63c068ccef32e04 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to read floating point objects from the XML file, as an attribute to a node.  <a href="class_____f_c_base.html#a3bcbdb67c123cf1fc63c068ccef32e04">More...</a><br /></td></tr>
 <tr class="separator:a3bcbdb67c123cf1fc63c068ccef32e04 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3d577ffd0c95fbe3f111c1072733b727"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a3d577ffd0c95fbe3f111c1072733b727">LoadIntegerResource</a> (int resourceID, int defaultValue, HINSTANCE dllinstance=0)</td></tr>
+<tr class="memdesc:a3d577ffd0c95fbe3f111c1072733b727"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b> Windows version.</b> Static method that loads an integer from a resource string.  <a href="class_f_c_string.html#a3d577ffd0c95fbe3f111c1072733b727">More...</a><br /></td></tr>
+<tr class="separator:a3d577ffd0c95fbe3f111c1072733b727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3108efb5720be6ca4c7e9817d6a7c02a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a3108efb5720be6ca4c7e9817d6a7c02a">LoadIntegerResource</a> (const char *resourceID, int defaultValue, const char *pszResourceFileName=NULL, const char *pszTableName=NULL)</td></tr>
+<tr class="memdesc:a3108efb5720be6ca4c7e9817d6a7c02a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b> Mac version.</b> Static method that loads an integer from a resource string.  <a href="class_f_c_string.html#a3108efb5720be6ca4c7e9817d6a7c02a">More...</a><br /></td></tr>
+<tr class="separator:a3108efb5720be6ca4c7e9817d6a7c02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
+<tr class="memitem:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">DebugOutPtr</a> (const char *pszPrefixText, void *ptr)</td></tr>
+<tr class="memdesc:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The prefix text appears with the extra ptr (in hexadeximal representation) appearing afterwards.  <a href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">More...</a><br /></td></tr>
+<tr class="separator:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">DebugOutInt</a> (const char *pszPrefixText, int i)</td></tr>
+<tr class="memdesc:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in decimal presentation) appearing afterwards.  <a href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">More...</a><br /></td></tr>
+<tr class="separator:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">DebugOutFloat</a> (const char *pszPrefixText, float f)</td></tr>
+<tr class="memdesc:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra float value appearing afterwards.  <a href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">More...</a><br /></td></tr>
+<tr class="separator:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">DebugOutTag</a> (const char *pszPrefixText, EXTAG extag)</td></tr>
+<tr class="memdesc:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the EXTAG (in text) appearing afterwards.  <a href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">More...</a><br /></td></tr>
+<tr class="separator:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef669d7bc871aa81f5986ee934633ee inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a4ef669d7bc871aa81f5986ee934633ee">DebugOutHex</a> (const char *pszPrefixText, int i)</td></tr>
+<tr class="memdesc:a4ef669d7bc871aa81f5986ee934633ee inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in hexadecimal presentation) appearing afterwards.  <a href="class_____f_c_base.html#a4ef669d7bc871aa81f5986ee934633ee">More...</a><br /></td></tr>
+<tr class="separator:a4ef669d7bc871aa81f5986ee934633ee inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb993f84c8a792cea4eb1bcbc7e7df1e inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acb993f84c8a792cea4eb1bcbc7e7df1e">DebugOutBin</a> (const char *pszPrefixText, int i)</td></tr>
+<tr class="memdesc:acb993f84c8a792cea4eb1bcbc7e7df1e inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in binary presentation) appearing afterwards.  <a href="class_____f_c_base.html#acb993f84c8a792cea4eb1bcbc7e7df1e">More...</a><br /></td></tr>
+<tr class="separator:acb993f84c8a792cea4eb1bcbc7e7df1e inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e7241e6d969a7ed615e397d085c1ac inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a46e7241e6d969a7ed615e397d085c1ac">DebugOutString</a> (const char *pszPrefixText, const char *thestring)</td></tr>
+<tr class="memdesc:a46e7241e6d969a7ed615e397d085c1ac inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes (C string version). The text appears with the extra string appearing afterwards.  <a href="class_____f_c_base.html#a46e7241e6d969a7ed615e397d085c1ac">More...</a><br /></td></tr>
+<tr class="separator:a46e7241e6d969a7ed615e397d085c1ac inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51866b4b37174be81fd8c5ab43ba9db inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af51866b4b37174be81fd8c5ab43ba9db">DebugOutString</a> (const char *pszPrefixText, <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
+<tr class="memdesc:af51866b4b37174be81fd8c5ab43ba9db inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version). The text appears with the extra string appearing afterwards.  <a href="class_____f_c_base.html#af51866b4b37174be81fd8c5ab43ba9db">More...</a><br /></td></tr>
+<tr class="separator:af51866b4b37174be81fd8c5ab43ba9db inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88606e8450406124699b23abda86b60 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#ad88606e8450406124699b23abda86b60">DebugOutBool</a> (const char *pszPrefixText, bool state)</td></tr>
+<tr class="memdesc:ad88606e8450406124699b23abda86b60 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The boolean state appears afterwards as either "TRUE" or "FALSE".  <a href="class_____f_c_base.html#ad88606e8450406124699b23abda86b60">More...</a><br /></td></tr>
+<tr class="separator:ad88606e8450406124699b23abda86b60 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8340cedf266c64ea824cc7a3289e55c inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af8340cedf266c64ea824cc7a3289e55c">DebugOutBlock</a> (const void *pBuffer, int startoffset, int size)</td></tr>
+<tr class="memdesc:af8340cedf266c64ea824cc7a3289e55c inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a memory block for debugging purposes. Eight bytes per line will appear (as hex digits) until the whole memory block is dumped.  <a href="class_____f_c_base.html#af8340cedf266c64ea824cc7a3289e55c">More...</a><br /></td></tr>
+<tr class="separator:af8340cedf266c64ea824cc7a3289e55c inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee793f5fc0b1ce8ab4b145e3234e8389 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aee793f5fc0b1ce8ab4b145e3234e8389">DebugOutByteArrayBlock</a> (const void *pBuffer, int startoffset, int size)</td></tr>
+<tr class="memdesc:aee793f5fc0b1ce8ab4b145e3234e8389 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a memory block for debugging purposes. Eight bytes per line will appear (as hex digits) as a C++ onebyte array, until the whole memory block is dumped.  <a href="class_____f_c_base.html#aee793f5fc0b1ce8ab4b145e3234e8389">More...</a><br /></td></tr>
+<tr class="separator:aee793f5fc0b1ce8ab4b145e3234e8389 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">DebugOut</a> (const char *pszLine)</td></tr>
+<tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
+<tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -762,43 +812,6 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a9c34d7730c8104ce6e2275c55fc04de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for Finale's standard measurement units.  <a href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">More...</a><br /></td></tr>
 <tr class="separator:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
-<tr class="memitem:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">DebugOutPtr</a> (const char *pszPrefixText, void *ptr)</td></tr>
-<tr class="memdesc:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The prefix text appears with the extra ptr (in hexadeximal representation) appearing afterwards.  <a href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">More...</a><br /></td></tr>
-<tr class="separator:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">DebugOutInt</a> (const char *pszPrefixText, int i)</td></tr>
-<tr class="memdesc:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in decimal presentation) appearing afterwards.  <a href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">More...</a><br /></td></tr>
-<tr class="separator:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">DebugOutFloat</a> (const char *pszPrefixText, float f)</td></tr>
-<tr class="memdesc:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra float value appearing afterwards.  <a href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">More...</a><br /></td></tr>
-<tr class="separator:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">DebugOutTag</a> (const char *pszPrefixText, EXTAG extag)</td></tr>
-<tr class="memdesc:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the EXTAG (in text) appearing afterwards.  <a href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">More...</a><br /></td></tr>
-<tr class="separator:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef669d7bc871aa81f5986ee934633ee inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a4ef669d7bc871aa81f5986ee934633ee">DebugOutHex</a> (const char *pszPrefixText, int i)</td></tr>
-<tr class="memdesc:a4ef669d7bc871aa81f5986ee934633ee inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in hexadecimal presentation) appearing afterwards.  <a href="class_____f_c_base.html#a4ef669d7bc871aa81f5986ee934633ee">More...</a><br /></td></tr>
-<tr class="separator:a4ef669d7bc871aa81f5986ee934633ee inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb993f84c8a792cea4eb1bcbc7e7df1e inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acb993f84c8a792cea4eb1bcbc7e7df1e">DebugOutBin</a> (const char *pszPrefixText, int i)</td></tr>
-<tr class="memdesc:acb993f84c8a792cea4eb1bcbc7e7df1e inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in binary presentation) appearing afterwards.  <a href="class_____f_c_base.html#acb993f84c8a792cea4eb1bcbc7e7df1e">More...</a><br /></td></tr>
-<tr class="separator:acb993f84c8a792cea4eb1bcbc7e7df1e inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e7241e6d969a7ed615e397d085c1ac inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a46e7241e6d969a7ed615e397d085c1ac">DebugOutString</a> (const char *pszPrefixText, const char *thestring)</td></tr>
-<tr class="memdesc:a46e7241e6d969a7ed615e397d085c1ac inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes (C string version). The text appears with the extra string appearing afterwards.  <a href="class_____f_c_base.html#a46e7241e6d969a7ed615e397d085c1ac">More...</a><br /></td></tr>
-<tr class="separator:a46e7241e6d969a7ed615e397d085c1ac inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af51866b4b37174be81fd8c5ab43ba9db inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af51866b4b37174be81fd8c5ab43ba9db">DebugOutString</a> (const char *pszPrefixText, <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:af51866b4b37174be81fd8c5ab43ba9db inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version). The text appears with the extra string appearing afterwards.  <a href="class_____f_c_base.html#af51866b4b37174be81fd8c5ab43ba9db">More...</a><br /></td></tr>
-<tr class="separator:af51866b4b37174be81fd8c5ab43ba9db inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88606e8450406124699b23abda86b60 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#ad88606e8450406124699b23abda86b60">DebugOutBool</a> (const char *pszPrefixText, bool state)</td></tr>
-<tr class="memdesc:ad88606e8450406124699b23abda86b60 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The boolean state appears afterwards as either "TRUE" or "FALSE".  <a href="class_____f_c_base.html#ad88606e8450406124699b23abda86b60">More...</a><br /></td></tr>
-<tr class="separator:ad88606e8450406124699b23abda86b60 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8340cedf266c64ea824cc7a3289e55c inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af8340cedf266c64ea824cc7a3289e55c">DebugOutBlock</a> (const void *pBuffer, int startoffset, int size)</td></tr>
-<tr class="memdesc:af8340cedf266c64ea824cc7a3289e55c inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a memory block for debugging purposes. Eight bytes per line will appear (as hex digits) until the whole memory block is dumped.  <a href="class_____f_c_base.html#af8340cedf266c64ea824cc7a3289e55c">More...</a><br /></td></tr>
-<tr class="separator:af8340cedf266c64ea824cc7a3289e55c inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee793f5fc0b1ce8ab4b145e3234e8389 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aee793f5fc0b1ce8ab4b145e3234e8389">DebugOutByteArrayBlock</a> (const void *pBuffer, int startoffset, int size)</td></tr>
-<tr class="memdesc:aee793f5fc0b1ce8ab4b145e3234e8389 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a memory block for debugging purposes. Eight bytes per line will appear (as hex digits) as a C++ onebyte array, until the whole memory block is dumped.  <a href="class_____f_c_base.html#aee793f5fc0b1ce8ab4b145e3234e8389">More...</a><br /></td></tr>
-<tr class="separator:aee793f5fc0b1ce8ab4b145e3234e8389 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">DebugOut</a> (const char *pszLine)</td></tr>
-<tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
-<tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class that provides storage for text. This is to achieve platform-transparent text handling, that can handle text storage regardless of how it's done on the platform (Mac/Window/C-style/Unicode/etc). </p>
@@ -1756,6 +1769,28 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns true if the string ends with the parameter string. </p>
 <p >C string version</p>
 <p >Lua-supported. </p>
+
+</div>
+</div>
+<a id="a296cf191498e316439d47af884de308a" name="a296cf191498e316439d47af884de308a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a296cf191498e316439d47af884de308a">&#9670;&nbsp;</a></span>EndsWithString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCString::EndsWithString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramname"><em>pString</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the string ends with the parameter string. </p>
+<p ><a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> string version</p>
+<p >Lua-supported (0.64). </p>
 
 </div>
 </div>
@@ -2801,6 +2836,119 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3108efb5720be6ca4c7e9817d6a7c02a" name="a3108efb5720be6ca4c7e9817d6a7c02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3108efb5720be6ca4c7e9817d6a7c02a">&#9670;&nbsp;</a></span>LoadIntegerResource() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int FCString::LoadIntegerResource </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>resourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszResourceFileName</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszTableName</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b> Mac version.</b> Static method that loads an integer from a resource string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourceID</td><td>The localization string in the <em>.strings</em> file.</td></tr>
+    <tr><td class="paramname">defaultValue</td><td>The value to return if the resource is not found is not convertible to an integer, or has a value of zero.</td></tr>
+    <tr><td class="paramname">pszResourceFileName</td><td>The optional C string pointer to the resource file name. This defaults to NULL, which means that the previous resource should be used. The first call to this method must contain a valid string for the bundle ID of the plug-in, or whichever bundle contains the resource.</td></tr>
+    <tr><td class="paramname">pszTableName</td><td>The optional table name within the bundle, which is the <em>.strings</em> file without extension. This defaults to NULL, which means the table name that has been set in earlier calls will be used.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the resource was correctly loaded. If the resource string wasn't loaded, the string will contain "Resource String Error". </dd></dl>
+
+</div>
+</div>
+<a id="a3d577ffd0c95fbe3f111c1072733b727" name="a3d577ffd0c95fbe3f111c1072733b727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d577ffd0c95fbe3f111c1072733b727">&#9670;&nbsp;</a></span>LoadIntegerResource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCString::LoadIntegerResource </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>resourceID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HINSTANCE&#160;</td>
+          <td class="paramname"><em>dllinstance</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><b> Windows version.</b> Static method that loads an integer from a resource string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourceID</td><td>The resource number.</td></tr>
+    <tr><td class="paramname">defaultValue</td><td>The value to return if the resource is not found is not convertible to an integer, or has a value of zero.</td></tr>
+    <tr><td class="paramname">dllinstance</td><td>The DLL instance handle to the plug-in (where the resources are located).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the resource was correctly loaded. If the resource string wasn't loaded, the string will contain "Resource String Error". </dd></dl>
+
+</div>
+</div>
 <a id="a846552cf55484a55add21935643a7304" name="a846552cf55484a55add21935643a7304"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a846552cf55484a55add21935643a7304">&#9670;&nbsp;</a></span>LoadResource() <span class="overload">[1/2]</span></h2>
 
@@ -2837,7 +2985,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resourceID</td><td>The localization string in the <em>.strings</em> file.</td></tr>
-    <tr><td class="paramname">pszResourceFileName</td><td>The optional C string pointer to the resource file name. This defaults to NULL, which means that the previous resource should be used. The first call to this method must contain a valid resource file name. If strings should be loaded from the plug-in's resource on <b>Windows</b>, the resource file string should be the same as the plug-in binary name, using a syntax such as <b>myplugin.fxt</b>. On the <b>Mac</b>, it's the string for the bundle ID of the plug-in.</td></tr>
+    <tr><td class="paramname">pszResourceFileName</td><td>The optional C string pointer to the resource file name. This defaults to NULL, which means that the previous resource should be used. The first call to this method must contain a valid string for the bundle ID of the plug-in, or whichever bundle contains the resource.</td></tr>
     <tr><td class="paramname">pszTableName</td><td>The optional table name within the bundle, which is the <em>.strings</em> file without extension. This defaults to NULL, which means the table name that has been set in earlier calls will be used.</td></tr>
   </table>
   </dd>
@@ -3853,8 +4001,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns true if the string starts with the parameter string. </p>
 <p >C string version (which is the "default" version in this case).</p>
-<p >Lua-supported. <br  />
- </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -4133,7 +4280,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 12 2022 11:29:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jul 29 2022 21:11:28 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

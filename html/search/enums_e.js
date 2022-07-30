@@ -1,18 +1,11 @@
 var searchData=
 [
-  ['separateplacement_5fmodes_0',['SEPARATEPLACEMENT_MODES',['../class_f_c_separate_placement.html#a59081c96e812060ac66c4b89645283d2',1,'FCSeparatePlacement']]],
-  ['shapedef_5ftypes_1',['SHAPEDEF_TYPES',['../class_f_c_shape_def.html#aed373355fb02d5e174d4fc6abacd97e9',1,'FCShapeDef']]],
-  ['shapedeftags_2',['SHAPEDEFTAGS',['../class_f_c_shape_def_instruction.html#a9d1218d4c9e8495f7af1635c9d949a01',1,'FCShapeDefInstruction']]],
-  ['shapestyle_3',['SHAPESTYLE',['../class_f_c_tuplet.html#ac1d26b071ec96f27af734a932288a184',1,'FCTuplet']]],
-  ['show_5fstates_4',['SHOW_STATES',['../class_f_c_measure.html#afe5cb60fc2ab63449f2a0e08936c54bf',1,'FCMeasure']]],
-  ['smarthyphen_5fsystemstart_5',['SMARTHYPHEN_SYSTEMSTART',['../class_f_c_lyrics_prefs.html#ad2551b0c217f84d74af51bed59928c36',1,'FCLyricsPrefs']]],
-  ['smartshape_5f3state_6',['SMARTSHAPE_3STATE',['../class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5e',1,'FCSmartShape']]],
-  ['smartshape_5ftypes_7',['SMARTSHAPE_TYPES',['../class_f_c_smart_shape.html#a29b94a28426154f61cb5bf57d14a8b42',1,'FCSmartShape']]],
-  ['stackingmode_8',['STACKINGMODE',['../class_f_c_articulation.html#a5f9bc527a4b8631a856bf21582e4cf02',1,'FCArticulation']]],
-  ['staff_5fhidemodes_9',['STAFF_HIDEMODES',['../class_____f_c_staff_base.html#af6d2a995255b54fc33171caf5842f2fb',1,'__FCStaffBase']]],
-  ['staffautonumber_5fstyle_10',['STAFFAUTONUMBER_STYLE',['../class_f_c_staff.html#ae67e6d274966076c15c594787502604b',1,'FCStaff']]],
-  ['stafflist_5fmodes_11',['STAFFLIST_MODES',['../class_f_c_staff_list.html#addd36a6ac81bf72dc0038d61e4841170',1,'FCStaffList']]],
-  ['staffnotation_5fstyle_12',['STAFFNOTATION_STYLE',['../class_____f_c_staff_base.html#a262557f0eaf1ef6150e5420f6d09e480',1,'__FCStaffBase']]],
-  ['syllablealigns_13',['SYLLABLEALIGNS',['../class_f_c_syllable_entry_mod.html#a1bfdb3184b8d8928f49789f30721cdbe',1,'FCSyllableEntryMod']]],
-  ['syllablejustifications_14',['SYLLABLEJUSTIFICATIONS',['../class_f_c_syllable_entry_mod.html#a3817af1aa51a303b83e18250cec7ae65',1,'FCSyllableEntryMod']]]
+  ['rebarstops_0',['REBARSTOPS',['../class_f_c_music_region.html#a392f07494b7401eb8b9bcfa75fe65632',1,'FCMusicRegion']]],
+  ['rehearsalmark_5fstyles_1',['REHEARSALMARK_STYLES',['../class_f_c_text_expression_def.html#a7cd4431a7e5fe768a26eedb47759ba48',1,'FCTextExpressionDef']]],
+  ['repactions_2',['REPACTIONS',['../class_f_c_text_repeat.html#acdd33d648311434e3b4d1d6207d2151c',1,'FCTextRepeat']]],
+  ['repeat_5freplace_5fmode_3',['REPEAT_REPLACE_MODE',['../class_f_c_text_repeat_def.html#a5e40e8d25eac505c3422748050393eef',1,'FCTextRepeatDef']]],
+  ['repeatbacktobackstyles_4',['REPEATBACKTOBACKSTYLES',['../class_f_c_repeat_prefs.html#aad8221a402e6a92499d45ee4c68a357a',1,'FCRepeatPrefs']]],
+  ['repeatwingstyles_5',['REPEATWINGSTYLES',['../class_f_c_repeat_prefs.html#a5a2392c7284d76c7142e533d0808b94f',1,'FCRepeatPrefs']]],
+  ['repshowmodes_6',['REPSHOWMODES',['../class_f_c_text_repeat.html#a970e5b216f217e4735518a9d7b5c7dc5',1,'FCTextRepeat']]],
+  ['reptargettriggers_7',['REPTARGETTRIGGERS',['../class_f_c_text_repeat.html#a84a80e9a5c0b1ff91b1be474f64ee738',1,'FCTextRepeat']]]
 ];
