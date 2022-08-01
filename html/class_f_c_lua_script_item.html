@@ -85,9 +85,6 @@ Inheritance diagram for FCLuaScriptItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af60d09a8fa7e485c320d31cb60257fbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#af60d09a8fa7e485c320d31cb60257fbb">FCLuaScriptItem</a> ()</td></tr>
-<tr class="memdesc:af60d09a8fa7e485c320d31cb60257fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_lua_script_item.html#af60d09a8fa7e485c320d31cb60257fbb">More...</a><br /></td></tr>
-<tr class="separator:af60d09a8fa7e485c320d31cb60257fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6df85f704ad29e6d5cf44e84b19e7cf"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#ac6df85f704ad29e6d5cf44e84b19e7cf">ClassName</a> () override</td></tr>
 <tr class="memdesc:ac6df85f704ad29e6d5cf44e84b19e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_lua_script_item.html#ac6df85f704ad29e6d5cf44e84b19e7cf">More...</a><br /></td></tr>
 <tr class="separator:ac6df85f704ad29e6d5cf44e84b19e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +112,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7a58dc7d574b171c892fc31a74afd0b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#ac7a58dc7d574b171c892fc31a74afd0b">GetExecutableIndex</a> () const</td></tr>
 <tr class="memdesc:ac7a58dc7d574b171c892fc31a74afd0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the executable index for this script.  <a href="class_f_c_lua_script_item.html#ac7a58dc7d574b171c892fc31a74afd0b">More...</a><br /></td></tr>
 <tr class="separator:ac7a58dc7d574b171c892fc31a74afd0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73700e43dd43a5f2df6d24c0d5fb685d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a73700e43dd43a5f2df6d24c0d5fb685d">SetFilePath</a> (const char *value)</td></tr>
-<tr class="memdesc:a73700e43dd43a5f2df6d24c0d5fb685d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fully-qualified file path for the script.  <a href="class_f_c_lua_script_item.html#a73700e43dd43a5f2df6d24c0d5fb685d">More...</a><br /></td></tr>
-<tr class="separator:a73700e43dd43a5f2df6d24c0d5fb685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67cb728fabd3a3bca7bf0efc6e9f2d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a67cb728fabd3a3bca7bf0efc6e9f2d6b">SetMenuItemText</a> (const char *value)</td></tr>
 <tr class="memdesc:a67cb728fabd3a3bca7bf0efc6e9f2d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the menu item text for the script.  <a href="class_f_c_lua_script_item.html#a67cb728fabd3a3bca7bf0efc6e9f2d6b">More...</a><br /></td></tr>
 <tr class="separator:a67cb728fabd3a3bca7bf0efc6e9f2d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,52 +463,30 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class that represents a single Lua script item. This class is not part of the C++ PDK Framework. </p>
-<p >When Finale starts, each script item corresponds to exactly one menu item that RGP Lua has created in Finale's Plug-Ins menu. However, as scripts execute they can add to the list (see below). Any script will then be able to access and potentially execute these additional script items.</p>
 <p >The <b>finenv</b> namespace offers the following ways to use this class. (The full documentation for these functions is at <a href="https://www.finalelua.com/docs/rgp-lua">https://www.finalelua.com/docs/rgp-lua</a>.)</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Method   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>CreateLuaScriptItems</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection containing all current script items.    </td></tr>
+<td class="markdownTableBodyNone"><b>CreateLuaScriptItems</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection containing all configured script items from the Finale Plug-In menu for the running instance of RGP Lua.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>AddLuaScriptItem</b>   </td><td class="markdownTableBodyNone">Adds a script item to RGP Lua's internal list. Upon return, the script item has an assigned execution index.    </td></tr>
+<td class="markdownTableBodyNone"><b>CreateLuaScriptItemFromFilePath(pathstr)</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> populated from the input file path and that file's <b>plugindef</b> function, if any.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>ExecuteLuaScriptItem</b>   </td><td class="markdownTableBodyNone">Adds a script item with <b>AddLuaScriptItem</b> (if necessary) and then executes it with its own Lua state.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>DeleteLuaScriptItem</b>   </td><td class="markdownTableBodyNone">Deletes a script item from RGP Lua's internal list. You can only delete items that were added with <b>AddLuaScriptItem</b>.   </td></tr>
+<td class="markdownTableBodyNone"><b>ExecuteLuaScriptItem(item)</b>   </td><td class="markdownTableBodyNone">Executes the input script <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> with its own Lua state.   </td></tr>
 </table>
-<p >When your script executes another script item, it is as if you invoked it from Finale's Plug-Ins menu. All behavior is the same. However, if your originating script has made any document modifications, they will be rolled back with <b>finenv.EndUndoBlock(false)</b> before the new script is executed. Therefore, if you wish to keep document modifications, commit them with <b>finenv.EndUndoBlock(true)</b> before calling <b>finenv.ExecuteLuaScriptItem</b>.</p>
-<p >If you delete a script item with <b>finenv.DeleteLuaScriptItem</b> you should get a fresh copy of the <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a>, because some of the execution items may have been changed. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af60d09a8fa7e485c320d31cb60257fbb" name="af60d09a8fa7e485c320d31cb60257fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af60d09a8fa7e485c320d31cb60257fbb">&#9670;&nbsp;</a></span>FCLuaScriptItem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FCLuaScriptItem::FCLuaScriptItem </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The constructor. </p>
-<p >Lua-supported (0.64). </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<p >When your script executes a script item returned by <b>CreateLuaScriptItems</b>, it is indentical to invoking it from Finale's Plug-Ins menu. There are no further dependencies, and all behavior is identical. The invoked script can continue to run (for example, in a modeless window) even if your script terminates.</p>
+<p >When your script executes a script item returned by <b>CreateLuaScriptItemFromFilePath</b>, your script must maintain that instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> until it terminates. This includes any modeless dialog or or RetainLuaState executed by the invoked script. If your instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> goes out of scope and is destroyed by Lua garbage collection, the correspoinding invoked script terminates immediately.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Be careful not to create conflcts on Finale's undo stack.</dd></dl>
+<p>The safest approach to avoid undo conflicts is to include the following in your <b>plugindef</b> function.</p>
+<div class="fragment"><div class="line">function plugindef()</div>
+<div class="line">   finaleplugin.NoStore = true</div>
+<div class="line">   finaleplugin.HandlesUndo = true</div>
+<div class="line">   .</div>
+<div class="line">   .</div>
+<div class="line">   .</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >If you choose to ignore this advice and allow your launcher script to make document modifications, they will be rolled back with <b>finenv.EndUndoBlock(false)</b> before the new script is executed. Therefore, if you wish to keep document modifications, commit them with <b>finenv.EndUndoBlock(true)</b> before calling <b>finenv.ExecuteLuaScriptItem</b>. If your script will be invoking scripts that open modeless dialogs or retain lua state, do not do allow document modifications. Instead, use the <b>plugindef</b> settings above. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac6df85f704ad29e6d5cf44e84b19e7cf" name="ac6df85f704ad29e6d5cf44e84b19e7cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6df85f704ad29e6d5cf44e84b19e7cf">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -654,7 +626,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the fully-qualified file path for the script. </p>
-<p >Lua-supported (also as property) (0.64). </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Only items returned by <b>finenv.CreateLuaScriptItemFromFilePath</b> have a file path. Items returned by <b>finenv.CreateLuaScriptItems</b> use <a class="el" href="class_f_c_lua_script_item.html#ac7a58dc7d574b171c892fc31a74afd0b" title="Return the executable index for this script.">GetExecutableIndex</a>.</dd></dl>
+<p>Lua-supported (also as read-only property) (0.64). </p>
 
 </div>
 </div>
@@ -828,35 +801,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a73700e43dd43a5f2df6d24c0d5fb685d" name="a73700e43dd43a5f2df6d24c0d5fb685d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73700e43dd43a5f2df6d24c0d5fb685d">&#9670;&nbsp;</a></span>SetFilePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FCLuaScriptItem::SetFilePath </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the fully-qualified file path for the script. </p>
-<p >Lua-supported (also as property) (0.64). </p>
-
-</div>
-</div>
 <a id="af2e10a166f633004daf9702355ceca3b" name="af2e10a166f633004daf9702355ceca3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2e10a166f633004daf9702355ceca3b">&#9670;&nbsp;</a></span>SetLoadAsString()</h2>
 
@@ -976,7 +920,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 30 2022 16:21:20 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Jul 31 2022 20:41:31 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
