@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b2</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b3</span>
    </div>
   </td>
  </tr>
@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa570a4639dc7eaae7a2fc7a9a3705766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#aa570a4639dc7eaae7a2fc7a9a3705766">CopyFrom</a> (<a class="el" href="class_f_c_strings.html">FCStrings</a> *pSourceStrings)</td></tr>
 <tr class="memdesc:aa570a4639dc7eaae7a2fc7a9a3705766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreates a string collection. Any existing strings in the collection are cleared. NULL entries in the string table are also supported.  <a href="class_f_c_strings.html#aa570a4639dc7eaae7a2fc7a9a3705766">More...</a><br /></td></tr>
 <tr class="separator:aa570a4639dc7eaae7a2fc7a9a3705766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747ed4a73ada466a5aaab8d219fc4d69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#a747ed4a73ada466a5aaab8d219fc4d69">CopyFromStringTable</a> (const std::vector&lt; std::string &gt; &amp;strings)</td></tr>
+<tr class="memdesc:a747ed4a73ada466a5aaab8d219fc4d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the contents of the collection from the input vector of std::string.  <a href="class_f_c_strings.html#a747ed4a73ada466a5aaab8d219fc4d69">More...</a><br /></td></tr>
+<tr class="separator:a747ed4a73ada466a5aaab8d219fc4d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a352f1c4b9dec27ede32048c2c79ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#a2a352f1c4b9dec27ede32048c2c79ef3">TrimWhitespaceAll</a> ()</td></tr>
 <tr class="memdesc:a2a352f1c4b9dec27ede32048c2c79ef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trims leading and trailing whitespace in all the collection's strings.  <a href="class_f_c_strings.html#a2a352f1c4b9dec27ede32048c2c79ef3">More...</a><br /></td></tr>
 <tr class="separator:a2a352f1c4b9dec27ede32048c2c79ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -748,6 +751,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a747ed4a73ada466a5aaab8d219fc4d69" name="a747ed4a73ada466a5aaab8d219fc4d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747ed4a73ada466a5aaab8d219fc4d69">&#9670;&nbsp;</a></span>CopyFromStringTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCStrings::CopyFromStringTable </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Replaces the contents of the collection from the input vector of std::string. </p>
+<p >Lua scripts can pass in a Lua table containing Lua strings. Normally these are encoded UTF-8.</p>
+<p >Lua-supported (0.64).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">strings</td><td>A vector of std::string (C++) or a table of strings (Lua). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a51bbf4a76ccfc06f0302eb382473c275" name="a51bbf4a76ccfc06f0302eb382473c275"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51bbf4a76ccfc06f0302eb382473c275">&#9670;&nbsp;</a></span>CreateRowsString()</h2>
 
@@ -1162,7 +1201,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 20:41:33 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Aug 7 2022 06:03:37 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

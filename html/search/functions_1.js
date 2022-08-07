@@ -6,7 +6,7 @@ var searchData=
   ['activateendpoint_3',['ActivateEndPoint',['../class_f_c_tie_mod.html#a9ccc33fabf9cce5f6b47f1ef31fcaedf',1,'FCTieMod']]],
   ['activatestartpoint_4',['ActivateStartPoint',['../class_f_c_tie_mod.html#a5f05418ce5b2f2707f65c9cd716fe7b4',1,'FCTieMod']]],
   ['activatewindow_5',['ActivateWindow',['../class_f_c_u_i.html#a45b174677ecc01f00c4ed807597aa4e4',1,'FCUI']]],
-  ['add_6',['Add',['../class_____f_c_collection.html#a1ec61ac223b0d78d548f2cae87194e04',1,'__FCCollection']]],
+  ['add_6',['Add',['../class_____f_c_collection.html#a1ec61ac223b0d78d548f2cae87194e04',1,'__FCCollection::Add()'],['../class_f_c_ctrl_radio_button_group.html#a72f2a329aa82cb378ce187fd9f625530',1,'FCCtrlRadioButtonGroup::Add()'],['../class_f_c_lua_script_items.html#aa481c23ed7bfa718ae40843d07bf6ee7',1,'FCLuaScriptItems::Add()']]],
   ['addaltnotationfilter_7',['AddAltNotationFilter',['../class_f_c_lua_iterator.html#ad61b92ce1c82e8aff0a8e0375cbeed50',1,'FCLuaIterator']]],
   ['addarticulations_8',['AddArticulations',['../class_f_c_note_entry.html#a6f218fbc8ff11512e94361375c305a66',1,'FCNoteEntry']]],
   ['addbottomstaff_9',['AddBottomStaff',['../class_f_c_staff_list.html#a7690dcea3fe025785bfd7885624abc78',1,'FCStaffList']]],

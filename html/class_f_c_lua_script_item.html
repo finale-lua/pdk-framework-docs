@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b2</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b3</span>
    </div>
   </td>
  </tr>
@@ -88,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6df85f704ad29e6d5cf44e84b19e7cf"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#ac6df85f704ad29e6d5cf44e84b19e7cf">ClassName</a> () override</td></tr>
 <tr class="memdesc:ac6df85f704ad29e6d5cf44e84b19e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_lua_script_item.html#ac6df85f704ad29e6d5cf44e84b19e7cf">More...</a><br /></td></tr>
 <tr class="separator:ac6df85f704ad29e6d5cf44e84b19e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7976aa0fa40a5e468069883595eef6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a8d7976aa0fa40a5e468069883595eef6">IsExecuting</a> () const</td></tr>
+<tr class="memdesc:a8d7976aa0fa40a5e468069883595eef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the script associated with this script item is currently executing.  <a href="class_f_c_lua_script_item.html#a8d7976aa0fa40a5e468069883595eef6">More...</a><br /></td></tr>
+<tr class="separator:a8d7976aa0fa40a5e468069883595eef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89e448496487e620be2e41d8ae50076"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">GetFilePath</a> () const</td></tr>
 <tr class="memdesc:aa89e448496487e620be2e41d8ae50076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fully-qualified file path for the script.  <a href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">More...</a><br /></td></tr>
 <tr class="separator:aa89e448496487e620be2e41d8ae50076"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -470,12 +473,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><b>CreateLuaScriptItems</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection containing all configured script items from the Finale Plug-In menu for the running instance of RGP Lua.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CreateLuaScriptItemFromFilePath(pathstr)</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> populated from the input file path and that file's <b>plugindef</b> function, if any.    </td></tr>
+<td class="markdownTableBodyNone"><b>CreateLuaScriptItemsFromFilePath(pathstr)</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection populated from the input file path and that file's <b>plugindef</b> function, if any.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><b>ExecuteLuaScriptItem(item)</b>   </td><td class="markdownTableBodyNone">Executes the input script <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> with its own Lua state.   </td></tr>
 </table>
+<p >The collection returned by <b>CreateLuaScriptItemsFromFilePath(pathstr)</b> contains one item for the script file plus one for each additional menu item defined in the file's <b>plugindef</b> function, if it has one.</p>
 <p >When your script executes a script item returned by <b>CreateLuaScriptItems</b>, it is indentical to invoking it from Finale's Plug-Ins menu. There are no further dependencies, and all behavior is identical. The invoked script can continue to run (for example, in a modeless window) even if your script terminates.</p>
-<p >When your script executes a script item returned by <b>CreateLuaScriptItemFromFilePath</b>, your script must maintain that instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> until it terminates. This includes any modeless dialog or or RetainLuaState executed by the invoked script. If your instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> goes out of scope and is destroyed by Lua garbage collection, the correspoinding invoked script terminates immediately.</p>
+<p >When your script executes a script item from the collection returned by <b>CreateLuaScriptItemFromFilePath</b>, your script must maintain that instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> until it terminates. This includes any modeless dialog or or RetainLuaState executed by the invoked script. If your instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> goes out of scope and is destroyed by Lua garbage collection, the correspoinding invoked script terminates immediately.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Be careful not to create conflcts on Finale's undo stack.</dd></dl>
 <p>The safest approach to avoid undo conflicts is to include the following in your <b>plugindef</b> function.</p>
 <div class="fragment"><div class="line">function plugindef()</div>
@@ -743,6 +747,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d7976aa0fa40a5e468069883595eef6" name="a8d7976aa0fa40a5e468069883595eef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d7976aa0fa40a5e468069883595eef6">&#9670;&nbsp;</a></span>IsExecuting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCLuaScriptItem::IsExecuting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the script associated with this script item is currently executing. </p>
+<p >Lua-supported (0.64) </p>
+
+</div>
+</div>
 <a id="a24ffeb87793551e9fbfbe872132a7f1d" name="a24ffeb87793551e9fbfbe872132a7f1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24ffeb87793551e9fbfbe872132a7f1d">&#9670;&nbsp;</a></span>SetDebug()</h2>
 
@@ -920,7 +952,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 20:41:31 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Aug 7 2022 06:03:35 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b2</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64b3</span>
    </div>
   </td>
  </tr>
@@ -441,6 +441,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f79005d803ecf8bb47b63214140633c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a4f79005d803ecf8bb47b63214140633c">GetDecimalSeparator</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a4f79005d803ecf8bb47b63214140633c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> with the decimal separator used for the current user's locale.  <a href="class_f_c_u_i.html#a4f79005d803ecf8bb47b63214140633c">More...</a><br /></td></tr>
 <tr class="separator:a4f79005d803ecf8bb47b63214140633c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d90abfcb046d0de7fdf9c1892a50a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a5d90abfcb046d0de7fdf9c1892a50a2b">GetUserLocaleName</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
+<tr class="memdesc:a5d90abfcb046d0de7fdf9c1892a50a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> with the locale name used for the current user's locale.  <a href="class_f_c_u_i.html#a5d90abfcb046d0de7fdf9c1892a50a2b">More...</a><br /></td></tr>
+<tr class="separator:a5d90abfcb046d0de7fdf9c1892a50a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa13212aa397e4cd00f54984b98e70d1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#aa13212aa397e4cd00f54984b98e70d1b">SetUseIsFontAvailableAPI</a> (bool state)</td></tr>
 <tr class="memdesc:aa13212aa397e4cd00f54984b98e70d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if Finale's own API for checking font availability should be used for <a class="el" href="class_f_c_u_i.html#ab27513f9bbba2692a7381d88a377e371" title="Returns true if the font name exists on the running system.">IsFontAvailable()</a>.  <a href="class_f_c_u_i.html#aa13212aa397e4cd00f54984b98e70d1b">More...</a><br /></td></tr>
 <tr class="separator:aa13212aa397e4cd00f54984b98e70d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2128,6 +2131,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5d90abfcb046d0de7fdf9c1892a50a2b" name="a5d90abfcb046d0de7fdf9c1892a50a2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d90abfcb046d0de7fdf9c1892a50a2b">&#9670;&nbsp;</a></span>GetUserLocaleName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCUI::GetUserLocaleName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramname"><em>pString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fills a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> with the locale name used for the current user's locale. </p>
+<p >Lua-supported (0.64).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pString</td><td>The <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object that should contain the locale name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa47c8497c9a6b11f624d34f68d803f72" name="aa47c8497c9a6b11f624d34f68d803f72"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa47c8497c9a6b11f624d34f68d803f72">&#9670;&nbsp;</a></span>GetZoomLevel()</h2>
 
@@ -2541,7 +2571,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 20:41:33 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Aug 7 2022 06:03:37 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
