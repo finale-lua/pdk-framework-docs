@@ -58,12 +58,11 @@ var searchData=
   ['_5fsetmaxascent_55',['_SetMaxAscent',['../class_f_c_system_glyph_info.html#a23eda1831c795182f55829c495e06939',1,'FCSystemGlyphInfo']]],
   ['_5fsetmaxdescent_56',['_SetMaxDescent',['../class_f_c_system_glyph_info.html#ae7cdbf35e9b42f119643eec6e90039fd',1,'FCSystemGlyphInfo']]],
   ['_5fsetmemory_57',['_SetMemory',['../class_f_c_shape_def_instruction.html#a60ad6ffb06e1bc21d3889ab0bc9bcfaa',1,'FCShapeDefInstruction']]],
-  ['_5fsetmodelessenabledstate_58',['_SetModelessEnabledState',['../class_____f_c_user_window.html#a2d575858f2422c6e2aa61efca0b7b837',1,'__FCUserWindow']]],
-  ['_5fsetrawtextid_59',['_SetRawTextID',['../class_f_c_text_block.html#a2247050f133f5f66c0cf091f4b60210d',1,'FCTextBlock']]],
-  ['_5fsetrightsidenoteid_60',['_SetRightSideNoteID',['../class_f_c_smart_shape.html#aa149cd262809838caad6b1ffe788ea0b',1,'FCSmartShape']]],
-  ['_5fsettempnonincludedmeasures_61',['_SetTempNonIncludedMeasures',['../class_f_c_measure_number_region.html#a63b0ccbb878e2089d385de50856a0f9b',1,'FCMeasureNumberRegion']]],
-  ['_5fsettextblockid_62',['_SetTextBlockID',['../class_f_c_page_text.html#ab4d53545988406a715876170f1c2355b',1,'FCPageText']]],
-  ['_5fsetupinternalwindowcode_63',['_SetupInternalWindowCode',['../class_f_c_resource_window.html#af9cd85e89cb88878f4d462f50afeddc5',1,'FCResourceWindow']]],
-  ['_5fsetwidth_64',['_SetWidth',['../class_f_c_system_glyph_info.html#ace92fb07546d0edd7d1bbcdbd997d2c3',1,'FCSystemGlyphInfo']]],
-  ['_5ftagdocumentid_65',['_TagDocumentID',['../class_____f_c_base_data.html#abb3edd903dc50fe2bf0957be45708946',1,'__FCBaseData']]]
+  ['_5fsetrawtextid_58',['_SetRawTextID',['../class_f_c_text_block.html#a2247050f133f5f66c0cf091f4b60210d',1,'FCTextBlock']]],
+  ['_5fsetrightsidenoteid_59',['_SetRightSideNoteID',['../class_f_c_smart_shape.html#aa149cd262809838caad6b1ffe788ea0b',1,'FCSmartShape']]],
+  ['_5fsettempnonincludedmeasures_60',['_SetTempNonIncludedMeasures',['../class_f_c_measure_number_region.html#a63b0ccbb878e2089d385de50856a0f9b',1,'FCMeasureNumberRegion']]],
+  ['_5fsettextblockid_61',['_SetTextBlockID',['../class_f_c_page_text.html#ab4d53545988406a715876170f1c2355b',1,'FCPageText']]],
+  ['_5fsetupinternalwindowcode_62',['_SetupInternalWindowCode',['../class_f_c_resource_window.html#af9cd85e89cb88878f4d462f50afeddc5',1,'FCResourceWindow']]],
+  ['_5fsetwidth_63',['_SetWidth',['../class_f_c_system_glyph_info.html#ace92fb07546d0edd7d1bbcdbd997d2c3',1,'FCSystemGlyphInfo']]],
+  ['_5ftagdocumentid_64',['_TagDocumentID',['../class_____f_c_base_data.html#abb3edd903dc50fe2bf0957be45708946',1,'__FCBaseData']]]
 ];

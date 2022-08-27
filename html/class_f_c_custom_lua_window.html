@@ -129,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85578f7b660f9d6b037568a8728388f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a85578f7b660f9d6b037568a8728388f1">RegisterHandleTimer</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a85578f7b660f9d6b037568a8728388f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb" title="Virtual handler method that is called for each timer event.">HandleTimer()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a85578f7b660f9d6b037568a8728388f1">More...</a><br /></td></tr>
 <tr class="separator:a85578f7b660f9d6b037568a8728388f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c713ac358fd0d864388afbf1770527"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a11c713ac358fd0d864388afbf1770527">RegisterDarkModeIsChanging</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a11c713ac358fd0d864388afbf1770527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f" title="Virtual handler method that is called when Dark Mode changes. (Currently macOS only....">DarkModeIsChanging()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a11c713ac358fd0d864388afbf1770527">More...</a><br /></td></tr>
+<tr class="separator:a11c713ac358fd0d864388afbf1770527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">HandleControlEvent</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
 <tr class="memdesc:a06ea38dd1b4c631219e1c06c320eb65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when an event occurs on a registered control.  <a href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">More...</a><br /></td></tr>
 <tr class="separator:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb">HandleTimer</a> (twobyte timerID) override</td></tr>
 <tr class="memdesc:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called for each timer event.  <a href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb">More...</a><br /></td></tr>
 <tr class="separator:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f">DarkModeIsChanging</a> (bool isDarkMode) override</td></tr>
+<tr class="memdesc:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when Dark Mode changes. (Currently macOS only.)  <a href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f">More...</a><br /></td></tr>
+<tr class="separator:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_f_c_custom_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_f_c_custom_window')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_f_c_custom_window.html">FCCustomWindow</a></td></tr>
 <tr class="memitem:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">FCCustomWindow</a> ()</td></tr>
 <tr class="memdesc:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">More...</a><br /></td></tr>
@@ -277,6 +283,12 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleWMNotif
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_SetupInternalWindowCode</b> ()</td></tr>
 <tr class="memdesc:af9cd85e89cb88878f4d462f50afeddc5 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. <br /></td></tr>
 <tr class="separator:af9cd85e89cb88878f4d462f50afeddc5 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af998d512f9c7e39b9f4945d7d14a6265 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_resource_window.html#af998d512f9c7e39b9f4945d7d14a6265">GetWantsDpiAwareness</a> () const</td></tr>
+<tr class="memdesc:af998d512f9c7e39b9f4945d7d14a6265 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the HiDPI awareness state of the window.  <a href="class_f_c_resource_window.html#af998d512f9c7e39b9f4945d7d14a6265">More...</a><br /></td></tr>
+<tr class="separator:af998d512f9c7e39b9f4945d7d14a6265 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b319e0ae59cb73b8003f6998a4355aa inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_resource_window.html#a8b319e0ae59cb73b8003f6998a4355aa">SetWantsDpiAwareness</a> (bool WINCODE(state))</td></tr>
+<tr class="memdesc:a8b319e0ae59cb73b8003f6998a4355aa inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the HiDPI awareness state of the window.  <a href="class_f_c_resource_window.html#a8b319e0ae59cb73b8003f6998a4355aa">More...</a><br /></td></tr>
+<tr class="separator:a8b319e0ae59cb73b8003f6998a4355aa inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab75b7cf13a211b047fe4d8a4569f241c inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="ab75b7cf13a211b047fe4d8a4569f241c" name="ab75b7cf13a211b047fe4d8a4569f241c"></a>
 <a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddCtrl</b> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
 <tr class="memdesc:ab75b7cf13a211b047fe4d8a4569f241c inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a control object to the dialog collection. <br /></td></tr>
@@ -355,9 +367,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsModal</b> ()</td></
 <tr class="memitem:a58135654be971249d68721b38eeeb2fb inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a58135654be971249d68721b38eeeb2fb">GetItemAt</a> (int index)</td></tr>
 <tr class="memdesc:a58135654be971249d68721b38eeeb2fb inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded implementation of <a class="el" href="class_____f_c_user_window.html#a58135654be971249d68721b38eeeb2fb" title="Overloaded implementation of GetItemAt().">GetItemAt()</a>.  <a href="class_____f_c_user_window.html#a58135654be971249d68721b38eeeb2fb">More...</a><br /></td></tr>
 <tr class="separator:a58135654be971249d68721b38eeeb2fb inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d575858f2422c6e2aa61efca0b7b837 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a2d575858f2422c6e2aa61efca0b7b837">_SetModelessEnabledState</a> ()</td></tr>
-<tr class="memdesc:a2d575858f2422c6e2aa61efca0b7b837 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only.  <a href="class_____f_c_user_window.html#a2d575858f2422c6e2aa61efca0b7b837">More...</a><br /></td></tr>
-<tr class="separator:a2d575858f2422c6e2aa61efca0b7b837 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5a4d7afdaff2025541ef60cbccd60b inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a1c5a4d7afdaff2025541ef60cbccd60b" name="a1c5a4d7afdaff2025541ef60cbccd60b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (float newwidth)</td></tr>
 <tr class="memdesc:a1c5a4d7afdaff2025541ef60cbccd60b inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the width of the window frame. <br /></td></tr>
@@ -385,6 +394,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeight</b> ()</td
 <tr class="memitem:a111035c21270370c306aca53072db133 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a111035c21270370c306aca53072db133">GetClientHeight</a> ()</td></tr>
 <tr class="memdesc:a111035c21270370c306aca53072db133 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current height of the window client area, excluding the title bar.  <a href="class_____f_c_user_window.html#a111035c21270370c306aca53072db133">More...</a><br /></td></tr>
 <tr class="separator:a111035c21270370c306aca53072db133 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c121bc63c753989dc0f1a752dfce4 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a742c121bc63c753989dc0f1a752dfce4">IsDarkModeAppearance</a> () const</td></tr>
+<tr class="memdesc:a742c121bc63c753989dc0f1a752dfce4 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current Dark Mode state of the window. (Currently macOS only.)  <a href="class_____f_c_user_window.html#a742c121bc63c753989dc0f1a752dfce4">More...</a><br /></td></tr>
+<tr class="separator:a742c121bc63c753989dc0f1a752dfce4 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d305991a91619e370a2b720b6936bb3 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a8d305991a91619e370a2b720b6936bb3">SetTitle</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pTitle)</td></tr>
 <tr class="memdesc:a8d305991a91619e370a2b720b6936bb3 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the caption (title) for the window.  <a href="class_____f_c_user_window.html#a8d305991a91619e370a2b720b6936bb3">More...</a><br /></td></tr>
 <tr class="separator:a8d305991a91619e370a2b720b6936bb3 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,9 +433,9 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaximumResizeWidt
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetMaximumResizeHeight</b> ()</td></tr>
 <tr class="memdesc:a112c38c8cbf21ee45c4e3e56ebec5788 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum resize height for resizable dialogs/windows. <br /></td></tr>
 <tr class="separator:a112c38c8cbf21ee45c4e3e56ebec5788 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2b7364de7c99db38d4375b7fed3a97 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a2c2b7364de7c99db38d4375b7fed3a97">WindowExists</a> ()</td></tr>
-<tr class="memdesc:a2c2b7364de7c99db38d4375b7fed3a97 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the window exists in the user interface.  <a href="class_____f_c_user_window.html#a2c2b7364de7c99db38d4375b7fed3a97">More...</a><br /></td></tr>
-<tr class="separator:a2c2b7364de7c99db38d4375b7fed3a97 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b8f1839e27ea08d99c35e94c21f7f0 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a37b8f1839e27ea08d99c35e94c21f7f0">WindowExists</a> () const</td></tr>
+<tr class="memdesc:a37b8f1839e27ea08d99c35e94c21f7f0 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the window exists in the user interface.  <a href="class_____f_c_user_window.html#a37b8f1839e27ea08d99c35e94c21f7f0">More...</a><br /></td></tr>
+<tr class="separator:a37b8f1839e27ea08d99c35e94c21f7f0 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21afc05abc75a41190c928dc50e093ba inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a21afc05abc75a41190c928dc50e093ba" name="a21afc05abc75a41190c928dc50e093ba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> ()</td></tr>
 <tr class="memdesc:a21afc05abc75a41190c928dc50e093ba inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the window. <br /></td></tr>
@@ -1074,6 +1086,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7f5dc109ea48dd88f6ce2bf94def3d8f" name="a7f5dc109ea48dd88f6ce2bf94def3d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5dc109ea48dd88f6ce2bf94def3d8f">&#9670;&nbsp;</a></span>DarkModeIsChanging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::DarkModeIsChanging </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isDarkMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when Dark Mode changes. (Currently macOS only.) </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isDarkMode</td><td>true if changing to Dark Mode, false if changing to Light Mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#ac8948ece1337ab7b3d37cf75e705e8ff">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="ab1cb54662cbdec351cae106e5a3a480f" name="ab1cb54662cbdec351cae106e5a3a480f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1cb54662cbdec351cae106e5a3a480f">&#9670;&nbsp;</a></span>HandleCommand()</h2>
 
@@ -1100,10 +1149,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Virtual method that is called when a user command occurs, such as a button press. </p>
 <p >Lua-supported through a callback function.</p>
-<p >The handler for HandleCommand is only called for controls that have not been registered with <a class="el" href="class_f_c_custom_lua_window.html#a2c13548ebea959fd6260747fb86d6182" title="Registers a Lua function to the HandleControlEvent() event handler.">RegisterHandleControlEvent</a> or if the registered control's callback function returns <b>false</b>. </p><pre class="fragment">\param pControl Pointer to the control the raised the command event.
+<p >The handler for HandleCommand is only called for controls that have not been registered with <a class="el" href="class_f_c_custom_lua_window.html#a2c13548ebea959fd6260747fb86d6182" title="Registers a Lua function to the HandleControlEvent() event handler.">RegisterHandleControlEvent</a> or if the registered control's callback function returns <b>false</b>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>Pointer to the control the raised the command event.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return true if the command is handled. </dd></dl>
 
-\return Return true if the command is handled.
-</pre> 
 <p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#a087d0240f4737eb1d819352b52bc458a">__FCUserWindow</a>.</p>
 
 </div>
@@ -1271,7 +1325,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Virtual handler method that is called for each timer event. </p>
-<p >Lua-supported through a callback function. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timerID</td><td>The id used to start the timer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#ae15e12dbb3c5bae8b2f6eb73742d4d0f">__FCUserWindow</a>.</p>
 
@@ -1414,6 +1474,42 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a6249cc15838787417119d3e7bd719454" title="Virtual handler method that is called when a window just has been created, but not yet shown.">InitWindow</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="a11c713ac358fd0d864388afbf1770527" name="a11c713ac358fd0d864388afbf1770527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c713ac358fd0d864388afbf1770527">&#9670;&nbsp;</a></span>RegisterDarkModeIsChanging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterDarkModeIsChanging </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f" title="Virtual handler method that is called when Dark Mode changes. (Currently macOS only....">DarkModeIsChanging()</a> event handler. </p>
+<p >Lua-supported (0.64).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f" title="Virtual handler method that is called when Dark Mode changes. (Currently macOS only....">DarkModeIsChanging</a> event handler for the callback syntax.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1817,7 +1913,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 12 2022 17:23:10 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Aug 27 2022 17:42:42 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
