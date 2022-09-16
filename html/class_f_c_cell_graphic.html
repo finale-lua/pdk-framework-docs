@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b1</span>
    </div>
   </td>
  </tr>
@@ -65,11 +65,11 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_f_c_cell_graphic-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">FCCellGraphic Class Reference</div></div>
+  <div class="headertitle"><div class="title">FCCellGraphic Class Reference<div class="ingroups"><a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class for measure/cell-attached graphic objects.  
+<p>Class for measure/cell-attached graphic objects. Currently, this class can only be used to edit existing cell-attached graphics objects.  
  <a href="class_f_c_cell_graphic.html#details">More...</a></p>
 
 <p><code>#include &lt;ff_celldetails.h&gt;</code></p>
@@ -97,10 +97,45 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FCCellGraphic</b> ()</td></tr>
 <tr class="memdesc:ac5343eb35d1ef0a2a47bdf2163a8bd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
 <tr class="separator:ac5343eb35d1ef0a2a47bdf2163a8bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3121bc2016dd8581830acf87973f0c84"><td class="memItemLeft" align="right" valign="top"><a id="a3121bc2016dd8581830acf87973f0c84" name="a3121bc2016dd8581830acf87973f0c84"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmbedded</b> ()</td></tr>
-<tr class="memdesc:a3121bc2016dd8581830acf87973f0c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the graphic is embedded in the document. <br /></td></tr>
+<tr class="memitem:a3121bc2016dd8581830acf87973f0c84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a3121bc2016dd8581830acf87973f0c84">IsEmbedded</a> ()</td></tr>
+<tr class="memdesc:a3121bc2016dd8581830acf87973f0c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the graphic is embedded in the document.  <a href="class_f_c_cell_graphic.html#a3121bc2016dd8581830acf87973f0c84">More...</a><br /></td></tr>
 <tr class="separator:a3121bc2016dd8581830acf87973f0c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d71925d70fba72b3a3b71456521668"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a32d71925d70fba72b3a3b71456521668">GetHorizontalPos</a> () const</td></tr>
+<tr class="memdesc:a32d71925d70fba72b3a3b71456521668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the graphic rectangle's left-side position, in EVPUs.  <a href="class_f_c_cell_graphic.html#a32d71925d70fba72b3a3b71456521668">More...</a><br /></td></tr>
+<tr class="separator:a32d71925d70fba72b3a3b71456521668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae062617dc585cbcb5c49e5803461e6d1"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#ae062617dc585cbcb5c49e5803461e6d1">GetVerticalPos</a> () const</td></tr>
+<tr class="memdesc:ae062617dc585cbcb5c49e5803461e6d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the graphic rectangle's bottom position, in EVPUs.  <a href="class_f_c_cell_graphic.html#ae062617dc585cbcb5c49e5803461e6d1">More...</a><br /></td></tr>
+<tr class="separator:ae062617dc585cbcb5c49e5803461e6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad457858c882c67bb077804b32dcc5ff5"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#ad457858c882c67bb077804b32dcc5ff5">GetWidth</a> () const</td></tr>
+<tr class="memdesc:ad457858c882c67bb077804b32dcc5ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the graphic rectangle's width, in EVPUs.  <a href="class_f_c_cell_graphic.html#ad457858c882c67bb077804b32dcc5ff5">More...</a><br /></td></tr>
+<tr class="separator:ad457858c882c67bb077804b32dcc5ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657ca80ff2b7964d3775a44f895be1ec"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a657ca80ff2b7964d3775a44f895be1ec">GetHeight</a> () const</td></tr>
+<tr class="memdesc:a657ca80ff2b7964d3775a44f895be1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the graphic rectangle's height, in EVPUs.  <a href="class_f_c_cell_graphic.html#a657ca80ff2b7964d3775a44f895be1ec">More...</a><br /></td></tr>
+<tr class="separator:a657ca80ff2b7964d3775a44f895be1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ff10e52717a85122543b41fa0cedb5"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a23ff10e52717a85122543b41fa0cedb5">GetOriginalWidth</a> () const</td></tr>
+<tr class="memdesc:a23ff10e52717a85122543b41fa0cedb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the original graphic rectangle's width (before stretching), in EVPUs.  <a href="class_f_c_cell_graphic.html#a23ff10e52717a85122543b41fa0cedb5">More...</a><br /></td></tr>
+<tr class="separator:a23ff10e52717a85122543b41fa0cedb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba271d2069e3069506c50d14786995d"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a9ba271d2069e3069506c50d14786995d">GetOriginalHeight</a> () const</td></tr>
+<tr class="memdesc:a9ba271d2069e3069506c50d14786995d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the original graphic rectangle's height (before stretching), in EVPUs.  <a href="class_f_c_cell_graphic.html#a9ba271d2069e3069506c50d14786995d">More...</a><br /></td></tr>
+<tr class="separator:a9ba271d2069e3069506c50d14786995d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e5d41e6120c9cae9c5c9c340ec01983"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a6e5d41e6120c9cae9c5c9c340ec01983">GetVisible</a> () const</td></tr>
+<tr class="memdesc:a6e5d41e6120c9cae9c5c9c340ec01983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the visibility status of the page graphic.  <a href="class_f_c_cell_graphic.html#a6e5d41e6120c9cae9c5c9c340ec01983">More...</a><br /></td></tr>
+<tr class="separator:a6e5d41e6120c9cae9c5c9c340ec01983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586ac81f25b6510c18a8817c45956ad9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a586ac81f25b6510c18a8817c45956ad9">SetHorizontalPos</a> (Evpu16 pos)</td></tr>
+<tr class="memdesc:a586ac81f25b6510c18a8817c45956ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the graphic rectangle's left-side position, in EVPUs.  <a href="class_f_c_cell_graphic.html#a586ac81f25b6510c18a8817c45956ad9">More...</a><br /></td></tr>
+<tr class="separator:a586ac81f25b6510c18a8817c45956ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d821a6c1f5cdaf5531782296e387c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a06d821a6c1f5cdaf5531782296e387c8">SetVerticalPos</a> (Evpu16 pos)</td></tr>
+<tr class="memdesc:a06d821a6c1f5cdaf5531782296e387c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the graphic rectangle's bottom position, in EVPUs.  <a href="class_f_c_cell_graphic.html#a06d821a6c1f5cdaf5531782296e387c8">More...</a><br /></td></tr>
+<tr class="separator:a06d821a6c1f5cdaf5531782296e387c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b93a3b13c128604125eb13bb629bb65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a2b93a3b13c128604125eb13bb629bb65">SetWidth</a> (Evpu16 width)</td></tr>
+<tr class="memdesc:a2b93a3b13c128604125eb13bb629bb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the graphic rectangle's width, in EVPUs.  <a href="class_f_c_cell_graphic.html#a2b93a3b13c128604125eb13bb629bb65">More...</a><br /></td></tr>
+<tr class="separator:a2b93a3b13c128604125eb13bb629bb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af968b04339f5741078731a208a47b3f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#af968b04339f5741078731a208a47b3f8">SetHeight</a> (Evpu16 height)</td></tr>
+<tr class="memdesc:af968b04339f5741078731a208a47b3f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the graphic rectangle's height, in EVPUs.  <a href="class_f_c_cell_graphic.html#af968b04339f5741078731a208a47b3f8">More...</a><br /></td></tr>
+<tr class="separator:af968b04339f5741078731a208a47b3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c898f448736dba2fb37ab7cf67c3238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a0c898f448736dba2fb37ab7cf67c3238">SetVisible</a> (bool state)</td></tr>
+<tr class="memdesc:a0c898f448736dba2fb37ab7cf67c3238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the visibility state of the graphic.  <a href="class_f_c_cell_graphic.html#a0c898f448736dba2fb37ab7cf67c3238">More...</a><br /></td></tr>
+<tr class="separator:a0c898f448736dba2fb37ab7cf67c3238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930b08d7bdc0f759dae9e9ff044ca17a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_graphic.html#a930b08d7bdc0f759dae9e9ff044ca17a">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a930b08d7bdc0f759dae9e9ff044ca17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_f_c_cell_graphic.html#a930b08d7bdc0f759dae9e9ff044ca17a">More...</a><br /></td></tr>
 <tr class="separator:a930b08d7bdc0f759dae9e9ff044ca17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,9 +203,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEmbedded</b> ()</td
 <tr class="memitem:a3bb57118e833bc69d2718f7396eecf59 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a3bb57118e833bc69d2718f7396eecf59">GetDataBlock</a> ()</td></tr>
 <tr class="memdesc:a3bb57118e833bc69d2718f7396eecf59 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intended ONLY for the <a class="el" href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277" title="For internal use only. Copies object data (except data block) from another object.">_CloneFrom</a> implementation.  <a href="class_____f_c_base_data.html#a3bb57118e833bc69d2718f7396eecf59">More...</a><br /></td></tr>
 <tr class="separator:a3bb57118e833bc69d2718f7396eecf59 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a556df781a2de5ede611e5b4b242e492e inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a556df781a2de5ede611e5b4b242e492e">GetCustomTag</a> ()</td></tr>
-<tr class="memdesc:a556df781a2de5ede611e5b4b242e492e inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the custom Enigma tag, if any.  <a href="class_____f_c_base_data.html#a556df781a2de5ede611e5b4b242e492e">More...</a><br /></td></tr>
-<tr class="separator:a556df781a2de5ede611e5b4b242e492e inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe2bef96fa3497cfb8df6eef2c68eb3 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a1fe2bef96fa3497cfb8df6eef2c68eb3">GetCustomTag</a> () const</td></tr>
+<tr class="memdesc:a1fe2bef96fa3497cfb8df6eef2c68eb3 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the custom Enigma tag, if any.  <a href="class_____f_c_base_data.html#a1fe2bef96fa3497cfb8df6eef2c68eb3">More...</a><br /></td></tr>
+<tr class="separator:a1fe2bef96fa3497cfb8df6eef2c68eb3 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f839b5a7e167a00065c58b83567ac40 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a7f839b5a7e167a00065c58b83567ac40">SetCustomTag</a> (EXTAG tag)</td></tr>
 <tr class="memdesc:a7f839b5a7e167a00065c58b83567ac40 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the custom Enigma tag, for classes that support multiple Enigma tags.  <a href="class_____f_c_base_data.html#a7f839b5a7e167a00065c58b83567ac40">More...</a><br /></td></tr>
 <tr class="separator:a7f839b5a7e167a00065c58b83567ac40 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,7 +611,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <tr class="separator:a46738377792b605baa81dec7fc18ca67 inherit pro_attribs_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class for measure/cell-attached graphic objects. </p>
+<div class="textblock"><p >Class for measure/cell-attached graphic objects. Currently, this class can only be used to edit existing cell-attached graphics objects. </p>
+<p >Added to Lua in 0.65. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6191ca58d7ade6a3bb5f9cfadb762811" name="a6191ca58d7ade6a3bb5f9cfadb762811"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6191ca58d7ade6a3bb5f9cfadb762811">&#9670;&nbsp;</a></span>ClassName()</h2>
@@ -670,10 +706,381 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a657ca80ff2b7964d3775a44f895be1ec" name="a657ca80ff2b7964d3775a44f895be1ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a657ca80ff2b7964d3775a44f895be1ec">&#9670;&nbsp;</a></span>GetHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCCellGraphic::GetHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the graphic rectangle's height, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a32d71925d70fba72b3a3b71456521668" name="a32d71925d70fba72b3a3b71456521668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32d71925d70fba72b3a3b71456521668">&#9670;&nbsp;</a></span>GetHorizontalPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCCellGraphic::GetHorizontalPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the graphic rectangle's left-side position, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a9ba271d2069e3069506c50d14786995d" name="a9ba271d2069e3069506c50d14786995d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba271d2069e3069506c50d14786995d">&#9670;&nbsp;</a></span>GetOriginalHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCCellGraphic::GetOriginalHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the original graphic rectangle's height (before stretching), in EVPUs. </p>
+<p >Lua-supported (also as a read-only property). </p>
+
+</div>
+</div>
+<a id="a23ff10e52717a85122543b41fa0cedb5" name="a23ff10e52717a85122543b41fa0cedb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ff10e52717a85122543b41fa0cedb5">&#9670;&nbsp;</a></span>GetOriginalWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCCellGraphic::GetOriginalWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the original graphic rectangle's width (before stretching), in EVPUs. </p>
+<p >Lua-supported (also as a read-only property). </p>
+
+</div>
+</div>
+<a id="ae062617dc585cbcb5c49e5803461e6d1" name="ae062617dc585cbcb5c49e5803461e6d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae062617dc585cbcb5c49e5803461e6d1">&#9670;&nbsp;</a></span>GetVerticalPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCCellGraphic::GetVerticalPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the graphic rectangle's bottom position, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a6e5d41e6120c9cae9c5c9c340ec01983" name="a6e5d41e6120c9cae9c5c9c340ec01983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e5d41e6120c9cae9c5c9c340ec01983">&#9670;&nbsp;</a></span>GetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCellGraphic::GetVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the visibility status of the page graphic. </p>
+<p >Lua-supported (also as property).</p>
+<dl class="section return"><dt>Returns</dt><dd>true = visible, false = invisible </dd></dl>
+
+</div>
+</div>
+<a id="ad457858c882c67bb077804b32dcc5ff5" name="ad457858c882c67bb077804b32dcc5ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad457858c882c67bb077804b32dcc5ff5">&#9670;&nbsp;</a></span>GetWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCCellGraphic::GetWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the graphic rectangle's width, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a3121bc2016dd8581830acf87973f0c84" name="a3121bc2016dd8581830acf87973f0c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3121bc2016dd8581830acf87973f0c84">&#9670;&nbsp;</a></span>IsEmbedded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCellGraphic::IsEmbedded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the graphic is embedded in the document. </p>
+<p >Lua-supported. </p>
+
+</div>
+</div>
+<a id="af968b04339f5741078731a208a47b3f8" name="af968b04339f5741078731a208a47b3f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af968b04339f5741078731a208a47b3f8">&#9670;&nbsp;</a></span>SetHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCellGraphic::SetHeight </td>
+          <td>(</td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>height</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the graphic rectangle's height, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a586ac81f25b6510c18a8817c45956ad9" name="a586ac81f25b6510c18a8817c45956ad9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586ac81f25b6510c18a8817c45956ad9">&#9670;&nbsp;</a></span>SetHorizontalPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCellGraphic::SetHorizontalPos </td>
+          <td>(</td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the graphic rectangle's left-side position, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a06d821a6c1f5cdaf5531782296e387c8" name="a06d821a6c1f5cdaf5531782296e387c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06d821a6c1f5cdaf5531782296e387c8">&#9670;&nbsp;</a></span>SetVerticalPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCellGraphic::SetVerticalPos </td>
+          <td>(</td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the graphic rectangle's bottom position, in EVPUs. </p>
+<p >If independent right page positioning is OFF, the same position value is also automatically set for the right page data.</p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a0c898f448736dba2fb37ab7cf67c3238" name="a0c898f448736dba2fb37ab7cf67c3238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c898f448736dba2fb37ab7cf67c3238">&#9670;&nbsp;</a></span>SetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCellGraphic::SetVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the visibility state of the graphic. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a2b93a3b13c128604125eb13bb629bb65" name="a2b93a3b13c128604125eb13bb629bb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b93a3b13c128604125eb13bb629bb65">&#9670;&nbsp;</a></span>SetWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCellGraphic::SetWidth </td>
+          <td>(</td>
+          <td class="paramtype">Evpu16&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the graphic rectangle's width, in EVPUs. </p>
+<p >Lua-supported (also as property). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 29 2022 19:23:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 16 2022 10:17:21 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
