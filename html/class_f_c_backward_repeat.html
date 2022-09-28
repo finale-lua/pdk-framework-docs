@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b3</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad998fa2860f9f6f21422148eecb93040"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_backward_repeat.html#ad998fa2860f9f6f21422148eecb93040">GetIndividualPositioning</a> () const</td></tr>
 <tr class="memdesc:ad998fa2860f9f6f21422148eecb93040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bracket has individual positioning.  <a href="class_f_c_backward_repeat.html#ad998fa2860f9f6f21422148eecb93040">More...</a><br /></td></tr>
 <tr class="separator:ad998fa2860f9f6f21422148eecb93040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f666a1ea6ded9009fa3697705a4a7aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_backward_repeat.html#a9f666a1ea6ded9009fa3697705a4a7aa">GetVisible</a> () const</td></tr>
+<tr class="memdesc:a9f666a1ea6ded9009fa3697705a4a7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the repeat is visible. ("Show" is checked in the context menu.)  <a href="class_f_c_backward_repeat.html#a9f666a1ea6ded9009fa3697705a4a7aa">More...</a><br /></td></tr>
+<tr class="separator:a9f666a1ea6ded9009fa3697705a4a7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af981700a062d53dc925c89d6a6f4fb01"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_backward_repeat.html#af981700a062d53dc925c89d6a6f4fb01">GetTotalPasses</a> () const</td></tr>
 <tr class="memdesc:af981700a062d53dc925c89d6a6f4fb01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of passes for the playback. This is used as value for "Jump on Pass" as well.  <a href="class_f_c_backward_repeat.html#af981700a062d53dc925c89d6a6f4fb01">More...</a><br /></td></tr>
 <tr class="separator:af981700a062d53dc925c89d6a6f4fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a6dd3ea7a0f017ee9e10163a235d4c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_backward_repeat.html#a6a6dd3ea7a0f017ee9e10163a235d4c6">SetIndividualPositioning</a> (bool state)</td></tr>
 <tr class="memdesc:a6a6dd3ea7a0f017ee9e10163a235d4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bracket has individual positioning.  <a href="class_f_c_backward_repeat.html#a6a6dd3ea7a0f017ee9e10163a235d4c6">More...</a><br /></td></tr>
 <tr class="separator:a6a6dd3ea7a0f017ee9e10163a235d4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0baef164e630fae84dffcb37e1d662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_backward_repeat.html#a5e0baef164e630fae84dffcb37e1d662">SetVisible</a> (bool state)</td></tr>
+<tr class="memdesc:a5e0baef164e630fae84dffcb37e1d662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the repeat is visible. ("Show" is checked in the context menu.)  <a href="class_f_c_backward_repeat.html#a5e0baef164e630fae84dffcb37e1d662">More...</a><br /></td></tr>
+<tr class="separator:a5e0baef164e630fae84dffcb37e1d662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ebc1126bdbcef62818d9d0e9bc8450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_backward_repeat.html#a59ebc1126bdbcef62818d9d0e9bc8450">SetTotalPasses</a> (twobyte passes)</td></tr>
 <tr class="memdesc:a59ebc1126bdbcef62818d9d0e9bc8450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of passes for the playback. This is used as value for "Jump on Pass" as well.  <a href="class_f_c_backward_repeat.html#a59ebc1126bdbcef62818d9d0e9bc8450">More...</a><br /></td></tr>
 <tr class="separator:a59ebc1126bdbcef62818d9d0e9bc8450"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1117,6 +1123,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a9f666a1ea6ded9009fa3697705a4a7aa" name="a9f666a1ea6ded9009fa3697705a4a7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f666a1ea6ded9009fa3697705a4a7aa">&#9670;&nbsp;</a></span>GetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCBackwardRepeat::GetVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the repeat is visible. ("Show" is checked in the context menu.) </p>
+<p >This value can be overridden staff-by-staff if <a class="el" href="class_f_c_backward_repeat.html#ad998fa2860f9f6f21422148eecb93040" title="Returns true if the bracket has individual positioning.">GetIndividualPositioning</a> is true. See <a class="el" href="class_f_c_separate_placement.html#a76cb11cc499df8bd9b993fae4f9a2cb6" title="Returns the visibility state. (Whether &quot;Show&quot; is checked in the context menu.)">FCSeparatePlacement::GetVisible</a>.</p>
+<p >Lua-supported (also as property) (0.65). </p>
+
+</div>
+</div>
 <a id="af999b30a34f3103eadd6067d68d392a0" name="af999b30a34f3103eadd6067d68d392a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af999b30a34f3103eadd6067d68d392a0">&#9670;&nbsp;</a></span>SetAction()</h2>
 
@@ -1483,10 +1518,39 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a5e0baef164e630fae84dffcb37e1d662" name="a5e0baef164e630fae84dffcb37e1d662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0baef164e630fae84dffcb37e1d662">&#9670;&nbsp;</a></span>SetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCBackwardRepeat::SetVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the repeat is visible. ("Show" is checked in the context menu.) </p>
+<p >Lua-supported (also as property) (0.65). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 10:17:20 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Sep 28 2022 15:08:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

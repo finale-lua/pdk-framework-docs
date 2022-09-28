@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b3</span>
    </div>
   </td>
  </tr>
@@ -347,6 +347,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd5c119e0fca9b4c49885d2b4cf3a713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_repeat.html#acd5c119e0fca9b4c49885d2b4cf3a713">SetIndividualPositioning</a> (bool state)</td></tr>
 <tr class="memdesc:acd5c119e0fca9b4c49885d2b4cf3a713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if individual positioning on different staves should be allowed..  <a href="class_f_c_text_repeat.html#acd5c119e0fca9b4c49885d2b4cf3a713">More...</a><br /></td></tr>
 <tr class="separator:acd5c119e0fca9b4c49885d2b4cf3a713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f42b9cb27b04a1cbc86257fba60c08b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_repeat.html#a9f42b9cb27b04a1cbc86257fba60c08b">GetVisible</a> () const</td></tr>
+<tr class="memdesc:a9f42b9cb27b04a1cbc86257fba60c08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the repeat is visible. ("Show" is checked in the context menu.)  <a href="class_f_c_text_repeat.html#a9f42b9cb27b04a1cbc86257fba60c08b">More...</a><br /></td></tr>
+<tr class="separator:a9f42b9cb27b04a1cbc86257fba60c08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8aa16dbe7f2f53073549d70bb91d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_repeat.html#a6c8aa16dbe7f2f53073549d70bb91d09">SetVisible</a> (bool state)</td></tr>
+<tr class="memdesc:a6c8aa16dbe7f2f53073549d70bb91d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the repeat is visible. ("Show" is checked in the context menu.)  <a href="class_f_c_text_repeat.html#a6c8aa16dbe7f2f53073549d70bb91d09">More...</a><br /></td></tr>
+<tr class="separator:a6c8aa16dbe7f2f53073549d70bb91d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65fbddd5f4e5352f238ca82dd6739d43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_text_repeat.html#a970e5b216f217e4735518a9d7b5c7dc5">REPSHOWMODES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_repeat.html#a65fbddd5f4e5352f238ca82dd6739d43">GetShowMode</a> () const</td></tr>
 <tr class="memdesc:a65fbddd5f4e5352f238ca82dd6739d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns where the text repeat should be shown.  <a href="class_f_c_text_repeat.html#a65fbddd5f4e5352f238ca82dd6739d43">More...</a><br /></td></tr>
 <tr class="separator:a65fbddd5f4e5352f238ca82dd6739d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1345,6 +1351,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a9f42b9cb27b04a1cbc86257fba60c08b" name="a9f42b9cb27b04a1cbc86257fba60c08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f42b9cb27b04a1cbc86257fba60c08b">&#9670;&nbsp;</a></span>GetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCTextRepeat::GetVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the repeat is visible. ("Show" is checked in the context menu.) </p>
+<p >This value can be overridden staff-by-staff if <a class="el" href="class_f_c_text_repeat.html#acb0438e0f6e7768789b1f9022b04f4e0" title="Returns if individual positioning on different staves should be allowed or not.">GetIndividualPositioning</a> is true. See <a class="el" href="class_f_c_separate_placement.html#a76cb11cc499df8bd9b993fae4f9a2cb6" title="Returns the visibility state. (Whether &quot;Show&quot; is checked in the context menu.)">FCSeparatePlacement::GetVisible</a>.</p>
+<p >Lua-supported (also as property) (0.65). </p>
+
+</div>
+</div>
 <a id="a1fd38185e4b3a05dac8edf0e8a0ac478" name="a1fd38185e4b3a05dac8edf0e8a0ac478"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fd38185e4b3a05dac8edf0e8a0ac478">&#9670;&nbsp;</a></span>SetAction()</h2>
 
@@ -1725,10 +1760,39 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a6c8aa16dbe7f2f53073549d70bb91d09" name="a6c8aa16dbe7f2f53073549d70bb91d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8aa16dbe7f2f53073549d70bb91d09">&#9670;&nbsp;</a></span>SetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCTextRepeat::SetVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the repeat is visible. ("Show" is checked in the context menu.) </p>
+<p >Lua-supported (also as property) (0.65). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 10:17:24 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Sep 28 2022 15:08:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

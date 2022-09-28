@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b3</span>
    </div>
   </td>
  </tr>
@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5338e6e29adc593c220651f3191f104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ending_repeat.html#ad5338e6e29adc593c220651f3191f104">GetIndividualPositioning</a> () const</td></tr>
 <tr class="memdesc:ad5338e6e29adc593c220651f3191f104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bracket has individual staff positioning enabled.  <a href="class_f_c_ending_repeat.html#ad5338e6e29adc593c220651f3191f104">More...</a><br /></td></tr>
 <tr class="separator:ad5338e6e29adc593c220651f3191f104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a257557983b1c9bdc78d4588205ec2a85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ending_repeat.html#a257557983b1c9bdc78d4588205ec2a85">GetVisible</a> () const</td></tr>
+<tr class="memdesc:a257557983b1c9bdc78d4588205ec2a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the repeat is visible. ("Show" is checked in the context menu.)  <a href="class_f_c_ending_repeat.html#a257557983b1c9bdc78d4588205ec2a85">More...</a><br /></td></tr>
+<tr class="separator:a257557983b1c9bdc78d4588205ec2a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e959c015191b20a92260d0ff686647a"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ending_repeat.html#a3e959c015191b20a92260d0ff686647a">GetVerticalTopBracketPosition</a> () const</td></tr>
 <tr class="memdesc:a3e959c015191b20a92260d0ff686647a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the top vertical position of the bracket.  <a href="class_f_c_ending_repeat.html#a3e959c015191b20a92260d0ff686647a">More...</a><br /></td></tr>
 <tr class="separator:a3e959c015191b20a92260d0ff686647a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac27119d413d4203a25bd6bde838d7ba7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ending_repeat.html#ac27119d413d4203a25bd6bde838d7ba7">SetIndividualPositioning</a> (bool state)</td></tr>
 <tr class="memdesc:ac27119d413d4203a25bd6bde838d7ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the repeat bracket has individual staff positioning enabled or not.  <a href="class_f_c_ending_repeat.html#ac27119d413d4203a25bd6bde838d7ba7">More...</a><br /></td></tr>
 <tr class="separator:ac27119d413d4203a25bd6bde838d7ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3691c9b5b28c4ffd9bfacb7d8aba5cd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ending_repeat.html#a3691c9b5b28c4ffd9bfacb7d8aba5cd5">SetVisible</a> (bool state)</td></tr>
+<tr class="memdesc:a3691c9b5b28c4ffd9bfacb7d8aba5cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the repeat is visible. ("Show" is checked in the context menu.)  <a href="class_f_c_ending_repeat.html#a3691c9b5b28c4ffd9bfacb7d8aba5cd5">More...</a><br /></td></tr>
+<tr class="separator:a3691c9b5b28c4ffd9bfacb7d8aba5cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab53def06be58f50ccb5a4c8f8f38b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ending_repeat.html#a0ab53def06be58f50ccb5a4c8f8f38b9">SetVerticalTopBracketPosition</a> (Evpu16 position)</td></tr>
 <tr class="memdesc:a0ab53def06be58f50ccb5a4c8f8f38b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the top vertical position of the repeat bracket.  <a href="class_f_c_ending_repeat.html#a0ab53def06be58f50ccb5a4c8f8f38b9">More...</a><br /></td></tr>
 <tr class="separator:a0ab53def06be58f50ccb5a4c8f8f38b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1324,6 +1330,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a257557983b1c9bdc78d4588205ec2a85" name="a257557983b1c9bdc78d4588205ec2a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a257557983b1c9bdc78d4588205ec2a85">&#9670;&nbsp;</a></span>GetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCEndingRepeat::GetVisible </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if the repeat is visible. ("Show" is checked in the context menu.) </p>
+<p >This value can be overridden staff-by-staff if <a class="el" href="class_f_c_ending_repeat.html#ad5338e6e29adc593c220651f3191f104" title="Returns true if the bracket has individual staff positioning enabled.">GetIndividualPositioning</a> is true. See <a class="el" href="class_f_c_separate_placement.html#a76cb11cc499df8bd9b993fae4f9a2cb6" title="Returns the visibility state. (Whether &quot;Show&quot; is checked in the context menu.)">FCSeparatePlacement::GetVisible</a>.</p>
+<p >Lua-supported (also as property) (0.65). </p>
+
+</div>
+</div>
 <a id="aec5125926dd19deabc3ce3081dc7c39b" name="aec5125926dd19deabc3ce3081dc7c39b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec5125926dd19deabc3ce3081dc7c39b">&#9670;&nbsp;</a></span>SaveTextString()</h2>
 
@@ -1759,14 +1794,43 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the top vertical position of the repeat bracket. </p>
-<p >Lua-supported (also as property). </p>
+<p >Lua-supported (also as property) (0.65). </p>
+
+</div>
+</div>
+<a id="a3691c9b5b28c4ffd9bfacb7d8aba5cd5" name="a3691c9b5b28c4ffd9bfacb7d8aba5cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3691c9b5b28c4ffd9bfacb7d8aba5cd5">&#9670;&nbsp;</a></span>SetVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCEndingRepeat::SetVisible </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the repeat is visible. ("Show" is checked in the context menu.) </p>
+<p >Lua-supported (also as property) (0.65). </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 16 2022 10:17:21 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Sep 28 2022 15:08:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
