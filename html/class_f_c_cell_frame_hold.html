@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
    </div>
   </td>
  </tr>
@@ -309,9 +309,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42e9b02affa5c2fd6022ba9f4eefe9e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_frame_hold.html#a42e9b02affa5c2fd6022ba9f4eefe9e6">CalcClefChange</a> ()</td></tr>
 <tr class="memdesc:a42e9b02affa5c2fd6022ba9f4eefe9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if there really is a clef change at the beginning of the cell.  <a href="class_f_c_cell_frame_hold.html#a42e9b02affa5c2fd6022ba9f4eefe9e6">More...</a><br /></td></tr>
 <tr class="separator:a42e9b02affa5c2fd6022ba9f4eefe9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a105cd0314dd96877937ee5a4c6d62cec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_frame_hold.html#a105cd0314dd96877937ee5a4c6d62cec">CalcHasFrame</a> ()</td></tr>
-<tr class="memdesc:a105cd0314dd96877937ee5a4c6d62cec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if this cell has a frame.  <a href="class_f_c_cell_frame_hold.html#a105cd0314dd96877937ee5a4c6d62cec">More...</a><br /></td></tr>
-<tr class="separator:a105cd0314dd96877937ee5a4c6d62cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa383ebbf979a7c0a8580fb12245dde57"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_frame_hold.html#aa383ebbf979a7c0a8580fb12245dde57">CalcHasFrame</a> () const</td></tr>
+<tr class="memdesc:aa383ebbf979a7c0a8580fb12245dde57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if this cell has a frame.  <a href="class_f_c_cell_frame_hold.html#aa383ebbf979a7c0a8580fb12245dde57">More...</a><br /></td></tr>
+<tr class="separator:aa383ebbf979a7c0a8580fb12245dde57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e2fb1c8f3c3d83276a9e9f18c71cf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_frame_hold.html#a30e2fb1c8f3c3d83276a9e9f18c71cf6">CalcHasFrameAtLayer</a> (int layernum) const</td></tr>
+<tr class="memdesc:a30e2fb1c8f3c3d83276a9e9f18c71cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if this cell has a frame for the specified layer.  <a href="class_f_c_cell_frame_hold.html#a30e2fb1c8f3c3d83276a9e9f18c71cf6">More...</a><br /></td></tr>
+<tr class="separator:a30e2fb1c8f3c3d83276a9e9f18c71cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa27cd5b21e0fb64ad7bb3d31bff00833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell_frame_hold.html#aa27cd5b21e0fb64ad7bb3d31bff00833">CalcMultiLayeredCell</a> ()</td></tr>
 <tr class="memdesc:aa27cd5b21e0fb64ad7bb3d31bff00833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if this cell has multiple layers.  <a href="class_f_c_cell_frame_hold.html#aa27cd5b21e0fb64ad7bb3d31bff00833">More...</a><br /></td></tr>
 <tr class="separator:aa27cd5b21e0fb64ad7bb3d31bff00833"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -694,8 +697,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a105cd0314dd96877937ee5a4c6d62cec" name="a105cd0314dd96877937ee5a4c6d62cec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a105cd0314dd96877937ee5a4c6d62cec">&#9670;&nbsp;</a></span>CalcHasFrame()</h2>
+<a id="aa383ebbf979a7c0a8580fb12245dde57" name="aa383ebbf979a7c0a8580fb12245dde57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa383ebbf979a7c0a8580fb12245dde57">&#9670;&nbsp;</a></span>CalcHasFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,7 +710,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">bool FCCellFrameHold::CalcHasFrame </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -719,6 +722,41 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Calculates if this cell has a frame. </p>
 <p >Lua-supported (0.62) </p>
+
+</div>
+</div>
+<a id="a30e2fb1c8f3c3d83276a9e9f18c71cf6" name="a30e2fb1c8f3c3d83276a9e9f18c71cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e2fb1c8f3c3d83276a9e9f18c71cf6">&#9670;&nbsp;</a></span>CalcHasFrameAtLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCellFrameHold::CalcHasFrameAtLayer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layernum</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates if this cell has a frame for the specified layer. </p>
+<p >Lua-supported (0.65)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layernum</td><td>the 1-based layer number to check </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1246,7 +1284,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 24 2022 06:40:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Dec 7 2022 07:40:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

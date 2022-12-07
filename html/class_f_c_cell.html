@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
    </div>
   </td>
  </tr>
@@ -106,9 +106,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab18de33a19b2b021e075cf84d4bdec5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#aab18de33a19b2b021e075cf84d4bdec5">CalcClefIndexAt</a> (TimeEdu32 pos)</td></tr>
 <tr class="memdesc:aab18de33a19b2b021e075cf84d4bdec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the clef index at a specific position in the cell.  <a href="class_f_c_cell.html#aab18de33a19b2b021e075cf84d4bdec5">More...</a><br /></td></tr>
 <tr class="separator:aab18de33a19b2b021e075cf84d4bdec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32669e4f3675fbbffbdbb5ccebd26445"><td class="memItemLeft" align="right" valign="top">TimeEdu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a32669e4f3675fbbffbdbb5ccebd26445">CalcDuration</a> ()</td></tr>
-<tr class="memdesc:a32669e4f3675fbbffbdbb5ccebd26445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the duration of the frame, according to the time signature.  <a href="class_f_c_cell.html#a32669e4f3675fbbffbdbb5ccebd26445">More...</a><br /></td></tr>
-<tr class="separator:a32669e4f3675fbbffbdbb5ccebd26445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c9a4886a8418588ff297cc7f314b44"><td class="memItemLeft" align="right" valign="top">TimeEdu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a32c9a4886a8418588ff297cc7f314b44">CalcDuration</a> () const</td></tr>
+<tr class="memdesc:a32c9a4886a8418588ff297cc7f314b44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the duration of the frame, according to the time signature.  <a href="class_f_c_cell.html#a32c9a4886a8418588ff297cc7f314b44">More...</a><br /></td></tr>
+<tr class="separator:a32c9a4886a8418588ff297cc7f314b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706ad0b0dbe625a54779ed41cbd7e758"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a706ad0b0dbe625a54779ed41cbd7e758">CalcContainsEntries</a> ()</td></tr>
+<tr class="memdesc:a706ad0b0dbe625a54779ed41cbd7e758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the cell contains entries in any layer. This function takes into account voiced linked parts.  <a href="class_f_c_cell.html#a706ad0b0dbe625a54779ed41cbd7e758">More...</a><br /></td></tr>
+<tr class="separator:a706ad0b0dbe625a54779ed41cbd7e758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a066a0c783418864fe9f7005b9adf625a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_key_signature.html">FCKeySignature</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_cell.html#a066a0c783418864fe9f7005b9adf625a">GetKeySignature</a> ()</td></tr>
 <tr class="memdesc:a066a0c783418864fe9f7005b9adf625a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the key signature object.  <a href="class_f_c_cell.html#a066a0c783418864fe9f7005b9adf625a">More...</a><br /></td></tr>
 <tr class="separator:a066a0c783418864fe9f7005b9adf625a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,8 +613,28 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a32669e4f3675fbbffbdbb5ccebd26445" name="a32669e4f3675fbbffbdbb5ccebd26445"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32669e4f3675fbbffbdbb5ccebd26445">&#9670;&nbsp;</a></span>CalcDuration()</h2>
+<a id="a706ad0b0dbe625a54779ed41cbd7e758" name="a706ad0b0dbe625a54779ed41cbd7e758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706ad0b0dbe625a54779ed41cbd7e758">&#9670;&nbsp;</a></span>CalcContainsEntries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCell::CalcContainsEntries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the cell contains entries in any layer. This function takes into account voiced linked parts. </p>
+<p >Lua-supported (0.65). </p>
+
+</div>
+</div>
+<a id="a32c9a4886a8418588ff297cc7f314b44" name="a32c9a4886a8418588ff297cc7f314b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c9a4886a8418588ff297cc7f314b44">&#9670;&nbsp;</a></span>CalcDuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -623,7 +646,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">TimeEdu32 FCCell::CalcDuration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1043,7 +1066,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 24 2022 06:40:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Dec 7 2022 07:40:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
