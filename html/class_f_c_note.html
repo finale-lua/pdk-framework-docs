@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
    </div>
   </td>
  </tr>
@@ -225,6 +225,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a12bf542cc0f6c13c9d4cdc1c11c74765"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a12bf542cc0f6c13c9d4cdc1c11c74765">CalcMIDIKey</a> ()</td></tr>
 <tr class="memdesc:a12bf542cc0f6c13c9d4cdc1c11c74765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the MIDI key number for the note.  <a href="class_f_c_note.html#a12bf542cc0f6c13c9d4cdc1c11c74765">More...</a><br /></td></tr>
 <tr class="separator:a12bf542cc0f6c13c9d4cdc1c11c74765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e113aac92074611fd4831bc4a84d160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a4e113aac92074611fd4831bc4a84d160">CalcVisibleInPart</a> () const</td></tr>
+<tr class="memdesc:a4e113aac92074611fd4831bc4a84d160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is visible in the current part or score. The only time it might be false is if the note is suppressed by voiced part settings. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a4e113aac92074611fd4831bc4a84d160">More...</a><br /></td></tr>
+<tr class="separator:a4e113aac92074611fd4831bc4a84d160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb1252531e817e0ba9be9803d505301"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a8fb1252531e817e0ba9be9803d505301">CalcIsTopNote</a> () const</td></tr>
+<tr class="memdesc:a8fb1252531e817e0ba9be9803d505301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is the top note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the top visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a8fb1252531e817e0ba9be9803d505301">More...</a><br /></td></tr>
+<tr class="separator:a8fb1252531e817e0ba9be9803d505301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ebdef12d97f4abb3277f65a932edee8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a7ebdef12d97f4abb3277f65a932edee8">CalcIsBottomNote</a> () const</td></tr>
+<tr class="memdesc:a7ebdef12d97f4abb3277f65a932edee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is the bottom visible note note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the bottom visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a7ebdef12d97f4abb3277f65a932edee8">More...</a><br /></td></tr>
+<tr class="separator:a7ebdef12d97f4abb3277f65a932edee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c36b2996229558f0d438c9975ac62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#ad3c36b2996229558f0d438c9975ac62b">SetMIDIKey</a> (twobyte midikey)</td></tr>
 <tr class="memdesc:ad3c36b2996229558f0d438c9975ac62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the MIDI key number for the note.  <a href="class_f_c_note.html#ad3c36b2996229558f0d438c9975ac62b">More...</a><br /></td></tr>
 <tr class="separator:ad3c36b2996229558f0d438c9975ac62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -629,6 +638,46 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7ebdef12d97f4abb3277f65a932edee8" name="a7ebdef12d97f4abb3277f65a932edee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebdef12d97f4abb3277f65a932edee8">&#9670;&nbsp;</a></span>CalcIsBottomNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::CalcIsBottomNote </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the note is the bottom visible note note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the bottom visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
+<p >Lua-supported (0.65). </p>
+
+</div>
+</div>
+<a id="a8fb1252531e817e0ba9be9803d505301" name="a8fb1252531e817e0ba9be9803d505301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb1252531e817e0ba9be9803d505301">&#9670;&nbsp;</a></span>CalcIsTopNote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::CalcIsTopNote </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the note is the top note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the top visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
+<p >Lua-supported (0.65). </p>
+
+</div>
+</div>
 <a id="a12bf542cc0f6c13c9d4cdc1c11c74765" name="a12bf542cc0f6c13c9d4cdc1c11c74765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12bf542cc0f6c13c9d4cdc1c11c74765">&#9670;&nbsp;</a></span>CalcMIDIKey()</h2>
 
@@ -828,6 +877,26 @@ Additional Inherited Members</h2></td></tr>
 <li>Positive values means a vertical position above the top staff line. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a4e113aac92074611fd4831bc4a84d160" name="a4e113aac92074611fd4831bc4a84d160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e113aac92074611fd4831bc4a84d160">&#9670;&nbsp;</a></span>CalcVisibleInPart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::CalcVisibleInPart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the note is visible in the current part or score. The only time it might be false is if the note is suppressed by voiced part settings. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
+<p >Lua-supported (0.65). </p>
 
 </div>
 </div>
@@ -2190,7 +2259,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 29 2022 19:23:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Dec 7 2022 07:40:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

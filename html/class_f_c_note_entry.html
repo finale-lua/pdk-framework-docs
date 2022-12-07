@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.64</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
    </div>
   </td>
  </tr>
@@ -530,6 +530,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ff3786e0ea4a16658efc742ed914aa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a2ff3786e0ea4a16658efc742ed914aa2">CalcGraceNoteIndex</a> ()</td></tr>
 <tr class="memdesc:a2ff3786e0ea4a16658efc742ed914aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the grace note index for the entry.  <a href="class_f_c_note_entry.html#a2ff3786e0ea4a16658efc742ed914aa2">More...</a><br /></td></tr>
 <tr class="separator:a2ff3786e0ea4a16658efc742ed914aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5572b9730ab230cd3441a831c14416eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a5572b9730ab230cd3441a831c14416eb">CalcNumberOfVisibleNotes</a> () const</td></tr>
+<tr class="memdesc:a5572b9730ab230cd3441a831c14416eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the number of notes visible in the current score or part view, taking into account any that may not be displayed due to voiced part settings. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note_entry.html#a5572b9730ab230cd3441a831c14416eb">More...</a><br /></td></tr>
+<tr class="separator:a5572b9730ab230cd3441a831c14416eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b423e1fc4a01ca6d15bc240b3cca7dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a1b423e1fc4a01ca6d15bc240b3cca7dc">CalcDisplaysAsRest</a> () const</td></tr>
+<tr class="memdesc:a1b423e1fc4a01ca6d15bc240b3cca7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if this entry displays as a rest in the current score or part view, taking into account the <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a> settings for a voiced part (if any).  <a href="class_f_c_note_entry.html#a1b423e1fc4a01ca6d15bc240b3cca7dc">More...</a><br /></td></tr>
+<tr class="separator:a1b423e1fc4a01ca6d15bc240b3cca7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2457712562aa8b7997b76cad767d1a9a"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a2457712562aa8b7997b76cad767d1a9a">CalcHighestStaffPosition</a> ()</td></tr>
 <tr class="memdesc:a2457712562aa8b7997b76cad767d1a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the highest staff position for a note in the entry's chord.  <a href="class_f_c_note_entry.html#a2457712562aa8b7997b76cad767d1a9a">More...</a><br /></td></tr>
 <tr class="separator:a2457712562aa8b7997b76cad767d1a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -623,9 +629,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ee0b69be339e22552dcf4782214577d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a1ee0b69be339e22552dcf4782214577d">IsNote</a> ()</td></tr>
 <tr class="memdesc:a1ee0b69be339e22552dcf4782214577d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if entry is a note.  <a href="class_f_c_note_entry.html#a1ee0b69be339e22552dcf4782214577d">More...</a><br /></td></tr>
 <tr class="separator:a1ee0b69be339e22552dcf4782214577d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01d6307fad474af19b815fba707e63c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#ae01d6307fad474af19b815fba707e63c">IsRest</a> ()</td></tr>
-<tr class="memdesc:ae01d6307fad474af19b815fba707e63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if entry is a rest.  <a href="class_f_c_note_entry.html#ae01d6307fad474af19b815fba707e63c">More...</a><br /></td></tr>
-<tr class="separator:ae01d6307fad474af19b815fba707e63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4126619e8b31d1a5f292168358d0176"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#aa4126619e8b31d1a5f292168358d0176">IsRest</a> () const</td></tr>
+<tr class="memdesc:aa4126619e8b31d1a5f292168358d0176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if entry is a rest.  <a href="class_f_c_note_entry.html#aa4126619e8b31d1a5f292168358d0176">More...</a><br /></td></tr>
+<tr class="separator:aa4126619e8b31d1a5f292168358d0176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35db76cc635dc4a3564e9fd197ac4e5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a35db76cc635dc4a3564e9fd197ac4e5e">IsDotted</a> ()</td></tr>
 <tr class="memdesc:a35db76cc635dc4a3564e9fd197ac4e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if it's a dotted entry.  <a href="class_f_c_note_entry.html#a35db76cc635dc4a3564e9fd197ac4e5e">More...</a><br /></td></tr>
 <tr class="separator:a35db76cc635dc4a3564e9fd197ac4e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1392,8 +1398,38 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the range of the highest and lowest note in a chord. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 for single notes and rests. Otherwise, the range of the chord (normally in steps). </dd></dl>
+
+</div>
+</div>
+<a id="a1b423e1fc4a01ca6d15bc240b3cca7dc" name="a1b423e1fc4a01ca6d15bc240b3cca7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b423e1fc4a01ca6d15bc240b3cca7dc">&#9670;&nbsp;</a></span>CalcDisplaysAsRest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNoteEntry::CalcDisplaysAsRest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates if this entry displays as a rest in the current score or part view, taking into account the <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a> settings for a voiced part (if any). </p>
+<p >Note that Finale may combine several entries into a single displayed rest if all the notes have been suppressed in the current voiced part. There is no simple way to detect the actual displayed rest in this case.</p>
+<p >Lua-supported (0.65) </p>
 
 </div>
 </div>
@@ -1544,6 +1580,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the highest displacement value found in the entry's chord. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 for rests. Otherwise, the highest displacement found in the entry's chord. </dd></dl>
 
@@ -1566,6 +1603,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finds the note with the highest pitch in the chord. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1573,7 +1611,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NULL for rests. Otherwise the note object that contains the highest pitch. If there's no note lower than the ceiling note, NULL is also returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL for rests or if all pitches are suppressed in a voiced part. Otherwise the note object that contains the highest pitch. If there's no note lower than the ceiling note, NULL is also returned. </dd></dl>
 
 </div>
 </div>
@@ -1593,6 +1631,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>For percussion notation, calculates the topmost percussion note. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported. </p>
 
 </div>
@@ -1613,6 +1652,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the highest staff position for a note in the entry's chord. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 for rests. Otherwise, the highest staff position for a note in the entry's chord. </dd></dl>
 
@@ -1696,9 +1736,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calculates the lowest displacement value found in the entry's chord. </p>
-<p >Lua-supported (0.55). </p><pre class="fragment">\return 0 for rests. Otherwise, the lowest displacement found in
-the entry's chord.
-</pre> 
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
+<p >Lua-supported (0.55).</p>
+<dl class="section return"><dt>Returns</dt><dd>0 for rests. Otherwise, the lowest displacement found in the entry's chord. </dd></dl>
+
 </div>
 </div>
 <a id="a658bfcc9173fe99af28bc703070897f2" name="a658bfcc9173fe99af28bc703070897f2"></a>
@@ -1718,6 +1759,7 @@ the entry's chord.
 </div><div class="memdoc">
 
 <p>Finds the note with the lowest pitch in the chord. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1725,7 +1767,7 @@ the entry's chord.
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>NULL for rests. Otherwise the note object that contains the lowest pitch. If there's no note higher than the floor note, NULL is also returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NULL for rests or if all pitches are suppressed in a voiced part. Otherwise the note object that contains the lowest pitch. If there's no note higher than the floor note, NULL is also returned. </dd></dl>
 
 </div>
 </div>
@@ -1745,6 +1787,7 @@ the entry's chord.
 </div><div class="memdoc">
 
 <p>For percussion notation, calculates the bottommost percussion note. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported. </p>
 
 </div>
@@ -1765,6 +1808,7 @@ the entry's chord.
 </div><div class="memdoc">
 
 <p>Calculates the lowest staff position for a note in the entry's chord. </p>
+<p >Starting in v0.65, this method skips any notes that are suppressed due to voiced parts. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) If you wish to process all notes, switch to the score before calling this function. (See <a class="el" href="class_f_c_part.html#aae9689cf15c71265b5711beb84cc5201" title="Sets the focus to this part (but does not set it in view).">FCPart::SwitchTo</a>.)</p>
 <p >Lua-supported (0.55).</p>
 <dl class="section return"><dt>Returns</dt><dd>0 for rests. Otherwise, the lowest staff position for a note in the entry's chord. </dd></dl>
 
@@ -1854,6 +1898,26 @@ the entry's chord.
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The truncated duration in EDUs. </dd></dl>
+
+</div>
+</div>
+<a id="a5572b9730ab230cd3441a831c14416eb" name="a5572b9730ab230cd3441a831c14416eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5572b9730ab230cd3441a831c14416eb">&#9670;&nbsp;</a></span>CalcNumberOfVisibleNotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCNoteEntry::CalcNumberOfVisibleNotes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the number of notes visible in the current score or part view, taking into account any that may not be displayed due to voiced part settings. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
+<p >Lua-supported (0.65) </p>
 
 </div>
 </div>
@@ -3892,8 +3956,8 @@ the entry's chord.
 
 </div>
 </div>
-<a id="ae01d6307fad474af19b815fba707e63c" name="ae01d6307fad474af19b815fba707e63c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae01d6307fad474af19b815fba707e63c">&#9670;&nbsp;</a></span>IsRest()</h2>
+<a id="aa4126619e8b31d1a5f292168358d0176" name="aa4126619e8b31d1a5f292168358d0176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4126619e8b31d1a5f292168358d0176">&#9670;&nbsp;</a></span>IsRest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3905,7 +3969,7 @@ the entry's chord.
           <td class="memname">bool FCNoteEntry::IsRest </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -5572,7 +5636,7 @@ the entry's chord.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 29 2022 19:23:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Dec 7 2022 07:40:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
