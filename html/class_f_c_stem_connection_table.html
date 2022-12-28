@@ -603,7 +603,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Elements in the stem connection table are accessed with 1-based connection ID functions. This class is <b>not</b> a collection.</p>
 <p >Technical thing: Finale 2012 has a new version, with a different array size. This new version is loaded on 2012 regardless on the compatibility setting during load.</p>
 <p >This class requires PDK_FRAMEWORK_PREFS to be defined during C++ compilation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>: if we ever implement an FCStemPrefs class for Finale 26.2 prefs, we'll need to refactor this to work similarly to <a class="el" href="class_f_c_tie_prefs.html#af7a5320e4c28721066007d0e94748833" title="Creates the tie placement prefs.">FCTiePrefs::CreateTiePlacementPrefs</a> and <a class="el" href="class_f_c_tie_prefs.html#a3c7296d162cde617bbef7188ea132f33" title="Saves the tie placement prefs.">FCTiePrefs::SaveTiePlacementPrefs</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>: if we ever implement an FCStemPrefs class for Finale 26.2 prefs, perhaps refactor this to work similarly to <a class="el" href="class_f_c_tie_prefs.html#af7a5320e4c28721066007d0e94748833" title="Creates the tie placement prefs.">FCTiePrefs::CreateTiePlacementPrefs</a> and <a class="el" href="class_f_c_tie_prefs.html#a3c7296d162cde617bbef7188ea132f33" title="Saves the tie placement prefs.">FCTiePrefs::SaveTiePlacementPrefs</a>. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0947eb70b372810032d19c450df4bae4" name="a0947eb70b372810032d19c450df4bae4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0947eb70b372810032d19c450df4bae4">&#9670;&nbsp;</a></span>FCStemConnectionTable()</h2>
@@ -904,12 +904,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the Enigma font ID for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The Enigma font ID. </dd></dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\return The Enigma font ID.
-</pre> 
 </div>
 </div>
 <a id="a4be52c7fc44ee81352efc3e4a4f7ec04" name="a4be52c7fc44ee81352efc3e4a4f7ec04"></a>
@@ -950,12 +953,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the font character for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The character slot. </dd></dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\return The character slot.
-</pre> 
 </div>
 </div>
 <a id="a3dd6fde32a198c376677cb7e1b3cf071" name="a3dd6fde32a198c376677cb7e1b3cf071"></a>
@@ -1106,12 +1112,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the downstem horizontal adjustment for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>The distance in EFIXes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\param [in] distance The distance in EFIXes.
-</pre> 
 </div>
 </div>
 <a id="a117fbdc3462c8d0a9b9430ac3958a123" name="a117fbdc3462c8d0a9b9430ac3958a123"></a>
@@ -1141,12 +1150,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the downstem vertical adjustment for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>The distance in EFIXes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\param [in] distance The distance in EFIXes.
-</pre> 
 </div>
 </div>
 <a id="af563dd45cb77ced999e9120967d41e7f" name="af563dd45cb77ced999e9120967d41e7f"></a>
@@ -1176,12 +1188,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the Enigma font ID for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fontid</td><td>The Enigma font ID. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\param [in] fontid The Enigma font ID.
-</pre> 
 </div>
 </div>
 <a id="a61c4f1915de6e0ae23565a08abd2d76e" name="a61c4f1915de6e0ae23565a08abd2d76e"></a>
@@ -1211,12 +1226,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the font character for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">character</td><td>The character slot. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\param [in] character The character slot.
-</pre> 
 </div>
 </div>
 <a id="a1345cd0112c86d34e2cf1869af0bbd8e" name="a1345cd0112c86d34e2cf1869af0bbd8e"></a>
@@ -1246,12 +1264,15 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the upstem horizontal adjustment for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>The distance in EFIXes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\param [in] distance The distance in EFIXes.
-</pre> 
 </div>
 </div>
 <a id="a0698c2e35a69f9af48d62f7164a7c140" name="a0698c2e35a69f9af48d62f7164a7c140"></a>
@@ -1281,18 +1302,21 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the upstem vertical adjustment for the notehead that has the stem connection data. </p>
-<pre class="fragment">Lua-supported.
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">connectionID</td><td>The 1-based connect ID in the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distance</td><td>The distance in EFIXes. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-\param [in] connectionID The 1-based connect ID in the table.
-
-\param [in] distance The distance in EFIXes.
-</pre> 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 7 2022 07:40:50 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Dec 27 2022 18:45:24 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
