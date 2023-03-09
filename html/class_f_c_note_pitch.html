@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -207,8 +207,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyFrom</b> (<a clas
 <tr class="memitem:a836c55b377a55de5a801f090d03a342d inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a836c55b377a55de5a801f090d03a342d">SetUpstemSplit</a> (bool state)</td></tr>
 <tr class="memdesc:a836c55b377a55de5a801f090d03a342d inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the upstem split state for the note.  <a href="class_f_c_note.html#a836c55b377a55de5a801f090d03a342d">More...</a><br /></td></tr>
 <tr class="separator:a836c55b377a55de5a801f090d03a342d inherit pub_methods_class_f_c_note"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbcbfaf00cdf83d1e38daa2ff2a234d inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d">CalcNumberOfLedgerLines</a> ()</td></tr>
+<tr class="memdesc:a6fbcbfaf00cdf83d1e38daa2ff2a234d inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of ledger lines the note appears on.  <a href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d">More...</a><br /></td></tr>
+<tr class="separator:a6fbcbfaf00cdf83d1e38daa2ff2a234d inherit pub_methods_class_f_c_note"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12f2adc55da3ca2b5ed7ca77fce176e inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#aa12f2adc55da3ca2b5ed7ca77fce176e">CalcOnLedgerLine</a> ()</td></tr>
-<tr class="memdesc:aa12f2adc55da3ca2b5ed7ca77fce176e inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note appears on a ledger line.  <a href="class_f_c_note.html#aa12f2adc55da3ca2b5ed7ca77fce176e">More...</a><br /></td></tr>
+<tr class="memdesc:aa12f2adc55da3ca2b5ed7ca77fce176e inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note appears specifically on a ledger line. The ledger line must coincide with the staff position of the note. If the note falls in a space above or below a ledger line, the function returns false. To determine if any particular note has ledger lines, use <a class="el" href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d" title="Returns the number of ledger lines the note appears on.">CalcNumberOfLedgerLines</a>.  <a href="class_f_c_note.html#aa12f2adc55da3ca2b5ed7ca77fce176e">More...</a><br /></td></tr>
 <tr class="separator:aa12f2adc55da3ca2b5ed7ca77fce176e inherit pub_methods_class_f_c_note"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007bedff08aee89bced3a7fcdb0ef810 inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a007bedff08aee89bced3a7fcdb0ef810">CalcCrossStaffNumber</a> ()</td></tr>
 <tr class="memdesc:a007bedff08aee89bced3a7fcdb0ef810 inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the staff ID that belongs to the cross staff note.  <a href="class_f_c_note.html#a007bedff08aee89bced3a7fcdb0ef810">More...</a><br /></td></tr>
@@ -264,6 +267,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyFrom</b> (<a clas
 <tr class="memitem:a9ee9a1fabb723a12f4a4a4167799883a inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a9ee9a1fabb723a12f4a4a4167799883a">IsNonAligned2nd</a> () const</td></tr>
 <tr class="memdesc:a9ee9a1fabb723a12f4a4a4167799883a inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this note is not aligned with its entry.  <a href="class_f_c_note.html#a9ee9a1fabb723a12f4a4a4167799883a">More...</a><br /></td></tr>
 <tr class="separator:a9ee9a1fabb723a12f4a4a4167799883a inherit pub_methods_class_f_c_note"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6942c0dc633827ed07829ac62a3e1e67 inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a6942c0dc633827ed07829ac62a3e1e67">MatchSpellingToScore</a> ()</td></tr>
+<tr class="memdesc:a6942c0dc633827ed07829ac62a3e1e67 inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts a part's note spelling to that of the score. It is useful for reversing an unlinked enharmonic flip.  <a href="class_f_c_note.html#a6942c0dc633827ed07829ac62a3e1e67">More...</a><br /></td></tr>
+<tr class="separator:a6942c0dc633827ed07829ac62a3e1e67 inherit pub_methods_class_f_c_note"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a5cad2cc5fb5e4077aefa7b5374435 inherit pub_methods_class_f_c_note"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a82a5cad2cc5fb5e4077aefa7b5374435">MarkForErase</a> ()</td></tr>
 <tr class="memdesc:a82a5cad2cc5fb5e4077aefa7b5374435 inherit pub_methods_class_f_c_note"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the note for erase when the entry is saved.  <a href="class_f_c_note.html#a82a5cad2cc5fb5e4077aefa7b5374435">More...</a><br /></td></tr>
 <tr class="separator:a82a5cad2cc5fb5e4077aefa7b5374435 inherit pub_methods_class_f_c_note"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -636,7 +642,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:23 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:53 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

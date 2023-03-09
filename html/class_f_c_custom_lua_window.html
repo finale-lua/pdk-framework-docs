@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa99161b9d5491f62dbe768115d8d8a49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aa99161b9d5491f62dbe768115d8d8a49">RegisterCloseWindow</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:aa99161b9d5491f62dbe768115d8d8a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f" title="Virtual handler method that is called when a window is closing. The Lua handler is called first.">CloseWindow()</a> event handler.  <a href="class_f_c_custom_lua_window.html#aa99161b9d5491f62dbe768115d8d8a49">More...</a><br /></td></tr>
 <tr class="separator:aa99161b9d5491f62dbe768115d8d8a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d2038087d6db20e27c30a63110ca76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#af8d2038087d6db20e27c30a63110ca76">RegisterHandleActivate</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:af8d2038087d6db20e27c30a63110ca76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e" title="Virtual handler method that is called when a window is activated or deactivated.">HandleActivate()</a> event handler.  <a href="class_f_c_custom_lua_window.html#af8d2038087d6db20e27c30a63110ca76">More...</a><br /></td></tr>
+<tr class="separator:af8d2038087d6db20e27c30a63110ca76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85578f7b660f9d6b037568a8728388f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a85578f7b660f9d6b037568a8728388f1">RegisterHandleTimer</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a85578f7b660f9d6b037568a8728388f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb" title="Virtual handler method that is called for each timer event.">HandleTimer()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a85578f7b660f9d6b037568a8728388f1">More...</a><br /></td></tr>
 <tr class="separator:a85578f7b660f9d6b037568a8728388f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a95064c4c4c43fc2019fec781ff51812f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f">CloseWindow</a> () override</td></tr>
 <tr class="memdesc:a95064c4c4c43fc2019fec781ff51812f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a window is closing. The Lua handler is called first.  <a href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f">More...</a><br /></td></tr>
 <tr class="separator:a95064c4c4c43fc2019fec781ff51812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6c513a1199d8a87710f716b43be74e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e">HandleActivate</a> (bool activated) override</td></tr>
+<tr class="memdesc:a3c6c513a1199d8a87710f716b43be74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a window is activated or deactivated.  <a href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e">More...</a><br /></td></tr>
+<tr class="separator:a3c6c513a1199d8a87710f716b43be74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb">HandleTimer</a> (twobyte timerID) override</td></tr>
 <tr class="memdesc:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called for each timer event.  <a href="class_f_c_custom_lua_window.html#a4ae14c8ae2cb53424f4f1f26ec1a15cb">More...</a><br /></td></tr>
 <tr class="separator:a4ae14c8ae2cb53424f4f1f26ec1a15cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -450,10 +456,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAndActivate</b> (
 <tr class="memitem:a57f2d0f4e70c0e7673c5066a71501375 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a57f2d0f4e70c0e7673c5066a71501375">HandleSwitcherSelect</a> (<a class="el" href="class_f_c_ctrl_switcher.html">FCCtrlSwitcher</a> *pControl, int switchindex)</td></tr>
 <tr class="memdesc:a57f2d0f4e70c0e7673c5066a71501375 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when a switcher control is clicked. Please note that switcher selections also produces calls to <a class="el" href="class_____f_c_user_window.html#a087d0240f4737eb1d819352b52bc458a" title="Virtual method that is called when a user command occurs, such as a button press.">HandleCommand</a>.  <a href="class_____f_c_user_window.html#a57f2d0f4e70c0e7673c5066a71501375">More...</a><br /></td></tr>
 <tr class="separator:a57f2d0f4e70c0e7673c5066a71501375 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae9a17c76d55bfca8d058d01cf978ca inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a9ae9a17c76d55bfca8d058d01cf978ca" name="a9ae9a17c76d55bfca8d058d01cf978ca"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleActivate</b> (bool activated)</td></tr>
-<tr class="memdesc:a9ae9a17c76d55bfca8d058d01cf978ca inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when the window is activated or deactivated. Overwrite in child classes. <br /></td></tr>
-<tr class="separator:a9ae9a17c76d55bfca8d058d01cf978ca inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1310823b2bf28c8d02a54b39e6ac9234 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a1310823b2bf28c8d02a54b39e6ac9234">HandleResize</a> (int newwidth, int newheight, int oldwidth, int oldheight)</td></tr>
 <tr class="memdesc:a1310823b2bf28c8d02a54b39e6ac9234 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handler called when user resizes the window.  <a href="class_____f_c_user_window.html#a1310823b2bf28c8d02a54b39e6ac9234">More...</a><br /></td></tr>
 <tr class="separator:a1310823b2bf28c8d02a54b39e6ac9234 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1123,6 +1125,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a3c6c513a1199d8a87710f716b43be74e" name="a3c6c513a1199d8a87710f716b43be74e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c6c513a1199d8a87710f716b43be74e">&#9670;&nbsp;</a></span>HandleActivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::HandleActivate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>activated</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when a window is activated or deactivated. </p>
+<p >Lua-supported through a callback function (0.66).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">activated</td><td>true if the window was activated and false if deactivated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#a9ae9a17c76d55bfca8d058d01cf978ca">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="ab1cb54662cbdec351cae106e5a3a480f" name="ab1cb54662cbdec351cae106e5a3a480f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1cb54662cbdec351cae106e5a3a480f">&#9670;&nbsp;</a></span>HandleCommand()</h2>
 
@@ -1517,6 +1556,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af8d2038087d6db20e27c30a63110ca76" name="af8d2038087d6db20e27c30a63110ca76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d2038087d6db20e27c30a63110ca76">&#9670;&nbsp;</a></span>RegisterHandleActivate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterHandleActivate </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e" title="Virtual handler method that is called when a window is activated or deactivated.">HandleActivate()</a> event handler. </p>
+<p >Lua-supported (0.64).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e" title="Virtual handler method that is called when a window is activated or deactivated.">HandleActivate</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
 <a id="a09fe8a8ed70c21da0e8279dd9f0b0b76" name="a09fe8a8ed70c21da0e8279dd9f0b0b76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09fe8a8ed70c21da0e8279dd9f0b0b76">&#9670;&nbsp;</a></span>RegisterHandleCancelButtonPressed()</h2>
 
@@ -1877,7 +1952,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Displays the dialog box as a modeless window. The dialog must have been registered with <code>finenv.RegisterModelessDialog()</code> or else <code>ShowModeless</code> fails. </p>
-<p ><a class="el" href="class_f_c_string.html#aa57db881cc96481776b35174cdbfc4c5" title="Sets the string to the folder for the running script file. The string is cleared if the script is run...">FCString::SetRunningLuaFolderPath</a> and <a class="el" href="class_f_c_string.html#a8709fa9ea5613bdac8da07ee5429d3a1" title="Sets the string to the folder for the running script file. The string is cleared if the script is run...">FCString::SetRunningLuaFilePath</a> <b>may not be accurate</b> once the modeless window is running. Use <code>finenv.RunningLuaFolderPath()</code> and <code>finenv.RunningLuaFilePath()</code> instead.</p>
 <p >Lua-supported (0.56).</p>
 <p >Example of usage: </p><div class="fragment"><div class="line">function plugindef()</div>
 <div class="line">    finaleplugin.HandlesUndo = true -- suppresses automatic Undo handling</div>
@@ -1913,7 +1987,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

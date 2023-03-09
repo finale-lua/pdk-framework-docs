@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -504,8 +504,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateWindow</b> (E
 <tr class="memdesc:a6738b3797d44e6326d7c53d4bea6f128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the height in pixels of the primary screen.  <a href="class_f_c_u_i.html#a6738b3797d44e6326d7c53d4bea6f128">More...</a><br /></td></tr>
 <tr class="separator:a6738b3797d44e6326d7c53d4bea6f128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad732dd70640d13950a864132534be78d"><td class="memItemLeft" align="right" valign="top">CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#ad732dd70640d13950a864132534be78d">DisplayTextExpressionDialog</a> (CMPER cmperinit=0)</td></tr>
-<tr class="memdesc:ad732dd70640d13950a864132534be78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the text expression definition selection dialog.  <a href="class_f_c_u_i.html#ad732dd70640d13950a864132534be78d">More...</a><br /></td></tr>
+<tr class="memdesc:ad732dd70640d13950a864132534be78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the expression selection dialog.  <a href="class_f_c_u_i.html#ad732dd70640d13950a864132534be78d">More...</a><br /></td></tr>
 <tr class="separator:ad732dd70640d13950a864132534be78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b0e9579fd581039926f8782965adf4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; CMPER, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#af5b0e9579fd581039926f8782965adf4">DisplayExpressionDialog</a> (CMPER cmperinit=0, bool isshape=false)</td></tr>
+<tr class="memdesc:af5b0e9579fd581039926f8782965adf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the expression selection dialog.  <a href="class_f_c_u_i.html#af5b0e9579fd581039926f8782965adf4">More...</a><br /></td></tr>
+<tr class="separator:af5b0e9579fd581039926f8782965adf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a583d269da50ee33b9b5e1d4fee891f6a"><td class="memItemLeft" align="right" valign="top">CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a583d269da50ee33b9b5e1d4fee891f6a">DisplayArticulationDialog</a> (CMPER cmperinit=0)</td></tr>
 <tr class="memdesc:a583d269da50ee33b9b5e1d4fee891f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the articulation definition selection dialog.  <a href="class_f_c_u_i.html#a583d269da50ee33b9b5e1d4fee891f6a">More...</a><br /></td></tr>
 <tr class="separator:a583d269da50ee33b9b5e1d4fee891f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1681,6 +1684,52 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af5b0e9579fd581039926f8782965adf4" name="af5b0e9579fd581039926f8782965adf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b0e9579fd581039926f8782965adf4">&#9670;&nbsp;</a></span>DisplayExpressionDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; CMPER, bool &gt; FCUI::DisplayExpressionDialog </td>
+          <td>(</td>
+          <td class="paramtype">CMPER&#160;</td>
+          <td class="paramname"><em>cmperinit</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isshape</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays the expression selection dialog. </p>
+<p >When the dialog box is closed, the previously active window automatically becomes active again.</p>
+<p >Lua-supported (0.66).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmperinit</td><td>The initial expression ID to select. Pass 0 for Finale's default selection. </td></tr>
+    <tr><td class="paramname">isshape</td><td>Pass true if the initial expression ID is a shape expression.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>On Lua, this returns two values:<ul>
+<li>The first value returned is the ID of the selected expression definition or 0 if the cancel button was pressed.</li>
+<li>The second value returned is a boolean indicating if the value is a shape expression. </li>
+</ul>
+</dd>
+<dd>
+On C++, the two values are returned as a std::pair. </dd></dl>
+
+</div>
+</div>
 <a id="aedd93a5534dfce727e59a4b25d8be121" name="aedd93a5534dfce727e59a4b25d8be121"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedd93a5534dfce727e59a4b25d8be121">&#9670;&nbsp;</a></span>DisplayShapeDialog()</h2>
 
@@ -1781,8 +1830,10 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Displays the text expression definition selection dialog. </p>
+<p>Displays the expression selection dialog. </p>
 <p >When the dialog box is closed, the previously active window automatically becomes active again.</p>
+<p >Despite the name of the function, the dialog box allows selection of both text and shape expressions. However, there is no way to determine if the returned id was for a text or shape expression.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>As of v0.66 this function is deprecated. Use <a class="el" href="class_f_c_u_i.html#af5b0e9579fd581039926f8782965adf4" title="Displays the expression selection dialog.">DisplayExpressionDialog</a> instead.</dd></dl>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if the cancel button was pressed. Otherwise, the selected text expression definition ID. </dd></dl>
 
@@ -2014,9 +2065,9 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the OS-dependent menu command for a specific item in one of Finale's main menus. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Because menu item text differs between languages and sometimes even between Finale versions and platforms, it is recommended to use this function only as part of code development. Hardcode the return value from this function in your source code and then pass that hardcoded value to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> in the production version of your script or program.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Because menu item text differs between languages and sometimes even between Finale versions and platforms, it is recommended to use this function only as part of code development. Hardcode the return value from this function in your source code and then pass that hardcoded value to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> in the production version of your script or program. An exception to this is plug-ins. Because each system has a different set of plug-ins installed, there is no guarantee that a plug-in's menu command will be the same across systems and version.</dd></dl>
 <p>This function is dependent on the language in which Finale is running. Pass the menu item text for the currently running Finale, whichever language it happens to be. The strings should be encoded utf-8. For Lua scripts, the script file itself may be encoded utf-8 if it contains non-ASCII characters.</p>
-<p >OS menu command values remain constant from version to version of Finale, and they remain the same regardless of the language in which Finale is running. But they are different on macOS and Windows. If your code supports both operating systems, hardcode the value returned by this function on each platform and then use <a class="el" href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534" title="Returns true if the user runs on Windows.">IsOnWindows</a> or <a class="el" href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87" title="Returns true if the user runs on the Mac.">IsOnMac</a> to determine which value to pass to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a>.</p>
+<p >Except for plug-ins, OS menu command values remain constant from version to version of Finale, and they remain the same regardless of the language in which Finale is running. But they are different on macOS and Windows. If your code supports both operating systems, hardcode the value returned by this function on each platform and then use <a class="el" href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534" title="Returns true if the user runs on Windows.">IsOnWindows</a> or <a class="el" href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87" title="Returns true if the user runs on the Mac.">IsOnMac</a> to determine which value to pass to <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a>.</p>
 <p >For macOS, only Finale 2012 and later versions are supported.</p>
 <p >On Windows, menu hotkeys are ignored. Send the string the way it looks on screen. This allows the same text to work on either operating system.</p>
 <p >You only need to supply enough characters to uniquely identify the menu item. For example, if the menu item is "Open..." you only need to pass in "Open". Or if the top menu is "MIDI/Audio" you only need to pass in "MIDI". A match occurs when the first item is found whose text starts with the input string.</p>
@@ -2571,7 +2622,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:25 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

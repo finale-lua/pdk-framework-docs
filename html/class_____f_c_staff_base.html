@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -781,6 +781,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e478ac393cc6303bacb3cd4b3c72e08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a1e478ac393cc6303bacb3cd4b3c72e08">GetTranspose</a> () const</td></tr>
 <tr class="memdesc:a1e478ac393cc6303bacb3cd4b3c72e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the transposition status of the staff.  <a href="class_____f_c_staff_base.html#a1e478ac393cc6303bacb3cd4b3c72e08">More...</a><br /></td></tr>
 <tr class="separator:a1e478ac393cc6303bacb3cd4b3c72e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7506104f9973ce285052cea817d9b2b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a7506104f9973ce285052cea817d9b2b7">CalcTopStaffLinePosition</a> (bool forledgerlines=false) const</td></tr>
+<tr class="memdesc:a7506104f9973ce285052cea817d9b2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the staff position of the top staff line. For standard 5-lines staves, this value is 0.  <a href="class_____f_c_staff_base.html#a7506104f9973ce285052cea817d9b2b7">More...</a><br /></td></tr>
+<tr class="separator:a7506104f9973ce285052cea817d9b2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6cc00f4c73adad4a9cc801fa971421b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#af6cc00f4c73adad4a9cc801fa971421b">CalcBottomStaffLinePosition</a> (bool forledgerlines=false) const</td></tr>
+<tr class="memdesc:af6cc00f4c73adad4a9cc801fa971421b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the staff position of the bottom staff line. For standard 5-lines staves, this value is -8.  <a href="class_____f_c_staff_base.html#af6cc00f4c73adad4a9cc801fa971421b">More...</a><br /></td></tr>
+<tr class="separator:af6cc00f4c73adad4a9cc801fa971421b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51afac4f19d3913fe666f87330afdced"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a51afac4f19d3913fe666f87330afdced">SaveFullNameString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a51afac4f19d3913fe666f87330afdced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the full string. A full name text block ID must exist for the staff, otherwise this method will return false.  <a href="class_____f_c_staff_base.html#a51afac4f19d3913fe666f87330afdced">More...</a><br /></td></tr>
 <tr class="separator:a51afac4f19d3913fe666f87330afdced"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2815,6 +2821,60 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af6cc00f4c73adad4a9cc801fa971421b" name="af6cc00f4c73adad4a9cc801fa971421b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6cc00f4c73adad4a9cc801fa971421b">&#9670;&nbsp;</a></span>CalcBottomStaffLinePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __FCStaffBase::CalcBottomStaffLinePosition </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forledgerlines</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the staff position of the bottom staff line. For standard 5-lines staves, this value is -8. </p>
+<p >Lua-supported (0.66).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">forledgerlines</td><td>Set this value to true if you want the bottom staff line below which ledger lines will show. Set it false (or omit it) if you want the bottom visible staff line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7506104f9973ce285052cea817d9b2b7" name="a7506104f9973ce285052cea817d9b2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7506104f9973ce285052cea817d9b2b7">&#9670;&nbsp;</a></span>CalcTopStaffLinePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __FCStaffBase::CalcTopStaffLinePosition </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forledgerlines</em> = <code>false</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the staff position of the top staff line. For standard 5-lines staves, this value is 0. </p>
+<p >Lua-supported (0.66).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">forledgerlines</td><td>Set this value to true if you want the top staff line above which ledger lines will show. Set it false (or omit it) if you want the top visible staff line. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae58fef61c33aa6e77d7cd2b2e1b1e75d" name="ae58fef61c33aa6e77d7cd2b2e1b1e75d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae58fef61c33aa6e77d7cd2b2e1b1e75d">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -25905,7 +25965,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:21 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

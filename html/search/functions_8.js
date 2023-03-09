@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handleactivate_0',['HandleActivate',['../class_____f_c_user_window.html#a9ae9a17c76d55bfca8d058d01cf978ca',1,'__FCUserWindow']]],
+  ['handleactivate_0',['HandleActivate',['../class_____f_c_user_window.html#a9ae9a17c76d55bfca8d058d01cf978ca',1,'__FCUserWindow::HandleActivate()'],['../class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e',1,'FCCustomLuaWindow::HandleActivate()']]],
   ['handlecheckchange_1',['HandleCheckChange',['../class_f_c_ctrl_data_list.html#a5df9f6fd102ab7a778502f2f85211927',1,'FCCtrlDataList']]],
   ['handlecommand_2',['HandleCommand',['../class_____f_c_user_window.html#a087d0240f4737eb1d819352b52bc458a',1,'__FCUserWindow::HandleCommand()'],['../class_f_c_custom_lua_window.html#ab1cb54662cbdec351cae106e5a3a480f',1,'FCCustomLuaWindow::HandleCommand(FCControl *pControl) override']]],
   ['handlecontrolevent_3',['HandleControlEvent',['../class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e',1,'FCCustomLuaWindow']]],

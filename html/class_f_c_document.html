@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -119,9 +119,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPathSpec</b> (void
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_SetID</b> (EDOCID docID)</td></tr>
 <tr class="memdesc:acc7a6c75256ebd13cc906eac2d41654b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly sets the ID. <br /></td></tr>
 <tr class="separator:acc7a6c75256ebd13cc906eac2d41654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a261731843ab6715fc5fdc6d931bf32db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a261731843ab6715fc5fdc6d931bf32db">SwitchTo</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits)</td></tr>
-<tr class="memdesc:a261731843ab6715fc5fdc6d931bf32db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch document focus to this document and start a new (nested) undo/redo record, without closing the previous one. The document is not displayed visually.  <a href="class_f_c_document.html#a261731843ab6715fc5fdc6d931bf32db">More...</a><br /></td></tr>
-<tr class="separator:a261731843ab6715fc5fdc6d931bf32db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac367776ec9bd6e9bc9b4358ee8627345"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345">SwitchTo</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits, _state_ptr S=nullptr)</td></tr>
+<tr class="memdesc:ac367776ec9bd6e9bc9b4358ee8627345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch document focus to this document and start a new (nested) undo/redo record, without closing the previous one. The document is not displayed visually.  <a href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345">More...</a><br /></td></tr>
+<tr class="separator:ac367776ec9bd6e9bc9b4358ee8627345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310793ea965326171aa16a2dc818bb68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68">SwitchBack</a> (bool saveedits)</td></tr>
 <tr class="memdesc:a310793ea965326171aa16a2dc818bb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the started edit block and switch back to the previous document.  <a href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68">More...</a><br /></td></tr>
 <tr class="separator:a310793ea965326171aa16a2dc818bb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,14 +270,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a722dec6ae977251ef0643302afe5e456"><td class="memItemLeft" align="right" valign="top"><a id="a722dec6ae977251ef0643302afe5e456" name="a722dec6ae977251ef0643302afe5e456"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>_SetLastUndoString</b> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:a722dec6ae977251ef0643302afe5e456"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. This method should be called whenever a new undo block is started. <br /></td></tr>
-<tr class="separator:a722dec6ae977251ef0643302afe5e456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af88557885de0249fd3c5aae13a61a619"><td class="memItemLeft" align="right" valign="top"><a id="af88557885de0249fd3c5aae13a61a619" name="af88557885de0249fd3c5aae13a61a619"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastUndoString</b> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:af88557885de0249fd3c5aae13a61a619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the last undo string for the edit block. <br /></td></tr>
-<tr class="separator:af88557885de0249fd3c5aae13a61a619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d75cd9d067ca3ff7924fefaf9e4f24"><td class="memItemLeft" align="right" valign="top"><a id="a70d75cd9d067ca3ff7924fefaf9e4f24" name="a70d75cd9d067ca3ff7924fefaf9e4f24"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>_SetLastUndoString</b> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString, _state_ptr S _NOLUACODE(=nullptr))</td></tr>
+<tr class="memdesc:a70d75cd9d067ca3ff7924fefaf9e4f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. This method should be called whenever a new undo block is started. <br /></td></tr>
+<tr class="separator:a70d75cd9d067ca3ff7924fefaf9e4f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353a26a4def8bd679d4c81f5bac544cf"><td class="memItemLeft" align="right" valign="top"><a id="a353a26a4def8bd679d4c81f5bac544cf" name="a353a26a4def8bd679d4c81f5bac544cf"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastUndoString</b> (<a class="el" href="class_f_c_string.html">FCString</a> *pString, _state_ptr S _NOLUACODE(=nullptr))</td></tr>
+<tr class="memdesc:a353a26a4def8bd679d4c81f5bac544cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the last undo string for the edit block. <br /></td></tr>
+<tr class="separator:a353a26a4def8bd679d4c81f5bac544cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0794e87cb554d1f5be7e860f0aca8dd"><td class="memItemLeft" align="right" valign="top"><a id="af0794e87cb554d1f5be7e860f0aca8dd" name="af0794e87cb554d1f5be7e860f0aca8dd"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLastUndoString</b> (_state_ptr S)</td></tr>
+<tr class="memdesc:af0794e87cb554d1f5be7e860f0aca8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears out the last undo string from the std::map (for use when the session state terminates) <br /></td></tr>
+<tr class="separator:af0794e87cb554d1f5be7e860f0aca8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">DebugOutPtr</a> (const char *pszPrefixText, void *ptr)</td></tr>
 <tr class="memdesc:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The prefix text appears with the extra ptr (in hexadeximal representation) appearing afterwards.  <a href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">More...</a><br /></td></tr>
@@ -493,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for an opened Finale document. An opened Finale document has a 1-based ID and can be displayed in multiple document windows. </p>
-<p >Use <a class="el" href="class_f_c_document.html#a261731843ab6715fc5fdc6d931bf32db" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo()</a> to switch document context to another document. Make sure to <b>always</b> use <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> to move the context back to the original document.</p>
+<p >Use <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo()</a> to switch document context to another document. Make sure to <b>always</b> use <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> to move the context back to the original document.</p>
 <p >When switching to another document, please be aware that much of previously loaded data will not make sense in the context of the new document. Be especially careful while handling fonts and objects with linked data. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6031a0749ea65c0ce7f8fa46d0139105" name="a6031a0749ea65c0ce7f8fa46d0139105"></a>
@@ -966,7 +970,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remaps the object to the current document. </p>
-<p >This method will fail if the object is in an unresolved <a class="el" href="class_f_c_document.html#a261731843ab6715fc5fdc6d931bf32db" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo</a> statement. </p>
+<p >This method will fail if the object is in an unresolved <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo</a> statement. </p>
 
 </div>
 </div>
@@ -998,8 +1002,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a261731843ab6715fc5fdc6d931bf32db" name="a261731843ab6715fc5fdc6d931bf32db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a261731843ab6715fc5fdc6d931bf32db">&#9670;&nbsp;</a></span>SwitchTo()</h2>
+<a id="ac367776ec9bd6e9bc9b4358ee8627345" name="ac367776ec9bd6e9bc9b4358ee8627345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac367776ec9bd6e9bc9b4358ee8627345">&#9670;&nbsp;</a></span>SwitchTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1014,7 +1018,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>saveedits</em>&#160;</td>
+          <td class="paramname"><em>saveedits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_state_ptr&#160;</td>
+          <td class="paramname"><em>S</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1025,13 +1035,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Switch document focus to this document and start a new (nested) undo/redo record, without closing the previous one. The document is not displayed visually. </p>
-<p >A <a class="el" href="class_f_c_document.html#a261731843ab6715fc5fdc6d931bf32db" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo()</a> call <b>must</b> be combined with a subsequent <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> call.</p>
+<p >A <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo()</a> call <b>must</b> be combined with a subsequent <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> call.</p>
 <p >Since Undo/Redo stack can't handle edits through multiple documents, it's <b>very important</b> that plug-ins that switch and write to other documents create their own Undo/Redo event for that document.</p>
+<p >The state pointer is used to track the last undo string separately per state value. Lua automatically supplies the Lua state in this parameter, which means the script must omit it. C++ clients can supply a value (any pointer value associated with the state) or accept the NULL default, which means there is no separate state tracking.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pUndoString</td><td>The pointer to the Undo string. And object must be supplied.</td></tr>
     <tr><td class="paramname">saveedits</td><td><b>True</b> if the edits made in the current document should be kept in the edit block. <b>False</b> to cancel the edits.</td></tr>
+    <tr><td class="paramname">S</td><td>State pointer. (See comment above.) Lua scripts omit this parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1042,7 +1054,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

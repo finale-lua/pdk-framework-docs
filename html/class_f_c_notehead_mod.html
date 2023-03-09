@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -136,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1beed3f6eb60c911f19dc73b9272df21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_notehead_mod.html#a1beed3f6eb60c911f19dc73b9272df21">GetFontInfo</a> (<a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pInfo)</td></tr>
 <tr class="memdesc:a1beed3f6eb60c911f19dc73b9272df21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the font info (name, style, size) into the <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> object, for custom fonts records.  <a href="class_f_c_notehead_mod.html#a1beed3f6eb60c911f19dc73b9272df21">More...</a><br /></td></tr>
 <tr class="separator:a1beed3f6eb60c911f19dc73b9272df21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717abfd0098c7ff74df85ec56959403c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_notehead_mod.html#a717abfd0098c7ff74df85ec56959403c">GetEnharmonicFlip</a> () const</td></tr>
+<tr class="memdesc:a717abfd0098c7ff74df85ec56959403c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the notehead has been enharmonically flipped.  <a href="class_f_c_notehead_mod.html#a717abfd0098c7ff74df85ec56959403c">More...</a><br /></td></tr>
+<tr class="separator:a717abfd0098c7ff74df85ec56959403c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9358ef77ba4652780b1e2aea86f8e013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_notehead_mod.html#a9358ef77ba4652780b1e2aea86f8e013">SetHorizontalPos</a> (twobyte value)</td></tr>
 <tr class="memdesc:a9358ef77ba4652780b1e2aea86f8e013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the horizontal position for the notehead.  <a href="class_f_c_notehead_mod.html#a9358ef77ba4652780b1e2aea86f8e013">More...</a><br /></td></tr>
 <tr class="separator:a9358ef77ba4652780b1e2aea86f8e013"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +178,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ace7b98effaaa46ea6202e48d47f677a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_notehead_mod.html#ace7b98effaaa46ea6202e48d47f677a2">SetCustomChar</a> (eUniChar32 ch)</td></tr>
 <tr class="memdesc:ace7b98effaaa46ea6202e48d47f677a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font character for the notehead.  <a href="class_f_c_notehead_mod.html#ace7b98effaaa46ea6202e48d47f677a2">More...</a><br /></td></tr>
 <tr class="separator:ace7b98effaaa46ea6202e48d47f677a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6e11ba4ede0d98fe7b6ffb2ca48593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593">SetEnharmonicFlip</a> (bool status)</td></tr>
+<tr class="memdesc:a1b6e11ba4ede0d98fe7b6ffb2ca48593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks if the notehead should be enharmonically flipped.  <a href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593">More...</a><br /></td></tr>
+<tr class="separator:a1b6e11ba4ede0d98fe7b6ffb2ca48593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f88cc6ffd5d83951f626e67c4830baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_notehead_mod.html#a5f88cc6ffd5d83951f626e67c4830baf">ClearChar</a> ()</td></tr>
 <tr class="memdesc:a5f88cc6ffd5d83951f626e67c4830baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the font character for the notehead to use the default notehead character.  <a href="class_f_c_notehead_mod.html#a5f88cc6ffd5d83951f626e67c4830baf">More...</a><br /></td></tr>
 <tr class="separator:a5f88cc6ffd5d83951f626e67c4830baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -827,7 +833,36 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Returns the custom notehead, it any. </p>
 <p >Use the <a class="el" href="class_f_c_notehead_mod.html#a8006ce69de678fd065d7ce0d4a460d42" title="Returns true if there&#39;s a custom notehead.">GetUseCustomChar</a> method to detect if there actually is a custom notehead character available.</p>
-<p >Lua-supported (also as property). </p>
+<p >Lua-supported (also as read-only property). </p>
+
+</div>
+</div>
+<a id="a717abfd0098c7ff74df85ec56959403c" name="a717abfd0098c7ff74df85ec56959403c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a717abfd0098c7ff74df85ec56959403c">&#9670;&nbsp;</a></span>GetEnharmonicFlip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNoteheadMod::GetEnharmonicFlip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns if the notehead has been enharmonically flipped. </p>
+<p >See remarks at <a class="el" href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593" title="Marks if the notehead should be enharmonically flipped.">SetEnharmonicFlip</a> for more information about how to use this value.</p>
+<p >Lua-supported (also as property) (0.66). </p>
 
 </div>
 </div>
@@ -1212,6 +1247,71 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1b6e11ba4ede0d98fe7b6ffb2ca48593" name="a1b6e11ba4ede0d98fe7b6ffb2ca48593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6e11ba4ede0d98fe7b6ffb2ca48593">&#9670;&nbsp;</a></span>SetEnharmonicFlip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCNoteheadMod::SetEnharmonicFlip </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Marks if the notehead should be enharmonically flipped. </p>
+<p >Setting this value to true by itself does not change the note spelling. This value is one of three steps that are necessary to create an unlinked enharmonic flip in a part. The following Lua code shows how to enharmonically flip all the notes in a selected region in a part and have them unlink from the score. It also shows how to revert and relink to score. Run this code with the part in edit focus.</p>
+<div class="fragment"><div class="line">-- The `transposition library` is available at https://github.com/finale-lua/lua-scripts</div>
+<div class="line">-- The `transpose.enharmonic_transpose_default` function emulates observed Finale behavior.</div>
+<div class="line">-- Only default enharmonic transpositions unlink. Any other transposition remains linked.</div>
+<div class="line"> </div>
+<div class="line">local transpose = require(&#39;library.transposition&#39;)</div>
+<div class="line">for entry in eachentrysaved(finenv.Region()) do</div>
+<div class="line">    for note in each(entry) do</div>
+<div class="line">        local note_mod = finale.FCNoteheadMod()</div>
+<div class="line">        note_mod:SetNoteEntry(entry)</div>
+<div class="line">        note_mod:LoadAt(note)</div>
+<div class="line">        note_mod.EnharmonicFlip = not note_mod.EnharmonicFlip</div>
+<div class="line">        if note_mod.EnharmonicFlip then</div>
+<div class="line">            note_mod:SaveAt(note)</div>
+<div class="line">            transpose.enharmonic_transpose_default(note)</div>
+<div class="line">        else</div>
+<div class="line">            note_mod:DeleteData()</div>
+<div class="line">            note:MatchSpellingToScore()</div>
+<div class="line">            -- a refinement here would be only to re-save the FCNoteheadMod if there are other modifications in it.</div>
+<div class="line">            local score = finale.FCPart(finale.PARTID_SCORE)</div>
+<div class="line">            score:SwitchTo()</div>
+<div class="line">            note_mod:SaveAt(note)</div>
+<div class="line">            score:SwitchBack()</div>
+<div class="line">        end</div>
+<div class="line">    end</div>
+<div class="line">end</div>
+<div class="line"> </div>
+<div class="line">-- Resetting the StemUp properties may not be strictly necessary, but Finale does it.</div>
+<div class="line">-- This must be done in a separate loop so that the metrics are rebuilt from the saved changes above.</div>
+<div class="line"> </div>
+<div class="line">finale.FCEntryMetrics.MarkMetricsForRebuild()</div>
+<div class="line">for entry in eachentrysaved(finenv.Region()) do</div>
+<div class="line">    if not entry.FreezeStem then</div>
+<div class="line">        entry.StemUp = entry:CalcStemUp()</div>
+<div class="line">    end</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >Lua-supported (also as property) (0.66). </p>
 
 </div>
 </div>
@@ -1645,7 +1745,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:23 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

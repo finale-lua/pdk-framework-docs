@@ -77,7 +77,7 @@ var searchData=
   ['_5fsetheight_74',['_SetHeight',['../class_f_c_system_glyph_info.html#add83fc0fa632c1d01153004b4789fca6',1,'FCSystemGlyphInfo']]],
   ['_5fsetid_75',['_SetID',['../class_f_c_document.html#acc7a6c75256ebd13cc906eac2d41654b',1,'FCDocument']]],
   ['_5fsetitemhandle_76',['_SetItemHandle',['../class_f_c_tree_node.html#a70ae8bae95273783cc89607906c6e83e',1,'FCTreeNode']]],
-  ['_5fsetlastundostring_77',['_SetLastUndoString',['../class_f_c_document.html#a722dec6ae977251ef0643302afe5e456',1,'FCDocument']]],
+  ['_5fsetlastundostring_77',['_SetLastUndoString',['../class_f_c_document.html#a70d75cd9d067ca3ff7924fefaf9e4f24',1,'FCDocument']]],
   ['_5fsetleft_78',['_SetLeft',['../class_f_c_system_glyph_info.html#aab17c4bdcd21fe8083e50cddbe8f2cf5',1,'FCSystemGlyphInfo']]],
   ['_5fsetleftsidenoteid_79',['_SetLeftSideNoteID',['../class_f_c_smart_shape.html#aff0f26c31f5d0785da10b0f7d31c245f',1,'FCSmartShape']]],
   ['_5fsetmaxascent_80',['_SetMaxAscent',['../class_f_c_system_glyph_info.html#a23eda1831c795182f55829c495e06939',1,'FCSystemGlyphInfo']]],

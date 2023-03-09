@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c58cbfbf665e80add5f07ade297ff42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_beat_chart_element.html">FCBeatChartElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beat_chart_elements.html#a8c58cbfbf665e80add5f07ade297ff42">FindMeasurePos</a> (TimeEdu32 durationpos)</td></tr>
 <tr class="memdesc:a8c58cbfbf665e80add5f07ade297ff42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the first beat chart element with the given duration position.  <a href="class_f_c_beat_chart_elements.html#a8c58cbfbf665e80add5f07ade297ff42">More...</a><br /></td></tr>
 <tr class="separator:a8c58cbfbf665e80add5f07ade297ff42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f16ba7b668a5ba91bc974ed2459ea2"><td class="memItemLeft" align="right" valign="top">Evpu16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beat_chart_elements.html#aa0f16ba7b668a5ba91bc974ed2459ea2">CalcElementWidth</a> (int index)</td></tr>
+<tr class="memdesc:aa0f16ba7b668a5ba91bc974ed2459ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the effective element width of the specified index, irrespective of whether the beat chart is a manual or automatic beat chart. (See <a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448" title="Transitions a beat chart from automatic to manual. You should always call this before editing a beat ...">TransitionToManual</a> for more information.)  <a href="class_f_c_beat_chart_elements.html#aa0f16ba7b668a5ba91bc974ed2459ea2">More...</a><br /></td></tr>
+<tr class="separator:aa0f16ba7b668a5ba91bc974ed2459ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528f98075b897aa476738c3faadcaec8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beat_chart_elements.html#a528f98075b897aa476738c3faadcaec8">CalcIsManual</a> ()</td></tr>
+<tr class="memdesc:a528f98075b897aa476738c3faadcaec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates if the beat chart is manual. See <a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448" title="Transitions a beat chart from automatic to manual. You should always call this before editing a beat ...">TransitionToManual</a> for more information.  <a href="class_f_c_beat_chart_elements.html#a528f98075b897aa476738c3faadcaec8">More...</a><br /></td></tr>
+<tr class="separator:a528f98075b897aa476738c3faadcaec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae614669b32cf47bdf9cb17e4e8440448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448">TransitionToManual</a> ()</td></tr>
+<tr class="memdesc:ae614669b32cf47bdf9cb17e4e8440448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transitions a beat chart from automatic to manual. You should always call this before editing a beat chart.  <a href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448">More...</a><br /></td></tr>
+<tr class="separator:ae614669b32cf47bdf9cb17e4e8440448"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae033a12f2409a93b434ac7f2a75d1905"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beat_chart_elements.html#ae033a12f2409a93b434ac7f2a75d1905">RebuildAfter</a> (int index, bool updateinitrecord=false)</td></tr>
 <tr class="memdesc:ae033a12f2409a93b434ac7f2a75d1905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rebuilds the beat chart elements, based on correct "Next Measure Position" info.  <a href="class_f_c_beat_chart_elements.html#ae033a12f2409a93b434ac7f2a75d1905">More...</a><br /></td></tr>
 <tr class="separator:ae033a12f2409a93b434ac7f2a75d1905"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -589,6 +598,69 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa0f16ba7b668a5ba91bc974ed2459ea2" name="aa0f16ba7b668a5ba91bc974ed2459ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f16ba7b668a5ba91bc974ed2459ea2">&#9670;&nbsp;</a></span>CalcElementWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Evpu16 FCBeatChartElements::CalcElementWidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the effective element width of the specified index, irrespective of whether the beat chart is a manual or automatic beat chart. (See <a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448" title="Transitions a beat chart from automatic to manual. You should always call this before editing a beat ...">TransitionToManual</a> for more information.) </p>
+<p >Lua-supported (0.66).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>the 0-based index of the element. (Its value should be greater than zero and less than <a class="el" href="class_____f_c_collection.html#a8c47610c54ebedee7dcc5088f5f21048" title="Returns the number of elements of the collection.">GetCount</a>.) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a528f98075b897aa476738c3faadcaec8" name="a528f98075b897aa476738c3faadcaec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528f98075b897aa476738c3faadcaec8">&#9670;&nbsp;</a></span>CalcIsManual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCBeatChartElements::CalcIsManual </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates if the beat chart is manual. See <a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448" title="Transitions a beat chart from automatic to manual. You should always call this before editing a beat ...">TransitionToManual</a> for more information. </p>
+<p >Lua-supported (0.66). </p>
+
+</div>
+</div>
 <a id="a426c3919199301d779f0554e62d7678e" name="a426c3919199301d779f0554e62d7678e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a426c3919199301d779f0554e62d7678e">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -715,7 +787,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Rebuilds the beat chart elements, based on correct "Next Measure Position" info. </p>
-<p >Lua-supported.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This will probably not achieve the desired results unless the beat chart is a manual beat chart. See <a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448" title="Transitions a beat chart from automatic to manual. You should always call this before editing a beat ...">TransitionToManual</a> for more information.</dd></dl>
+<p>Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the beat chart was updated. false if the index was out of range, or if the collection contained too few items. </dd></dl>
 
 </div>
@@ -744,7 +817,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Rebuilds all the "next horizontal measure positions" in the beat chart chain. </p>
-<p >Lua-supported.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This will probably not achieve the desired results unless the beat chart is a manual beat chart. See <a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448" title="Transitions a beat chart from automatic to manual. You should always call this before editing a beat ...">TransitionToManual</a> for more information.</dd></dl>
+<p>Lua-supported.</p>
 <p >This method is used when the "next horizontal measure position" values are bad, but everything else is good. </p>
 
 </div>
@@ -778,10 +852,40 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae614669b32cf47bdf9cb17e4e8440448" name="ae614669b32cf47bdf9cb17e4e8440448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae614669b32cf47bdf9cb17e4e8440448">&#9670;&nbsp;</a></span>TransitionToManual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCBeatChartElements::TransitionToManual </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transitions a beat chart from automatic to manual. You should always call this before editing a beat chart. </p>
+<p >Finale has two different "modes" of beat charts. When you run note spacing on a measure, the beat chart is in "automatic" mode and the <a class="el" href="class_f_c_beat_chart_element.html#a0e2426f607986ab126da80f3bc099811" title="Returns the minimum position for the element.">FCBeatChartElement::GetMinimumPosition</a> values may override the <a class="el" href="class_f_c_beat_chart_element.html#a9c99a0e2a4c08298c1aa7899faa51421" title="Returns the position in the measure for the element (in EVPUs).">FCBeatChartElement::GetHorizontalPosition</a> values. It is not possible to edit these easily.</p>
+<p >However, when the user edits a beat chart using the beat chart handles, Finale transitions the beat chart to "manual" mode. In this mode, the only position values that matter are the <a class="el" href="class_f_c_beat_chart_element.html#a9c99a0e2a4c08298c1aa7899faa51421" title="Returns the position in the measure for the element (in EVPUs).">FCBeatChartElement::GetHorizontalPosition</a> values. This function transforms the beat chart in a similar way to how the user editing the beat chart handles does, allowing for straighforward modification of the spacing values. Depending on context, there may some slight shifting of the beat handles, due to the impracticality of fully replicating Finale's complex behavior in all circumstances.</p>
+<p >If the beat chart is already a manual beat chart, this function takes no action. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

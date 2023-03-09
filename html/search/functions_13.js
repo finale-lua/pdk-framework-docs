@@ -8,13 +8,14 @@ var searchData=
   ['tolowercase_5',['ToLowerCase',['../class_f_c_string.html#a17977de1a914981e42fd4f5102171f72',1,'FCString']]],
   ['tounicode_6',['ToUnicode',['../class_f_c_string.html#abc5cfafe6c11fd6b62ba47a3d6d05722',1,'FCString']]],
   ['touppercase_7',['ToUpperCase',['../class_f_c_string.html#ac401dab187d2810cbf0d89a7e53c3a16',1,'FCString']]],
-  ['trimenigmafonttags_8',['TrimEnigmaFontTags',['../class_f_c_string.html#adab3e386596e7de4c6e3590f6c58302b',1,'FCString']]],
-  ['trimenigmatags_9',['TrimEnigmaTags',['../class_f_c_string.html#af19e93762dc17baa5a6f6c87362e05a7',1,'FCString']]],
-  ['trimlinefeed_10',['TrimLinefeed',['../class_f_c_string.html#a344797f21a3a65ce5c015c8056eb11cf',1,'FCString']]],
-  ['trimwhitespace_11',['TrimWhitespace',['../class_f_c_string.html#a2e03d7bd871325ba1fc0e5b348dbddd4',1,'FCString']]],
-  ['trimwhitespaceall_12',['TrimWhitespaceAll',['../class_f_c_strings.html#a2a352f1c4b9dec27ede32048c2c79ef3',1,'FCStrings']]],
-  ['truncateat_13',['TruncateAt',['../class_f_c_string.html#aada8ebe4b6ff58b091a1b5f8a022e9c0',1,'FCString']]],
-  ['truncateend_14',['TruncateEnd',['../class_f_c_string.html#af894bc7927540da7ac637f664056fbe0',1,'FCString']]],
-  ['truncatewidth_15',['TruncateWidth',['../class_f_c_string.html#ae742e34a01676f5deb71196a5bb10865',1,'FCString']]],
-  ['trytoclosewindow_16',['TryToCloseWindow',['../class_____f_c_user_window.html#aba68680b4754e99e37fa7277e67ce060',1,'__FCUserWindow']]]
+  ['transitiontomanual_8',['TransitionToManual',['../class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448',1,'FCBeatChartElements']]],
+  ['trimenigmafonttags_9',['TrimEnigmaFontTags',['../class_f_c_string.html#adab3e386596e7de4c6e3590f6c58302b',1,'FCString']]],
+  ['trimenigmatags_10',['TrimEnigmaTags',['../class_f_c_string.html#af19e93762dc17baa5a6f6c87362e05a7',1,'FCString']]],
+  ['trimlinefeed_11',['TrimLinefeed',['../class_f_c_string.html#a344797f21a3a65ce5c015c8056eb11cf',1,'FCString']]],
+  ['trimwhitespace_12',['TrimWhitespace',['../class_f_c_string.html#a2e03d7bd871325ba1fc0e5b348dbddd4',1,'FCString']]],
+  ['trimwhitespaceall_13',['TrimWhitespaceAll',['../class_f_c_strings.html#a2a352f1c4b9dec27ede32048c2c79ef3',1,'FCStrings']]],
+  ['truncateat_14',['TruncateAt',['../class_f_c_string.html#aada8ebe4b6ff58b091a1b5f8a022e9c0',1,'FCString']]],
+  ['truncateend_15',['TruncateEnd',['../class_f_c_string.html#af894bc7927540da7ac637f664056fbe0',1,'FCString']]],
+  ['truncatewidth_16',['TruncateWidth',['../class_f_c_string.html#ae742e34a01676f5deb71196a5bb10865',1,'FCString']]],
+  ['trytoclosewindow_17',['TryToCloseWindow',['../class_____f_c_user_window.html#aba68680b4754e99e37fa7277e67ce060',1,'__FCUserWindow']]]
 ];

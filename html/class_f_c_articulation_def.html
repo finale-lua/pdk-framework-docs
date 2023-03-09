@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -386,6 +386,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96d0fb27c53eabe6c87be6fa5f829aa7"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_articulation_def.html#a96d0fb27c53eabe6c87be6fa5f829aa7">GetBottomVelocity</a> () const</td></tr>
 <tr class="memdesc:a96d0fb27c53eabe6c87be6fa5f829aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bottom Note Value for "Velocity" change of playback.  <a href="class_f_c_articulation_def.html#a96d0fb27c53eabe6c87be6fa5f829aa7">More...</a><br /></td></tr>
 <tr class="separator:a96d0fb27c53eabe6c87be6fa5f829aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8a532b9cb50b42d9278d03961facfc"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_articulation_def.html#aaa8a532b9cb50b42d9278d03961facfc">GetOnStemDistanceFromStemEnd</a> () const</td></tr>
+<tr class="memdesc:aaa8a532b9cb50b42d9278d03961facfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "On-stem distance from stem end/flag/beam" value.  <a href="class_f_c_articulation_def.html#aaa8a532b9cb50b42d9278d03961facfc">More...</a><br /></td></tr>
+<tr class="separator:aaa8a532b9cb50b42d9278d03961facfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f0ddaec2cbb1bc37a55584a6ad89757"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_articulation_def.html#a0f0ddaec2cbb1bc37a55584a6ad89757">GetAvoidStaffLines</a> () const</td></tr>
 <tr class="memdesc:a0f0ddaec2cbb1bc37a55584a6ad89757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Avoid staff lines" setting.  <a href="class_f_c_articulation_def.html#a0f0ddaec2cbb1bc37a55584a6ad89757">More...</a><br /></td></tr>
 <tr class="separator:a0f0ddaec2cbb1bc37a55584a6ad89757"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -600,6 +603,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFlippedSymbolFontU
 <tr class="memitem:a7081c5ce30bae84fdb51fd58de1ed1ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_articulation_def.html#a7081c5ce30bae84fdb51fd58de1ed1ce">SetBottomVelocity</a> (twobyte value)</td></tr>
 <tr class="memdesc:a7081c5ce30bae84fdb51fd58de1ed1ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Bottom Note Value for "Velocity" change of playback.  <a href="class_f_c_articulation_def.html#a7081c5ce30bae84fdb51fd58de1ed1ce">More...</a><br /></td></tr>
 <tr class="separator:a7081c5ce30bae84fdb51fd58de1ed1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b97905d258da745f528c3b5c18b03b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_articulation_def.html#a09b97905d258da745f528c3b5c18b03b">SetOnStemDistanceFromStemEnd</a> (twobyte value)</td></tr>
+<tr class="memdesc:a09b97905d258da745f528c3b5c18b03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the "On-stem distance from stem end/flag/beam" value.  <a href="class_f_c_articulation_def.html#a09b97905d258da745f528c3b5c18b03b">More...</a><br /></td></tr>
+<tr class="separator:a09b97905d258da745f528c3b5c18b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12889daff7acfc9b65cf7907693279e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_articulation_def.html#a12889daff7acfc9b65cf7907693279e9">SetVelocityIsPercent</a> (bool value)</td></tr>
 <tr class="memdesc:a12889daff7acfc9b65cf7907693279e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the "Values are percentages" for the "Velocity" playback change.  <a href="class_f_c_articulation_def.html#a12889daff7acfc9b65cf7907693279e9">More...</a><br /></td></tr>
 <tr class="separator:a12889daff7acfc9b65cf7907693279e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2209,6 +2215,27 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="aaa8a532b9cb50b42d9278d03961facfc" name="aaa8a532b9cb50b42d9278d03961facfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8a532b9cb50b42d9278d03961facfc">&#9670;&nbsp;</a></span>GetOnStemDistanceFromStemEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">twobyte FCArticulationDef::GetOnStemDistanceFromStemEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the "On-stem distance from stem end/flag/beam" value. </p>
+<p >This value is only available in Finale 26 and higher. Earlier versions always return 0.</p>
+<p >Lua-supported (also as property) (0.66). </p>
+
+</div>
+</div>
 <a id="a6fd2d7ca3f50fbdee7bcc5671211faa1" name="a6fd2d7ca3f50fbdee7bcc5671211faa1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fd2d7ca3f50fbdee7bcc5671211faa1">&#9670;&nbsp;</a></span>GetPlayback()</h2>
 
@@ -3659,6 +3686,28 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a09b97905d258da745f528c3b5c18b03b" name="a09b97905d258da745f528c3b5c18b03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b97905d258da745f528c3b5c18b03b">&#9670;&nbsp;</a></span>SetOnStemDistanceFromStemEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCArticulationDef::SetOnStemDistanceFromStemEnd </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the "On-stem distance from stem end/flag/beam" value. </p>
+<p >This value is only available in Finale 26 and higher. This function does nothing in earlier versions.</p>
+<p >Lua-supported (also as property) (0.66). </p>
+
+</div>
+</div>
 <a id="a5de173bdd7dd7f6e43823ae97ae521a2" name="a5de173bdd7dd7f6e43823ae97ae521a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5de173bdd7dd7f6e43823ae97ae521a2">&#9670;&nbsp;</a></span>SetPlayback()</h2>
 
@@ -3879,7 +3928,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

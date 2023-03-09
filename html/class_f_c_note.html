@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -198,8 +198,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a836c55b377a55de5a801f090d03a342d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a836c55b377a55de5a801f090d03a342d">SetUpstemSplit</a> (bool state)</td></tr>
 <tr class="memdesc:a836c55b377a55de5a801f090d03a342d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the upstem split state for the note.  <a href="class_f_c_note.html#a836c55b377a55de5a801f090d03a342d">More...</a><br /></td></tr>
 <tr class="separator:a836c55b377a55de5a801f090d03a342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbcbfaf00cdf83d1e38daa2ff2a234d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d">CalcNumberOfLedgerLines</a> ()</td></tr>
+<tr class="memdesc:a6fbcbfaf00cdf83d1e38daa2ff2a234d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of ledger lines the note appears on.  <a href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d">More...</a><br /></td></tr>
+<tr class="separator:a6fbcbfaf00cdf83d1e38daa2ff2a234d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12f2adc55da3ca2b5ed7ca77fce176e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#aa12f2adc55da3ca2b5ed7ca77fce176e">CalcOnLedgerLine</a> ()</td></tr>
-<tr class="memdesc:aa12f2adc55da3ca2b5ed7ca77fce176e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note appears on a ledger line.  <a href="class_f_c_note.html#aa12f2adc55da3ca2b5ed7ca77fce176e">More...</a><br /></td></tr>
+<tr class="memdesc:aa12f2adc55da3ca2b5ed7ca77fce176e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note appears specifically on a ledger line. The ledger line must coincide with the staff position of the note. If the note falls in a space above or below a ledger line, the function returns false. To determine if any particular note has ledger lines, use <a class="el" href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d" title="Returns the number of ledger lines the note appears on.">CalcNumberOfLedgerLines</a>.  <a href="class_f_c_note.html#aa12f2adc55da3ca2b5ed7ca77fce176e">More...</a><br /></td></tr>
 <tr class="separator:aa12f2adc55da3ca2b5ed7ca77fce176e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007bedff08aee89bced3a7fcdb0ef810"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a007bedff08aee89bced3a7fcdb0ef810">CalcCrossStaffNumber</a> ()</td></tr>
 <tr class="memdesc:a007bedff08aee89bced3a7fcdb0ef810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the staff ID that belongs to the cross staff note.  <a href="class_f_c_note.html#a007bedff08aee89bced3a7fcdb0ef810">More...</a><br /></td></tr>
@@ -255,6 +258,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ee9a1fabb723a12f4a4a4167799883a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a9ee9a1fabb723a12f4a4a4167799883a">IsNonAligned2nd</a> () const</td></tr>
 <tr class="memdesc:a9ee9a1fabb723a12f4a4a4167799883a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this note is not aligned with its entry.  <a href="class_f_c_note.html#a9ee9a1fabb723a12f4a4a4167799883a">More...</a><br /></td></tr>
 <tr class="separator:a9ee9a1fabb723a12f4a4a4167799883a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6942c0dc633827ed07829ac62a3e1e67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a6942c0dc633827ed07829ac62a3e1e67">MatchSpellingToScore</a> ()</td></tr>
+<tr class="memdesc:a6942c0dc633827ed07829ac62a3e1e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reverts a part's note spelling to that of the score. It is useful for reversing an unlinked enharmonic flip.  <a href="class_f_c_note.html#a6942c0dc633827ed07829ac62a3e1e67">More...</a><br /></td></tr>
+<tr class="separator:a6942c0dc633827ed07829ac62a3e1e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82a5cad2cc5fb5e4077aefa7b5374435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a82a5cad2cc5fb5e4077aefa7b5374435">MarkForErase</a> ()</td></tr>
 <tr class="memdesc:a82a5cad2cc5fb5e4077aefa7b5374435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks the note for erase when the entry is saved.  <a href="class_f_c_note.html#a82a5cad2cc5fb5e4077aefa7b5374435">More...</a><br /></td></tr>
 <tr class="separator:a82a5cad2cc5fb5e4077aefa7b5374435"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -719,6 +725,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a6fbcbfaf00cdf83d1e38daa2ff2a234d" name="a6fbcbfaf00cdf83d1e38daa2ff2a234d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbcbfaf00cdf83d1e38daa2ff2a234d">&#9670;&nbsp;</a></span>CalcNumberOfLedgerLines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCNote::CalcNumberOfLedgerLines </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of ledger lines the note appears on. </p>
+<p >Lua-supported (0.66).</p>
+<dl class="section return"><dt>Returns</dt><dd>positive - ledger lines above; 0 - no ledger lines; negative - ledger lines below </dd></dl>
+
+</div>
+</div>
 <a id="a84461156051f9c9e2c2935bbbe94644d" name="a84461156051f9c9e2c2935bbbe94644d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84461156051f9c9e2c2935bbbe94644d">&#9670;&nbsp;</a></span>CalcOctave()</h2>
 
@@ -775,7 +802,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if the note appears on a ledger line. </p>
+<p>Returns true if the note appears specifically on a ledger line. The ledger line must coincide with the staff position of the note. If the note falls in a space above or below a ledger line, the function returns false. To determine if any particular note has ledger lines, use <a class="el" href="class_f_c_note.html#a6fbcbfaf00cdf83d1e38daa2ff2a234d" title="Returns the number of ledger lines the note appears on.">CalcNumberOfLedgerLines</a>. </p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>False for rests. </dd></dl>
 
@@ -1739,9 +1766,31 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Marks the note for erase when the entry is saved. </p>
-<p >Please note that this shouldn't normally be called directly, instead use methods such as <a class="el" href="class_f_c_note_entry.html#ae1c1a49476618441ece24db72d030f20" title="Deletes a note from a chord. The note collection is rebuilt after the deletion.">FCNoteEntry.DeleteNote</a> to immediatelly remove the note.</p>
+<p >Please note that this shouldn't normally be called directly. Instead use methods such as <a class="el" href="class_f_c_note_entry.html#ae1c1a49476618441ece24db72d030f20" title="Deletes a note from a chord. The note collection is rebuilt after the deletion.">FCNoteEntry.DeleteNote</a> to immediatelly remove the note.</p>
 <p >This mechanism makes it possible to, for example, continue to iterate through a note collection (=chord) until the entry have been saved.</p>
 <p >Lua-supported. </p>
+
+</div>
+</div>
+<a id="a6942c0dc633827ed07829ac62a3e1e67" name="a6942c0dc633827ed07829ac62a3e1e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6942c0dc633827ed07829ac62a3e1e67">&#9670;&nbsp;</a></span>MatchSpellingToScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNote::MatchSpellingToScore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reverts a part's note spelling to that of the score. It is useful for reversing an unlinked enharmonic flip. </p>
+<p >This function does nothing if the score is in edit focus. Note that this function does not in itself relink the note's spelling to the score. To do that, you also must set <a class="el" href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593" title="Marks if the notehead should be enharmonically flipped.">FCNoteheadMod::SetEnharmonicFlip</a> to false and to delete the <a class="el" href="class_f_c_notehead_mod.html" title="Class for notehead modifications (as in Finale&#39;s Special Tools).">FCNoteheadMod</a> instance and re-add it with the score in edit focus (if it contains other notehead modifications).</p>
+<p >Lua-supported (0.66).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the spelling was changed, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -2259,7 +2308,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:23 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

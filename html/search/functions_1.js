@@ -101,7 +101,7 @@ var searchData=
   ['appendcstring_98',['AppendCString',['../class_f_c_string.html#acbb717cd3289d9fb55542f53a2597297',1,'FCString']]],
   ['appendentriesinlayer_99',['AppendEntriesInLayer',['../class_f_c_note_entry_cell.html#a2f29d54b6eb9ce0218ed8a240f23ca68',1,'FCNoteEntryCell']]],
   ['appendeol_100',['AppendEOL',['../class_f_c_string.html#a017b633575f8430ad016258bf442944b',1,'FCString']]],
-  ['appendfloat_101',['AppendFloat',['../class_f_c_string.html#a91ffd55ecb5a0610db09a179f2792948',1,'FCString']]],
+  ['appendfloat_101',['AppendFloat',['../class_f_c_string.html#a6027b7ad2be32a90ff3d76af56e4b700',1,'FCString']]],
   ['appendinteger_102',['AppendInteger',['../class_f_c_string.html#afda3557202242ca313a48c90380bfd19',1,'FCString']]],
   ['appendluastring_103',['AppendLuaString',['../class_f_c_string.html#a04898ed069ab068d6075f9eb4f0b568e',1,'FCString']]],
   ['appendstring_104',['AppendString',['../class_f_c_string.html#a92a84349d5f50caf8284fded14b5d855',1,'FCString']]],

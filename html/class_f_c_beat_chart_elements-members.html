@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -73,6 +73,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_collection_data.html#a038666b2c0cffe83e6d721399d8c755d">__FCCollectionData</a>()</td><td class="entry"><a class="el" href="class_____f_c_collection_data.html">__FCCollectionData</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_iterator_base.html#a485f8c37adc0654512f05a7c9fdc798d">__FCIteratorBase</a>()</td><td class="entry"><a class="el" href="class_____f_c_iterator_base.html">__FCIteratorBase</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_collection.html#a1ec61ac223b0d78d548f2cae87194e04">Add</a>(__FCBase *pNewItem)</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html#aa0f16ba7b668a5ba91bc974ed2459ea2">CalcElementWidth</a>(int index)</td><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html">FCBeatChartElements</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html#a528f98075b897aa476738c3faadcaec8">CalcIsManual</a>()</td><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html">FCBeatChartElements</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html#a426c3919199301d779f0554e62d7678e">ClassName</a>() override</td><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html">FCBeatChartElements</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_collection.html#a383ee71de97197f88b45b23b442ac0c7">ClearAll</a>()</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_collection.html#a3542e48a03001e2739b8e7ebbb1e4674">ClearItemAt</a>(int index)</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"></td></tr>
@@ -288,13 +290,14 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#af7d2e2b0e0539c06abb79be6ae559997">StoreXML_StringAttribute</a>(tinyxml2::XMLElement *pNode, const char *pszAttributeName, FCString *pStringValue)</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_collection.html#a8006be9eb15469e91a160ce64a433b41">Swap</a>(int index1, int index2)</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_collection.html#a6c84ab26adf4cf29e75dc0a2ea853624">ToEndFrom</a>(int index, FCIteratorHandler *pIterator)</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_____f_c_collection.html#ad229af78caa9d528028cab6b8dd63d77">UniqueAdd</a>(__FCBase *pNewItem)</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#aab08ccc118c52f8cf77b4257995f7d37">~__FCBase</a>()</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_____f_c_collection.html#a1e0d8cd4dcbee8cf0fed64463bce664b">~__FCCollection</a>()</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html#ae614669b32cf47bdf9cb17e4e8440448">TransitionToManual</a>()</td><td class="entry"><a class="el" href="class_f_c_beat_chart_elements.html">FCBeatChartElements</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_collection.html#ad229af78caa9d528028cab6b8dd63d77">UniqueAdd</a>(__FCBase *pNewItem)</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_____f_c_base.html#aab08ccc118c52f8cf77b4257995f7d37">~__FCBase</a>()</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_collection.html#a1e0d8cd4dcbee8cf0fed64463bce664b">~__FCCollection</a>()</td><td class="entry"><a class="el" href="class_____f_c_collection.html">__FCCollection</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

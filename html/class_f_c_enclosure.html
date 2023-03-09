@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.65</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
    </div>
   </td>
  </tr>
@@ -776,7 +776,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p >Some Finale classes embed the enclosure (specifically <a class="el" href="class_f_c_measure_number_region.html" title="The class for a measure number region.">FCMeasureNumberRegion</a> and <a class="el" href="class_f_c_separate_measure_number.html" title="Class for a manually added or edited measure number in a cell.">FCSeparateMeasureNumber</a>). For these, use the <b>GetEnclosure...</b> methods and do not use any constructor. The enclosure(s) will be saved when you save the parent class.</p>
 <p >Otherwise, you can use this constructor to create a new enclosure and assign it as follows:</p>
 <p ><a class="el" href="class_f_c_text_expression_def.html" title="Class for a text expression definition.">FCTextExpressionDef</a>: Call <a class="el" href="class_f_c_enclosure.html#a1ab13a17bc456b32868630f5ce0384bb" title="Overridden version of SaveAs.">SaveAs</a> on the constructed <a class="el" href="class_f_c_enclosure.html" title="Class to encapsulate enclosures (available for example in expressions and measure numbers....">FCEnclosure</a> instance, using the same item number as the instance of <a class="el" href="class_f_c_text_expression_def.html" title="Class for a text expression definition.">FCTextExpressionDef</a>.</p>
-<p ><a class="el" href="class_f_c_text_repeat_def.html" title="The class for a text repeat definition.">FCTextRepeatDef</a>: Use this contructor but call <a class="el" href="class_f_c_text_repeat_defs.html" title="Collection class for FCTextRepeatDef class objects.">FCTextRepeatDefs</a>:SaveEnclosure to save it.</p>
+<p ><a class="el" href="class_f_c_text_repeat_def.html" title="The class for a text repeat definition.">FCTextRepeatDef</a>: Use this contructor but call <a class="el" href="class_f_c_text_repeat_def.html#ad0018b9374c6480a63eea101ab412f4c" title="Saves the enclosure to the FCTextRepeatDef object.">FCTextRepeatDef::SaveEnclosure</a> to save it.</p>
 <p >For both, you should first check to see if there is an existing enclosure using either <a class="el" href="class_f_c_text_expression_def.html#aa870f8b2bbf3f7058352a76ba12f7361" title="Loads and creates an enclosure object. It&#39;s the caller&#39;s responsibility to free the allocated memory ...">FCTextExpressionDef::CreateEnclosure</a> or <a class="el" href="class_f_c_text_repeat_def.html#a2c18be70e3f285564d655631cfc145c7" title="Loads and returns a pointer to the loaded enclosure object for the text repeat.">FCTextRepeatDef::CreateEnclosure</a>. If the enclosure already exists, you do not need to use this constructor.</p>
 <p >Lua-supported (0.60). </p>
 
@@ -1558,7 +1558,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 27 2022 18:45:22 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 9 2023 07:10:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
