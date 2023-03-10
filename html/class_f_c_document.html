@@ -120,7 +120,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_SetID</b> (EDOCID do
 <tr class="memdesc:acc7a6c75256ebd13cc906eac2d41654b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directly sets the ID. <br /></td></tr>
 <tr class="separator:acc7a6c75256ebd13cc906eac2d41654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac367776ec9bd6e9bc9b4358ee8627345"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345">SwitchTo</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits, _state_ptr S=nullptr)</td></tr>
-<tr class="memdesc:ac367776ec9bd6e9bc9b4358ee8627345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch document focus to this document and start a new (nested) undo/redo record, without closing the previous one. The document is not displayed visually.  <a href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345">More...</a><br /></td></tr>
+<tr class="memdesc:ac367776ec9bd6e9bc9b4358ee8627345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch document focus to this document and start a new undo/redo record, without closing the previous one. The document is not displayed visually.  <a href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345">More...</a><br /></td></tr>
 <tr class="separator:ac367776ec9bd6e9bc9b4358ee8627345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310793ea965326171aa16a2dc818bb68"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68">SwitchBack</a> (bool saveedits)</td></tr>
 <tr class="memdesc:a310793ea965326171aa16a2dc818bb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the started edit block and switch back to the previous document.  <a href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68">More...</a><br /></td></tr>
@@ -497,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for an opened Finale document. An opened Finale document has a 1-based ID and can be displayed in multiple document windows. </p>
-<p >Use <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo()</a> to switch document context to another document. Make sure to <b>always</b> use <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> to move the context back to the original document.</p>
+<p >Use <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo()</a> to switch document context to another document. Make sure to <b>always</b> use <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> to move the context back to the original document.</p>
 <p >When switching to another document, please be aware that much of previously loaded data will not make sense in the context of the new document. Be especially careful while handling fonts and objects with linked data. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6031a0749ea65c0ce7f8fa46d0139105" name="a6031a0749ea65c0ce7f8fa46d0139105"></a>
@@ -970,7 +970,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Remaps the object to the current document. </p>
-<p >This method will fail if the object is in an unresolved <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo</a> statement. </p>
+<p >This method will fail if the object is in an unresolved <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a> statement. </p>
 
 </div>
 </div>
@@ -1034,11 +1034,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Switch document focus to this document and start a new (nested) undo/redo record, without closing the previous one. The document is not displayed visually. </p>
-<p >A <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new (nested) undo/redo record, without closing the...">SwitchTo()</a> call <b>must</b> be combined with a subsequent <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> call.</p>
-<p >Since Undo/Redo stack can't handle edits through multiple documents, it's <b>very important</b> that plug-ins that switch and write to other documents create their own Undo/Redo event for that document.</p>
+<p>Switch document focus to this document and start a new undo/redo record, without closing the previous one. The document is not displayed visually. </p>
+<p >A <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo()</a> call <b>must</b> be combined with a subsequent <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> call.</p>
+<p >Since Undo/Redo stack can't handle edits through multiple documents, it's <b>very important</b> that plug-ins that switch and write to other documents create their own Undo/Redo event for that document. Furthermore, Finale cannot hold two Undo/Redo events open at once, so you must end any current redo event.</p>
 <p >The state pointer is used to track the last undo string separately per state value. Lua automatically supplies the Lua state in this parameter, which means the script must omit it. C++ clients can supply a value (any pointer value associated with the state) or accept the NULL default, which means there is no separate state tracking.</p>
-<p >Lua-supported.</p>
+<p >Here is a Lua example that modifies all open documents while safely maintaining the Finale's Undo states. Note that the <code>saveedits</code> parameter is <code>false</code> on the call to <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. This discards any previous edits. The current edits get saved on the <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a> call.</p>
+<div class="fragment"><div class="line">local docs = finale.FCDocuments()</div>
+<div class="line">docs:LoadAll()</div>
+<div class="line">for doc in each(docs) do</div>
+<div class="line">    doc:SwitchTo(&quot;Multiple File Edit&quot;, false) -- Lua clients omit the state pointer</div>
+<div class="line">    local region = finale.FCMusicRegion()</div>
+<div class="line">    region:SetFullDocument()</div>
+<div class="line">    for entry in eachentrysaved(region) do</div>
+<div class="line">        entry.ManualPosition = entry.ManualPosition - 144</div>
+<div class="line">    end</div>
+<div class="line">    region:Redraw()</div>
+<div class="line">    doc:SwitchBack(true)</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pUndoString</td><td>The pointer to the Undo string. And object must be supplied.</td></tr>
@@ -1054,7 +1067,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2023 07:10:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Mar 10 2023 06:39:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

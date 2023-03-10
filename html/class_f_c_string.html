@@ -190,10 +190,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCString</b> ()</
 <tr class="memdesc:a6b997f1a6bb595c098e59ebcb17b8999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the path string to Finale's preference folder.  <a href="class_f_c_string.html#a6b997f1a6bb595c098e59ebcb17b8999">More...</a><br /></td></tr>
 <tr class="separator:a6b997f1a6bb595c098e59ebcb17b8999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e72d7113fdc61592ecf914077e3d2cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a5e72d7113fdc61592ecf914077e3d2cd">SetRunningLuaFolderPath</a> (_LUACODE(lua_State *L))</td></tr>
-<tr class="memdesc:a5e72d7113fdc61592ecf914077e3d2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for Lua callers.  <a href="class_f_c_string.html#a5e72d7113fdc61592ecf914077e3d2cd">More...</a><br /></td></tr>
+<tr class="memdesc:a5e72d7113fdc61592ecf914077e3d2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for Lua clients.  <a href="class_f_c_string.html#a5e72d7113fdc61592ecf914077e3d2cd">More...</a><br /></td></tr>
 <tr class="separator:a5e72d7113fdc61592ecf914077e3d2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93225e73f960a111aeb8ebe4672e7a5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a93225e73f960a111aeb8ebe4672e7a5a">SetRunningLuaFilePath</a> (_LUACODE(lua_State *L))</td></tr>
-<tr class="memdesc:a93225e73f960a111aeb8ebe4672e7a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for JW Lua.  <a href="class_f_c_string.html#a93225e73f960a111aeb8ebe4672e7a5a">More...</a><br /></td></tr>
+<tr class="memdesc:a93225e73f960a111aeb8ebe4672e7a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for Lua clients.  <a href="class_f_c_string.html#a93225e73f960a111aeb8ebe4672e7a5a">More...</a><br /></td></tr>
 <tr class="separator:a93225e73f960a111aeb8ebe4672e7a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab60001937e0878291fb5c021938e2514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab60001937e0878291fb5c021938e2514">Clear</a> ()</td></tr>
 <tr class="memdesc:ab60001937e0878291fb5c021938e2514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty string.  <a href="class_f_c_string.html#ab60001937e0878291fb5c021938e2514">More...</a><br /></td></tr>
@@ -3709,11 +3709,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for JW Lua. </p>
-<p >Please note that this method always sets to the main script file. Calling the method from any sub scripts (using "require" or similar) will still point to the main script file.</p>
-<p >It is recommended to use finenv.RunningLuaFilePath() instead with RGP Lua rather than this function. However, as of version 0.66, this function is full compatible with RGP Lua, and you can use it safely with scripts that need to be compatible with both RGP Lua and JW Lua.</p>
-<p >Lua-supported. </p>
-
+<p>Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for Lua clients. </p>
+<p >Please note that this method always sets to the main script file. Calling the method from any sub-scripts (using "require" or similar) will still point to the main script file.</p>
+<p >It is recommended to use finenv.RunningLuaFilePath() instead with RGP Lua rather than this function. However, as of version 0.66, this function is fully compatible with RGP Lua, and you can use it safely with scripts that need to be compatible with both RGP Lua and JW Lua.</p>
+<p >The state parameter L is supplied by Lua. Scripts should omit it.</p>
+<p >Lua-supported.</p>
+<p >Example of usage: </p><div class="fragment"><div class="line">local str = finale.FCString()</div>
+<div class="line">str:SetRunningLuaFilePath() -- omit state parameter</div>
+<div class="line">print(&quot;Script file path is &quot;..str.LuaString)</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a5e72d7113fdc61592ecf914077e3d2cd" name="a5e72d7113fdc61592ecf914077e3d2cd"></a>
@@ -3732,10 +3736,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for Lua callers. </p>
-<p >It is recommended to use finenv.RunningLuaFolderPath() with RGP Lua rather than this function. However, as of version 0.66, this function is full compatible with RGP Lua, and you can use it safely with scripts that need to be compatible with both RGP Lua and JW Lua.</p>
-<p >Lua-supported. </p>
-
+<p>Sets the string to the folder for the running script file. The string is cleared if the script is run without a file. Only available for Lua clients. </p>
+<p >It is recommended to use finenv.RunningLuaFolderPath() with RGP Lua rather than this function. However, as of version 0.66, this function is fully compatible with RGP Lua, and you can use it safely with scripts that need to be compatible with both RGP Lua and JW Lua.</p>
+<p >The state parameter L is supplied by Lua. Scripts should omit it.</p>
+<p >Lua-supported.</p>
+<p >Example of usage: </p><div class="fragment"><div class="line">local str = finale.FCString()</div>
+<div class="line">str:SetRunningLuaFolderPath() -- omit state parameter</div>
+<div class="line">print(&quot;Script folder path is &quot;..str.LuaString)</div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="aa50899560ee55792a71b1ae63e51a531" name="aa50899560ee55792a71b1ae63e51a531"></a>
@@ -4286,7 +4294,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2023 07:10:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Mar 10 2023 06:39:16 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
