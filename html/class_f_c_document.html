@@ -1038,7 +1038,7 @@ Additional Inherited Members</h2></td></tr>
 <p >A <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo()</a> call <b>must</b> be combined with a subsequent <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack()</a> call.</p>
 <p >Since Undo/Redo stack can't handle edits through multiple documents, it's <b>very important</b> that plug-ins that switch and write to other documents create their own Undo/Redo event for that document. Furthermore, Finale cannot hold two Undo/Redo events open at once, so you must end any current redo event.</p>
 <p >The state pointer is used to track the last undo string separately per state value. Lua automatically supplies the Lua state in this parameter, which means the script must omit it. C++ clients can supply a value (any pointer value associated with the state) or accept the NULL default, which means there is no separate state tracking.</p>
-<p >Here is a Lua example that modifies all open documents while safely maintaining the Finale's Undo states. Note that the <code>saveedits</code> parameter is <code>false</code> on the call to <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. This discards any previous edits. The current edits get saved on the <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a> call.</p>
+<p >Here is a Lua example that modifies all open documents while safely maintaining Finale's Undo states. Note that the <code>saveedits</code> parameter is <code>false</code> on the call to <a class="el" href="class_f_c_document.html#ac367776ec9bd6e9bc9b4358ee8627345" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. This discards any previous edits. The current edits get saved on the <a class="el" href="class_f_c_document.html#a310793ea965326171aa16a2dc818bb68" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a> call.</p>
 <div class="fragment"><div class="line">local docs = finale.FCDocuments()</div>
 <div class="line">docs:LoadAll()</div>
 <div class="line">for doc in each(docs) do</div>
@@ -1067,7 +1067,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 06:39:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Mar 10 2023 19:11:57 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
