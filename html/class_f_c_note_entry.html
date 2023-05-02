@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
    </div>
   </td>
  </tr>
@@ -291,9 +291,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a03127dfcfcca9cded90c30a1f05b44be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_note.html">FCNote</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a03127dfcfcca9cded90c30a1f05b44be">GetItemAt</a> (int index)</td></tr>
 <tr class="memdesc:a03127dfcfcca9cded90c30a1f05b44be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload version of <a class="el" href="class_f_c_note_entry.html#a03127dfcfcca9cded90c30a1f05b44be" title="Overload version of GetItemAt(), which returns a note object (if available) for the note entry.">GetItemAt()</a>, which returns a note object (if available) for the note entry.  <a href="class_f_c_note_entry.html#a03127dfcfcca9cded90c30a1f05b44be">More...</a><br /></td></tr>
 <tr class="separator:a03127dfcfcca9cded90c30a1f05b44be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d47f5f6ae7fe3d7ebb0ebd484077b2a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a6d47f5f6ae7fe3d7ebb0ebd484077b2a">ClassName</a> () override</td></tr>
-<tr class="memdesc:a6d47f5f6ae7fe3d7ebb0ebd484077b2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_note_entry.html#a6d47f5f6ae7fe3d7ebb0ebd484077b2a">More...</a><br /></td></tr>
-<tr class="separator:a6d47f5f6ae7fe3d7ebb0ebd484077b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bffb71881de41b66722083d048f178"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a45bffb71881de41b66722083d048f178">ClassName</a> () const override</td></tr>
+<tr class="memdesc:a45bffb71881de41b66722083d048f178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_note_entry.html#a45bffb71881de41b66722083d048f178">More...</a><br /></td></tr>
+<tr class="separator:a45bffb71881de41b66722083d048f178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd7547353c90124b15ef959b60c7ee4"><td class="memItemLeft" align="right" valign="top"><a id="abcd7547353c90124b15ef959b60c7ee4" name="abcd7547353c90124b15ef959b60c7ee4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FCNoteEntry</b> (EXENTRY *pEntry, EXTGF2005a *pFrame, <a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *pPrevious)</td></tr>
 <tr class="memdesc:abcd7547353c90124b15ef959b60c7ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
@@ -329,6 +329,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27cade2dde905f35ba6793dce5d32336"><td class="memItemLeft" align="right" valign="top">ENTNUM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a27cade2dde905f35ba6793dce5d32336">GetEntryNumber</a> () const</td></tr>
 <tr class="memdesc:a27cade2dde905f35ba6793dce5d32336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal entry number (ID) for the note entry.  <a href="class_f_c_note_entry.html#a27cade2dde905f35ba6793dce5d32336">More...</a><br /></td></tr>
 <tr class="separator:a27cade2dde905f35ba6793dce5d32336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138750e249a67f71f6ea2fa30493d52a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a138750e249a67f71f6ea2fa30493d52a">RelinkToCurrentView</a> ()</td></tr>
+<tr class="memdesc:a138750e249a67f71f6ea2fa30493d52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relinks the unlinkable items in the current view so that the score and part(s) match.  <a href="class_f_c_note_entry.html#a138750e249a67f71f6ea2fa30493d52a">More...</a><br /></td></tr>
+<tr class="separator:a138750e249a67f71f6ea2fa30493d52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cb690209c94f10e785c915fc7e9e21d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a9cb690209c94f10e785c915fc7e9e21d">RelinkToScore</a> ()</td></tr>
+<tr class="memdesc:a9cb690209c94f10e785c915fc7e9e21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relinks the unlinkable items in all parts to the contents of the score.  <a href="class_f_c_note_entry.html#a9cb690209c94f10e785c915fc7e9e21d">More...</a><br /></td></tr>
+<tr class="separator:a9cb690209c94f10e785c915fc7e9e21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04bd2281662471abe6bcf2f319bcc7e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a04bd2281662471abe6bcf2f319bcc7e2">SetNoteFlag</a> (bool state)</td></tr>
 <tr class="memdesc:a04bd2281662471abe6bcf2f319bcc7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the entry is a note or a rest.  <a href="class_f_c_note_entry.html#a04bd2281662471abe6bcf2f319bcc7e2">More...</a><br /></td></tr>
 <tr class="separator:a04bd2281662471abe6bcf2f319bcc7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -862,10 +868,6 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>ForEachIndex</
 <tr class="memitem:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">GetClassID</a> () const</td></tr>
 <tr class="memdesc:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">More...</a><br /></td></tr>
 <tr class="separator:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__FCBase</b> ()</td></tr>
-<tr class="memdesc:a19492e2b21a7db8115c11e9f82f935f5 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
-<tr class="separator:a19492e2b21a7db8115c11e9f82f935f5 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab08ccc118c52f8cf77b4257995f7d37 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="aab08ccc118c52f8cf77b4257995f7d37" name="aab08ccc118c52f8cf77b4257995f7d37"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~__FCBase</b> ()</td></tr>
 <tr class="memdesc:aab08ccc118c52f8cf77b4257995f7d37 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor, so all inherited classes get the virtual destructor. <br /></td></tr>
@@ -995,9 +997,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">DebugOutInt</a> (const char *pszPrefixText, int i)</td></tr>
 <tr class="memdesc:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in decimal presentation) appearing afterwards.  <a href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">More...</a><br /></td></tr>
 <tr class="separator:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">DebugOutFloat</a> (const char *pszPrefixText, float f)</td></tr>
-<tr class="memdesc:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra float value appearing afterwards.  <a href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">More...</a><br /></td></tr>
-<tr class="separator:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31af9b9986b8f3f0297843dff0a2e62 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#ac31af9b9986b8f3f0297843dff0a2e62">DebugOutFloat</a> (const char *pszPrefixText, double f)</td></tr>
+<tr class="memdesc:ac31af9b9986b8f3f0297843dff0a2e62 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra float value appearing afterwards.  <a href="class_____f_c_base.html#ac31af9b9986b8f3f0297843dff0a2e62">More...</a><br /></td></tr>
+<tr class="separator:ac31af9b9986b8f3f0297843dff0a2e62 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">DebugOutTag</a> (const char *pszPrefixText, EXTAG extag)</td></tr>
 <tr class="memdesc:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the EXTAG (in text) appearing afterwards.  <a href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">More...</a><br /></td></tr>
 <tr class="separator:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1025,6 +1027,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">DebugOut</a> (const char *pszLine)</td></tr>
 <tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
 <tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
+<tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__FCBase</b> ()</td></tr>
+<tr class="memdesc:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
+<tr class="separator:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Encapsulates a note entry from an owner class (for example <a class="el" href="class_f_c_note_entry_cell.html" title="Class that encapsulate a cell of note entries.">FCNoteEntryCell</a>, <a class="el" href="class_f_c_note_entry_layer.html" title="Class to load a layer on the same staff. This class is for example suitable when working with music l...">FCNoteEntryLayer</a>) class. </p>
@@ -2135,8 +2145,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d47f5f6ae7fe3d7ebb0ebd484077b2a" name="a6d47f5f6ae7fe3d7ebb0ebd484077b2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d47f5f6ae7fe3d7ebb0ebd484077b2a">&#9670;&nbsp;</a></span>ClassName()</h2>
+<a id="a45bffb71881de41b66722083d048f178" name="a45bffb71881de41b66722083d048f178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bffb71881de41b66722083d048f178">&#9670;&nbsp;</a></span>ClassName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2148,7 +2158,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">const char * FCNoteEntry::ClassName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -2161,7 +2171,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class. </p>
 <p >Lua-supported. </p>
 
-<p>Reimplemented from <a class="el" href="class_____f_c_collection.html#a419dc5f536257e86b386f0a0861d7a49">__FCCollection</a>.</p>
+<p>Reimplemented from <a class="el" href="class_____f_c_collection.html#a0c4c39e4c9ddd318e1e84261fac92ea1">__FCCollection</a>.</p>
 
 </div>
 </div>
@@ -4337,6 +4347,66 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a138750e249a67f71f6ea2fa30493d52a" name="a138750e249a67f71f6ea2fa30493d52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a138750e249a67f71f6ea2fa30493d52a">&#9670;&nbsp;</a></span>RelinkToCurrentView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNoteEntry::RelinkToCurrentView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relinks the unlinkable items in the current view so that the score and part(s) match. </p>
+<p >If the current edit focus is the score, the parts are relinked to the score. If the current edit focus is a part, all parts and score are linked with the values in the current part.</p>
+<p >You do not need to save the <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a> for the relink to take effect. Lua scripts may use either <code>eachentry</code>, <code>eachentrysaved</code>, or any other iteration technique, and the relink still happens.</p>
+<p >As of Finale 27.3, the following properties are unlinkable in <a class="el" href="class_f_c_note_entry.html" title="Encapsulates a note entry from an owner class (for example FCNoteEntryCell, FCNoteEntryLayer) class.">FCNoteEntry</a>:</p><ul>
+<li><a class="el" href="class_f_c_note_entry.html#aa2d2754f61f2b6a6f809eb611749b3cb" title="Gets the &quot;Freeze Stem&quot; state for the note entry.">GetFreezeStem</a></li>
+<li><a class="el" href="class_f_c_note_entry.html#a078057c4366e31b1a403aa8a2022d4b2" title="Gets the manual positioning of the entry.">GetManualPosition</a></li>
+<li><a class="el" href="class_f_c_note_entry.html#a10c0733d6007aaf82b9bd0d23fbf2549" title="Returns the state of the &quot;up&quot; bit for the entry. This is NOT the same as the true direction for the s...">GetStemUp</a></li>
+</ul>
+<p >This function relinks them all. Finale provides no means for a plugin to relink them selectively. That said, you can relink them all and then re-unlink the items yourself that you want to keep unlinked. Here is an example of how relink feeze stems while keeping manual positioning unlinked. (Run it with the part in edit focus.)</p>
+<div class="fragment"><div class="line">-- start with the part in edit focus</div>
+<div class="line">for entry in eachentrysaved(finenv.Region()) do</div>
+<div class="line">    -- save the unlinked manual positioning</div>
+<div class="line">    local manpos = entry.ManualPosition</div>
+<div class="line">    -- relink all unlinkable entry values to the score values</div>
+<div class="line">    entry:RelinkToScore()</div>
+<div class="line">    -- restore the unlinked manual positioning, which also unlinks it if the part is in edit focus.</div>
+<div class="line">    entry.ManualPosition = manpos</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >Lua-supported (0.67).</p>
+<dl class="section return"><dt>Returns</dt><dd>success if true </dd></dl>
+
+</div>
+</div>
+<a id="a9cb690209c94f10e785c915fc7e9e21d" name="a9cb690209c94f10e785c915fc7e9e21d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb690209c94f10e785c915fc7e9e21d">&#9670;&nbsp;</a></span>RelinkToScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCNoteEntry::RelinkToScore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Relinks the unlinkable items in all parts to the contents of the score. </p>
+<p >See additional comments at <a class="el" href="class_f_c_note_entry.html#a138750e249a67f71f6ea2fa30493d52a" title="Relinks the unlinkable items in the current view so that the score and part(s) match.">RelinkToCurrentView</a>.</p>
+<p >Lua-supported (0.67).</p>
+<dl class="section return"><dt>Returns</dt><dd>success if true </dd></dl>
+
+</div>
+</div>
 <a id="ac8414ae60ccc38a0c9ff8e48464e9358" name="ac8414ae60ccc38a0c9ff8e48464e9358"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8414ae60ccc38a0c9ff8e48464e9358">&#9670;&nbsp;</a></span>SetAccidentals()</h2>
 
@@ -5636,7 +5706,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 19:11:57 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 2 2023 15:09:08 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

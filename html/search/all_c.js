@@ -15,7 +15,7 @@ var searchData=
   ['makerehearsalmark_12',['MakeRehearsalMark',['../class_f_c_text_expression_def.html#a64b03abf0f0083ddc77b3adb93455f7c',1,'FCTextExpressionDef']]],
   ['makerest_13',['MakeRest',['../class_f_c_note_entry.html#af9644cef5b805f88f39779c35c439077',1,'FCNoteEntry']]],
   ['makestandard5linestaff_14',['MakeStandard5LineStaff',['../class_____f_c_staff_base.html#a9a719d3e09dcf377c03747e3327c393e',1,'__FCStaffBase']]],
-  ['makestring_15',['MakeString',['../class_f_c_key_signature.html#af86efce3ea428c6e0e337e335bad7275',1,'FCKeySignature::MakeString()'],['../class_f_c_time_signature.html#adc8bc4e944227031d3da074349479c54',1,'FCTimeSignature::MakeString()']]],
+  ['makestring_15',['MakeString',['../class_f_c_key_signature.html#a734561ae1d9908ee5f1736fd5d8a9d25',1,'FCKeySignature::MakeString()'],['../class_f_c_time_signature.html#adc8bc4e944227031d3da074349479c54',1,'FCTimeSignature::MakeString()']]],
   ['makesubstring_16',['MakeSubString',['../class_f_c_string.html#ae866ead61b114cee0ae6551f111ba923',1,'FCString']]],
   ['manual_5fpositioning_17',['MANUAL_POSITIONING',['../class_f_c_music_spacing_prefs.html#abb47d9cae04de44a929fb830fe040199',1,'FCMusicSpacingPrefs']]],
   ['markentrymetricsforupdate_18',['MarkEntryMetricsForUpdate',['../class_f_c_note_entry.html#afce30991c44a98750785a9ccbff56dc0',1,'FCNoteEntry']]],

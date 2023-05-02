@@ -32,7 +32,7 @@ var searchData=
   ['addentryfilter_29',['AddEntryFilter',['../class_f_c_lua_iterator.html#aac0db0cb8d18fa9f5ad5157581ba63a5',1,'FCLuaIterator']]],
   ['addfillsolid_30',['AddFillSolid',['../class_f_c_shape_def_instructions.html#ab470b18a5a756281e501219da6d2b9fc',1,'FCShapeDefInstructions']]],
   ['addfilter_31',['AddFilter',['../class_____f_c_file_dialog_base.html#a117a950435ebfc8493b5df4d81dd64b4',1,'__FCFileDialogBase']]],
-  ['addfloat_32',['AddFloat',['../class_f_c_numbers.html#a9aaa1f2849136c899ec658e68270e710',1,'FCNumbers']]],
+  ['addfloat_32',['AddFloat',['../class_f_c_numbers.html#a98fe1656ec454e00df286402f6c50d86',1,'FCNumbers']]],
   ['addfromcellentry_33',['AddFromCellEntry',['../class_f_c_note_pitches.html#afb7a3b661fa9ddf6a2e6276235cb6e02',1,'FCNotePitches']]],
   ['addfromentry_34',['AddFromEntry',['../class_f_c_note_pitches.html#acbc461fa2430f584d5acce6ae11a3135',1,'FCNotePitches']]],
   ['addgroup_35',['AddGroup',['../class_f_c_composite_time_sig_top.html#ae27d304dd3f3eacf6a8e94ca36674483',1,'FCCompositeTimeSigTop::AddGroup()'],['../class_f_c_composite_time_sig_bottom.html#ad392efb1f14c2a90b8404769671ce794',1,'FCCompositeTimeSigBottom::AddGroup()']]],
