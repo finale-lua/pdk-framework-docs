@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.66</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
    </div>
   </td>
  </tr>
@@ -278,9 +278,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a034544fbbe481322555c87212b8c1449"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a034544fbbe481322555c87212b8c1449">ClassName</a> () override</td></tr>
-<tr class="memdesc:a034544fbbe481322555c87212b8c1449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_control.html#a034544fbbe481322555c87212b8c1449">More...</a><br /></td></tr>
-<tr class="separator:a034544fbbe481322555c87212b8c1449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985f3cd82dc219f9407afd731e81e840"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a985f3cd82dc219f9407afd731e81e840">ClassName</a> () const override</td></tr>
+<tr class="memdesc:a985f3cd82dc219f9407afd731e81e840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_control.html#a985f3cd82dc219f9407afd731e81e840">More...</a><br /></td></tr>
+<tr class="separator:a985f3cd82dc219f9407afd731e81e840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a94891462114dc2e69a445df29780a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a7a94891462114dc2e69a445df29780a0">FCControl</a> (twobyte id, const __FCControlTypedPtr &amp;subclassPtr)</td></tr>
 <tr class="memdesc:a7a94891462114dc2e69a445df29780a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_control.html#a7a94891462114dc2e69a445df29780a0">More...</a><br /></td></tr>
 <tr class="separator:a7a94891462114dc2e69a445df29780a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,10 +392,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextAndResize</b> 
 <tr class="memitem:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">GetClassID</a> () const</td></tr>
 <tr class="memdesc:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">More...</a><br /></td></tr>
 <tr class="separator:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__FCBase</b> ()</td></tr>
-<tr class="memdesc:a19492e2b21a7db8115c11e9f82f935f5 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
-<tr class="separator:a19492e2b21a7db8115c11e9f82f935f5 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab08ccc118c52f8cf77b4257995f7d37 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="aab08ccc118c52f8cf77b4257995f7d37" name="aab08ccc118c52f8cf77b4257995f7d37"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~__FCBase</b> ()</td></tr>
 <tr class="memdesc:aab08ccc118c52f8cf77b4257995f7d37 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor, so all inherited classes get the virtual destructor. <br /></td></tr>
@@ -516,9 +512,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">DebugOutInt</a> (const char *pszPrefixText, int i)</td></tr>
 <tr class="memdesc:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra digit (in decimal presentation) appearing afterwards.  <a href="class_____f_c_base.html#a959ecc937d4af30eb2db0683848a653f">More...</a><br /></td></tr>
 <tr class="separator:a959ecc937d4af30eb2db0683848a653f inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">DebugOutFloat</a> (const char *pszPrefixText, float f)</td></tr>
-<tr class="memdesc:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra float value appearing afterwards.  <a href="class_____f_c_base.html#abb59d3133d6ff5a087ab530feac72e65">More...</a><br /></td></tr>
-<tr class="separator:abb59d3133d6ff5a087ab530feac72e65 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac31af9b9986b8f3f0297843dff0a2e62 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#ac31af9b9986b8f3f0297843dff0a2e62">DebugOutFloat</a> (const char *pszPrefixText, double f)</td></tr>
+<tr class="memdesc:ac31af9b9986b8f3f0297843dff0a2e62 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the extra float value appearing afterwards.  <a href="class_____f_c_base.html#ac31af9b9986b8f3f0297843dff0a2e62">More...</a><br /></td></tr>
+<tr class="separator:ac31af9b9986b8f3f0297843dff0a2e62 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">DebugOutTag</a> (const char *pszPrefixText, EXTAG extag)</td></tr>
 <tr class="memdesc:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The text appears with the EXTAG (in text) appearing afterwards.  <a href="class_____f_c_base.html#a82c116743f324c06b814de05b7626f9a">More...</a><br /></td></tr>
 <tr class="separator:a82c116743f324c06b814de05b7626f9a inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,6 +542,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">DebugOut</a> (const char *pszLine)</td></tr>
 <tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
 <tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
+<tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__FCBase</b> ()</td></tr>
+<tr class="memdesc:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
+<tr class="separator:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >brief Base class for all UI controls in a dialog.</p>
@@ -654,8 +655,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a034544fbbe481322555c87212b8c1449" name="a034544fbbe481322555c87212b8c1449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a034544fbbe481322555c87212b8c1449">&#9670;&nbsp;</a></span>ClassName()</h2>
+<a id="a985f3cd82dc219f9407afd731e81e840" name="a985f3cd82dc219f9407afd731e81e840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985f3cd82dc219f9407afd731e81e840">&#9670;&nbsp;</a></span>ClassName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -667,7 +668,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">const char * FCControl::ClassName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -680,9 +681,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class. </p>
 <p >Lua-supported. </p>
 
-<p>Reimplemented from <a class="el" href="class_____f_c_base.html#aacfbbd1979a79ad07a240b696d16d50f">__FCBase</a>.</p>
+<p>Implements <a class="el" href="class_____f_c_base.html#ae6707619ce470379b707bf2337d0791e">__FCBase</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_ctrl_up_down.html#a86819513c7b4f4c18c804949c6ec1700">FCCtrlUpDown</a>, <a class="el" href="class_f_c_ctrl_line.html#abe0a41ba040123fcf85e23e28c5a0dd2">FCCtrlLine</a>, <a class="el" href="class_f_c_ctrl_static.html#a6a6ae4fca5be16cdf7236ac206873fa5">FCCtrlStatic</a>, <a class="el" href="class_f_c_ctrl_edit.html#ac3f7ad2f8cfcf3cc935ce0c489be2d66">FCCtrlEdit</a>, <a class="el" href="class_f_c_ctrl_popup.html#ae8e0b160e7bcbcd0cfe8e212525ca9eb">FCCtrlPopup</a>, <a class="el" href="class_f_c_ctrl_combo_box.html#a7109d5c5d7782bb39e93e8aa79a4cb5b">FCCtrlComboBox</a>, <a class="el" href="class_f_c_ctrl_data_list.html#a530412b568f24839cbbcb4fb89b8a4e3">FCCtrlDataList</a>, <a class="el" href="class_f_c_ctrl_list_box.html#a0bdb8f9f7309268c42a3ed7521a0ad7b">FCCtrlListBox</a>, <a class="el" href="class_f_c_ctrl_tree.html#a02a4714f09838b92c71917b956b99bcb">FCCtrlTree</a>, <a class="el" href="class_f_c_ctrl_switcher.html#a1a06f8dec8f44e38752a72c9df5e6f38">FCCtrlSwitcher</a>, <a class="el" href="class_f_c_ctrl_radio_button.html#a227f6f9dbc2c8cdb0b99f08540658bf3">FCCtrlRadioButton</a>, <a class="el" href="class_f_c_ctrl_checkbox.html#a799d50428210c4133efbcb0503b3b40e">FCCtrlCheckbox</a>, <a class="el" href="class_f_c_ctrl_button.html#ac4ac003d214ce56d5177f4852097790f">FCCtrlButton</a>, <a class="el" href="class_f_c_ctrl_slider.html#aacdd88a4c5cb38113c5840f4d0558806">FCCtrlSlider</a>, and <a class="el" href="class_f_c_ctrl_image.html#a626816354615581bc7801aa2f993cf14">FCCtrlImage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_ctrl_up_down.html#ae5e34981803cc9a6048e91f895dbdf71">FCCtrlUpDown</a>, <a class="el" href="class_f_c_ctrl_line.html#a9399456503947490147ac8f6563fabd9">FCCtrlLine</a>, <a class="el" href="class_f_c_ctrl_static.html#aecf8fe8dd211679960f8510d35afe525">FCCtrlStatic</a>, <a class="el" href="class_f_c_ctrl_edit.html#a2c9c9753d71628d3ba9feca4831461c7">FCCtrlEdit</a>, <a class="el" href="class_f_c_ctrl_popup.html#a9f6a8f624e6d998770cc141f3a47ab77">FCCtrlPopup</a>, <a class="el" href="class_f_c_ctrl_combo_box.html#a427177eb0769f075c586a1b13352eda3">FCCtrlComboBox</a>, <a class="el" href="class_f_c_ctrl_data_list.html#a28ac6c80179de6a5e38f066c2f83b2a3">FCCtrlDataList</a>, <a class="el" href="class_f_c_ctrl_list_box.html#a563ac7773f613ba01b177af0d7fe387b">FCCtrlListBox</a>, <a class="el" href="class_f_c_ctrl_tree.html#a1433341c68e4d12c87076761f570aa10">FCCtrlTree</a>, <a class="el" href="class_f_c_ctrl_switcher.html#aead84576e148cdecd0f55b8c9d77e2e6">FCCtrlSwitcher</a>, <a class="el" href="class_f_c_ctrl_radio_button.html#a179e5ec0033d5e34617a3e92780e7270">FCCtrlRadioButton</a>, <a class="el" href="class_f_c_ctrl_checkbox.html#a049a9334da3a2f3ed9c1b5251fe038f9">FCCtrlCheckbox</a>, <a class="el" href="class_f_c_ctrl_button.html#ad7303d16e4b1b77699638d2b7ec247fb">FCCtrlButton</a>, <a class="el" href="class_f_c_ctrl_slider.html#a123ddd6df5c2cea968cffc8254af6b74">FCCtrlSlider</a>, and <a class="el" href="class_f_c_ctrl_image.html#a7f4d41e7f2bea9c449689140523b8680">FCCtrlImage</a>.</p>
 
 </div>
 </div>
@@ -1442,7 +1443,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2023 19:11:56 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 2 2023 15:09:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
