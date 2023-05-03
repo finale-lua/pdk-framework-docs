@@ -1813,7 +1813,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reverts a part's note spelling to that of the score. It is useful for reversing an unlinked enharmonic flip. </p>
-<p >This function does nothing if the score is in edit focus. Note that this function does not in itself relink the note's spelling to the score. To do that, you also must set <a class="el" href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593" title="Marks if the notehead should be enharmonically flipped.">FCNoteheadMod::SetEnharmonicFlip</a> to false and to relink the <a class="el" href="class_f_c_notehead_mod.html" title="Class for notehead modifications (as in Finale&#39;s Special Tools).">FCNoteheadMod</a> instance to the score (or delete it if there are no other notehead modifications). See <a class="el" href="class_____f_c_base_data.html#add885a30a80d36888424d08e7aa9211b" title="Relinks all parts to the contents of the score.">__FCBaseData::RelinkToScore</a>.</p>
+<p >This function does nothing if the score is in edit focus. Note that calling <a class="el" href="class_f_c_note.html#a6942c0dc633827ed07829ac62a3e1e67" title="Reverts a part&#39;s note spelling to that of the score. It is useful for reversing an unlinked enharmoni...">MatchSpellingToScore</a> does not in itself relink the note's spelling to the score. To do that, you also must set <a class="el" href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593" title="Marks if the notehead should be enharmonically flipped.">FCNoteheadMod::SetEnharmonicFlip</a> to false and relink the note's <a class="el" href="class_f_c_notehead_mod.html" title="Class for notehead modifications (as in Finale&#39;s Special Tools).">FCNoteheadMod</a> instance to the score (or delete it if there are no other notehead modifications). See <a class="el" href="class_____f_c_base_data.html#add885a30a80d36888424d08e7aa9211b" title="Relinks all parts to the contents of the score.">__FCBaseData::RelinkToScore</a>.</p>
+<p >See <a class="el" href="class_f_c_notehead_mod.html#a1b6e11ba4ede0d98fe7b6ffb2ca48593" title="Marks if the notehead should be enharmonically flipped.">FCNoteheadMod::SetEnharmonicFlip</a> for a complete Lua code example.</p>
 <p >Lua-supported (0.66).</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the spelling was changed, otherwise false. </dd></dl>
 
@@ -2333,7 +2334,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 2 2023 21:47:01 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed May 3 2023 08:55:46 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

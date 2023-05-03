@@ -89,10 +89,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a94a37a2d5b976d4cdf368472655ccbb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_transposer.html#a94a37a2d5b976d4cdf368472655ccbb4">More...</a><br /></td></tr>
 <tr class="separator:a94a37a2d5b976d4cdf368472655ccbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab737bb4e4691a425f4936e41490441d4"><td class="memItemLeft" align="right" valign="top">eHarmLev&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_transposer.html#ab737bb4e4691a425f4936e41490441d4">GetDisplacement</a> () const</td></tr>
-<tr class="memdesc:ab737bb4e4691a425f4936e41490441d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current displacement value. Before transposition, it is the value passed in on the contructor. After transpostion it is the transposed value.  <a href="class_f_c_transposer.html#ab737bb4e4691a425f4936e41490441d4">More...</a><br /></td></tr>
+<tr class="memdesc:ab737bb4e4691a425f4936e41490441d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current displacement value. Before transposition, it is the value passed in on the constructor. After transposition it is the transposed value.  <a href="class_f_c_transposer.html#ab737bb4e4691a425f4936e41490441d4">More...</a><br /></td></tr>
 <tr class="separator:ab737bb4e4691a425f4936e41490441d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa928d0adf9004933aaa9ed8b58e76110"><td class="memItemLeft" align="right" valign="top">eHarmLev&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_transposer.html#aa928d0adf9004933aaa9ed8b58e76110">GetRaiseLower</a> () const</td></tr>
-<tr class="memdesc:aa928d0adf9004933aaa9ed8b58e76110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the scale degree of the current dis.  <a href="class_f_c_transposer.html#aa928d0adf9004933aaa9ed8b58e76110">More...</a><br /></td></tr>
+<tr class="memdesc:aa928d0adf9004933aaa9ed8b58e76110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current chromatic alteration value. Before transposition, it is the value passed in on the constructor. After transposition it is the transposed value.  <a href="class_f_c_transposer.html#aa928d0adf9004933aaa9ed8b58e76110">More...</a><br /></td></tr>
 <tr class="separator:aa928d0adf9004933aaa9ed8b58e76110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5836649342ebcf9b003b5d669ee85fc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_transposer.html#a5836649342ebcf9b003b5d669ee85fc9">DiatonicTranspose</a> (eHarmLev interval)</td></tr>
 <tr class="memdesc:a5836649342ebcf9b003b5d669ee85fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transpose the target diatonically by the given interval displacement.  <a href="class_f_c_transposer.html#a5836649342ebcf9b003b5d669ee85fc9">More...</a><br /></td></tr>
@@ -458,8 +458,8 @@ Additional Inherited Members</h2></td></tr>
 <li>Simplification of note spelling.</li>
 </ul>
 <p >The most common ways to get an instance of <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> are with <a class="el" href="class_f_c_note.html#a9a95f9bc85ec58be46b70566267d0508" title="Returns a transposer that can be used to transpose this note.">FCNote::GetTransposer</a> or <a class="el" href="class_f_c_chord.html#a3f4cc3bcf0f43b831a2121d832326160" title="Returns a transposer that can be used to transpose this chord.">FCChord::GetTransposer</a>. Transposers returned by these classes automatically update the class when you call the transposition functions. You can call the transposition functions as often as you need to, and the target entity continues to be updated. However, do not reuse a transposer created by one instance with another instance that did not create it. Instead, create a new instance for the new target. Also, like any object obtained with a <b>Get</b> verb, you must not use it after the object that created it goes out of scope.</p>
-<dl class="section warning"><dt>Warning</dt><dd>Finale does not support microtonal chords. <a class="el" href="class_f_c_chord.html" title="Class for chord assignments to a measure/staff.">FCChord</a> transposition only works with 12-EDO key signatures. (All standard key signatures are 12-EDO, as are many custom key signatures such as klezmer modes, which <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> also handles correctly.)</dd></dl>
-<p>You can also directly create an instance of <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> by passing displacement and raise/lower values to the constructor. You can then retrieve the result of the transposition with the <a class="el" href="class_f_c_transposer.html#ab737bb4e4691a425f4936e41490441d4" title="Gets the current displacement value. Before transposition, it is the value passed in on the contructo...">GetDisplacement</a> and <a class="el" href="class_f_c_transposer.html#aa928d0adf9004933aaa9ed8b58e76110" title="Gets the scale degree of the current dis.">GetRaiseLower</a> methods.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Finale does not support microtonal chords. <a class="el" href="class_f_c_chord.html" title="Class for chord assignments to a measure/staff.">FCChord</a> transposition only works correctly with 12-EDO key signatures. (All standard key signatures are 12-EDO, as are many custom key signatures such as klezmer modes, which <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> also handles correctly.)</dd></dl>
+<p>You can also directly create an instance of <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> by passing displacement and raise/lower values to the constructor. You can then retrieve the result of the transposition with the <a class="el" href="class_f_c_transposer.html#ab737bb4e4691a425f4936e41490441d4" title="Gets the current displacement value. Before transposition, it is the value passed in on the construct...">GetDisplacement</a> and <a class="el" href="class_f_c_transposer.html#aa928d0adf9004933aaa9ed8b58e76110" title="Gets the current chromatic alteration value. Before transposition, it is the value passed in on the c...">GetRaiseLower</a> methods.</p>
 <p >Lua-supported (0.67). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94a37a2d5b976d4cdf368472655ccbb4" name="a94a37a2d5b976d4cdf368472655ccbb4"></a>
@@ -567,7 +567,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success or failure (if the resultant magnitude of raiselower would exceed 7) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>success or failure (if the resultant magnitude of <code>RaiseLower</code> would exceed 7) </dd></dl>
 
 </div>
 </div>
@@ -595,9 +595,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transpose the target enharmonically in Finale's default direction. </p>
-<p >This function is useful when performing an unlinked enharmonic flip in a part. Only a default enharmonic flip unlinks. Any other enharmonic flip appears in the score as well. This code is based on observed Finale behavior in Finale 27.</p>
+<p >This function is useful when performing an unlinked enharmonic flip in a part. Only a default enharmonic flip unlinks. Any other enharmonic flip appears in the score as well. This code is based on observed behavior in Finale 27.</p>
 <p >Lua-supported (0.67).</p>
-<dl class="section return"><dt>Returns</dt><dd>success or failure (if the resultant magnitude of raiselower would exceed 7) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>success or failure (if the resultant magnitude of <code>RaiseLower</code> would exceed 7) </dd></dl>
 
 </div>
 </div>
@@ -661,7 +661,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transposes the target by the input number of EDO steps and simplifies the spelling. </p>
-<dl class="section warning"><dt>Warning</dt><dd>The hard-coded Finale limit for raiselower values of +/-7 means that it is not possible to represent certain notes in EDO systems with extremely small microtonal increments. The most common of these is 96-EDO. With 8 EDO steps per half-step, Finale cannot reach the middle note of a diatonic whole step. Composers who use Finale for 96-EDO (or higher), use visual workarounds for these situations. This function never fails for standard scales and key signatures.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The hard-coded Finale limit for <code>RaiseLower</code> values of +/-7 means that it is not possible to represent certain notes in EDO systems with extremely small microtonal increments. The most common of these is 96-EDO. With 8 EDO steps per half-step, Finale cannot reach the middle note of a diatonic whole step. Composers who use Finale for 96-EDO (or higher) use visual workarounds for these situations. This function never fails for standard scales and key signatures.</dd></dl>
 <p>Lua-supported (0.67).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -669,7 +669,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success or failure (if no representation exists that would not exceed magnitude 7 for the raiselower.) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>success or failure (if no representation exists that would not exceed magnitude 7 for <code>RaiseLower</code>.) </dd></dl>
 
 </div>
 </div>
@@ -706,7 +706,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>success or failure (if the resultant magnitude of raiselower would exceed 7) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>success or failure (if the resultant magnitude of <code>RaiseLower</code> would exceed 7) </dd></dl>
 
 </div>
 </div>
@@ -733,8 +733,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the current displacement value. Before transposition, it is the value passed in on the contructor. After transpostion it is the transposed value. </p>
-<p >On Lua, this function throws a runtime error if the <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> instance was not explictly contructed with displacement and raiselower values. Other clients receive 0.</p>
+<p>Gets the current displacement value. Before transposition, it is the value passed in on the constructor. After transposition it is the transposed value. </p>
+<p >On Lua, this function throws a runtime error if the <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> instance was not explictly constructed with displacement and <code>RaiseLower</code> values. Other clients receive 0.</p>
 <p >Lua-supported (also as read-only property) (0.67). </p>
 
 </div>
@@ -762,9 +762,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the scale degree of the current dis. </p>
-<p >Gets the current chromatic alteration value. Before transposition, it is the value passed in on the contructor. After transpostion it is the transposed value.</p>
-<p >On Lua, this function throws a runtime error if the <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> instance was not explictly contructed with displacement and raiselower values. Other clients receive 0.</p>
+<p>Gets the current chromatic alteration value. Before transposition, it is the value passed in on the constructor. After transposition it is the transposed value. </p>
+<p >On Lua, this function throws a runtime error if the <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> instance was not explictly constructed with displacement and <code>RaiseLower</code> values. Other clients receive 0.</p>
 <p >Lua-supported (also as read-only property) (0.67). </p>
 
 </div>
@@ -828,7 +827,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Simplifies the note spelling the most it can using enharmonic transposition. </p>
-<p >See <a class="el" href="class_f_c_transposer.html#a7329ccd6bfd42911556aebb54f289070" title="Transpose the target enharmonically in the given direction.">EnharmonicTranspose</a> for an explananation of why this function can fail. However, if the target is already represented in Finale, this function cannot fail. It can only fail if the target currently is not reprentable in Finale. In that case, this function transforms it to a representable spelling or fails if it is not possible.</p>
+<p >See <a class="el" href="class_f_c_transposer.html#a1d77b57613c977161b19c3a04faabc8a" title="Transposes the target by the input number of EDO steps and simplifies the spelling.">EDOStepTranspose</a> for an explananation of why this function can fail. However, if the target is already representabe in Finale, this function cannot fail. It can only fail if the target currently is not representable (i.e, its <code>RaiseLower</code> value has magnitude greater than 7.) In that case, this function transforms it to a representable spelling with <code>RaiseLower</code> less than or equal to 7, or it fails if that is not possible.</p>
 <dl class="section return"><dt>Returns</dt><dd>success or failure (if the target cannot be represented in Finale.) </dd></dl>
 
 </div>
@@ -836,7 +835,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 2 2023 21:47:02 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed May 3 2023 08:55:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
