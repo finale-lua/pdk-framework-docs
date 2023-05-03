@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adad2add118f7e8656fdbf295293bef69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the note based on the string representation. See <a class="el" href="class_f_c_note.html#a7466b4cda0c3a8da68bd1b09a15c6f38" title="Creates a string representation of the note.">FCNote::GetString</a> for syntax.  <a href="class_f_c_note.html#adad2add118f7e8656fdbf295293bef69">More...</a><br /></td></tr>
 <tr class="separator:adad2add118f7e8656fdbf295293bef69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a95f9bc85ec58be46b70566267d0508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_transposer.html">FCTransposer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a9a95f9bc85ec58be46b70566267d0508">GetTransposer</a> ()</td></tr>
-<tr class="memdesc:a9a95f9bc85ec58be46b70566267d0508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transposer that can be used to transpose this note.  <a href="class_f_c_note.html#a9a95f9bc85ec58be46b70566267d0508">More...</a><br /></td></tr>
+<tr class="memdesc:a9a95f9bc85ec58be46b70566267d0508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a transposer that can be used to transpose this note.  <a href="class_f_c_note.html#a9a95f9bc85ec58be46b70566267d0508">More...</a><br /></td></tr>
 <tr class="separator:a9a95f9bc85ec58be46b70566267d0508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad59a2cedc99bb5b30b3d3a0b0807035"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#aad59a2cedc99bb5b30b3d3a0b0807035">SetAccidental</a> (bool state)</td></tr>
 <tr class="memdesc:aad59a2cedc99bb5b30b3d3a0b0807035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the accidental state for the note.  <a href="class_f_c_note.html#aad59a2cedc99bb5b30b3d3a0b0807035">More...</a><br /></td></tr>
@@ -1578,8 +1578,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a transposer that can be used to transpose this note. </p>
-<p >Do not use it with any other <a class="el" href="class_f_c_note.html" title="Encapsulates one note in a note entry (from the FCNoteEntry class).">FCNote</a> instance. C++ clients must dispose of it when they are finished.</p>
+<p>Returns a transposer that can be used to transpose this note. </p>
+<p >Do not use it with any other <a class="el" href="class_f_c_note.html" title="Encapsulates one note in a note entry (from the FCNoteEntry class).">FCNote</a> instance. Do not attempt to use it after the note that created it goes out of scope.</p>
 <p >Lua-supported (0.67). </p>
 
 </div>
@@ -2333,7 +2333,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 2 2023 15:09:08 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 2 2023 21:47:01 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

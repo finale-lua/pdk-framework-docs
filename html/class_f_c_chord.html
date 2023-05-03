@@ -298,7 +298,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEarlierThan</b> (<a
 <tr class="memdesc:aa5ce94b09a2aeb8af38080b15a9d36d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an object with the chord suffix elements.  <a href="class_f_c_chord.html#aa5ce94b09a2aeb8af38080b15a9d36d6">More...</a><br /></td></tr>
 <tr class="separator:aa5ce94b09a2aeb8af38080b15a9d36d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4cc3bcf0f43b831a2121d832326160"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_transposer.html">FCTransposer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_chord.html#a3f4cc3bcf0f43b831a2121d832326160">GetTransposer</a> ()</td></tr>
-<tr class="memdesc:a3f4cc3bcf0f43b831a2121d832326160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transposer that can be used to transpose this chord.  <a href="class_f_c_chord.html#a3f4cc3bcf0f43b831a2121d832326160">More...</a><br /></td></tr>
+<tr class="memdesc:a3f4cc3bcf0f43b831a2121d832326160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a transposer that can be used to transpose this chord.  <a href="class_f_c_chord.html#a3f4cc3bcf0f43b831a2121d832326160">More...</a><br /></td></tr>
 <tr class="separator:a3f4cc3bcf0f43b831a2121d832326160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae69cb3ded54d1b4c562448f73c26eeca"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_chord.html#ae69cb3ded54d1b4c562448f73c26eeca">GetChordSuffixID</a> () const</td></tr>
 <tr class="memdesc:ae69cb3ded54d1b4c562448f73c26eeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the chord suffix ID. Each chord can contain many different records for the same suffix, each representing a symbol in the suffix.  <a href="class_f_c_chord.html#ae69cb3ded54d1b4c562448f73c26eeca">More...</a><br /></td></tr>
@@ -1739,8 +1739,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>Creates a transposer that can be used to transpose this chord. </p>
-<p >Do not use it with any other <a class="el" href="class_f_c_chord.html" title="Class for chord assignments to a measure/staff.">FCChord</a> instance. C++ clients must dispose of it when they are finished.</p>
+<p>Returns a transposer that can be used to transpose this chord. </p>
+<p >Do not use it with any other <a class="el" href="class_f_c_chord.html" title="Class for chord assignments to a measure/staff.">FCChord</a> instance. Do not attempt to use it after the chord that created it goes out of scope.</p>
 <p >Lua-supported (0.67). </p>
 
 </div>
@@ -2636,7 +2636,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 2 2023 15:09:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue May 2 2023 21:47:00 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
