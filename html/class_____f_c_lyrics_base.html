@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
    </div>
   </td>
  </tr>
@@ -90,12 +90,24 @@ Inheritance diagram for __FCLyricsBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7b75f809a9bbe2f8673387c3bc7d723"><td class="memItemLeft" align="right" valign="top">EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#ae7b75f809a9bbe2f8673387c3bc7d723">Tag</a> () override</td></tr>
-<tr class="memdesc:ae7b75f809a9bbe2f8673387c3bc7d723"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma tag for the derived class.  <a href="class_____f_c_lyrics_base.html#ae7b75f809a9bbe2f8673387c3bc7d723">More...</a><br /></td></tr>
-<tr class="separator:ae7b75f809a9bbe2f8673387c3bc7d723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41016b596289a21665cdef42d408d134"><td class="memItemLeft" align="right" valign="top">EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#a41016b596289a21665cdef42d408d134">Tag</a> () const override</td></tr>
+<tr class="memdesc:a41016b596289a21665cdef42d408d134"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma tag for the derived class.  <a href="class_____f_c_lyrics_base.html#a41016b596289a21665cdef42d408d134">More...</a><br /></td></tr>
+<tr class="separator:a41016b596289a21665cdef42d408d134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab939fd7634859ff84c24edc47d680e2f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#ab939fd7634859ff84c24edc47d680e2f">ClassName</a> () const override</td></tr>
 <tr class="memdesc:ab939fd7634859ff84c24edc47d680e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_____f_c_lyrics_base.html#ab939fd7634859ff84c24edc47d680e2f">More...</a><br /></td></tr>
 <tr class="separator:ab939fd7634859ff84c24edc47d680e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e34e14184b13031a4f11bb3fe61060"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#a52e34e14184b13031a4f11bb3fe61060">CalcSyllableOffset</a> (int syllableindex, int searchfromindex=0) const</td></tr>
+<tr class="memdesc:a52e34e14184b13031a4f11bb3fe61060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the character offset of a syllable from the beginning of the raw text.  <a href="class_____f_c_lyrics_base.html#a52e34e14184b13031a4f11bb3fe61060">More...</a><br /></td></tr>
+<tr class="separator:a52e34e14184b13031a4f11bb3fe61060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df9b48998d39cc632035a55513eeb27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#a2df9b48998d39cc632035a55513eeb27">CreateSyllableFontInfo</a> (int syllableindex, int searchfromindex=0) const</td></tr>
+<tr class="memdesc:a2df9b48998d39cc632035a55513eeb27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font info object for the start of the syllable.  <a href="class_____f_c_lyrics_base.html#a2df9b48998d39cc632035a55513eeb27">More...</a><br /></td></tr>
+<tr class="separator:a2df9b48998d39cc632035a55513eeb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c462dcfb1c92a31793e02384dc250e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#a9c462dcfb1c92a31793e02384dc250e4">GetSyllableRange</a> (<a class="el" href="class_f_c_range.html">FCRange</a> *pRange, int syllableindex, int searchfromindex=0) const</td></tr>
+<tr class="memdesc:a9c462dcfb1c92a31793e02384dc250e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the range of characters of the syllable.  <a href="class_____f_c_lyrics_base.html#a9c462dcfb1c92a31793e02384dc250e4">More...</a><br /></td></tr>
+<tr class="separator:a9c462dcfb1c92a31793e02384dc250e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c59dd3b60e3c21b8970734ba787f4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_lyrics_base.html#a32c59dd3b60e3c21b8970734ba787f4b">GetSyllableText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString, int syllableno) const</td></tr>
+<tr class="memdesc:a32c59dd3b60e3c21b8970734ba787f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the plain syllable text without hyphen, space, or formatting.  <a href="class_____f_c_lyrics_base.html#a32c59dd3b60e3c21b8970734ba787f4b">More...</a><br /></td></tr>
+<tr class="separator:a32c59dd3b60e3c21b8970734ba787f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_f_c_raw_text"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_f_c_raw_text')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_f_c_raw_text.html">FCRawText</a></td></tr>
 <tr class="memitem:a25e65a374287e173f8848d3b2a658383 inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a25e65a374287e173f8848d3b2a658383">GetClassID</a> () const override</td></tr>
 <tr class="memdesc:a25e65a374287e173f8848d3b2a658383 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_f_c_raw_text.html#a25e65a374287e173f8848d3b2a658383">More...</a><br /></td></tr>
@@ -108,6 +120,9 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCRawText</b> ()</td></tr>
 <tr class="memdesc:ac58665231159dae726bbc02e37147990 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (virtual) destructor. <br /></td></tr>
 <tr class="separator:ac58665231159dae726bbc02e37147990 inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#ab0f13ae4b0e054956650f12191ad407c">GetNumChars</a> () const</td></tr>
+<tr class="memdesc:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the the number of characters in the raw text.  <a href="class_f_c_raw_text.html#ab0f13ae4b0e054956650f12191ad407c">More...</a><br /></td></tr>
+<tr class="separator:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0efa58a74d5ac7386ecf27bce026d8bf inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a0efa58a74d5ac7386ecf27bce026d8bf">Load</a> (twobyte number)</td></tr>
 <tr class="memdesc:a0efa58a74d5ac7386ecf27bce026d8bf inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the text with the indicated text number.  <a href="class_f_c_raw_text.html#a0efa58a74d5ac7386ecf27bce026d8bf">More...</a><br /></td></tr>
 <tr class="separator:a0efa58a74d5ac7386ecf27bce026d8bf inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,15 +138,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCRawText</b> ()<
 <tr class="memitem:a9ce13ece1c61856baabe5cdec68409d2 inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a9ce13ece1c61856baabe5cdec68409d2">SetText</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a9ce13ece1c61856baabe5cdec68409d2 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text for the object. (The object needs to be saved to Finale to take effect.)  <a href="class_f_c_raw_text.html#a9ce13ece1c61856baabe5cdec68409d2">More...</a><br /></td></tr>
 <tr class="separator:a9ce13ece1c61856baabe5cdec68409d2 inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a79bc64962f4294f7128f335601838 inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a63a79bc64962f4294f7128f335601838">GetText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:a63a79bc64962f4294f7128f335601838 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the object's text to a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object.  <a href="class_f_c_raw_text.html#a63a79bc64962f4294f7128f335601838">More...</a><br /></td></tr>
-<tr class="separator:a63a79bc64962f4294f7128f335601838 inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033681ca4d56d312fdf2ae6443e37922 inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a033681ca4d56d312fdf2ae6443e37922">GetText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
+<tr class="memdesc:a033681ca4d56d312fdf2ae6443e37922 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the object's text to a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object.  <a href="class_f_c_raw_text.html#a033681ca4d56d312fdf2ae6443e37922">More...</a><br /></td></tr>
+<tr class="separator:a033681ca4d56d312fdf2ae6443e37922 inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0ed6fcc27e47fc13ce5e814f0d6e33d inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">virtual twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#ac0ed6fcc27e47fc13ce5e814f0d6e33d">GetItemNo</a> () const</td></tr>
 <tr class="memdesc:ac0ed6fcc27e47fc13ce5e814f0d6e33d inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the item number for the text.  <a href="class_f_c_raw_text.html#ac0ed6fcc27e47fc13ce5e814f0d6e33d">More...</a><br /></td></tr>
 <tr class="separator:ac0ed6fcc27e47fc13ce5e814f0d6e33d inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05c04d43991ef827047327b5b521cd12 inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a05c04d43991ef827047327b5b521cd12">CreateString</a> ()</td></tr>
-<tr class="memdesc:a05c04d43991ef827047327b5b521cd12 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string object with the loaded text. If the string doesn't exist (or if it's empty), the string object will still be created.  <a href="class_f_c_raw_text.html#a05c04d43991ef827047327b5b521cd12">More...</a><br /></td></tr>
-<tr class="separator:a05c04d43991ef827047327b5b521cd12 inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2645facba7c54b6b111534cca0a739bb inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a2645facba7c54b6b111534cca0a739bb">CreateString</a> () const</td></tr>
+<tr class="memdesc:a2645facba7c54b6b111534cca0a739bb inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string object with the loaded text. If the string doesn't exist (or if it's empty), the string object will still be created.  <a href="class_f_c_raw_text.html#a2645facba7c54b6b111534cca0a739bb">More...</a><br /></td></tr>
+<tr class="separator:a2645facba7c54b6b111534cca0a739bb inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade5a87428bb6479760f34b8e5a660fa inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#aade5a87428bb6479760f34b8e5a660fa">GetSubString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString, const <a class="el" href="class_f_c_range.html">FCRange</a> *pRange) const</td></tr>
+<tr class="memdesc:aade5a87428bb6479760f34b8e5a660fa inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a string object with the range of characters from loaded text.  <a href="class_f_c_raw_text.html#aade5a87428bb6479760f34b8e5a660fa">More...</a><br /></td></tr>
+<tr class="separator:aade5a87428bb6479760f34b8e5a660fa inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f44a2e55daca9c3a0a3414601f4e93c inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a9f44a2e55daca9c3a0a3414601f4e93c">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a9f44a2e55daca9c3a0a3414601f4e93c inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_f_c_raw_text.html#a9f44a2e55daca9c3a0a3414601f4e93c">More...</a><br /></td></tr>
 <tr class="separator:a9f44a2e55daca9c3a0a3414601f4e93c inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +160,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCRawText</b> ()<
 <tr class="memitem:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">VerifyConnectedDocID</a> ()</td></tr>
 <tr class="memdesc:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the stored document ID for the data object matches the current document's ID.  <a href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">More...</a><br /></td></tr>
 <tr class="separator:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">DataSizeSave</a> ()</td></tr>
-<tr class="memdesc:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">More...</a><br /></td></tr>
-<tr class="separator:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">DataSizeSave</a> () const</td></tr>
+<tr class="memdesc:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">More...</a><br /></td></tr>
+<tr class="separator:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">_CloneFrom</a> (<a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *pSource)</td></tr>
 <tr class="memdesc:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Copies object data (except data block) from another object.  <a href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">More...</a><br /></td></tr>
 <tr class="separator:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,155 +343,157 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
 , <b>FCID_DOTMOD</b>
-, <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
-, <b>FCID_ENTRYALTERMOD</b>
+, <br />
+&#160;&#160;<b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
+, <b>FCID_EXPRESSION</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
-, <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
-, <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <br />
+&#160;&#160;<b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_LYRICSPREFS</b>
 , <b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
+, <br />
+&#160;&#160;<b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
+, <br />
+&#160;&#160;<b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
+, <br />
+&#160;&#160;<b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
+, <br />
+&#160;&#160;<b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
+, <br />
+&#160;&#160;<b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <br />
+&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEDEF</b>
 , <b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPE</b>
 , <b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFF</b>
 , <b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
+, <b>FCID_STEMMOD</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
+, <br />
+&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEAT</b>
 , <b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
+&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
@@ -533,24 +553,24 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_f_c_raw_text"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_f_c_raw_text')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_f_c_raw_text.html">FCRawText</a></td></tr>
 <tr class="memitem:a1ed52d4543d6c555126f8e3dfc4cd5db inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a1ed52d4543d6c555126f8e3dfc4cd5db">SetRawTextNumber</a> (twobyte number)</td></tr>
 <tr class="separator:a1ed52d4543d6c555126f8e3dfc4cd5db inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c3feeea8514a6b03f93e4c0758cc65e inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a8c3feeea8514a6b03f93e4c0758cc65e">DataSizeLoad</a> () override</td></tr>
-<tr class="memdesc:a8c3feeea8514a6b03f93e4c0758cc65e inherit pro_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be loaded.  <a href="class_f_c_raw_text.html#a8c3feeea8514a6b03f93e4c0758cc65e">More...</a><br /></td></tr>
-<tr class="separator:a8c3feeea8514a6b03f93e4c0758cc65e inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe12bf1a390c29db5d3eb93883971a2 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#abfe12bf1a390c29db5d3eb93883971a2">DataSizeLoad</a> () const override</td></tr>
+<tr class="memdesc:abfe12bf1a390c29db5d3eb93883971a2 inherit pro_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be loaded.  <a href="class_f_c_raw_text.html#abfe12bf1a390c29db5d3eb93883971a2">More...</a><br /></td></tr>
+<tr class="separator:abfe12bf1a390c29db5d3eb93883971a2 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf20abcd49f9abdb792139dd7256757 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a9cf20abcd49f9abdb792139dd7256757">Allocate</a> () override</td></tr>
 <tr class="separator:a9cf20abcd49f9abdb792139dd7256757 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe08b50e3a6e5e4ede699b8c24296b0 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#aafe08b50e3a6e5e4ede699b8c24296b0">Deallocate</a> () override</td></tr>
 <tr class="separator:aafe08b50e3a6e5e4ede699b8c24296b0 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60b6e0de5d2f645c3c086a2ddf8a5c6 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#ad60b6e0de5d2f645c3c086a2ddf8a5c6">IsDynamicSize</a> () override</td></tr>
 <tr class="separator:ad60b6e0de5d2f645c3c086a2ddf8a5c6 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a035ab300b5fd3eda5b9ad6eb99cc1692 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a035ab300b5fd3eda5b9ad6eb99cc1692">EnigmaVersion</a> () override</td></tr>
-<tr class="memdesc:a035ab300b5fd3eda5b9ad6eb99cc1692 inherit pro_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_f_c_raw_text.html#a035ab300b5fd3eda5b9ad6eb99cc1692">More...</a><br /></td></tr>
-<tr class="separator:a035ab300b5fd3eda5b9ad6eb99cc1692 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9458b08c399b42551f28e89995367602 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a9458b08c399b42551f28e89995367602">EnigmaVersion</a> () const override</td></tr>
+<tr class="memdesc:a9458b08c399b42551f28e89995367602 inherit pro_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_f_c_raw_text.html#a9458b08c399b42551f28e89995367602">More...</a><br /></td></tr>
+<tr class="separator:a9458b08c399b42551f28e89995367602 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd571595545bce757b215902f150be1d inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#acd571595545bce757b215902f150be1d">CreateObject</a> () override</td></tr>
 <tr class="separator:acd571595545bce757b215902f150be1d inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6795de283f02fcf424bfbf11036dbd84 inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top"><a id="a6795de283f02fcf424bfbf11036dbd84" name="a6795de283f02fcf424bfbf11036dbd84"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasUnicodeSupport</b> ()</td></tr>
-<tr class="memdesc:a6795de283f02fcf424bfbf11036dbd84 inherit pro_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if the data structure has Unicode support on the running platform. <br /></td></tr>
-<tr class="separator:a6795de283f02fcf424bfbf11036dbd84 inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a954265492fa7b7d1b3b84666d1aad inherit pro_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top"><a id="a31a954265492fa7b7d1b3b84666d1aad" name="a31a954265492fa7b7d1b3b84666d1aad"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasUnicodeSupport</b> () const</td></tr>
+<tr class="memdesc:a31a954265492fa7b7d1b3b84666d1aad inherit pro_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should return true if the data structure has Unicode support on the running platform. <br /></td></tr>
+<tr class="separator:a31a954265492fa7b7d1b3b84666d1aad inherit pro_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_____f_c_base_data"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base_data')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a></td></tr>
 <tr class="memitem:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top"><a id="a7383d71747b9f09d5f061951a5bb8dfb" name="a7383d71747b9f09d5f061951a5bb8dfb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadDataBlock</b> ()</td></tr>
@@ -598,6 +618,46 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <div class="textblock"><p >The base class for all lyrics text classes. </p>
 <p >This class is inherited and should not be used directly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a52e34e14184b13031a4f11bb3fe61060" name="a52e34e14184b13031a4f11bb3fe61060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e34e14184b13031a4f11bb3fe61060">&#9670;&nbsp;</a></span>CalcSyllableOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __FCLyricsBase::CalcSyllableOffset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>syllableindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>searchfromindex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the character offset of a syllable from the beginning of the raw text. </p>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_raw_text.html" title="The class for raw text objects. All other text classes are based on this class, but it can also be us...">FCRawText</a> represents all strings internally as UTF-16. The searchfromindex and returned offset will not work correctly with a Lua string unless all characters are ASCII.</dd></dl>
+<p>Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">syllableindex</td><td>The nth syllable from the searchfromindex. For syllable 1, pass 0 for both syllableindex and searchfromindex. </td></tr>
+    <tr><td class="paramname">searchfromindex</td><td>(optional) The location in the string from which to start searching. The default value is 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the start offset of the syllable from the beginning of the string, or -1 if there was no syllable found. </dd></dl>
+
+</div>
+</div>
 <a id="ab939fd7634859ff84c24edc47d680e2f" name="ab939fd7634859ff84c24edc47d680e2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab939fd7634859ff84c24edc47d680e2f">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -630,8 +690,148 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="ae7b75f809a9bbe2f8673387c3bc7d723" name="ae7b75f809a9bbe2f8673387c3bc7d723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b75f809a9bbe2f8673387c3bc7d723">&#9670;&nbsp;</a></span>Tag()</h2>
+<a id="a2df9b48998d39cc632035a55513eeb27" name="a2df9b48998d39cc632035a55513eeb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2df9b48998d39cc632035a55513eeb27">&#9670;&nbsp;</a></span>CreateSyllableFontInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * __FCLyricsBase::CreateSyllableFontInfo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>syllableindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>searchfromindex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a font info object for the start of the syllable. </p>
+<p >The most efficient way to get the both the offset and font is as follows:</p>
+<div class="fragment"><div class="line">-- Assume we are looking for syllable number 5 (1-based)</div>
+<div class="line">--   in an instance of __FCLyricsBase called lyric_text</div>
+<div class="line">local syllableno = 5</div>
+<div class="line">-- convert 1-based syllableno to 0-based syllableindex</div>
+<div class="line">local syllable_index = syllableno - 1</div>
+<div class="line">local syllable_offset = lyric_text:CalcSyllableOffset(syllable_index, 0)</div>
+<div class="line">-- Knowing the offset already, we can get the font info</div>
+<div class="line">--   more efficiently by searching from that offset.</div>
+<div class="line">local font_info = lyric_text:CreateSyllableFontInfo(0, syllable_offset)</div>
+<div class="line">-- We can also get it this way if we don&#39;t know the offset:</div>
+<div class="line">local font_info = lyric_text:CreateSyllableFontInfo(syllable_index, 0)</div>
+</div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_raw_text.html" title="The class for raw text objects. All other text classes are based on this class, but it can also be us...">FCRawText</a> represents all strings internally as UTF-16. The searchfromindex will not work correctly with a Lua string unless all characters are ASCII.</dd></dl>
+<p>C++ callers must dispose of the created object either with delete or a smart pointer.</p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">syllableindex</td><td>The nth syllable from the searchfromindex. For syllable 1, pass 0 for both syllableindex and searchfromindex. </td></tr>
+    <tr><td class="paramname">searchfromindex</td><td>(optional) The location in the string from which to start searching. The default value is 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> insance or NULL if there was no syllable found. </dd></dl>
+
+</div>
+</div>
+<a id="a9c462dcfb1c92a31793e02384dc250e4" name="a9c462dcfb1c92a31793e02384dc250e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c462dcfb1c92a31793e02384dc250e4">&#9670;&nbsp;</a></span>GetSyllableRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool __FCLyricsBase::GetSyllableRange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_range.html">FCRange</a> *&#160;</td>
+          <td class="paramname"><em>pRange</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>syllableindex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>searchfromindex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the range of characters of the syllable. </p>
+<p >The range can be used with <a class="el" href="class_f_c_raw_text.html#aade5a87428bb6479760f34b8e5a660fa" title="Gets a string object with the range of characters from loaded text.">GetSubString</a> to extract the raw text of the syllable, which will include formatting and/or trailing hyphen or space (if any).</p>
+<p >This function is guaranteed to produce a valid range for UTF-16, even if the text includes characters outside the Basic Multilingual Plane (BMP).</p>
+<p >Lua-supported (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRange</td><td>The <a class="el" href="class_f_c_range.html" title="Class that encapsulates a range (start, length)">FCRange</a> instance into which to place the range. The start is always measured from the beginning of the text, no matter what the searchfromindex is. </td></tr>
+    <tr><td class="paramname">syllableindex</td><td>The nth syllable from the searchfromindex. For syllable 1, pass 0 for both syllableindex and searchfromindex. </td></tr>
+    <tr><td class="paramname">searchfromindex</td><td>(optional) The location in the string from which to start searching. The default value is 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the syllable was found, otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a32c59dd3b60e3c21b8970734ba787f4b" name="a32c59dd3b60e3c21b8970734ba787f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c59dd3b60e3c21b8970734ba787f4b">&#9670;&nbsp;</a></span>GetSyllableText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool __FCLyricsBase::GetSyllableText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramname"><em>pString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>syllableno</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the plain syllable text without hyphen, space, or formatting. </p>
+<p >Lua-supported (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pString</td><td>the string in which to copy the syllable. </td></tr>
+    <tr><td class="paramname">syllableno</td><td>the 1-based syllable number. (This is the same value as in <a class="el" href="class_f_c_syllable_base.html#a7badecdc768852a695160717da8795fc" title="Returns the 1-based syllable number from the start of the text.">FCSyllableBase::GetSyllableNumber</a>.) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a syllable was found </dd></dl>
+
+</div>
+</div>
+<a id="a41016b596289a21665cdef42d408d134" name="a41016b596289a21665cdef42d408d134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41016b596289a21665cdef42d408d134">&#9670;&nbsp;</a></span>Tag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,7 +843,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">EXTAG __FCLyricsBase::Tag </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -656,16 +856,16 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>The Enigma tag for the derived class. </p>
 <p >(Have this public so it's possible to query from the outside world.) </p>
 
-<p>Reimplemented from <a class="el" href="class_f_c_raw_text.html#adf46b65ff4851653cdabc00469ea53dc">FCRawText</a>.</p>
+<p>Reimplemented from <a class="el" href="class_f_c_raw_text.html#af468e7bb6eee1736b627f0478d0cfe05">FCRawText</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_verse_lyrics_text.html#a799902558dc12871959d612934c8f87b">FCVerseLyricsText</a>, <a class="el" href="class_f_c_section_lyrics_text.html#abfcf8622845d4cc150fe48de372fbc5a">FCSectionLyricsText</a>, and <a class="el" href="class_f_c_chorus_lyrics_text.html#a2417e29ef61a0041a22fe45fd7977582">FCChorusLyricsText</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_verse_lyrics_text.html#a265f3e75f16fe966edcf8397ec958149">FCVerseLyricsText</a>, <a class="el" href="class_f_c_section_lyrics_text.html#a3df6eff7e1a1d9bfbf0343a405cebc4a">FCSectionLyricsText</a>, and <a class="el" href="class_f_c_chorus_lyrics_text.html#a4e31f34780fc2d5ea240647f391f1a7d">FCChorusLyricsText</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:44 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 22 2023 08:31:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

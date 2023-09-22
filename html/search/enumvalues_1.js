@@ -20,5 +20,7 @@ var searchData=
   ['beamslope_5fendnotesonly_17',['BEAMSLOPE_ENDNOTESONLY',['../class_f_c_misc_doc_prefs.html#a32e6e3db5345b60d9c9e050ca5b292e3a5d7496b3898409b1e7f89f29136372a2',1,'FCMiscDocPrefs']]],
   ['beamslope_5fflattenall_18',['BEAMSLOPE_FLATTENALL',['../class_f_c_misc_doc_prefs.html#a32e6e3db5345b60d9c9e050ca5b292e3afd2a6ece6b8d96b17295ec41bd0f8c96',1,'FCMiscDocPrefs']]],
   ['beamslope_5fflattenextreme_19',['BEAMSLOPE_FLATTENEXTREME',['../class_f_c_misc_doc_prefs.html#a32e6e3db5345b60d9c9e050ca5b292e3a9b585161ae5a190e770c7ca36a7f32ed',1,'FCMiscDocPrefs']]],
-  ['beamslope_5fflattenstandard_20',['BEAMSLOPE_FLATTENSTANDARD',['../class_f_c_misc_doc_prefs.html#a32e6e3db5345b60d9c9e050ca5b292e3a22be12df6dda34e0dcabf03804278d4c',1,'FCMiscDocPrefs']]]
+  ['beamslope_5fflattenstandard_20',['BEAMSLOPE_FLATTENSTANDARD',['../class_f_c_misc_doc_prefs.html#a32e6e3db5345b60d9c9e050ca5b292e3a22be12df6dda34e0dcabf03804278d4c',1,'FCMiscDocPrefs']]],
+  ['bookmarktype_5fpageview_21',['BOOKMARKTYPE_PAGEVIEW',['../class_f_c_bookmark.html#abb6a579d5da333d002471d01e1ff6b61a2d0889fea7aafe4ebcea8e9ac001db21',1,'FCBookmark']]],
+  ['bookmarktype_5fscrollview_22',['BOOKMARKTYPE_SCROLLVIEW',['../class_f_c_bookmark.html#abb6a579d5da333d002471d01e1ff6b61a2e7f7e0804e48c6499f37418416c4c8f',1,'FCBookmark']]]
 ];

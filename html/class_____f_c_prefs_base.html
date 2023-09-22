@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
    </div>
   </td>
  </tr>
@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_____f_c_prefs_base-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">__FCPrefsBase Class Reference<div class="ingroups"><a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
 </div><!--header-->
@@ -142,18 +143,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">VerifyConnectedDocID</a> ()</td></tr>
 <tr class="memdesc:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the stored document ID for the data object matches the current document's ID.  <a href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">More...</a><br /></td></tr>
 <tr class="separator:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079831695c81acd9d30e80a9f8857834 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a079831695c81acd9d30e80a9f8857834">Tag</a> ()=0</td></tr>
-<tr class="memdesc:a079831695c81acd9d30e80a9f8857834 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma tag for the derived class.  <a href="class_____f_c_base_data.html#a079831695c81acd9d30e80a9f8857834">More...</a><br /></td></tr>
-<tr class="separator:a079831695c81acd9d30e80a9f8857834 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b">EnigmaVersion</a> ()</td></tr>
-<tr class="memdesc:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b">More...</a><br /></td></tr>
-<tr class="separator:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b6cc2d1afdcb52f417aaae83e1d159 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a19b6cc2d1afdcb52f417aaae83e1d159">DataSizeLoad</a> ()=0</td></tr>
-<tr class="memdesc:a19b6cc2d1afdcb52f417aaae83e1d159 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be loaded.  <a href="class_____f_c_base_data.html#a19b6cc2d1afdcb52f417aaae83e1d159">More...</a><br /></td></tr>
-<tr class="separator:a19b6cc2d1afdcb52f417aaae83e1d159 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">DataSizeSave</a> ()</td></tr>
-<tr class="memdesc:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">More...</a><br /></td></tr>
-<tr class="separator:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d542c0310c8d0c092281380a4a3c94 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a98d542c0310c8d0c092281380a4a3c94">Tag</a> () const =0</td></tr>
+<tr class="memdesc:a98d542c0310c8d0c092281380a4a3c94 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma tag for the derived class.  <a href="class_____f_c_base_data.html#a98d542c0310c8d0c092281380a4a3c94">More...</a><br /></td></tr>
+<tr class="separator:a98d542c0310c8d0c092281380a4a3c94 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46">EnigmaVersion</a> () const</td></tr>
+<tr class="memdesc:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46">More...</a><br /></td></tr>
+<tr class="separator:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935c048038fc083774982d55cf5e5b7c inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a935c048038fc083774982d55cf5e5b7c">DataSizeLoad</a> () const =0</td></tr>
+<tr class="memdesc:a935c048038fc083774982d55cf5e5b7c inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be loaded.  <a href="class_____f_c_base_data.html#a935c048038fc083774982d55cf5e5b7c">More...</a><br /></td></tr>
+<tr class="separator:a935c048038fc083774982d55cf5e5b7c inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">DataSizeSave</a> () const</td></tr>
+<tr class="memdesc:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">More...</a><br /></td></tr>
+<tr class="separator:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">_CloneFrom</a> (<a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *pSource)</td></tr>
 <tr class="memdesc:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Copies object data (except data block) from another object.  <a href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">More...</a><br /></td></tr>
 <tr class="separator:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,161 +326,201 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 <tr class="memdesc:acc9a627e1efb124dbdaf19bfcf553233 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is used to read object data.  <a href="class_____f_c_base.html#acc9a627e1efb124dbdaf19bfcf553233">More...</a><br /></td></tr>
 <tr class="separator:acc9a627e1efb124dbdaf19bfcf553233 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1d5f274cc404a612b93e515731dd4677"><td class="memItemLeft" align="right" valign="top"><a id="a1d5f274cc404a612b93e515731dd4677" name="a1d5f274cc404a612b93e515731dd4677"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__FCPrefsBase</b> ()</td></tr>
+<tr class="memdesc:a1d5f274cc404a612b93e515731dd4677"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard constructor <br /></td></tr>
+<tr class="separator:a1d5f274cc404a612b93e515731dd4677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_____f_c_base_data"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base_data')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a></td></tr>
+<tr class="memitem:ae9a12e1344d4de2e308b69382c2fffe4 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#ae9a12e1344d4de2e308b69382c2fffe4">Allocate</a> ()=0</td></tr>
+<tr class="separator:ae9a12e1344d4de2e308b69382c2fffe4 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a4039bcaf1deae6bec1b5fee193d41 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a18a4039bcaf1deae6bec1b5fee193d41">Deallocate</a> ()</td></tr>
+<tr class="separator:a18a4039bcaf1deae6bec1b5fee193d41 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e47c1ac3abdc0d01724b0a88439be9 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#aa9e47c1ac3abdc0d01724b0a88439be9">IsDynamicSize</a> ()</td></tr>
+<tr class="separator:aa9e47c1ac3abdc0d01724b0a88439be9 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top"><a id="a7383d71747b9f09d5f061951a5bb8dfb" name="a7383d71747b9f09d5f061951a5bb8dfb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadDataBlock</b> ()</td></tr>
+<tr class="memdesc:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the data. If the object is of dynamic size, the old memory block is freed and a new is allocated. <br /></td></tr>
+<tr class="separator:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4bb7f89bd6689428986f9eb8cbde6d inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a1c4bb7f89bd6689428986f9eb8cbde6d">ClearData</a> ()</td></tr>
+<tr class="separator:a1c4bb7f89bd6689428986f9eb8cbde6d inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15361596fe293688ae40c286e9b0f242 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a15361596fe293688ae40c286e9b0f242">CalcLastInci</a> ()</td></tr>
+<tr class="memdesc:a15361596fe293688ae40c286e9b0f242 inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only!  <a href="class_____f_c_base_data.html#a15361596fe293688ae40c286e9b0f242">More...</a><br /></td></tr>
+<tr class="separator:a15361596fe293688ae40c286e9b0f242 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250dd093f51aed03cbf794cbc07c3baa inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a250dd093f51aed03cbf794cbc07c3baa">CreateObject</a> ()=0</td></tr>
+<tr class="memdesc:a250dd093f51aed03cbf794cbc07c3baa inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of the object.  <a href="class_____f_c_base_data.html#a250dd093f51aed03cbf794cbc07c3baa">More...</a><br /></td></tr>
+<tr class="separator:a250dd093f51aed03cbf794cbc07c3baa inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d42d34a054dfdb90b10141bb199cb1 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top"><a id="a61d42d34a054dfdb90b10141bb199cb1" name="a61d42d34a054dfdb90b10141bb199cb1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DataIsLoaded</b> () const</td></tr>
+<tr class="memdesc:a61d42d34a054dfdb90b10141bb199cb1 inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true is any data has been loaded into the object. <br /></td></tr>
+<tr class="separator:a61d42d34a054dfdb90b10141bb199cb1 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3edd903dc50fe2bf0957be45708946 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#abb3edd903dc50fe2bf0957be45708946">_TagDocumentID</a> ()</td></tr>
+<tr class="memdesc:abb3edd903dc50fe2bf0957be45708946 inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only.  <a href="class_____f_c_base_data.html#abb3edd903dc50fe2bf0957be45708946">More...</a><br /></td></tr>
+<tr class="separator:abb3edd903dc50fe2bf0957be45708946 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
+<tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__FCBase</b> ()</td></tr>
+<tr class="memdesc:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
+<tr class="separator:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
 , <b>FCID_DOTMOD</b>
-, <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
-, <b>FCID_ENTRYALTERMOD</b>
+, <br />
+&#160;&#160;<b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
+, <b>FCID_EXPRESSION</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
-, <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
-, <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <br />
+&#160;&#160;<b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_LYRICSPREFS</b>
 , <b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
+, <br />
+&#160;&#160;<b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
+, <br />
+&#160;&#160;<b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
+, <br />
+&#160;&#160;<b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
+, <br />
+&#160;&#160;<b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
+, <br />
+&#160;&#160;<b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <br />
+&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEDEF</b>
 , <b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPE</b>
 , <b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFF</b>
 , <b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
+, <b>FCID_STEMMOD</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
+, <br />
+&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEAT</b>
 , <b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
+&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
@@ -536,37 +577,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">DebugOut</a> (const char *pszLine)</td></tr>
 <tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
 <tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_____f_c_base_data"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base_data')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a></td></tr>
-<tr class="memitem:ae9a12e1344d4de2e308b69382c2fffe4 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#ae9a12e1344d4de2e308b69382c2fffe4">Allocate</a> ()=0</td></tr>
-<tr class="separator:ae9a12e1344d4de2e308b69382c2fffe4 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a4039bcaf1deae6bec1b5fee193d41 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a18a4039bcaf1deae6bec1b5fee193d41">Deallocate</a> ()</td></tr>
-<tr class="separator:a18a4039bcaf1deae6bec1b5fee193d41 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9e47c1ac3abdc0d01724b0a88439be9 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#aa9e47c1ac3abdc0d01724b0a88439be9">IsDynamicSize</a> ()</td></tr>
-<tr class="separator:aa9e47c1ac3abdc0d01724b0a88439be9 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top"><a id="a7383d71747b9f09d5f061951a5bb8dfb" name="a7383d71747b9f09d5f061951a5bb8dfb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadDataBlock</b> ()</td></tr>
-<tr class="memdesc:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the data. If the object is of dynamic size, the old memory block is freed and a new is allocated. <br /></td></tr>
-<tr class="separator:a7383d71747b9f09d5f061951a5bb8dfb inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c4bb7f89bd6689428986f9eb8cbde6d inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a1c4bb7f89bd6689428986f9eb8cbde6d">ClearData</a> ()</td></tr>
-<tr class="separator:a1c4bb7f89bd6689428986f9eb8cbde6d inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15361596fe293688ae40c286e9b0f242 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a15361596fe293688ae40c286e9b0f242">CalcLastInci</a> ()</td></tr>
-<tr class="memdesc:a15361596fe293688ae40c286e9b0f242 inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only!  <a href="class_____f_c_base_data.html#a15361596fe293688ae40c286e9b0f242">More...</a><br /></td></tr>
-<tr class="separator:a15361596fe293688ae40c286e9b0f242 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250dd093f51aed03cbf794cbc07c3baa inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a250dd093f51aed03cbf794cbc07c3baa">CreateObject</a> ()=0</td></tr>
-<tr class="memdesc:a250dd093f51aed03cbf794cbc07c3baa inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of the object.  <a href="class_____f_c_base_data.html#a250dd093f51aed03cbf794cbc07c3baa">More...</a><br /></td></tr>
-<tr class="separator:a250dd093f51aed03cbf794cbc07c3baa inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d42d34a054dfdb90b10141bb199cb1 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top"><a id="a61d42d34a054dfdb90b10141bb199cb1" name="a61d42d34a054dfdb90b10141bb199cb1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>DataIsLoaded</b> () const</td></tr>
-<tr class="memdesc:a61d42d34a054dfdb90b10141bb199cb1 inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true is any data has been loaded into the object. <br /></td></tr>
-<tr class="separator:a61d42d34a054dfdb90b10141bb199cb1 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb3edd903dc50fe2bf0957be45708946 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#abb3edd903dc50fe2bf0957be45708946">_TagDocumentID</a> ()</td></tr>
-<tr class="memdesc:abb3edd903dc50fe2bf0957be45708946 inherit pro_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only.  <a href="class_____f_c_base_data.html#abb3edd903dc50fe2bf0957be45708946">More...</a><br /></td></tr>
-<tr class="separator:abb3edd903dc50fe2bf0957be45708946 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
-<tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__FCBase</b> ()</td></tr>
-<tr class="memdesc:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
-<tr class="separator:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_____f_c_base_data"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_____f_c_base_data')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a></td></tr>
 <tr class="memitem:acd6db44cf6ccb9a7fd82636973cf2aa5 inherit pro_attribs_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top"><a id="acd6db44cf6ccb9a7fd82636973cf2aa5" name="acd6db44cf6ccb9a7fd82636973cf2aa5"></a>
 EDOCID&#160;</td><td class="memItemRight" valign="bottom"><b>_connecteddocID</b></td></tr>
@@ -785,7 +795,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:44 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 22 2023 08:31:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

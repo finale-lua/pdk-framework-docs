@@ -21,7 +21,7 @@ var searchData=
   ['endswith_18',['EndsWith',['../class_f_c_string.html#a3f264c06eb59fa3d71201e5c1a4e7411',1,'FCString']]],
   ['endswithstring_19',['EndsWithString',['../class_f_c_string.html#a296cf191498e316439d47af884de308a',1,'FCString']]],
   ['enharmonictranspose_20',['EnharmonicTranspose',['../class_f_c_transposer.html#a7329ccd6bfd42911556aebb54f289070',1,'FCTransposer']]],
-  ['enigmaversion_21',['EnigmaVersion',['../class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b',1,'__FCBaseData::EnigmaVersion()'],['../class_f_c_raw_text.html#a035ab300b5fd3eda5b9ad6eb99cc1692',1,'FCRawText::EnigmaVersion()']]],
+  ['enigmaversion_21',['EnigmaVersion',['../class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46',1,'__FCBaseData::EnigmaVersion()'],['../class_f_c_raw_text.html#a9458b08c399b42551f28e89995367602',1,'FCRawText::EnigmaVersion()']]],
   ['entry_5fdurations_22',['ENTRY_DURATIONS',['../class_f_c_note_entry.html#ab926ef2d75889d1cfcb3cca6a426d04d',1,'FCNoteEntry']]],
   ['eraseat_23',['EraseAt',['../class_____f_c_entry_detail_note_i_d.html#a8955b1c61f5ceb974a3b5b47d9e7ebf6',1,'__FCEntryDetailNoteID']]],
   ['execmodal_5fcancel_24',['EXECMODAL_CANCEL',['../class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2a65e41c544498576682922589c8fb0752',1,'FCResourceWindow']]],

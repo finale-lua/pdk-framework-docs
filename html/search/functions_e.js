@@ -7,5 +7,6 @@ var searchData=
   ['openread_4',['OpenRead',['../class_f_c_file_stream.html#a6001c211d91c06be4c890f5343e22559',1,'FCFileStream::OpenRead()'],['../class_f_c_text_file_stream.html#a29bc73b5b4f03d4a4df3ddf05051a723',1,'FCTextFileStream::OpenRead()']]],
   ['openwrite_5',['OpenWrite',['../class_f_c_file_stream.html#a2720e106471bd43ee5bb8392dbda8cf0',1,'FCFileStream::OpenWrite()'],['../class_f_c_text_file_stream.html#ab4b826fe460017ead5b9a8fb9851809c',1,'FCTextFileStream::OpenWrite()']]],
   ['operator_3d_6',['operator=',['../class_f_c_string.html#af63e4d78854769d6a10fa14bb838e743',1,'FCString']]],
-  ['operator_5b_5d_7',['operator[]',['../class_____f_c_collection.html#af70a080801c68f4c7d7db9150a1ed8af',1,'__FCCollection']]]
+  ['operator_5b_5d_7',['operator[]',['../class_____f_c_collection.html#af70a080801c68f4c7d7db9150a1ed8af',1,'__FCCollection']]],
+  ['osmenucommandexecuted_8',['OSMenuCommandExecuted',['../class_____f_c_user_window.html#a8077e384efaa9d56633ae9235a8fda32',1,'__FCUserWindow::OSMenuCommandExecuted()'],['../class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce',1,'FCCustomLuaWindow::OSMenuCommandExecuted()']]]
 ];

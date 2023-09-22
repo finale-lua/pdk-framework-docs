@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
    </div>
   </td>
  </tr>
@@ -235,10 +235,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4e113aac92074611fd4831bc4a84d160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is visible in the current part or score. The only time it might be false is if the note is suppressed by voiced part settings. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a4e113aac92074611fd4831bc4a84d160">More...</a><br /></td></tr>
 <tr class="separator:a4e113aac92074611fd4831bc4a84d160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb1252531e817e0ba9be9803d505301"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a8fb1252531e817e0ba9be9803d505301">CalcIsTopNote</a> () const</td></tr>
-<tr class="memdesc:a8fb1252531e817e0ba9be9803d505301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is the top note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the top visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a8fb1252531e817e0ba9be9803d505301">More...</a><br /></td></tr>
+<tr class="memdesc:a8fb1252531e817e0ba9be9803d505301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is the top note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the top visible note in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a8fb1252531e817e0ba9be9803d505301">More...</a><br /></td></tr>
 <tr class="separator:a8fb1252531e817e0ba9be9803d505301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebdef12d97f4abb3277f65a932edee8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#a7ebdef12d97f4abb3277f65a932edee8">CalcIsBottomNote</a> () const</td></tr>
-<tr class="memdesc:a7ebdef12d97f4abb3277f65a932edee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is the bottom visible note note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the bottom visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a7ebdef12d97f4abb3277f65a932edee8">More...</a><br /></td></tr>
+<tr class="memdesc:a7ebdef12d97f4abb3277f65a932edee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the note is the bottom visible note note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the bottom visible note in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.)  <a href="class_f_c_note.html#a7ebdef12d97f4abb3277f65a932edee8">More...</a><br /></td></tr>
 <tr class="separator:a7ebdef12d97f4abb3277f65a932edee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c36b2996229558f0d438c9975ac62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note.html#ad3c36b2996229558f0d438c9975ac62b">SetMIDIKey</a> (twobyte midikey)</td></tr>
 <tr class="memdesc:ad3c36b2996229558f0d438c9975ac62b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the MIDI key number for the note.  <a href="class_f_c_note.html#ad3c36b2996229558f0d438c9975ac62b">More...</a><br /></td></tr>
@@ -388,155 +388,157 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
 , <b>FCID_DOTMOD</b>
-, <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
-, <b>FCID_ENTRYALTERMOD</b>
+, <br />
+&#160;&#160;<b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
+, <b>FCID_EXPRESSION</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
-, <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
-, <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <br />
+&#160;&#160;<b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_LYRICSPREFS</b>
 , <b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
+, <br />
+&#160;&#160;<b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
+, <br />
+&#160;&#160;<b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
+, <br />
+&#160;&#160;<b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
+, <br />
+&#160;&#160;<b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
+, <br />
+&#160;&#160;<b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <br />
+&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEDEF</b>
 , <b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPE</b>
 , <b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFF</b>
 , <b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
+, <b>FCID_STEMMOD</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
+, <br />
+&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEAT</b>
 , <b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
+&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
@@ -663,7 +665,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if the note is the bottom visible note note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the bottom visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
+<p>Returns true if the note is the bottom visible note note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the bottom visible note in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
 <p >Lua-supported (0.65). </p>
 
 </div>
@@ -683,7 +685,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if the note is the top note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the top visible entry in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
+<p>Returns true if the note is the top note in the entry. If some notes in the entry are suppressed in the current voiced part, the function returns true for the top visible note in the part. (See <a class="el" href="class_f_c_part_staff_voicing.html" title="Class that represents the Voicing information for a single staff in a part.">FCPartStaffVoicing</a>.) </p>
 <p >Lua-supported (0.65). </p>
 
 </div>
@@ -1179,6 +1181,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the cross staff state for the note. </p>
+<p >The note's <a class="el" href="class_f_c_cross_staff_mod.html" title="Class that specifies the cross-staff connection for a note.">FCCrossStaffMod</a> contains the target staff to which the note is crossed.</p>
 <p >Lua-supported (also as property).</p>
 <dl class="section return"><dt>Returns</dt><dd><b>true</b> means that a note is in a cross staff. </dd></dl>
 
@@ -1939,7 +1942,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the cross staff state for the note. </p>
-<p >(More than this is required to actually make it cross-staff...) </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Improve docs on how to make cross staff.</dd></dl>
+<p >Generally speaking, you do not need this method to create cross-staff notes. Instead, load or create the note's instance of <a class="el" href="class_f_c_cross_staff_mod.html" title="Class that specifies the cross-staff connection for a note.">FCCrossStaffMod</a>. There you set its target staff, and saving it sets all the proper flags (including this one).</p>
 <p >Lua-supported (also as property).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2334,7 +2337,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:46 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 22 2023 08:31:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

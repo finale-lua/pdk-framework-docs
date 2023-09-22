@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
    </div>
   </td>
  </tr>
@@ -88,165 +88,190 @@ Inheritance diagram for FCPlaybackPrefs:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a791647afa928b19e8652c0785b2233d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8">PLAYBACKSTARTMODE</a> { <a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8a6ba1454c5b26bc76d0cf55d34e4adc4f">PLAYBACKSTART_MEASURE</a> = 0
-, <a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8a4621225c655a05643e7f4a754b089065">PLAYBACKSTART_LEFTMOST</a> = 1
-, <a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8a48c2a3cfba41b7fc5c75a808a37c8247">PLAYBACKSTART_CURRENTCOUNTER</a> = 2
+<tr class="memitem:a791647afa928b19e8652c0785b2233d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8">PLAYBACKSTARTMODE</a> { <a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8a6ba1454c5b26bc76d0cf55d34e4adc4f">PLAYBACKSTART_MEASURE</a> = PLAYBACK_START_MODE_ALWAYS_AT
+, <a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8a4621225c655a05643e7f4a754b089065">PLAYBACKSTART_LEFTMOST</a> = PLAYBACK_START_MODE_LEFTMOST
+, <a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8a48c2a3cfba41b7fc5c75a808a37c8247">PLAYBACKSTART_CURRENTCOUNTER</a> = PLAYBACK_START_MODE_USE_COUNTER
  }</td></tr>
 <tr class="memdesc:a791647afa928b19e8652c0785b2233d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playback start modes.  <a href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8">More...</a><br /></td></tr>
 <tr class="separator:a791647afa928b19e8652c0785b2233d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a7c97d2e0c5e882640435e73eb5a23"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">PLAYBACKEXPSMODE</a> { <a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23a53f8aca57e7dd6a9384ec5f1bfee1ca3">PLAYBACKEXPS_CHASE_FROM_ONE</a> = 0
+, <a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23a0583ef601f82a0533630b2b2d82ddb9c">PLAYBACKEXPS_RESET</a> = 1
+, <a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23ac39dc1d3ffaf22221ada160f2e78e85c">PLAYBACKEXPS_USECURRENT</a> = 2
+ }</td></tr>
+<tr class="memdesc:aa1a7c97d2e0c5e882640435e73eb5a23"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Dynamics and Markings playback modes.  <a href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">More...</a><br /></td></tr>
+<tr class="separator:aa1a7c97d2e0c5e882640435e73eb5a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cee0dc4cc7a2e1a5f6ca356e94ba4c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">SMPTEFRAMERATE</a> { <br />
+&#160;&#160;<a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a9859e11c41d9a308dd88144edf21db9d">SMPTETIMETYPE_24</a> = SMPTE_TIME_TYPE_24
+, <a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a4f2c7d2cc038618d0281e19f55ebc034">SMPTETIMETYPE_25</a> = SMPTE_TIME_TYPE_25
+, <a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a08b8ab38b4da48f3879bf768b75c4ed9">SMPTETIMETYPE_2997_DROP</a> = SMPTE_TIME_TYPE_30_DROP
+, <a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4ab9c273c3adf196c6de3b045850744f35">SMPTETIMETYPE_30</a> = SMPTE_TIME_TYPE_30
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a7fe43d3a8845905b6a97a446a644ff02">SMPTETIMETYPE_2997_NONDROP</a> = SMPTE_TIME_TYPE_2997
+<br />
+ }</td></tr>
+<tr class="memdesc:a5cee0dc4cc7a2e1a5f6ca356e94ba4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SMPTE Frame Rate types.  <a href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">More...</a><br /></td></tr>
+<tr class="separator:a5cee0dc4cc7a2e1a5f6ca356e94ba4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4410055563075c37cb2cad321e2f7c9d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">METSOUNDSOURCE</a> { <a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9da2f941cd5e0c130a9fd13fca02b4c761c">METSOURCE_FINALECLICK</a> = 0
+, <a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9da51b3eafbd2ae18453f5ced9c497184f3">METSOURCE_MIDINOTE</a> = 1
+, <a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9da0fdd888a37bbcb299ce926868c0a8283">METSOURCE_MIDIDATA</a> = 2
+ }</td></tr>
+<tr class="memdesc:a4410055563075c37cb2cad321e2f7c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Metronome Sound Source values.  <a href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">More...</a><br /></td></tr>
+<tr class="separator:a4410055563075c37cb2cad321e2f7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
 , <b>FCID_DOTMOD</b>
-, <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
-, <b>FCID_ENTRYALTERMOD</b>
+, <br />
+&#160;&#160;<b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
+, <b>FCID_EXPRESSION</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
-, <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
-, <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <br />
+&#160;&#160;<b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_LYRICSPREFS</b>
 , <b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
+, <br />
+&#160;&#160;<b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
+, <br />
+&#160;&#160;<b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
+, <br />
+&#160;&#160;<b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
+, <br />
+&#160;&#160;<b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
+, <br />
+&#160;&#160;<b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <br />
+&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEDEF</b>
 , <b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPE</b>
 , <b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFF</b>
 , <b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
+, <b>FCID_STEMMOD</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
+, <br />
+&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEAT</b>
 , <b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
+&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
@@ -293,15 +318,96 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9f1b8cd59a422bdb7313b91a1c9fb6b"><td class="memItemLeft" align="right" valign="top">eMeas&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ab9f1b8cd59a422bdb7313b91a1c9fb6b">GetStartMeasure</a> () const</td></tr>
 <tr class="memdesc:ab9f1b8cd59a422bdb7313b91a1c9fb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback start measure, which is used if the start mode allows it.  <a href="class_f_c_playback_prefs.html#ab9f1b8cd59a422bdb7313b91a1c9fb6b">More...</a><br /></td></tr>
 <tr class="separator:ab9f1b8cd59a422bdb7313b91a1c9fb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b33974c5c95551ca7f50eaf60f1f9d"><td class="memItemLeft" align="right" valign="top">TimeEdu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a02b33974c5c95551ca7f50eaf60f1f9d">GetStartMeasurePos</a> () const</td></tr>
+<tr class="memdesc:a02b33974c5c95551ca7f50eaf60f1f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback start measure position, which is used if the start mode allows it.  <a href="class_f_c_playback_prefs.html#a02b33974c5c95551ca7f50eaf60f1f9d">More...</a><br /></td></tr>
+<tr class="separator:a02b33974c5c95551ca7f50eaf60f1f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8101114209ca5826890ce60d72c86908"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a8101114209ca5826890ce60d72c86908">GetStartRepeatPass</a> () const</td></tr>
+<tr class="memdesc:a8101114209ca5826890ce60d72c86908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback start repeat pass number.  <a href="class_f_c_playback_prefs.html#a8101114209ca5826890ce60d72c86908">More...</a><br /></td></tr>
+<tr class="separator:a8101114209ca5826890ce60d72c86908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7af6b390ac53d517d898ed857f1e27d"><td class="memItemLeft" align="right" valign="top">eMeas&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ac7af6b390ac53d517d898ed857f1e27d">GetStopMeasure</a> () const</td></tr>
 <tr class="memdesc:ac7af6b390ac53d517d898ed857f1e27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback stop measure.  <a href="class_f_c_playback_prefs.html#ac7af6b390ac53d517d898ed857f1e27d">More...</a><br /></td></tr>
 <tr class="separator:ac7af6b390ac53d517d898ed857f1e27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aa84d3b5753daf9bcccdb1c6d98793"><td class="memItemLeft" align="right" valign="top">TimeEdu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a51aa84d3b5753daf9bcccdb1c6d98793">GetStopMeasurePos</a> () const</td></tr>
+<tr class="memdesc:a51aa84d3b5753daf9bcccdb1c6d98793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback stop measure position.  <a href="class_f_c_playback_prefs.html#a51aa84d3b5753daf9bcccdb1c6d98793">More...</a><br /></td></tr>
+<tr class="separator:a51aa84d3b5753daf9bcccdb1c6d98793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fd11f9e7125ab78dde449e1d931e7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ac3fd11f9e7125ab78dde449e1d931e7b">GetStopRepeatPass</a> () const</td></tr>
+<tr class="memdesc:ac3fd11f9e7125ab78dde449e1d931e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the playback stop repeat pass number.  <a href="class_f_c_playback_prefs.html#ac3fd11f9e7125ab78dde449e1d931e7b">More...</a><br /></td></tr>
+<tr class="separator:ac3fd11f9e7125ab78dde449e1d931e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64531f9c9477439fa1b3bfa887a69397"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8">PLAYBACKSTARTMODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a64531f9c9477439fa1b3bfa887a69397">GetStartMode</a> () const</td></tr>
 <tr class="memdesc:a64531f9c9477439fa1b3bfa887a69397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the start playback mode.  <a href="class_f_c_playback_prefs.html#a64531f9c9477439fa1b3bfa887a69397">More...</a><br /></td></tr>
 <tr class="separator:a64531f9c9477439fa1b3bfa887a69397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b95e810bd2b70dc9e03709887ae67c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">PLAYBACKEXPSMODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a08b95e810bd2b70dc9e03709887ae67c">GetExpressionsMode</a> () const</td></tr>
+<tr class="memdesc:a08b95e810bd2b70dc9e03709887ae67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "Dynamics and Markings" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a08b95e810bd2b70dc9e03709887ae67c">More...</a><br /></td></tr>
+<tr class="separator:a08b95e810bd2b70dc9e03709887ae67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9aaf1b8d0619b412e549b8f21f3032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a0e9aaf1b8d0619b412e549b8f21f3032">GetPlayNoteDurations</a> () const</td></tr>
+<tr class="memdesc:a0e9aaf1b8d0619b412e549b8f21f3032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Play Recorded: Note Durations" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a0e9aaf1b8d0619b412e549b8f21f3032">More...</a><br /></td></tr>
+<tr class="separator:a0e9aaf1b8d0619b412e549b8f21f3032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6b7ff5a14c7a20d0af1bf7e7ed89c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aea6b7ff5a14c7a20d0af1bf7e7ed89c0">GetPlayKeyVelocities</a> () const</td></tr>
+<tr class="memdesc:aea6b7ff5a14c7a20d0af1bf7e7ed89c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Play Recorded: Key Velocities" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#aea6b7ff5a14c7a20d0af1bf7e7ed89c0">More...</a><br /></td></tr>
+<tr class="separator:aea6b7ff5a14c7a20d0af1bf7e7ed89c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d98bcb62b2f75d7b0ee31e9b849a647"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a3d98bcb62b2f75d7b0ee31e9b849a647">GetPlayContinuousData</a> () const</td></tr>
+<tr class="memdesc:a3d98bcb62b2f75d7b0ee31e9b849a647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Play Recorded: Continuous Data" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a3d98bcb62b2f75d7b0ee31e9b849a647">More...</a><br /></td></tr>
+<tr class="separator:a3d98bcb62b2f75d7b0ee31e9b849a647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae222aa455a40a092a3fca99d3e249f7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ae222aa455a40a092a3fca99d3e249f7b">GetPlayTempoChanges</a> () const</td></tr>
+<tr class="memdesc:ae222aa455a40a092a3fca99d3e249f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Play Recorded: Tempo Changes" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#ae222aa455a40a092a3fca99d3e249f7b">More...</a><br /></td></tr>
+<tr class="separator:ae222aa455a40a092a3fca99d3e249f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e57298f548fe0b0c2aa0be16131ed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aa9e57298f548fe0b0c2aa0be16131ed1">GetRepeatsIgnore</a> () const</td></tr>
+<tr class="memdesc:aa9e57298f548fe0b0c2aa0be16131ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Repeats: Ignore Repeats" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#aa9e57298f548fe0b0c2aa0be16131ed1">More...</a><br /></td></tr>
+<tr class="separator:aa9e57298f548fe0b0c2aa0be16131ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8364142245825a61e69dc60242463795"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a8364142245825a61e69dc60242463795">GetRepeatsReset</a> () const</td></tr>
+<tr class="memdesc:a8364142245825a61e69dc60242463795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Repeats: Reset Repeats" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a8364142245825a61e69dc60242463795">More...</a><br /></td></tr>
+<tr class="separator:a8364142245825a61e69dc60242463795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9478c57185365d58704ebb9a21e1d4f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a9478c57185365d58704ebb9a21e1d4f5">GetSendPatchesToMidi</a> () const</td></tr>
 <tr class="memdesc:a9478c57185365d58704ebb9a21e1d4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Send patches to MIDI device on playback" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a9478c57185365d58704ebb9a21e1d4f5">More...</a><br /></td></tr>
 <tr class="separator:a9478c57185365d58704ebb9a21e1d4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0bc722c4a9d1f341543f12005c776d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ab0bc722c4a9d1f341543f12005c776d7">GetSyncReceiveMidi</a> () const</td></tr>
+<tr class="memdesc:ab0bc722c4a9d1f341543f12005c776d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "Receive Sync" choice in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#ab0bc722c4a9d1f341543f12005c776d7">More...</a><br /></td></tr>
+<tr class="separator:ab0bc722c4a9d1f341543f12005c776d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8075b45f3c682d16826d866020daea29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a8075b45f3c682d16826d866020daea29">GetSyncChasePatches</a> () const</td></tr>
+<tr class="memdesc:a8075b45f3c682d16826d866020daea29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "Chase Patch Changes During MIDI Sync" option in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#a8075b45f3c682d16826d866020daea29">More...</a><br /></td></tr>
+<tr class="separator:a8075b45f3c682d16826d866020daea29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f10cb17190907623f96e7e0a546ac54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a2f10cb17190907623f96e7e0a546ac54">GetSyncChaseContinuousData</a> () const</td></tr>
+<tr class="memdesc:a2f10cb17190907623f96e7e0a546ac54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "Chase Continuous Data During MIDI Sync" option in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#a2f10cb17190907623f96e7e0a546ac54">More...</a><br /></td></tr>
+<tr class="separator:a2f10cb17190907623f96e7e0a546ac54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3c17b3a2bade184317bf4c7d41b167"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">SMPTEFRAMERATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a9d3c17b3a2bade184317bf4c7d41b167">GetSMPTEFrameRate</a> () const</td></tr>
+<tr class="memdesc:a9d3c17b3a2bade184317bf4c7d41b167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SMPTE Frame Rate option in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#a9d3c17b3a2bade184317bf4c7d41b167">More...</a><br /></td></tr>
+<tr class="separator:a9d3c17b3a2bade184317bf4c7d41b167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7c5659de5469b44d3fd07a13f88ab8"><td class="memItemLeft" align="right" valign="top">TimeRtu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a9b7c5659de5469b44d3fd07a13f88ab8">GetSMPTEStartTime</a> () const</td></tr>
+<tr class="memdesc:a9b7c5659de5469b44d3fd07a13f88ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SMPTE start time in the in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#a9b7c5659de5469b44d3fd07a13f88ab8">More...</a><br /></td></tr>
+<tr class="separator:a9b7c5659de5469b44d3fd07a13f88ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1658139caadb86980262da53de1fa308"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a1658139caadb86980262da53de1fa308">GetCountOffMeasures</a> () const</td></tr>
+<tr class="memdesc:a1658139caadb86980262da53de1fa308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Countoff Measures in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#a1658139caadb86980262da53de1fa308">More...</a><br /></td></tr>
+<tr class="separator:a1658139caadb86980262da53de1fa308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a853a3065c89183be0b861bd6244131cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a853a3065c89183be0b861bd6244131cd">GetCountOffWhenRecording</a> () const</td></tr>
+<tr class="memdesc:a853a3065c89183be0b861bd6244131cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Countoff status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#a853a3065c89183be0b861bd6244131cd">More...</a><br /></td></tr>
+<tr class="separator:a853a3065c89183be0b861bd6244131cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed500b3a81ed1c3451cc269208635f96"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aed500b3a81ed1c3451cc269208635f96">GetCountOffWhenPlaying</a> () const</td></tr>
+<tr class="memdesc:aed500b3a81ed1c3451cc269208635f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Countoff status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#aed500b3a81ed1c3451cc269208635f96">More...</a><br /></td></tr>
+<tr class="separator:aed500b3a81ed1c3451cc269208635f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8817065585292b64f11acd8bb63fdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a1e8817065585292b64f11acd8bb63fdd">GetClickWhenRecording</a> () const</td></tr>
+<tr class="memdesc:a1e8817065585292b64f11acd8bb63fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Click status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#a1e8817065585292b64f11acd8bb63fdd">More...</a><br /></td></tr>
+<tr class="separator:a1e8817065585292b64f11acd8bb63fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf4862dc7162ad232431b7e8fdb930b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#abbf4862dc7162ad232431b7e8fdb930b">GetClickWhenPlaying</a> () const</td></tr>
+<tr class="memdesc:abbf4862dc7162ad232431b7e8fdb930b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Click status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#abbf4862dc7162ad232431b7e8fdb930b">More...</a><br /></td></tr>
+<tr class="separator:abbf4862dc7162ad232431b7e8fdb930b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1481dd2c86d9d1134c40f69a01db77a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">METSOUNDSOURCE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a1481dd2c86d9d1134c40f69a01db77a2">GetMetronomeSoundSource</a> () const</td></tr>
+<tr class="memdesc:a1481dd2c86d9d1134c40f69a01db77a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Metronome Sound Source in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#a1481dd2c86d9d1134c40f69a01db77a2">More...</a><br /></td></tr>
+<tr class="separator:a1481dd2c86d9d1134c40f69a01db77a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b13e9a24940784d94b9189cf609ce0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a85b13e9a24940784d94b9189cf609ce0">GetScrollingPlayback</a> () const</td></tr>
+<tr class="memdesc:a85b13e9a24940784d94b9189cf609ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Scrolling Playback" setting in the Playback Controls.  <a href="class_f_c_playback_prefs.html#a85b13e9a24940784d94b9189cf609ce0">More...</a><br /></td></tr>
+<tr class="separator:a85b13e9a24940784d94b9189cf609ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b5baa22b637a510f762ffe8e9a8d3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a57b5baa22b637a510f762ffe8e9a8d3a">GetClickInfoForMidiNotesOnDownBeats</a> () const</td></tr>
+<tr class="memdesc:a57b5baa22b637a510f762ffe8e9a8d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the click info for MIDI Notes on Down Beats. ("Click and Countoff" dialog box.) Use the <a class="el" href="class_f_c_hyper_click.html#a0cf7af502424f9d3e6562560b06af2da" title="Returns the data 2 (counting from 1) byte value of the Click On MIDI message.">FCHyperClick::GetMidiData2</a> to get the velocity value for the Finale Internal sound source.  <a href="class_f_c_playback_prefs.html#a57b5baa22b637a510f762ffe8e9a8d3a">More...</a><br /></td></tr>
+<tr class="separator:a57b5baa22b637a510f762ffe8e9a8d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa778df201efb9a59879fefbebce93a59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aa778df201efb9a59879fefbebce93a59">GetClickInfoForMidiNotesOnOtherBeats</a> () const</td></tr>
+<tr class="memdesc:aa778df201efb9a59879fefbebce93a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the click info for MIDI Notes on Other Beats. ("Click and Countoff" dialog box.) Use the <a class="el" href="class_f_c_hyper_click.html#a0cf7af502424f9d3e6562560b06af2da" title="Returns the data 2 (counting from 1) byte value of the Click On MIDI message.">FCHyperClick::GetMidiData2</a> to get the velocity value for the Finale Internal sound source.  <a href="class_f_c_playback_prefs.html#aa778df201efb9a59879fefbebce93a59">More...</a><br /></td></tr>
+<tr class="separator:aa778df201efb9a59879fefbebce93a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6e735451120565d7f751f105399244"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#abb6e735451120565d7f751f105399244">GetClickInfoForMidiDataOnDownBeats</a> () const</td></tr>
+<tr class="memdesc:abb6e735451120565d7f751f105399244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the click info for MIDI Data on Down Beats. ("Click and Countoff" dialog box.)  <a href="class_f_c_playback_prefs.html#abb6e735451120565d7f751f105399244">More...</a><br /></td></tr>
+<tr class="separator:abb6e735451120565d7f751f105399244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6f336fcf8cc4694a563d1f0d942983"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aaf6f336fcf8cc4694a563d1f0d942983">GetClickInfoForMidiDataOnOtherBeats</a> () const</td></tr>
+<tr class="memdesc:aaf6f336fcf8cc4694a563d1f0d942983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the click info for MIDI Data on Other Beats. ("Click and Countoff" dialog box.)  <a href="class_f_c_playback_prefs.html#aaf6f336fcf8cc4694a563d1f0d942983">More...</a><br /></td></tr>
+<tr class="separator:aaf6f336fcf8cc4694a563d1f0d942983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8aec2ae954f3937bd61188db431856"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#afb8aec2ae954f3937bd61188db431856">SetBaseKeyVelocity</a> (twobyte value)</td></tr>
 <tr class="memdesc:afb8aec2ae954f3937bd61188db431856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the base key velocity value.  <a href="class_f_c_playback_prefs.html#afb8aec2ae954f3937bd61188db431856">More...</a><br /></td></tr>
 <tr class="separator:afb8aec2ae954f3937bd61188db431856"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,12 +423,87 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7be504b28b3e7610b761d61bd5b6ca0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b">SetStartMeasure</a> (eMeas measure)</td></tr>
 <tr class="memdesc:a7be504b28b3e7610b761d61bd5b6ca0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the playback start measure, which is used if the start mode allows it.  <a href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b">More...</a><br /></td></tr>
 <tr class="separator:a7be504b28b3e7610b761d61bd5b6ca0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83baaaa7a4531e85bb379929867dc9f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a83baaaa7a4531e85bb379929867dc9f2">SetStartMeasurePos</a> (TimeEdu32 value)</td></tr>
+<tr class="memdesc:a83baaaa7a4531e85bb379929867dc9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the playback start measure position, which is used if the start mode allows it.  <a href="class_f_c_playback_prefs.html#a83baaaa7a4531e85bb379929867dc9f2">More...</a><br /></td></tr>
+<tr class="separator:a83baaaa7a4531e85bb379929867dc9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367785ce26f17b5ceca8b6fd0c53f424"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a367785ce26f17b5ceca8b6fd0c53f424">SetStopMeasure</a> (eMeas measure)</td></tr>
 <tr class="memdesc:a367785ce26f17b5ceca8b6fd0c53f424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the playback stop measure.  <a href="class_f_c_playback_prefs.html#a367785ce26f17b5ceca8b6fd0c53f424">More...</a><br /></td></tr>
 <tr class="separator:a367785ce26f17b5ceca8b6fd0c53f424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5cb4fba719880e6d2174ef040daffc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ac5cb4fba719880e6d2174ef040daffc2">SetStopMeasurePos</a> (TimeEdu32 value)</td></tr>
+<tr class="memdesc:ac5cb4fba719880e6d2174ef040daffc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the playback stop measure position.  <a href="class_f_c_playback_prefs.html#ac5cb4fba719880e6d2174ef040daffc2">More...</a><br /></td></tr>
+<tr class="separator:ac5cb4fba719880e6d2174ef040daffc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafd7ce5b2cf7a21076e26368bb841a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#adafd7ce5b2cf7a21076e26368bb841a3">ConfigurePlaybackToEnd</a> ()</td></tr>
+<tr class="memdesc:adafd7ce5b2cf7a21076e26368bb841a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures playback to end of piece.  <a href="class_f_c_playback_prefs.html#adafd7ce5b2cf7a21076e26368bb841a3">More...</a><br /></td></tr>
+<tr class="separator:adafd7ce5b2cf7a21076e26368bb841a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0225a4e061af97265d7de6d031ac014c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a0225a4e061af97265d7de6d031ac014c">ConfigurePlaybackDocument</a> ()</td></tr>
+<tr class="memdesc:a0225a4e061af97265d7de6d031ac014c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures playback to all measures in the document.  <a href="class_f_c_playback_prefs.html#a0225a4e061af97265d7de6d031ac014c">More...</a><br /></td></tr>
+<tr class="separator:a0225a4e061af97265d7de6d031ac014c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38872c985dfe7267e799284446322459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a38872c985dfe7267e799284446322459">ConfigurePlaybackRegion</a> (const <a class="el" href="class_f_c_music_region.html">FCMusicRegion</a> *pRegion, bool startOnly=false)</td></tr>
+<tr class="memdesc:a38872c985dfe7267e799284446322459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures playback to the specified <a class="el" href="class_f_c_music_region.html" title="Class that encapsulates EREGION and provides additional functionality to region handling.">FCMusicRegion</a>.  <a href="class_f_c_playback_prefs.html#a38872c985dfe7267e799284446322459">More...</a><br /></td></tr>
+<tr class="separator:a38872c985dfe7267e799284446322459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a99d4c7f3271302c5798b8a9e7e88f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ac7a99d4c7f3271302c5798b8a9e7e88f">SetStartMode</a> (<a class="el" href="class_f_c_playback_prefs.html#a791647afa928b19e8652c0785b2233d8">PLAYBACKSTARTMODE</a> mode)</td></tr>
-<tr class="memdesc:ac7a99d4c7f3271302c5798b8a9e7e88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the start playback mode.  <a href="class_f_c_playback_prefs.html#ac7a99d4c7f3271302c5798b8a9e7e88f">More...</a><br /></td></tr>
+<tr class="memdesc:ac7a99d4c7f3271302c5798b8a9e7e88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the start playback mode.  <a href="class_f_c_playback_prefs.html#ac7a99d4c7f3271302c5798b8a9e7e88f">More...</a><br /></td></tr>
 <tr class="separator:ac7a99d4c7f3271302c5798b8a9e7e88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af378543f7fbb92465c68190acb5b399b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#af378543f7fbb92465c68190acb5b399b">SetExpressionsMode</a> (<a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">PLAYBACKEXPSMODE</a> mode)</td></tr>
+<tr class="memdesc:af378543f7fbb92465c68190acb5b399b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the "Dynamics and Markings" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#af378543f7fbb92465c68190acb5b399b">More...</a><br /></td></tr>
+<tr class="separator:af378543f7fbb92465c68190acb5b399b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adb5161c750d4ab19bbf06622eda616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a6adb5161c750d4ab19bbf06622eda616">SetPlayNoteDurations</a> (bool state)</td></tr>
+<tr class="memdesc:a6adb5161c750d4ab19bbf06622eda616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Play Recorded: Note Durations" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a6adb5161c750d4ab19bbf06622eda616">More...</a><br /></td></tr>
+<tr class="separator:a6adb5161c750d4ab19bbf06622eda616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4f4030a7ca14b7f62b4105f2d08f1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aaa4f4030a7ca14b7f62b4105f2d08f1e">SetPlayKeyVelocities</a> (bool state)</td></tr>
+<tr class="memdesc:aaa4f4030a7ca14b7f62b4105f2d08f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Play Recorded: Key Velocities" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#aaa4f4030a7ca14b7f62b4105f2d08f1e">More...</a><br /></td></tr>
+<tr class="separator:aaa4f4030a7ca14b7f62b4105f2d08f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b45697857681bdc599c10f1f52baa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a65b45697857681bdc599c10f1f52baa1">SetPlayContinuousData</a> (bool state)</td></tr>
+<tr class="memdesc:a65b45697857681bdc599c10f1f52baa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Play Recorded: Continuous Data" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a65b45697857681bdc599c10f1f52baa1">More...</a><br /></td></tr>
+<tr class="separator:a65b45697857681bdc599c10f1f52baa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f681abcb55a9345adeb302635870dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a92f681abcb55a9345adeb302635870dd">SetPlayTempoChanges</a> (bool state)</td></tr>
+<tr class="memdesc:a92f681abcb55a9345adeb302635870dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Play Recorded: Tempo Changes" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a92f681abcb55a9345adeb302635870dd">More...</a><br /></td></tr>
+<tr class="separator:a92f681abcb55a9345adeb302635870dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006089759935cd90120ac7e143cc0941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a006089759935cd90120ac7e143cc0941">SetRepeatsIgnore</a> (bool state)</td></tr>
+<tr class="memdesc:a006089759935cd90120ac7e143cc0941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state of the "Repeats: Ignore Repeats" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a006089759935cd90120ac7e143cc0941">More...</a><br /></td></tr>
+<tr class="separator:a006089759935cd90120ac7e143cc0941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc1c9688cd99b1c24ff2f91ae2703cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aafc1c9688cd99b1c24ff2f91ae2703cf">SetRepeatsReset</a> (bool state)</td></tr>
+<tr class="memdesc:aafc1c9688cd99b1c24ff2f91ae2703cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Repeats: Reset Repeats" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#aafc1c9688cd99b1c24ff2f91ae2703cf">More...</a><br /></td></tr>
+<tr class="separator:aafc1c9688cd99b1c24ff2f91ae2703cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5719451380114b56661fcc9eb8335e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a5719451380114b56661fcc9eb8335e4c">SetSendPatchesToMidi</a> (bool state)</td></tr>
+<tr class="memdesc:a5719451380114b56661fcc9eb8335e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Send patches to MIDI device on playback" setting in the "Playback/Record Options" dialog box.  <a href="class_f_c_playback_prefs.html#a5719451380114b56661fcc9eb8335e4c">More...</a><br /></td></tr>
+<tr class="separator:a5719451380114b56661fcc9eb8335e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd33deca32b47af96557da1ab02b066c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#acd33deca32b47af96557da1ab02b066c">SetSyncReceiveMidi</a> (bool state)</td></tr>
+<tr class="memdesc:acd33deca32b47af96557da1ab02b066c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the "Receive Sync" choice in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#acd33deca32b47af96557da1ab02b066c">More...</a><br /></td></tr>
+<tr class="separator:acd33deca32b47af96557da1ab02b066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed76477f087b388e865afe8c5a6dbf07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aed76477f087b388e865afe8c5a6dbf07">SetSyncChasePatches</a> (bool state)</td></tr>
+<tr class="memdesc:aed76477f087b388e865afe8c5a6dbf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the "Chase Patch Changes During MIDI Sync" option in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#aed76477f087b388e865afe8c5a6dbf07">More...</a><br /></td></tr>
+<tr class="separator:aed76477f087b388e865afe8c5a6dbf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae919bb8904afaa0afd74c9149163e980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ae919bb8904afaa0afd74c9149163e980">SetSyncChaseContinuousData</a> (bool state)</td></tr>
+<tr class="memdesc:ae919bb8904afaa0afd74c9149163e980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the "Chase Continuous Data During MIDI Sync" option in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#ae919bb8904afaa0afd74c9149163e980">More...</a><br /></td></tr>
+<tr class="separator:ae919bb8904afaa0afd74c9149163e980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4032cee1090e55ab1fc822d0ace427db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a4032cee1090e55ab1fc822d0ace427db">SetSMPTEFrameRate</a> (<a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">SMPTEFRAMERATE</a> mode)</td></tr>
+<tr class="memdesc:a4032cee1090e55ab1fc822d0ace427db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SMPTE Frame Rate option in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#a4032cee1090e55ab1fc822d0ace427db">More...</a><br /></td></tr>
+<tr class="separator:a4032cee1090e55ab1fc822d0ace427db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae19c8d8865bd416cb909535a97a14ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aae19c8d8865bd416cb909535a97a14ad">SetSMPTEStartTime</a> (TimeRtu32 value)</td></tr>
+<tr class="memdesc:aae19c8d8865bd416cb909535a97a14ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SMPTE start time in the in the "Sync and Video Options" dialog box.  <a href="class_f_c_playback_prefs.html#aae19c8d8865bd416cb909535a97a14ad">More...</a><br /></td></tr>
+<tr class="separator:aae19c8d8865bd416cb909535a97a14ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f6a88818c733ff1b791f7f0f9ccf3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a81f6a88818c733ff1b791f7f0f9ccf3a">SetCountOffMeasures</a> (int value)</td></tr>
+<tr class="memdesc:a81f6a88818c733ff1b791f7f0f9ccf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Countoff Measures in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#a81f6a88818c733ff1b791f7f0f9ccf3a">More...</a><br /></td></tr>
+<tr class="separator:a81f6a88818c733ff1b791f7f0f9ccf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cdcb96f503c43f693dade1ef28739d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ae0cdcb96f503c43f693dade1ef28739d">SetCountOffWhenRecording</a> (bool state)</td></tr>
+<tr class="memdesc:ae0cdcb96f503c43f693dade1ef28739d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Countoff status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#ae0cdcb96f503c43f693dade1ef28739d">More...</a><br /></td></tr>
+<tr class="separator:ae0cdcb96f503c43f693dade1ef28739d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e69be06744b3f7133918611c8b85dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#aa0e69be06744b3f7133918611c8b85dc">SetCountOffWhenPlaying</a> (bool state)</td></tr>
+<tr class="memdesc:aa0e69be06744b3f7133918611c8b85dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Countoff status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#aa0e69be06744b3f7133918611c8b85dc">More...</a><br /></td></tr>
+<tr class="separator:aa0e69be06744b3f7133918611c8b85dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92c15ef7459ddff378c96af2ce065c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ad92c15ef7459ddff378c96af2ce065c5">SetClickWhenRecording</a> (bool state)</td></tr>
+<tr class="memdesc:ad92c15ef7459ddff378c96af2ce065c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Click status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#ad92c15ef7459ddff378c96af2ce065c5">More...</a><br /></td></tr>
+<tr class="separator:ad92c15ef7459ddff378c96af2ce065c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dd5fc4cef59ace0e8b72b8c86fbde2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a10dd5fc4cef59ace0e8b72b8c86fbde2">SetClickWhenPlaying</a> (bool state)</td></tr>
+<tr class="memdesc:a10dd5fc4cef59ace0e8b72b8c86fbde2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Click status in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#a10dd5fc4cef59ace0e8b72b8c86fbde2">More...</a><br /></td></tr>
+<tr class="separator:a10dd5fc4cef59ace0e8b72b8c86fbde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23d538cade9788273ffb6ab0a38f951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#ad23d538cade9788273ffb6ab0a38f951">SetMetronomeSoundSource</a> (<a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">METSOUNDSOURCE</a> value)</td></tr>
+<tr class="memdesc:ad23d538cade9788273ffb6ab0a38f951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the Metronome Sound Source in the "Click and Countoff" dialog box.  <a href="class_f_c_playback_prefs.html#ad23d538cade9788273ffb6ab0a38f951">More...</a><br /></td></tr>
+<tr class="separator:ad23d538cade9788273ffb6ab0a38f951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3a08da73b627cbb36aea478b844d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_playback_prefs.html#a8c3a08da73b627cbb36aea478b844d7a">SetScrollingPlayback</a> (bool state)</td></tr>
+<tr class="memdesc:a8c3a08da73b627cbb36aea478b844d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state of the "Scrolling Playback" setting in the Playback Controls.  <a href="class_f_c_playback_prefs.html#a8c3a08da73b627cbb36aea478b844d7a">More...</a><br /></td></tr>
+<tr class="separator:a8c3a08da73b627cbb36aea478b844d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_____f_c_prefs_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_____f_c_prefs_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_____f_c_prefs_base.html">__FCPrefsBase</a></td></tr>
 <tr class="memitem:a8577911b5f3e7ea185739f6404e1236e inherit pub_methods_class_____f_c_prefs_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_prefs_base.html#a8577911b5f3e7ea185739f6404e1236e">Reload</a> () override</td></tr>
 <tr class="memdesc:a8577911b5f3e7ea185739f6404e1236e inherit pub_methods_class_____f_c_prefs_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden version of <a class="el" href="class_____f_c_prefs_base.html#a8577911b5f3e7ea185739f6404e1236e" title="Overridden version of Reload(), that handles prefs from multiple sources.">Reload()</a>, that handles prefs from multiple sources.  <a href="class_____f_c_prefs_base.html#a8577911b5f3e7ea185739f6404e1236e">More...</a><br /></td></tr>
@@ -346,12 +527,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">VerifyConnectedDocID</a> ()</td></tr>
 <tr class="memdesc:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the stored document ID for the data object matches the current document's ID.  <a href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">More...</a><br /></td></tr>
 <tr class="separator:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b">EnigmaVersion</a> ()</td></tr>
-<tr class="memdesc:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b">More...</a><br /></td></tr>
-<tr class="separator:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">DataSizeSave</a> ()</td></tr>
-<tr class="memdesc:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">More...</a><br /></td></tr>
-<tr class="separator:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46">EnigmaVersion</a> () const</td></tr>
+<tr class="memdesc:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46">More...</a><br /></td></tr>
+<tr class="separator:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">DataSizeSave</a> () const</td></tr>
+<tr class="memdesc:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">More...</a><br /></td></tr>
+<tr class="separator:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">_CloneFrom</a> (<a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *pSource)</td></tr>
 <tr class="memdesc:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Copies object data (except data block) from another object.  <a href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">More...</a><br /></td></tr>
 <tr class="separator:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,6 +741,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">DebugOut</a> (const char *pszLine)</td></tr>
 <tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
 <tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_____f_c_prefs_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_prefs_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_prefs_base.html">__FCPrefsBase</a></td></tr>
+<tr class="memitem:a1d5f274cc404a612b93e515731dd4677 inherit pro_methods_class_____f_c_prefs_base"><td class="memItemLeft" align="right" valign="top"><a id="a1d5f274cc404a612b93e515731dd4677" name="a1d5f274cc404a612b93e515731dd4677"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__FCPrefsBase</b> ()</td></tr>
+<tr class="memdesc:a1d5f274cc404a612b93e515731dd4677 inherit pro_methods_class_____f_c_prefs_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard constructor <br /></td></tr>
+<tr class="separator:a1d5f274cc404a612b93e515731dd4677 inherit pro_methods_class_____f_c_prefs_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_____f_c_base_data"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base_data')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base_data.html">__FCBaseData</a></td></tr>
 <tr class="memitem:a18a4039bcaf1deae6bec1b5fee193d41 inherit pro_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a18a4039bcaf1deae6bec1b5fee193d41">Deallocate</a> ()</td></tr>
 <tr class="separator:a18a4039bcaf1deae6bec1b5fee193d41 inherit pro_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,6 +796,54 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for the document's playback preferences values. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a4410055563075c37cb2cad321e2f7c9d" name="a4410055563075c37cb2cad321e2f7c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4410055563075c37cb2cad321e2f7c9d">&#9670;&nbsp;</a></span>METSOUNDSOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">FCPlaybackPrefs::METSOUNDSOURCE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Metronome Sound Source values. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4410055563075c37cb2cad321e2f7c9da2f941cd5e0c130a9fd13fca02b4c761c" name="a4410055563075c37cb2cad321e2f7c9da2f941cd5e0c130a9fd13fca02b4c761c"></a>METSOURCE_FINALECLICK&#160;</td><td class="fielddoc"><p >Finale Click </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4410055563075c37cb2cad321e2f7c9da51b3eafbd2ae18453f5ced9c497184f3" name="a4410055563075c37cb2cad321e2f7c9da51b3eafbd2ae18453f5ced9c497184f3"></a>METSOURCE_MIDINOTE&#160;</td><td class="fielddoc"><p >MIDI Note </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a4410055563075c37cb2cad321e2f7c9da0fdd888a37bbcb299ce926868c0a8283" name="a4410055563075c37cb2cad321e2f7c9da0fdd888a37bbcb299ce926868c0a8283"></a>METSOURCE_MIDIDATA&#160;</td><td class="fielddoc"><p >MIDI Data </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa1a7c97d2e0c5e882640435e73eb5a23" name="aa1a7c97d2e0c5e882640435e73eb5a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a7c97d2e0c5e882640435e73eb5a23">&#9670;&nbsp;</a></span>PLAYBACKEXPSMODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">FCPlaybackPrefs::PLAYBACKEXPSMODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Dynamics and Markings playback modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa1a7c97d2e0c5e882640435e73eb5a23a53f8aca57e7dd6a9384ec5f1bfee1ca3" name="aa1a7c97d2e0c5e882640435e73eb5a23a53f8aca57e7dd6a9384ec5f1bfee1ca3"></a>PLAYBACKEXPS_CHASE_FROM_ONE&#160;</td><td class="fielddoc"><p >Chase from Measure 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa1a7c97d2e0c5e882640435e73eb5a23a0583ef601f82a0533630b2b2d82ddb9c" name="aa1a7c97d2e0c5e882640435e73eb5a23a0583ef601f82a0533630b2b2d82ddb9c"></a>PLAYBACKEXPS_RESET&#160;</td><td class="fielddoc"><p >Rest. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa1a7c97d2e0c5e882640435e73eb5a23ac39dc1d3ffaf22221ada160f2e78e85c" name="aa1a7c97d2e0c5e882640435e73eb5a23ac39dc1d3ffaf22221ada160f2e78e85c"></a>PLAYBACKEXPS_USECURRENT&#160;</td><td class="fielddoc"><p >Use Current Settings. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a791647afa928b19e8652c0785b2233d8" name="a791647afa928b19e8652c0785b2233d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a791647afa928b19e8652c0785b2233d8">&#9670;&nbsp;</a></span>PLAYBACKSTARTMODE</h2>
 
@@ -628,7 +862,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </td></tr>
 <tr><td class="fieldname"><a id="a791647afa928b19e8652c0785b2233d8a4621225c655a05643e7f4a754b089065" name="a791647afa928b19e8652c0785b2233d8a4621225c655a05643e7f4a754b089065"></a>PLAYBACKSTART_LEFTMOST&#160;</td><td class="fielddoc"><p >Use leftmost measure. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a791647afa928b19e8652c0785b2233d8a48c2a3cfba41b7fc5c75a808a37c8247" name="a791647afa928b19e8652c0785b2233d8a48c2a3cfba41b7fc5c75a808a37c8247"></a>PLAYBACKSTART_CURRENTCOUNTER&#160;</td><td class="fielddoc"><p >Use current counter. </p>
+<tr><td class="fieldname"><a id="a791647afa928b19e8652c0785b2233d8a48c2a3cfba41b7fc5c75a808a37c8247" name="a791647afa928b19e8652c0785b2233d8a48c2a3cfba41b7fc5c75a808a37c8247"></a>PLAYBACKSTART_CURRENTCOUNTER&#160;</td><td class="fielddoc"><p >Use current counter. (WIndows only.) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4" name="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">&#9670;&nbsp;</a></span>SMPTEFRAMERATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">FCPlaybackPrefs::SMPTEFRAMERATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The SMPTE Frame Rate types. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a9859e11c41d9a308dd88144edf21db9d" name="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a9859e11c41d9a308dd88144edf21db9d"></a>SMPTETIMETYPE_24&#160;</td><td class="fielddoc"><p >24 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a4f2c7d2cc038618d0281e19f55ebc034" name="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a4f2c7d2cc038618d0281e19f55ebc034"></a>SMPTETIMETYPE_25&#160;</td><td class="fielddoc"><p >25 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a08b8ab38b4da48f3879bf768b75c4ed9" name="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a08b8ab38b4da48f3879bf768b75c4ed9"></a>SMPTETIMETYPE_2997_DROP&#160;</td><td class="fielddoc"><p >29.97 Drop </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4ab9c273c3adf196c6de3b045850744f35" name="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4ab9c273c3adf196c6de3b045850744f35"></a>SMPTETIMETYPE_30&#160;</td><td class="fielddoc"><p >30 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a7fe43d3a8845905b6a97a446a644ff02" name="a5cee0dc4cc7a2e1a5f6ca356e94ba4c4a7fe43d3a8845905b6a97a446a644ff02"></a>SMPTETIMETYPE_2997_NONDROP&#160;</td><td class="fielddoc"><p >29.97 Non-Drop </p>
 </td></tr>
 </table>
 
@@ -694,6 +956,112 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a0225a4e061af97265d7de6d031ac014c" name="a0225a4e061af97265d7de6d031ac014c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0225a4e061af97265d7de6d031ac014c">&#9670;&nbsp;</a></span>ConfigurePlaybackDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::ConfigurePlaybackDocument </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configures playback to all measures in the document. </p>
+<p >This is a utility function that makes the necessary changes so that the entire document plays back. However, see the warning at <a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b" title="Sets the playback start measure, which is used if the start mode allows it.">SetStartMeasure</a> for versions of Finale before 26.2.</p>
+<p >Lua-supported (0.68). </p>
+
+</div>
+</div>
+<a id="a38872c985dfe7267e799284446322459" name="a38872c985dfe7267e799284446322459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38872c985dfe7267e799284446322459">&#9670;&nbsp;</a></span>ConfigurePlaybackRegion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::ConfigurePlaybackRegion </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_music_region.html">FCMusicRegion</a> *&#160;</td>
+          <td class="paramname"><em>pRegion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>startOnly</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configures playback to the specified <a class="el" href="class_f_c_music_region.html" title="Class that encapsulates EREGION and provides additional functionality to region handling.">FCMusicRegion</a>. </p>
+<p >This is a utility function that makes the necessary changes so that playback matches the measure span of the input region. If the region is empty, playback is set to the whole document. This allows for <code>finenv.Region()</code> to be passed in without any checks, and if it is empty, playback is reset.</p>
+<p >See the warning at <a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b" title="Sets the playback start measure, which is used if the start mode allows it.">SetStartMeasure</a> for versions of Finale before 26.2.</p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pRegion</td><td>the region to play back </td></tr>
+    <tr><td class="paramname">startOnly</td><td>(optional) if true, only set up playback start and leave the playback end configuration alone </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adafd7ce5b2cf7a21076e26368bb841a3" name="adafd7ce5b2cf7a21076e26368bb841a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafd7ce5b2cf7a21076e26368bb841a3">&#9670;&nbsp;</a></span>ConfigurePlaybackToEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::ConfigurePlaybackToEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configures playback to end of piece. </p>
+<p >This is a utility function that makes the necessary changes so that playback always plays to the end of the piece, regardles of how many measures there are. It also modifies the Playback Controls to select the "End of Piece" radio button. However, see the warning at <a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b" title="Sets the playback start measure, which is used if the start mode allows it.">SetStartMeasure</a> for versions of Finale before 26.2.</p>
+<p >Lua-supported (0.68). </p>
+
+</div>
+</div>
 <a id="a2ad496e4033edd43408c9fac0f4bae95" name="a2ad496e4033edd43408c9fac0f4bae95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ad496e4033edd43408c9fac0f4bae95">&#9670;&nbsp;</a></span>GetBaseKeyVelocity()</h2>
 
@@ -754,6 +1122,295 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="abb6e735451120565d7f751f105399244" name="abb6e735451120565d7f751f105399244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6e735451120565d7f751f105399244">&#9670;&nbsp;</a></span>GetClickInfoForMidiDataOnDownBeats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> * FCPlaybackPrefs::GetClickInfoForMidiDataOnDownBeats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the click info for MIDI Data on Down Beats. ("Click and Countoff" dialog box.) </p>
+<p >To save changes to this value, save the parent instance of <a class="el" href="class_f_c_playback_prefs.html" title="Class for the document&#39;s playback preferences values.">FCPlaybackPrefs</a>. Do not reference this value after the parent instance goes out of scope. It could cause Finale to crash.</p>
+<p >Lua-supported (also as read-only property) (0.68) </p>
+
+</div>
+</div>
+<a id="aaf6f336fcf8cc4694a563d1f0d942983" name="aaf6f336fcf8cc4694a563d1f0d942983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6f336fcf8cc4694a563d1f0d942983">&#9670;&nbsp;</a></span>GetClickInfoForMidiDataOnOtherBeats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> * FCPlaybackPrefs::GetClickInfoForMidiDataOnOtherBeats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the click info for MIDI Data on Other Beats. ("Click and Countoff" dialog box.) </p>
+<p >To save changes to this value, save the parent instance of <a class="el" href="class_f_c_playback_prefs.html" title="Class for the document&#39;s playback preferences values.">FCPlaybackPrefs</a>. Do not reference this value after the parent instance goes out of scope. It could cause Finale to crash.</p>
+<p >Lua-supported (also as read-only property) (0.68) </p>
+
+</div>
+</div>
+<a id="a57b5baa22b637a510f762ffe8e9a8d3a" name="a57b5baa22b637a510f762ffe8e9a8d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57b5baa22b637a510f762ffe8e9a8d3a">&#9670;&nbsp;</a></span>GetClickInfoForMidiNotesOnDownBeats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> * FCPlaybackPrefs::GetClickInfoForMidiNotesOnDownBeats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the click info for MIDI Notes on Down Beats. ("Click and Countoff" dialog box.) Use the <a class="el" href="class_f_c_hyper_click.html#a0cf7af502424f9d3e6562560b06af2da" title="Returns the data 2 (counting from 1) byte value of the Click On MIDI message.">FCHyperClick::GetMidiData2</a> to get the velocity value for the Finale Internal sound source. </p>
+<p >To save changes to this value, save the parent instance of <a class="el" href="class_f_c_playback_prefs.html" title="Class for the document&#39;s playback preferences values.">FCPlaybackPrefs</a>. Do not reference this value after the parent instance goes out of scope. It could cause Finale to crash.</p>
+<p >Lua-supported (also as read-only property) (0.68) </p>
+
+</div>
+</div>
+<a id="aa778df201efb9a59879fefbebce93a59" name="aa778df201efb9a59879fefbebce93a59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa778df201efb9a59879fefbebce93a59">&#9670;&nbsp;</a></span>GetClickInfoForMidiNotesOnOtherBeats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_hyper_click.html">FCHyperClick</a> * FCPlaybackPrefs::GetClickInfoForMidiNotesOnOtherBeats </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the click info for MIDI Notes on Other Beats. ("Click and Countoff" dialog box.) Use the <a class="el" href="class_f_c_hyper_click.html#a0cf7af502424f9d3e6562560b06af2da" title="Returns the data 2 (counting from 1) byte value of the Click On MIDI message.">FCHyperClick::GetMidiData2</a> to get the velocity value for the Finale Internal sound source. </p>
+<p >To save changes to this value, save the parent instance of <a class="el" href="class_f_c_playback_prefs.html" title="Class for the document&#39;s playback preferences values.">FCPlaybackPrefs</a>. Do not reference this value after the parent instance goes out of scope. It could cause Finale to crash.</p>
+<p >Lua-supported (also as read-only property) (0.68) </p>
+
+</div>
+</div>
+<a id="abbf4862dc7162ad232431b7e8fdb930b" name="abbf4862dc7162ad232431b7e8fdb930b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf4862dc7162ad232431b7e8fdb930b">&#9670;&nbsp;</a></span>GetClickWhenPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetClickWhenPlaying </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Click status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="section return"><dt>Returns</dt><dd>true for the pulldown options "While Playing" and "Always"; otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a1e8817065585292b64f11acd8bb63fdd" name="a1e8817065585292b64f11acd8bb63fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8817065585292b64f11acd8bb63fdd">&#9670;&nbsp;</a></span>GetClickWhenRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetClickWhenRecording </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Click status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="section return"><dt>Returns</dt><dd>true for the pulldown options "While Recording" and "Always"; otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a1658139caadb86980262da53de1fa308" name="a1658139caadb86980262da53de1fa308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1658139caadb86980262da53de1fa308">&#9670;&nbsp;</a></span>GetCountOffMeasures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCPlaybackPrefs::GetCountOffMeasures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Countoff Measures in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aed500b3a81ed1c3451cc269208635f96" name="aed500b3a81ed1c3451cc269208635f96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed500b3a81ed1c3451cc269208635f96">&#9670;&nbsp;</a></span>GetCountOffWhenPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetCountOffWhenPlaying </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Countoff status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="section return"><dt>Returns</dt><dd>true for the pulldown options "While Playing" and "Always"; otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a853a3065c89183be0b861bd6244131cd" name="a853a3065c89183be0b861bd6244131cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a853a3065c89183be0b861bd6244131cd">&#9670;&nbsp;</a></span>GetCountOffWhenRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetCountOffWhenRecording </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Countoff status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="section return"><dt>Returns</dt><dd>true for the pulldown options "While Recording" and "Always"; otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a08b95e810bd2b70dc9e03709887ae67c" name="a08b95e810bd2b70dc9e03709887ae67c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b95e810bd2b70dc9e03709887ae67c">&#9670;&nbsp;</a></span>GetExpressionsMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">PLAYBACKEXPSMODE</a> FCPlaybackPrefs::GetExpressionsMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the "Dynamics and Markings" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="section return"><dt>Returns</dt><dd>Any of the PLAYBACKEXPS_ constants. </dd></dl>
+
+</div>
+</div>
 <a id="ac33fcd703f2a8e911b22958d8522d6f3" name="ac33fcd703f2a8e911b22958d8522d6f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac33fcd703f2a8e911b22958d8522d6f3">&#9670;&nbsp;</a></span>GetMetronomeBeat()</h2>
 
@@ -779,6 +1436,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Returns the metronome beat (in EDUs). </p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a1481dd2c86d9d1134c40f69a01db77a2" name="a1481dd2c86d9d1134c40f69a01db77a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1481dd2c86d9d1134c40f69a01db77a2">&#9670;&nbsp;</a></span>GetMetronomeSoundSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">METSOUNDSOURCE</a> FCPlaybackPrefs::GetMetronomeSoundSource </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the Metronome Sound Source in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="section return"><dt>Returns</dt><dd>Any of the METSOURCE_ constants. </dd></dl>
 
 </div>
 </div>
@@ -810,11 +1496,210 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a3d98bcb62b2f75d7b0ee31e9b849a647" name="a3d98bcb62b2f75d7b0ee31e9b849a647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d98bcb62b2f75d7b0ee31e9b849a647">&#9670;&nbsp;</a></span>GetPlayContinuousData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetPlayContinuousData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Play Recorded: Continuous Data" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aea6b7ff5a14c7a20d0af1bf7e7ed89c0" name="aea6b7ff5a14c7a20d0af1bf7e7ed89c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6b7ff5a14c7a20d0af1bf7e7ed89c0">&#9670;&nbsp;</a></span>GetPlayKeyVelocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetPlayKeyVelocities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Play Recorded: Key Velocities" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a0e9aaf1b8d0619b412e549b8f21f3032" name="a0e9aaf1b8d0619b412e549b8f21f3032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9aaf1b8d0619b412e549b8f21f3032">&#9670;&nbsp;</a></span>GetPlayNoteDurations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetPlayNoteDurations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Play Recorded: Note Durations" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="ae222aa455a40a092a3fca99d3e249f7b" name="ae222aa455a40a092a3fca99d3e249f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae222aa455a40a092a3fca99d3e249f7b">&#9670;&nbsp;</a></span>GetPlayTempoChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetPlayTempoChanges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Play Recorded: Tempo Changes" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aa9e57298f548fe0b0c2aa0be16131ed1" name="aa9e57298f548fe0b0c2aa0be16131ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e57298f548fe0b0c2aa0be16131ed1">&#9670;&nbsp;</a></span>GetRepeatsIgnore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetRepeatsIgnore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Repeats: Ignore Repeats" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a8364142245825a61e69dc60242463795" name="a8364142245825a61e69dc60242463795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8364142245825a61e69dc60242463795">&#9670;&nbsp;</a></span>GetRepeatsReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetRepeatsReset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Repeats: Reset Repeats" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a85b13e9a24940784d94b9189cf609ce0" name="a85b13e9a24940784d94b9189cf609ce0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b13e9a24940784d94b9189cf609ce0">&#9670;&nbsp;</a></span>GetScrollingPlayback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetScrollingPlayback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Scrolling Playback" setting in the Playback Controls. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
 <a id="a9478c57185365d58704ebb9a21e1d4f5" name="a9478c57185365d58704ebb9a21e1d4f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9478c57185365d58704ebb9a21e1d4f5">&#9670;&nbsp;</a></span>GetSendPatchesToMidi()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool FCPlaybackPrefs::GetSendPatchesToMidi </td>
@@ -823,10 +1708,73 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the state of the "Send patches to MIDI device on playback" setting in the "Playback/Record Options" dialog box. </p>
-<p >Only works on Finale 2014 and above. (Finale 26.2 has a 1-off implementation for this, since it isn't in EDTPlaybackPrefs26_2.) </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a9d3c17b3a2bade184317bf4c7d41b167" name="a9d3c17b3a2bade184317bf4c7d41b167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3c17b3a2bade184317bf4c7d41b167">&#9670;&nbsp;</a></span>GetSMPTEFrameRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">SMPTEFRAMERATE</a> FCPlaybackPrefs::GetSMPTEFrameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the SMPTE Frame Rate option in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="section return"><dt>Returns</dt><dd>Any of the SMPTETIMETYPE_ constants. </dd></dl>
+
+</div>
+</div>
+<a id="a9b7c5659de5469b44d3fd07a13f88ab8" name="a9b7c5659de5469b44d3fd07a13f88ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7c5659de5469b44d3fd07a13f88ab8">&#9670;&nbsp;</a></span>GetSMPTEStartTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeRtu32 FCPlaybackPrefs::GetSMPTEStartTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the SMPTE start time in the in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="section return"><dt>Returns</dt><dd>start time in milliseconds. </dd></dl>
 
 </div>
 </div>
@@ -858,6 +1806,34 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a02b33974c5c95551ca7f50eaf60f1f9d" name="a02b33974c5c95551ca7f50eaf60f1f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b33974c5c95551ca7f50eaf60f1f9d">&#9670;&nbsp;</a></span>GetStartMeasurePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeEdu32 FCPlaybackPrefs::GetStartMeasurePos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the playback start measure position, which is used if the start mode allows it. </p>
+<p >Lua-supported (also as property) (0.68). </p>
+
+</div>
+</div>
 <a id="a64531f9c9477439fa1b3bfa887a69397" name="a64531f9c9477439fa1b3bfa887a69397"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64531f9c9477439fa1b3bfa887a69397">&#9670;&nbsp;</a></span>GetStartMode()</h2>
 
@@ -882,7 +1858,37 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the start playback mode. </p>
+<p >Lua-supported (also as property).</p>
 <dl class="section return"><dt>Returns</dt><dd>Any of the PLAYBACKSTART_ constants. </dd></dl>
+
+</div>
+</div>
+<a id="a8101114209ca5826890ce60d72c86908" name="a8101114209ca5826890ce60d72c86908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8101114209ca5826890ce60d72c86908">&#9670;&nbsp;</a></span>GetStartRepeatPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCPlaybackPrefs::GetStartRepeatPass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the playback start repeat pass number. </p>
+<p >Finale does not allow plugins to modify this value.</p>
+<p >Lua-supported (also as read-only property) (0.68). </p>
 
 </div>
 </div>
@@ -910,7 +1916,65 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Returns the playback stop measure. </p>
+<p >If <a class="el" href="class_f_c_playback_prefs.html#a51aa84d3b5753daf9bcccdb1c6d98793" title="Returns the playback stop measure position.">GetStopMeasurePos</a> is zero, playback stops at the end of this measure. Otherwise, it stops when <a class="el" href="class_f_c_playback_prefs.html#a51aa84d3b5753daf9bcccdb1c6d98793" title="Returns the playback stop measure position.">GetStopMeasurePos</a> is reached.</p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a51aa84d3b5753daf9bcccdb1c6d98793" name="a51aa84d3b5753daf9bcccdb1c6d98793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51aa84d3b5753daf9bcccdb1c6d98793">&#9670;&nbsp;</a></span>GetStopMeasurePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeEdu32 FCPlaybackPrefs::GetStopMeasurePos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the playback stop measure position. </p>
+<p >Lua-supported (also as property) (0.68). </p>
+
+</div>
+</div>
+<a id="ac3fd11f9e7125ab78dde449e1d931e7b" name="ac3fd11f9e7125ab78dde449e1d931e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3fd11f9e7125ab78dde449e1d931e7b">&#9670;&nbsp;</a></span>GetStopRepeatPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCPlaybackPrefs::GetStopRepeatPass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the playback stop repeat pass number. </p>
+<p >Finale does not allow plugins to modify this value.</p>
+<p >Lua-supported (also as read-only property) (0.68). </p>
 
 </div>
 </div>
@@ -943,6 +2007,91 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a2f10cb17190907623f96e7e0a546ac54" name="a2f10cb17190907623f96e7e0a546ac54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f10cb17190907623f96e7e0a546ac54">&#9670;&nbsp;</a></span>GetSyncChaseContinuousData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetSyncChaseContinuousData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the "Chase Continuous Data During MIDI Sync" option in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a8075b45f3c682d16826d866020daea29" name="a8075b45f3c682d16826d866020daea29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8075b45f3c682d16826d866020daea29">&#9670;&nbsp;</a></span>GetSyncChasePatches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetSyncChasePatches </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the "Chase Patch Changes During MIDI Sync" option in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="ab0bc722c4a9d1f341543f12005c776d7" name="ab0bc722c4a9d1f341543f12005c776d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bc722c4a9d1f341543f12005c776d7">&#9670;&nbsp;</a></span>GetSyncReceiveMidi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCPlaybackPrefs::GetSyncReceiveMidi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the "Receive Sync" choice in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="section return"><dt>Returns</dt><dd>true = receive MIDI sync; false = receive internal sync </dd></dl>
+
+</div>
+</div>
 <a id="afb8aec2ae954f3937bd61188db431856" name="afb8aec2ae954f3937bd61188db431856"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb8aec2ae954f3937bd61188db431856">&#9670;&nbsp;</a></span>SetBaseKeyVelocity()</h2>
 
@@ -969,6 +2118,210 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Sets the base key velocity value. </p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a10dd5fc4cef59ace0e8b72b8c86fbde2" name="a10dd5fc4cef59ace0e8b72b8c86fbde2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10dd5fc4cef59ace0e8b72b8c86fbde2">&#9670;&nbsp;</a></span>SetClickWhenPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetClickWhenPlaying </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Click status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>true for the pulldown options "While Playing" and "Always"; otherwise false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad92c15ef7459ddff378c96af2ce065c5" name="ad92c15ef7459ddff378c96af2ce065c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92c15ef7459ddff378c96af2ce065c5">&#9670;&nbsp;</a></span>SetClickWhenRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetClickWhenRecording </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Click status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>true for the pulldown options "While Recording" and "Always"; otherwise false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a81f6a88818c733ff1b791f7f0f9ccf3a" name="a81f6a88818c733ff1b791f7f0f9ccf3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f6a88818c733ff1b791f7f0f9ccf3a">&#9670;&nbsp;</a></span>SetCountOffMeasures()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetCountOffMeasures </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Countoff Measures in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aa0e69be06744b3f7133918611c8b85dc" name="aa0e69be06744b3f7133918611c8b85dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0e69be06744b3f7133918611c8b85dc">&#9670;&nbsp;</a></span>SetCountOffWhenPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetCountOffWhenPlaying </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Countoff status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>true for the pulldown options "While Playing" and "Always"; otherwise false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae0cdcb96f503c43f693dade1ef28739d" name="ae0cdcb96f503c43f693dade1ef28739d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0cdcb96f503c43f693dade1ef28739d">&#9670;&nbsp;</a></span>SetCountOffWhenRecording()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetCountOffWhenRecording </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Countoff status in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>true for the pulldown options "While Recording" and "Always"; otherwise false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af378543f7fbb92465c68190acb5b399b" name="af378543f7fbb92465c68190acb5b399b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af378543f7fbb92465c68190acb5b399b">&#9670;&nbsp;</a></span>SetExpressionsMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetExpressionsMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_playback_prefs.html#aa1a7c97d2e0c5e882640435e73eb5a23">PLAYBACKEXPSMODE</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the "Dynamics and Markings" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Any of the PLAYBACKEXPS_ constants. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1002,6 +2355,41 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="ad23d538cade9788273ffb6ab0a38f951" name="ad23d538cade9788273ffb6ab0a38f951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23d538cade9788273ffb6ab0a38f951">&#9670;&nbsp;</a></span>SetMetronomeSoundSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetMetronomeSoundSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_playback_prefs.html#a4410055563075c37cb2cad321e2f7c9d">METSOUNDSOURCE</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the Metronome Sound Source in the "Click and Countoff" dialog box. </p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Any of the METSOURCE_ constants. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a44f0db9e6d2d64403343e01dae63b141" name="a44f0db9e6d2d64403343e01dae63b141"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44f0db9e6d2d64403343e01dae63b141">&#9670;&nbsp;</a></span>SetMetronomeSpeed()</h2>
 
@@ -1032,6 +2420,309 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a65b45697857681bdc599c10f1f52baa1" name="a65b45697857681bdc599c10f1f52baa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b45697857681bdc599c10f1f52baa1">&#9670;&nbsp;</a></span>SetPlayContinuousData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetPlayContinuousData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Play Recorded: Continuous Data" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aaa4f4030a7ca14b7f62b4105f2d08f1e" name="aaa4f4030a7ca14b7f62b4105f2d08f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4f4030a7ca14b7f62b4105f2d08f1e">&#9670;&nbsp;</a></span>SetPlayKeyVelocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetPlayKeyVelocities </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Play Recorded: Key Velocities" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a6adb5161c750d4ab19bbf06622eda616" name="a6adb5161c750d4ab19bbf06622eda616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6adb5161c750d4ab19bbf06622eda616">&#9670;&nbsp;</a></span>SetPlayNoteDurations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetPlayNoteDurations </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Play Recorded: Note Durations" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a92f681abcb55a9345adeb302635870dd" name="a92f681abcb55a9345adeb302635870dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f681abcb55a9345adeb302635870dd">&#9670;&nbsp;</a></span>SetPlayTempoChanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetPlayTempoChanges </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Play Recorded: Tempo Changes" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a006089759935cd90120ac7e143cc0941" name="a006089759935cd90120ac7e143cc0941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006089759935cd90120ac7e143cc0941">&#9670;&nbsp;</a></span>SetRepeatsIgnore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetRepeatsIgnore </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state of the "Repeats: Ignore Repeats" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aafc1c9688cd99b1c24ff2f91ae2703cf" name="aafc1c9688cd99b1c24ff2f91ae2703cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc1c9688cd99b1c24ff2f91ae2703cf">&#9670;&nbsp;</a></span>SetRepeatsReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetRepeatsReset </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Repeats: Reset Repeats" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a8c3a08da73b627cbb36aea478b844d7a" name="a8c3a08da73b627cbb36aea478b844d7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3a08da73b627cbb36aea478b844d7a">&#9670;&nbsp;</a></span>SetScrollingPlayback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetScrollingPlayback </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Scrolling Playback" setting in the Playback Controls. </p>
+<p >When the Playback Controls are open, Finale 26.3 and higher update the "Scrolling Playback" option immediately after the plugin runs. However, some earlier versions (especially Finale 25 and earlier) may not update the window. The change has been made, but you do not see the change reflected on screen until you close and reopen the Playback Controls or until you start and then stop playback.</p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a5719451380114b56661fcc9eb8335e4c" name="a5719451380114b56661fcc9eb8335e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5719451380114b56661fcc9eb8335e4c">&#9670;&nbsp;</a></span>SetSendPatchesToMidi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetSendPatchesToMidi </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the state of the "Send patches to MIDI device on playback" setting in the "Playback/Record Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="a4032cee1090e55ab1fc822d0ace427db" name="a4032cee1090e55ab1fc822d0ace427db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4032cee1090e55ab1fc822d0ace427db">&#9670;&nbsp;</a></span>SetSMPTEFrameRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetSMPTEFrameRate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_playback_prefs.html#a5cee0dc4cc7a2e1a5f6ca356e94ba4c4">SMPTEFRAMERATE</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the SMPTE Frame Rate option in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Any of the SMPTETIMETYPE_ constants. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae19c8d8865bd416cb909535a97a14ad" name="aae19c8d8865bd416cb909535a97a14ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae19c8d8865bd416cb909535a97a14ad">&#9670;&nbsp;</a></span>SetSMPTEStartTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetSMPTEStartTime </td>
+          <td>(</td>
+          <td class="paramtype">TimeRtu32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the SMPTE start time in the in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>start time in milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7be504b28b3e7610b761d61bd5b6ca0b" name="a7be504b28b3e7610b761d61bd5b6ca0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7be504b28b3e7610b761d61bd5b6ca0b">&#9670;&nbsp;</a></span>SetStartMeasure()</h2>
 
@@ -1057,7 +2748,38 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the playback start measure, which is used if the start mode allows it. </p>
-<p >Lua-supported (also as property). </p>
+<dl class="section warning"><dt>Warning</dt><dd>The Playback Controls window in versions of Finale before Finale 26.2 overwrite this value with whatever value is currently in the window. If you want the new value to stick, the Playback Controls window must be closed when the plugin runs. Starting with Finale 26.2, the Playback Controls window automatically updates after the plugin runs, so the problem is fixed for 26.2+.</dd></dl>
+<p>Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a83baaaa7a4531e85bb379929867dc9f2" name="a83baaaa7a4531e85bb379929867dc9f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83baaaa7a4531e85bb379929867dc9f2">&#9670;&nbsp;</a></span>SetStartMeasurePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetStartMeasurePos </td>
+          <td>(</td>
+          <td class="paramtype">TimeEdu32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the playback start measure position, which is used if the start mode allows it. </p>
+<dl class="section warning"><dt>Warning</dt><dd>See warning at <a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b" title="Sets the playback start measure, which is used if the start mode allows it.">SetStartMeasure</a>.</dd></dl>
+<p>Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -1085,7 +2807,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Returns the start playback mode. </p>
+<p>Sets the start playback mode. </p>
+<p >Lua-supported (also as property).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>Any of the PLAYBACKSTART_ constants. </td></tr>
@@ -1120,7 +2843,39 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets the playback stop measure. </p>
-<p >Lua-supported (also as property). </p>
+<p >If <a class="el" href="class_f_c_playback_prefs.html#a51aa84d3b5753daf9bcccdb1c6d98793" title="Returns the playback stop measure position.">GetStopMeasurePos</a> is zero, playback stops at the end of this measure. Otherwise, it stops when <a class="el" href="class_f_c_playback_prefs.html#a51aa84d3b5753daf9bcccdb1c6d98793" title="Returns the playback stop measure position.">GetStopMeasurePos</a> is reached.</p>
+<dl class="section warning"><dt>Warning</dt><dd>See warning at <a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b" title="Sets the playback start measure, which is used if the start mode allows it.">SetStartMeasure</a>.</dd></dl>
+<p>Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="ac5cb4fba719880e6d2174ef040daffc2" name="ac5cb4fba719880e6d2174ef040daffc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5cb4fba719880e6d2174ef040daffc2">&#9670;&nbsp;</a></span>SetStopMeasurePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetStopMeasurePos </td>
+          <td>(</td>
+          <td class="paramtype">TimeEdu32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the playback stop measure position. </p>
+<dl class="section warning"><dt>Warning</dt><dd>See warning at <a class="el" href="class_f_c_playback_prefs.html#a7be504b28b3e7610b761d61bd5b6ca0b" title="Sets the playback start measure, which is used if the start mode allows it.">SetStartMeasure</a>.</dd></dl>
+<p>Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -1159,10 +2914,103 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="ae919bb8904afaa0afd74c9149163e980" name="ae919bb8904afaa0afd74c9149163e980"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae919bb8904afaa0afd74c9149163e980">&#9670;&nbsp;</a></span>SetSyncChaseContinuousData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetSyncChaseContinuousData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the "Chase Continuous Data During MIDI Sync" option in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="aed76477f087b388e865afe8c5a6dbf07" name="aed76477f087b388e865afe8c5a6dbf07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed76477f087b388e865afe8c5a6dbf07">&#9670;&nbsp;</a></span>SetSyncChasePatches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetSyncChasePatches </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the "Chase Patch Changes During MIDI Sync" option in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68) </p>
+
+</div>
+</div>
+<a id="acd33deca32b47af96557da1ab02b066c" name="acd33deca32b47af96557da1ab02b066c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd33deca32b47af96557da1ab02b066c">&#9670;&nbsp;</a></span>SetSyncReceiveMidi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCPlaybackPrefs::SetSyncReceiveMidi </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the "Receive Sync" choice in the "Sync and Video Options" dialog box. </p>
+<p >Lua-supported (also as property) (0.68)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>true = receive MIDI sync; false = receive internal sync </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 22 2023 08:31:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

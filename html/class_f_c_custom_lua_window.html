@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
    </div>
   </td>
  </tr>
@@ -99,12 +99,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a002f165377f6191657f809a30e42b0ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a002f165377f6191657f809a30e42b0ad">ShowModeless</a> ()</td></tr>
 <tr class="memdesc:a002f165377f6191657f809a30e42b0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the dialog box as a modeless window. The dialog must have been registered with <code>finenv.RegisterModelessDialog()</code> or else <code>ShowModeless</code> fails.  <a href="class_f_c_custom_lua_window.html#a002f165377f6191657f809a30e42b0ad">More...</a><br /></td></tr>
 <tr class="separator:a002f165377f6191657f809a30e42b0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a726de8e45417d82413175d97aa9439b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a726de8e45417d82413175d97aa9439b7">ShowModelessWithGrabbyFocus</a> ()</td></tr>
+<tr class="memdesc:a726de8e45417d82413175d97aa9439b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the macOS version of the dialog box as a modeless window with grabby focus behavior.  <a href="class_f_c_custom_lua_window.html#a726de8e45417d82413175d97aa9439b7">More...</a><br /></td></tr>
+<tr class="separator:a726de8e45417d82413175d97aa9439b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add0856d52b9ecf89a63826b3754034ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#add0856d52b9ecf89a63826b3754034ee">RegisterHandleCommand</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:add0856d52b9ecf89a63826b3754034ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#ab1cb54662cbdec351cae106e5a3a480f" title="Virtual method that is called when a user command occurs, such as a button press.">HandleCommand()</a> event handler. This handler is a catch-all for all controls that are not otherwise handled by <a class="el" href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e" title="Virtual method that is called when an event occurs on a registered control.">HandleControlEvent</a>.  <a href="class_f_c_custom_lua_window.html#add0856d52b9ecf89a63826b3754034ee">More...</a><br /></td></tr>
 <tr class="separator:add0856d52b9ecf89a63826b3754034ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c13548ebea959fd6260747fb86d6182"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a2c13548ebea959fd6260747fb86d6182">RegisterHandleControlEvent</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl, luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a2c13548ebea959fd6260747fb86d6182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e" title="Virtual method that is called when an event occurs on a registered control.">HandleControlEvent()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a2c13548ebea959fd6260747fb86d6182">More...</a><br /></td></tr>
 <tr class="separator:a2c13548ebea959fd6260747fb86d6182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d1bebcc5153b77fe2bc44cd08fd0ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ac7d1bebcc5153b77fe2bc44cd08fd0ae">RegisterHandleTextSelectionChanged</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:ac7d1bebcc5153b77fe2bc44cd08fd0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687" title="Virtual handler method for detecing when the text selection changes on edit text controls.">HandleTextSelectionChanged()</a> event handler.  <a href="class_f_c_custom_lua_window.html#ac7d1bebcc5153b77fe2bc44cd08fd0ae">More...</a><br /></td></tr>
+<tr class="separator:ac7d1bebcc5153b77fe2bc44cd08fd0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdf33efe695e6699dcedce3987362af5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#acdf33efe695e6699dcedce3987362af5">RegisterHandleUpDownPressed</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:acdf33efe695e6699dcedce3987362af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a8354acdc0bdf5e06c32517959bb6b82e" title="Virtual handler method for up/down arrow controls when they are clicked.">HandleUpDownPressed()</a> event handler.  <a href="class_f_c_custom_lua_window.html#acdf33efe695e6699dcedce3987362af5">More...</a><br /></td></tr>
 <tr class="separator:acdf33efe695e6699dcedce3987362af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,12 +141,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11c713ac358fd0d864388afbf1770527"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a11c713ac358fd0d864388afbf1770527">RegisterDarkModeIsChanging</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a11c713ac358fd0d864388afbf1770527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f" title="Virtual handler method that is called when Dark Mode changes. (Currently macOS only....">DarkModeIsChanging()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a11c713ac358fd0d864388afbf1770527">More...</a><br /></td></tr>
 <tr class="separator:a11c713ac358fd0d864388afbf1770527"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f941e207cd7e4397c7f30adfd21fb43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">RegisterOSMenuCommandExecuted</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a7f941e207cd7e4397c7f30adfd21fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">More...</a><br /></td></tr>
+<tr class="separator:a7f941e207cd7e4397c7f30adfd21fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">HandleControlEvent</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
 <tr class="memdesc:a06ea38dd1b4c631219e1c06c320eb65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when an event occurs on a registered control.  <a href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">More...</a><br /></td></tr>
 <tr class="separator:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1cb54662cbdec351cae106e5a3a480f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ab1cb54662cbdec351cae106e5a3a480f">HandleCommand</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
 <tr class="memdesc:ab1cb54662cbdec351cae106e5a3a480f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when a user command occurs, such as a button press.  <a href="class_f_c_custom_lua_window.html#ab1cb54662cbdec351cae106e5a3a480f">More...</a><br /></td></tr>
 <tr class="separator:ab1cb54662cbdec351cae106e5a3a480f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a6a1c771d4021de6901f8679db8687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687">HandleTextSelectionChanged</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:aa4a6a1c771d4021de6901f8679db8687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for detecing when the text selection changes on edit text controls.  <a href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687">More...</a><br /></td></tr>
+<tr class="separator:aa4a6a1c771d4021de6901f8679db8687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8354acdc0bdf5e06c32517959bb6b82e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a8354acdc0bdf5e06c32517959bb6b82e">HandleUpDownPressed</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl, int delta) override</td></tr>
 <tr class="memdesc:a8354acdc0bdf5e06c32517959bb6b82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for up/down arrow controls when they are clicked.  <a href="class_f_c_custom_lua_window.html#a8354acdc0bdf5e06c32517959bb6b82e">More...</a><br /></td></tr>
 <tr class="separator:a8354acdc0bdf5e06c32517959bb6b82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +183,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f">DarkModeIsChanging</a> (bool isDarkMode) override</td></tr>
 <tr class="memdesc:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when Dark Mode changes. (Currently macOS only.)  <a href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f">More...</a><br /></td></tr>
 <tr class="separator:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc4b3823a52f731c5b0a1808d4647ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">OSMenuCommandExecuted</a> (EMENUID menuCommand, int menuCommandType) override</td></tr>
+<tr class="memdesc:aacc4b3823a52f731c5b0a1808d4647ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handle method that is called after a menu command is executed.  <a href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">More...</a><br /></td></tr>
+<tr class="separator:aacc4b3823a52f731c5b0a1808d4647ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_f_c_custom_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_f_c_custom_window')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_f_c_custom_window.html">FCCustomWindow</a></td></tr>
 <tr class="memitem:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">FCCustomWindow</a> ()</td></tr>
 <tr class="memdesc:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">More...</a><br /></td></tr>
@@ -197,6 +212,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a71ac6220339c58e4498fcd3969ccdc99 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_edit.html">FCCtrlEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#a71ac6220339c58e4498fcd3969ccdc99">CreateEdit</a> (float x, float y)</td></tr>
 <tr class="memdesc:a71ac6220339c58e4498fcd3969ccdc99 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an edit control object to the window.  <a href="class_f_c_custom_window.html#a71ac6220339c58e4498fcd3969ccdc99">More...</a><br /></td></tr>
 <tr class="separator:a71ac6220339c58e4498fcd3969ccdc99 inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae102364f16ea898038d76478b9b30009 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_edit_text.html">FCCtrlEditText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#ae102364f16ea898038d76478b9b30009">CreateEditText</a> (float x, float y)</td></tr>
+<tr class="memdesc:ae102364f16ea898038d76478b9b30009 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an edit text control object to the window.  <a href="class_f_c_custom_window.html#ae102364f16ea898038d76478b9b30009">More...</a><br /></td></tr>
+<tr class="separator:ae102364f16ea898038d76478b9b30009 inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e9863d2a4a995519e51d2c38e3e0d2 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_combo_box.html">FCCtrlComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#ad4e9863d2a4a995519e51d2c38e3e0d2">CreateComboBox</a> (float x, float y)</td></tr>
 <tr class="memdesc:ad4e9863d2a4a995519e51d2c38e3e0d2 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a combobox control object to the window.  <a href="class_f_c_custom_window.html#ad4e9863d2a4a995519e51d2c38e3e0d2">More...</a><br /></td></tr>
 <tr class="separator:ad4e9863d2a4a995519e51d2c38e3e0d2 inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,6 +337,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_SetupInternalWindowC
 <a class="el" href="class_f_c_ctrl_edit.html">FCCtrlEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddEdit</b> (twobyte id)</td></tr>
 <tr class="memdesc:a5be8f7c677fe3893893f0b534f949a79 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links an edit field object to the dialog resource. <br /></td></tr>
 <tr class="separator:a5be8f7c677fe3893893f0b534f949a79 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428958bdeefec84798cdd73fb2edfde5 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="a428958bdeefec84798cdd73fb2edfde5" name="a428958bdeefec84798cdd73fb2edfde5"></a>
+<a class="el" href="class_f_c_ctrl_edit_text.html">FCCtrlEditText</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddEditText</b> (twobyte id)</td></tr>
+<tr class="memdesc:a428958bdeefec84798cdd73fb2edfde5 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links an edit text object to the dialog resource. <br /></td></tr>
+<tr class="separator:a428958bdeefec84798cdd73fb2edfde5 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8efd1110ea304987512201934b0fd5bd inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="a8efd1110ea304987512201934b0fd5bd" name="a8efd1110ea304987512201934b0fd5bd"></a>
 <a class="el" href="class_f_c_ctrl_popup.html">FCCtrlPopup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddPopup</b> (twobyte id)</td></tr>
 <tr class="memdesc:a8efd1110ea304987512201934b0fd5bd inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links a popup object to the dialog resource. <br /></td></tr>
@@ -360,6 +382,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_SetupInternalWindowC
 &#160;</td><td class="memItemRight" valign="bottom"><b>__FCUserWindow</b> ()</td></tr>
 <tr class="memdesc:a7f26ed23f64325b1919f9c74934ff160 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constuctor. <br /></td></tr>
 <tr class="separator:a7f26ed23f64325b1919f9c74934ff160 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cefd9a5e0581d2501ce05a77289317e inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_u_i.html">FCUI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a6cefd9a5e0581d2501ce05a77289317e">CreateChildUI</a> () const</td></tr>
+<tr class="memdesc:a6cefd9a5e0581d2501ce05a77289317e inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns an instance of <a class="el" href="class_f_c_u_i.html" title="Standard class for basic user interface functionality.">FCUI</a> with this window as the parent window. This is mainly for launching built-in modeless dialogson on top of the current window. (This is especially important on the Windows platform.)  <a href="class_____f_c_user_window.html#a6cefd9a5e0581d2501ce05a77289317e">More...</a><br /></td></tr>
+<tr class="separator:a6cefd9a5e0581d2501ce05a77289317e inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27e687c27f1c65bd354022250ad96755 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a27e687c27f1c65bd354022250ad96755">GetPointsMeasurement</a> ()</td></tr>
 <tr class="memdesc:a27e687c27f1c65bd354022250ad96755 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the measurements and positioning is in points or in a system-native unit for this window.  <a href="class_____f_c_user_window.html#a27e687c27f1c65bd354022250ad96755">More...</a><br /></td></tr>
 <tr class="separator:a27e687c27f1c65bd354022250ad96755 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -741,159 +766,166 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:af07ed05132bac987ff3acab63a001e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_user_window.html#a5425bfe37445c83cdfb7d2cf939d22f3" title="Returns if the user held down a specific set of modifier keys at the last &quot;command&quot; event,...">QueryLastCommandModifierKeys()</a> method.  <a href="class_____f_c_user_window.html#af07ed05132bac987ff3acab63a001e47">More...</a><br /></td></tr>
 <tr class="separator:af07ed05132bac987ff3acab63a001e47 inherit pub_types_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e80ad5ed72d3f4376c9ad9ceec19b9 inherit pub_types_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a92e80ad5ed72d3f4376c9ad9ceec19b9">MENU_COMMAND_TYPES</a> { <a class="el" href="class_____f_c_user_window.html#a92e80ad5ed72d3f4376c9ad9ceec19b9a75efccf4c69bb04ffaa2b8bf1d412edf">MENUCMDTYPE_SELECTION</a> = 0
+, <a class="el" href="class_____f_c_user_window.html#a92e80ad5ed72d3f4376c9ad9ceec19b9a254296e881047929a424332df899f42e">MENUCMDTYPE_ACCELERATOR</a> = 1
+ }</td></tr>
+<tr class="memdesc:a92e80ad5ed72d3f4376c9ad9ceec19b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for menu command types.  <a href="class_____f_c_user_window.html#a92e80ad5ed72d3f4376c9ad9ceec19b9">More...</a><br /></td></tr>
+<tr class="separator:a92e80ad5ed72d3f4376c9ad9ceec19b9 inherit pub_types_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
 , <b>FCID_DOTMOD</b>
-, <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
-, <b>FCID_ENTRYALTERMOD</b>
+, <br />
+&#160;&#160;<b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
+, <b>FCID_EXPRESSION</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
-, <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
-, <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <br />
+&#160;&#160;<b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_LYRICSPREFS</b>
 , <b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
+, <br />
+&#160;&#160;<b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
+, <br />
+&#160;&#160;<b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
+, <br />
+&#160;&#160;<b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
+, <br />
+&#160;&#160;<b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
+, <br />
+&#160;&#160;<b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <br />
+&#160;&#160;<b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEDEF</b>
 , <b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPE</b>
 , <b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFF</b>
 , <b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
+, <b>FCID_STEMMOD</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
+, <br />
+&#160;&#160;<b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEAT</b>
 , <b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
+, <br />
+&#160;&#160;<b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
+&#160;&#160;<b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
@@ -951,7 +983,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method to output a line of text for debugging purposes.  <a href="class_____f_c_base.html#aa1c9b53579e02fdd8f5deea1726c0781">More...</a><br /></td></tr>
 <tr class="separator:aa1c9b53579e02fdd8f5deea1726c0781 inherit pub_static_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_____f_c_user_window"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_user_window')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_user_window.html">__FCUserWindow</a></td></tr>
-<tr class="memitem:a9c5a5ca62fb10c2c595a94a152e1ebde inherit pro_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a9c5a5ca62fb10c2c595a94a152e1ebde">GetModalResult</a> ()</td></tr>
+<tr class="memitem:a9c5a5ca62fb10c2c595a94a152e1ebde inherit pro_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a9c5a5ca62fb10c2c595a94a152e1ebde" name="a9c5a5ca62fb10c2c595a94a152e1ebde"></a>
+twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b> ()</td></tr>
+<tr class="memdesc:a9c5a5ca62fb10c2c595a94a152e1ebde inherit pro_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value that will be returned for a modal dialog. <br /></td></tr>
 <tr class="separator:a9c5a5ca62fb10c2c595a94a152e1ebde inherit pro_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a19492e2b21a7db8115c11e9f82f935f5 inherit pro_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top"><a id="a19492e2b21a7db8115c11e9f82f935f5" name="a19492e2b21a7db8115c11e9f82f935f5"></a>
@@ -1340,6 +1374,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aa4a6a1c771d4021de6901f8679db8687" name="aa4a6a1c771d4021de6901f8679db8687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a6a1c771d4021de6901f8679db8687">&#9670;&nbsp;</a></span>HandleTextSelectionChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::HandleTextSelectionChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method for detecing when the text selection changes on edit text controls. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>Pointer to the edit text control. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#ac1a691f8616137cbe611f1293f172f21">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="a4ae14c8ae2cb53424f4f1f26ec1a15cb" name="a4ae14c8ae2cb53424f4f1f26ec1a15cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ae14c8ae2cb53424f4f1f26ec1a15cb">&#9670;&nbsp;</a></span>HandleTimer()</h2>
 
@@ -1482,6 +1553,54 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported through a callback function. </p>
 
 <p>Reimplemented from <a class="el" href="class_f_c_custom_window.html#a7dfeec59b97963f8c7939f0d893f05c4">FCCustomWindow</a>.</p>
+
+</div>
+</div>
+<a id="aacc4b3823a52f731c5b0a1808d4647ce" name="aacc4b3823a52f731c5b0a1808d4647ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc4b3823a52f731c5b0a1808d4647ce">&#9670;&nbsp;</a></span>OSMenuCommandExecuted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::OSMenuCommandExecuted </td>
+          <td>(</td>
+          <td class="paramtype">EMENUID&#160;</td>
+          <td class="paramname"><em>menuCommand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>menuCommandType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handle method that is called after a menu command is executed. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuCommand</td><td>the command that was executed. </td></tr>
+    <tr><td class="paramname">menuCommandType</td><td>one of the <a class="el" href="class_____f_c_user_window.html#a92e80ad5ed72d3f4376c9ad9ceec19b9" title="Constants for menu command types.">__FCUserWindow::MENU_COMMAND_TYPES</a> constants. For macOS, this value is always <a class="el" href="class_____f_c_user_window.html#a92e80ad5ed72d3f4376c9ad9ceec19b9a75efccf4c69bb04ffaa2b8bf1d412edf">__FCUserWindow::MENUCMDTYPE_SELECTION</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#a8077e384efaa9d56633ae9235a8fda32">__FCUserWindow</a>.</p>
 
 </div>
 </div>
@@ -1821,6 +1940,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac7d1bebcc5153b77fe2bc44cd08fd0ae" name="ac7d1bebcc5153b77fe2bc44cd08fd0ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d1bebcc5153b77fe2bc44cd08fd0ae">&#9670;&nbsp;</a></span>RegisterHandleTextSelectionChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterHandleTextSelectionChanged </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687" title="Virtual handler method for detecing when the text selection changes on edit text controls.">HandleTextSelectionChanged()</a> event handler. </p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687" title="Virtual handler method for detecing when the text selection changes on edit text controls.">HandleTextSelectionChanged</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
 <a id="a85578f7b660f9d6b037568a8728388f1" name="a85578f7b660f9d6b037568a8728388f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85578f7b660f9d6b037568a8728388f1">&#9670;&nbsp;</a></span>RegisterHandleTimer()</h2>
 
@@ -1929,6 +2084,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7f941e207cd7e4397c7f30adfd21fb43" name="a7f941e207cd7e4397c7f30adfd21fb43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f941e207cd7e4397c7f30adfd21fb43">&#9670;&nbsp;</a></span>RegisterOSMenuCommandExecuted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterOSMenuCommandExecuted </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler. </p>
+<p >See <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">FCUI::GetOSMenuCommandFromItemText</a> for more information about OS menu commands.</p>
+<p >An example usage of this callback is allowing a modeless window to track whether a menu item has been executed as a trigger for an update of its display. These might include tracking if the user calls Undo or creates a Bookmark.</p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
 <a id="a002f165377f6191657f809a30e42b0ad" name="a002f165377f6191657f809a30e42b0ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a002f165377f6191657f809a30e42b0ad">&#9670;&nbsp;</a></span>ShowModeless()</h2>
 
@@ -1985,10 +2178,41 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
+<a id="a726de8e45417d82413175d97aa9439b7" name="a726de8e45417d82413175d97aa9439b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a726de8e45417d82413175d97aa9439b7">&#9670;&nbsp;</a></span>ShowModelessWithGrabbyFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::ShowModelessWithGrabbyFocus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Displays the macOS version of the dialog box as a modeless window with grabby focus behavior. </p>
+<p >The default focus behavior for modeless plugin dialogs in macOS Finale is that they grab focus whenever possible. This can cause difficulties for users who leave them open while doing other Finale tasks. To mitigate this, the typical behavior for <a class="el" href="class_f_c_custom_lua_window.html" title="Special FCCustomWindow child class, that provides the additional functionality to hook up JW Lua call...">FCCustomLuaWindow</a> modeless macOS windows is to override Finale's grabby focus behavior and instead open a type of window that never grabs focus. (These are similar to the window types of built-in modeless windows like palettes or the Playback Controls.) In very rare circumstances, this can present problems.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Do not use this function unless there is a specific issue you have to address. The issue is likely to be the need to workaround an annoying Finale behavior. If that behavior is subsequently modified, you might choose to implement a version check to decide which <a class="el" href="class_f_c_custom_lua_window.html#a002f165377f6191657f809a30e42b0ad" title="Displays the dialog box as a modeless window. The dialog must have been registered with finenv....">ShowModeless</a> function to use. See the comments at <a class="el" href="class_f_c_music_region.html#acae742fc106edf91dd9ab3acbffe3a53" title="Playback the region. Only entire measures play back, so playback starts at the beginning of the first...">FCMusicRegion::Playback</a> for an example of when you might choose to use this one.</dd></dl>
+<p>The details of how to use <a class="el" href="class_f_c_custom_lua_window.html#a726de8e45417d82413175d97aa9439b7" title="Displays the macOS version of the dialog box as a modeless window with grabby focus behavior.">ShowModelessWithGrabbyFocus</a> are the same as those for <a class="el" href="class_f_c_custom_lua_window.html#a002f165377f6191657f809a30e42b0ad" title="Displays the dialog box as a modeless window. The dialog must have been registered with finenv....">ShowModeless</a>. On Windows there is no difference between them.</p>
+<p >Lua-supported (0.68) </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:45 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Sep 22 2023 08:31:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
