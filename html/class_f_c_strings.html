@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac05efc9492619ccb8e3db7e02a6ee7ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#ac05efc9492619ccb8e3db7e02a6ee7ed">GetItemAt</a> (int index)</td></tr>
 <tr class="memdesc:ac05efc9492619ccb8e3db7e02a6ee7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden <a class="el" href="class_f_c_strings.html#ac05efc9492619ccb8e3db7e02a6ee7ed" title="Overridden GetItemAt() method.">GetItemAt()</a> method.  <a href="class_f_c_strings.html#ac05efc9492619ccb8e3db7e02a6ee7ed">More...</a><br /></td></tr>
 <tr class="separator:ac05efc9492619ccb8e3db7e02a6ee7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803364cd6138c395a8b1c000a980f942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#a803364cd6138c395a8b1c000a980f942">InsertStringAt</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pNewString, int index)</td></tr>
-<tr class="memdesc:a803364cd6138c395a8b1c000a980f942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> at given index. (Typed version of <a class="el" href="class_____f_c_collection.html#ae686b2ad8b5f9f495cc5b22314e74fd0" title="Inserts an item into the collection.">InsertItemAt</a>.)  <a href="class_f_c_strings.html#a803364cd6138c395a8b1c000a980f942">More...</a><br /></td></tr>
-<tr class="separator:a803364cd6138c395a8b1c000a980f942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840f1510a63b815f40296101d28e4cd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#a840f1510a63b815f40296101d28e4cd7">InsertStringAt</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pNewString, int index)</td></tr>
+<tr class="memdesc:a840f1510a63b815f40296101d28e4cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> at given index.  <a href="class_f_c_strings.html#a840f1510a63b815f40296101d28e4cd7">More...</a><br /></td></tr>
+<tr class="separator:a840f1510a63b815f40296101d28e4cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d36c88b3c05a79149b199d24ddfba0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_strings.html#a1d36c88b3c05a79149b199d24ddfba0a">ContainEnigmaFont</a> ()</td></tr>
 <tr class="memdesc:a1d36c88b3c05a79149b199d24ddfba0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any of the strings in the collection is an Enigma font command.  <a href="class_f_c_strings.html#a1d36c88b3c05a79149b199d24ddfba0a">More...</a><br /></td></tr>
 <tr class="separator:a1d36c88b3c05a79149b199d24ddfba0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -984,8 +984,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a803364cd6138c395a8b1c000a980f942" name="a803364cd6138c395a8b1c000a980f942"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a803364cd6138c395a8b1c000a980f942">&#9670;&nbsp;</a></span>InsertStringAt()</h2>
+<a id="a840f1510a63b815f40296101d28e4cd7" name="a840f1510a63b815f40296101d28e4cd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840f1510a63b815f40296101d28e4cd7">&#9670;&nbsp;</a></span>InsertStringAt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -996,7 +996,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCStrings::InsertStringAt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pNewString</em>, </td>
         </tr>
         <tr>
@@ -1018,8 +1018,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Inserts <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> at given index. (Typed version of <a class="el" href="class_____f_c_collection.html#ae686b2ad8b5f9f495cc5b22314e74fd0" title="Inserts an item into the collection.">InsertItemAt</a>.) </p>
-<p >Lua-supported (0.59). </p>
+<p>Inserts <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> at given index. </p>
+<p >This function makes a copy of the input string and then calls <a class="el" href="class_____f_c_collection.html#ae686b2ad8b5f9f495cc5b22314e74fd0" title="Inserts an item into the collection.">__FCCollection::InsertItemAt</a> to insert it into the collection.</p>
+<dl class="section warning"><dt>Warning</dt><dd>For versions of the PDK Framework before 0.68, this function does <em>not</em> make a copy. Use with caution in earlier versions.</dd></dl>
+<p>Lua-supported (0.59).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pNewString</td><td>the string to be copied. Unlike with <a class="el" href="class_____f_c_collection.html#ae686b2ad8b5f9f495cc5b22314e74fd0" title="Inserts an item into the collection.">__FCCollection::InsertItemAt</a>, the caller retains ownership of the pointer, so it can be a pointer to a stack variable or a Lua userdata item. </td></tr>
+    <tr><td class="paramname">index</td><td>the index at which to insert the string. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1205,7 +1214,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 22 2023 08:31:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Nov 8 2023 12:56:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

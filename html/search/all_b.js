@@ -84,7 +84,7 @@ var searchData=
   ['loadscrollview_81',['LoadScrollView',['../class_f_c_system_staves.html#a91e8657c4bd7a9e53b5c48499350711c',1,'FCSystemStaves']]],
   ['loadstaffset_82',['LoadStaffSet',['../class_f_c_system_staves.html#a994e7fb5d607e62859dab42c354450fb',1,'FCSystemStaves']]],
   ['loadstandardlist_83',['LoadStandardList',['../class_f_c_staff_list_lookup.html#a7e58efed7af82766c7bbb42f752d3f8c',1,'FCStaffListLookup']]],
-  ['loadstring_84',['LoadString',['../class_f_c_text_metrics.html#a8dc5e3d4150e7181ab70b2f05217569b',1,'FCTextMetrics']]],
+  ['loadstring_84',['LoadString',['../class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f',1,'FCTextMetrics']]],
   ['loadstudioview_85',['LoadStudioView',['../class_f_c_system_staves.html#a8e0e83355ba6d85aa02eaf3f2f9f130d',1,'FCSystemStaves']]],
   ['loadsubfolders_86',['LoadSubfolders',['../class_f_c_strings.html#a747d290dee97430f81cc8685bef195fe',1,'FCStrings']]],
   ['loadsubtitle_87',['LoadSubtitle',['../class_f_c_file_info_text.html#a11fabd676677fb30d3776d42da5ed1e3',1,'FCFileInfoText']]],

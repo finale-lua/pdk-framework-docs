@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,11 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCRawText</b> ()</td></tr>
 <tr class="memdesc:ac58665231159dae726bbc02e37147990 inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (virtual) destructor. <br /></td></tr>
 <tr class="separator:ac58665231159dae726bbc02e37147990 inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27393cb749b3a6bdfd84c6cc6e116f7d inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61f">RAWTEXTTYPES</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a27393cb749b3a6bdfd84c6cc6e116f7d">GetBlockType</a> () const</td></tr>
+<tr class="memdesc:a27393cb749b3a6bdfd84c6cc6e116f7d inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the text block type of this <a class="el" href="class_f_c_raw_text.html" title="The class for raw text objects. All other text classes are based on this class, but it can also be us...">FCRawText</a>.  <a href="class_f_c_raw_text.html#a27393cb749b3a6bdfd84c6cc6e116f7d">More...</a><br /></td></tr>
+<tr class="separator:a27393cb749b3a6bdfd84c6cc6e116f7d inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#ab0f13ae4b0e054956650f12191ad407c">GetNumChars</a> () const</td></tr>
-<tr class="memdesc:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the the number of characters in the raw text.  <a href="class_f_c_raw_text.html#ab0f13ae4b0e054956650f12191ad407c">More...</a><br /></td></tr>
+<tr class="memdesc:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of characters in the raw text.  <a href="class_f_c_raw_text.html#ab0f13ae4b0e054956650f12191ad407c">More...</a><br /></td></tr>
 <tr class="separator:ab0f13ae4b0e054956650f12191ad407c inherit pub_methods_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0efa58a74d5ac7386ecf27bce026d8bf inherit pub_methods_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a0efa58a74d5ac7386ecf27bce026d8bf">Load</a> (twobyte number)</td></tr>
 <tr class="memdesc:a0efa58a74d5ac7386ecf27bce026d8bf inherit pub_methods_class_f_c_raw_text"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the text with the indicated text number.  <a href="class_f_c_raw_text.html#a0efa58a74d5ac7386ecf27bce026d8bf">More...</a><br /></td></tr>
@@ -323,6 +326,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_f_c_raw_text"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_f_c_raw_text')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_f_c_raw_text.html">FCRawText</a></td></tr>
+<tr class="memitem:a9d3f3a7ed1fa3214f712445ce3a0a61f inherit pub_types_class_f_c_raw_text"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61f">RAWTEXTTYPES</a> { <br />
+&#160;&#160;<a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61faecf9ccc4fad7bb0b9ff0b2f0f24ae9ae">RAWTEXTTYPE_TEXTBLOCK</a> = 0
+, <a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61fa0ba7c44f85d29f8112a883e7547d7e7e">RAWTEXTTYPE_VERSELYRIC</a> = 1
+, <a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61fa1189c66819466853a6285f568ece2ecd">RAWTEXTTYPE_CHORUSLYRIC</a> = 2
+, <a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61faa2e3c67e5a14894b9463a3ad710a2af1">RAWTEXTTYPE_SECTIONLYRIC</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61fa1edc6dd96d5641b7e2b4866569ecfb5f">RAWTEXTTYPE_CUSTOMLINE</a> = 4
+, <a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61fa949a96a7a89b7248f3a14d7ad6601090">RAWTEXTTYPE_EXPRESSION</a> = 5
+, <a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61faa587ebbd9122b5a0a97f3e1a64cd9daa">RAWTEXTTYPE_FILEINFO</a> = 6
+, <a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61fa1b644cfb3ac5779e6f1b31b961f406ba">RAWTEXTTYPE_BOOKMARK</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61fab6ad26ce75609777be55ab5a07139e32">RAWTEXTTYPE_UNKNOWN</a> = -1
+<br />
+ }</td></tr>
+<tr class="memdesc:a9d3f3a7ed1fa3214f712445ce3a0a61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">enumerates the possible raw text types.  <a href="class_f_c_raw_text.html#a9d3f3a7ed1fa3214f712445ce3a0a61f">More...</a><br /></td></tr>
+<tr class="separator:a9d3f3a7ed1fa3214f712445ce3a0a61f inherit pub_types_class_f_c_raw_text"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
@@ -635,7 +655,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 22 2023 08:31:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Nov 8 2023 12:56:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -86,11 +86,11 @@ Inheritance diagram for FCTextMetrics:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:affdb6bf0a24e13e1c5cf98fab64756fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_metrics.html#affdb6bf0a24e13e1c5cf98fab64756fe">FCTextMetrics</a> ()</td></tr>
-<tr class="memdesc:affdb6bf0a24e13e1c5cf98fab64756fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. Defaults to unloaded. Metrics must be loaded with <a class="el" href="class_f_c_text_metrics.html#a8dc5e3d4150e7181ab70b2f05217569b" title="Loads the metrics for the string and font.">LoadString</a>, <a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5" title="Loads the text metrics for a specific character in a font.">LoadSymbol</a>, or <a class="el" href="class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12" title="Loads the metrics for a specific articulation glyph.">LoadArticulation</a>.  <a href="class_f_c_text_metrics.html#affdb6bf0a24e13e1c5cf98fab64756fe">More...</a><br /></td></tr>
+<tr class="memdesc:affdb6bf0a24e13e1c5cf98fab64756fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. Defaults to unloaded. Metrics must be loaded with <a class="el" href="class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f" title="Loads the metrics for the string and font.">LoadString</a>, <a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5" title="Loads the text metrics for a specific character in a font.">LoadSymbol</a>, or <a class="el" href="class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12" title="Loads the metrics for a specific articulation glyph.">LoadArticulation</a>.  <a href="class_f_c_text_metrics.html#affdb6bf0a24e13e1c5cf98fab64756fe">More...</a><br /></td></tr>
 <tr class="separator:affdb6bf0a24e13e1c5cf98fab64756fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc5e3d4150e7181ab70b2f05217569b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_metrics.html#a8dc5e3d4150e7181ab70b2f05217569b">LoadString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pText, <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFont, float percent)</td></tr>
-<tr class="memdesc:a8dc5e3d4150e7181ab70b2f05217569b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the metrics for the string and font.  <a href="class_f_c_text_metrics.html#a8dc5e3d4150e7181ab70b2f05217569b">More...</a><br /></td></tr>
-<tr class="separator:a8dc5e3d4150e7181ab70b2f05217569b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ac3277f682be59e35437e623a54e2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f">LoadString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pText, const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFont, float percent)</td></tr>
+<tr class="memdesc:a78ac3277f682be59e35437e623a54e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the metrics for the string and font.  <a href="class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f">More...</a><br /></td></tr>
+<tr class="separator:a78ac3277f682be59e35437e623a54e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb1177c508d2f5d6ff46ab9d736509e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5">LoadSymbol</a> (eUniChar16 symbolchar, <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFont, float percent)</td></tr>
 <tr class="memdesc:aeb1177c508d2f5d6ff46ab9d736509e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the text metrics for a specific character in a font.  <a href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5">More...</a><br /></td></tr>
 <tr class="separator:aeb1177c508d2f5d6ff46ab9d736509e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,7 +481,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A class that fetches the metrics for text (for how Finale will render it), such as the boundary boxes and the advance width. </p>
-<p >Metrics can be obtained with the <a class="el" href="class_f_c_text_metrics.html#a8dc5e3d4150e7181ab70b2f05217569b" title="Loads the metrics for the string and font.">LoadString()</a>, <a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5" title="Loads the text metrics for a specific character in a font.">LoadSymbol()</a> or <a class="el" href="class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12" title="Loads the metrics for a specific articulation glyph.">LoadArticulation()</a> methods.</p>
+<p >Metrics can be obtained with the <a class="el" href="class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f" title="Loads the metrics for the string and font.">LoadString()</a>, <a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5" title="Loads the text metrics for a specific character in a font.">LoadSymbol()</a> or <a class="el" href="class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12" title="Loads the metrics for a specific articulation glyph.">LoadArticulation()</a> methods.</p>
 <p >This class only works on Finale 25 and above. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="affdb6bf0a24e13e1c5cf98fab64756fe" name="affdb6bf0a24e13e1c5cf98fab64756fe"></a>
@@ -507,7 +507,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The constructor. Defaults to unloaded. Metrics must be loaded with <a class="el" href="class_f_c_text_metrics.html#a8dc5e3d4150e7181ab70b2f05217569b" title="Loads the metrics for the string and font.">LoadString</a>, <a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5" title="Loads the text metrics for a specific character in a font.">LoadSymbol</a>, or <a class="el" href="class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12" title="Loads the metrics for a specific articulation glyph.">LoadArticulation</a>. </p>
+<p>The constructor. Defaults to unloaded. Metrics must be loaded with <a class="el" href="class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f" title="Loads the metrics for the string and font.">LoadString</a>, <a class="el" href="class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5" title="Loads the text metrics for a specific character in a font.">LoadSymbol</a>, or <a class="el" href="class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12" title="Loads the metrics for a specific articulation glyph.">LoadArticulation</a>. </p>
 <p >Lua-supported. </p>
 
 </div>
@@ -1062,8 +1062,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8dc5e3d4150e7181ab70b2f05217569b" name="a8dc5e3d4150e7181ab70b2f05217569b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc5e3d4150e7181ab70b2f05217569b">&#9670;&nbsp;</a></span>LoadString()</h2>
+<a id="a78ac3277f682be59e35437e623a54e2f" name="a78ac3277f682be59e35437e623a54e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ac3277f682be59e35437e623a54e2f">&#9670;&nbsp;</a></span>LoadString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1071,13 +1071,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCTextMetrics::LoadString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pText</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
           <td class="paramname"><em>pFont</em>, </td>
         </tr>
         <tr>
@@ -1159,7 +1159,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 22 2023 08:31:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Nov 8 2023 12:56:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

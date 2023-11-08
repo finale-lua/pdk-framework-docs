@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -414,8 +414,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAndActivate</b> (
 <tr class="memdesc:a087d0240f4737eb1d819352b52bc458a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when a user command occurs, such as a button press.  <a href="class_____f_c_user_window.html#a087d0240f4737eb1d819352b52bc458a">More...</a><br /></td></tr>
 <tr class="separator:a087d0240f4737eb1d819352b52bc458a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a691f8616137cbe611f1293f172f21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#ac1a691f8616137cbe611f1293f172f21">HandleTextSelectionChanged</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
-<tr class="memdesc:ac1a691f8616137cbe611f1293f172f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when the selected text on a <a class="el" href="class_f_c_ctrl_edit_text.html" title="UI class that handles a multiline edit control for handling text. It has a vertical scroll bar when n...">FCCtrlEditText</a> control changes.  <a href="class_____f_c_user_window.html#ac1a691f8616137cbe611f1293f172f21">More...</a><br /></td></tr>
+<tr class="memdesc:ac1a691f8616137cbe611f1293f172f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when the selected text on a <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a> control changes.  <a href="class_____f_c_user_window.html#ac1a691f8616137cbe611f1293f172f21">More...</a><br /></td></tr>
 <tr class="separator:ac1a691f8616137cbe611f1293f172f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa561fed61b53b79802927e5b432c1e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#aaa561fed61b53b79802927e5b432c1e3">HandleScrollChanged</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
+<tr class="memdesc:aaa561fed61b53b79802927e5b432c1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when the scroll changes on a control with a scrollbar.  <a href="class_____f_c_user_window.html#aaa561fed61b53b79802927e5b432c1e3">More...</a><br /></td></tr>
+<tr class="separator:aaa561fed61b53b79802927e5b432c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57f2d0f4e70c0e7673c5066a71501375"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a57f2d0f4e70c0e7673c5066a71501375">HandleSwitcherSelect</a> (<a class="el" href="class_f_c_ctrl_switcher.html">FCCtrlSwitcher</a> *pControl, int switchindex)</td></tr>
 <tr class="memdesc:a57f2d0f4e70c0e7673c5066a71501375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when a switcher control is clicked. Please note that switcher selections also produces calls to <a class="el" href="class_____f_c_user_window.html#a087d0240f4737eb1d819352b52bc458a" title="Virtual method that is called when a user command occurs, such as a button press.">HandleCommand</a>.  <a href="class_____f_c_user_window.html#a57f2d0f4e70c0e7673c5066a71501375">More...</a><br /></td></tr>
 <tr class="separator:a57f2d0f4e70c0e7673c5066a71501375"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -761,7 +764,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for all other dialog/window classes. </p>
-<p >The <a class="el" href="class_____f_c_user_window.html" title="Base class for all other dialog/window classes.">__FCUserWindow</a> is a collection of <a class="el" href="class_f_c_control.html">FCControl</a> objects. </p>
+<p >The <a class="el" href="class_____f_c_user_window.html" title="Base class for all other dialog/window classes.">__FCUserWindow</a> is a collection of <a class="el" href="class_f_c_control.html" title="Base class for all UI controls in a dialog.">FCControl</a> objects. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af07ed05132bac987ff3acab63a001e47" name="af07ed05132bac987ff3acab63a001e47"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af07ed05132bac987ff3acab63a001e47">&#9670;&nbsp;</a></span>COMMAND_MOD_KEYS</h2>
@@ -1488,6 +1491,39 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="aaa561fed61b53b79802927e5b432c1e3" name="aaa561fed61b53b79802927e5b432c1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa561fed61b53b79802927e5b432c1e3">&#9670;&nbsp;</a></span>HandleScrollChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void __FCUserWindow::HandleScrollChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method that is called when the scroll changes on a control with a scrollbar. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Version 0.68 of the PDK Framework only implements this for <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a>. It will not fire on other controls with scrollbars.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add support for other control types as needed.</dd></dl>
+<p >Overwrite in child classes. </p>
+
+<p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#a6a7bc5a846b3e1a6cbad8469ea5d89ce">FCCustomLuaWindow</a>.</p>
+
+</div>
+</div>
 <a id="a57f2d0f4e70c0e7673c5066a71501375" name="a57f2d0f4e70c0e7673c5066a71501375"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57f2d0f4e70c0e7673c5066a71501375">&#9670;&nbsp;</a></span>HandleSwitcherSelect()</h2>
 
@@ -1552,8 +1588,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual method that is called when the selected text on a <a class="el" href="class_f_c_ctrl_edit_text.html" title="UI class that handles a multiline edit control for handling text. It has a vertical scroll bar when n...">FCCtrlEditText</a> control changes. </p>
-<p >Overwrite in child classes. Return true if the command is handled. </p>
+<p>Virtual method that is called when the selected text on a <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a> control changes. </p>
+<p >Overwrite in child classes. </p>
 
 <p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687">FCCustomLuaWindow</a>.</p>
 
@@ -2300,7 +2336,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 22 2023 08:31:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Nov 8 2023 12:56:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

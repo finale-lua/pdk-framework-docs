@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7d1bebcc5153b77fe2bc44cd08fd0ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ac7d1bebcc5153b77fe2bc44cd08fd0ae">RegisterHandleTextSelectionChanged</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:ac7d1bebcc5153b77fe2bc44cd08fd0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687" title="Virtual handler method for detecing when the text selection changes on edit text controls.">HandleTextSelectionChanged()</a> event handler.  <a href="class_f_c_custom_lua_window.html#ac7d1bebcc5153b77fe2bc44cd08fd0ae">More...</a><br /></td></tr>
 <tr class="separator:ac7d1bebcc5153b77fe2bc44cd08fd0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20ca4c95268f32b8010e7ccf3b1fdd84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a20ca4c95268f32b8010e7ccf3b1fdd84">RegisterHandleScrollChanged</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a20ca4c95268f32b8010e7ccf3b1fdd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a6a7bc5a846b3e1a6cbad8469ea5d89ce" title="Virtual handler method for detecing when the scrollbar changes.">HandleScrollChanged()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a20ca4c95268f32b8010e7ccf3b1fdd84">More...</a><br /></td></tr>
+<tr class="separator:a20ca4c95268f32b8010e7ccf3b1fdd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdf33efe695e6699dcedce3987362af5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#acdf33efe695e6699dcedce3987362af5">RegisterHandleUpDownPressed</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:acdf33efe695e6699dcedce3987362af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a8354acdc0bdf5e06c32517959bb6b82e" title="Virtual handler method for up/down arrow controls when they are clicked.">HandleUpDownPressed()</a> event handler.  <a href="class_f_c_custom_lua_window.html#acdf33efe695e6699dcedce3987362af5">More...</a><br /></td></tr>
 <tr class="separator:acdf33efe695e6699dcedce3987362af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +156,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4a6a1c771d4021de6901f8679db8687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687">HandleTextSelectionChanged</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
 <tr class="memdesc:aa4a6a1c771d4021de6901f8679db8687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for detecing when the text selection changes on edit text controls.  <a href="class_f_c_custom_lua_window.html#aa4a6a1c771d4021de6901f8679db8687">More...</a><br /></td></tr>
 <tr class="separator:aa4a6a1c771d4021de6901f8679db8687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a7bc5a846b3e1a6cbad8469ea5d89ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a6a7bc5a846b3e1a6cbad8469ea5d89ce">HandleScrollChanged</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:a6a7bc5a846b3e1a6cbad8469ea5d89ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for detecing when the scrollbar changes.  <a href="class_f_c_custom_lua_window.html#a6a7bc5a846b3e1a6cbad8469ea5d89ce">More...</a><br /></td></tr>
+<tr class="separator:a6a7bc5a846b3e1a6cbad8469ea5d89ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8354acdc0bdf5e06c32517959bb6b82e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a8354acdc0bdf5e06c32517959bb6b82e">HandleUpDownPressed</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl, int delta) override</td></tr>
 <tr class="memdesc:a8354acdc0bdf5e06c32517959bb6b82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for up/down arrow controls when they are clicked.  <a href="class_f_c_custom_lua_window.html#a8354acdc0bdf5e06c32517959bb6b82e">More...</a><br /></td></tr>
 <tr class="separator:a8354acdc0bdf5e06c32517959bb6b82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,9 +218,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a71ac6220339c58e4498fcd3969ccdc99 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_edit.html">FCCtrlEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#a71ac6220339c58e4498fcd3969ccdc99">CreateEdit</a> (float x, float y)</td></tr>
 <tr class="memdesc:a71ac6220339c58e4498fcd3969ccdc99 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an edit control object to the window.  <a href="class_f_c_custom_window.html#a71ac6220339c58e4498fcd3969ccdc99">More...</a><br /></td></tr>
 <tr class="separator:a71ac6220339c58e4498fcd3969ccdc99 inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae102364f16ea898038d76478b9b30009 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_edit_text.html">FCCtrlEditText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#ae102364f16ea898038d76478b9b30009">CreateEditText</a> (float x, float y)</td></tr>
-<tr class="memdesc:ae102364f16ea898038d76478b9b30009 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an edit text control object to the window.  <a href="class_f_c_custom_window.html#ae102364f16ea898038d76478b9b30009">More...</a><br /></td></tr>
-<tr class="separator:ae102364f16ea898038d76478b9b30009 inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6efe9f83e00e910815782d94aa00af inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_text_editor.html">FCCtrlTextEditor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#acc6efe9f83e00e910815782d94aa00af">CreateTextEditor</a> (float x, float y)</td></tr>
+<tr class="memdesc:acc6efe9f83e00e910815782d94aa00af inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an edit text control object to the window.  <a href="class_f_c_custom_window.html#acc6efe9f83e00e910815782d94aa00af">More...</a><br /></td></tr>
+<tr class="separator:acc6efe9f83e00e910815782d94aa00af inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4e9863d2a4a995519e51d2c38e3e0d2 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_ctrl_combo_box.html">FCCtrlComboBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#ad4e9863d2a4a995519e51d2c38e3e0d2">CreateComboBox</a> (float x, float y)</td></tr>
 <tr class="memdesc:ad4e9863d2a4a995519e51d2c38e3e0d2 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a combobox control object to the window.  <a href="class_f_c_custom_window.html#ad4e9863d2a4a995519e51d2c38e3e0d2">More...</a><br /></td></tr>
 <tr class="separator:ad4e9863d2a4a995519e51d2c38e3e0d2 inherit pub_methods_class_f_c_custom_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -337,10 +343,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_SetupInternalWindowC
 <a class="el" href="class_f_c_ctrl_edit.html">FCCtrlEdit</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddEdit</b> (twobyte id)</td></tr>
 <tr class="memdesc:a5be8f7c677fe3893893f0b534f949a79 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links an edit field object to the dialog resource. <br /></td></tr>
 <tr class="separator:a5be8f7c677fe3893893f0b534f949a79 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a428958bdeefec84798cdd73fb2edfde5 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="a428958bdeefec84798cdd73fb2edfde5" name="a428958bdeefec84798cdd73fb2edfde5"></a>
-<a class="el" href="class_f_c_ctrl_edit_text.html">FCCtrlEditText</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddEditText</b> (twobyte id)</td></tr>
-<tr class="memdesc:a428958bdeefec84798cdd73fb2edfde5 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links an edit text object to the dialog resource. <br /></td></tr>
-<tr class="separator:a428958bdeefec84798cdd73fb2edfde5 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98ccf8397562bb7851be840756c38d1a inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="a98ccf8397562bb7851be840756c38d1a" name="a98ccf8397562bb7851be840756c38d1a"></a>
+<a class="el" href="class_f_c_ctrl_text_editor.html">FCCtrlTextEditor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddTextEditor</b> (twobyte id)</td></tr>
+<tr class="memdesc:a98ccf8397562bb7851be840756c38d1a inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links an edit text object to the dialog resource. <br /></td></tr>
+<tr class="separator:a98ccf8397562bb7851be840756c38d1a inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8efd1110ea304987512201934b0fd5bd inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="a8efd1110ea304987512201934b0fd5bd" name="a8efd1110ea304987512201934b0fd5bd"></a>
 <a class="el" href="class_f_c_ctrl_popup.html">FCCtrlPopup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddPopup</b> (twobyte id)</td></tr>
 <tr class="memdesc:a8efd1110ea304987512201934b0fd5bd inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links a popup object to the dialog resource. <br /></td></tr>
@@ -1374,6 +1380,43 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="a6a7bc5a846b3e1a6cbad8469ea5d89ce" name="a6a7bc5a846b3e1a6cbad8469ea5d89ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7bc5a846b3e1a6cbad8469ea5d89ce">&#9670;&nbsp;</a></span>HandleScrollChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::HandleScrollChanged </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method for detecing when the scrollbar changes. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>Pointer to the edit text control. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#aaa561fed61b53b79802927e5b432c1e3">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="aa4a6a1c771d4021de6901f8679db8687" name="aa4a6a1c771d4021de6901f8679db8687"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4a6a1c771d4021de6901f8679db8687">&#9670;&nbsp;</a></span>HandleTextSelectionChanged()</h2>
 
@@ -1940,6 +1983,42 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="a20ca4c95268f32b8010e7ccf3b1fdd84" name="a20ca4c95268f32b8010e7ccf3b1fdd84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ca4c95268f32b8010e7ccf3b1fdd84">&#9670;&nbsp;</a></span>RegisterHandleScrollChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterHandleScrollChanged </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a6a7bc5a846b3e1a6cbad8469ea5d89ce" title="Virtual handler method for detecing when the scrollbar changes.">HandleScrollChanged()</a> event handler. </p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a6a7bc5a846b3e1a6cbad8469ea5d89ce" title="Virtual handler method for detecing when the scrollbar changes.">HandleScrollChanged</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
 <a id="ac7d1bebcc5153b77fe2bc44cd08fd0ae" name="ac7d1bebcc5153b77fe2bc44cd08fd0ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7d1bebcc5153b77fe2bc44cd08fd0ae">&#9670;&nbsp;</a></span>RegisterHandleTextSelectionChanged()</h2>
 
@@ -2212,7 +2291,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 22 2023 08:31:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Nov 8 2023 12:56:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

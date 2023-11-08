@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b3</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -93,11 +93,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a70862ebfe6f25f3a3aeb63939ef1fb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_f_c_string.html#a70862ebfe6f25f3a3aeb63939ef1fb42">More...</a><br /></td></tr>
 <tr class="separator:a70862ebfe6f25f3a3aeb63939ef1fb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d8d6fef66343f05c8c791f352abc0a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a6d8d6fef66343f05c8c791f352abc0a7">FCString</a> ()</td></tr>
-<tr class="memdesc:a6d8d6fef66343f05c8c791f352abc0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. Defauls to an empty string.  <a href="class_f_c_string.html#a6d8d6fef66343f05c8c791f352abc0a7">More...</a><br /></td></tr>
+<tr class="memdesc:a6d8d6fef66343f05c8c791f352abc0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. Defaults to an empty string.  <a href="class_f_c_string.html#a6d8d6fef66343f05c8c791f352abc0a7">More...</a><br /></td></tr>
 <tr class="separator:a6d8d6fef66343f05c8c791f352abc0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d436186efd53ff23b67021dc2e17592"><td class="memItemLeft" align="right" valign="top"><a id="a5d436186efd53ff23b67021dc2e17592" name="a5d436186efd53ff23b67021dc2e17592"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FCString</b> (const char *pszCString)</td></tr>
-<tr class="memdesc:a5d436186efd53ff23b67021dc2e17592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor version that takes a C string as argument. <br /></td></tr>
+<tr class="memitem:a5d436186efd53ff23b67021dc2e17592"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a5d436186efd53ff23b67021dc2e17592">FCString</a> (const char *pszCString)</td></tr>
+<tr class="memdesc:a5d436186efd53ff23b67021dc2e17592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor version that takes a C string (Lua string) as argument. The C string can be encoded either in UTF8 or the default Windows codepage. The function tries UTF8 encoding first. If that fails, then it falls back to encoding using the default codepage. On macOS it falls back to MacRoman, but MacRoman is hardly ever used on modern macOS systems.  <a href="class_f_c_string.html#a5d436186efd53ff23b67021dc2e17592">More...</a><br /></td></tr>
 <tr class="separator:a5d436186efd53ff23b67021dc2e17592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23680e7e7bf8318f71b6c6aaa15ddb9f"><td class="memItemLeft" align="right" valign="top"><a id="a23680e7e7bf8318f71b6c6aaa15ddb9f" name="a23680e7e7bf8318f71b6c6aaa15ddb9f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FCString</b> (const eUniChar16 *pszCString)</td></tr>
@@ -153,6 +152,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCString</b> ()</
 <tr class="memitem:af4f743c5420a8e811fd44f060d53fbac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#af4f743c5420a8e811fd44f060d53fbac">SplitToPathAndFile</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pPathPart, <a class="el" href="class_f_c_string.html">FCString</a> *pFilePart)</td></tr>
 <tr class="memdesc:af4f743c5420a8e811fd44f060d53fbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a fully qualified file path into path part and file part copies.  <a href="class_f_c_string.html#af4f743c5420a8e811fd44f060d53fbac">More...</a><br /></td></tr>
 <tr class="separator:af4f743c5420a8e811fd44f060d53fbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d66247a81989feeb8ccaa8ad411c84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab7d66247a81989feeb8ccaa8ad411c84">SetUserPath</a> ()</td></tr>
+<tr class="memdesc:ab7d66247a81989feeb8ccaa8ad411c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the user path on the running system.  <a href="class_f_c_string.html#ab7d66247a81989feeb8ccaa8ad411c84">More...</a><br /></td></tr>
+<tr class="separator:ab7d66247a81989feeb8ccaa8ad411c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54373a0956a3843bfefc16a9db85514d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a54373a0956a3843bfefc16a9db85514d">SetUserOptionsPath</a> ()</td></tr>
 <tr class="memdesc:a54373a0956a3843bfefc16a9db85514d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the user options path on the running system.  <a href="class_f_c_string.html#a54373a0956a3843bfefc16a9db85514d">More...</a><br /></td></tr>
 <tr class="separator:a54373a0956a3843bfefc16a9db85514d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -827,7 +829,7 @@ Additional Inherited Members</h2></td></tr>
 <p >06 September 2013: a major redesign of this class to make it work better with Lua. No overloaded methods anymore (Append, Contains, etc). Instead, a suffix with the type is used ("AppendCString" etc). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6d8d6fef66343f05c8c791f352abc0a7" name="a6d8d6fef66343f05c8c791f352abc0a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8d6fef66343f05c8c791f352abc0a7">&#9670;&nbsp;</a></span>FCString()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8d6fef66343f05c8c791f352abc0a7">&#9670;&nbsp;</a></span>FCString() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,8 +851,37 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The constructor. Defauls to an empty string. </p>
+<p>The constructor. Defaults to an empty string. </p>
 <p >Lua-supported. </p>
+
+</div>
+</div>
+<a id="a5d436186efd53ff23b67021dc2e17592" name="a5d436186efd53ff23b67021dc2e17592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d436186efd53ff23b67021dc2e17592">&#9670;&nbsp;</a></span>FCString() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FCString::FCString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszCString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor version that takes a C string (Lua string) as argument. The C string can be encoded either in UTF8 or the default Windows codepage. The function tries UTF8 encoding first. If that fails, then it falls back to encoding using the default codepage. On macOS it falls back to MacRoman, but MacRoman is hardly ever used on modern macOS systems. </p>
+<p >Lua-supported (0.68). </p>
 
 </div>
 </div>
@@ -3886,6 +3917,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ab7d66247a81989feeb8ccaa8ad411c84" name="ab7d66247a81989feeb8ccaa8ad411c84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d66247a81989feeb8ccaa8ad411c84">&#9670;&nbsp;</a></span>SetUserPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCString::SetUserPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the string to the user path on the running system. </p>
+<p >Lua-supported (0.68). </p>
+
+</div>
+</div>
 <a id="acef4b305375c6a4ff4d40af73f79db94" name="acef4b305375c6a4ff4d40af73f79db94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acef4b305375c6a4ff4d40af73f79db94">&#9670;&nbsp;</a></span>SplitAt()</h2>
 
@@ -4292,7 +4343,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 22 2023 08:31:15 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Nov 8 2023 12:56:54 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
