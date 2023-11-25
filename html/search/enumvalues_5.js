@@ -47,5 +47,16 @@ var searchData=
   ['fontpref_5ftimesigplus_5fparts_44',['FONTPREF_TIMESIGPLUS_PARTS',['../class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fcae0e62d077839a63f5de9f536ce84a3ba',1,'FCFontPrefs']]],
   ['fontpref_5ftr_45',['FONTPREF_TR',['../class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fcaef29c219134f2462d6207bf43f718204',1,'FCFontPrefs']]],
   ['fontpref_5ftuplet_46',['FONTPREF_TUPLET',['../class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fca6d3b2fa312c4548f3bd1ef608917c6b5',1,'FCFontPrefs']]],
-  ['fontpref_5fwiggle_47',['FONTPREF_WIGGLE',['../class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fcada1a57d7eaa51e71e5e92844ea9c32ee',1,'FCFontPrefs']]]
+  ['fontpref_5fwiggle_47',['FONTPREF_WIGGLE',['../class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fcada1a57d7eaa51e71e5e92844ea9c32ee',1,'FCFontPrefs']]],
+  ['fretfingering_5ffirst_48',['FRETFINGERING_FIRST',['../class_f_c_fret_item.html#a6e61946a0feffab0bce36591cd5ce47ba8e9057324083f92050fbbfe1b89c0c44',1,'FCFretItem']]],
+  ['fretfingering_5ffourth_49',['FRETFINGERING_FOURTH',['../class_f_c_fret_item.html#a6e61946a0feffab0bce36591cd5ce47ba04c3e12a2a0d46ac2fcb88a4af61af14',1,'FCFretItem']]],
+  ['fretfingering_5fnone_50',['FRETFINGERING_NONE',['../class_f_c_fret_item.html#a6e61946a0feffab0bce36591cd5ce47bab8008cd1a1c1e4584fd16579191b6b4f',1,'FCFretItem']]],
+  ['fretfingering_5fsecond_51',['FRETFINGERING_SECOND',['../class_f_c_fret_item.html#a6e61946a0feffab0bce36591cd5ce47ba048f07436995d6a877de9cfeee0869b1',1,'FCFretItem']]],
+  ['fretfingering_5fthird_52',['FRETFINGERING_THIRD',['../class_f_c_fret_item.html#a6e61946a0feffab0bce36591cd5ce47bab89434d2292320b92edfb191f96d4e7f',1,'FCFretItem']]],
+  ['fretfingering_5fthumb_53',['FRETFINGERING_THUMB',['../class_f_c_fret_item.html#a6e61946a0feffab0bce36591cd5ce47ba7b693214c1305759a7b0e8ff9d77dfb2',1,'FCFretItem']]],
+  ['fretitem_5fcircle_54',['FRETITEM_CIRCLE',['../class_f_c_fret_item.html#a23899192d58df7396fcb8c4cd91c2c42a11584f7aae620c04a327c27c69f72ff1',1,'FCFretItem']]],
+  ['fretitem_5fdiamond_55',['FRETITEM_DIAMOND',['../class_f_c_fret_item.html#a23899192d58df7396fcb8c4cd91c2c42a56530bcc5d6c256440626e4e696ebb8a',1,'FCFretItem']]],
+  ['fretitem_5fdot_56',['FRETITEM_DOT',['../class_f_c_fret_item.html#a23899192d58df7396fcb8c4cd91c2c42a8342e7aedc195d8c52ed51b9bff1efdb',1,'FCFretItem']]],
+  ['fretitem_5fnone_57',['FRETITEM_NONE',['../class_f_c_fret_item.html#a23899192d58df7396fcb8c4cd91c2c42aa61baf6dcc8df1d2929fb794c3701ffd',1,'FCFretItem']]],
+  ['fretitem_5fx_58',['FRETITEM_X',['../class_f_c_fret_item.html#a23899192d58df7396fcb8c4cd91c2c42a96cd2474c8fdab976dc3a1ae3d0a09d5',1,'FCFretItem']]]
 ];
