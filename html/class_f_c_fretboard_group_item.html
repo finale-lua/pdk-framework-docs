@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b4</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b5</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeec1718fe722d2749e8d7c349ff06391"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_fretboard_group_item.html#aeec1718fe722d2749e8d7c349ff06391">Load</a> (CMPER fretboardGroupID, twobyte fretboardGroupInci, twobyte rootIndex)</td></tr>
 <tr class="memdesc:aeec1718fe722d2749e8d7c349ff06391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the fretboard group item for the given key pair.  <a href="class_f_c_fretboard_group_item.html#aeec1718fe722d2749e8d7c349ff06391">More...</a><br /></td></tr>
 <tr class="separator:aeec1718fe722d2749e8d7c349ff06391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e10ce97e934209f2ebc8e5d5abdaf7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_fretboard_group_item.html#aa0e10ce97e934209f2ebc8e5d5abdaf7">Reload</a> ()</td></tr>
+<tr class="memdesc:aa0e10ce97e934209f2ebc8e5d5abdaf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads the fretboard group item using the key pair from the previous call to <a class="el" href="class_f_c_fretboard_group_item.html#aeec1718fe722d2749e8d7c349ff06391" title="Loads the fretboard group item for the given key pair.">Load</a>.  <a href="class_f_c_fretboard_group_item.html#aa0e10ce97e934209f2ebc8e5d5abdaf7">More...</a><br /></td></tr>
+<tr class="separator:aa0e10ce97e934209f2ebc8e5d5abdaf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2883bd9326d5e137374918f7f85cb66"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_fretboard_group_item.html#ae2883bd9326d5e137374918f7f85cb66">Save</a> ()</td></tr>
 <tr class="memdesc:ae2883bd9326d5e137374918f7f85cb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the loaded fretboard group item for the given key pair.  <a href="class_f_c_fretboard_group_item.html#ae2883bd9326d5e137374918f7f85cb66">More...</a><br /></td></tr>
 <tr class="separator:ae2883bd9326d5e137374918f7f85cb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -716,6 +719,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool FCFretboardGroupItem::Load </td>
@@ -741,6 +747,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Loads the fretboard group item for the given key pair. </p>
@@ -753,6 +764,27 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>true if success </dd></dl>
+
+</div>
+</div>
+<a id="aa0e10ce97e934209f2ebc8e5d5abdaf7" name="aa0e10ce97e934209f2ebc8e5d5abdaf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0e10ce97e934209f2ebc8e5d5abdaf7">&#9670;&nbsp;</a></span>Reload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCFretboardGroupItem::Reload </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reloads the fretboard group item using the key pair from the previous call to <a class="el" href="class_f_c_fretboard_group_item.html#aeec1718fe722d2749e8d7c349ff06391" title="Loads the fretboard group item for the given key pair.">Load</a>. </p>
+<p >Lua-supported (0.68)</p>
 <dl class="section return"><dt>Returns</dt><dd>true if success </dd></dl>
 
 </div>
@@ -783,6 +815,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool FCFretboardGroupItem::SaveAs </td>
@@ -808,6 +843,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Saves a loaded or newly constructed fretboard group item for the given key pair to a new <a class="el" href="class_f_c_fretboard_group_def.html" title="Class that stores one record of a fretboard chord definition.">FCFretboardGroupDef</a>. If you want to access the original group item, you must reload it. </p>
@@ -943,7 +983,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 24 2023 21:16:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Nov 25 2023 11:23:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

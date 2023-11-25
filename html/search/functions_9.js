@@ -44,7 +44,7 @@ var searchData=
   ['isaltnotationfilteradded_41',['IsAltNotationFilterAdded',['../class_f_c_lua_iterator.html#a39ef30a61bd73f87180ab264f410839c',1,'FCLuaIterator']]],
   ['isautorehearsalmark_42',['IsAutoRehearsalMark',['../class_f_c_text_expression_def.html#a9e0ba30e70e7f8ccc56c06bd6d1d04c8',1,'FCTextExpressionDef']]],
   ['isautoslur_43',['IsAutoSlur',['../class_f_c_smart_shape.html#a6d25675566cba96d6fd5f79ae2f51bdf',1,'FCSmartShape']]],
-  ['isbarre_44',['IsBarre',['../class_f_c_fret_item.html#a75aec9ae560710dd88ed6fe30b1bd750',1,'FCFretItem']]],
+  ['isbarre_44',['IsBarre',['../class_____f_c_fret_item_base.html#a09c030e8754e574c12e2b4102934fcb0',1,'__FCFretItemBase']]],
   ['isbeatposition_45',['IsBeatPosition',['../class_f_c_time_signature.html#a7d20d70a736ac01c46337f6d9821c4e3',1,'FCTimeSignature']]],
   ['isblank_46',['IsBlank',['../class_f_c_page.html#a6da624d529caada95a48ddaa6e1545d3',1,'FCPage']]],
   ['iscellposwithin_47',['IsCellPosWithin',['../class_f_c_music_region.html#a1d0549d2fa30ac696dd9b4696f684083',1,'FCMusicRegion']]],

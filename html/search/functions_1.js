@@ -32,7 +32,7 @@ var searchData=
   ['addfillsolid_29',['AddFillSolid',['../class_f_c_shape_def_instructions.html#ab470b18a5a756281e501219da6d2b9fc',1,'FCShapeDefInstructions']]],
   ['addfilter_30',['AddFilter',['../class_____f_c_file_dialog_base.html#a117a950435ebfc8493b5df4d81dd64b4',1,'__FCFileDialogBase']]],
   ['addfloat_31',['AddFloat',['../class_f_c_numbers.html#a98fe1656ec454e00df286402f6c50d86',1,'FCNumbers']]],
-  ['addfretitem_32',['AddFretItem',['../class_____f_c_fret_items_base.html#ab6cd62a11ae2bece351f032eaebe64ae',1,'__FCFretItemsBase']]],
+  ['addfretitem_32',['AddFretItem',['../class_f_c_fret_items.html#af22ae5abf7338ba462abc9f106721c81',1,'FCFretItems::AddFretItem()'],['../class_f_c_fret_barre_items.html#a0e10b2d42b964eb1a9db6b94ab45aeba',1,'FCFretBarreItems::AddFretItem()']]],
   ['addfromcellentry_33',['AddFromCellEntry',['../class_f_c_note_pitches.html#afb7a3b661fa9ddf6a2e6276235cb6e02',1,'FCNotePitches']]],
   ['addfromentry_34',['AddFromEntry',['../class_f_c_note_pitches.html#acbc461fa2430f584d5acce6ae11a3135',1,'FCNotePitches']]],
   ['addgroup_35',['AddGroup',['../class_f_c_composite_time_sig_top.html#ae27d304dd3f3eacf6a8e94ca36674483',1,'FCCompositeTimeSigTop::AddGroup()'],['../class_f_c_composite_time_sig_bottom.html#ad392efb1f14c2a90b8404769671ce794',1,'FCCompositeTimeSigBottom::AddGroup()']]],
