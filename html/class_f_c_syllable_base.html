@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -65,7 +65,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_f_c_syllable_base-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">FCSyllableBase Class Reference<div class="ingroups"><a class="el" href="group__data__classes.html">Data Classes</a> &#124; <a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
+  <div class="headertitle"><div class="title">FCSyllableBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__data__classes.html">Data Classes</a> &#124; <a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -90,9 +90,9 @@ Inheritance diagram for FCSyllableBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e01f055e1520c9117df73b35051d7dd"><td class="memItemLeft" align="right" valign="top">EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a9e01f055e1520c9117df73b35051d7dd">Tag</a> () override</td></tr>
-<tr class="memdesc:a9e01f055e1520c9117df73b35051d7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma tag for the derived class.  <a href="class_f_c_syllable_base.html#a9e01f055e1520c9117df73b35051d7dd">More...</a><br /></td></tr>
-<tr class="separator:a9e01f055e1520c9117df73b35051d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42577e7d58eafd9e53d17560f408c69"><td class="memItemLeft" align="right" valign="top">EXTAG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ab42577e7d58eafd9e53d17560f408c69">Tag</a> () const override=0</td></tr>
+<tr class="memdesc:ab42577e7d58eafd9e53d17560f408c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma tag for the derived class.  <a href="class_f_c_syllable_base.html#ab42577e7d58eafd9e53d17560f408c69">More...</a><br /></td></tr>
+<tr class="separator:ab42577e7d58eafd9e53d17560f408c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c9b8df77791e9cc1e8d2ab61b83ac28"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a0c9b8df77791e9cc1e8d2ab61b83ac28">ClassName</a> () const override</td></tr>
 <tr class="memdesc:a0c9b8df77791e9cc1e8d2ab61b83ac28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child class.  <a href="class_f_c_syllable_base.html#a0c9b8df77791e9cc1e8d2ab61b83ac28">More...</a><br /></td></tr>
 <tr class="separator:a0c9b8df77791e9cc1e8d2ab61b83ac28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,40 +145,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae11febd0d2567069bb27f5fc3f0eabc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ae11febd0d2567069bb27f5fc3f0eabc4">IsValidSyllableNumber</a> ()</td></tr>
 <tr class="memdesc:ae11febd0d2567069bb27f5fc3f0eabc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the current syllable number for the object is valid. This also requires that the raw text number is mapped correctly.  <a href="class_f_c_syllable_base.html#ae11febd0d2567069bb27f5fc3f0eabc4">More...</a><br /></td></tr>
 <tr class="separator:ae11febd0d2567069bb27f5fc3f0eabc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59be2ceae5eee5abdac182353e9754ae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a59be2ceae5eee5abdac182353e9754ae">IsVerse</a> ()</td></tr>
-<tr class="memdesc:a59be2ceae5eee5abdac182353e9754ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable object is a verse syllable.  <a href="class_f_c_syllable_base.html#a59be2ceae5eee5abdac182353e9754ae">More...</a><br /></td></tr>
-<tr class="separator:a59be2ceae5eee5abdac182353e9754ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c2d932d7224d8c1588f0eae181a0edf"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a8c2d932d7224d8c1588f0eae181a0edf">IsChorus</a> ()</td></tr>
-<tr class="memdesc:a8c2d932d7224d8c1588f0eae181a0edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable object is a chorus syllable.  <a href="class_f_c_syllable_base.html#a8c2d932d7224d8c1588f0eae181a0edf">More...</a><br /></td></tr>
-<tr class="separator:a8c2d932d7224d8c1588f0eae181a0edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cb97efbbc505dfd8a6c8feff70b77f5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a0cb97efbbc505dfd8a6c8feff70b77f5">IsSection</a> ()</td></tr>
-<tr class="memdesc:a0cb97efbbc505dfd8a6c8feff70b77f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable object is a section syllable.  <a href="class_f_c_syllable_base.html#a0cb97efbbc505dfd8a6c8feff70b77f5">More...</a><br /></td></tr>
-<tr class="separator:a0cb97efbbc505dfd8a6c8feff70b77f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7035da3d1f1b531bb08e1f7b8f66a47"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ac7035da3d1f1b531bb08e1f7b8f66a47">IsVerse</a> () const</td></tr>
+<tr class="memdesc:ac7035da3d1f1b531bb08e1f7b8f66a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable object is a verse syllable.  <a href="class_f_c_syllable_base.html#ac7035da3d1f1b531bb08e1f7b8f66a47">More...</a><br /></td></tr>
+<tr class="separator:ac7035da3d1f1b531bb08e1f7b8f66a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92a3f1e7224b19143a41c2f7f7f78e0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ac92a3f1e7224b19143a41c2f7f7f78e0">IsChorus</a> () const</td></tr>
+<tr class="memdesc:ac92a3f1e7224b19143a41c2f7f7f78e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable object is a chorus syllable.  <a href="class_f_c_syllable_base.html#ac92a3f1e7224b19143a41c2f7f7f78e0">More...</a><br /></td></tr>
+<tr class="separator:ac92a3f1e7224b19143a41c2f7f7f78e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e3b860073b05a9694ced7bd4223e10"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ad2e3b860073b05a9694ced7bd4223e10">IsSection</a> () const</td></tr>
+<tr class="memdesc:ad2e3b860073b05a9694ced7bd4223e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable object is a section syllable.  <a href="class_f_c_syllable_base.html#ad2e3b860073b05a9694ced7bd4223e10">More...</a><br /></td></tr>
+<tr class="separator:ad2e3b860073b05a9694ced7bd4223e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac00e65ce9d7e0f1c1409f50c751951ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ac00e65ce9d7e0f1c1409f50c751951ea">CalcHyphen</a> ()</td></tr>
 <tr class="memdesc:ac00e65ce9d7e0f1c1409f50c751951ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the syllable ends with a hyphen. <br  />
   <a href="class_f_c_syllable_base.html#ac00e65ce9d7e0f1c1409f50c751951ea">More...</a><br /></td></tr>
 <tr class="separator:ac00e65ce9d7e0f1c1409f50c751951ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86a1e6795ac1b60a537a369bcf361cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ae86a1e6795ac1b60a537a369bcf361cd">CalcStringPos</a> ()</td></tr>
-<tr class="memdesc:ae86a1e6795ac1b60a537a369bcf361cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based string position in the raw string where the syllable starts.  <a href="class_f_c_syllable_base.html#ae86a1e6795ac1b60a537a369bcf361cd">More...</a><br /></td></tr>
-<tr class="separator:ae86a1e6795ac1b60a537a369bcf361cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846bedd4e0cfeb00c23c22b77f305f2e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a846bedd4e0cfeb00c23c22b77f305f2e">CalcNextStringPos</a> ()</td></tr>
-<tr class="memdesc:a846bedd4e0cfeb00c23c22b77f305f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based string position in the raw string where the next syllable starts.  <a href="class_f_c_syllable_base.html#a846bedd4e0cfeb00c23c22b77f305f2e">More...</a><br /></td></tr>
-<tr class="separator:a846bedd4e0cfeb00c23c22b77f305f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8364186f4317846dd7719da5dcd46713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_lyrics_base.html">__FCLyricsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a8364186f4317846dd7719da5dcd46713">CreateLyricText</a> ()</td></tr>
-<tr class="memdesc:a8364186f4317846dd7719da5dcd46713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and loads the lyric raw text block for the syllable.  <a href="class_f_c_syllable_base.html#a8364186f4317846dd7719da5dcd46713">More...</a><br /></td></tr>
-<tr class="separator:a8364186f4317846dd7719da5dcd46713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c001fd71cac1c3f27ac3608a0ad7a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ae7c001fd71cac1c3f27ac3608a0ad7a1">CreateFontInfo</a> ()</td></tr>
-<tr class="memdesc:ae7c001fd71cac1c3f27ac3608a0ad7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font info object for the start of the syllable.  <a href="class_f_c_syllable_base.html#ae7c001fd71cac1c3f27ac3608a0ad7a1">More...</a><br /></td></tr>
-<tr class="separator:ae7c001fd71cac1c3f27ac3608a0ad7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a915c8fda57e4206ee977dbbd3c3e959e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a915c8fda57e4206ee977dbbd3c3e959e">CreateNextFontInfo</a> ()</td></tr>
-<tr class="memdesc:a915c8fda57e4206ee977dbbd3c3e959e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font info object for the start of the next syllable.  <a href="class_f_c_syllable_base.html#a915c8fda57e4206ee977dbbd3c3e959e">More...</a><br /></td></tr>
-<tr class="separator:a915c8fda57e4206ee977dbbd3c3e959e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fabe7a507e620baa929504324cd72d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a4fabe7a507e620baa929504324cd72d3">GetText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:a4fabe7a507e620baa929504324cd72d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a string object with the syllable text (without formatting).  <a href="class_f_c_syllable_base.html#a4fabe7a507e620baa929504324cd72d3">More...</a><br /></td></tr>
-<tr class="separator:a4fabe7a507e620baa929504324cd72d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d9a488ec5f4fe7999801643540b721f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a5d9a488ec5f4fe7999801643540b721f">GetRawText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:a5d9a488ec5f4fe7999801643540b721f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a string object with the raw text (with Enigma formatting commands).  <a href="class_f_c_syllable_base.html#a5d9a488ec5f4fe7999801643540b721f">More...</a><br /></td></tr>
-<tr class="separator:a5d9a488ec5f4fe7999801643540b721f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab7f2478f13aa01d935b239b73074b13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#aab7f2478f13aa01d935b239b73074b13">CalcStringPos</a> () const</td></tr>
+<tr class="memdesc:aab7f2478f13aa01d935b239b73074b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based string position in the raw string where the syllable starts.  <a href="class_f_c_syllable_base.html#aab7f2478f13aa01d935b239b73074b13">More...</a><br /></td></tr>
+<tr class="separator:aab7f2478f13aa01d935b239b73074b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92201532724eb6ddce6f1817d69cceca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a92201532724eb6ddce6f1817d69cceca">CalcNextStringPos</a> () const</td></tr>
+<tr class="memdesc:a92201532724eb6ddce6f1817d69cceca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based string position in the raw string where the next syllable starts.  <a href="class_f_c_syllable_base.html#a92201532724eb6ddce6f1817d69cceca">More...</a><br /></td></tr>
+<tr class="separator:a92201532724eb6ddce6f1817d69cceca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62619662f9115027def82f1ef764c672"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_lyrics_base.html">__FCLyricsBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a62619662f9115027def82f1ef764c672">CreateLyricText</a> () const</td></tr>
+<tr class="memdesc:a62619662f9115027def82f1ef764c672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and loads the lyric raw text block for the syllable.  <a href="class_f_c_syllable_base.html#a62619662f9115027def82f1ef764c672">More...</a><br /></td></tr>
+<tr class="separator:a62619662f9115027def82f1ef764c672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232eddd88bfb003373dbee909332f2d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a232eddd88bfb003373dbee909332f2d2">CreateFontInfo</a> () const</td></tr>
+<tr class="memdesc:a232eddd88bfb003373dbee909332f2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font info object for the start of the syllable.  <a href="class_f_c_syllable_base.html#a232eddd88bfb003373dbee909332f2d2">More...</a><br /></td></tr>
+<tr class="separator:a232eddd88bfb003373dbee909332f2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105d918417f4e5e1f413224b00b12f85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a105d918417f4e5e1f413224b00b12f85">CreateNextFontInfo</a> () const</td></tr>
+<tr class="memdesc:a105d918417f4e5e1f413224b00b12f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a font info object for the start of the next syllable.  <a href="class_f_c_syllable_base.html#a105d918417f4e5e1f413224b00b12f85">More...</a><br /></td></tr>
+<tr class="separator:a105d918417f4e5e1f413224b00b12f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44040ad8e87eedd18ca0ecad80f62e83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a44040ad8e87eedd18ca0ecad80f62e83">GetText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
+<tr class="memdesc:a44040ad8e87eedd18ca0ecad80f62e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a string object with the syllable text (without formatting).  <a href="class_f_c_syllable_base.html#a44040ad8e87eedd18ca0ecad80f62e83">More...</a><br /></td></tr>
+<tr class="separator:a44040ad8e87eedd18ca0ecad80f62e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1f9eb056cd53b8ff1d3e6d984eb59d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#a6b1f9eb056cd53b8ff1d3e6d984eb59d">GetRawText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
+<tr class="memdesc:a6b1f9eb056cd53b8ff1d3e6d984eb59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills a string object with the raw text (with Enigma formatting commands).  <a href="class_f_c_syllable_base.html#a6b1f9eb056cd53b8ff1d3e6d984eb59d">More...</a><br /></td></tr>
+<tr class="separator:a6b1f9eb056cd53b8ff1d3e6d984eb59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6488dd3338b43c2c253894693220f06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_syllable_base.html#ae6488dd3338b43c2c253894693220f06">SaveRawText</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:ae6488dd3338b43c2c253894693220f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the raw syllable text to the full string.  <a href="class_f_c_syllable_base.html#ae6488dd3338b43c2c253894693220f06">More...</a><br /></td></tr>
 <tr class="separator:ae6488dd3338b43c2c253894693220f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,15 +234,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEntnumAndInci</b> 
 <tr class="memitem:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">VerifyConnectedDocID</a> ()</td></tr>
 <tr class="memdesc:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that the stored document ID for the data object matches the current document's ID.  <a href="class_____f_c_base_data.html#ae2342036066ad36b02f373337f7799ae">More...</a><br /></td></tr>
 <tr class="separator:ae2342036066ad36b02f373337f7799ae inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b">EnigmaVersion</a> ()</td></tr>
-<tr class="memdesc:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_____f_c_base_data.html#a72cee2892c0b13ddac2ae0cfa5ffda2b">More...</a><br /></td></tr>
-<tr class="separator:a72cee2892c0b13ddac2ae0cfa5ffda2b inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b6cc2d1afdcb52f417aaae83e1d159 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a19b6cc2d1afdcb52f417aaae83e1d159">DataSizeLoad</a> ()=0</td></tr>
-<tr class="memdesc:a19b6cc2d1afdcb52f417aaae83e1d159 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be loaded.  <a href="class_____f_c_base_data.html#a19b6cc2d1afdcb52f417aaae83e1d159">More...</a><br /></td></tr>
-<tr class="separator:a19b6cc2d1afdcb52f417aaae83e1d159 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">DataSizeSave</a> ()</td></tr>
-<tr class="memdesc:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a50759c8d94df137f70f365f348b9b716">More...</a><br /></td></tr>
-<tr class="separator:a50759c8d94df137f70f365f348b9b716 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46">EnigmaVersion</a> () const</td></tr>
+<tr class="memdesc:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Enigma version for save/load/create/delete operations.  <a href="class_____f_c_base_data.html#a87085b43c86b3629dfe211ab5a1b8a46">More...</a><br /></td></tr>
+<tr class="separator:a87085b43c86b3629dfe211ab5a1b8a46 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935c048038fc083774982d55cf5e5b7c inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a935c048038fc083774982d55cf5e5b7c">DataSizeLoad</a> () const =0</td></tr>
+<tr class="memdesc:a935c048038fc083774982d55cf5e5b7c inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be loaded.  <a href="class_____f_c_base_data.html#a935c048038fc083774982d55cf5e5b7c">More...</a><br /></td></tr>
+<tr class="separator:a935c048038fc083774982d55cf5e5b7c inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">DataSizeSave</a> () const</td></tr>
+<tr class="memdesc:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the data size for the data structure that should be saved or created.  <a href="class_____f_c_base_data.html#a94ddc1f765b7f985463216d6cb1123bc">More...</a><br /></td></tr>
+<tr class="separator:a94ddc1f765b7f985463216d6cb1123bc inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">_CloneFrom</a> (<a class="el" href="class_____f_c_base_data.html">__FCBaseData</a> *pSource)</td></tr>
 <tr class="memdesc:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Copies object data (except data block) from another object.  <a href="class_____f_c_base_data.html#a7c3bd26c49488fa1994150b88307e277">More...</a><br /></td></tr>
 <tr class="separator:a7c3bd26c49488fa1994150b88307e277 inherit pub_methods_class_____f_c_base_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,156 +417,160 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
-, <b>FCID_DOTMOD</b>
 , <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
+, <b>FCID_DOTMOD</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
+, <br />
+&#160;&#160;<b>FCID_ENIGMATEXTSTYLE</b>
 , <b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
+, <b>FCID_EXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
 , <b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
-, <b>FCID_FRETBOARDSTYLEDEFS</b>
+&#160;&#160;<b>FCID_FRETBOARDSTYLEDEFS</b>
 , <b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
-, <b>FCID_GENERALPREFS</b>
+&#160;&#160;<b>FCID_GENERALPREFS</b>
 , <b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
-, <b>FCID_HUMANPLAYBACKPREFS</b>
+&#160;&#160;<b>FCID_HUMANPLAYBACKPREFS</b>
 , <b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
-, <b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
+, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
-, <b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
-, <b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
-, <b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
-, <b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
-, <b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
-, <b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
-, <b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
-, <b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
+, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
+, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
+, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
+, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
+, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -707,8 +711,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a846bedd4e0cfeb00c23c22b77f305f2e" name="a846bedd4e0cfeb00c23c22b77f305f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a846bedd4e0cfeb00c23c22b77f305f2e">&#9670;&nbsp;</a></span>CalcNextStringPos()</h2>
+<a id="a92201532724eb6ddce6f1817d69cceca" name="a92201532724eb6ddce6f1817d69cceca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92201532724eb6ddce6f1817d69cceca">&#9670;&nbsp;</a></span>CalcNextStringPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,19 +721,20 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">int FCSyllableBase::CalcNextStringPos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns the 0-based string position in the raw string where the next syllable starts. </p>
-<p >Lua-supported.</p>
+<dl class="section warning"><dt>Warning</dt><dd>If the string has other than ASCII characters, use string manipulation functions in <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> to extract syllables. Lua strings are UTF-8-encoded and will not have the same indices as <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a>.</dd></dl>
+<p>Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>-1 if the syllable can't be found in the raw string (such as at end of string). Otherwise, the 0-based string position. </dd></dl>
 
 </div>
 </div>
-<a id="ae86a1e6795ac1b60a537a369bcf361cd" name="ae86a1e6795ac1b60a537a369bcf361cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae86a1e6795ac1b60a537a369bcf361cd">&#9670;&nbsp;</a></span>CalcStringPos()</h2>
+<a id="aab7f2478f13aa01d935b239b73074b13" name="aab7f2478f13aa01d935b239b73074b13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab7f2478f13aa01d935b239b73074b13">&#9670;&nbsp;</a></span>CalcStringPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -738,13 +743,14 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">int FCSyllableBase::CalcStringPos </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns the 0-based string position in the raw string where the syllable starts. </p>
-<p >Lua-supported.</p>
+<dl class="section warning"><dt>Warning</dt><dd>If the string has other than ASCII characters, use string manipulation functions in <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> to extract syllables. Lua strings are UTF-8-encoded and will not have the same indices as <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a>.</dd></dl>
+<p>Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>-1 if the syllable can't be found in the raw string. Otherwise, the 0-based string position. </dd></dl>
 
 </div>
@@ -781,8 +787,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="ae7c001fd71cac1c3f27ac3608a0ad7a1" name="ae7c001fd71cac1c3f27ac3608a0ad7a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7c001fd71cac1c3f27ac3608a0ad7a1">&#9670;&nbsp;</a></span>CreateFontInfo()</h2>
+<a id="a232eddd88bfb003373dbee909332f2d2" name="a232eddd88bfb003373dbee909332f2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a232eddd88bfb003373dbee909332f2d2">&#9670;&nbsp;</a></span>CreateFontInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -791,20 +797,20 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * FCSyllableBase::CreateFontInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Creates a font info object for the start of the syllable. </p>
-<p >It's the caller's responsiblity to delete the created object from the heap after use.</p>
+<p >C++ callers must dispose of the created object either with delete or a std pointer.</p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>NULL if the font info couldn't be created. </dd></dl>
 
 </div>
 </div>
-<a id="a8364186f4317846dd7719da5dcd46713" name="a8364186f4317846dd7719da5dcd46713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8364186f4317846dd7719da5dcd46713">&#9670;&nbsp;</a></span>CreateLyricText()</h2>
+<a id="a62619662f9115027def82f1ef764c672" name="a62619662f9115027def82f1ef764c672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62619662f9115027def82f1ef764c672">&#9670;&nbsp;</a></span>CreateLyricText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -813,7 +819,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname"><a class="el" href="class_____f_c_lyrics_base.html">__FCLyricsBase</a> * FCSyllableBase::CreateLyricText </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -824,8 +830,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a915c8fda57e4206ee977dbbd3c3e959e" name="a915c8fda57e4206ee977dbbd3c3e959e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a915c8fda57e4206ee977dbbd3c3e959e">&#9670;&nbsp;</a></span>CreateNextFontInfo()</h2>
+<a id="a105d918417f4e5e1f413224b00b12f85" name="a105d918417f4e5e1f413224b00b12f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105d918417f4e5e1f413224b00b12f85">&#9670;&nbsp;</a></span>CreateNextFontInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -834,7 +840,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * FCSyllableBase::CreateNextFontInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -961,8 +967,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a5d9a488ec5f4fe7999801643540b721f" name="a5d9a488ec5f4fe7999801643540b721f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d9a488ec5f4fe7999801643540b721f">&#9670;&nbsp;</a></span>GetRawText()</h2>
+<a id="a6b1f9eb056cd53b8ff1d3e6d984eb59d" name="a6b1f9eb056cd53b8ff1d3e6d984eb59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1f9eb056cd53b8ff1d3e6d984eb59d">&#9670;&nbsp;</a></span>GetRawText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,7 +978,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pString</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1040,8 +1046,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a4fabe7a507e620baa929504324cd72d3" name="a4fabe7a507e620baa929504324cd72d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fabe7a507e620baa929504324cd72d3">&#9670;&nbsp;</a></span>GetText()</h2>
+<a id="a44040ad8e87eedd18ca0ecad80f62e83" name="a44040ad8e87eedd18ca0ecad80f62e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44040ad8e87eedd18ca0ecad80f62e83">&#9670;&nbsp;</a></span>GetText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1051,7 +1057,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pString</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1119,8 +1125,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a8c2d932d7224d8c1588f0eae181a0edf" name="a8c2d932d7224d8c1588f0eae181a0edf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c2d932d7224d8c1588f0eae181a0edf">&#9670;&nbsp;</a></span>IsChorus()</h2>
+<a id="ac92a3f1e7224b19143a41c2f7f7f78e0" name="ac92a3f1e7224b19143a41c2f7f7f78e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92a3f1e7224b19143a41c2f7f7f78e0">&#9670;&nbsp;</a></span>IsChorus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1132,7 +1138,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">virtual bool FCSyllableBase::IsChorus </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1145,12 +1151,12 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Returns true if the syllable object is a chorus syllable. </p>
 <p >Lua-Supported. </p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_chorus_syllable.html#a9e4fa841f4a31e18b964a56192336514">FCChorusSyllable</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_chorus_syllable.html#a7686e15216035e8484b053c27b83d21e">FCChorusSyllable</a>.</p>
 
 </div>
 </div>
-<a id="a0cb97efbbc505dfd8a6c8feff70b77f5" name="a0cb97efbbc505dfd8a6c8feff70b77f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cb97efbbc505dfd8a6c8feff70b77f5">&#9670;&nbsp;</a></span>IsSection()</h2>
+<a id="ad2e3b860073b05a9694ced7bd4223e10" name="ad2e3b860073b05a9694ced7bd4223e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e3b860073b05a9694ced7bd4223e10">&#9670;&nbsp;</a></span>IsSection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1162,7 +1168,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">virtual bool FCSyllableBase::IsSection </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1175,7 +1181,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Returns true if the syllable object is a section syllable. </p>
 <p >Lua-supported. </p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_section_syllable.html#aa6157b6f15e76e1265c2e53f2c5e1df1">FCSectionSyllable</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_section_syllable.html#a92f73a31e8d2b9e0fd2bd6936fd6f906">FCSectionSyllable</a>.</p>
 
 </div>
 </div>
@@ -1207,8 +1213,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a59be2ceae5eee5abdac182353e9754ae" name="a59be2ceae5eee5abdac182353e9754ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59be2ceae5eee5abdac182353e9754ae">&#9670;&nbsp;</a></span>IsVerse()</h2>
+<a id="ac7035da3d1f1b531bb08e1f7b8f66a47" name="ac7035da3d1f1b531bb08e1f7b8f66a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7035da3d1f1b531bb08e1f7b8f66a47">&#9670;&nbsp;</a></span>IsVerse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1220,7 +1226,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">virtual bool FCSyllableBase::IsVerse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1233,7 +1239,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Returns true if the syllable object is a verse syllable. </p>
 <p >Lua-supported. </p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_verse_syllable.html#a8f7c87072ad2ee1f9369cd601d17b0a2">FCVerseSyllable</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_verse_syllable.html#a6c9bea34a4db9eb2d3a46c1386e040a0">FCVerseSyllable</a>.</p>
 
 </div>
 </div>
@@ -1472,8 +1478,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a9e01f055e1520c9117df73b35051d7dd" name="a9e01f055e1520c9117df73b35051d7dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e01f055e1520c9117df73b35051d7dd">&#9670;&nbsp;</a></span>Tag()</h2>
+<a id="ab42577e7d58eafd9e53d17560f408c69" name="ab42577e7d58eafd9e53d17560f408c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42577e7d58eafd9e53d17560f408c69">&#9670;&nbsp;</a></span>Tag()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1485,12 +1491,12 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td class="memname">EXTAG FCSyllableBase::Tag </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1498,16 +1504,16 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>The Enigma tag for the derived class. </p>
 <p >(Have this public so it's possible to query from the outside world.) </p>
 
-<p>Implements <a class="el" href="class_____f_c_base_data.html#a079831695c81acd9d30e80a9f8857834">__FCBaseData</a>.</p>
+<p>Implements <a class="el" href="class_____f_c_base_data.html#a98d542c0310c8d0c092281380a4a3c94">__FCBaseData</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_verse_syllable.html#a71b31474eb5b22c7c8ab1ba7be8e8377">FCVerseSyllable</a>, <a class="el" href="class_f_c_chorus_syllable.html#ab5ee4fc06e6cfb9d4649e5f38e602931">FCChorusSyllable</a>, and <a class="el" href="class_f_c_section_syllable.html#ac67ceb41622e5e06d0c9b68ef79bb7a4">FCSectionSyllable</a>.</p>
+<p>Implemented in <a class="el" href="class_f_c_verse_syllable.html#a8bfbb97d0291663a9627b9e1d88edefb">FCVerseSyllable</a>, <a class="el" href="class_f_c_chorus_syllable.html#a30d97bfff8aede98fddc0e6ac0c0d49a">FCChorusSyllable</a>, and <a class="el" href="class_f_c_section_syllable.html#a7cffed1dded48225095884465a328f3d">FCSectionSyllable</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Nov 30 2023 08:10:28 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

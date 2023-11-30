@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -102,156 +102,160 @@ Public Types</h2></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
-, <b>FCID_DOTMOD</b>
 , <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
+, <b>FCID_DOTMOD</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
+, <br />
+&#160;&#160;<b>FCID_ENIGMATEXTSTYLE</b>
 , <b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
+, <b>FCID_EXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
 , <b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
-, <b>FCID_FRETBOARDSTYLEDEFS</b>
+&#160;&#160;<b>FCID_FRETBOARDSTYLEDEFS</b>
 , <b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
-, <b>FCID_GENERALPREFS</b>
+&#160;&#160;<b>FCID_GENERALPREFS</b>
 , <b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
-, <b>FCID_HUMANPLAYBACKPREFS</b>
+&#160;&#160;<b>FCID_HUMANPLAYBACKPREFS</b>
 , <b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
-, <b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
+, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
-, <b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
-, <b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
-, <b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
-, <b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
-, <b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
-, <b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
-, <b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
-, <b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
+, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
+, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
+, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
+, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
+, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -279,9 +283,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d7976aa0fa40a5e468069883595eef6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a8d7976aa0fa40a5e468069883595eef6">IsExecuting</a> () const</td></tr>
 <tr class="memdesc:a8d7976aa0fa40a5e468069883595eef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the script associated with this script item is currently executing.  <a href="class_f_c_lua_script_item.html#a8d7976aa0fa40a5e468069883595eef6">More...</a><br /></td></tr>
 <tr class="separator:a8d7976aa0fa40a5e468069883595eef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123888498bed662272f5fd8c58d45a33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a123888498bed662272f5fd8c58d45a33">StopExecuting</a> ()</td></tr>
+<tr class="memdesc:a123888498bed662272f5fd8c58d45a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution and terminates the Lua state.  <a href="class_f_c_lua_script_item.html#a123888498bed662272f5fd8c58d45a33">More...</a><br /></td></tr>
+<tr class="separator:a123888498bed662272f5fd8c58d45a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89e448496487e620be2e41d8ae50076"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">GetFilePath</a> () const</td></tr>
 <tr class="memdesc:aa89e448496487e620be2e41d8ae50076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fully-qualified file path for the script.  <a href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">More...</a><br /></td></tr>
 <tr class="separator:aa89e448496487e620be2e41d8ae50076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a47dae8dd92e5b066ffe19249c5c1b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#ac2a47dae8dd92e5b066ffe19249c5c1b">GetOptionalScriptText</a> () const</td></tr>
+<tr class="memdesc:ac2a47dae8dd92e5b066ffe19249c5c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the optional script text.  <a href="class_f_c_lua_script_item.html#ac2a47dae8dd92e5b066ffe19249c5c1b">More...</a><br /></td></tr>
+<tr class="separator:ac2a47dae8dd92e5b066ffe19249c5c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ea2fbd0548b614ce37b2791de9e2a4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a27ea2fbd0548b614ce37b2791de9e2a4">GetMenuItemText</a> () const</td></tr>
 <tr class="memdesc:a27ea2fbd0548b614ce37b2791de9e2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the menu item text for the script.  <a href="class_f_c_lua_script_item.html#a27ea2fbd0548b614ce37b2791de9e2a4">More...</a><br /></td></tr>
 <tr class="separator:a27ea2fbd0548b614ce37b2791de9e2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,9 +319,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af71b95bb0f8094f8fb0af0c57fad21bd"><td class="memItemLeft" align="right" valign="top">EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#af71b95bb0f8094f8fb0af0c57fad21bd">GetRequiredVersion</a> (int versiontype) const</td></tr>
 <tr class="memdesc:af71b95bb0f8094f8fb0af0c57fad21bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a required version number from one of the <a class="el" href="class_f_c_lua_script_item.html#a3b3b06fb0b96f55f726231018a12d315" title="Settings used to get required version information for a script.">LUASCRIPT_REQVERSION_TYPES</a> constants.  <a href="class_f_c_lua_script_item.html#af71b95bb0f8094f8fb0af0c57fad21bd">More...</a><br /></td></tr>
 <tr class="separator:af71b95bb0f8094f8fb0af0c57fad21bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a066a42d8fbb7f0e3f6e03f4fe50b7492"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a066a42d8fbb7f0e3f6e03f4fe50b7492">GetAutomaticallyReportErrors</a> () const</td></tr>
+<tr class="memdesc:a066a42d8fbb7f0e3f6e03f4fe50b7492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if errors should automatically be reported by the Lua connector. The default value is true.  <a href="class_f_c_lua_script_item.html#a066a42d8fbb7f0e3f6e03f4fe50b7492">More...</a><br /></td></tr>
+<tr class="separator:a066a42d8fbb7f0e3f6e03f4fe50b7492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e36ca73e0a6bd77421d078d63581688"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a0e36ca73e0a6bd77421d078d63581688">GetTrusted</a> () const</td></tr>
+<tr class="memdesc:a0e36ca73e0a6bd77421d078d63581688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if the script should run in trusted mode. Default is false.  <a href="class_f_c_lua_script_item.html#a0e36ca73e0a6bd77421d078d63581688">More...</a><br /></td></tr>
+<tr class="separator:a0e36ca73e0a6bd77421d078d63581688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd6b5d41e4d6ef63b5566d3e38a64ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#abdd6b5d41e4d6ef63b5566d3e38a64ca">CreateFinalePluginValue</a> (const char *fieldname)</td></tr>
 <tr class="memdesc:abdd6b5d41e4d6ef63b5566d3e38a64ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the requested finaleplugin value.  <a href="class_f_c_lua_script_item.html#abdd6b5d41e4d6ef63b5566d3e38a64ca">More...</a><br /></td></tr>
 <tr class="separator:abdd6b5d41e4d6ef63b5566d3e38a64ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222ef80d9781cdd49cf4a3f649a4e266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a222ef80d9781cdd49cf4a3f649a4e266">SetOptionalScriptText</a> (const char *value)</td></tr>
+<tr class="memdesc:a222ef80d9781cdd49cf4a3f649a4e266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the optional script text.  <a href="class_f_c_lua_script_item.html#a222ef80d9781cdd49cf4a3f649a4e266">More...</a><br /></td></tr>
+<tr class="separator:a222ef80d9781cdd49cf4a3f649a4e266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67cb728fabd3a3bca7bf0efc6e9f2d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a67cb728fabd3a3bca7bf0efc6e9f2d6b">SetMenuItemText</a> (const char *value)</td></tr>
 <tr class="memdesc:a67cb728fabd3a3bca7bf0efc6e9f2d6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the menu item text for the script.  <a href="class_f_c_lua_script_item.html#a67cb728fabd3a3bca7bf0efc6e9f2d6b">More...</a><br /></td></tr>
 <tr class="separator:a67cb728fabd3a3bca7bf0efc6e9f2d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,6 +349,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2e10a166f633004daf9702355ceca3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#af2e10a166f633004daf9702355ceca3b">SetLoadAsString</a> (bool state)</td></tr>
 <tr class="memdesc:af2e10a166f633004daf9702355ceca3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the script should be loaded as a string.  <a href="class_f_c_lua_script_item.html#af2e10a166f633004daf9702355ceca3b">More...</a><br /></td></tr>
 <tr class="separator:af2e10a166f633004daf9702355ceca3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb90eab77830abf76814fa0657c410aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#aeb90eab77830abf76814fa0657c410aa">SetAutomaticallyReportErrors</a> (bool state)</td></tr>
+<tr class="memdesc:aeb90eab77830abf76814fa0657c410aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if errors should automatically be reported by the Lua connector. The default value is true.  <a href="class_f_c_lua_script_item.html#aeb90eab77830abf76814fa0657c410aa">More...</a><br /></td></tr>
+<tr class="separator:aeb90eab77830abf76814fa0657c410aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b43bd184762d6064c474af2854d436c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a9b43bd184762d6064c474af2854d436c">SetTrusted</a> (bool state)</td></tr>
+<tr class="memdesc:a9b43bd184762d6064c474af2854d436c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the script should run in trusted mode. If you set this to true, the script that calls <b>finenv.ExecuteLuaScriptItem</b> must also be running in trusted mode. Otherwise an error occurs.`.  <a href="class_f_c_lua_script_item.html#a9b43bd184762d6064c474af2854d436c">More...</a><br /></td></tr>
+<tr class="separator:a9b43bd184762d6064c474af2854d436c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d50229c8f46db470e9f24e54aa2390"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a30d50229c8f46db470e9f24e54aa2390">RegisterPrintFunction</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a30d50229c8f46db470e9f24e54aa2390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that replaces called script's print function.  <a href="class_f_c_lua_script_item.html#a30d50229c8f46db470e9f24e54aa2390">More...</a><br /></td></tr>
+<tr class="separator:a30d50229c8f46db470e9f24e54aa2390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4772ff5e30982e9359e7d4cce7aad848"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a4772ff5e30982e9359e7d4cce7aad848">RegisterOnExecutionWillStart</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a4772ff5e30982e9359e7d4cce7aad848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that gets called when the script item starts executing.  <a href="class_f_c_lua_script_item.html#a4772ff5e30982e9359e7d4cce7aad848">More...</a><br /></td></tr>
+<tr class="separator:a4772ff5e30982e9359e7d4cce7aad848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce6e2e64e2796603d1d1b02971a277f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a7ce6e2e64e2796603d1d1b02971a277f">RegisterOnExecutionDidStop</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a7ce6e2e64e2796603d1d1b02971a277f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that gets called when the script item stops executing.  <a href="class_f_c_lua_script_item.html#a7ce6e2e64e2796603d1d1b02971a277f">More...</a><br /></td></tr>
+<tr class="separator:a7ce6e2e64e2796603d1d1b02971a277f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4812982be90e0b122fb5f5cd9fb4ed6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a4812982be90e0b122fb5f5cd9fb4ed6c">OnExecutionWillStart</a> () const</td></tr>
+<tr class="memdesc:a4812982be90e0b122fb5f5cd9fb4ed6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is called when script execution starts.  <a href="class_f_c_lua_script_item.html#a4812982be90e0b122fb5f5cd9fb4ed6c">More...</a><br /></td></tr>
+<tr class="separator:a4812982be90e0b122fb5f5cd9fb4ed6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e05e23c391c7fdb833753f3f39141b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#ac5e05e23c391c7fdb833753f3f39141b">OnExecutionDidStop</a> (bool success, const char *msg, int msgtype, int linenumber, const char *source) const</td></tr>
+<tr class="memdesc:ac5e05e23c391c7fdb833753f3f39141b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is called when script execution stops and its Lua state is closed.  <a href="class_f_c_lua_script_item.html#ac5e05e23c391c7fdb833753f3f39141b">More...</a><br /></td></tr>
+<tr class="separator:ac5e05e23c391c7fdb833753f3f39141b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">GetClassID</a> () const</td></tr>
 <tr class="memdesc:af6614232541d894894a764bb6b59ff32 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">More...</a><br /></td></tr>
@@ -499,13 +539,13 @@ Additional Inherited Members</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><b>CreateLuaScriptItems</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection containing all configured script items from the Finale Plug-In menu for the running instance of RGP Lua.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CreateLuaScriptItemsFromFilePath(pathstr)</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection populated from the input file path and that file's <b>plugindef</b> function, if any.    </td></tr>
+<td class="markdownTableBodyNone"><b>CreateLuaScriptItemsFromFilePath(pathstr[,scrtext])</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection populated from the input file path or text and that item's <b>plugindef</b> function, if any.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>ExecuteLuaScriptItem(item)</b>   </td><td class="markdownTableBodyNone">Executes the input script <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> with its own Lua state.   </td></tr>
+<td class="markdownTableBodyNone"><b>ExecuteLuaScriptItem(item)</b>   </td><td class="markdownTableBodyNone">Executes the input script <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> with its own separate Lua state.   </td></tr>
 </table>
-<p >The collection returned by <b>CreateLuaScriptItemsFromFilePath(pathstr)</b> contains one item for the script file plus one for each additional menu item defined in the file's <b>plugindef</b> function, if it has one.</p>
+<p >The collection returned by <b>CreateLuaScriptItemsFromFilePath(pathstr)</b> contains one item for the script plus one for each additional menu item defined in the file's <b>plugindef</b> function, if it has one.</p>
 <p >When your script executes a script item returned by <b>CreateLuaScriptItems</b>, it is indentical to invoking it from Finale's Plug-Ins menu. There are no further dependencies, and all behavior is identical. The invoked script can continue to run (for example, in a modeless window) even if your script terminates.</p>
-<p >When your script executes a script item from the collection returned by <b>CreateLuaScriptItemFromFilePath</b>, your script must maintain that instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> until it terminates. This includes any modeless dialog or RetainLuaState executed by the invoked script. If your instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> goes out of scope and is destroyed by Lua garbage collection, the corresponding invoked script terminates immediately.</p>
+<p >When your script executes a script item from the collection returned by <b>CreateLuaScriptItemsFromFilePath</b>, your script must maintain that instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> until it terminates. This includes any modeless dialog or RetainLuaState executed by the invoked script. If your instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> goes out of scope and is destroyed by Lua garbage collection, the corresponding invoked script terminates immediately.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Be careful not to create conflcts on Finale's undo stack.</dd></dl>
 <p>The safest approach to avoid undo conflicts is to include the following in your <b>plugindef</b> function.</p>
 <div class="fragment"><div class="line">function plugindef()</div>
@@ -609,6 +649,34 @@ Additional Inherited Members</h2></td></tr>
 <p >Values in the finaleplugin namespace are defined in the script's plugindef() function.</p>
 <p >Lua-supported (0.64).</p>
 <dl class="section return"><dt>Returns</dt><dd>The value of the requested field in a newly created <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> instance, or NULL if it does not exist. C++ clients must delete it when they are finished. </dd></dl>
+
+</div>
+</div>
+<a id="a066a42d8fbb7f0e3f6e03f4fe50b7492" name="a066a42d8fbb7f0e3f6e03f4fe50b7492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a066a42d8fbb7f0e3f6e03f4fe50b7492">&#9670;&nbsp;</a></span>GetAutomaticallyReportErrors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCLuaScriptItem::GetAutomaticallyReportErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets if errors should automatically be reported by the Lua connector. The default value is true. </p>
+<p >Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -721,7 +789,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the fully-qualified file path for the script. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Only items returned by <b>finenv.CreateLuaScriptItemFromFilePath</b> have a file path. Items returned by <b>finenv.CreateLuaScriptItems</b> use <a class="el" href="class_f_c_lua_script_item.html#ac7a58dc7d574b171c892fc31a74afd0b" title="Returns the executable index for this script.">GetExecutableIndex</a>.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Only items returned by <b>finenv.CreateLuaScriptItemsFromFilePath</b> have a file path. Items returned by <b>finenv.CreateLuaScriptItems</b> use <a class="el" href="class_f_c_lua_script_item.html#ac7a58dc7d574b171c892fc31a74afd0b" title="Returns the executable index for this script.">GetExecutableIndex</a>.</dd></dl>
 <p>Lua-supported (also as read-only property) (0.64). </p>
 
 </div>
@@ -750,7 +818,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return true if the script should be loaded as a string. </p>
-<p >Lua-supported (also as property) (0.64). </p>
+<dl class="section note"><dt>Note</dt><dd>If a script has an explicit setting of <code>LoadAsString</code> in its <code>plugindef</code> function, it overrides this value. That said, as long as you do not modify it, the initial value will always be the value that RGP Lua uses to run the script, which takes into account an explicit setting in <code>plugindef</code>.</dd></dl>
+<p>Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -779,6 +848,42 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the menu item text for the script. </p>
 <p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="ac2a47dae8dd92e5b066ffe19249c5c1b" name="ac2a47dae8dd92e5b066ffe19249c5c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a47dae8dd92e5b066ffe19249c5c1b">&#9670;&nbsp;</a></span>GetOptionalScriptText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * FCLuaScriptItem::GetOptionalScriptText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the optional script text. </p>
+<p >If this value is non-NULL, it is executed instead of the contents of <a class="el" href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076" title="Returns the fully-qualified file path for the script.">GetFilePath</a>. The file path may still used for informational display or security purposes by RGP Lua.</p>
+<p >You can set this value with an optional second parameter to <b>finenv.CreateLuaScriptItemsFromFilePath</b> as follows.</p>
+<div class="fragment"><div class="line">local script_text = &quot;print(&#39;hello world&#39;)&quot;</div>
+<div class="line">local script_items = finenv.CreateLuaScriptItemsFromFilePath(&quot;hello_world.lua&quot;, script_text)</div>
+<div class="line">if script_items.Count &gt; 0 then</div>
+<div class="line">    finenv.ExecuteLuaScriptItem(script_items:GetItemAt(0))</div>
+<div class="line">end</div>
+</div><!-- fragment --><p >This code prints "hello world" irrespective of the contents of <code>hello_world.lua</code>. In fact, the file does not have to exist. The intended use case is to allow for on-the-fly edits to a script without the need to save it first.</p>
+<p >Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -837,6 +942,34 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns a required version number from one of the <a class="el" href="class_f_c_lua_script_item.html#a3b3b06fb0b96f55f726231018a12d315" title="Settings used to get required version information for a script.">LUASCRIPT_REQVERSION_TYPES</a> constants. </p>
 <p >If the script does not specify a minimum version, this function returns 0. If the script does not specify a maximum version, this function returns a very large value that is larger than any potential version number.</p>
 <p >Lua-supported (0.64). </p>
+
+</div>
+</div>
+<a id="a0e36ca73e0a6bd77421d078d63581688" name="a0e36ca73e0a6bd77421d078d63581688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e36ca73e0a6bd77421d078d63581688">&#9670;&nbsp;</a></span>GetTrusted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCLuaScriptItem::GetTrusted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets if the script should run in trusted mode. Default is false. </p>
+<p >Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -922,7 +1055,240 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if the script associated with this script item is currently executing. </p>
-<p >Lua-supported (0.64) </p>
+<p >Lua-supported (0.64). </p>
+
+</div>
+</div>
+<a id="ac5e05e23c391c7fdb833753f3f39141b" name="ac5e05e23c391c7fdb833753f3f39141b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e05e23c391c7fdb833753f3f39141b">&#9670;&nbsp;</a></span>OnExecutionDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCLuaScriptItem::OnExecutionDidStop </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>success</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>msgtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linenumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function that is called when script execution stops and its Lua state is closed. </p>
+<p >The current instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> is passed to Lua as the first parameter.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">success</td><td>true if the script ran without error, otherwise false </td></tr>
+    <tr><td class="paramname">msg</td><td>the message returned by the script </td></tr>
+    <tr><td class="paramname">msgtype</td><td>a code inidicating the type of message being returned. This meaning of this value is determined by the Lua connector. With RGP Lua, it is one of the <code>finenv.MessageResultType</code> values. </td></tr>
+    <tr><td class="paramname">linenumber</td><td>if Lua was executed, the top-level line number where execution stopped, otherwise 0. </td></tr>
+    <tr><td class="paramname">source</td><td>if Lua was executed, the name of the code block where executions stopped, otherwise NULL. It will also be NULL if there was a syntax error processing the string. If non NULL, this should match either the file path or the optional script text, if it exist. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4812982be90e0b122fb5f5cd9fb4ed6c" name="a4812982be90e0b122fb5f5cd9fb4ed6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4812982be90e0b122fb5f5cd9fb4ed6c">&#9670;&nbsp;</a></span>OnExecutionWillStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCLuaScriptItem::OnExecutionWillStart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function that is called when script execution starts. </p>
+<p >The current instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> is passed to Lua as the first parameter. </p>
+
+</div>
+</div>
+<a id="a7ce6e2e64e2796603d1d1b02971a277f" name="a7ce6e2e64e2796603d1d1b02971a277f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce6e2e64e2796603d1d1b02971a277f">&#9670;&nbsp;</a></span>RegisterOnExecutionDidStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCLuaScriptItem::RegisterOnExecutionDidStop </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function that gets called when the script item stops executing. </p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. See <a class="el" href="class_f_c_lua_script_item.html#ac5e05e23c391c7fdb833753f3f39141b" title="Function that is called when script execution stops and its Lua state is closed.">OnExecutionDidStop</a> for the call signature.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="a4772ff5e30982e9359e7d4cce7aad848" name="a4772ff5e30982e9359e7d4cce7aad848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4772ff5e30982e9359e7d4cce7aad848">&#9670;&nbsp;</a></span>RegisterOnExecutionWillStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCLuaScriptItem::RegisterOnExecutionWillStart </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function that gets called when the script item starts executing. </p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. See <a class="el" href="class_f_c_lua_script_item.html#a4812982be90e0b122fb5f5cd9fb4ed6c" title="Function that is called when script execution starts.">OnExecutionWillStart</a> for the call signature.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="a30d50229c8f46db470e9f24e54aa2390" name="a30d50229c8f46db470e9f24e54aa2390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d50229c8f46db470e9f24e54aa2390">&#9670;&nbsp;</a></span>RegisterPrintFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCLuaScriptItem::RegisterPrintFunction </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function that replaces called script's print function. </p>
+<p >This function must be registered before the script starts executing.</p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. This function receives an unspecified number of arguments. Nil, booleans, numbers, and strings are passed through as-is. All other types are converted to strings.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="aeb90eab77830abf76814fa0657c410aa" name="aeb90eab77830abf76814fa0657c410aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb90eab77830abf76814fa0657c410aa">&#9670;&nbsp;</a></span>SetAutomaticallyReportErrors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCLuaScriptItem::SetAutomaticallyReportErrors </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if errors should automatically be reported by the Lua connector. The default value is true. </p>
+<p >Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -1009,7 +1375,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets if the script should be loaded as a string. </p>
-<p >Lua-supported (also as property) (0.64). </p>
+<dl class="section note"><dt>Note</dt><dd>This function cannot override an explicit setting of <code>LoadAsString</code> in the <code>plugindef</code> function of a script, either true or false. In this regard it functions similar to the RGP Lua configuration setting.</dd></dl>
+<p>Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -1042,6 +1409,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a222ef80d9781cdd49cf4a3f649a4e266" name="a222ef80d9781cdd49cf4a3f649a4e266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222ef80d9781cdd49cf4a3f649a4e266">&#9670;&nbsp;</a></span>SetOptionalScriptText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCLuaScriptItem::SetOptionalScriptText </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the optional script text. </p>
+<p >See comments at <a class="el" href="class_f_c_lua_script_item.html#ac2a47dae8dd92e5b066ffe19249c5c1b" title="Returns the optional script text.">GetOptionalScriptText</a> for more information about the optional script text. Setting this has no effect for instances of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> created with <b>finenv.CreateLuaScriptItems</b></p>
+<p >Lua-supported (also as property) (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>the optional string or NULL to clear it </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a604725f12034a72836de2d05ce3b715b" name="a604725f12034a72836de2d05ce3b715b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a604725f12034a72836de2d05ce3b715b">&#9670;&nbsp;</a></span>SetPrefix()</h2>
 
@@ -1068,6 +1471,35 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets the prefix for the script. </p>
 <p >Lua-supported (also as property) (0.64). </p>
+
+</div>
+</div>
+<a id="a9b43bd184762d6064c474af2854d436c" name="a9b43bd184762d6064c474af2854d436c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b43bd184762d6064c474af2854d436c">&#9670;&nbsp;</a></span>SetTrusted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCLuaScriptItem::SetTrusted </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the script should run in trusted mode. If you set this to true, the script that calls <b>finenv.ExecuteLuaScriptItem</b> must also be running in trusted mode. Otherwise an error occurs.`. </p>
+<p >Lua-supported (also as property) (0.68). </p>
 
 </div>
 </div>
@@ -1100,10 +1532,39 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a123888498bed662272f5fd8c58d45a33" name="a123888498bed662272f5fd8c58d45a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a123888498bed662272f5fd8c58d45a33">&#9670;&nbsp;</a></span>StopExecuting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCLuaScriptItem::StopExecuting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops execution and terminates the Lua state. </p>
+<p >This function only works for instances of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> created with <b>finenv.CreateLuaScriptItemsFromFilePath</b>.</p>
+<p >Lua-supported (0.68). </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:46 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Nov 30 2023 08:10:27 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

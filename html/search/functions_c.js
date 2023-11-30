@@ -33,7 +33,7 @@ var searchData=
   ['movehorizontalposition_30',['MoveHorizontalPosition',['../class_f_c_beat_chart_element.html#ac9292d936679617068b1e85cd3a4e2e2',1,'FCBeatChartElement']]],
   ['moverelative_31',['MoveRelative',['../class_f_c_control.html#af277b4a58978a8e7ccc67585c262f0cb',1,'FCControl']]],
   ['movetomeasure_32',['MoveToMeasure',['../class_f_c_u_i.html#a4fd5ee9154ebe4df73326d5dfbe9c650',1,'FCUI']]],
-  ['movex_33',['MoveX',['../class_f_c_point.html#a81239d69294242ac1d505ee9b8e76b2b',1,'FCPoint']]],
-  ['movey_34',['MoveY',['../class_f_c_point.html#a603dd2737c154adc2cf5b8a0f746bc65',1,'FCPoint']]],
+  ['movex_33',['MoveX',['../class_f_c_point.html#a76f71d164ac4e88a75e3d564810c6dc4',1,'FCPoint']]],
+  ['movey_34',['MoveY',['../class_f_c_point.html#a04d75be73c9a80ea8548d4d2a049370c',1,'FCPoint']]],
   ['musicmassmoverfrom_35',['MusicMassMoverFrom',['../class_f_c_music_region.html#aba3db4c327b1ec01261a759453d57c3d',1,'FCMusicRegion']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -95,9 +95,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0a63dd78be20993380366d8272b47f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#aa0a63dd78be20993380366d8272b47f9">FCFontInfo</a> ()</td></tr>
 <tr class="memdesc:aa0a63dd78be20993380366d8272b47f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_font_info.html#aa0a63dd78be20993380366d8272b47f9">More...</a><br /></td></tr>
 <tr class="separator:aa0a63dd78be20993380366d8272b47f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fb1a18bc8e81fe57aa1ec56b3d2c49b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a2fb1a18bc8e81fe57aa1ec56b3d2c49b">CopyFrom</a> (<a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pInfo)</td></tr>
-<tr class="memdesc:a2fb1a18bc8e81fe57aa1ec56b3d2c49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from another font info object.  <a href="class_f_c_font_info.html#a2fb1a18bc8e81fe57aa1ec56b3d2c49b">More...</a><br /></td></tr>
-<tr class="separator:a2fb1a18bc8e81fe57aa1ec56b3d2c49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c6398596ae3c6bd5f01ff6e9857195"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a02c6398596ae3c6bd5f01ff6e9857195">FCFontInfo</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;name, double size, FLAG_16 enigmastyles=0)</td></tr>
+<tr class="memdesc:a02c6398596ae3c6bd5f01ff6e9857195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with name and size and optional styles.  <a href="class_f_c_font_info.html#a02c6398596ae3c6bd5f01ff6e9857195">More...</a><br /></td></tr>
+<tr class="separator:a02c6398596ae3c6bd5f01ff6e9857195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb1548783e617f2daec3b62b2d5888b"><td class="memItemLeft" align="right" valign="top"><a id="a8fb1548783e617f2daec3b62b2d5888b" name="a8fb1548783e617f2daec3b62b2d5888b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FCFontInfo</b> (const ETextStyle &amp;style)</td></tr>
+<tr class="memdesc:a8fb1548783e617f2daec3b62b2d5888b"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal constructor. <br  />
+ <br /></td></tr>
+<tr class="separator:a8fb1548783e617f2daec3b62b2d5888b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc369bb2de6e7fcc6e42ef52f48d0ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a0bc369bb2de6e7fcc6e42ef52f48d0ad">CopyFrom</a> (const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pInfo)</td></tr>
+<tr class="memdesc:a0bc369bb2de6e7fcc6e42ef52f48d0ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from another font info object.  <a href="class_f_c_font_info.html#a0bc369bb2de6e7fcc6e42ef52f48d0ad">More...</a><br /></td></tr>
+<tr class="separator:a0bc369bb2de6e7fcc6e42ef52f48d0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a488edaabf58af3b4d29ceef3f2859344"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a488edaabf58af3b4d29ceef3f2859344">CreateCopy</a> ()</td></tr>
 <tr class="memdesc:a488edaabf58af3b4d29ceef3f2859344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a copy of the font info object on the heap.  <a href="class_f_c_font_info.html#a488edaabf58af3b4d29ceef3f2859344">More...</a><br /></td></tr>
 <tr class="separator:a488edaabf58af3b4d29ceef3f2859344"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,12 +115,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21648e157b4caced1e14701df23de457"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a21648e157b4caced1e14701df23de457">SaveFontPrefs</a> (int prefsID)</td></tr>
 <tr class="memdesc:a21648e157b4caced1e14701df23de457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the font information to any of the preference fonts.  <a href="class_f_c_font_info.html#a21648e157b4caced1e14701df23de457">More...</a><br /></td></tr>
 <tr class="separator:a21648e157b4caced1e14701df23de457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c9ebbbbbbe91a8b4858b73eada2673"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a27c9ebbbbbbe91a8b4858b73eada2673">GetSize</a> () const</td></tr>
-<tr class="memdesc:a27c9ebbbbbbe91a8b4858b73eada2673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font size as an integer number.  <a href="class_f_c_font_info.html#a27c9ebbbbbbe91a8b4858b73eada2673">More...</a><br /></td></tr>
-<tr class="separator:a27c9ebbbbbbe91a8b4858b73eada2673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad192adedc1443d4ff524fd98255f6aad"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ad192adedc1443d4ff524fd98255f6aad">GetSizeFloat</a> () const</td></tr>
-<tr class="memdesc:ad192adedc1443d4ff524fd98255f6aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font size as a floating point (with decimal digits).  <a href="class_f_c_font_info.html#ad192adedc1443d4ff524fd98255f6aad">More...</a><br /></td></tr>
-<tr class="separator:ad192adedc1443d4ff524fd98255f6aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b71859a704be1e87ea7f2e1eb99de57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a7b71859a704be1e87ea7f2e1eb99de57">GetSize</a> () const</td></tr>
+<tr class="memdesc:a7b71859a704be1e87ea7f2e1eb99de57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font size as an integer number.  <a href="class_f_c_font_info.html#a7b71859a704be1e87ea7f2e1eb99de57">More...</a><br /></td></tr>
+<tr class="separator:a7b71859a704be1e87ea7f2e1eb99de57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e711a98721c1103c7a8eda187334761"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a2e711a98721c1103c7a8eda187334761">GetSizeFloat</a> () const</td></tr>
+<tr class="memdesc:a2e711a98721c1103c7a8eda187334761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font size as a floating point (with decimal digits).  <a href="class_f_c_font_info.html#a2e711a98721c1103c7a8eda187334761">More...</a><br /></td></tr>
+<tr class="separator:a2e711a98721c1103c7a8eda187334761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9bbd4e77379b3657e86d9d8ef2b576b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ae9bbd4e77379b3657e86d9d8ef2b576b">GetNameString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
 <tr class="memdesc:ae9bbd4e77379b3657e86d9d8ef2b576b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font name and puts it in a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object.  <a href="class_f_c_font_info.html#ae9bbd4e77379b3657e86d9d8ef2b576b">More...</a><br /></td></tr>
 <tr class="separator:ae9bbd4e77379b3657e86d9d8ef2b576b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,24 +158,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnigmaFont</b> (
 <tr class="memitem:af733c2b56f86ba97702cd3393e0e5a98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#af733c2b56f86ba97702cd3393e0e5a98">SetEnigmaStyles</a> (FLAG_16 fontstyles)</td></tr>
 <tr class="memdesc:af733c2b56f86ba97702cd3393e0e5a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font style as standard Enigma bit storage.  <a href="class_f_c_font_info.html#af733c2b56f86ba97702cd3393e0e5a98">More...</a><br /></td></tr>
 <tr class="separator:af733c2b56f86ba97702cd3393e0e5a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222dace75097a81ca52939454a40764f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a222dace75097a81ca52939454a40764f">CreateDescription</a> () const</td></tr>
+<tr class="separator:a222dace75097a81ca52939454a40764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7634e5d73b77cfcc393c6b30c10d96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a4a7634e5d73b77cfcc393c6b30c10d96">SetName</a> (const char *pszName)</td></tr>
 <tr class="memdesc:a4a7634e5d73b77cfcc393c6b30c10d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name.  <a href="class_f_c_font_info.html#a4a7634e5d73b77cfcc393c6b30c10d96">More...</a><br /></td></tr>
 <tr class="separator:a4a7634e5d73b77cfcc393c6b30c10d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">SetFontID</a> (EFONTID fontID)</td></tr>
 <tr class="memdesc:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal font ID.  <a href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">More...</a><br /></td></tr>
 <tr class="separator:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a655d49e3b5382cbd0f0a5aa7e25903eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a655d49e3b5382cbd0f0a5aa7e25903eb">SetNameString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:a655d49e3b5382cbd0f0a5aa7e25903eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version).  <a href="class_f_c_font_info.html#a655d49e3b5382cbd0f0a5aa7e25903eb">More...</a><br /></td></tr>
-<tr class="separator:a655d49e3b5382cbd0f0a5aa7e25903eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3beee4aa5fabcd88958e504287850dca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a3beee4aa5fabcd88958e504287850dca">SetNameString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
+<tr class="memdesc:a3beee4aa5fabcd88958e504287850dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version).  <a href="class_f_c_font_info.html#a3beee4aa5fabcd88958e504287850dca">More...</a><br /></td></tr>
+<tr class="separator:a3beee4aa5fabcd88958e504287850dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcc4d8edf6695bf63d1a9b652025f8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#acbcc4d8edf6695bf63d1a9b652025f8d">SetNameByID</a> (twobyte id)</td></tr>
 <tr class="memdesc:acbcc4d8edf6695bf63d1a9b652025f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name by using the document's internal Enigma font ID.  <a href="class_f_c_font_info.html#acbcc4d8edf6695bf63d1a9b652025f8d">More...</a><br /></td></tr>
 <tr class="separator:acbcc4d8edf6695bf63d1a9b652025f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ee76d025336da644a3af98683f54bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a73ee76d025336da644a3af98683f54bf">SetSize</a> (twobyte fontsize)</td></tr>
-<tr class="memdesc:a73ee76d025336da644a3af98683f54bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font size as an integer value.  <a href="class_f_c_font_info.html#a73ee76d025336da644a3af98683f54bf">More...</a><br /></td></tr>
-<tr class="separator:a73ee76d025336da644a3af98683f54bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143a593d3108c58b1e4510c2699a0ef1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a143a593d3108c58b1e4510c2699a0ef1">SetSizeFloat</a> (float fontsize)</td></tr>
-<tr class="memdesc:a143a593d3108c58b1e4510c2699a0ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font size as a floating point (with decimal digits) value.  <a href="class_f_c_font_info.html#a143a593d3108c58b1e4510c2699a0ef1">More...</a><br /></td></tr>
-<tr class="separator:a143a593d3108c58b1e4510c2699a0ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6039083d35633a25285d6a407dabfe14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a6039083d35633a25285d6a407dabfe14">SetSize</a> (int fontsize)</td></tr>
+<tr class="memdesc:a6039083d35633a25285d6a407dabfe14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font size as an integer value.  <a href="class_f_c_font_info.html#a6039083d35633a25285d6a407dabfe14">More...</a><br /></td></tr>
+<tr class="separator:a6039083d35633a25285d6a407dabfe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ff24c0a6f189def5487a0e8d981aa9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a94ff24c0a6f189def5487a0e8d981aa9">SetSizeFloat</a> (double fontsize)</td></tr>
+<tr class="memdesc:a94ff24c0a6f189def5487a0e8d981aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font size as a floating point (with decimal digits) value.  <a href="class_f_c_font_info.html#a94ff24c0a6f189def5487a0e8d981aa9">More...</a><br /></td></tr>
+<tr class="separator:a94ff24c0a6f189def5487a0e8d981aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13c5ef10be0d38fda58a9cc3157150a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a13c5ef10be0d38fda58a9cc3157150a2">SetAbsolute</a> (bool state)</td></tr>
 <tr class="memdesc:a13c5ef10be0d38fda58a9cc3157150a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the absolute (fixed font) size state of the font info.  <a href="class_f_c_font_info.html#a13c5ef10be0d38fda58a9cc3157150a2">More...</a><br /></td></tr>
 <tr class="separator:a13c5ef10be0d38fda58a9cc3157150a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +235,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnigmaFont</b> (
 <tr class="memitem:af475313f4762e9a2a377d945f12d0a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#af475313f4762e9a2a377d945f12d0a10">MakeDefaultMusicFont</a> ()</td></tr>
 <tr class="memdesc:af475313f4762e9a2a377d945f12d0a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the document's default music font.  <a href="class_f_c_font_info.html#af475313f4762e9a2a377d945f12d0a10">More...</a><br /></td></tr>
 <tr class="separator:af475313f4762e9a2a377d945f12d0a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079b50432f1c56e987b3eb8556f43f35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a079b50432f1c56e987b3eb8556f43f35">CalcAverageRomanCharacterWidthEVPUs</a> () const</td></tr>
+<tr class="memdesc:a079b50432f1c56e987b3eb8556f43f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the average width of the roman characters in the font in EVPUs.  <a href="class_f_c_font_info.html#a079b50432f1c56e987b3eb8556f43f35">More...</a><br /></td></tr>
+<tr class="separator:a079b50432f1c56e987b3eb8556f43f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018fb22beb88470afaee6f2a9ad49227"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a018fb22beb88470afaee6f2a9ad49227">CalcAverageRomanCharacterWidthPoints</a> () const</td></tr>
+<tr class="memdesc:a018fb22beb88470afaee6f2a9ad49227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the average width of the roman characters in the font in points.  <a href="class_f_c_font_info.html#a018fb22beb88470afaee6f2a9ad49227">More...</a><br /></td></tr>
+<tr class="separator:a018fb22beb88470afaee6f2a9ad49227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf46e5a08a515012cc3bd6aa939af31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a9cf46e5a08a515012cc3bd6aa939af31">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a9cf46e5a08a515012cc3bd6aa939af31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_f_c_font_info.html#a9cf46e5a08a515012cc3bd6aa939af31">More...</a><br /></td></tr>
 <tr class="separator:a9cf46e5a08a515012cc3bd6aa939af31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,156 +402,160 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
-, <b>FCID_DOTMOD</b>
 , <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
+, <b>FCID_DOTMOD</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
+, <br />
+&#160;&#160;<b>FCID_ENIGMATEXTSTYLE</b>
 , <b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
+, <b>FCID_EXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
 , <b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
-, <b>FCID_FRETBOARDSTYLEDEFS</b>
+&#160;&#160;<b>FCID_FRETBOARDSTYLEDEFS</b>
 , <b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
-, <b>FCID_GENERALPREFS</b>
+&#160;&#160;<b>FCID_GENERALPREFS</b>
 , <b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
-, <b>FCID_HUMANPLAYBACKPREFS</b>
+&#160;&#160;<b>FCID_HUMANPLAYBACKPREFS</b>
 , <b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
-, <b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
+, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
-, <b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
-, <b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
-, <b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
-, <b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
-, <b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
-, <b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
-, <b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
-, <b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
+, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
+, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
+, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
+, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
+, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -565,7 +585,7 @@ Additional Inherited Members</h2></td></tr>
 <p >This class also has some support for absolute font IDs, which is required for font operations within the same document. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa0a63dd78be20993380366d8272b47f9" name="aa0a63dd78be20993380366d8272b47f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a63dd78be20993380366d8272b47f9">&#9670;&nbsp;</a></span>FCFontInfo()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a63dd78be20993380366d8272b47f9">&#9670;&nbsp;</a></span>FCFontInfo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,7 +605,104 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a02c6398596ae3c6bd5f01ff6e9857195" name="a02c6398596ae3c6bd5f01ff6e9857195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c6398596ae3c6bd5f01ff6e9857195">&#9670;&nbsp;</a></span>FCFontInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FCFontInfo::FCFontInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FLAG_16&#160;</td>
+          <td class="paramname"><em>enigmastyles</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor with name and size and optional styles. </p>
+<p >Lua-supported (0.68).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the font. For Lua callers, this may be a Lua string. </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the font. </td></tr>
+    <tr><td class="paramname">enigmastyles</td><td>(optional) the styles value for the font. Defaults to zero. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a079b50432f1c56e987b3eb8556f43f35" name="a079b50432f1c56e987b3eb8556f43f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079b50432f1c56e987b3eb8556f43f35">&#9670;&nbsp;</a></span>CalcAverageRomanCharacterWidthEVPUs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FCFontInfo::CalcAverageRomanCharacterWidthEVPUs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the average width of the roman characters in the font in EVPUs. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function uses <a class="el" href="class_f_c_text_metrics.html" title="A class that fetches the metrics for text (for how Finale will render it), such as the boundary boxes...">FCTextMetrics</a> to get the width of characters. Loading <a class="el" href="class_f_c_text_metrics.html" title="A class that fetches the metrics for text (for how Finale will render it), such as the boundary boxes...">FCTextMetrics</a> only works if a document is loaded. If you attempt to call this function from Lua when a document is not loaded, it throws a runtime error. C++ clients get 0 returned.</dd></dl>
+<p>Lua-supported (0.68).</p>
+<dl class="section return"><dt>Returns</dt><dd>average width in EVPU or zero if not document is loaded. </dd></dl>
+
+</div>
+</div>
+<a id="a018fb22beb88470afaee6f2a9ad49227" name="a018fb22beb88470afaee6f2a9ad49227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018fb22beb88470afaee6f2a9ad49227">&#9670;&nbsp;</a></span>CalcAverageRomanCharacterWidthPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FCFontInfo::CalcAverageRomanCharacterWidthPoints </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the average width of the roman characters in the font in points. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This function uses <a class="el" href="class_f_c_text_metrics.html" title="A class that fetches the metrics for text (for how Finale will render it), such as the boundary boxes...">FCTextMetrics</a> to get the width of characters. Loading <a class="el" href="class_f_c_text_metrics.html" title="A class that fetches the metrics for text (for how Finale will render it), such as the boundary boxes...">FCTextMetrics</a> only works if a document is loaded. If you attempt to call this function from Lua when a document is not loaded, it throws a runtime error. C++ clients get 0 returned.</dd></dl>
+<p>Lua-supported (0.68).</p>
+<dl class="section return"><dt>Returns</dt><dd>average width in points or zero if not document is loaded. These are true 72 dpi points on either Windows or macOS. </dd></dl>
+
+</div>
+</div>
 <a id="aec0e69dae7f230ec20523941e3a5e79a" name="aec0e69dae7f230ec20523941e3a5e79a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec0e69dae7f230ec20523941e3a5e79a">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -616,8 +733,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2fb1a18bc8e81fe57aa1ec56b3d2c49b" name="a2fb1a18bc8e81fe57aa1ec56b3d2c49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fb1a18bc8e81fe57aa1ec56b3d2c49b">&#9670;&nbsp;</a></span>CopyFrom()</h2>
+<a id="a0bc369bb2de6e7fcc6e42ef52f48d0ad" name="a0bc369bb2de6e7fcc6e42ef52f48d0ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc369bb2de6e7fcc6e42ef52f48d0ad">&#9670;&nbsp;</a></span>CopyFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -625,7 +742,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCFontInfo::CopyFrom </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
           <td class="paramname"><em>pInfo</em></td><td>)</td>
           <td></td>
         </tr>
@@ -667,6 +784,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a222dace75097a81ca52939454a40764f" name="a222dace75097a81ca52939454a40764f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222dace75097a81ca52939454a40764f">&#9670;&nbsp;</a></span>CreateDescription()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_string.html">FCString</a> * FCFontInfo::CreateDescription </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns an <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> containing the description of the font.</p>
+<p >C++ callers must dispose of the string using either delete or a smart pointer.</p>
+<p >Lua-supported (0.68) </p>
+
+</div>
+</div>
 <a id="a904573e3711e03d0d7b12e1c045b72c6" name="a904573e3711e03d0d7b12e1c045b72c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a904573e3711e03d0d7b12e1c045b72c6">&#9670;&nbsp;</a></span>CreateEnigmaString()</h2>
 
@@ -686,7 +823,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns a created <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object that contains the font information as an Enigma string. </p>
 <p >The resulting Enigma string contains tags for font name, size and style.</p>
 <p >It's the caller's responsibility to clean up the object after use.</p>
-<p >Lua-supported. </p>
+<p >Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFontTagString</td><td>(optional) the tag to use for the font tag. If omitted or NULL, then "^font" is used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the created string containg the font name, size, and style tags. </dd></dl>
 
 </div>
 </div>
@@ -1013,8 +1157,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a27c9ebbbbbbe91a8b4858b73eada2673" name="a27c9ebbbbbbe91a8b4858b73eada2673"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c9ebbbbbbe91a8b4858b73eada2673">&#9670;&nbsp;</a></span>GetSize()</h2>
+<a id="a7b71859a704be1e87ea7f2e1eb99de57" name="a7b71859a704be1e87ea7f2e1eb99de57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b71859a704be1e87ea7f2e1eb99de57">&#9670;&nbsp;</a></span>GetSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1023,7 +1167,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">twobyte FCFontInfo::GetSize </td>
+          <td class="memname">int FCFontInfo::GetSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1042,8 +1186,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad192adedc1443d4ff524fd98255f6aad" name="ad192adedc1443d4ff524fd98255f6aad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad192adedc1443d4ff524fd98255f6aad">&#9670;&nbsp;</a></span>GetSizeFloat()</h2>
+<a id="a2e711a98721c1103c7a8eda187334761" name="a2e711a98721c1103c7a8eda187334761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e711a98721c1103c7a8eda187334761">&#9670;&nbsp;</a></span>GetSizeFloat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1052,7 +1196,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float FCFontInfo::GetSizeFloat </td>
+          <td class="memname">double FCFontInfo::GetSizeFloat </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1708,8 +1852,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a655d49e3b5382cbd0f0a5aa7e25903eb" name="a655d49e3b5382cbd0f0a5aa7e25903eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a655d49e3b5382cbd0f0a5aa7e25903eb">&#9670;&nbsp;</a></span>SetNameString()</h2>
+<a id="a3beee4aa5fabcd88958e504287850dca" name="a3beee4aa5fabcd88958e504287850dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3beee4aa5fabcd88958e504287850dca">&#9670;&nbsp;</a></span>SetNameString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1717,7 +1861,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCFontInfo::SetNameString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pString</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1758,8 +1902,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a73ee76d025336da644a3af98683f54bf" name="a73ee76d025336da644a3af98683f54bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73ee76d025336da644a3af98683f54bf">&#9670;&nbsp;</a></span>SetSize()</h2>
+<a id="a6039083d35633a25285d6a407dabfe14" name="a6039083d35633a25285d6a407dabfe14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6039083d35633a25285d6a407dabfe14">&#9670;&nbsp;</a></span>SetSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1770,7 +1914,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCFontInfo::SetSize </td>
           <td>(</td>
-          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>fontsize</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1793,8 +1937,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a143a593d3108c58b1e4510c2699a0ef1" name="a143a593d3108c58b1e4510c2699a0ef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a143a593d3108c58b1e4510c2699a0ef1">&#9670;&nbsp;</a></span>SetSizeFloat()</h2>
+<a id="a94ff24c0a6f189def5487a0e8d981aa9" name="a94ff24c0a6f189def5487a0e8d981aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ff24c0a6f189def5487a0e8d981aa9">&#9670;&nbsp;</a></span>SetSizeFloat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1805,7 +1949,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCFontInfo::SetSizeFloat </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>fontsize</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1901,7 +2045,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:45 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Nov 30 2023 08:10:27 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

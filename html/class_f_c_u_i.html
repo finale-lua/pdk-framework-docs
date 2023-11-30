@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.67</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -186,156 +186,160 @@ Public Types</h2></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
 &#160;&#160;<b>FCID_UNKNOWN</b> = 0
 , <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
 , <b>FCID_ALLOTMENT</b>
-, <b>FCID_ARTICULATION</b>
 , <br />
-&#160;&#160;<b>FCID_ARTICULATIONDEF</b>
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
 , <b>FCID_BACKWARDREPEAT</b>
 , <b>FCID_BASELINE</b>
-, <b>FCID_BEAMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEATCHARTELEMENT</b>
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
 , <b>FCID_BROKENBEAMMOD</b>
-, <b>FCID_CATEGORYDEF</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
 , <b>FCID_CELLCLEFCHANGE</b>
-, <br />
-&#160;&#160;<b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLFRAMEHOLD</b>
 , <b>FCID_CELLGRAPHIC</b>
-, <b>FCID_CELLTEXT</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
 , <b>FCID_CENTERSMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_CHORD</b>
+, <b>FCID_CHORD</b>
 , <b>FCID_CHORDPREFS</b>
-, <b>FCID_CHORDSUFFIXELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
 , <b>FCID_CHORUSSYLLABLE</b>
-, <br />
-&#160;&#160;<b>FCID_CLEFDEF</b>
+, <b>FCID_CLEFDEF</b>
 , <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
 , <b>FCID_CROSSSTAFFMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
 , <b>FCID_CUSTOMSTEMMOD</b>
-, <b>FCID_DISTANCEPREFS</b>
-, <b>FCID_DOTMOD</b>
 , <br />
-&#160;&#160;<b>FCID_ENCLOSURE</b>
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
+, <b>FCID_DOTMOD</b>
+, <b>FCID_ENCLOSURE</b>
 , <b>FCID_ENDINGREPEAT</b>
+, <br />
+&#160;&#160;<b>FCID_ENIGMATEXTSTYLE</b>
 , <b>FCID_ENTRYALTERMOD</b>
 , <b>FCID_EXECUTABLESHAPEDEF</b>
+, <b>FCID_EXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_EXPRESSION</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
 , <b>FCID_FONTPREFS</b>
 , <b>FCID_FREEZESYSTEM</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEF</b>
-, <b>FCID_FRETBOARDSTYLEDEFS</b>
+&#160;&#160;<b>FCID_FRETBOARDSTYLEDEFS</b>
 , <b>FCID_FRETBOARDGROUPDEF</b>
 , <b>FCID_FRETBOARDGROUPDEFS</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
 , <br />
-&#160;&#160;<b>FCID_FRETINSTRUMENTDEF</b>
-, <b>FCID_GENERALPREFS</b>
+&#160;&#160;<b>FCID_GENERALPREFS</b>
 , <b>FCID_GRIDSGUIDESPREFS</b>
 , <b>FCID_GROUP</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_GROUPNAMEPOSITIONPREFS</b>
-, <b>FCID_HUMANPLAYBACKPREFS</b>
+&#160;&#160;<b>FCID_HUMANPLAYBACKPREFS</b>
 , <b>FCID_INDEPENDENTCELLDETAIL</b>
 , <b>FCID_INSTRUMENTDEF</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_INSTRUMENTPLAYBACKDATA</b>
-, <b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
+, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_LYRICSPREFS</b>
-, <b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
+, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
-, <b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
+, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
-, <b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
-, <b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
+, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
-, <b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
+, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
-, <b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
+, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
-, <b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
+, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
-, <b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
-, <b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
+, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
-, <b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
+, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
-, <b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
+, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFF</b>
-, <b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
-, <b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
+, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
-, <b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
+, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
-, <b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
-, <b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
-, <b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -518,6 +522,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ActivateWindow</b> (E
 <tr class="memitem:a37302a54705ad30e2cf8ea5fe4cfe813"><td class="memItemLeft" align="right" valign="top">eUniChar32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#a37302a54705ad30e2cf8ea5fe4cfe813">DisplaySymbolDialog</a> (<a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFontInfo, eUniChar32 symbolinit=0)</td></tr>
 <tr class="memdesc:a37302a54705ad30e2cf8ea5fe4cfe813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the symbol selection dialog.  <a href="class_f_c_u_i.html#a37302a54705ad30e2cf8ea5fe4cfe813">More...</a><br /></td></tr>
 <tr class="separator:a37302a54705ad30e2cf8ea5fe4cfe813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf997b466be7d1d8592b8bbd9f2db9c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#acf997b466be7d1d8592b8bbd9f2db9c7">DisplayListenToMidiDialog</a> (<a class="el" href="class_f_c_listen_to_midi_result.html">FCListenToMidiResult</a> *result)</td></tr>
+<tr class="memdesc:acf997b466be7d1d8592b8bbd9f2db9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the ListenToMidi dialog.  <a href="class_f_c_u_i.html#acf997b466be7d1d8592b8bbd9f2db9c7">More...</a><br /></td></tr>
+<tr class="separator:acf997b466be7d1d8592b8bbd9f2db9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab27513f9bbba2692a7381d88a377e371"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_u_i.html#ab27513f9bbba2692a7381d88a377e371">IsFontAvailable</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pFontName)</td></tr>
 <tr class="memdesc:ab27513f9bbba2692a7381d88a377e371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the font name exists on the running system.  <a href="class_f_c_u_i.html#ab27513f9bbba2692a7381d88a377e371">More...</a><br /></td></tr>
 <tr class="separator:ab27513f9bbba2692a7381d88a377e371"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -707,6 +714,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Standard class for basic user interface functionality. </p>
+<p >See comments about best practice for instantiating this class at <a class="el" href="class_f_c_u_i.html#a3b8c3950384ee219bdc68687a8a13dbf" title="The constructor.">FCUI::FCUI</a>. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a86a2c8755b357a6cc0ac10df3de2faf4" name="a86a2c8755b357a6cc0ac10df3de2faf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86a2c8755b357a6cc0ac10df3de2faf4">&#9670;&nbsp;</a></span>ALERT_RETURNS</h2>
@@ -910,9 +918,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The constructor. </p>
+<p >If you are using an instance of <a class="el" href="class_f_c_u_i.html" title="Standard class for basic user interface functionality.">FCUI</a> to pop up built-in dialogs from another dialog, you should create an instance using <a class="el" href="class_____f_c_user_window.html#a6cefd9a5e0581d2501ce05a77289317e" title="Creates and returns an instance of FCUI with this window as the parent window. This is mainly for lau...">__FCUserWindow::CreateChildUI</a> and then call the dialog methods from that instance. This is particularly important with Windows Finale when launching build-in dialogs from a modeless dialog window. But it is best practice in any case.</p>
+<p >Similarly, if you are opening standard file dialog from another dialog, pass an <a class="el" href="class_f_c_u_i.html" title="Standard class for basic user interface functionality.">FCUI</a> instance created with <a class="el" href="class_____f_c_user_window.html#a6cefd9a5e0581d2501ce05a77289317e" title="Creates and returns an instance of FCUI with this window as the parent window. This is mainly for lau...">__FCUserWindow::CreateChildUI</a> from the parent dialog to the constructors of standard file dialogs (for example, <a class="el" href="class_f_c_file_save_as_dialog.html" title="Class to display the operating system&#39;s &quot;Save File As&quot; modal dialog box.">FCFileSaveAsDialog</a>).</p>
+<p >Lua scripts cannot construct instances of <a class="el" href="class_f_c_u_i.html" title="Standard class for basic user interface functionality.">FCUI</a> directly. There is a global instance in <code>finenv.UI()</code> which is a child of the main Finale frame window. But (as noted) you should use an instance created with <a class="el" href="class_____f_c_user_window.html#a6cefd9a5e0581d2501ce05a77289317e" title="Creates and returns an instance of FCUI with this window as the parent window. This is mainly for lau...">__FCUserWindow::CreateChildUI</a> to open built-in dialogs off a dialog box you have created. Other methods not related to built-in dialogs can safely use the global instance. Also, you can use the global instance to open built-in dialogs directly, if they are not opening from another dialog box.</p>
+<p >Methods that query Finale's menu items <em>must</em> use the global instance, because that is the instance constructed from Finale's frame window that contains the main menu.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>The parent Finale window, as passed to FinaleExtensionInvoke. </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent Finale window, as passed to FinaleExtensionInvoke, or the window handle of a running <a class="el" href="class_____f_c_user_window.html" title="Base class for all other dialog/window classes.">__FCUserWindow</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1734,6 +1746,29 @@ On C++, the two values are returned as a std::pair. </dd></dl>
 
 </div>
 </div>
+<a id="acf997b466be7d1d8592b8bbd9f2db9c7" name="acf997b466be7d1d8592b8bbd9f2db9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf997b466be7d1d8592b8bbd9f2db9c7">&#9670;&nbsp;</a></span>DisplayListenToMidiDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCUI::DisplayListenToMidiDialog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_listen_to_midi_result.html">FCListenToMidiResult</a> *&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays the ListenToMidi dialog. </p>
+<p >When the dialog box is closed, the previously active window automatically becomes active again.</p>
+<p >Lua-supported (0.68).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if a MIDI event was detected, false if the user canceled the dialog box. </dd></dl>
+
+</div>
+</div>
 <a id="aedd93a5534dfce727e59a4b25d8be121" name="aedd93a5534dfce727e59a4b25d8be121"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aedd93a5534dfce727e59a4b25d8be121">&#9670;&nbsp;</a></span>DisplayShapeDialog()</h2>
 
@@ -1837,7 +1872,7 @@ On C++, the two values are returned as a std::pair. </dd></dl>
 <p>Displays the expression selection dialog. </p>
 <p >When the dialog box is closed, the previously active window automatically becomes active again.</p>
 <p >Despite the name of the function, the dialog box allows selection of both text and shape expressions. However, there is no way to determine if the returned id was for a text or shape expression.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>As of v0.66 this function is deprecated. Use <a class="el" href="class_f_c_u_i.html#af5b0e9579fd581039926f8782965adf4" title="Displays the expression selection dialog.">DisplayExpressionDialog</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>As of v0.66 this function is deprecated. Use <a class="el" href="class_f_c_u_i.html#af5b0e9579fd581039926f8782965adf4" title="Displays the expression selection dialog.">DisplayExpressionDialog</a> instead.</dd></dl>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>0 if the cancel button was pressed. Otherwise, the selected text expression definition ID. </dd></dl>
 
@@ -2457,7 +2492,7 @@ On C++, the two values are returned as a std::pair. </dd></dl>
 <p>Executes a menu command from a specific location in Finale's menu. Use this method with care! </p>
 <p ><b>NOTE!</b> If possible, use <a class="el" href="class_f_c_u_i.html#a336e6328a0c420c5e680a447820df470" title="Executes a supported menu command from Finale&#39;s menu.">MenuCommand</a> or <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> instead of this method. Be aware that menu item locations may differ between Finale versions and even between operating systems.</p>
 <p >On macOS, some menu items will only work if the Finale document window is in focus. Also, only macOS versions Finale 2012 and later are supported.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>This method is <b>deprecated</b> in 0.58 and higher versions. Use <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">GetOSMenuCommandFromItemText</a> and <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>This method is <b>deprecated</b> in 0.58 and higher versions. Use <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">GetOSMenuCommandFromItemText</a> and <a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6" title="Executes an OS menu command returned by GetOSMenuCommandFromItemText.">ExecuteOSMenuCommand</a> instead.</dd></dl>
 <p >Lua-supported (deprecated 0.58).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2626,7 +2661,7 @@ On C++, the two values are returned as a std::pair. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 3 2023 08:55:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Nov 30 2023 08:10:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
