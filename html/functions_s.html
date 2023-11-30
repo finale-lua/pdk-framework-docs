@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b5</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -157,6 +157,7 @@ $(function() {
 <li>SetAfterMultipleDots()&#160;:&#160;<a class="el" href="class_f_c_tie_prefs.html#ad63ce2e55ee8abb162f410cb4dee0f72">FCTiePrefs</a></li>
 <li>SetAfterSingleDot()&#160;:&#160;<a class="el" href="class_f_c_tie_prefs.html#afd4a8075b2460a743a8d54915765d345">FCTiePrefs</a></li>
 <li>SetAfterTimeSpace()&#160;:&#160;<a class="el" href="class_f_c_repeat_prefs.html#a20bdde0bfc5431afd3c815c65cb701ea">FCRepeatPrefs</a></li>
+<li>SetAlignMeasureNumbersWithBarline()&#160;:&#160;<a class="el" href="class_f_c_misc_doc_prefs.html#a060c72796355d8c5c33c764b8369d1a8">FCMiscDocPrefs</a></li>
 <li>SetAlignment()&#160;:&#160;<a class="el" href="class_f_c_group_name_position_prefs.html#aeddbf282148606003fa150187fdb4401">FCGroupNamePositionPrefs</a>, <a class="el" href="class_f_c_staff_name_position.html#a440a5d64e3b018cfb737fdd072355b82">FCStaffNamePosition</a>, <a class="el" href="class_f_c_staff_name_position_prefs.html#a569edcf80f39238ed006bfab07b037b2">FCStaffNamePositionPrefs</a>, <a class="el" href="class_f_c_syllable_entry_mod.html#a78a1cb3a0d5a3ee404df22505153b26a">FCSyllableEntryMod</a></li>
 <li>SetAllowFloatingRests()&#160;:&#160;<a class="el" href="class_f_c_misc_doc_prefs.html#a8a4ecb469785a9c6a9ea6a6eb842beee">FCMiscDocPrefs</a></li>
 <li>SetAllowHiding()&#160;:&#160;<a class="el" href="class_____f_c_staff_base.html#ab4c963a9c9acbe432d915d68aac4a385">__FCStaffBase</a></li>
@@ -784,6 +785,7 @@ $(function() {
 <li>SetLeftAlignment()&#160;:&#160;<a class="el" href="class_f_c_chord_prefs.html#ad6b7c85a289405ee028be1ab74eb43a1">FCChordPrefs</a></li>
 <li>SetLeftBarline()&#160;:&#160;<a class="el" href="class_f_c_measure.html#a29434b807df250bb4ba6761dad578a08">FCMeasure</a></li>
 <li>SetLeftBarlineDisplayMultipe()&#160;:&#160;<a class="el" href="class_f_c_misc_doc_prefs.html#ac9ab70fb28b27d13eefa8f812009078d">FCMiscDocPrefs</a></li>
+<li>SetLeftBarlineDisplayMultiple()&#160;:&#160;<a class="el" href="class_f_c_misc_doc_prefs.html#a13c7e572261d302d7c51076fb29f7267">FCMiscDocPrefs</a></li>
 <li>SetLeftBarlineDisplaySingle()&#160;:&#160;<a class="el" href="class_f_c_misc_doc_prefs.html#ac999ab1b72e08f10eee2d1e5d49c2b19">FCMiscDocPrefs</a></li>
 <li>SetLeftBarlineShapeID()&#160;:&#160;<a class="el" href="class_f_c_measure.html#ab1c0392d80554b5351879fcfb4529042">FCMeasure</a></li>
 <li>SetLeftBracketPosition()&#160;:&#160;<a class="el" href="class_f_c_backward_repeat.html#a6c6509c1f650dfbf08e758ae2d10406a">FCBackwardRepeat</a></li>
@@ -803,6 +805,7 @@ $(function() {
 <li>SetLeftRelativeInset()&#160;:&#160;<a class="el" href="class_f_c_tie_contour_prefs.html#aafefd150412b74a07c91553eab99c1e7">FCTieContourPrefs</a></li>
 <li>SetLeftStringNumber()&#160;:&#160;<a class="el" href="class_f_c_fret_barre_item.html#af7ac9dac116bdf94b626974ad2ca6651">FCFretBarreItem</a></li>
 <li>SetLeftVerticalOffset()&#160;:&#160;<a class="el" href="class_f_c_beam_mod.html#a477344e6a29217d5554cf8ae01c64d95">FCBeamMod</a></li>
+<li>SetLegacyDotPositionOnFlippedStems()&#160;:&#160;<a class="el" href="class_f_c_misc_doc_prefs.html#adf815573ba0f64805a31747a4872cfd6">FCMiscDocPrefs</a></li>
 <li>SetLegality()&#160;:&#160;<a class="el" href="class_f_c_note.html#a718b2f936b2d818365f0b61dcdab6bb6">FCNote</a>, <a class="el" href="class_f_c_note_entry.html#a362359903048b14f6c54a84e265ab7a4">FCNoteEntry</a></li>
 <li>SetLength()&#160;:&#160;<a class="el" href="class_f_c_range.html#ae93511f5367344f3d48d58de98653dbe">FCRange</a></li>
 <li>SetLibFolderPath()&#160;:&#160;<a class="el" href="class_f_c_string.html#a7976a6aeaeeb27f981e94f71e1d4701d">FCString</a></li>
@@ -1849,7 +1852,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 25 2023 11:23:31 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Nov 30 2023 08:10:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68b5</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
    </div>
   </td>
  </tr>
@@ -818,7 +818,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return true if the script should be loaded as a string. </p>
-<p >Lua-supported (also as property) (0.64). </p>
+<dl class="section note"><dt>Note</dt><dd>If a script has an explicit setting of <code>LoadAsString</code> in its <code>plugindef</code> function, it overrides this value. That said, as long as you do not modify it, the initial value will always be the value that RGP Lua uses to run the script, which takes into account an explicit setting in <code>plugindef</code>.</dd></dl>
+<p>Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -1374,7 +1375,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets if the script should be loaded as a string. </p>
-<p >Lua-supported (also as property) (0.64). </p>
+<dl class="section note"><dt>Note</dt><dd>This function cannot override an explicit setting of <code>LoadAsString</code> in the <code>plugindef</code> function of a script, either true or false. In this regard it functions similar to the RGP Lua configuration setting.</dd></dl>
+<p>Lua-supported (also as property) (0.64). </p>
 
 </div>
 </div>
@@ -1562,7 +1564,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Nov 25 2023 11:23:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Nov 30 2023 08:10:27 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
