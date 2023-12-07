@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.68</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.69</span>
    </div>
   </td>
  </tr>
@@ -421,9 +421,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAndActivate</b> (
 <tr class="memitem:a716a58e3c692b5cb45108c483891b2c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a716a58e3c692b5cb45108c483891b2c5">ScrollChanged</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
 <tr class="memdesc:a716a58e3c692b5cb45108c483891b2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when the scroll changes on a control with a scrollbar.  <a href="class_____f_c_user_window.html#a716a58e3c692b5cb45108c483891b2c5">More...</a><br /></td></tr>
 <tr class="separator:a716a58e3c692b5cb45108c483891b2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f47165e971e736f02d1eb24e93ebd8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a62f47165e971e736f02d1eb24e93ebd8">HandleSaveRequest</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
-<tr class="memdesc:a62f47165e971e736f02d1eb24e93ebd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that notifies when Save has been requested with cmd-S (macOS) or ctrl-S (Windows) sent to a control that supports it.  <a href="class_____f_c_user_window.html#a62f47165e971e736f02d1eb24e93ebd8">More...</a><br /></td></tr>
-<tr class="separator:a62f47165e971e736f02d1eb24e93ebd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18176ed3f6ab5a672595f7bedeb16ae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#af18176ed3f6ab5a672595f7bedeb16ae">HandleKeyboardCommand</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl, eUniChar16 character)</td></tr>
+<tr class="memdesc:af18176ed3f6ab5a672595f7bedeb16ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that notifies when a keyboard command has been requested with the Command key (macOS) or Control key (Windows) sent to a control that supports it. Some examples of standard keyboard commands that a caller might choose to handle are.  <a href="class_____f_c_user_window.html#af18176ed3f6ab5a672595f7bedeb16ae">More...</a><br /></td></tr>
+<tr class="separator:af18176ed3f6ab5a672595f7bedeb16ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57f2d0f4e70c0e7673c5066a71501375"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a57f2d0f4e70c0e7673c5066a71501375">HandleSwitcherSelect</a> (<a class="el" href="class_f_c_ctrl_switcher.html">FCCtrlSwitcher</a> *pControl, int switchindex)</td></tr>
 <tr class="memdesc:a57f2d0f4e70c0e7673c5066a71501375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when a switcher control is clicked. Please note that switcher selections also produces calls to <a class="el" href="class_____f_c_user_window.html#a087d0240f4737eb1d819352b52bc458a" title="Virtual method that is called when a user command occurs, such as a button press.">HandleCommand</a>.  <a href="class_____f_c_user_window.html#a57f2d0f4e70c0e7673c5066a71501375">More...</a><br /></td></tr>
 <tr class="separator:a57f2d0f4e70c0e7673c5066a71501375"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1445,6 +1445,63 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af18176ed3f6ab5a672595f7bedeb16ae" name="af18176ed3f6ab5a672595f7bedeb16ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18176ed3f6ab5a672595f7bedeb16ae">&#9670;&nbsp;</a></span>HandleKeyboardCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool __FCUserWindow::HandleKeyboardCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">eUniChar16&#160;</td>
+          <td class="paramname"><em>character</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual method that notifies when a keyboard command has been requested with the Command key (macOS) or Control key (Windows) sent to a control that supports it. Some examples of standard keyboard commands that a caller might choose to handle are. </p>
+<ul>
+<li>cmd/ctrl-F (find)</li>
+<li>cmd/ctrl-N (new)</li>
+<li>cmd/ctrl-O (open)</li>
+<li>cmd/ctrl-S (save)</li>
+</ul>
+<p >Callers receive other commands (such as commands for Cut, Copy, and Paste), but these may be best left to the control to handle.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>The PDK Framework only implements this for <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a>. It will not fire for other controls.</dd></dl>
+<p>Overwrite in child classes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control that received the keyboard command </td></tr>
+    <tr><td class="paramname">character</td><td>the character of the keyboard command </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the save request was handled by your window, false if the control (or Finale) should handle it </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#affc1ecc298360dac938d83b9c6d5be24">FCCustomLuaWindow</a>.</p>
+
+</div>
+</div>
 <a id="a1310823b2bf28c8d02a54b39e6ac9234" name="a1310823b2bf28c8d02a54b39e6ac9234"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1310823b2bf28c8d02a54b39e6ac9234">&#9670;&nbsp;</a></span>HandleResize()</h2>
 
@@ -1493,45 +1550,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Handler called when user resizes the window. </p>
 <p >Override to handle control replacement etc. </p>
-
-</div>
-</div>
-<a id="a62f47165e971e736f02d1eb24e93ebd8" name="a62f47165e971e736f02d1eb24e93ebd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62f47165e971e736f02d1eb24e93ebd8">&#9670;&nbsp;</a></span>HandleSaveRequest()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool __FCUserWindow::HandleSaveRequest </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
-          <td class="paramname"><em>pControl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Virtual method that notifies when Save has been requested with cmd-S (macOS) or ctrl-S (Windows) sent to a control that supports it. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>The PDK Framework only implements this for <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a>. It will not fire for other controls.</dd></dl>
-<p>Overwrite in child classes.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pControl</td><td>the control that received the Save command </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the save request was handled by your window, false if Finale should handle it </dd></dl>
-
-<p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#ab7942c2995b34828cddcf7530a2adc44">FCCustomLuaWindow</a>.</p>
 
 </div>
 </div>
@@ -2380,7 +2398,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 30 2023 08:10:25 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Dec 7 2023 11:50:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
