@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.69</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70b1</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac05344daebf4c06711d2377da0e62a97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ac05344daebf4c06711d2377da0e62a97">RegisterHandleDataListCheck</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:ac05344daebf4c06711d2377da0e62a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a7308f9a97989f83c586ed5fd5fa880f1" title="Virtual handler method for when FCCtrlDataList check state changes (for data list controls with check...">HandleDataListCheck()</a> event handler.  <a href="class_f_c_custom_lua_window.html#ac05344daebf4c06711d2377da0e62a97">More...</a><br /></td></tr>
 <tr class="separator:ac05344daebf4c06711d2377da0e62a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28815b381469b5f28cf5cf3112423776"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a28815b381469b5f28cf5cf3112423776">RegisterHandleListDoubleClick</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a28815b381469b5f28cf5cf3112423776"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#abceddc9afbb7a8288caa0f09e0106713" title="Virtual handler method for when there&#39;s a double-click inside a data list or list box.">HandleListDoubleClick()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a28815b381469b5f28cf5cf3112423776">More...</a><br /></td></tr>
+<tr class="separator:a28815b381469b5f28cf5cf3112423776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14abdcfd7db27cebefbfca06d1af4cb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a14abdcfd7db27cebefbfca06d1af4cb4">RegisterHandleListEnterKey</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a14abdcfd7db27cebefbfca06d1af4cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#ab88fee1c89dfad34b99f1f505bd2a01f" title="Virtual handler method there&#39;s an enter key hit inside a data list or list box.">HandleListEnterKey()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a14abdcfd7db27cebefbfca06d1af4cb4">More...</a><br /></td></tr>
+<tr class="separator:a14abdcfd7db27cebefbfca06d1af4cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09fe8a8ed70c21da0e8279dd9f0b0b76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a09fe8a8ed70c21da0e8279dd9f0b0b76">RegisterHandleCancelButtonPressed</a> (luabridge::LuaRef lua_callback_function)</td></tr>
 <tr class="memdesc:a09fe8a8ed70c21da0e8279dd9f0b0b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#ac32ef1f85396c3184903d526e6f32f3a" title="Virtual handler method that is called when a control with a &quot;Cancel&quot; action is pressed by the user.">CancelButtonPressed()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a09fe8a8ed70c21da0e8279dd9f0b0b76">More...</a><br /></td></tr>
 <tr class="separator:a09fe8a8ed70c21da0e8279dd9f0b0b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +180,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7308f9a97989f83c586ed5fd5fa880f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7308f9a97989f83c586ed5fd5fa880f1">HandleDataListCheck</a> (<a class="el" href="class_f_c_ctrl_data_list.html">FCCtrlDataList</a> *pControl, int lineindex, bool checkstate) override</td></tr>
 <tr class="memdesc:a7308f9a97989f83c586ed5fd5fa880f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for when <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> check state changes (for data list controls with check boxes).  <a href="class_f_c_custom_lua_window.html#a7308f9a97989f83c586ed5fd5fa880f1">More...</a><br /></td></tr>
 <tr class="separator:a7308f9a97989f83c586ed5fd5fa880f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abceddc9afbb7a8288caa0f09e0106713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#abceddc9afbb7a8288caa0f09e0106713">HandleListDoubleClick</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:abceddc9afbb7a8288caa0f09e0106713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for when there's a double-click inside a data list or list box.  <a href="class_f_c_custom_lua_window.html#abceddc9afbb7a8288caa0f09e0106713">More...</a><br /></td></tr>
+<tr class="separator:abceddc9afbb7a8288caa0f09e0106713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88fee1c89dfad34b99f1f505bd2a01f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ab88fee1c89dfad34b99f1f505bd2a01f">HandleListEnterKey</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:ab88fee1c89dfad34b99f1f505bd2a01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method there's an enter key hit inside a data list or list box.  <a href="class_f_c_custom_lua_window.html#ab88fee1c89dfad34b99f1f505bd2a01f">More...</a><br /></td></tr>
+<tr class="separator:ab88fee1c89dfad34b99f1f505bd2a01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32ef1f85396c3184903d526e6f32f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ac32ef1f85396c3184903d526e6f32f3a">CancelButtonPressed</a> () override</td></tr>
 <tr class="memdesc:ac32ef1f85396c3184903d526e6f32f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a control with a "Cancel" action is pressed by the user.  <a href="class_f_c_custom_lua_window.html#ac32ef1f85396c3184903d526e6f32f3a">More...</a><br /></td></tr>
 <tr class="separator:ac32ef1f85396c3184903d526e6f32f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1430,6 +1442,79 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="abceddc9afbb7a8288caa0f09e0106713" name="abceddc9afbb7a8288caa0f09e0106713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abceddc9afbb7a8288caa0f09e0106713">&#9670;&nbsp;</a></span>HandleListDoubleClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::HandleListDoubleClick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method for when there's a double-click inside a data list or list box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pControl</td><td>Pointer to the <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> or <a class="el" href="class_f_c_ctrl_list_box.html" title="A list box control.">FCCtrlListBox</a> control. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#ab2eaf8be101cadf33ad959ed2e1707a6">__FCUserWindow</a>.</p>
+
+</div>
+</div>
+<a id="ab88fee1c89dfad34b99f1f505bd2a01f" name="ab88fee1c89dfad34b99f1f505bd2a01f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88fee1c89dfad34b99f1f505bd2a01f">&#9670;&nbsp;</a></span>HandleListEnterKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::HandleListEnterKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method there's an enter key hit inside a data list or list box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pControl</td><td>Pointer to the <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> or <a class="el" href="class_f_c_ctrl_list_box.html" title="A list box control.">FCCtrlListBox</a> control. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was handled; false if the system should handle process it. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#a7dd60416e6d567f58deb01ff3ab6dc26">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="a4ae14c8ae2cb53424f4f1f26ec1a15cb" name="a4ae14c8ae2cb53424f4f1f26ec1a15cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ae14c8ae2cb53424f4f1f26ec1a15cb">&#9670;&nbsp;</a></span>HandleTimer()</h2>
 
@@ -1720,7 +1805,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </div><div class="memdoc">
 
 <p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e" title="Virtual handler method that is called when a window is activated or deactivated.">HandleActivate()</a> event handler. </p>
-<p >Lua-supported (0.64).</p>
+<p >Lua-supported (0.66).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a3c6c513a1199d8a87710f716b43be74e" title="Virtual handler method that is called when a window is activated or deactivated.">HandleActivate</a> event handler for the callback syntax.</td></tr>
@@ -1952,6 +2037,78 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#affc1ecc298360dac938d83b9c6d5be24" title="Virtual handler method for handling keyboard save requests.">HandleKeyboardCommand</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="a28815b381469b5f28cf5cf3112423776" name="a28815b381469b5f28cf5cf3112423776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28815b381469b5f28cf5cf3112423776">&#9670;&nbsp;</a></span>RegisterHandleListDoubleClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterHandleListDoubleClick </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#abceddc9afbb7a8288caa0f09e0106713" title="Virtual handler method for when there&#39;s a double-click inside a data list or list box.">HandleListDoubleClick()</a> event handler. </p>
+<p >Lua-supported (0.70).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#abceddc9afbb7a8288caa0f09e0106713" title="Virtual handler method for when there&#39;s a double-click inside a data list or list box.">HandleListDoubleClick</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="a14abdcfd7db27cebefbfca06d1af4cb4" name="a14abdcfd7db27cebefbfca06d1af4cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14abdcfd7db27cebefbfca06d1af4cb4">&#9670;&nbsp;</a></span>RegisterHandleListEnterKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterHandleListEnterKey </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#ab88fee1c89dfad34b99f1f505bd2a01f" title="Virtual handler method there&#39;s an enter key hit inside a data list or list box.">HandleListEnterKey()</a> event handler. </p>
+<p >Lua-supported (0.70).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#ab88fee1c89dfad34b99f1f505bd2a01f" title="Virtual handler method there&#39;s an enter key hit inside a data list or list box.">HandleListEnterKey</a> event handler for the callback syntax.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2377,7 +2534,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 7 2023 11:50:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Tue Dec 26 2023 18:31:00 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
