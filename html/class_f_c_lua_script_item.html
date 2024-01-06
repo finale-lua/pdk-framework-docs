@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70</span>
    </div>
   </td>
  </tr>
@@ -359,10 +359,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a30d50229c8f46db470e9f24e54aa2390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that replaces called script's print function.  <a href="class_f_c_lua_script_item.html#a30d50229c8f46db470e9f24e54aa2390">More...</a><br /></td></tr>
 <tr class="separator:a30d50229c8f46db470e9f24e54aa2390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4772ff5e30982e9359e7d4cce7aad848"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a4772ff5e30982e9359e7d4cce7aad848">RegisterOnExecutionWillStart</a> (luabridge::LuaRef lua_callback_function)</td></tr>
-<tr class="memdesc:a4772ff5e30982e9359e7d4cce7aad848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that gets called when the script item starts executing.  <a href="class_f_c_lua_script_item.html#a4772ff5e30982e9359e7d4cce7aad848">More...</a><br /></td></tr>
+<tr class="memdesc:a4772ff5e30982e9359e7d4cce7aad848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that gets called when the script item starts executing. For the function to be called, the <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> must have been created with <code>finenv.CreateLuaScriptItemsFromFilePath</code>.  <a href="class_f_c_lua_script_item.html#a4772ff5e30982e9359e7d4cce7aad848">More...</a><br /></td></tr>
 <tr class="separator:a4772ff5e30982e9359e7d4cce7aad848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce6e2e64e2796603d1d1b02971a277f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a7ce6e2e64e2796603d1d1b02971a277f">RegisterOnExecutionDidStop</a> (luabridge::LuaRef lua_callback_function)</td></tr>
-<tr class="memdesc:a7ce6e2e64e2796603d1d1b02971a277f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that gets called when the script item stops executing.  <a href="class_f_c_lua_script_item.html#a7ce6e2e64e2796603d1d1b02971a277f">More...</a><br /></td></tr>
+<tr class="memdesc:a7ce6e2e64e2796603d1d1b02971a277f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function that gets called when the script item stops executing. For the function to be called, the <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> must have been created with <code>finenv.CreateLuaScriptItemsFromFilePath</code>.  <a href="class_f_c_lua_script_item.html#a7ce6e2e64e2796603d1d1b02971a277f">More...</a><br /></td></tr>
 <tr class="separator:a7ce6e2e64e2796603d1d1b02971a277f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4812982be90e0b122fb5f5cd9fb4ed6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#a4812982be90e0b122fb5f5cd9fb4ed6c">OnExecutionWillStart</a> () const</td></tr>
 <tr class="memdesc:a4812982be90e0b122fb5f5cd9fb4ed6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that is called when script execution starts.  <a href="class_f_c_lua_script_item.html#a4812982be90e0b122fb5f5cd9fb4ed6c">More...</a><br /></td></tr>
@@ -532,16 +532,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class that represents a single Lua script item. This class is not part of the C++ PDK Framework. </p>
-<p >The <b>finenv</b> namespace offers the following ways to use this class. (The full documentation for these functions is at <a href="https://www.finalelua.com/docs/rgp-lua">https://www.finalelua.com/docs/rgp-lua</a>.)</p>
+<p >The <b>finenv</b> namespace offers the following ways to use this class. (The full documentation for these functions is at <a href="https://www.finalelua.com/docs/rgp-lua/finenv-properties">https://www.finalelua.com/docs/rgp-lua/finenv-properties</a>.)</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Method   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>CreateLuaScriptItems</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection containing all configured script items from the Finale Plug-In menu for the running instance of RGP Lua.    </td></tr>
+<td class="markdownTableBodyNone"><a href="https://www.finalelua.com/docs/rgp-lua/finenv-properties#createluascriptitems-function"><b>CreateLuaScriptItems</b></a>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection containing all configured script items from the Finale Plug-In menu for the running instance of RGP Lua.    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><b>CreateLuaScriptItemsFromFilePath(pathstr[,scrtext])</b>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection populated from the input file path or text and that item's <b>plugindef</b> function, if any.    </td></tr>
+<td class="markdownTableBodyNone"><a href="https://www.finalelua.com/docs/rgp-lua/finenv-properties#createluascriptitemsfromfilepath-function"><b>CreateLuaScriptItemsFromFilePath(pathstr[,scrtext])</b></a>   </td><td class="markdownTableBodyNone">Returns a <a class="el" href="class_f_c_lua_script_items.html" title="A collection of FCLuaScriptItem members.">FCLuaScriptItems</a> collection populated from the input file path or text and that item's <b>plugindef</b> function, if any.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><b>ExecuteLuaScriptItem(item)</b>   </td><td class="markdownTableBodyNone">Executes the input script <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> with its own separate Lua state.   </td></tr>
+<td class="markdownTableBodyNone"><a href="https://www.finalelua.com/docs/rgp-lua/finenv-properties#executeluascriptitem-function"><b>ExecuteLuaScriptItem(item)</b></a>   </td><td class="markdownTableBodyNone">Executes the input script <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> with its own separate Lua state.   </td></tr>
 </table>
 <p >The collection returned by <b>CreateLuaScriptItemsFromFilePath(pathstr)</b> contains one item for the script plus one for each additional menu item defined in the file's <b>plugindef</b> function, if it has one.</p>
 <p >When your script executes a script item returned by <b>CreateLuaScriptItems</b>, it is indentical to invoking it from Finale's Plug-Ins menu. There are no further dependencies, and all behavior is identical. The invoked script can continue to run (for example, in a modeless window) even if your script terminates.</p>
@@ -1178,7 +1178,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a Lua function that gets called when the script item stops executing. </p>
+<p>Registers a Lua function that gets called when the script item stops executing. For the function to be called, the <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> must have been created with <code>finenv.CreateLuaScriptItemsFromFilePath</code>. </p>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1214,7 +1214,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a Lua function that gets called when the script item starts executing. </p>
+<p>Registers a Lua function that gets called when the script item starts executing. For the function to be called, the <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> must have been created with <code>finenv.CreateLuaScriptItemsFromFilePath</code>. </p>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1255,10 +1255,11 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. This function receives an unspecified number of arguments. Nil, booleans, numbers, and strings are passed through as-is. All other types are converted to strings.</td></tr>
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. For the function to be called, the <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> must have been created with <code>finenv.CreateLuaScriptItemsFromFilePath</code>.</td></tr>
   </table>
   </dd>
 </dl>
+<p>This function receives an unspecified number of arguments. Nil, booleans, numbers, and strings are passed through as-is. All other types are converted to strings.</p>
 <dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
 
 </div>
@@ -1564,7 +1565,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 26 2023 18:31:02 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Jan 6 2024 11:29:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
