@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.69</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70</span>
    </div>
   </td>
  </tr>
@@ -100,11 +100,11 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:abb47d9cae04de44a929fb830fe040199"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constants used by <a class="el" href="class_f_c_music_spacing_prefs.html#a5e3bee706198ae859b13fcb9f46cb40b" title="Returns the options for how to treat manual positioned notes.">GetManualPositioning</a>.  <a href="class_f_c_music_spacing_prefs.html#abb47d9cae04de44a929fb830fe040199">More...</a><br /></td></tr>
 <tr class="separator:abb47d9cae04de44a929fb830fe040199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5211b17aaca4cbd75bbda824bf78b79e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79e">UNISONS_MODE</a> { <b>UNISSPACE_NONE</b> = 0
-, <b>UNISSPACE_DIFFERENTNOTEHEADS</b> = 1
-, <b>UNISSPACE_ALLNOTEHEADS</b> = 2
+<tr class="memitem:a5211b17aaca4cbd75bbda824bf78b79e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79e">UNISONS_MODE</a> { <a class="el" href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79ea6b8b5082ba9a37a26e302d44d1c2cf13">UNISSPACE_NONE</a> = 0
+, <a class="el" href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79ea9f5028dc9fada524c9a8e04435bfaea1">UNISSPACE_DIFFERENTNOTEHEADS</a> = 1
+, <a class="el" href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79ea5b0b3148d25ca2d8c514ee4b7a00efbc">UNISSPACE_ALLNOTEHEADS</a> = 2
  }</td></tr>
-<tr class="memdesc:a5211b17aaca4cbd75bbda824bf78b79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constants used by <a class="el" href="class_f_c_music_spacing_prefs.html#ab3723d294bfbbe0a01e8ae71ccab34a9" title="Returns the mode for how to treat unisons.">GetUnisonsMode</a>.  <a href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79e">More...</a><br /></td></tr>
+<tr class="memdesc:a5211b17aaca4cbd75bbda824bf78b79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constants used by <a class="el" href="class_f_c_music_spacing_prefs.html#ab3723d294bfbbe0a01e8ae71ccab34a9" title="Returns the mode for how to treat unisons.">GetUnisonsMode</a>. These represent the three possible values for "Avoid Collision of Unisons" in the Document Options - Music Spacing dialog and control whether note spacing avoids collisions of unisons in different voices or layers.  <a href="class_f_c_music_spacing_prefs.html#a5211b17aaca4cbd75bbda824bf78b79e">More...</a><br /></td></tr>
 <tr class="separator:a5211b17aaca4cbd75bbda824bf78b79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
@@ -782,8 +782,16 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>The constants used by <a class="el" href="class_f_c_music_spacing_prefs.html#ab3723d294bfbbe0a01e8ae71ccab34a9" title="Returns the mode for how to treat unisons.">GetUnisonsMode</a>. </p>
-<p >Lua-supported. </p>
+<p>The constants used by <a class="el" href="class_f_c_music_spacing_prefs.html#ab3723d294bfbbe0a01e8ae71ccab34a9" title="Returns the mode for how to treat unisons.">GetUnisonsMode</a>. These represent the three possible values for "Avoid Collision of Unisons" in the Document Options - Music Spacing dialog and control whether note spacing avoids collisions of unisons in different voices or layers. </p>
+<pre class="fragment">Lua-supported.
+</pre> <table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5211b17aaca4cbd75bbda824bf78b79ea6b8b5082ba9a37a26e302d44d1c2cf13" name="a5211b17aaca4cbd75bbda824bf78b79ea6b8b5082ba9a37a26e302d44d1c2cf13"></a>UNISSPACE_NONE&#160;</td><td class="fielddoc"><p >Do not avoid collisions of unisions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5211b17aaca4cbd75bbda824bf78b79ea9f5028dc9fada524c9a8e04435bfaea1" name="a5211b17aaca4cbd75bbda824bf78b79ea9f5028dc9fada524c9a8e04435bfaea1"></a>UNISSPACE_DIFFERENTNOTEHEADS&#160;</td><td class="fielddoc"><p >Avoid collisions if the noteheads are of a different type (e.g., quarter-note vs. half-note or whole-note). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5211b17aaca4cbd75bbda824bf78b79ea5b0b3148d25ca2d8c514ee4b7a00efbc" name="a5211b17aaca4cbd75bbda824bf78b79ea5b0b3148d25ca2d8c514ee4b7a00efbc"></a>UNISSPACE_ALLNOTEHEADS&#160;</td><td class="fielddoc"><p >Avoid collisions on any unisons regardless of notehead type. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -2348,7 +2356,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 7 2023 11:50:49 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Jan 6 2024 11:29:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

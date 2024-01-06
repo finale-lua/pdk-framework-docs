@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.69</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70</span>
    </div>
   </td>
  </tr>
@@ -436,6 +436,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAndActivate</b> (
 <tr class="memitem:a56d0fd910850f157489da89ad4c56384"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a56d0fd910850f157489da89ad4c56384">HandleDataListCheck</a> (<a class="el" href="class_f_c_ctrl_data_list.html">FCCtrlDataList</a> *pControl, int lineindex, bool checkstate)</td></tr>
 <tr class="memdesc:a56d0fd910850f157489da89ad4c56384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method for when <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> check state changes (for data list controls with check boxes). Overwrite to provide functionality.  <a href="class_____f_c_user_window.html#a56d0fd910850f157489da89ad4c56384">More...</a><br /></td></tr>
 <tr class="separator:a56d0fd910850f157489da89ad4c56384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2eaf8be101cadf33ad959ed2e1707a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#ab2eaf8be101cadf33ad959ed2e1707a6">HandleListDoubleClick</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
+<tr class="memdesc:ab2eaf8be101cadf33ad959ed2e1707a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every time there's a double-click inside a data list or list box.  <a href="class_____f_c_user_window.html#ab2eaf8be101cadf33ad959ed2e1707a6">More...</a><br /></td></tr>
+<tr class="separator:ab2eaf8be101cadf33ad959ed2e1707a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd60416e6d567f58deb01ff3ab6dc26"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a7dd60416e6d567f58deb01ff3ab6dc26">HandleListEnterKey</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
+<tr class="memdesc:a7dd60416e6d567f58deb01ff3ab6dc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every time there's an enter key hit inside a data list or list box.  <a href="class_____f_c_user_window.html#a7dd60416e6d567f58deb01ff3ab6dc26">More...</a><br /></td></tr>
+<tr class="separator:a7dd60416e6d567f58deb01ff3ab6dc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15e12dbb3c5bae8b2f6eb73742d4d0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#ae15e12dbb3c5bae8b2f6eb73742d4d0f">HandleTimer</a> (twobyte timerID)</td></tr>
 <tr class="memdesc:ae15e12dbb3c5bae8b2f6eb73742d4d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called on timer events. Overwrite in child classes.  <a href="class_____f_c_user_window.html#ae15e12dbb3c5bae8b2f6eb73742d4d0f">More...</a><br /></td></tr>
 <tr class="separator:ae15e12dbb3c5bae8b2f6eb73742d4d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1486,19 +1492,92 @@ Additional Inherited Members</h2></td></tr>
 <li>cmd/ctrl-O (open)</li>
 <li>cmd/ctrl-S (save)</li>
 </ul>
-<p >Callers receive other commands (such as commands for Cut, Copy, and Paste), but these may be best left to the control to handle.</p>
-<dl class="section remark"><dt>Remarks</dt><dd>The PDK Framework only implements this for <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a>. It will not fire for other controls.</dd></dl>
+<p >Callers receive other commands (such as commands for Cut, Copy, and Paste), but some controls handle these automatically and do not require special code. For example, <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a> handles them automatically, but <a class="el" href="class_f_c_ctrl_list_box.html" title="A list box control.">FCCtrlListBox</a> and <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> do not.</p>
+<dl class="section remark"><dt>Remarks</dt><dd>As of version 0.70, The PDK Framework implements this for <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a>, <a class="el" href="class_f_c_ctrl_list_box.html" title="A list box control.">FCCtrlListBox</a>, and <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a>. It will not fire for other controls.</dd></dl>
 <p>Overwrite in child classes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pControl</td><td>the control that received the keyboard command </td></tr>
-    <tr><td class="paramname">character</td><td>the character of the keyboard command </td></tr>
+    <tr><td class="paramname">character</td><td>the uppercase character of the keyboard command. (If you need to distinguish between upper and lower case, you can use <a class="el" href="class_____f_c_user_window.html#a5425bfe37445c83cdfb7d2cf939d22f3" title="Returns if the user held down a specific set of modifier keys at the last &quot;command&quot; event,...">QueryLastCommandModifierKeys</a> to see if the shift key was pressed.) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the save request was handled by your window, false if the control (or Finale) should handle it </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#affc1ecc298360dac938d83b9c6d5be24">FCCustomLuaWindow</a>.</p>
+
+</div>
+</div>
+<a id="ab2eaf8be101cadf33ad959ed2e1707a6" name="ab2eaf8be101cadf33ad959ed2e1707a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2eaf8be101cadf33ad959ed2e1707a6">&#9670;&nbsp;</a></span>HandleListDoubleClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void __FCUserWindow::HandleListDoubleClick </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called every time there's a double-click inside a data list or list box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pControl</td><td>Pointer to the <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> or <a class="el" href="class_f_c_ctrl_list_box.html" title="A list box control.">FCCtrlListBox</a> control. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#abceddc9afbb7a8288caa0f09e0106713">FCCustomLuaWindow</a>.</p>
+
+</div>
+</div>
+<a id="a7dd60416e6d567f58deb01ff3ab6dc26" name="a7dd60416e6d567f58deb01ff3ab6dc26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd60416e6d567f58deb01ff3ab6dc26">&#9670;&nbsp;</a></span>HandleListEnterKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool __FCUserWindow::HandleListEnterKey </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called every time there's an enter key hit inside a data list or list box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pControl</td><td>Pointer to the <a class="el" href="class_f_c_ctrl_data_list.html" title="Class that handles a contol with multiple lines of data, arranged in columns.">FCCtrlDataList</a> or <a class="el" href="class_f_c_ctrl_list_box.html" title="A list box control.">FCCtrlListBox</a> control. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key was handled; false if the system should handle process it. If the function returns true, the default button will not be hit. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#ab88fee1c89dfad34b99f1f505bd2a01f">FCCustomLuaWindow</a>.</p>
 
 </div>
 </div>
@@ -1911,7 +1990,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Virtual method that is called when the scroll changes on a control with a scrollbar. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>The PDK Framework only implements this for <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a>. It will not fire for other controls with scrollbars.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add support for other control types as needed.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Add support for other control types as needed.</dd></dl>
 <p >Overwrite in child classes. </p>
 
 <p>Reimplemented in <a class="el" href="class_f_c_custom_lua_window.html#aa54749128ff3ac6508aceaeac3f2a207">FCCustomLuaWindow</a>.</p>
@@ -2398,7 +2477,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 7 2023 11:50:47 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Jan 6 2024 11:29:05 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
