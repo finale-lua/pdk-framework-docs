@@ -781,7 +781,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Selects a 0-based line index, adding it to the existing selected lines is. </p>
 <p >If <a class="el" href="class_f_c_ctrl_data_list.html#a7cf194dd111bb8d0148bdbcaad1a7fc4" title="Returns if the list should allow multiple selections.">GetAllowsMultipleSelection</a> is <code>false</code> then calling <a class="el" href="class_f_c_ctrl_data_list.html#add3344e3262634566ab80fa5f3bf94ca" title="Selects a 0-based line index, adding it to the existing selected lines is.">AddSelectedLine</a> is the same as calling <a class="el" href="class_f_c_ctrl_data_list.html#a524cf6f1fcc7b561564f55be6646e60c" title="Selects a 0-based line index.">SelectLine</a>.</p>
-<p >Lua-supported (0.70).</p>
+<dl class="section warning"><dt>Warning</dt><dd>Due to a bug introduced in v0.70, <a class="el" href="class_f_c_ctrl_data_list.html#add3344e3262634566ab80fa5f3bf94ca" title="Selects a 0-based line index, adding it to the existing selected lines is.">AddSelectedLine</a> does not work before the dialog is running. To pre-select items before the dialog displays, you can call <a class="el" href="class_f_c_ctrl_data_list.html#add3344e3262634566ab80fa5f3bf94ca" title="Selects a 0-based line index, adding it to the existing selected lines is.">AddSelectedLine</a> inside a function registered with <a class="el" href="class_f_c_custom_lua_window.html#a2a04daf21c47505b43b39bac5d81e84a" title="Registers a Lua function to the InitWindow() event handler.">FCCustomLuaWindow::RegisterInitWindow</a>. This bug will be fixed in v0.71.</dd></dl>
+<p>Lua-supported (0.70).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lineindex</td><td>the 0-based line index to select. </td></tr>
@@ -1358,7 +1359,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Selects a 0-based line index. </p>
 <p >Even if <a class="el" href="class_f_c_ctrl_data_list.html#a7cf194dd111bb8d0148bdbcaad1a7fc4" title="Returns if the list should allow multiple selections.">GetAllowsMultipleSelection</a> is <code>true</code>, <a class="el" href="class_f_c_ctrl_data_list.html#a524cf6f1fcc7b561564f55be6646e60c" title="Selects a 0-based line index.">SelectLine</a> still unselects other selected lines. To select multiple lines, use <a class="el" href="class_f_c_ctrl_data_list.html#add3344e3262634566ab80fa5f3bf94ca" title="Selects a 0-based line index, adding it to the existing selected lines is.">AddSelectedLine</a> instead.</p>
-<p >Lua-supported.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Due to a bug introduced in v0.70, <a class="el" href="class_f_c_ctrl_data_list.html#a524cf6f1fcc7b561564f55be6646e60c" title="Selects a 0-based line index.">SelectLine</a> does not work before the dialog is running. Instead, you can pre-select items with <a class="el" href="class_f_c_ctrl_data_list.html#a524cf6f1fcc7b561564f55be6646e60c" title="Selects a 0-based line index.">SelectLine</a> inside a function registered with <a class="el" href="class_f_c_custom_lua_window.html#a2a04daf21c47505b43b39bac5d81e84a" title="Registers a Lua function to the InitWindow() event handler.">FCCustomLuaWindow::RegisterInitWindow</a>. This bug will be fixed in v0.71.</dd></dl>
+<p>Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lineindex</td><td>the 0-based line index to select. </td></tr>
@@ -1754,7 +1756,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 10 2024 20:25:26 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Jan 11 2024 11:33:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
