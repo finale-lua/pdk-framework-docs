@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71b1</span>
    </div>
   </td>
  </tr>
@@ -354,6 +354,12 @@ HWND&#160;</td><td class="memItemRight" valign="bottom"><b>_GetWinControlHandle<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextAndResize</b> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:af960a6f2f2dc2a4d60d05632258a144d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cocoa only: Sets the text and resizes the view inside a NSScrollView. <br /></td></tr>
 <tr class="separator:af960a6f2f2dc2a4d60d05632258a144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f81d4fa0d7622b6c060501584f0b68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a54f81d4fa0d7622b6c060501584f0b68">SetAutoResizeWidth</a> (bool state)</td></tr>
+<tr class="memdesc:a54f81d4fa0d7622b6c060501584f0b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the autoresize width option for the control. This is supported for buttons and text fields. Other types of controls should not set this value true.  <a href="class_f_c_control.html#a54f81d4fa0d7622b6c060501584f0b68">More...</a><br /></td></tr>
+<tr class="separator:a54f81d4fa0d7622b6c060501584f0b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbdc47c64ad9b09348893464afd1f03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a5fbdc47c64ad9b09348893464afd1f03">GetAutoResizeWidth</a> () const</td></tr>
+<tr class="memdesc:a5fbdc47c64ad9b09348893464afd1f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns he autoresize width option for the control.  <a href="class_f_c_control.html#a5fbdc47c64ad9b09348893464afd1f03">More...</a><br /></td></tr>
+<tr class="separator:a5fbdc47c64ad9b09348893464afd1f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881bbeaec570ff344b37bb00a7388ead"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead">SetText</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a881bbeaec570ff344b37bb00a7388ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text for the control.  <a href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead">More...</a><br /></td></tr>
 <tr class="separator:a881bbeaec570ff344b37bb00a7388ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -628,7 +634,7 @@ Additional Inherited Members</h2></td></tr>
 <p><b>Example</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_f_c_ctrl_edit.html">FCCtrlEdit</a>(twobyte <span class="keywordtype">id</span>) : <a class="code hl_class" href="class_f_c_control.html">FCControl</a>(id, this) <span class="comment">// constructor for FCCtrlEdit</span></div>
 <div class="line">{}</div>
 <div class="ttc" id="aclass_f_c_control_html"><div class="ttname"><a href="class_f_c_control.html">FCControl</a></div><div class="ttdoc">Base class for all UI controls in a dialog.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:1471</div></div>
-<div class="ttc" id="aclass_f_c_ctrl_edit_html"><div class="ttname"><a href="class_f_c_ctrl_edit.html">FCCtrlEdit</a></div><div class="ttdoc">Class that handles edit controls.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:2380</div></div>
+<div class="ttc" id="aclass_f_c_ctrl_edit_html"><div class="ttname"><a href="class_f_c_ctrl_edit.html">FCCtrlEdit</a></div><div class="ttdoc">Class that handles edit controls.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:2399</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -786,6 +792,34 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a5fbdc47c64ad9b09348893464afd1f03" name="a5fbdc47c64ad9b09348893464afd1f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fbdc47c64ad9b09348893464afd1f03">&#9670;&nbsp;</a></span>GetAutoResizeWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCControl::GetAutoResizeWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns he autoresize width option for the control. </p>
+<p >Lua-supported (0.71). </p>
+
+</div>
+</div>
 <a id="a1424f08f1631ddb03ad2c5f916176145" name="a1424f08f1631ddb03ad2c5f916176145"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1424f08f1631ddb03ad2c5f916176145">&#9670;&nbsp;</a></span>GetControlID()</h2>
 
@@ -862,7 +896,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the height of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -882,7 +916,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the left position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -939,7 +973,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the text of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -959,7 +993,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the top position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -1208,6 +1242,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a54f81d4fa0d7622b6c060501584f0b68" name="a54f81d4fa0d7622b6c060501584f0b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f81d4fa0d7622b6c060501584f0b68">&#9670;&nbsp;</a></span>SetAutoResizeWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::SetAutoResizeWidth </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the autoresize width option for the control. This is supported for buttons and text fields. Other types of controls should not set this value true. </p>
+<p >Autoresizing occurs whenever you call <a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead" title="Sets the text for the control.">SetText</a> while the window is running. If you call <a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead" title="Sets the text for the control.">SetText</a> before the window is running, auto-resizing occurs when the window starts running. Auto-resizing never makes a control narrower than it already is. Call <a class="el" href="class_f_c_control.html#ab729f664576aef6d51067be25d732b5e" title="Sets the width of the control.">SetWidth</a> explicitly to make the control narrower.</p>
+<p >Lua-supported (0.71). </p>
+
+</div>
+</div>
 <a id="ad340219136406d00c2e1abeffc683cdd" name="ad340219136406d00c2e1abeffc683cdd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad340219136406d00c2e1abeffc683cdd">&#9670;&nbsp;</a></span>SetBold()</h2>
 
@@ -1380,7 +1444,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the left position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -1409,7 +1473,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the text for the control. </p>
-<p >Lua-supported</p>
+<p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pString</td><td>A NULL value clears the control text. Otherwise, the pointer to a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object. </td></tr>
@@ -1436,7 +1500,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the top position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -1494,7 +1558,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 11 2024 11:33:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Jan 12 2024 11:54:20 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
