@@ -55,7 +55,7 @@ var searchData=
   ['deletecharacterat_52',['DeleteCharacterAt',['../class_f_c_string.html#ae53c241a0aeec5d9c235b0e469e1adbd',1,'FCString']]],
   ['deletecharactersat_53',['DeleteCharactersAt',['../class_f_c_string.html#ae64e0987106f082b29be9c03b821be1a',1,'FCString']]],
   ['deletecustomtext_54',['DeleteCustomText',['../class_f_c_part.html#a3c15fce88414e58e82979341dcb878eb',1,'FCPart']]],
-  ['deletedata_55',['DeleteData',['../class_____f_c_base_data.html#aa22f3f1ac2f4ccbb23dcc39aa382605a',1,'__FCBaseData::DeleteData()'],['../class_f_c_shape_def.html#a376902ee64dde4ae033db1ef1a086a7e',1,'FCShapeDef::DeleteData()'],['../class_f_c_staff_list.html#a1e354810a4e5d56822ad63762acc7573',1,'FCStaffList::DeleteData()']]],
+  ['deletedata_55',['DeleteData',['../class_f_c_shape_def.html#a376902ee64dde4ae033db1ef1a086a7e',1,'FCShapeDef::DeleteData()'],['../class_f_c_staff_list.html#a1e354810a4e5d56822ad63762acc7573',1,'FCStaffList::DeleteData()'],['../class_____f_c_base_data.html#aa22f3f1ac2f4ccbb23dcc39aa382605a',1,'__FCBaseData::DeleteData()']]],
   ['deletedataforitem_56',['DeleteDataForItem',['../class_____f_c_collection_inci_other.html#a51c8e5d06745c6223b35c8ccc3cf4fa3',1,'__FCCollectionInciOther::DeleteDataForItem()'],['../class_f_c_fretboard_group.html#a5a1faf8bb1e3721fb27a254bc7d0eaeb',1,'FCFretboardGroup::DeleteDataForItem()']]],
   ['deleteentry_57',['DeleteEntry',['../class_f_c_note_entry_cell.html#a527d3d637e9afc75d40ddb516837e09e',1,'FCNoteEntryCell']]],
   ['deleteeverything_58',['DeleteEverything',['../class_f_c_smart_shape.html#ab22e6fd8f59d287f4c9aa9c826324e10',1,'FCSmartShape']]],
@@ -81,9 +81,10 @@ var searchData=
   ['displaytextexpressiondialog_78',['DisplayTextExpressionDialog',['../class_f_c_u_i.html#ad732dd70640d13950a864132534be78d',1,'FCUI']]],
   ['displayvisually_79',['DisplayVisually',['../class_f_c_document.html#aa47154f7a0d93ba55ff2495154021d4f',1,'FCDocument']]],
   ['displayweburl_80',['DisplayWebURL',['../class_f_c_u_i.html#a3e0501cad4093647ec0e37238607903d',1,'FCUI']]],
-  ['drawblackborderrect_81',['DrawBlackBorderRect',['../class_f_c_p_d_f_page.html#af600dbe6a1c4f3d79b1d44207194cd52',1,'FCPDFPage']]],
-  ['drawblackline_82',['DrawBlackLine',['../class_f_c_p_d_f_page.html#ac19583e6e175890f2cec016adc96326b',1,'FCPDFPage']]],
-  ['drawline_83',['DrawLine',['../class_f_c_p_d_f_page.html#a0d5d53f08dc03be0c1f3d8bc884d3a6b',1,'FCPDFPage']]],
-  ['drawstring_84',['DrawString',['../class_f_c_p_d_f_page.html#ad306db58fe3c358d12bb22c547347383',1,'FCPDFPage']]],
-  ['drawtextrect_85',['DrawTextRect',['../class_f_c_p_d_f_page.html#a263cb5d06d823486dee24f2b54d8bc8f',1,'FCPDFPage']]]
+  ['doautoresizewidth_81',['DoAutoResizeWidth',['../class_f_c_control.html#aa25495487b011af3e06327531449236e',1,'FCControl']]],
+  ['drawblackborderrect_82',['DrawBlackBorderRect',['../class_f_c_p_d_f_page.html#af600dbe6a1c4f3d79b1d44207194cd52',1,'FCPDFPage']]],
+  ['drawblackline_83',['DrawBlackLine',['../class_f_c_p_d_f_page.html#ac19583e6e175890f2cec016adc96326b',1,'FCPDFPage']]],
+  ['drawline_84',['DrawLine',['../class_f_c_p_d_f_page.html#a0d5d53f08dc03be0c1f3d8bc884d3a6b',1,'FCPDFPage']]],
+  ['drawstring_85',['DrawString',['../class_f_c_p_d_f_page.html#ad306db58fe3c358d12bb22c547347383',1,'FCPDFPage']]],
+  ['drawtextrect_86',['DrawTextRect',['../class_f_c_p_d_f_page.html#a263cb5d06d823486dee24f2b54d8bc8f',1,'FCPDFPage']]]
 ];

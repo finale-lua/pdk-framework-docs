@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
    </div>
   </td>
  </tr>
@@ -350,7 +350,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (<a cla
 <tr class="memdesc:a7aad9577f95921cb0b75852f41954460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance of <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> containing the text formatted as a Rich Text File (RTF). Note that the RTF specification represents text entirely with 8-bit ASCII characters, so you should use <a class="el" href="class_f_c_string.html#a47eab741bc102d5ccdb5aa2fdd116bf4" title="Returns a C-string UTF-8 version of the string.">FCString::GetUTF8String</a> or <a class="el" href="class_f_c_string.html#ae69a43f6e984545f566a435dad049d70" title="Returns a Lua version of the string in UTF-8 format.">FCString::GetLuaString</a> to write the contents to a file.  <a href="class_f_c_ctrl_text_editor.html#a7aad9577f95921cb0b75852f41954460">More...</a><br /></td></tr>
 <tr class="separator:a7aad9577f95921cb0b75852f41954460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a107e59af66a949584aeae5e357641d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a107e59af66a949584aeae5e357641d99">CreateEnigmaString</a> (const <a class="el" href="class_f_c_range.html">FCRange</a> *pRange=nullptr) const</td></tr>
-<tr class="memdesc:a107e59af66a949584aeae5e357641d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance of <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> containing the text with Enigma tags that represent the font formatting of the text in the control.  <a href="class_f_c_ctrl_text_editor.html#a107e59af66a949584aeae5e357641d99">More...</a><br /></td></tr>
+<tr class="memdesc:a107e59af66a949584aeae5e357641d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance of <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> containing the text with Enigma tags that represent the font formatting and style of the text in the control.  <a href="class_f_c_ctrl_text_editor.html#a107e59af66a949584aeae5e357641d99">More...</a><br /></td></tr>
 <tr class="separator:a107e59af66a949584aeae5e357641d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f19b3f67217ebcc26721e7c5298b9b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a0f19b3f67217ebcc26721e7c5298b9b2">SetRTFString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a0f19b3f67217ebcc26721e7c5298b9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the contents of the control from the input Rich Text Format string. Any previous text in the control is deleted. <a class="el" href="class_f_c_ctrl_text_editor.html#a03b022b5c107678b0184629c313e0849" title="Sets the control&#39;s Rich Text state. See comments at GetUseRichText for more information about this se...">SetUseRichText</a> is also set to true. Note that RTF is an ASCII format and encodes non-ASCII characters as escape sequences.  <a href="class_f_c_ctrl_text_editor.html#a0f19b3f67217ebcc26721e7c5298b9b2">More...</a><br /></td></tr>
@@ -362,7 +362,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (<a cla
 <tr class="memdesc:ade885738aa6b192d12e5583fefdb5971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font information at a specific 0-based index.  <a href="class_f_c_ctrl_text_editor.html#ade885738aa6b192d12e5583fefdb5971">More...</a><br /></td></tr>
 <tr class="separator:ade885738aa6b192d12e5583fefdb5971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605a1d0f1a466d2b318234d305a47dfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a605a1d0f1a466d2b318234d305a47dfb">SetFontInRange</a> (const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFont, const <a class="el" href="class_f_c_range.html">FCRange</a> *pRange)</td></tr>
-<tr class="memdesc:a605a1d0f1a466d2b318234d305a47dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font for a specified range of text in the control. For this to have an effect, the <a class="el" href="class_f_c_ctrl_text_editor.html#a03b022b5c107678b0184629c313e0849" title="Sets the control&#39;s Rich Text state. See comments at GetUseRichText for more information about this se...">SetUseRichText</a> option must be true.  <a href="class_f_c_ctrl_text_editor.html#a605a1d0f1a466d2b318234d305a47dfb">More...</a><br /></td></tr>
+<tr class="memdesc:a605a1d0f1a466d2b318234d305a47dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font for a specified range of text in the control.  <a href="class_f_c_ctrl_text_editor.html#a605a1d0f1a466d2b318234d305a47dfb">More...</a><br /></td></tr>
 <tr class="separator:a605a1d0f1a466d2b318234d305a47dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60777a903eaa2b78f7a96055ec5d78d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a60777a903eaa2b78f7a96055ec5d78d5">SetFontForSelection</a> (const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFont)</td></tr>
 <tr class="memdesc:a60777a903eaa2b78f7a96055ec5d78d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font for the currently selected range of text in the control.  <a href="class_f_c_ctrl_text_editor.html#a60777a903eaa2b78f7a96055ec5d78d5">More...</a><br /></td></tr>
@@ -401,7 +401,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (<a cla
 <tr class="memdesc:a03b022b5c107678b0184629c313e0849"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the control's Rich Text state. See comments at <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> for more information about this setting.  <a href="class_f_c_ctrl_text_editor.html#a03b022b5c107678b0184629c313e0849">More...</a><br /></td></tr>
 <tr class="separator:a03b022b5c107678b0184629c313e0849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a400c755882f5b62b634d6a2bfcdec5fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe">GetUseRichText</a> () const</td></tr>
-<tr class="memdesc:a400c755882f5b62b634d6a2bfcdec5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the control's Rich Text state. The control displays plain text or text with multiple fonts, styles, and sizes, based on this setting. If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is false, text copied into the control assumes the control's font setting (set with <a class="el" href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f" title="Sets the font information for the text of the control.">SetFont</a>). If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is true, text copied into the control retains its font, size, and effects.  <a href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe">More...</a><br /></td></tr>
+<tr class="memdesc:a400c755882f5b62b634d6a2bfcdec5fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the control's Rich Text state. The control displays plain text or text with multiple fonts, styles, and sizes, based on this setting. If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is <code>false</code>, text pasted into the control assumes the control's font setting (set with <a class="el" href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f" title="Sets the font information for the text of the control.">SetFont</a>). If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is <code>true</code>, text pasted into the control retains its font, size, and effects.  <a href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe">More...</a><br /></td></tr>
 <tr class="separator:a400c755882f5b62b634d6a2bfcdec5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae091b74af9558defa27d676b601587e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#ae091b74af9558defa27d676b601587e9">SetAutomaticEditing</a> (bool state)</td></tr>
 <tr class="memdesc:ae091b74af9558defa27d676b601587e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the control should use automatic editing features.  <a href="class_f_c_ctrl_text_editor.html#ae091b74af9558defa27d676b601587e9">More...</a><br /></td></tr>
@@ -475,9 +475,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetParent</b> (<a cla
 <tr class="memitem:a80dbe71b44ba03760f91ee862d6e3098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a80dbe71b44ba03760f91ee862d6e3098">ScrollLineIntoView</a> (int line)</td></tr>
 <tr class="memdesc:a80dbe71b44ba03760f91ee862d6e3098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scrolls the control so that the specified line comes into view.  <a href="class_f_c_ctrl_text_editor.html#a80dbe71b44ba03760f91ee862d6e3098">More...</a><br /></td></tr>
 <tr class="separator:a80dbe71b44ba03760f91ee862d6e3098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826d70ab29f57494725b6245e8195392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a826d70ab29f57494725b6245e8195392">GetCharacterAtIndex</a> (int pos) const</td></tr>
-<tr class="memdesc:a826d70ab29f57494725b6245e8195392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the UTF-16 code unit at the character position. If the code unit is part of a code point outside the Basic Multilingual Plane (BMP), this will only be half of a character. However, you can safely use this function to index into the text in the control from an instance <a class="el" href="class_f_c_range.html" title="Class that encapsulates a range (start, length)">FCRange</a> returned by the control.  <a href="class_f_c_ctrl_text_editor.html#a826d70ab29f57494725b6245e8195392">More...</a><br /></td></tr>
-<tr class="separator:a826d70ab29f57494725b6245e8195392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a163fa143cd03a3f93cc58f0da82d8c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a7a163fa143cd03a3f93cc58f0da82d8c">GetLineSpacing</a> () const</td></tr>
+<tr class="memdesc:a7a163fa143cd03a3f93cc58f0da82d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance in points between the bottom of one line and the top of the next.  <a href="class_f_c_ctrl_text_editor.html#a7a163fa143cd03a3f93cc58f0da82d8c">More...</a><br /></td></tr>
+<tr class="separator:a7a163fa143cd03a3f93cc58f0da82d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b7bae0862b03434c24675581f3cb0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#aa1b7bae0862b03434c24675581f3cb0a">SetLineSpacing</a> (double value)</td></tr>
+<tr class="memdesc:aa1b7bae0862b03434c24675581f3cb0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distance in points between the bottom of one line and the top of the next.  <a href="class_f_c_ctrl_text_editor.html#aa1b7bae0862b03434c24675581f3cb0a">More...</a><br /></td></tr>
+<tr class="separator:aa1b7bae0862b03434c24675581f3cb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6719223d67ec822a6f4e0d5334a2c5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#ad6719223d67ec822a6f4e0d5334a2c5f">CreateCharacterAtIndex</a> (int pos) const</td></tr>
+<tr class="memdesc:ad6719223d67ec822a6f4e0d5334a2c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Unicode character at the given index. If the character at the given index is part of a surrogate pair, it returns the full Unicode code point even if the index points to the low surrogate.  <a href="class_f_c_ctrl_text_editor.html#ad6719223d67ec822a6f4e0d5334a2c5f">More...</a><br /></td></tr>
+<tr class="separator:ad6719223d67ec822a6f4e0d5334a2c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8514e7341b853889c6679eced2a2d291"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_ctrl_text_editor.html#a8514e7341b853889c6679eced2a2d291">TextToClipboard</a> () const</td></tr>
 <tr class="memdesc:a8514e7341b853889c6679eced2a2d291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the formatted text to the clipboard. This function differs from <a class="el" href="class_f_c_u_i.html#a1a87597779f2130f9209c4cc357a2bdf" title="Copies text to the operating system&#39;s clipboard.">FCUI::TextToClipboard</a> in that it includes all the font, color, and other text formatting in the control along with the text.  <a href="class_f_c_ctrl_text_editor.html#a8514e7341b853889c6679eced2a2d291">More...</a><br /></td></tr>
 <tr class="separator:a8514e7341b853889c6679eced2a2d291"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,7 +511,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>WindowExists</b> () c
 <tr class="separator:a5d464b0bc95befd4c2089d0c3183a26c inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb915adc5498921403e41348d8285958 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top"><a id="aeb915adc5498921403e41348d8285958" name="aeb915adc5498921403e41348d8285958"></a>
 HWND&#160;</td><td class="memItemRight" valign="bottom"><b>_GetWinControlHandle</b> () const</td></tr>
-<tr class="memdesc:aeb915adc5498921403e41348d8285958 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Returns to handle for the control. <br /></td></tr>
+<tr class="memdesc:aeb915adc5498921403e41348d8285958 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Returns the handle for the control. <br /></td></tr>
 <tr class="separator:aeb915adc5498921403e41348d8285958 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704664187dd7ce7e202bf8a524f12d31 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a704664187dd7ce7e202bf8a524f12d31">Repaint</a> ()</td></tr>
 <tr class="memdesc:a704664187dd7ce7e202bf8a524f12d31 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force a visual update of the control.  <a href="class_f_c_control.html#a704664187dd7ce7e202bf8a524f12d31">More...</a><br /></td></tr>
@@ -547,12 +553,27 @@ HWND&#160;</td><td class="memItemRight" valign="bottom"><b>_GetWinControlHandle<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextAndResize</b> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:af960a6f2f2dc2a4d60d05632258a144d inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cocoa only: Sets the text and resizes the view inside a NSScrollView. <br /></td></tr>
 <tr class="separator:af960a6f2f2dc2a4d60d05632258a144d inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f81d4fa0d7622b6c060501584f0b68 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a54f81d4fa0d7622b6c060501584f0b68">SetAutoResizeWidth</a> (bool state)</td></tr>
-<tr class="memdesc:a54f81d4fa0d7622b6c060501584f0b68 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the autoresize width option for the control. This is supported for buttons and text fields. Other types of controls should not set this value true.  <a href="class_f_c_control.html#a54f81d4fa0d7622b6c060501584f0b68">More...</a><br /></td></tr>
-<tr class="separator:a54f81d4fa0d7622b6c060501584f0b68 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbdc47c64ad9b09348893464afd1f03 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a5fbdc47c64ad9b09348893464afd1f03">GetAutoResizeWidth</a> () const</td></tr>
-<tr class="memdesc:a5fbdc47c64ad9b09348893464afd1f03 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns he autoresize width option for the control.  <a href="class_f_c_control.html#a5fbdc47c64ad9b09348893464afd1f03">More...</a><br /></td></tr>
-<tr class="separator:a5fbdc47c64ad9b09348893464afd1f03 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19ff3445409c0d7764782713e5a9e97 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97">AssureWidthForText</a> ()</td></tr>
+<tr class="memdesc:ad19ff3445409c0d7764782713e5a9e97 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lengthens the width of the control to the extent necessary to display all the text in the control.  <a href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97">More...</a><br /></td></tr>
+<tr class="separator:ad19ff3445409c0d7764782713e5a9e97 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7b3f495df57c005f8f5999f24cadd5 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a3f7b3f495df57c005f8f5999f24cadd5">AssureNoHorizontalOverlap</a> (const <a class="el" href="class_f_c_control.html">FCControl</a> &amp;control, int padding)</td></tr>
+<tr class="memdesc:a3f7b3f495df57c005f8f5999f24cadd5 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shift the control right as needed to the extent necessary so that its <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> position will accommodate the width of the specified control plus the specified padding. You can call this function with more than one reference control.  <a href="class_f_c_control.html#a3f7b3f495df57c005f8f5999f24cadd5">More...</a><br /></td></tr>
+<tr class="separator:a3f7b3f495df57c005f8f5999f24cadd5 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678e939a2e1ec6d6e307bcdadc812e57 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a678e939a2e1ec6d6e307bcdadc812e57">HorizontallyAlignLeftWith</a> (const <a class="el" href="class_f_c_control.html">FCControl</a> *pControl, double offset=0)</td></tr>
+<tr class="memdesc:a678e939a2e1ec6d6e307bcdadc812e57 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a control with which to horizontally align left. All controls set to align with this control align at the location of the one with the largest <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> value. This function replaces any previous alignment options.  <a href="class_f_c_control.html#a678e939a2e1ec6d6e307bcdadc812e57">More...</a><br /></td></tr>
+<tr class="separator:a678e939a2e1ec6d6e307bcdadc812e57 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3aeea7c71b7aa805e5c617fede9d7c inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a7d3aeea7c71b7aa805e5c617fede9d7c">HorizontallyAlignRightWith</a> (const <a class="el" href="class_f_c_control.html">FCControl</a> *pControl, double offset=0)</td></tr>
+<tr class="memdesc:a7d3aeea7c71b7aa805e5c617fede9d7c inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a control with which to horizontally align right. All controls set to align with this control align at the location of the one with the largest right value (<a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> + <a class="el" href="class_f_c_control.html#a957b377ddbcdd3283b9f96a2b6ea227c" title="Returns the width of the control.">GetWidth</a>). This function replaces any previous alignment options.  <a href="class_f_c_control.html#a7d3aeea7c71b7aa805e5c617fede9d7c">More...</a><br /></td></tr>
+<tr class="separator:a7d3aeea7c71b7aa805e5c617fede9d7c inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f4356bd0012fa0cd38858db2b439b6 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a87f4356bd0012fa0cd38858db2b439b6">HorizontallyAlignRightWithFurthest</a> (double offset=0)</td></tr>
+<tr class="memdesc:a87f4356bd0012fa0cd38858db2b439b6 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies that this control should align with the control that extends furthest to the right. Calling this function replaces any other control that has been set for horizontal alignment.  <a href="class_f_c_control.html#a87f4356bd0012fa0cd38858db2b439b6">More...</a><br /></td></tr>
+<tr class="separator:a87f4356bd0012fa0cd38858db2b439b6 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25495487b011af3e06327531449236e inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#aa25495487b011af3e06327531449236e">DoAutoResizeWidth</a> (std::optional&lt; double &gt; minimumwidth=std::nullopt)</td></tr>
+<tr class="memdesc:aa25495487b011af3e06327531449236e inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the autoresize width option for the control. When this value is set, the control calls <a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97" title="Lengthens the width of the control to the extent necessary to display all the text in the control.">AssureWidthForText</a> automatically when the window initializes and every time <a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead" title="Sets the text for the control.">SetText</a> is called while the window is running.  <a href="class_f_c_control.html#aa25495487b011af3e06327531449236e">More...</a><br /></td></tr>
+<tr class="separator:aa25495487b011af3e06327531449236e inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9689f0802f9bb4addf5f44942f3f028 inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#ae9689f0802f9bb4addf5f44942f3f028">StretchToAlignWithRight</a> ()</td></tr>
+<tr class="memdesc:ae9689f0802f9bb4addf5f44942f3f028 inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a control to stretch its width to align with the furthest right control.  <a href="class_f_c_control.html#ae9689f0802f9bb4addf5f44942f3f028">More...</a><br /></td></tr>
+<tr class="separator:ae9689f0802f9bb4addf5f44942f3f028 inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881bbeaec570ff344b37bb00a7388ead inherit pub_methods_class_f_c_control"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead">SetText</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a881bbeaec570ff344b37bb00a7388ead inherit pub_methods_class_f_c_control"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text for the control.  <a href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead">More...</a><br /></td></tr>
 <tr class="separator:a881bbeaec570ff344b37bb00a7388ead inherit pub_methods_class_f_c_control"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -903,6 +924,36 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ad6719223d67ec822a6f4e0d5334a2c5f" name="ad6719223d67ec822a6f4e0d5334a2c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6719223d67ec822a6f4e0d5334a2c5f">&#9670;&nbsp;</a></span>CreateCharacterAtIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_string.html">FCString</a> * FCCtrlTextEditor::CreateCharacterAtIndex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Unicode character at the given index. If the character at the given index is part of a surrogate pair, it returns the full Unicode code point even if the index points to the low surrogate. </p>
+<dl class="section note"><dt>Note</dt><dd>The most efficient way to iterate the characters is to start from 0 or from the start position of an instance of <a class="el" href="class_f_c_range.html" title="Class that encapsulates a range (start, length)">FCRange</a> returned by the control. Then increment your index by the length of the string returned using <a class="el" href="class_f_c_string.html#a22411b4ae557606b2eea1a255f648e5f" title="Returns the length of the string.">FCString::GetLength</a>.</dd></dl>
+<p>Use <a class="el" href="class_f_c_string.html#a92a84349d5f50caf8284fded14b5d855" title="Appends another string object to the string.">FCString::AppendString</a> to build up a string of characters returned by this function.</p>
+<p >Lua-supported (0.71)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>0-based index of the character inside the text of the control. one when the character is outside the Basic Multilingual Plane (BMP). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>character string or NULL if not found or the window is not running or other error. </dd></dl>
+
+</div>
+</div>
 <a id="a107e59af66a949584aeae5e357641d99" name="a107e59af66a949584aeae5e357641d99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a107e59af66a949584aeae5e357641d99">&#9670;&nbsp;</a></span>CreateEnigmaString()</h2>
 
@@ -919,8 +970,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns an instance of <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> containing the text with Enigma tags that represent the font formatting of the text in the control. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This function only returns font, size, effects, and text style Enigma tags. If you used <a class="el" href="class_f_c_ctrl_text_editor.html#a8f2bce6cc35071f8f8e7ed292f1a0e08" title="Sets the contents of the control based on the input Enigma string. Any previous text in the control i...">SetEnigmaString</a> to set the string, you will have lost any other Enigma tags that were in the string unless you took steps to preserve them. See the comments at <a class="el" href="class_f_c_ctrl_text_editor.html#a8f2bce6cc35071f8f8e7ed292f1a0e08" title="Sets the contents of the control based on the input Enigma string. Any previous text in the control i...">SetEnigmaString</a> for more information.</dd></dl>
+<p>Returns an instance of <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> containing the text with Enigma tags that represent the font formatting and style of the text in the control. </p>
+<dl class="section note"><dt>Note</dt><dd>When the window closes, <a class="el" href="class_f_c_ctrl_text_editor.html" title="UI class that handles a multiline edit control for viewing or modifying text (optionally formatted wi...">FCCtrlTextEditor</a> makes a copy of its contents as an enigma string to allow callers to retrieve it. Creating the enigma string is compute-intensive, especially for long text on Windows. If your application does not require the enigma string, it is recommended to clear the text out of the control in a <a class="el" href="class_f_c_custom_lua_window.html#a95064c4c4c43fc2019fec781ff51812f" title="Virtual handler method that is called when a window is closing. The Lua handler is called first.">FCCustomLuaWindow::CloseWindow</a> handler as the window closes.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_ctrl_text_editor.html#a107e59af66a949584aeae5e357641d99" title="Returns an instance of FCString containing the text with Enigma tags that represent the font formatti...">CreateEnigmaString</a> only returns font, size, effects, and text style Enigma tags. If you used <a class="el" href="class_f_c_ctrl_text_editor.html#a8f2bce6cc35071f8f8e7ed292f1a0e08" title="Sets the contents of the control based on the input Enigma string. Any previous text in the control i...">SetEnigmaString</a> to set the string, you will have lost any other Enigma tags that were in the string unless you took steps to preserve them. See the comments at <a class="el" href="class_f_c_ctrl_text_editor.html#a8f2bce6cc35071f8f8e7ed292f1a0e08" title="Sets the contents of the control based on the input Enigma string. Any previous text in the control i...">SetEnigmaString</a> for more information.</dd></dl>
 <p>If the window is not running, the <code>pRange</code> parameter must be NULL.</p>
 <p >C++ callers must dispose of the result, either with delete or smart pointers.</p>
 <p >Lua-supported (0.68).</p>
@@ -1195,34 +1247,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a826d70ab29f57494725b6245e8195392" name="a826d70ab29f57494725b6245e8195392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a826d70ab29f57494725b6245e8195392">&#9670;&nbsp;</a></span>GetCharacterAtIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FCCtrlTextEditor::GetCharacterAtIndex </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the UTF-16 code unit at the character position. If the code unit is part of a code point outside the Basic Multilingual Plane (BMP), this will only be half of a character. However, you can safely use this function to index into the text in the control from an instance <a class="el" href="class_f_c_range.html" title="Class that encapsulates a range (start, length)">FCRange</a> returned by the control. </p>
-<p >Lua-supported (0.68)</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pos</td><td>0-based position of the character inside the text of the control. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>16-bit code unit or -1 if not found or the window is not running. </dd></dl>
-
-</div>
-</div>
 <a id="a0c5936fff9ed434311d6cbca8b83a046" name="a0c5936fff9ed434311d6cbca8b83a046"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c5936fff9ed434311d6cbca8b83a046">&#9670;&nbsp;</a></span>GetConvertTabsToSpaces()</h2>
 
@@ -1384,6 +1408,28 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if found, false if the window is not running or the position is out of range. </dd></dl>
+
+</div>
+</div>
+<a id="a7a163fa143cd03a3f93cc58f0da82d8c" name="a7a163fa143cd03a3f93cc58f0da82d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a163fa143cd03a3f93cc58f0da82d8c">&#9670;&nbsp;</a></span>GetLineSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double FCCtrlTextEditor::GetLineSpacing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the distance in points between the bottom of one line and the top of the next. </p>
+<p >See comments at <a class="el" href="class_f_c_ctrl_text_editor.html#aa1b7bae0862b03434c24675581f3cb0a" title="Sets the distance in points between the bottom of one line and the top of the next.">SetLineSpacing</a> for more information.</p>
+<p >Lua-supported (0.71)</p>
+<dl class="section return"><dt>Returns</dt><dd>the line spacing value in points (72dpi). </dd></dl>
 
 </div>
 </div>
@@ -1616,8 +1662,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the control's Rich Text state. The control displays plain text or text with multiple fonts, styles, and sizes, based on this setting. If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is false, text copied into the control assumes the control's font setting (set with <a class="el" href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f" title="Sets the font information for the text of the control.">SetFont</a>). If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is true, text copied into the control retains its font, size, and effects. </p>
-<p >The default is <code>true</code>.</p>
+<p>Gets the control's Rich Text state. The control displays plain text or text with multiple fonts, styles, and sizes, based on this setting. If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is <code>false</code>, text pasted into the control assumes the control's font setting (set with <a class="el" href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f" title="Sets the font information for the text of the control.">SetFont</a>). If <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is <code>true</code>, text pasted into the control retains its font, size, and effects. </p>
+<p >Beyond this, the restrictions on formatting placed on text when this value is <code>false</code> vary signficantly between Windows and macOS. Windows is generally much more restrictive, preventing any changes in color, font, or line spacing.</p>
+<p >The default value is <code>true</code>.</p>
 <p >Lua-supported (0.68). </p>
 
 </div>
@@ -2408,7 +2455,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the font for a specified range of text in the control. For this to have an effect, the <a class="el" href="class_f_c_ctrl_text_editor.html#a03b022b5c107678b0184629c313e0849" title="Sets the control&#39;s Rich Text state. See comments at GetUseRichText for more information about this se...">SetUseRichText</a> option must be true. </p>
+<p>Sets the font for a specified range of text in the control. </p>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2552,6 +2599,35 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if success, false if the window is not active, range is zero-length, or other error </dd></dl>
+
+</div>
+</div>
+<a id="aa1b7bae0862b03434c24675581f3cb0a" name="aa1b7bae0862b03434c24675581f3cb0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1b7bae0862b03434c24675581f3cb0a">&#9670;&nbsp;</a></span>SetLineSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCtrlTextEditor::SetLineSpacing </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the distance in points between the bottom of one line and the top of the next. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Windows and macOS treat this value differently. On Windows it is the distance between the <em>top</em> of one line to the top of the next. On macOS it is the distance between the <em>bottom</em> of one line and the top of next. Values on macOS will need to be considerably smaller than on Windows to achieve a similar look-and-feel.</dd></dl>
+<p>On Windows, <a class="el" href="class_f_c_ctrl_text_editor.html#aa1b7bae0862b03434c24675581f3cb0a" title="Sets the distance in points between the bottom of one line and the top of the next.">SetLineSpacing</a> has no effect if <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> is <code>false</code>.</p>
+<p >Lua-supported (0.71)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>line spacing value in points (72 dpi). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2742,7 +2818,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the control's Rich Text state. See comments at <a class="el" href="class_f_c_ctrl_text_editor.html#a400c755882f5b62b634d6a2bfcdec5fe" title="Gets the control&#39;s Rich Text state. The control displays plain text or text with multiple fonts,...">GetUseRichText</a> for more information about this setting. </p>
-<p >It is a good idea always to set this value explicitly. Windows and macOS may not initialize the controls with the same value. However, if you call <a class="el" href="class_f_c_ctrl_text_editor.html#a8f2bce6cc35071f8f8e7ed292f1a0e08" title="Sets the contents of the control based on the input Enigma string. Any previous text in the control i...">SetEnigmaString</a>, then <a class="el" href="class_f_c_ctrl_text_editor.html#a03b022b5c107678b0184629c313e0849" title="Sets the control&#39;s Rich Text state. See comments at GetUseRichText for more information about this se...">SetUseRichText</a> is automatically set to true as well.</p>
+<p >The default value is <code>true</code>.</p>
 <p >Lua-supported (0.68). </p>
 
 </div>
@@ -2794,7 +2870,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 12 2024 11:54:20 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Feb 9 2024 18:49:49 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
    </div>
   </td>
  </tr>
@@ -287,8 +287,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a123888498bed662272f5fd8c58d45a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops execution and terminates the Lua state.  <a href="class_f_c_lua_script_item.html#a123888498bed662272f5fd8c58d45a33">More...</a><br /></td></tr>
 <tr class="separator:a123888498bed662272f5fd8c58d45a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89e448496487e620be2e41d8ae50076"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">GetFilePath</a> () const</td></tr>
-<tr class="memdesc:aa89e448496487e620be2e41d8ae50076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fully-qualified file path for the script.  <a href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">More...</a><br /></td></tr>
+<tr class="memdesc:aa89e448496487e620be2e41d8ae50076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the fully-qualified file path for the script or empty string if none.  <a href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076">More...</a><br /></td></tr>
 <tr class="separator:aa89e448496487e620be2e41d8ae50076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2633b643fe798b0ea48c6996e4179b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#afa2633b643fe798b0ea48c6996e4179b">GetFileName</a> () const</td></tr>
+<tr class="memdesc:afa2633b643fe798b0ea48c6996e4179b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file name of the script or empty string if none.  <a href="class_f_c_lua_script_item.html#afa2633b643fe798b0ea48c6996e4179b">More...</a><br /></td></tr>
+<tr class="separator:afa2633b643fe798b0ea48c6996e4179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a47dae8dd92e5b066ffe19249c5c1b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_lua_script_item.html#ac2a47dae8dd92e5b066ffe19249c5c1b">GetOptionalScriptText</a> () const</td></tr>
 <tr class="memdesc:ac2a47dae8dd92e5b066ffe19249c5c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the optional script text.  <a href="class_f_c_lua_script_item.html#ac2a47dae8dd92e5b066ffe19249c5c1b">More...</a><br /></td></tr>
 <tr class="separator:ac2a47dae8dd92e5b066ffe19249c5c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -765,6 +768,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="afa2633b643fe798b0ea48c6996e4179b" name="afa2633b643fe798b0ea48c6996e4179b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa2633b643fe798b0ea48c6996e4179b">&#9670;&nbsp;</a></span>GetFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * FCLuaScriptItem::GetFileName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the file name of the script or empty string if none. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>This value is valid even for items returned by <b>finenv.CreateLuaScriptItems</b>. It allows you to identify a configured script without depending on its menu text. The menu text may vary by locale, so you should use this instead.</dd></dl>
+<p>Lua-supported (also as read-only property) (0.71). </p>
+
+</div>
+</div>
 <a id="aa89e448496487e620be2e41d8ae50076" name="aa89e448496487e620be2e41d8ae50076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa89e448496487e620be2e41d8ae50076">&#9670;&nbsp;</a></span>GetFilePath()</h2>
 
@@ -788,7 +820,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the fully-qualified file path for the script. </p>
+<p>Returns the fully-qualified file path for the script or empty string if none. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Only items returned by <b>finenv.CreateLuaScriptItemsFromFilePath</b> have a file path. Items returned by <b>finenv.CreateLuaScriptItems</b> use <a class="el" href="class_f_c_lua_script_item.html#ac7a58dc7d574b171c892fc31a74afd0b" title="Returns the executable index for this script.">GetExecutableIndex</a>.</dd></dl>
 <p>Lua-supported (also as read-only property) (0.64). </p>
 
@@ -875,7 +907,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the optional script text. </p>
-<p >If this value is non-NULL, it is executed instead of the contents of <a class="el" href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076" title="Returns the fully-qualified file path for the script.">GetFilePath</a>. The file path may still used for informational display or security purposes by RGP Lua.</p>
+<p >If this value is non-NULL, it is executed instead of the contents of <a class="el" href="class_f_c_lua_script_item.html#aa89e448496487e620be2e41d8ae50076" title="Returns the fully-qualified file path for the script or empty string if none.">GetFilePath</a>. The file path may still used for informational display or security purposes by RGP Lua.</p>
 <p >You can set this value with an optional second parameter to <b>finenv.CreateLuaScriptItemsFromFilePath</b> as follows.</p>
 <div class="fragment"><div class="line">local script_text = &quot;print(&#39;hello world&#39;)&quot;</div>
 <div class="line">local script_items = finenv.CreateLuaScriptItemsFromFilePath(&quot;hello_world.lua&quot;, script_text)</div>
@@ -1115,11 +1147,11 @@ Additional Inherited Members</h2></td></tr>
 <p >The current instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> is passed to Lua as the first parameter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">success</td><td>true if the script ran without error, otherwise false </td></tr>
-    <tr><td class="paramname">msg</td><td>the message returned by the script </td></tr>
+    <tr><td class="paramname">success</td><td>true if the script ran without error, otherwise false. </td></tr>
+    <tr><td class="paramname">msg</td><td>the message returned by the script or NULL if none. </td></tr>
     <tr><td class="paramname">msgtype</td><td>a code inidicating the type of message being returned. This meaning of this value is determined by the Lua connector. With RGP Lua, it is one of the <code>finenv.MessageResultType</code> values. </td></tr>
     <tr><td class="paramname">linenumber</td><td>if Lua was executed, the top-level line number where execution stopped, otherwise 0. </td></tr>
-    <tr><td class="paramname">source</td><td>if Lua was executed, the name of the code block where executions stopped, otherwise NULL. It will also be NULL if there was a syntax error processing the string. If non NULL, this should match either the file path or the optional script text, if it exist. </td></tr>
+    <tr><td class="paramname">source</td><td>if there was an error, the name of the code block where executions stopped, otherwise NULL. If non NULL, this should match either the file path or the optional script text, if it exists. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1565,7 +1597,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 12 2024 11:54:21 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Feb 9 2024 18:49:49 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
