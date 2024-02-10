@@ -30,5 +30,8 @@ var searchData=
   ['hassamenotes_27',['HasSameNotes',['../class_f_c_note_entry.html#a085121656d37ee63fbd1f443f03fe0f2',1,'FCNoteEntry']]],
   ['hasstaffvalue_28',['HasStaffValue',['../class_____f_c_inci_other.html#aaf11e22880a50461ec504f9b7af9f081',1,'__FCInciOther::HasStaffValue()'],['../class_f_c_separate_placement.html#a72699b40292e010196387ff5a5d9b4d0',1,'FCSeparatePlacement::HasStaffValue()'],['../class_f_c_expression.html#a5c2aa8b9e87c282ab2f5dfc3c1a17fdd',1,'FCExpression::HasStaffValue()']]],
   ['hasunicodesupport_29',['HasUnicodeSupport',['../class_f_c_raw_text.html#a31a954265492fa7b7d1b3b84666d1aad',1,'FCRawText']]],
-  ['hide_30',['Hide',['../class_____f_c_user_window.html#a21afc05abc75a41190c928dc50e093ba',1,'__FCUserWindow']]]
+  ['hide_30',['Hide',['../class_____f_c_user_window.html#a21afc05abc75a41190c928dc50e093ba',1,'__FCUserWindow']]],
+  ['horizontallyalignleftwith_31',['HorizontallyAlignLeftWith',['../class_f_c_control.html#a678e939a2e1ec6d6e307bcdadc812e57',1,'FCControl']]],
+  ['horizontallyalignrightwith_32',['HorizontallyAlignRightWith',['../class_f_c_control.html#a7d3aeea7c71b7aa805e5c617fede9d7c',1,'FCControl']]],
+  ['horizontallyalignrightwithfurthest_33',['HorizontallyAlignRightWithFurthest',['../class_f_c_control.html#a87f4356bd0012fa0cd38858db2b439b6',1,'FCControl']]]
 ];

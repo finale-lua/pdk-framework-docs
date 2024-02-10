@@ -32,5 +32,8 @@ var searchData=
   ['hasunicodesupport_29',['HasUnicodeSupport',['../class_f_c_raw_text.html#a31a954265492fa7b7d1b3b84666d1aad',1,'FCRawText']]],
   ['hide_30',['Hide',['../class_____f_c_user_window.html#a21afc05abc75a41190c928dc50e093ba',1,'__FCUserWindow']]],
   ['horiz_5falignment_31',['HORIZ_ALIGNMENT',['../class_f_c_category_def.html#aefcef15fe7c36efac62a5747ade0dcb2',1,'FCCategoryDef']]],
-  ['horiz_5fjustification_32',['HORIZ_JUSTIFICATION',['../class_f_c_category_def.html#a33bf884fc291564f5e7b31b8c87963ec',1,'FCCategoryDef']]]
+  ['horiz_5fjustification_32',['HORIZ_JUSTIFICATION',['../class_f_c_category_def.html#a33bf884fc291564f5e7b31b8c87963ec',1,'FCCategoryDef']]],
+  ['horizontallyalignleftwith_33',['HorizontallyAlignLeftWith',['../class_f_c_control.html#a678e939a2e1ec6d6e307bcdadc812e57',1,'FCControl']]],
+  ['horizontallyalignrightwith_34',['HorizontallyAlignRightWith',['../class_f_c_control.html#a7d3aeea7c71b7aa805e5c617fede9d7c',1,'FCControl']]],
+  ['horizontallyalignrightwithfurthest_35',['HorizontallyAlignRightWithFurthest',['../class_f_c_control.html#a87f4356bd0012fa0cd38858db2b439b6',1,'FCControl']]]
 ];

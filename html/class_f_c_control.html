@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.70</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
    </div>
   </td>
  </tr>
@@ -312,7 +312,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>WindowExists</b> () c
 <tr class="separator:a5d464b0bc95befd4c2089d0c3183a26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb915adc5498921403e41348d8285958"><td class="memItemLeft" align="right" valign="top"><a id="aeb915adc5498921403e41348d8285958" name="aeb915adc5498921403e41348d8285958"></a>
 HWND&#160;</td><td class="memItemRight" valign="bottom"><b>_GetWinControlHandle</b> () const</td></tr>
-<tr class="memdesc:aeb915adc5498921403e41348d8285958"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Returns to handle for the control. <br /></td></tr>
+<tr class="memdesc:aeb915adc5498921403e41348d8285958"><td class="mdescLeft">&#160;</td><td class="mdescRight">For internal use only. Returns the handle for the control. <br /></td></tr>
 <tr class="separator:aeb915adc5498921403e41348d8285958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704664187dd7ce7e202bf8a524f12d31"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a704664187dd7ce7e202bf8a524f12d31">Repaint</a> ()</td></tr>
 <tr class="memdesc:a704664187dd7ce7e202bf8a524f12d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force a visual update of the control.  <a href="class_f_c_control.html#a704664187dd7ce7e202bf8a524f12d31">More...</a><br /></td></tr>
@@ -354,6 +354,27 @@ HWND&#160;</td><td class="memItemRight" valign="bottom"><b>_GetWinControlHandle<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextAndResize</b> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:af960a6f2f2dc2a4d60d05632258a144d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cocoa only: Sets the text and resizes the view inside a NSScrollView. <br /></td></tr>
 <tr class="separator:af960a6f2f2dc2a4d60d05632258a144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19ff3445409c0d7764782713e5a9e97"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97">AssureWidthForText</a> ()</td></tr>
+<tr class="memdesc:ad19ff3445409c0d7764782713e5a9e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lengthens the width of the control to the extent necessary to display all the text in the control.  <a href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97">More...</a><br /></td></tr>
+<tr class="separator:ad19ff3445409c0d7764782713e5a9e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f7b3f495df57c005f8f5999f24cadd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a3f7b3f495df57c005f8f5999f24cadd5">AssureNoHorizontalOverlap</a> (const <a class="el" href="class_f_c_control.html">FCControl</a> &amp;control, int padding)</td></tr>
+<tr class="memdesc:a3f7b3f495df57c005f8f5999f24cadd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shift the control right as needed to the extent necessary so that its <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> position will accommodate the width of the specified control plus the specified padding. You can call this function with more than one reference control.  <a href="class_f_c_control.html#a3f7b3f495df57c005f8f5999f24cadd5">More...</a><br /></td></tr>
+<tr class="separator:a3f7b3f495df57c005f8f5999f24cadd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678e939a2e1ec6d6e307bcdadc812e57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a678e939a2e1ec6d6e307bcdadc812e57">HorizontallyAlignLeftWith</a> (const <a class="el" href="class_f_c_control.html">FCControl</a> *pControl, double offset=0)</td></tr>
+<tr class="memdesc:a678e939a2e1ec6d6e307bcdadc812e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a control with which to horizontally align left. All controls set to align with this control align at the location of the one with the largest <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> value. This function replaces any previous alignment options.  <a href="class_f_c_control.html#a678e939a2e1ec6d6e307bcdadc812e57">More...</a><br /></td></tr>
+<tr class="separator:a678e939a2e1ec6d6e307bcdadc812e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3aeea7c71b7aa805e5c617fede9d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a7d3aeea7c71b7aa805e5c617fede9d7c">HorizontallyAlignRightWith</a> (const <a class="el" href="class_f_c_control.html">FCControl</a> *pControl, double offset=0)</td></tr>
+<tr class="memdesc:a7d3aeea7c71b7aa805e5c617fede9d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a control with which to horizontally align right. All controls set to align with this control align at the location of the one with the largest right value (<a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> + <a class="el" href="class_f_c_control.html#a957b377ddbcdd3283b9f96a2b6ea227c" title="Returns the width of the control.">GetWidth</a>). This function replaces any previous alignment options.  <a href="class_f_c_control.html#a7d3aeea7c71b7aa805e5c617fede9d7c">More...</a><br /></td></tr>
+<tr class="separator:a7d3aeea7c71b7aa805e5c617fede9d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f4356bd0012fa0cd38858db2b439b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a87f4356bd0012fa0cd38858db2b439b6">HorizontallyAlignRightWithFurthest</a> (double offset=0)</td></tr>
+<tr class="memdesc:a87f4356bd0012fa0cd38858db2b439b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies that this control should align with the control that extends furthest to the right. Calling this function replaces any other control that has been set for horizontal alignment.  <a href="class_f_c_control.html#a87f4356bd0012fa0cd38858db2b439b6">More...</a><br /></td></tr>
+<tr class="separator:a87f4356bd0012fa0cd38858db2b439b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25495487b011af3e06327531449236e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#aa25495487b011af3e06327531449236e">DoAutoResizeWidth</a> (std::optional&lt; double &gt; minimumwidth=std::nullopt)</td></tr>
+<tr class="memdesc:aa25495487b011af3e06327531449236e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the autoresize width option for the control. When this value is set, the control calls <a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97" title="Lengthens the width of the control to the extent necessary to display all the text in the control.">AssureWidthForText</a> automatically when the window initializes and every time <a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead" title="Sets the text for the control.">SetText</a> is called while the window is running.  <a href="class_f_c_control.html#aa25495487b011af3e06327531449236e">More...</a><br /></td></tr>
+<tr class="separator:aa25495487b011af3e06327531449236e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9689f0802f9bb4addf5f44942f3f028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#ae9689f0802f9bb4addf5f44942f3f028">StretchToAlignWithRight</a> ()</td></tr>
+<tr class="memdesc:ae9689f0802f9bb4addf5f44942f3f028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a control to stretch its width to align with the furthest right control.  <a href="class_f_c_control.html#ae9689f0802f9bb4addf5f44942f3f028">More...</a><br /></td></tr>
+<tr class="separator:ae9689f0802f9bb4addf5f44942f3f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881bbeaec570ff344b37bb00a7388ead"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead">SetText</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a881bbeaec570ff344b37bb00a7388ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text for the control.  <a href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead">More...</a><br /></td></tr>
 <tr class="separator:a881bbeaec570ff344b37bb00a7388ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,8 +648,8 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <p><b>Example</b> </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_f_c_ctrl_edit.html">FCCtrlEdit</a>(twobyte <span class="keywordtype">id</span>) : <a class="code hl_class" href="class_f_c_control.html">FCControl</a>(id, this) <span class="comment">// constructor for FCCtrlEdit</span></div>
 <div class="line">{}</div>
-<div class="ttc" id="aclass_f_c_control_html"><div class="ttname"><a href="class_f_c_control.html">FCControl</a></div><div class="ttdoc">Base class for all UI controls in a dialog.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:1471</div></div>
-<div class="ttc" id="aclass_f_c_ctrl_edit_html"><div class="ttname"><a href="class_f_c_ctrl_edit.html">FCCtrlEdit</a></div><div class="ttdoc">Class that handles edit controls.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:2380</div></div>
+<div class="ttc" id="aclass_f_c_control_html"><div class="ttname"><a href="class_f_c_control.html">FCControl</a></div><div class="ttdoc">Base class for all UI controls in a dialog.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:1476</div></div>
+<div class="ttc" id="aclass_f_c_ctrl_edit_html"><div class="ttname"><a href="class_f_c_ctrl_edit.html">FCCtrlEdit</a></div><div class="ttdoc">Class that handles edit controls.</div><div class="ttdef"><b>Definition:</b> ff_dialogs.h:2650</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -667,6 +688,97 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f7b3f495df57c005f8f5999f24cadd5" name="a3f7b3f495df57c005f8f5999f24cadd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f7b3f495df57c005f8f5999f24cadd5">&#9670;&nbsp;</a></span>AssureNoHorizontalOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::AssureNoHorizontalOverlap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_control.html">FCControl</a> &amp;&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>padding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shift the control right as needed to the extent necessary so that its <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> position will accommodate the width of the specified control plus the specified padding. You can call this function with more than one reference control. </p>
+<p ><a class="el" href="class_f_c_control.html#a3f7b3f495df57c005f8f5999f24cadd5" title="Shift the control right as needed to the extent necessary so that its GetLeft position will accommoda...">AssureNoHorizontalOverlap</a> never reduces the <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> position. It either leaves it alone or increases it as needed.</p>
+<p >To have an effect, this function must be called before the window is running, It does not work with buttons created using <a class="el" href="class_f_c_custom_window.html#ad6db94d813383ce0d28a370856e44704" title="Creates an &quot;Ok&quot; push button, with default positioning and appearance/behaviour.">FCCustomWindow::CreateOkButton</a> or <a class="el" href="class_f_c_custom_window.html#aca8c5af5683a1e22c8531e59371c56f3" title="Creates a &quot;Cancel&quot; push button, with default positioning and appearance/behaviour.">FCCustomWindow::CreateCancelButton</a>.</p>
+<p >Lua-supported (0.71).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control</td><td>the reference control from which to assure no horizontal overlap </td></tr>
+    <tr><td class="paramname">padding</td><td>additional padding to assure exists between the reference control and this control </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad19ff3445409c0d7764782713e5a9e97" name="ad19ff3445409c0d7764782713e5a9e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19ff3445409c0d7764782713e5a9e97">&#9670;&nbsp;</a></span>AssureWidthForText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCControl::AssureWidthForText </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lengthens the width of the control to the extent necessary to display all the text in the control. </p>
+<p >The window must be running. <a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97" title="Lengthens the width of the control to the extent necessary to display all the text in the control.">AssureWidthForText</a> never makes a control narrower than it already is. Use <a class="el" href="class_f_c_control.html#aa25495487b011af3e06327531449236e" title="Sets the autoresize width option for the control. When this value is set, the control calls AssureWid...">DoAutoResizeWidth</a> to request this feature before the window is running.</p>
+<p ><a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97" title="Lengthens the width of the control to the extent necessary to display all the text in the control.">AssureWidthForText</a> works consistently across macOS and Windows for the following types of controls:</p>
+<ul>
+<li><a class="el" href="class_f_c_ctrl_static.html" title="UI class that handles a control with static text.">FCCtrlStatic</a></li>
+<li><a class="el" href="class_f_c_ctrl_edit.html" title="Class that handles edit controls.">FCCtrlEdit</a></li>
+<li><a class="el" href="class_f_c_ctrl_button.html" title="Control class for push buttons. It inherits the FCCtrlCheckbox class, so the checked state can be set...">FCCtrlButton</a></li>
+<li><a class="el" href="class_f_c_ctrl_checkbox.html" title="Control class for a checkbox control.">FCCtrlCheckbox</a></li>
+<li><a class="el" href="class_f_c_ctrl_radio_button.html" title="A UI class that handles a single radio button.">FCCtrlRadioButton</a></li>
+<li><a class="el" href="class_f_c_ctrl_combo_box.html" title="UI class that handles a combo box, which is a combination of a edit field and a popup list.">FCCtrlComboBox</a></li>
+<li><a class="el" href="class_f_c_ctrl_popup.html" title="UI class that handles a popup (on the Mac) and a combo list (on Windows).">FCCtrlPopup</a></li>
+</ul>
+<p >For other control types, the result (if any) is not guaranteed to be consistent or even effective.</p>
+<p >Lua-supported (0.71).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if success; false if the Window is not running or other error. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_f_c_ctrl_popup.html#ab170d7dd4a408a86cbe97a5894a1a0f1">FCCtrlPopup</a>, and <a class="el" href="class_f_c_ctrl_combo_box.html#aed6cc09ef78b77cbe6e9083f934e632c">FCCtrlComboBox</a>.</p>
+
+</div>
+</div>
 <a id="a985f3cd82dc219f9407afd731e81e840" name="a985f3cd82dc219f9407afd731e81e840"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a985f3cd82dc219f9407afd731e81e840">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -695,7 +807,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_____f_c_base.html#ae6707619ce470379b707bf2337d0791e">__FCBase</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_f_c_ctrl_up_down.html#ae5e34981803cc9a6048e91f895dbdf71">FCCtrlUpDown</a>, <a class="el" href="class_f_c_ctrl_line.html#a9399456503947490147ac8f6563fabd9">FCCtrlLine</a>, <a class="el" href="class_f_c_ctrl_static.html#aecf8fe8dd211679960f8510d35afe525">FCCtrlStatic</a>, <a class="el" href="class_f_c_ctrl_edit.html#a2c9c9753d71628d3ba9feca4831461c7">FCCtrlEdit</a>, <a class="el" href="class_f_c_ctrl_popup.html#a9f6a8f624e6d998770cc141f3a47ab77">FCCtrlPopup</a>, <a class="el" href="class_f_c_ctrl_combo_box.html#a427177eb0769f075c586a1b13352eda3">FCCtrlComboBox</a>, <a class="el" href="class_f_c_ctrl_text_editor.html#a85e58668c46ff773133a921daed18dd6">FCCtrlTextEditor</a>, <a class="el" href="class_f_c_ctrl_data_list.html#a28ac6c80179de6a5e38f066c2f83b2a3">FCCtrlDataList</a>, <a class="el" href="class_f_c_ctrl_list_box.html#a563ac7773f613ba01b177af0d7fe387b">FCCtrlListBox</a>, <a class="el" href="class_f_c_ctrl_tree.html#a1433341c68e4d12c87076761f570aa10">FCCtrlTree</a>, <a class="el" href="class_f_c_ctrl_switcher.html#aead84576e148cdecd0f55b8c9d77e2e6">FCCtrlSwitcher</a>, <a class="el" href="class_f_c_ctrl_radio_button.html#a179e5ec0033d5e34617a3e92780e7270">FCCtrlRadioButton</a>, <a class="el" href="class_f_c_ctrl_checkbox.html#a049a9334da3a2f3ed9c1b5251fe038f9">FCCtrlCheckbox</a>, <a class="el" href="class_f_c_ctrl_button.html#ad7303d16e4b1b77699638d2b7ec247fb">FCCtrlButton</a>, <a class="el" href="class_f_c_ctrl_slider.html#a123ddd6df5c2cea968cffc8254af6b74">FCCtrlSlider</a>, and <a class="el" href="class_f_c_ctrl_image.html#a7f4d41e7f2bea9c449689140523b8680">FCCtrlImage</a>.</p>
+<p>Reimplemented in <a class="el" href="class_f_c_ctrl_up_down.html#ae5e34981803cc9a6048e91f895dbdf71">FCCtrlUpDown</a>, <a class="el" href="class_f_c_ctrl_line.html#a9399456503947490147ac8f6563fabd9">FCCtrlLine</a>, <a class="el" href="class_f_c_ctrl_horizontal_line.html#a434055a089e1e6a4be519974a707623f">FCCtrlHorizontalLine</a>, <a class="el" href="class_f_c_ctrl_vertical_line.html#a3e7869c668236cb7b1ee17eff3190203">FCCtrlVerticalLine</a>, <a class="el" href="class_f_c_ctrl_static.html#aecf8fe8dd211679960f8510d35afe525">FCCtrlStatic</a>, <a class="el" href="class_f_c_ctrl_edit.html#a2c9c9753d71628d3ba9feca4831461c7">FCCtrlEdit</a>, <a class="el" href="class_f_c_ctrl_popup.html#a9f6a8f624e6d998770cc141f3a47ab77">FCCtrlPopup</a>, <a class="el" href="class_f_c_ctrl_combo_box.html#a427177eb0769f075c586a1b13352eda3">FCCtrlComboBox</a>, <a class="el" href="class_f_c_ctrl_text_editor.html#a85e58668c46ff773133a921daed18dd6">FCCtrlTextEditor</a>, <a class="el" href="class_f_c_ctrl_data_list.html#a28ac6c80179de6a5e38f066c2f83b2a3">FCCtrlDataList</a>, <a class="el" href="class_f_c_ctrl_list_box.html#a563ac7773f613ba01b177af0d7fe387b">FCCtrlListBox</a>, <a class="el" href="class_f_c_ctrl_tree.html#a1433341c68e4d12c87076761f570aa10">FCCtrlTree</a>, <a class="el" href="class_f_c_ctrl_switcher.html#aead84576e148cdecd0f55b8c9d77e2e6">FCCtrlSwitcher</a>, <a class="el" href="class_f_c_ctrl_radio_button.html#a179e5ec0033d5e34617a3e92780e7270">FCCtrlRadioButton</a>, <a class="el" href="class_f_c_ctrl_checkbox.html#a049a9334da3a2f3ed9c1b5251fe038f9">FCCtrlCheckbox</a>, <a class="el" href="class_f_c_ctrl_button.html#ad7303d16e4b1b77699638d2b7ec247fb">FCCtrlButton</a>, <a class="el" href="class_f_c_ctrl_slider.html#a123ddd6df5c2cea968cffc8254af6b74">FCCtrlSlider</a>, and <a class="el" href="class_f_c_ctrl_image.html#a7f4d41e7f2bea9c449689140523b8680">FCCtrlImage</a>.</p>
 
 </div>
 </div>
@@ -727,6 +839,43 @@ Additional Inherited Members</h2></td></tr>
 <p >C++ clients must dispose of the pointer after use. Lua scripts do not need to worry about this.</p>
 <p >Lua-supported (0.64).</p>
 <dl class="section return"><dt>Returns</dt><dd>Control's text font or NULL if error or if the window is not running and <a class="el" href="class_f_c_control.html#ab89944f4d291e1e3d05d323075e3d85f" title="Sets the font information for the text of the control.">SetFont</a> has never been called. </dd></dl>
+
+</div>
+</div>
+<a id="aa25495487b011af3e06327531449236e" name="aa25495487b011af3e06327531449236e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25495487b011af3e06327531449236e">&#9670;&nbsp;</a></span>DoAutoResizeWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::DoAutoResizeWidth </td>
+          <td>(</td>
+          <td class="paramtype">std::optional&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>minimumwidth</em> = <code>std::nullopt</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the autoresize width option for the control. When this value is set, the control calls <a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97" title="Lengthens the width of the control to the extent necessary to display all the text in the control.">AssureWidthForText</a> automatically when the window initializes and every time <a class="el" href="class_f_c_control.html#a881bbeaec570ff344b37bb00a7388ead" title="Sets the text for the control.">SetText</a> is called while the window is running. </p>
+<p >You can optionally set the minimum width for the control. If you omit it it, the current width of the control (whether explicitly set or the default) becomes the minimum width. A subsequent call to <a class="el" href="class_f_c_control.html#ab729f664576aef6d51067be25d732b5e" title="Sets the width of the control.">SetWidth</a> overrides any minimum width set here.</p>
+<p >Call this function before the window is running. See <a class="el" href="class_f_c_control.html#ad19ff3445409c0d7764782713e5a9e97" title="Lengthens the width of the control to the extent necessary to display all the text in the control.">AssureWidthForText</a> for more information.</p>
+<p >Lua-supported (0.71).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minimumwidth</td><td>(optional on both C++ and Lua) if present, set the minumum width to this value </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -862,7 +1011,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the height of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -882,7 +1031,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the left position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -939,7 +1088,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the text of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -959,7 +1108,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the top position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -1000,6 +1149,136 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the width of the control. </p>
 <p >Lua-supported. </p>
+
+</div>
+</div>
+<a id="a678e939a2e1ec6d6e307bcdadc812e57" name="a678e939a2e1ec6d6e307bcdadc812e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678e939a2e1ec6d6e307bcdadc812e57">&#9670;&nbsp;</a></span>HorizontallyAlignLeftWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::HorizontallyAlignLeftWith </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specifies a control with which to horizontally align left. All controls set to align with this control align at the location of the one with the largest <a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> value. This function replaces any previous alignment options. </p>
+<p >To have an effect, this function must be called before the window is running, It does not work with buttons created using <a class="el" href="class_f_c_custom_window.html#ad6db94d813383ce0d28a370856e44704" title="Creates an &quot;Ok&quot; push button, with default positioning and appearance/behaviour.">FCCustomWindow::CreateOkButton</a> or <a class="el" href="class_f_c_custom_window.html#aca8c5af5683a1e22c8531e59371c56f3" title="Creates a &quot;Cancel&quot; push button, with default positioning and appearance/behaviour.">FCCustomWindow::CreateCancelButton</a>.</p>
+<p >Lua-supported (0.71)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control to align with: if NULL, then alignment is disabled </td></tr>
+    <tr><td class="paramname">offset</td><td>(optional for C++ and Lua) an amount to offset from the alignment point; default is 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d3aeea7c71b7aa805e5c617fede9d7c" name="a7d3aeea7c71b7aa805e5c617fede9d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d3aeea7c71b7aa805e5c617fede9d7c">&#9670;&nbsp;</a></span>HorizontallyAlignRightWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::HorizontallyAlignRightWith </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specifies a control with which to horizontally align right. All controls set to align with this control align at the location of the one with the largest right value (<a class="el" href="class_f_c_control.html#a3af7a98ecd34e62c26ff64aae073b227" title="Returns the left position of the control.">GetLeft</a> + <a class="el" href="class_f_c_control.html#a957b377ddbcdd3283b9f96a2b6ea227c" title="Returns the width of the control.">GetWidth</a>). This function replaces any previous alignment options. </p>
+<p >To have an effect, this function must be called before the window is running, It does not work with buttons created using <a class="el" href="class_f_c_custom_window.html#ad6db94d813383ce0d28a370856e44704" title="Creates an &quot;Ok&quot; push button, with default positioning and appearance/behaviour.">FCCustomWindow::CreateOkButton</a> or <a class="el" href="class_f_c_custom_window.html#aca8c5af5683a1e22c8531e59371c56f3" title="Creates a &quot;Cancel&quot; push button, with default positioning and appearance/behaviour.">FCCustomWindow::CreateCancelButton</a>.</p>
+<p >Lua-supported (0.71)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control to align with: if NULL, then alignment is disabled </td></tr>
+    <tr><td class="paramname">offset</td><td>(optional for C++ and Lua) an amount to offset from the alignment point; default is 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a87f4356bd0012fa0cd38858db2b439b6" name="a87f4356bd0012fa0cd38858db2b439b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f4356bd0012fa0cd38858db2b439b6">&#9670;&nbsp;</a></span>HorizontallyAlignRightWithFurthest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::HorizontallyAlignRightWithFurthest </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Specifies that this control should align with the control that extends furthest to the right. Calling this function replaces any other control that has been set for horizontal alignment. </p>
+<p >To have an effect, this function must be called before the window is running.</p>
+<p >Lua-supported (0.71)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>(optional for C++ and Lua) an amount to offset from the alignment point; default is 0 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1380,7 +1659,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the left position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -1409,7 +1688,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the text for the control. </p>
-<p >Lua-supported</p>
+<p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pString</td><td>A NULL value clears the control text. Otherwise, the pointer to a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object. </td></tr>
@@ -1436,7 +1715,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the top position of the control. </p>
-<p >Lua-supported </p>
+<p >Lua-supported. </p>
 
 </div>
 </div>
@@ -1491,10 +1770,39 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9689f0802f9bb4addf5f44942f3f028" name="ae9689f0802f9bb4addf5f44942f3f028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9689f0802f9bb4addf5f44942f3f028">&#9670;&nbsp;</a></span>StretchToAlignWithRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCControl::StretchToAlignWithRight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets a control to stretch its width to align with the furthest right control. </p>
+<p >To have an effect, this function must be called before the window is running.</p>
+<p >Lua-supported (0.71) </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 11 2024 11:33:17 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Feb 9 2024 18:49:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
