@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72b1</span>
    </div>
   </td>
  </tr>
@@ -154,8 +154,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a11c713ac358fd0d864388afbf1770527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f" title="Virtual handler method that is called when Dark Mode changes. (Currently macOS only....">DarkModeIsChanging()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a11c713ac358fd0d864388afbf1770527">More...</a><br /></td></tr>
 <tr class="separator:a11c713ac358fd0d864388afbf1770527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f941e207cd7e4397c7f30adfd21fb43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">RegisterOSMenuCommandExecuted</a> (luabridge::LuaRef lua_callback_function)</td></tr>
-<tr class="memdesc:a7f941e207cd7e4397c7f30adfd21fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">More...</a><br /></td></tr>
+<tr class="memdesc:a7f941e207cd7e4397c7f30adfd21fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handler method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">More...</a><br /></td></tr>
 <tr class="separator:a7f941e207cd7e4397c7f30adfd21fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adf95cce0a718dd7fc6389d06e481ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7adf95cce0a718dd7fc6389d06e481ae">RegisterMouseTrackingStarted</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a7adf95cce0a718dd7fc6389d06e481ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50" title="Virtual handler method that is called when a mouse tracking starts. Currently only supported fo FCCtr...">MouseTrackingStarted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7adf95cce0a718dd7fc6389d06e481ae">More...</a><br /></td></tr>
+<tr class="separator:a7adf95cce0a718dd7fc6389d06e481ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4caea8ecd2be83fb4a3621f692e0cb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ab4caea8ecd2be83fb4a3621f692e0cb5">RegisterMouseTrackingStopped</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:ab4caea8ecd2be83fb4a3621f692e0cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623" title="Virtual handler method that is called when a mouse tracking stops. Currently only supported fo FCCtrl...">MouseTrackingStopped()</a> event handler.  <a href="class_f_c_custom_lua_window.html#ab4caea8ecd2be83fb4a3621f692e0cb5">More...</a><br /></td></tr>
+<tr class="separator:ab4caea8ecd2be83fb4a3621f692e0cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">HandleControlEvent</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
 <tr class="memdesc:a06ea38dd1b4c631219e1c06c320eb65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when an event occurs on a registered control.  <a href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">More...</a><br /></td></tr>
 <tr class="separator:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,8 +214,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when Dark Mode changes. (Currently macOS only.)  <a href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f">More...</a><br /></td></tr>
 <tr class="separator:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc4b3823a52f731c5b0a1808d4647ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">OSMenuCommandExecuted</a> (EMENUID menuCommand, int menuCommandType) override</td></tr>
-<tr class="memdesc:aacc4b3823a52f731c5b0a1808d4647ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handle method that is called after a menu command is executed.  <a href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">More...</a><br /></td></tr>
+<tr class="memdesc:aacc4b3823a52f731c5b0a1808d4647ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called after a menu command is executed.  <a href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">More...</a><br /></td></tr>
 <tr class="separator:aacc4b3823a52f731c5b0a1808d4647ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40eb0180fec407b0dad11058060be50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50">MouseTrackingStarted</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:aa40eb0180fec407b0dad11058060be50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a mouse tracking starts. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>.  <a href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50">More...</a><br /></td></tr>
+<tr class="separator:aa40eb0180fec407b0dad11058060be50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b3ced348f233051435095ac90b9623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623">MouseTrackingStopped</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:a95b3ced348f233051435095ac90b9623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a mouse tracking stops. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>.  <a href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623">More...</a><br /></td></tr>
+<tr class="separator:a95b3ced348f233051435095ac90b9623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_f_c_custom_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_f_c_custom_window')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_f_c_custom_window.html">FCCustomWindow</a></td></tr>
 <tr class="memitem:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">FCCustomWindow</a> ()</td></tr>
 <tr class="memdesc:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">More...</a><br /></td></tr>
@@ -1630,6 +1642,80 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="aa40eb0180fec407b0dad11058060be50" name="aa40eb0180fec407b0dad11058060be50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40eb0180fec407b0dad11058060be50">&#9670;&nbsp;</a></span>MouseTrackingStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::MouseTrackingStarted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when a mouse tracking starts. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control where mouse tracking stared. (Currently only works with <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#acb063cf5e629c8f5cc560197955568c4">__FCUserWindow</a>.</p>
+
+</div>
+</div>
+<a id="a95b3ced348f233051435095ac90b9623" name="a95b3ced348f233051435095ac90b9623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b3ced348f233051435095ac90b9623">&#9670;&nbsp;</a></span>MouseTrackingStopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::MouseTrackingStopped </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when a mouse tracking stops. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control where mouse tracking stared. (Currently only works with <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#aeb158c96c258b51084193e5caaeff31c">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="a91234f4f259f6b019245ef8de5524fbd" name="a91234f4f259f6b019245ef8de5524fbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91234f4f259f6b019245ef8de5524fbd">&#9670;&nbsp;</a></span>OkButtonPressed()</h2>
 
@@ -1694,7 +1780,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual handle method that is called after a menu command is executed. </p>
+<p>Virtual handler method that is called after a menu command is executed. </p>
 <p >Lua-supported through a callback function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2260,6 +2346,78 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="a7adf95cce0a718dd7fc6389d06e481ae" name="a7adf95cce0a718dd7fc6389d06e481ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adf95cce0a718dd7fc6389d06e481ae">&#9670;&nbsp;</a></span>RegisterMouseTrackingStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterMouseTrackingStarted </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50" title="Virtual handler method that is called when a mouse tracking starts. Currently only supported fo FCCtr...">MouseTrackingStarted()</a> event handler. </p>
+<p >Lua-supported (0.72).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50" title="Virtual handler method that is called when a mouse tracking starts. Currently only supported fo FCCtr...">MouseTrackingStarted</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="ab4caea8ecd2be83fb4a3621f692e0cb5" name="ab4caea8ecd2be83fb4a3621f692e0cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4caea8ecd2be83fb4a3621f692e0cb5">&#9670;&nbsp;</a></span>RegisterMouseTrackingStopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterMouseTrackingStopped </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623" title="Virtual handler method that is called when a mouse tracking stops. Currently only supported fo FCCtrl...">MouseTrackingStopped()</a> event handler. </p>
+<p >Lua-supported (0.72).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623" title="Virtual handler method that is called when a mouse tracking stops. Currently only supported fo FCCtrl...">MouseTrackingStopped</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
 <a id="a7f941e207cd7e4397c7f30adfd21fb43" name="a7f941e207cd7e4397c7f30adfd21fb43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f941e207cd7e4397c7f30adfd21fb43">&#9670;&nbsp;</a></span>RegisterOSMenuCommandExecuted()</h2>
 
@@ -2284,13 +2442,13 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler. </p>
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handler method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler. </p>
 <p >See <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">FCUI::GetOSMenuCommandFromItemText</a> for more information about OS menu commands.</p>
 <p >An example usage of this callback is allowing a modeless window to track whether a menu item has been executed as a trigger for an update of its display. These might include tracking if the user calls Undo or creates a Bookmark.</p>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted</a> event handler for the callback syntax.</td></tr>
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handler method that is called after a menu command is executed.">OSMenuCommandExecuted</a> event handler for the callback syntax.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2535,7 +2693,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 9 2024 18:49:49 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Feb 14 2024 16:48:40 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
