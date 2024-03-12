@@ -149,7 +149,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransposeChromatic
 <tr class="memdesc:a83af59f291026ad784a962620b9162ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of flats in the key signature.  <a href="class_f_c_key_signature.html#a83af59f291026ad784a962620b9162ff">More...</a><br /></td></tr>
 <tr class="separator:a83af59f291026ad784a962620b9162ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8e39f2112eb716271848c12b41e0348"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_key_signature.html#aa8e39f2112eb716271848c12b41e0348">CalcTotalChromaticSteps</a> () const</td></tr>
-<tr class="memdesc:aa8e39f2112eb716271848c12b41e0348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of chromatic steps in the key mode. For predefined keys this is always 12. For custom key signatures it is the number of equal divisions of the octave. 19-EDO returns 19, 31-EDO returns 31, 96-EDO-96 returns 96, etc. See comments at <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> for more information about EDO numbers.  <a href="class_f_c_key_signature.html#aa8e39f2112eb716271848c12b41e0348">More...</a><br /></td></tr>
+<tr class="memdesc:aa8e39f2112eb716271848c12b41e0348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of chromatic steps in the key mode. For predefined keys this is always 12. For custom key signatures it is the number of equal divisions of the octave. 19-EDO returns 19, 31-EDO returns 31, 96-EDO returns 96, etc. See comments at <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> for more information about EDO numbers.  <a href="class_f_c_key_signature.html#aa8e39f2112eb716271848c12b41e0348">More...</a><br /></td></tr>
 <tr class="separator:aa8e39f2112eb716271848c12b41e0348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac73960a31643845256937c3228b35d9c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; eHarmLev &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_key_signature.html#ac73960a31643845256937c3228b35d9c">CalcDiatonicStepsMap</a> () const</td></tr>
 <tr class="memdesc:ac73960a31643845256937c3228b35d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array (or table in Lua) specifiying the chromatic step where each diatonic step occurs. The first element is always zero. The elements always increase, and the final element must be less than <a class="el" href="class_f_c_key_signature.html#aa8e39f2112eb716271848c12b41e0348" title="Returns the number of chromatic steps in the key mode. For predefined keys this is always 12....">CalcTotalChromaticSteps</a>. If the array has a number of elements other than 7, it can't easily be represented on a traditional staff, so the chance of a number of elements other than 7 is vanishingly small. But Finale allows it.  <a href="class_f_c_key_signature.html#ac73960a31643845256937c3228b35d9c">More...</a><br /></td></tr>
@@ -689,7 +689,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the number of chromatic steps in the key mode. For predefined keys this is always 12. For custom key signatures it is the number of equal divisions of the octave. 19-EDO returns 19, 31-EDO returns 31, 96-EDO-96 returns 96, etc. See comments at <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> for more information about EDO numbers. </p>
+<p>Returns the number of chromatic steps in the key mode. For predefined keys this is always 12. For custom key signatures it is the number of equal divisions of the octave. 19-EDO returns 19, 31-EDO returns 31, 96-EDO returns 96, etc. See comments at <a class="el" href="class_f_c_transposer.html" title="This is a utility class to facilitate transposition. It supports:">FCTransposer</a> for more information about EDO numbers. </p>
 <p >Lua-supported (0.58).</p>
 <dl class="section return"><dt>Returns</dt><dd>Total number of chromatic steps in the key signature or 0 if a record could not be found for a custom key signature. </dd></dl>
 
@@ -1339,7 +1339,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2024 17:59:03 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Mon Mar 11 2024 20:57:43 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
