@@ -98,6 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb3ebccdd322b9bb22016cae4f47b447"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#adb3ebccdd322b9bb22016cae4f47b447">FCCustomKeyModeDef</a> ()</td></tr>
 <tr class="memdesc:adb3ebccdd322b9bb22016cae4f47b447"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_custom_key_mode_def.html#adb3ebccdd322b9bb22016cae4f47b447">More...</a><br /></td></tr>
 <tr class="separator:adb3ebccdd322b9bb22016cae4f47b447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b0074db7325e161ff2d7e5774d69d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#aa5b0074db7325e161ff2d7e5774d69d2">SaveNewLinear</a> ()</td></tr>
+<tr class="memdesc:aa5b0074db7325e161ff2d7e5774d69d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves the current instance as new linear custom key mode.  <a href="class_f_c_custom_key_mode_def.html#aa5b0074db7325e161ff2d7e5774d69d2">More...</a><br /></td></tr>
+<tr class="separator:aa5b0074db7325e161ff2d7e5774d69d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56be284c7493e7e1180406e07e131815"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a56be284c7493e7e1180406e07e131815">SaveNewNonLinear</a> ()</td></tr>
+<tr class="memdesc:a56be284c7493e7e1180406e07e131815"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves the current instance as new non-linear custom key mode.  <a href="class_f_c_custom_key_mode_def.html#a56be284c7493e7e1180406e07e131815">More...</a><br /></td></tr>
+<tr class="separator:a56be284c7493e7e1180406e07e131815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72d27e2329e5f9ba18a77c98faf3712e"><td class="memItemLeft" align="right" valign="top">eKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a72d27e2329e5f9ba18a77c98faf3712e">GetKeyID</a> (int accidentalnumber=0) const</td></tr>
 <tr class="memdesc:a72d27e2329e5f9ba18a77c98faf3712e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the key ID for this custom key mode, based on the input number of sharps or flats (for linear key modes). This value can be used to update the key signature of a measure or cell using <a class="el" href="class_f_c_key_signature.html#accae4be2ba29a099c9fb70e2eeb74a16" title="Sets the key signature ID.">FCKeySignature::SetID</a>.  <a href="class_f_c_custom_key_mode_def.html#a72d27e2329e5f9ba18a77c98faf3712e">More...</a><br /></td></tr>
 <tr class="separator:a72d27e2329e5f9ba18a77c98faf3712e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,12 +146,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a94c13b19abda9dfc57e3c71b5ecf84a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a94c13b19abda9dfc57e3c71b5ecf84a7">SetHasClefAccidentalPlacements</a> (bool state)</td></tr>
 <tr class="memdesc:a94c13b19abda9dfc57e3c71b5ecf84a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the custom key mode has accidental octave placement records.  <a href="class_f_c_custom_key_mode_def.html#a94c13b19abda9dfc57e3c71b5ecf84a7">More...</a><br /></td></tr>
 <tr class="separator:a94c13b19abda9dfc57e3c71b5ecf84a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce1a783291840b5c04358b4e7907b24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a2ce1a783291840b5c04358b4e7907b24">GetAccidentalFontName</a> (<a class="el" href="class_f_c_string.html">FCString</a> &amp;string) const</td></tr>
-<tr class="memdesc:a2ce1a783291840b5c04358b4e7907b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font name for accidental symbols.  <a href="class_f_c_custom_key_mode_def.html#a2ce1a783291840b5c04358b4e7907b24">More...</a><br /></td></tr>
-<tr class="separator:a2ce1a783291840b5c04358b4e7907b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5664f2463c497364efcb80e659aa1fca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a5664f2463c497364efcb80e659aa1fca">SetAccidentalFontName</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;string)</td></tr>
-<tr class="memdesc:a5664f2463c497364efcb80e659aa1fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font name for accidental symbols.  <a href="class_f_c_custom_key_mode_def.html#a5664f2463c497364efcb80e659aa1fca">More...</a><br /></td></tr>
-<tr class="separator:a5664f2463c497364efcb80e659aa1fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473d721c15fdcd629f3eb8b8d9a1ce3e"><td class="memItemLeft" align="right" valign="top">EFONTID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a473d721c15fdcd629f3eb8b8d9a1ce3e">GetAccidentalFontID</a> () const</td></tr>
+<tr class="memdesc:a473d721c15fdcd629f3eb8b8d9a1ce3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the font ID for accidental symbols.  <a href="class_f_c_custom_key_mode_def.html#a473d721c15fdcd629f3eb8b8d9a1ce3e">More...</a><br /></td></tr>
+<tr class="separator:a473d721c15fdcd629f3eb8b8d9a1ce3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e561adafa16cbac7f645306ee1b3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#ae0e561adafa16cbac7f645306ee1b3ef">SetAccidentalFontID</a> (const EFONTID value)</td></tr>
+<tr class="memdesc:ae0e561adafa16cbac7f645306ee1b3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font ID for accidental symbols.  <a href="class_f_c_custom_key_mode_def.html#ae0e561adafa16cbac7f645306ee1b3ef">More...</a><br /></td></tr>
+<tr class="separator:ae0e561adafa16cbac7f645306ee1b3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b897db152b535514307b91fa82d917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a88b897db152b535514307b91fa82d917">CreateAccidentalFontInfo</a> () const</td></tr>
+<tr class="memdesc:a88b897db152b535514307b91fa82d917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> that matches the current setting of <a class="el" href="class_f_c_custom_key_mode_def.html#a473d721c15fdcd629f3eb8b8d9a1ce3e" title="Returns the font ID for accidental symbols.">GetAccidentalFontID</a>. See comments at <a class="el" href="class_f_c_custom_key_mode_def.html#ae0e561adafa16cbac7f645306ee1b3ef" title="Sets the font ID for accidental symbols.">SetAccidentalFontID</a> for more information about how this value is constructed.  <a href="class_f_c_custom_key_mode_def.html#a88b897db152b535514307b91fa82d917">More...</a><br /></td></tr>
+<tr class="separator:a88b897db152b535514307b91fa82d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef0075e3c5b5effa38c041080067a60"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#acef0075e3c5b5effa38c041080067a60">GetTotalChromaticSteps</a> () const</td></tr>
 <tr class="memdesc:acef0075e3c5b5effa38c041080067a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the "Total Steps" value from the Key Step Map dialog.  <a href="class_f_c_custom_key_mode_def.html#acef0075e3c5b5effa38c041080067a60">More...</a><br /></td></tr>
 <tr class="separator:acef0075e3c5b5effa38c041080067a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +173,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb033a8b93e3bd2af2fd69d38972ba1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#acb033a8b93e3bd2af2fd69d38972ba1b">SetTonalCenters</a> (const std::map&lt; twobyte, twobyte &gt; &amp;values)</td></tr>
 <tr class="memdesc:acb033a8b93e3bd2af2fd69d38972ba1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the table of tonal centers by number of sharps/flats.  <a href="class_f_c_custom_key_mode_def.html#acb033a8b93e3bd2af2fd69d38972ba1b">More...</a><br /></td></tr>
 <tr class="separator:acb033a8b93e3bd2af2fd69d38972ba1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24102db6099dfe2435f550286ca18f92"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a24102db6099dfe2435f550286ca18f92">GetBaseTonalCenter</a> () const</td></tr>
+<tr class="memdesc:a24102db6099dfe2435f550286ca18f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the base tonal center for the key mode.  <a href="class_f_c_custom_key_mode_def.html#a24102db6099dfe2435f550286ca18f92">More...</a><br /></td></tr>
+<tr class="separator:a24102db6099dfe2435f550286ca18f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a949fe0354c93e384c043a7da83f39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a03a949fe0354c93e384c043a7da83f39">SetBaseTonalCenter</a> (twobyte value)</td></tr>
+<tr class="memdesc:a03a949fe0354c93e384c043a7da83f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the base tonal center for the key mode.  <a href="class_f_c_custom_key_mode_def.html#a03a949fe0354c93e384c043a7da83f39">More...</a><br /></td></tr>
+<tr class="separator:a03a949fe0354c93e384c043a7da83f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140547fc45df629d240986dcfd57cb1f"><td class="memItemLeft" align="right" valign="top">std::map&lt; twobyte, twobyte &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a140547fc45df629d240986dcfd57cb1f">GetAccidentalOrder</a> () const</td></tr>
 <tr class="separator:a140547fc45df629d240986dcfd57cb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25f9a43742482eab26ad5dad2ae98bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_key_mode_def.html#a25f9a43742482eab26ad5dad2ae98bbf">SetAccidentalOrder</a> (const std::map&lt; twobyte, twobyte &gt; &amp;values)</td></tr>
@@ -199,9 +214,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af68e6c11595666743466fa591d569603 inherit pub_methods_class_____f_c_no_inci_other"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_no_inci_other.html#af68e6c11595666743466fa591d569603">DeepDeleteData</a> () override</td></tr>
 <tr class="memdesc:af68e6c11595666743466fa591d569603 inherit pub_methods_class_____f_c_no_inci_other"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the data and all related data available in other data structures.  <a href="class_____f_c_no_inci_other.html#af68e6c11595666743466fa591d569603">More...</a><br /></td></tr>
 <tr class="separator:af68e6c11595666743466fa591d569603 inherit pub_methods_class_____f_c_no_inci_other"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a2ac970fdda00209989cb5caa072e4d inherit pub_methods_class_____f_c_no_inci_other"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_no_inci_other.html#a6a2ac970fdda00209989cb5caa072e4d">SaveNew</a> ()</td></tr>
-<tr class="memdesc:a6a2ac970fdda00209989cb5caa072e4d inherit pub_methods_class_____f_c_no_inci_other"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the data as completely new item number. The object will now be connected to the new item number.  <a href="class_____f_c_no_inci_other.html#a6a2ac970fdda00209989cb5caa072e4d">More...</a><br /></td></tr>
-<tr class="separator:a6a2ac970fdda00209989cb5caa072e4d inherit pub_methods_class_____f_c_no_inci_other"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab07d9316f72f704f116e63f97f2a436f inherit pub_methods_class_____f_c_no_inci_other"><td class="memItemLeft" align="right" valign="top">virtual CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_no_inci_other.html#ab07d9316f72f704f116e63f97f2a436f">GetItemNo</a> () const</td></tr>
 <tr class="memdesc:ab07d9316f72f704f116e63f97f2a436f inherit pub_methods_class_____f_c_no_inci_other"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the item number. This typically points to items such as a page number, a measure number, a 1-based expression definition number, etc.  <a href="class_____f_c_no_inci_other.html#ab07d9316f72f704f116e63f97f2a436f">More...</a><br /></td></tr>
 <tr class="separator:ab07d9316f72f704f116e63f97f2a436f inherit pub_methods_class_____f_c_no_inci_other"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -774,6 +786,28 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a88b897db152b535514307b91fa82d917" name="a88b897db152b535514307b91fa82d917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b897db152b535514307b91fa82d917">&#9670;&nbsp;</a></span>CreateAccidentalFontInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * FCCustomKeyModeDef::CreateAccidentalFontInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates an instance of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> that matches the current setting of <a class="el" href="class_f_c_custom_key_mode_def.html#a473d721c15fdcd629f3eb8b8d9a1ce3e" title="Returns the font ID for accidental symbols.">GetAccidentalFontID</a>. See comments at <a class="el" href="class_f_c_custom_key_mode_def.html#ae0e561adafa16cbac7f645306ee1b3ef" title="Sets the font ID for accidental symbols.">SetAccidentalFontID</a> for more information about how this value is constructed. </p>
+<p >C callers must dispose of the return value either with delete or a smart pointer.</p>
+<p >Lua-supported (0.72)</p>
+<dl class="section return"><dt>Returns</dt><dd>an instance of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> that matches the font for the accidentals of the key signature, or NULL if no document is open or there is an error. </dd></dl>
+
+</div>
+</div>
 <a id="aecf85cfba9e65996335604f321baa93c" name="aecf85cfba9e65996335604f321baa93c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecf85cfba9e65996335604f321baa93c">&#9670;&nbsp;</a></span>CreateKeySignature()</h2>
 
@@ -871,31 +905,32 @@ Note that after deletion, the item numbers may still be associated with <a class
 
 </div>
 </div>
-<a id="a2ce1a783291840b5c04358b4e7907b24" name="a2ce1a783291840b5c04358b4e7907b24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce1a783291840b5c04358b4e7907b24">&#9670;&nbsp;</a></span>GetAccidentalFontName()</h2>
+<a id="a473d721c15fdcd629f3eb8b8d9a1ce3e" name="a473d721c15fdcd629f3eb8b8d9a1ce3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473d721c15fdcd629f3eb8b8d9a1ce3e">&#9670;&nbsp;</a></span>GetAccidentalFontID()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void FCCustomKeyModeDef::GetAccidentalFontName </td>
+          <td class="memname">EFONTID FCCustomKeyModeDef::GetAccidentalFontID </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
-          <td class="paramname"><em>string</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the font name for accidental symbols. </p>
-<p >See <a class="el" href="class_f_c_custom_key_mode_def.html#a5664f2463c497364efcb80e659aa1fca" title="Returns the font name for accidental symbols.">SetAccidentalFontName</a> for more information.</p>
-<p >Lua-supported (0.72)</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">string</td><td>the string that receives the font name if it has been set. It will be cleared if one is not set. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns the font ID for accidental symbols. </p>
+<p >See <a class="el" href="class_f_c_custom_key_mode_def.html#ae0e561adafa16cbac7f645306ee1b3ef" title="Sets the font ID for accidental symbols.">SetAccidentalFontID</a> for more information.</p>
+<p >Lua-supported (also as property) (0.72) </p>
 
 </div>
 </div>
@@ -925,6 +960,36 @@ Note that after deletion, the item numbers may still be associated with <a class
 <p >See <a class="el" href="class_f_c_custom_key_mode_def.html#a25f9a43742482eab26ad5dad2ae98bbf">SetAccidentalOrder</a> for more information.</p>
 <p >Lua-supported (also as property) (0.72)</p>
 <dl class="section return"><dt>Returns</dt><dd>a table (Lua) or std::map (C++) with integer indices representing the nth of flat or sharp and a value from 0..6 that corresponds to the pitch name that recieves the nth flat or sharp. </dd></dl>
+
+</div>
+</div>
+<a id="a24102db6099dfe2435f550286ca18f92" name="a24102db6099dfe2435f550286ca18f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24102db6099dfe2435f550286ca18f92">&#9670;&nbsp;</a></span>GetBaseTonalCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">twobyte FCCustomKeyModeDef::GetBaseTonalCenter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the base tonal center for the key mode. </p>
+<p >See comments at <a class="el" href="class_f_c_custom_key_mode_def.html#a03a949fe0354c93e384c043a7da83f39" title="Sets the base tonal center for the key mode.">SetBaseTonalCenter</a> for more information.</p>
+<p >Lua-supported (also as property) (0.72)</p>
+<dl class="section return"><dt>Returns</dt><dd>For linear key modes, the tonal center when there is no key signature. For non-linear key modes, the (only) tonal center for the mode. </dd></dl>
 
 </div>
 </div>
@@ -1101,7 +1166,7 @@ Note that after deletion, the item numbers may still be associated with <a class
 </div><div class="memdoc">
 
 <p>Class method that returns the default tonal centers for the major mode in common practice notation. </p>
-<p >Adding to the same amount to all these values (modulo 7) is a simple way to get the tonal centers for the church modes.</p>
+<p >Adding to the same amount to all these values (modulo 7) is a simple way to get the tonal centers for the church modes. (Or use <a class="el" href="class_f_c_custom_key_mode_def.html#a03a949fe0354c93e384c043a7da83f39" title="Sets the base tonal center for the key mode.">SetBaseTonalCenter</a>.)</p>
 <p >Lua-supported (0.72)</p>
 <dl class="section return"><dt>Returns</dt><dd>table (Lua) or std::map (C++) representing the default tonal centers that may be altered and then passed to <a class="el" href="class_f_c_custom_key_mode_def.html#acb033a8b93e3bd2af2fd69d38972ba1b" title="Sets the table of tonal centers by number of sharps/flats.">SetTonalCenters</a>. </dd></dl>
 
@@ -1469,6 +1534,46 @@ Use <a class="el" href="class_f_c_key_signature.html#ac73960a31643845256937c3228
 
 </div>
 </div>
+<a id="aa5b0074db7325e161ff2d7e5774d69d2" name="aa5b0074db7325e161ff2d7e5774d69d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b0074db7325e161ff2d7e5774d69d2">&#9670;&nbsp;</a></span>SaveNewLinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomKeyModeDef::SaveNewLinear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>saves the current instance as new linear custom key mode. </p>
+<p >Lua-supported (0.72) </p>
+
+</div>
+</div>
+<a id="a56be284c7493e7e1180406e07e131815" name="a56be284c7493e7e1180406e07e131815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56be284c7493e7e1180406e07e131815">&#9670;&nbsp;</a></span>SaveNewNonLinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomKeyModeDef::SaveNewNonLinear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>saves the current instance as new non-linear custom key mode. </p>
+<p >Lua-supported (0.72) </p>
+
+</div>
+</div>
 <a id="a479718b222943441a640bc25ebe793f3" name="a479718b222943441a640bc25ebe793f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a479718b222943441a640bc25ebe793f3">&#9670;&nbsp;</a></span>SetAccidentalAmounts()</h2>
 
@@ -1540,31 +1645,34 @@ The values for non-linear key modes can be either positive or negative depending
 
 </div>
 </div>
-<a id="a5664f2463c497364efcb80e659aa1fca" name="a5664f2463c497364efcb80e659aa1fca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5664f2463c497364efcb80e659aa1fca">&#9670;&nbsp;</a></span>SetAccidentalFontName()</h2>
+<a id="ae0e561adafa16cbac7f645306ee1b3ef" name="ae0e561adafa16cbac7f645306ee1b3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e561adafa16cbac7f645306ee1b3ef">&#9670;&nbsp;</a></span>SetAccidentalFontID()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void FCCustomKeyModeDef::SetAccidentalFontName </td>
+          <td class="memname">void FCCustomKeyModeDef::SetAccidentalFontID </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
-          <td class="paramname"><em>string</em></td><td>)</td>
+          <td class="paramtype">const EFONTID&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Returns the font name for accidental symbols. </p>
-<p >You can only specify a custom font name for accidental symbols. The symbols will use the same size and style as the default accidentals font. (See <a class="el" href="class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fca1e4ae70b3a020c1e4c88c6dc29c4cfbc">FCFontPrefs::FONTPREF_ACCIDENTAL</a>.) This somewhat limits your choices as to which fonts may be used here.</p>
-<p >Lua-supported (0.72)</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">string</td><td>the string that receives the font name if it has been set. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Sets the font ID for accidental symbols. </p>
+<p >You can only specify a custom font ID for accidental symbols. The symbols will use the same size and style as the default accidentals font. (See <a class="el" href="class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fca592a226497746d28ddb6128ef3b2d28e">FCFontPrefs::FONTPREF_KEYSIG</a>.) This somewhat limits your choices as to which fonts may be used here.</p>
+<p >Set this value to zero to use the default value. (<a class="el" href="class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fca592a226497746d28ddb6128ef3b2d28e">FCFontPrefs::FONTPREF_KEYSIG</a>)</p>
+<p >Lua-supported (also as property) (0.72) </p>
 
 </div>
 </div>
@@ -1642,6 +1750,48 @@ The values are numbers corresponding to the seven pitch names, where C=0, D=1, E
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">values</td><td>a table (Lua) or std::map (C++) with integer indices representing the nth of flat or sharp and a value from 0..6 that corresponds to the pitch name that recieves the nth flat or sharp. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03a949fe0354c93e384c043a7da83f39" name="a03a949fe0354c93e384c043a7da83f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a949fe0354c93e384c043a7da83f39">&#9670;&nbsp;</a></span>SetBaseTonalCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomKeyModeDef::SetBaseTonalCenter </td>
+          <td>(</td>
+          <td class="paramtype">twobyte&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the base tonal center for the key mode. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>This method may be used instead of <a class="el" href="class_f_c_custom_key_mode_def.html#acb033a8b93e3bd2af2fd69d38972ba1b" title="Sets the table of tonal centers by number of sharps/flats.">SetTonalCenters</a>. It is recommend to use <a class="el" href="class_f_c_custom_key_mode_def.html#a03a949fe0354c93e384c043a7da83f39" title="Sets the base tonal center for the key mode.">SetBaseTonalCenter</a> for<ul>
+<li>non-linear key modes.</li>
+<li>linear key modes with key signatures that follow the circle of fifths in a manner similar to common practice.</li>
+</ul>
+</dd>
+<dd>
+<a class="el" href="class_f_c_custom_key_mode_def.html#a03a949fe0354c93e384c043a7da83f39" title="Sets the base tonal center for the key mode.">SetBaseTonalCenter</a> populates <a class="el" href="class_f_c_custom_key_mode_def.html#acb033a8b93e3bd2af2fd69d38972ba1b" title="Sets the table of tonal centers by number of sharps/flats.">SetTonalCenters</a> with appropriate values based on the input value and whether the mode is linear or non-linear.</dd></dl>
+<p>Lua-supported (also as property) (0.72)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>For linear key modes, the tonal center when there is no key signature. For non-linear key modes, the (only) tonal center for the mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1985,7 +2135,7 @@ If you do not care about tonal centers, or if you are happy with major scale ton
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 19:55:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 28 2024 20:14:38 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

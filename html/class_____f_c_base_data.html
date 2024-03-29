@@ -1472,7 +1472,7 @@ Additional Inherited Members</h2></td></tr>
 <p >If you process items in a collection to relink them, use <code>eachbackwards</code> to itereate the collection rather than iterating it forwards.</p>
 <dl class="section warning"><dt>Warning</dt><dd>A Finale plugin has no direct access to linkage in Finale. This function works by deleting the data item and recreating it as a new item. This indirectly clears all linkage. However, that means this function does not know if a data item is unlinkable in Finale. Relink has been tested with all known unlinkable items. If you call it on other items, it will more than likely delete and re-add it successfully. But this is not supported behavior.</dd>
 <dd>
-One known issue is <a class="el" href="class_f_c_baseline.html" title="Encapsulates baselines offset values for lyrics, expressions, fretboards and chords.">FCBaseline</a>. When you delete a lyric baseline that is the default baseline for that lyric number, Finale (as of Finale 27.3) deletes all defaults for subsequent lyric numbers. This behavior does not appear to be controllable by plugins. If you relink the first one you may end up relinking them all. You should plan for that in how you deal with relinking <a class="el" href="class_f_c_baseline.html" title="Encapsulates baselines offset values for lyrics, expressions, fretboards and chords.">FCBaseline</a> instances.</dd></dl>
+One known issue is <a class="el" href="class_f_c_baseline.html" title="Encapsulates baselines offset values for lyrics, expressions, fretboards and chords.">FCBaseline</a>. When you delete a lyric baseline that is the default baseline for that lyric number, Finale (as of Finale 27.3) resets all similar values for subsequent lyric numbers. This behavior does not appear to be controllable by plugins. If you relink the first one you may end up relinking them all. You should plan for that in how you deal with relinking <a class="el" href="class_f_c_baseline.html" title="Encapsulates baselines offset values for lyrics, expressions, fretboards and chords.">FCBaseline</a> instances.</dd></dl>
 <p>Lua-supported (0.67).</p>
 <dl class="section return"><dt>Returns</dt><dd>success if true </dd></dl>
 
@@ -1679,7 +1679,7 @@ One known issue is <a class="el" href="class_f_c_baseline.html" title="Encapsula
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 19:55:06 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 28 2024 20:14:36 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -1259,7 +1259,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function that is called when the script execution has closed a modal dialog. </p>
-<p >The current instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> is passed to Lua as the first parameter. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If the executing script item error aborts or is externally terminated, a balancing call to <a class="el" href="class_f_c_lua_script_item.html#afa5f2c104d1b68160812cd0bdc005f05" title="Function that is called when the script execution has closed a modal dialog.">OnModalWindowDidClose</a> may not be called for open modal windows. Your controlling script should reset its open-modal count whenever <a class="el" href="class_f_c_lua_script_item.html#ad5e8b5f8ee39d47d92217dff2db9f1fd" title="Function that is called when script execution stops and its Lua state is closed.">OnExecutionDidStop</a> is called.</dd></dl>
+<p>The current instance of <a class="el" href="class_f_c_lua_script_item.html" title="Class that represents a single Lua script item. This class is not part of the C++ PDK Framework.">FCLuaScriptItem</a> is passed to Lua as the first parameter. </p>
 
 </div>
 </div>
@@ -1806,7 +1807,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 19:55:08 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Mar 28 2024 20:14:39 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
