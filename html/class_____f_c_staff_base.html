@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,12 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a262557f0eaf1ef6150e5420f6d09e480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Styles for the <a class="el" href="class_____f_c_staff_base.html#af0e617397bfd3a7a762d939c61dc094f" title="Returns the notation style for the staff.">FCStaff::GetNotationStyle()</a> and <a class="el" href="class_____f_c_staff_base.html#a8b02debe6e5fe73b93a455eb46ea111e" title="Sets the notation style for the staff.">FCStaff::SetNotationStyle()</a> methods. The constants are also used for the similar <a class="el" href="class_f_c_staff_style_def.html" title="Class for a staff style definition.">FCStaffStyleDef</a> methods.  <a href="class_____f_c_staff_base.html#a262557f0eaf1ef6150e5420f6d09e480">More...</a><br /></td></tr>
 <tr class="separator:a262557f0eaf1ef6150e5420f6d09e480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49965d1d710d9ffb80396ef6345221e6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">STAFFSTEMDIRS</a> { <a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6aaf3c07a4811a55ca46597a0afdca6942">STAFFSTEMDIR_DEFAULT</a> = 0
+, <a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6a365c7a594c35228737540d8cd806680b">STAFFSTEMDIR_ALWAYS_UP</a> = 1
+, <a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6a9a27aef7d9292aec8b1f46212d04439f">STAFFSTEMDIR_ALWAYS_DOWN</a> = 2
+ }</td></tr>
+<tr class="memdesc:a49965d1d710d9ffb80396ef6345221e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options for the directions in which the staff displays note stems.  <a href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">More...</a><br /></td></tr>
+<tr class="separator:a49965d1d710d9ffb80396ef6345221e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f78266004e17852e58d94f14c33f881"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a5f78266004e17852e58d94f14c33f881">ALTERNATE_STAFF</a> { <br />
 &#160;&#160;<a class="el" href="class_____f_c_staff_base.html#a5f78266004e17852e58d94f14c33f881a7333a0fdd44545589d87cb259658fb57">ALTSTAFF_NORMAL</a> = FXUseNormalNotation
 , <a class="el" href="class_____f_c_staff_base.html#a5f78266004e17852e58d94f14c33f881a58723d3abd66041d52cab5f85f75bab7">ALTSTAFF_SLASHBEATS</a> = FXUseSlashBeatsNotation
@@ -186,97 +192,98 @@ Public Types</h2></td></tr>
 , <b>FCID_INSTRUMENTDEF</b>
 , <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYMODEDEF</b>
+, <b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -326,8 +333,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2a53344b583dd4fa78dabe2509b90f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the time signature should be displayed for the staff in the score.  <a href="class_____f_c_staff_base.html#a2a53344b583dd4fa78dabe2509b90f37">More...</a><br /></td></tr>
 <tr class="separator:a2a53344b583dd4fa78dabe2509b90f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7177184841cf3220cfc8c4b719dbf5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a0d7177184841cf3220cfc8c4b719dbf5">GetShowPartTimeSignatures</a> () const</td></tr>
-<tr class="memdesc:a0d7177184841cf3220cfc8c4b719dbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the time signature should be displayed for the staff in parts. <br  />
-  <a href="class_____f_c_staff_base.html#a0d7177184841cf3220cfc8c4b719dbf5">More...</a><br /></td></tr>
+<tr class="memdesc:a0d7177184841cf3220cfc8c4b719dbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the time signature should be displayed for the staff in parts.  <a href="class_____f_c_staff_base.html#a0d7177184841cf3220cfc8c4b719dbf5">More...</a><br /></td></tr>
 <tr class="separator:a0d7177184841cf3220cfc8c4b719dbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354dc83659280dac072f6fa7c9a22f6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a354dc83659280dac072f6fa7c9a22f6a">GetShowClefs</a> () const</td></tr>
 <tr class="memdesc:a354dc83659280dac072f6fa7c9a22f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if clefs should be displayed for the staff.  <a href="class_____f_c_staff_base.html#a354dc83659280dac072f6fa7c9a22f6a">More...</a><br /></td></tr>
@@ -410,6 +416,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7584826efd5726f65721bc82ce2a45b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ac7584826efd5726f65721bc82ce2a45b">GetShowStems</a> () const</td></tr>
 <tr class="memdesc:ac7584826efd5726f65721bc82ce2a45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if stems should be displayed for the staff.  <a href="class_____f_c_staff_base.html#ac7584826efd5726f65721bc82ce2a45b">More...</a><br /></td></tr>
 <tr class="separator:ac7584826efd5726f65721bc82ce2a45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c34c847502e31421c1296a40fbbb613"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a0c34c847502e31421c1296a40fbbb613">GetShowBeams</a> () const</td></tr>
+<tr class="memdesc:a0c34c847502e31421c1296a40fbbb613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if beams should be displayed for the staff.  <a href="class_____f_c_staff_base.html#a0c34c847502e31421c1296a40fbbb613">More...</a><br /></td></tr>
+<tr class="separator:a0c34c847502e31421c1296a40fbbb613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace010edcf1ebaccd40387784f274a270"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">STAFFSTEMDIRS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ace010edcf1ebaccd40387784f274a270">GetStemsDirection</a> () const</td></tr>
+<tr class="memdesc:ace010edcf1ebaccd40387784f274a270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stem direction for note entries on the staff. (Staff Stem Settings dialog.)  <a href="class_____f_c_staff_base.html#ace010edcf1ebaccd40387784f274a270">More...</a><br /></td></tr>
+<tr class="separator:ace010edcf1ebaccd40387784f274a270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b6487b11cfe7ee1911719a9e7454f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a53b6487b11cfe7ee1911719a9e7454f1">GetStemsUseVerticalOffsetForNoteheadEnd</a> () const</td></tr>
+<tr class="memdesc:a53b6487b11cfe7ee1911719a9e7454f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of "Use Vertical Offset For Notehead End Of Stem" checkbox in the Staff Stem Settings dialog.  <a href="class_____f_c_staff_base.html#a53b6487b11cfe7ee1911719a9e7454f1">More...</a><br /></td></tr>
+<tr class="separator:a53b6487b11cfe7ee1911719a9e7454f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f78fda22c77fb68d3f7dd055ebbd2f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a28f78fda22c77fb68d3f7dd055ebbd2f">GetStemsNoteheadEndFixedToStaff</a> () const</td></tr>
+<tr class="memdesc:a28f78fda22c77fb68d3f7dd055ebbd2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of "Use Vertical Offset For Notehead End Of Stem: Offset From" radio buttons in the Staff Stem Settings dialog.  <a href="class_____f_c_staff_base.html#a28f78fda22c77fb68d3f7dd055ebbd2f">More...</a><br /></td></tr>
+<tr class="separator:a28f78fda22c77fb68d3f7dd055ebbd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8b73872c9edf99f31586fca721fd3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a6b8b73872c9edf99f31586fca721fd3e">GetStemsUseVerticalOffsetForBeamEnd</a> () const</td></tr>
+<tr class="memdesc:a6b8b73872c9edf99f31586fca721fd3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of "Use Vertical Offset For Beam End Of Stem (Offset From Staff)" checkbox in the Staff Stem Settings dialog.  <a href="class_____f_c_staff_base.html#a6b8b73872c9edf99f31586fca721fd3e">More...</a><br /></td></tr>
+<tr class="separator:a6b8b73872c9edf99f31586fca721fd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13b619e92c9989c75176bb5f378acba"><td class="memItemLeft" align="right" valign="top">Efix32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ac13b619e92c9989c75176bb5f378acba">GetStemsUpHorizontalOffset</a> () const</td></tr>
+<tr class="memdesc:ac13b619e92c9989c75176bb5f378acba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the horizontal stem offset for up stems.  <a href="class_____f_c_staff_base.html#ac13b619e92c9989c75176bb5f378acba">More...</a><br /></td></tr>
+<tr class="separator:ac13b619e92c9989c75176bb5f378acba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afbba67ee99f848de18b362142037a1"><td class="memItemLeft" align="right" valign="top">Efix32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a3afbba67ee99f848de18b362142037a1">GetStemsDownHorizontalOffset</a> () const</td></tr>
+<tr class="memdesc:a3afbba67ee99f848de18b362142037a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the horizontal stem offset for down stems.  <a href="class_____f_c_staff_base.html#a3afbba67ee99f848de18b362142037a1">More...</a><br /></td></tr>
+<tr class="separator:a3afbba67ee99f848de18b362142037a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ca871882dcbe43e395902ca0c823f0"><td class="memItemLeft" align="right" valign="top">Efix32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a10ca871882dcbe43e395902ca0c823f0">GetStemsUpVerticalOffsetForNoteheadEnd</a> () const</td></tr>
+<tr class="memdesc:a10ca871882dcbe43e395902ca0c823f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertical stem offset for the notehead end of up stems.  <a href="class_____f_c_staff_base.html#a10ca871882dcbe43e395902ca0c823f0">More...</a><br /></td></tr>
+<tr class="separator:a10ca871882dcbe43e395902ca0c823f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6f8895a44c694e95d687d851888bda"><td class="memItemLeft" align="right" valign="top">Efix32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#aee6f8895a44c694e95d687d851888bda">GetStemsDownVerticalOffsetForNoteheadEnd</a> () const</td></tr>
+<tr class="memdesc:aee6f8895a44c694e95d687d851888bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertical stem offset for the notehead end of down stems.  <a href="class_____f_c_staff_base.html#aee6f8895a44c694e95d687d851888bda">More...</a><br /></td></tr>
+<tr class="separator:aee6f8895a44c694e95d687d851888bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206d174592de2af2b521445228af81db"><td class="memItemLeft" align="right" valign="top">Efix32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a206d174592de2af2b521445228af81db">GetStemsUpVerticalOffsetForBeamEnd</a> () const</td></tr>
+<tr class="memdesc:a206d174592de2af2b521445228af81db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertical stem offset for the beam of end up stems.  <a href="class_____f_c_staff_base.html#a206d174592de2af2b521445228af81db">More...</a><br /></td></tr>
+<tr class="separator:a206d174592de2af2b521445228af81db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a204d752eb3f92546499ad44f7c926548"><td class="memItemLeft" align="right" valign="top">Efix32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a204d752eb3f92546499ad44f7c926548">GetStemsDownVerticalOffsetForBeamEnd</a> () const</td></tr>
+<tr class="memdesc:a204d752eb3f92546499ad44f7c926548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the vertical stem offset for the beam of end down stems.  <a href="class_____f_c_staff_base.html#a204d752eb3f92546499ad44f7c926548">More...</a><br /></td></tr>
+<tr class="separator:a204d752eb3f92546499ad44f7c926548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a243c076c0ca498d45a7ea0c9e317da8f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a243c076c0ca498d45a7ea0c9e317da8f">GetShowTies</a> () const</td></tr>
 <tr class="memdesc:a243c076c0ca498d45a7ea0c9e317da8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if ties should be displayed for the staff.  <a href="class_____f_c_staff_base.html#a243c076c0ca498d45a7ea0c9e317da8f">More...</a><br /></td></tr>
 <tr class="separator:a243c076c0ca498d45a7ea0c9e317da8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -650,6 +689,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8264809e505ba78620486d04cb9e7008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a8264809e505ba78620486d04cb9e7008">SetShowStems</a> (bool value)</td></tr>
 <tr class="memdesc:a8264809e505ba78620486d04cb9e7008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if stems should be displayed for the staff.  <a href="class_____f_c_staff_base.html#a8264809e505ba78620486d04cb9e7008">More...</a><br /></td></tr>
 <tr class="separator:a8264809e505ba78620486d04cb9e7008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfbecc1a2ff103d53d484678f59a05f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a5cfbecc1a2ff103d53d484678f59a05f">SetShowBeams</a> (bool value)</td></tr>
+<tr class="memdesc:a5cfbecc1a2ff103d53d484678f59a05f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if beams should be displayed for the staff.  <a href="class_____f_c_staff_base.html#a5cfbecc1a2ff103d53d484678f59a05f">More...</a><br /></td></tr>
+<tr class="separator:a5cfbecc1a2ff103d53d484678f59a05f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1549644c5fe2818676c0b4986dc034a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a1549644c5fe2818676c0b4986dc034a8">SetStemsDirection</a> (<a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">STAFFSTEMDIRS</a> value)</td></tr>
+<tr class="memdesc:a1549644c5fe2818676c0b4986dc034a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stem direction for note entries on the staff. (Staff Stem Settings dialog.)  <a href="class_____f_c_staff_base.html#a1549644c5fe2818676c0b4986dc034a8">More...</a><br /></td></tr>
+<tr class="separator:a1549644c5fe2818676c0b4986dc034a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27bac31dae0d7d2b32783d5af2f7dff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ac27bac31dae0d7d2b32783d5af2f7dff">SetStemsUseVerticalOffsetForNoteheadEnd</a> (bool value)</td></tr>
+<tr class="memdesc:ac27bac31dae0d7d2b32783d5af2f7dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of "Use Vertical Offset For Notehead End Of Stem" checkbox in the Staff Stem Settings dialog.  <a href="class_____f_c_staff_base.html#ac27bac31dae0d7d2b32783d5af2f7dff">More...</a><br /></td></tr>
+<tr class="separator:ac27bac31dae0d7d2b32783d5af2f7dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acced7002dd7628a7a7490d65e5f20e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#acced7002dd7628a7a7490d65e5f20e38">SetStemsNoteheadEndFixedToStaff</a> (bool value)</td></tr>
+<tr class="memdesc:acced7002dd7628a7a7490d65e5f20e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of "Use Vertical Offset For Notehead End Of Stem: Offset From" radio buttons in the Staff Stem Settings dialog.  <a href="class_____f_c_staff_base.html#acced7002dd7628a7a7490d65e5f20e38">More...</a><br /></td></tr>
+<tr class="separator:acced7002dd7628a7a7490d65e5f20e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b4b154953813be148fea1700942283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ac6b4b154953813be148fea1700942283">SetStemsUseVerticalOffsetForBeamEnd</a> (bool value)</td></tr>
+<tr class="memdesc:ac6b4b154953813be148fea1700942283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of "Use Vertical Offset For Beam End Of Stem (Offset From Staff)" checkbox in the Staff Stem Settings dialog.  <a href="class_____f_c_staff_base.html#ac6b4b154953813be148fea1700942283">More...</a><br /></td></tr>
+<tr class="separator:ac6b4b154953813be148fea1700942283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b3a0190619074c253d5ecb968b0851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#aa6b3a0190619074c253d5ecb968b0851">SetStemsUpHorizontalOffset</a> (Efix32 value)</td></tr>
+<tr class="memdesc:aa6b3a0190619074c253d5ecb968b0851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the horizontal stem offset for up stems.  <a href="class_____f_c_staff_base.html#aa6b3a0190619074c253d5ecb968b0851">More...</a><br /></td></tr>
+<tr class="separator:aa6b3a0190619074c253d5ecb968b0851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a031813dc5f0464a5139525cabd9cb6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a031813dc5f0464a5139525cabd9cb6f2">SetStemsDownHorizontalOffset</a> (Efix32 value)</td></tr>
+<tr class="memdesc:a031813dc5f0464a5139525cabd9cb6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the horizontal stem offset for down stems.  <a href="class_____f_c_staff_base.html#a031813dc5f0464a5139525cabd9cb6f2">More...</a><br /></td></tr>
+<tr class="separator:a031813dc5f0464a5139525cabd9cb6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af90d11c04f70ef3560a6d91af94896b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#af90d11c04f70ef3560a6d91af94896b4">SetStemsUpVerticalOffsetForNoteheadEnd</a> (Efix32 value)</td></tr>
+<tr class="memdesc:af90d11c04f70ef3560a6d91af94896b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vertical stem offset for the notehead end of up stems.  <a href="class_____f_c_staff_base.html#af90d11c04f70ef3560a6d91af94896b4">More...</a><br /></td></tr>
+<tr class="separator:af90d11c04f70ef3560a6d91af94896b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe0c665bd7339bb68cca57ea6061958"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a5fe0c665bd7339bb68cca57ea6061958">SetStemsDownVerticalOffsetForNoteheadEnd</a> (Efix32 value)</td></tr>
+<tr class="memdesc:a5fe0c665bd7339bb68cca57ea6061958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vertical stem offset for the notehead end of down stems.  <a href="class_____f_c_staff_base.html#a5fe0c665bd7339bb68cca57ea6061958">More...</a><br /></td></tr>
+<tr class="separator:a5fe0c665bd7339bb68cca57ea6061958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f71c9dbc7470092cc4a4816c46a5bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ab5f71c9dbc7470092cc4a4816c46a5bf">SetStemsUpVerticalOffsetForBeamEnd</a> (Efix32 value)</td></tr>
+<tr class="memdesc:ab5f71c9dbc7470092cc4a4816c46a5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vertical stem offset for the beam of end up stems.  <a href="class_____f_c_staff_base.html#ab5f71c9dbc7470092cc4a4816c46a5bf">More...</a><br /></td></tr>
+<tr class="separator:ab5f71c9dbc7470092cc4a4816c46a5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3e1cea1c1edb3caad11e7c9e14cf42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a0c3e1cea1c1edb3caad11e7c9e14cf42">SetStemsDownVerticalOffsetForBeamEnd</a> (Efix32 value)</td></tr>
+<tr class="memdesc:a0c3e1cea1c1edb3caad11e7c9e14cf42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the vertical stem offset for the beam of end down stems.  <a href="class_____f_c_staff_base.html#a0c3e1cea1c1edb3caad11e7c9e14cf42">More...</a><br /></td></tr>
+<tr class="separator:a0c3e1cea1c1edb3caad11e7c9e14cf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90290bcace4a7297801c8f84cf9bb6a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a90290bcace4a7297801c8f84cf9bb6a0">SetShowTies</a> (bool state)</td></tr>
 <tr class="memdesc:a90290bcace4a7297801c8f84cf9bb6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if ties should be displayed for the staff.  <a href="class_____f_c_staff_base.html#a90290bcace4a7297801c8f84cf9bb6a0">More...</a><br /></td></tr>
 <tr class="separator:a90290bcace4a7297801c8f84cf9bb6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -824,6 +896,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fd6467d08111c0fcc2d825bd46d6fb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a3fd6467d08111c0fcc2d825bd46d6fb1">Make0LineFullBarlineStaff</a> ()</td></tr>
 <tr class="memdesc:a3fd6467d08111c0fcc2d825bd46d6fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the necessary values in the Staff Setup dialog to make a staff without staff lines with full-length barlines.  <a href="class_____f_c_staff_base.html#a3fd6467d08111c0fcc2d825bd46d6fb1">More...</a><br /></td></tr>
 <tr class="separator:a3fd6467d08111c0fcc2d825bd46d6fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9679a9b86b99c5c91f84e92ab1fe21a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a9679a9b86b99c5c91f84e92ab1fe21a3">CreateIndependentFontInfo</a> () const</td></tr>
+<tr class="memdesc:a9679a9b86b99c5c91f84e92ab1fe21a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> object for the alternate notehead font. <a class="el" href="class_____f_c_staff_base.html#aa37ac682d3490cc9a00a33167d6db7d1" title="Returns if a independent notehead font should be used for the staff.">GetIndependentFont</a> must be true for this to have any effect.  <a href="class_____f_c_staff_base.html#a9679a9b86b99c5c91f84e92ab1fe21a3">More...</a><br /></td></tr>
+<tr class="separator:a9679a9b86b99c5c91f84e92ab1fe21a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba76bf25b5b4a086718c1c769fb3638"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#a3ba76bf25b5b4a086718c1c769fb3638">SetIndependentFontInfo</a> (const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> &amp;font)</td></tr>
+<tr class="memdesc:a3ba76bf25b5b4a086718c1c769fb3638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> for the alternate notehead font. You must all set <a class="el" href="class_____f_c_staff_base.html#adfa4d93fd5a49c78a58b28fc07711814" title="Sets if a independent notehead font should be used for the staff.">SetIndependentFont</a> to true.  <a href="class_____f_c_staff_base.html#a3ba76bf25b5b4a086718c1c769fb3638">More...</a><br /></td></tr>
+<tr class="separator:a3ba76bf25b5b4a086718c1c769fb3638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac398a7b8fae0d8ceb5fbdea5715a9ae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_staff_base.html#ac398a7b8fae0d8ceb5fbdea5715a9ae6">CreateFullNameString</a> ()</td></tr>
 <tr class="memdesc:ac398a7b8fae0d8ceb5fbdea5715a9ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object of the full staff name (including the Enigma text tags).  <a href="class_____f_c_staff_base.html#ac398a7b8fae0d8ceb5fbdea5715a9ae6">More...</a><br /></td></tr>
 <tr class="separator:ac398a7b8fae0d8ceb5fbdea5715a9ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1030,9 +1108,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 <tr class="memitem:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">GetUserData2</a> () const</td></tr>
 <tr class="memdesc:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the additional user data attached to the instance of an object.  <a href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">More...</a><br /></td></tr>
 <tr class="separator:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3f33c925b4d20a49a6e20981c5e46d inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a5c3f33c925b4d20a49a6e20981c5e46d">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject)</td></tr>
-<tr class="memdesc:a5c3f33c925b4d20a49a6e20981c5e46d inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a5c3f33c925b4d20a49a6e20981c5e46d">More...</a><br /></td></tr>
-<tr class="separator:a5c3f33c925b4d20a49a6e20981c5e46d inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const</td></tr>
+<tr class="memdesc:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">More...</a><br /></td></tr>
+<tr class="separator:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">StoreXML_String</a> (tinyxml2::XMLElement *pParentNode, const char *pszElementName, <a class="el" href="class_f_c_string.html">FCString</a> *pStringValue)</td></tr>
 <tr class="memdesc:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to store <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> objects in the XML file.  <a href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">More...</a><br /></td></tr>
 <tr class="separator:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2837,6 +2915,31 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a49965d1d710d9ffb80396ef6345221e6" name="a49965d1d710d9ffb80396ef6345221e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49965d1d710d9ffb80396ef6345221e6">&#9670;&nbsp;</a></span>STAFFSTEMDIRS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">__FCStaffBase::STAFFSTEMDIRS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Options for the directions in which the staff displays note stems. </p>
+<p >Lua-supported (0.72) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a49965d1d710d9ffb80396ef6345221e6aaf3c07a4811a55ca46597a0afdca6942" name="a49965d1d710d9ffb80396ef6345221e6aaf3c07a4811a55ca46597a0afdca6942"></a>STAFFSTEMDIR_DEFAULT&#160;</td><td class="fielddoc"><p >Default direction </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49965d1d710d9ffb80396ef6345221e6a365c7a594c35228737540d8cd806680b" name="a49965d1d710d9ffb80396ef6345221e6a365c7a594c35228737540d8cd806680b"></a>STAFFSTEMDIR_ALWAYS_UP&#160;</td><td class="fielddoc"><p >Always up </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a49965d1d710d9ffb80396ef6345221e6a9a27aef7d9292aec8b1f46212d04439f" name="a49965d1d710d9ffb80396ef6345221e6a9a27aef7d9292aec8b1f46212d04439f"></a>STAFFSTEMDIR_ALWAYS_DOWN&#160;</td><td class="fielddoc"><p >Always down </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="af6cc00f4c73adad4a9cc801fa971421b" name="af6cc00f4c73adad4a9cc801fa971421b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6cc00f4c73adad4a9cc801fa971421b">&#9670;&nbsp;</a></span>CalcBottomStaffLinePosition()</h2>
@@ -3015,6 +3118,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Creates a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object of the full staff name (including the Enigma text tags). </p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a created string object (of the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> class). This pointer must be deleted from the heap after use. </dd></dl>
+
+</div>
+</div>
+<a id="a9679a9b86b99c5c91f84e92ab1fe21a3" name="a9679a9b86b99c5c91f84e92ab1fe21a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9679a9b86b99c5c91f84e92ab1fe21a3">&#9670;&nbsp;</a></span>CreateIndependentFontInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * __FCStaffBase::CreateIndependentFontInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> object for the alternate notehead font. <a class="el" href="class_____f_c_staff_base.html#aa37ac682d3490cc9a00a33167d6db7d1" title="Returns if a independent notehead font should be used for the staff.">GetIndependentFont</a> must be true for this to have any effect. </p>
+<p >C callers must dispose of the result either with delete or a smart pointer.</p>
+<p >Lua-supported (0.72). </p>
 
 </div>
 </div>
@@ -4370,6 +4502,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a0c34c847502e31421c1296a40fbbb613" name="a0c34c847502e31421c1296a40fbbb613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c34c847502e31421c1296a40fbbb613">&#9670;&nbsp;</a></span>GetShowBeams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool __FCStaffBase::GetShowBeams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if beams should be displayed for the staff. </p>
+<p >Note that beams are not actually displayed unless <a class="el" href="class_____f_c_staff_base.html#ac7584826efd5726f65721bc82ce2a45b" title="Returns true if stems should be displayed for the staff.">GetShowStems</a> is also true.</p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
 <a id="adb5b9852b94eed0b4515a35186f1da5c" name="adb5b9852b94eed0b4515a35186f1da5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb5b9852b94eed0b4515a35186f1da5c">&#9670;&nbsp;</a></span>GetShowBottomRepeatDot()</h2>
 
@@ -4701,10 +4862,10 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the time signature should be displayed for the staff in parts. <br  />
- </p>
+<p>Returns true if the time signature should be displayed for the staff in parts. </p>
 <p >On Finale versions earlier than Finale 2025, this will return <a class="el" href="class_____f_c_staff_base.html#a25eaf46784b521a4caafb77a618a0403" title="Returns true if the time signature should be displayed for the staff.">GetShowTimeSignatures()</a> setting.</p>
-<p >Lua-supported (also as property).</p>
+<dl class="section warning"><dt>Warning</dt><dd>Due to a bug in Finale, this value is not correct in instances of <a class="el" href="class_f_c_current_staff_spec.html" title="The class for a &quot;current staff state&quot; (the sum of staff changes and staff style changes) at a specifi...">FCCurrentStaffSpec</a>. (The bug persists at least through Finale 27.4, which is the lastest version tested.) Instead, for <a class="el" href="class_f_c_current_staff_spec.html" title="The class for a &quot;current staff state&quot; (the sum of staff changes and staff style changes) at a specifi...">FCCurrentStaffSpec</a> it always returns <code>true</code>. <a class="el" href="class_f_c_staff.html" title="The class for a staff in the score. It is also a base class for staff styles.">FCStaff</a> and <a class="el" href="class_f_c_staff_style_def.html" title="Class for a staff style definition.">FCStaffStyleDef</a> do not suffer from this bug.</dd></dl>
+<p>Lua-supported (also as property).</p>
 <dl class="section return"><dt>Returns</dt><dd>True if the part should be visible in the time signature. </dd></dl>
 
 </div>
@@ -4952,7 +5113,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Returns true if the time signature should be displayed for the staff. </p>
 <p >On Finale versions earlier than Finale 2025, the same setting is used for both score and parts. For Finale 2025, this is the setting for the score.</p>
-<p >Consider using <a class="el" href="class_____f_c_staff_base.html#a2a53344b583dd4fa78dabe2509b90f37" title="Returns true if the time signature should be displayed for the staff in the score.">GetShowScoreTimeSignatures</a> and <a class="el" href="class_____f_c_staff_base.html#a0d7177184841cf3220cfc8c4b719dbf5" title="Returns true if the time signature should be displayed for the staff in parts.">GetShowPartTimeSignatures</a> instead.</p>
+<p >Consider using <a class="el" href="class_____f_c_staff_base.html#a2a53344b583dd4fa78dabe2509b90f37" title="Returns true if the time signature should be displayed for the staff in the score.">GetShowScoreTimeSignatures</a> and/or <a class="el" href="class_____f_c_staff_base.html#a0d7177184841cf3220cfc8c4b719dbf5" title="Returns true if the time signature should be displayed for the staff in parts.">GetShowPartTimeSignatures</a> instead.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -5038,6 +5199,288 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Returns the stem reversal position offset for the staff. This setting is located in the "Staff Setup" dialog box. </p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="ace010edcf1ebaccd40387784f274a270" name="ace010edcf1ebaccd40387784f274a270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace010edcf1ebaccd40387784f274a270">&#9670;&nbsp;</a></span>GetStemsDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">STAFFSTEMDIRS</a> __FCStaffBase::GetStemsDirection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the stem direction for note entries on the staff. (Staff Stem Settings dialog.) </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a3afbba67ee99f848de18b362142037a1" name="a3afbba67ee99f848de18b362142037a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afbba67ee99f848de18b362142037a1">&#9670;&nbsp;</a></span>GetStemsDownHorizontalOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Efix32 __FCStaffBase::GetStemsDownHorizontalOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the horizontal stem offset for down stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a204d752eb3f92546499ad44f7c926548" name="a204d752eb3f92546499ad44f7c926548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204d752eb3f92546499ad44f7c926548">&#9670;&nbsp;</a></span>GetStemsDownVerticalOffsetForBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Efix32 __FCStaffBase::GetStemsDownVerticalOffsetForBeamEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the vertical stem offset for the beam of end down stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="aee6f8895a44c694e95d687d851888bda" name="aee6f8895a44c694e95d687d851888bda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6f8895a44c694e95d687d851888bda">&#9670;&nbsp;</a></span>GetStemsDownVerticalOffsetForNoteheadEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Efix32 __FCStaffBase::GetStemsDownVerticalOffsetForNoteheadEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the vertical stem offset for the notehead end of down stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a28f78fda22c77fb68d3f7dd055ebbd2f" name="a28f78fda22c77fb68d3f7dd055ebbd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f78fda22c77fb68d3f7dd055ebbd2f">&#9670;&nbsp;</a></span>GetStemsNoteheadEndFixedToStaff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool __FCStaffBase::GetStemsNoteheadEndFixedToStaff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value of "Use Vertical Offset For Notehead End Of Stem: Offset From" radio buttons in the Staff Stem Settings dialog. </p>
+<p >This setting has no effect if <a class="el" href="class_____f_c_staff_base.html#a53b6487b11cfe7ee1911719a9e7454f1" title="Returns the value of &quot;Use Vertical Offset For Notehead End Of Stem&quot; checkbox in the Staff Stem Settin...">GetStemsUseVerticalOffsetForNoteheadEnd</a> is false.</p>
+<p >Lua-supported (also as property) (0.72)</p>
+<dl class="section return"><dt>Returns</dt><dd>false: "Offset From Notehead"; true: "Offset From Staff" </dd></dl>
+
+</div>
+</div>
+<a id="ac13b619e92c9989c75176bb5f378acba" name="ac13b619e92c9989c75176bb5f378acba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13b619e92c9989c75176bb5f378acba">&#9670;&nbsp;</a></span>GetStemsUpHorizontalOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Efix32 __FCStaffBase::GetStemsUpHorizontalOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the horizontal stem offset for up stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a206d174592de2af2b521445228af81db" name="a206d174592de2af2b521445228af81db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206d174592de2af2b521445228af81db">&#9670;&nbsp;</a></span>GetStemsUpVerticalOffsetForBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Efix32 __FCStaffBase::GetStemsUpVerticalOffsetForBeamEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the vertical stem offset for the beam of end up stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a10ca871882dcbe43e395902ca0c823f0" name="a10ca871882dcbe43e395902ca0c823f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ca871882dcbe43e395902ca0c823f0">&#9670;&nbsp;</a></span>GetStemsUpVerticalOffsetForNoteheadEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Efix32 __FCStaffBase::GetStemsUpVerticalOffsetForNoteheadEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the vertical stem offset for the notehead end of up stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a6b8b73872c9edf99f31586fca721fd3e" name="a6b8b73872c9edf99f31586fca721fd3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8b73872c9edf99f31586fca721fd3e">&#9670;&nbsp;</a></span>GetStemsUseVerticalOffsetForBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool __FCStaffBase::GetStemsUseVerticalOffsetForBeamEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value of "Use Vertical Offset For Beam End Of Stem (Offset From Staff)" checkbox in the Staff Stem Settings dialog. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a53b6487b11cfe7ee1911719a9e7454f1" name="a53b6487b11cfe7ee1911719a9e7454f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b6487b11cfe7ee1911719a9e7454f1">&#9670;&nbsp;</a></span>GetStemsUseVerticalOffsetForNoteheadEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool __FCStaffBase::GetStemsUseVerticalOffsetForNoteheadEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value of "Use Vertical Offset For Notehead End Of Stem" checkbox in the Staff Stem Settings dialog. </p>
+<p >Lua-supported (also as property) (0.72) </p>
 
 </div>
 </div>
@@ -5309,6 +5752,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>For tablature notation: returns the vertical offset for fret numbers. </p>
+<p >This value is given in EFIX (1/64 of an EVPU). The Finale UI displays EVPU, so you would divide this value by 64 to get the UI display value.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -6644,6 +7088,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="a3ba76bf25b5b4a086718c1c769fb3638" name="a3ba76bf25b5b4a086718c1c769fb3638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba76bf25b5b4a086718c1c769fb3638">&#9670;&nbsp;</a></span>SetIndependentFontInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetIndependentFontInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>font</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> for the alternate notehead font. You must all set <a class="el" href="class_____f_c_staff_base.html#adfa4d93fd5a49c78a58b28fc07711814" title="Sets if a independent notehead font should be used for the staff.">SetIndependentFont</a> to true. </p>
+<p >Lua-supported (0.72). </p>
+
+</div>
+</div>
 <a id="a4b9666a636c62345e58a1e16a988b45f" name="a4b9666a636c62345e58a1e16a988b45f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b9666a636c62345e58a1e16a988b45f">&#9670;&nbsp;</a></span>SetIndependentKeySig()</h2>
 
@@ -7003,6 +7476,36 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Sets if barlines should be displayed for the staff. </p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a5cfbecc1a2ff103d53d484678f59a05f" name="a5cfbecc1a2ff103d53d484678f59a05f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cfbecc1a2ff103d53d484678f59a05f">&#9670;&nbsp;</a></span>SetShowBeams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetShowBeams </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if beams should be displayed for the staff. </p>
+<p >Note that beams are not actually displayed unless <a class="el" href="class_____f_c_staff_base.html#a8264809e505ba78620486d04cb9e7008" title="Sets if stems should be displayed for the staff.">SetShowStems</a> is also true.</p>
+<p >Lua-supported (also as property) (0.72) </p>
 
 </div>
 </div>
@@ -7617,8 +8120,9 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>Sets if the time signature should be displayed for the staff in both score and parts. </p>
-<p >On Finale 25, this will set both the score and part value at the same time. Earlier versions of Finale don't have separate settings for score/parts. </p><pre class="fragment">Lua-supported (also as property).
-</pre> 
+<p >On Finale 25, this will set both the score and part value at the same time. Earlier versions of Finale don't have separate settings for score/parts.</p>
+<p >Lua-supported (also as property). </p>
+
 </div>
 </div>
 <a id="aa69cd2070d1783ee039dc6c03ed8bf89" name="aa69cd2070d1783ee039dc6c03ed8bf89"></a>
@@ -7705,6 +8209,303 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 <p>Sets the stem reversal position offset for the staff. This setting is located in the "Staff Setup" dialog box. </p>
 <p >Lua-supported (also as property). </p>
+
+</div>
+</div>
+<a id="a1549644c5fe2818676c0b4986dc034a8" name="a1549644c5fe2818676c0b4986dc034a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1549644c5fe2818676c0b4986dc034a8">&#9670;&nbsp;</a></span>SetStemsDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsDirection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6">STAFFSTEMDIRS</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the stem direction for note entries on the staff. (Staff Stem Settings dialog.) </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a031813dc5f0464a5139525cabd9cb6f2" name="a031813dc5f0464a5139525cabd9cb6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a031813dc5f0464a5139525cabd9cb6f2">&#9670;&nbsp;</a></span>SetStemsDownHorizontalOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsDownHorizontalOffset </td>
+          <td>(</td>
+          <td class="paramtype">Efix32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the horizontal stem offset for down stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a0c3e1cea1c1edb3caad11e7c9e14cf42" name="a0c3e1cea1c1edb3caad11e7c9e14cf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c3e1cea1c1edb3caad11e7c9e14cf42">&#9670;&nbsp;</a></span>SetStemsDownVerticalOffsetForBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsDownVerticalOffsetForBeamEnd </td>
+          <td>(</td>
+          <td class="paramtype">Efix32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the vertical stem offset for the beam of end down stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="a5fe0c665bd7339bb68cca57ea6061958" name="a5fe0c665bd7339bb68cca57ea6061958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe0c665bd7339bb68cca57ea6061958">&#9670;&nbsp;</a></span>SetStemsDownVerticalOffsetForNoteheadEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsDownVerticalOffsetForNoteheadEnd </td>
+          <td>(</td>
+          <td class="paramtype">Efix32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the vertical stem offset for the notehead end of down stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="acced7002dd7628a7a7490d65e5f20e38" name="acced7002dd7628a7a7490d65e5f20e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acced7002dd7628a7a7490d65e5f20e38">&#9670;&nbsp;</a></span>SetStemsNoteheadEndFixedToStaff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsNoteheadEndFixedToStaff </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of "Use Vertical Offset For Notehead End Of Stem: Offset From" radio buttons in the Staff Stem Settings dialog. </p>
+<p >This setting has no effect if <a class="el" href="class_____f_c_staff_base.html#ac27bac31dae0d7d2b32783d5af2f7dff" title="Sets the value of &quot;Use Vertical Offset For Notehead End Of Stem&quot; checkbox in the Staff Stem Settings ...">SetStemsUseVerticalOffsetForNoteheadEnd</a> is false.</p>
+<p >Lua-supported (also as property) (0.72)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>false: "Offset From Notehead"; true: "Offset From Staff" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6b3a0190619074c253d5ecb968b0851" name="aa6b3a0190619074c253d5ecb968b0851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6b3a0190619074c253d5ecb968b0851">&#9670;&nbsp;</a></span>SetStemsUpHorizontalOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsUpHorizontalOffset </td>
+          <td>(</td>
+          <td class="paramtype">Efix32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the horizontal stem offset for up stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="ab5f71c9dbc7470092cc4a4816c46a5bf" name="ab5f71c9dbc7470092cc4a4816c46a5bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f71c9dbc7470092cc4a4816c46a5bf">&#9670;&nbsp;</a></span>SetStemsUpVerticalOffsetForBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsUpVerticalOffsetForBeamEnd </td>
+          <td>(</td>
+          <td class="paramtype">Efix32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the vertical stem offset for the beam of end up stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="af90d11c04f70ef3560a6d91af94896b4" name="af90d11c04f70ef3560a6d91af94896b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af90d11c04f70ef3560a6d91af94896b4">&#9670;&nbsp;</a></span>SetStemsUpVerticalOffsetForNoteheadEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsUpVerticalOffsetForNoteheadEnd </td>
+          <td>(</td>
+          <td class="paramtype">Efix32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the vertical stem offset for the notehead end of up stems. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="ac6b4b154953813be148fea1700942283" name="ac6b4b154953813be148fea1700942283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b4b154953813be148fea1700942283">&#9670;&nbsp;</a></span>SetStemsUseVerticalOffsetForBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsUseVerticalOffsetForBeamEnd </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of "Use Vertical Offset For Beam End Of Stem (Offset From Staff)" checkbox in the Staff Stem Settings dialog. </p>
+<p >Lua-supported (also as property) (0.72) </p>
+
+</div>
+</div>
+<a id="ac27bac31dae0d7d2b32783d5af2f7dff" name="ac27bac31dae0d7d2b32783d5af2f7dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac27bac31dae0d7d2b32783d5af2f7dff">&#9670;&nbsp;</a></span>SetStemsUseVerticalOffsetForNoteheadEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __FCStaffBase::SetStemsUseVerticalOffsetForNoteheadEnd </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the value of "Use Vertical Offset For Notehead End Of Stem" checkbox in the Staff Stem Settings dialog. </p>
+<p >Lua-supported (also as property) (0.72) </p>
 
 </div>
 </div>
@@ -7983,6 +8784,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><div class="memdoc">
 
 <p>For tablature notation: sets the vertical offset for fret numbers. </p>
+<p >This value is given in EFIX (1/64 of an EVPU). The Finale UI displays EVPU, so you would multiply the value displayed by the UI by 64 before passing it in here.</p>
 <p >Lua-supported (also as property). </p>
 
 </div>
@@ -26076,7 +26878,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 9 2024 18:49:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Mar 31 2024 17:37:11 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

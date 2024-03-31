@@ -16,7 +16,8 @@ var searchData=
   ['staffautonumber_5fstyle_13',['STAFFAUTONUMBER_STYLE',['../class_f_c_staff.html#ae67e6d274966076c15c594787502604b',1,'FCStaff']]],
   ['stafflist_5fmodes_14',['STAFFLIST_MODES',['../class_f_c_staff_list.html#addd36a6ac81bf72dc0038d61e4841170',1,'FCStaffList']]],
   ['staffnotation_5fstyle_15',['STAFFNOTATION_STYLE',['../class_____f_c_staff_base.html#a262557f0eaf1ef6150e5420f6d09e480',1,'__FCStaffBase']]],
-  ['stringfindoptions_16',['STRINGFINDOPTIONS',['../class_f_c_ctrl_text_editor.html#aef23e2e6644e95b4e0b4cec53653fbeb',1,'FCCtrlTextEditor']]],
-  ['syllablealigns_17',['SYLLABLEALIGNS',['../class_f_c_syllable_entry_mod.html#a1bfdb3184b8d8928f49789f30721cdbe',1,'FCSyllableEntryMod']]],
-  ['syllablejustifications_18',['SYLLABLEJUSTIFICATIONS',['../class_f_c_syllable_entry_mod.html#a3817af1aa51a303b83e18250cec7ae65',1,'FCSyllableEntryMod']]]
+  ['staffstemdirs_16',['STAFFSTEMDIRS',['../class_____f_c_staff_base.html#a49965d1d710d9ffb80396ef6345221e6',1,'__FCStaffBase']]],
+  ['stringfindoptions_17',['STRINGFINDOPTIONS',['../class_f_c_ctrl_text_editor.html#aef23e2e6644e95b4e0b4cec53653fbeb',1,'FCCtrlTextEditor']]],
+  ['syllablealigns_18',['SYLLABLEALIGNS',['../class_f_c_syllable_entry_mod.html#a1bfdb3184b8d8928f49789f30721cdbe',1,'FCSyllableEntryMod']]],
+  ['syllablejustifications_19',['SYLLABLEJUSTIFICATIONS',['../class_f_c_syllable_entry_mod.html#a3817af1aa51a303b83e18250cec7ae65',1,'FCSyllableEntryMod']]]
 ];

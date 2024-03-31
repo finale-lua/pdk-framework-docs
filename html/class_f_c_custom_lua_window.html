@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
    </div>
   </td>
  </tr>
@@ -154,8 +154,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a11c713ac358fd0d864388afbf1770527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f" title="Virtual handler method that is called when Dark Mode changes. (Currently macOS only....">DarkModeIsChanging()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a11c713ac358fd0d864388afbf1770527">More...</a><br /></td></tr>
 <tr class="separator:a11c713ac358fd0d864388afbf1770527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f941e207cd7e4397c7f30adfd21fb43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">RegisterOSMenuCommandExecuted</a> (luabridge::LuaRef lua_callback_function)</td></tr>
-<tr class="memdesc:a7f941e207cd7e4397c7f30adfd21fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">More...</a><br /></td></tr>
+<tr class="memdesc:a7f941e207cd7e4397c7f30adfd21fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handler method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7f941e207cd7e4397c7f30adfd21fb43">More...</a><br /></td></tr>
 <tr class="separator:a7f941e207cd7e4397c7f30adfd21fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adf95cce0a718dd7fc6389d06e481ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a7adf95cce0a718dd7fc6389d06e481ae">RegisterMouseTrackingStarted</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:a7adf95cce0a718dd7fc6389d06e481ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50" title="Virtual handler method that is called when a mouse tracking starts. Currently only supported fo FCCtr...">MouseTrackingStarted()</a> event handler.  <a href="class_f_c_custom_lua_window.html#a7adf95cce0a718dd7fc6389d06e481ae">More...</a><br /></td></tr>
+<tr class="separator:a7adf95cce0a718dd7fc6389d06e481ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4caea8ecd2be83fb4a3621f692e0cb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#ab4caea8ecd2be83fb4a3621f692e0cb5">RegisterMouseTrackingStopped</a> (luabridge::LuaRef lua_callback_function)</td></tr>
+<tr class="memdesc:ab4caea8ecd2be83fb4a3621f692e0cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623" title="Virtual handler method that is called when a mouse tracking stops. Currently only supported fo FCCtrl...">MouseTrackingStopped()</a> event handler.  <a href="class_f_c_custom_lua_window.html#ab4caea8ecd2be83fb4a3621f692e0cb5">More...</a><br /></td></tr>
+<tr class="separator:ab4caea8ecd2be83fb4a3621f692e0cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">HandleControlEvent</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl)</td></tr>
 <tr class="memdesc:a06ea38dd1b4c631219e1c06c320eb65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that is called when an event occurs on a registered control.  <a href="class_f_c_custom_lua_window.html#a06ea38dd1b4c631219e1c06c320eb65e">More...</a><br /></td></tr>
 <tr class="separator:a06ea38dd1b4c631219e1c06c320eb65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,8 +214,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when Dark Mode changes. (Currently macOS only.)  <a href="class_f_c_custom_lua_window.html#a7f5dc109ea48dd88f6ce2bf94def3d8f">More...</a><br /></td></tr>
 <tr class="separator:a7f5dc109ea48dd88f6ce2bf94def3d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacc4b3823a52f731c5b0a1808d4647ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">OSMenuCommandExecuted</a> (EMENUID menuCommand, int menuCommandType) override</td></tr>
-<tr class="memdesc:aacc4b3823a52f731c5b0a1808d4647ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handle method that is called after a menu command is executed.  <a href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">More...</a><br /></td></tr>
+<tr class="memdesc:aacc4b3823a52f731c5b0a1808d4647ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called after a menu command is executed.  <a href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce">More...</a><br /></td></tr>
 <tr class="separator:aacc4b3823a52f731c5b0a1808d4647ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40eb0180fec407b0dad11058060be50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50">MouseTrackingStarted</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:aa40eb0180fec407b0dad11058060be50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a mouse tracking starts. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>.  <a href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50">More...</a><br /></td></tr>
+<tr class="separator:aa40eb0180fec407b0dad11058060be50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95b3ced348f233051435095ac90b9623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623">MouseTrackingStopped</a> (<a class="el" href="class_f_c_control.html">FCControl</a> *pControl) override</td></tr>
+<tr class="memdesc:a95b3ced348f233051435095ac90b9623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual handler method that is called when a mouse tracking stops. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>.  <a href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623">More...</a><br /></td></tr>
+<tr class="separator:a95b3ced348f233051435095ac90b9623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_f_c_custom_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_f_c_custom_window')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_f_c_custom_window.html">FCCustomWindow</a></td></tr>
 <tr class="memitem:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">FCCustomWindow</a> ()</td></tr>
 <tr class="memdesc:a55605134fcffe2966857c0eb5357ae97 inherit pub_methods_class_f_c_custom_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_custom_window.html#a55605134fcffe2966857c0eb5357ae97">More...</a><br /></td></tr>
@@ -320,9 +332,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowModeless</b> (EWN
 <tr class="memitem:a194c32e97981b8730a5c9c6c0daafbb2 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2">EXECMODAL_RETURNS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_resource_window.html#a194c32e97981b8730a5c9c6c0daafbb2">ExecuteModal_EWND</a> (EWND hParent)</td></tr>
 <tr class="memdesc:a194c32e97981b8730a5c9c6c0daafbb2 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a dialog in a modal state (EWND version).  <a href="class_f_c_resource_window.html#a194c32e97981b8730a5c9c6c0daafbb2">More...</a><br /></td></tr>
 <tr class="separator:a194c32e97981b8730a5c9c6c0daafbb2 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c56b8170a2b469f7ea905c420412f8 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2">EXECMODAL_RETURNS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_resource_window.html#a65c56b8170a2b469f7ea905c420412f8">ExecuteModal</a> (<a class="el" href="class_____f_c_user_window.html">__FCUserWindow</a> *pParent)</td></tr>
-<tr class="memdesc:a65c56b8170a2b469f7ea905c420412f8 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a dialog box in a modal state.  <a href="class_f_c_resource_window.html#a65c56b8170a2b469f7ea905c420412f8">More...</a><br /></td></tr>
-<tr class="separator:a65c56b8170a2b469f7ea905c420412f8 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c82a61638d0b4014a986adca2be501 inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2">EXECMODAL_RETURNS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_resource_window.html#a36c82a61638d0b4014a986adca2be501">ExecuteModal</a> (<a class="el" href="class_____f_c_user_window.html">__FCUserWindow</a> *pParent=nullptr)</td></tr>
+<tr class="memdesc:a36c82a61638d0b4014a986adca2be501 inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a dialog box in a modal state.  <a href="class_f_c_resource_window.html#a36c82a61638d0b4014a986adca2be501">More...</a><br /></td></tr>
+<tr class="separator:a36c82a61638d0b4014a986adca2be501 inherit pub_methods_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8fce3dfeea96dcc80bf5bf79c8471c inherit pub_methods_class_f_c_resource_window"><td class="memItemLeft" align="right" valign="top"><a id="aab8fce3dfeea96dcc80bf5bf79c8471c" name="aab8fce3dfeea96dcc80bf5bf79c8471c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleWMNotify</b> (WPARAM wparam, LPARAM lparam)</td></tr>
 <tr class="memdesc:aab8fce3dfeea96dcc80bf5bf79c8471c inherit pub_methods_class_f_c_resource_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles notifications on Windows. <br /></td></tr>
@@ -419,9 +431,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsModal</b> ()</td></
 <tr class="memitem:af0cb00db0b3e42cb4a9695d4910019ab inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#af0cb00db0b3e42cb4a9695d4910019ab">SetEnabled</a> (bool state)</td></tr>
 <tr class="memdesc:af0cb00db0b3e42cb4a9695d4910019ab inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the enabled state of the window.  <a href="class_____f_c_user_window.html#af0cb00db0b3e42cb4a9695d4910019ab">More...</a><br /></td></tr>
 <tr class="separator:af0cb00db0b3e42cb4a9695d4910019ab inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58135654be971249d68721b38eeeb2fb inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a58135654be971249d68721b38eeeb2fb">GetItemAt</a> (int index)</td></tr>
-<tr class="memdesc:a58135654be971249d68721b38eeeb2fb inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded implementation of <a class="el" href="class_____f_c_user_window.html#a58135654be971249d68721b38eeeb2fb" title="Overloaded implementation of GetItemAt().">GetItemAt()</a>.  <a href="class_____f_c_user_window.html#a58135654be971249d68721b38eeeb2fb">More...</a><br /></td></tr>
-<tr class="separator:a58135654be971249d68721b38eeeb2fb inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f235c535709a71d4a8dc42720b3c80 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a63f235c535709a71d4a8dc42720b3c80">GetItemAt</a> (int index) const</td></tr>
+<tr class="memdesc:a63f235c535709a71d4a8dc42720b3c80 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded implementation of <a class="el" href="class_____f_c_user_window.html#a63f235c535709a71d4a8dc42720b3c80" title="Overloaded implementation of GetItemAt().">GetItemAt()</a>.  <a href="class_____f_c_user_window.html#a63f235c535709a71d4a8dc42720b3c80">More...</a><br /></td></tr>
+<tr class="separator:a63f235c535709a71d4a8dc42720b3c80 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5a4d7afdaff2025541ef60cbccd60b inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top"><a id="a1c5a4d7afdaff2025541ef60cbccd60b" name="a1c5a4d7afdaff2025541ef60cbccd60b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWidth</b> (float newwidth)</td></tr>
 <tr class="memdesc:a1c5a4d7afdaff2025541ef60cbccd60b inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the width of the window frame. <br /></td></tr>
@@ -520,6 +532,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAndActivate</b> (
 <tr class="memitem:adf166287462dd18555fc04a26eacb167 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#adf166287462dd18555fc04a26eacb167">Activate</a> ()</td></tr>
 <tr class="memdesc:adf166287462dd18555fc04a26eacb167 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the window and sets it in user focus.  <a href="class_____f_c_user_window.html#adf166287462dd18555fc04a26eacb167">More...</a><br /></td></tr>
 <tr class="separator:adf166287462dd18555fc04a26eacb167 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3d3c92e612f69247956e0face09268 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#aab3d3c92e612f69247956e0face09268">GetPreventClosing</a> () const</td></tr>
+<tr class="memdesc:aab3d3c92e612f69247956e0face09268 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the window may be closed.  <a href="class_____f_c_user_window.html#aab3d3c92e612f69247956e0face09268">More...</a><br /></td></tr>
+<tr class="separator:aab3d3c92e612f69247956e0face09268 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e02f1f896e993d360b999d804e08927 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a0e02f1f896e993d360b999d804e08927">SetPreventClosing</a> (bool state)</td></tr>
+<tr class="memdesc:a0e02f1f896e993d360b999d804e08927 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the window may be closed. Note that certain situations may still close the window even when this value is true, such as when the Finale app shuts down.  <a href="class_____f_c_user_window.html#a0e02f1f896e993d360b999d804e08927">More...</a><br /></td></tr>
+<tr class="separator:a0e02f1f896e993d360b999d804e08927 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752ea07d70bda71e6811014dfd276d67 inherit pub_methods_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#a752ea07d70bda71e6811014dfd276d67">CanClose</a> ()</td></tr>
 <tr class="memdesc:a752ea07d70bda71e6811014dfd276d67 inherit pub_methods_class_____f_c_user_window"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that decides if the window can close or not.  <a href="class_____f_c_user_window.html#a752ea07d70bda71e6811014dfd276d67">More...</a><br /></td></tr>
 <tr class="separator:a752ea07d70bda71e6811014dfd276d67 inherit pub_methods_class_____f_c_user_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -601,20 +619,20 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ElementExists</b> (<a
 <tr class="memitem:a25147a2f6aed72d874a5ee7eab2bc01f inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a25147a2f6aed72d874a5ee7eab2bc01f">DetachAll</a> ()</td></tr>
 <tr class="memdesc:a25147a2f6aed72d874a5ee7eab2bc01f inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all the objects from the collection, <b>without</b> freeing/destroying the objects.  <a href="class_____f_c_collection.html#a25147a2f6aed72d874a5ee7eab2bc01f">More...</a><br /></td></tr>
 <tr class="separator:a25147a2f6aed72d874a5ee7eab2bc01f inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2021d0725e5805437f23d3b8f7119ff4 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a2021d0725e5805437f23d3b8f7119ff4">GetItemAt</a> (int index)</td></tr>
-<tr class="memdesc:a2021d0725e5805437f23d3b8f7119ff4 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object at the index position. Index is 0-based.  <a href="class_____f_c_collection.html#a2021d0725e5805437f23d3b8f7119ff4">More...</a><br /></td></tr>
-<tr class="separator:a2021d0725e5805437f23d3b8f7119ff4 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c9c246cd36200a50776cbae287fab3 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a id="a67c9c246cd36200a50776cbae287fab3" name="a67c9c246cd36200a50776cbae287fab3"></a>
-<a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastItem</b> ()</td></tr>
-<tr class="memdesc:a67c9c246cd36200a50776cbae287fab3 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last item in the collection. <br /></td></tr>
-<tr class="separator:a67c9c246cd36200a50776cbae287fab3 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af70a080801c68f4c7d7db9150a1ed8af inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a id="af70a080801c68f4c7d7db9150a1ed8af" name="af70a080801c68f4c7d7db9150a1ed8af"></a>
-<a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index)</td></tr>
-<tr class="memdesc:af70a080801c68f4c7d7db9150a1ed8af inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identical to the <a class="el" href="class_____f_c_collection.html#a2021d0725e5805437f23d3b8f7119ff4" title="Returns the object at the index position. Index is 0-based.">GetItemAt</a> method. <br /></td></tr>
-<tr class="separator:af70a080801c68f4c7d7db9150a1ed8af inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60ec4c46c35a1e2e24bfc097f3c23fc0 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a60ec4c46c35a1e2e24bfc097f3c23fc0">GetIndexOf</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pObject)</td></tr>
-<tr class="memdesc:a60ec4c46c35a1e2e24bfc097f3c23fc0 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based order index for the object within the collection.  <a href="class_____f_c_collection.html#a60ec4c46c35a1e2e24bfc097f3c23fc0">More...</a><br /></td></tr>
-<tr class="separator:a60ec4c46c35a1e2e24bfc097f3c23fc0 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab20c34f1943b6b42251b5e91c4f772 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a9ab20c34f1943b6b42251b5e91c4f772">GetItemAt</a> (int index) const</td></tr>
+<tr class="memdesc:a9ab20c34f1943b6b42251b5e91c4f772 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object at the index position. Index is 0-based.  <a href="class_____f_c_collection.html#a9ab20c34f1943b6b42251b5e91c4f772">More...</a><br /></td></tr>
+<tr class="separator:a9ab20c34f1943b6b42251b5e91c4f772 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415a8977d4c07a0abd54d57f0aeebb1a inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a id="a415a8977d4c07a0abd54d57f0aeebb1a" name="a415a8977d4c07a0abd54d57f0aeebb1a"></a>
+<a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastItem</b> () const</td></tr>
+<tr class="memdesc:a415a8977d4c07a0abd54d57f0aeebb1a inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last item in the collection. <br /></td></tr>
+<tr class="separator:a415a8977d4c07a0abd54d57f0aeebb1a inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b36588052e1b060571191872d63f66 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a id="a61b36588052e1b060571191872d63f66" name="a61b36588052e1b060571191872d63f66"></a>
+<a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index) const</td></tr>
+<tr class="memdesc:a61b36588052e1b060571191872d63f66 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identical to the <a class="el" href="class_____f_c_collection.html#a9ab20c34f1943b6b42251b5e91c4f772" title="Returns the object at the index position. Index is 0-based.">GetItemAt</a> method. <br /></td></tr>
+<tr class="separator:a61b36588052e1b060571191872d63f66 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058699799f72dbaa73cc5762f00c4396 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a058699799f72dbaa73cc5762f00c4396">GetIndexOf</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pObject) const</td></tr>
+<tr class="memdesc:a058699799f72dbaa73cc5762f00c4396 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based order index for the object within the collection.  <a href="class_____f_c_collection.html#a058699799f72dbaa73cc5762f00c4396">More...</a><br /></td></tr>
+<tr class="separator:a058699799f72dbaa73cc5762f00c4396 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86e0c8883cd0f0f428442f255c04a2dc inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a86e0c8883cd0f0f428442f255c04a2dc">DetachItemAt</a> (int index)</td></tr>
 <tr class="memdesc:a86e0c8883cd0f0f428442f255c04a2dc inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the object at the index position. Index is 0-based.  <a href="class_____f_c_collection.html#a86e0c8883cd0f0f428442f255c04a2dc">More...</a><br /></td></tr>
 <tr class="separator:a86e0c8883cd0f0f428442f255c04a2dc inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -643,15 +661,15 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>ForEachIndex</
 <tr class="memitem:a8006be9eb15469e91a160ce64a433b41 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a8006be9eb15469e91a160ce64a433b41">Swap</a> (int index1, int index2)</td></tr>
 <tr class="memdesc:a8006be9eb15469e91a160ce64a433b41 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps to items in the collection.  <a href="class_____f_c_collection.html#a8006be9eb15469e91a160ce64a433b41">More...</a><br /></td></tr>
 <tr class="separator:a8006be9eb15469e91a160ce64a433b41 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2600e956bc2d111211bd455d75b8abf2 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a2600e956bc2d111211bd455d75b8abf2">IsEmpty</a> ()</td></tr>
-<tr class="memdesc:a2600e956bc2d111211bd455d75b8abf2 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the collection contains no elements.  <a href="class_____f_c_collection.html#a2600e956bc2d111211bd455d75b8abf2">More...</a><br /></td></tr>
-<tr class="separator:a2600e956bc2d111211bd455d75b8abf2 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3e60d9424c41284d3019c0c02130a1 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a6e3e60d9424c41284d3019c0c02130a1">IsEmpty</a> () const</td></tr>
+<tr class="memdesc:a6e3e60d9424c41284d3019c0c02130a1 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the collection contains no elements.  <a href="class_____f_c_collection.html#a6e3e60d9424c41284d3019c0c02130a1">More...</a><br /></td></tr>
+<tr class="separator:a6e3e60d9424c41284d3019c0c02130a1 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c38b245094cc2bbd686e9c2616cd80 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a23c38b245094cc2bbd686e9c2616cd80">MoveFrom</a> (<a class="el" href="class_____f_c_collection.html">__FCCollection</a> *pOtherCollection, bool unique=false)</td></tr>
 <tr class="memdesc:a23c38b245094cc2bbd686e9c2616cd80 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves elements from another collection into this collection. The other will be empty after the operation.  <a href="class_____f_c_collection.html#a23c38b245094cc2bbd686e9c2616cd80">More...</a><br /></td></tr>
 <tr class="separator:a23c38b245094cc2bbd686e9c2616cd80 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d3966a75c5c139472608030dae3e089 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a2d3966a75c5c139472608030dae3e089">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) override</td></tr>
-<tr class="memdesc:a2d3966a75c5c139472608030dae3e089 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if two collections are considered to be identical.  <a href="class_____f_c_collection.html#a2d3966a75c5c139472608030dae3e089">More...</a><br /></td></tr>
-<tr class="separator:a2d3966a75c5c139472608030dae3e089 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d144862b7e44abcbdb9170511f5df3 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#ad8d144862b7e44abcbdb9170511f5df3">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const override</td></tr>
+<tr class="memdesc:ad8d144862b7e44abcbdb9170511f5df3 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if two collections are considered to be identical.  <a href="class_____f_c_collection.html#ad8d144862b7e44abcbdb9170511f5df3">More...</a><br /></td></tr>
+<tr class="separator:ad8d144862b7e44abcbdb9170511f5df3 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d6b6111fafca2c224ed89702fe3c25 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a47d6b6111fafca2c224ed89702fe3c25">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a47d6b6111fafca2c224ed89702fe3c25 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_____f_c_collection.html#a47d6b6111fafca2c224ed89702fe3c25">More...</a><br /></td></tr>
 <tr class="separator:a47d6b6111fafca2c224ed89702fe3c25 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -776,7 +794,7 @@ Additional Inherited Members</h2></td></tr>
 , <a class="el" href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2aa07b0a48134c4e0c0a4571da6010016e">EXECMODAL_OK</a> = 1
 , <a class="el" href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2a65e41c544498576682922589c8fb0752">EXECMODAL_CANCEL</a> = 2
  }</td></tr>
-<tr class="memdesc:ade11f0bf17049792709196671044afc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return codes for the <a class="el" href="class_f_c_resource_window.html#a65c56b8170a2b469f7ea905c420412f8" title="Executes a dialog box in a modal state.">ExecuteModal()</a> method.  <a href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2">More...</a><br /></td></tr>
+<tr class="memdesc:ade11f0bf17049792709196671044afc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return codes for the <a class="el" href="class_f_c_resource_window.html#a36c82a61638d0b4014a986adca2be501" title="Executes a dialog box in a modal state.">ExecuteModal()</a> method.  <a href="class_f_c_resource_window.html#ade11f0bf17049792709196671044afc2">More...</a><br /></td></tr>
 <tr class="separator:ade11f0bf17049792709196671044afc2 inherit pub_types_class_f_c_resource_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_user_window"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_user_window')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_user_window.html">__FCUserWindow</a></td></tr>
 <tr class="memitem:af07ed05132bac987ff3acab63a001e47 inherit pub_types_class_____f_c_user_window"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_user_window.html#af07ed05132bac987ff3acab63a001e47">COMMAND_MOD_KEYS</a> { <br />
@@ -862,97 +880,98 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_INSTRUMENTDEF</b>
 , <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYMODEDEF</b>
+, <b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -1630,6 +1649,80 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="aa40eb0180fec407b0dad11058060be50" name="aa40eb0180fec407b0dad11058060be50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa40eb0180fec407b0dad11058060be50">&#9670;&nbsp;</a></span>MouseTrackingStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::MouseTrackingStarted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when a mouse tracking starts. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control where mouse tracking stared. (Currently only works with <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#acb063cf5e629c8f5cc560197955568c4">__FCUserWindow</a>.</p>
+
+</div>
+</div>
+<a id="a95b3ced348f233051435095ac90b9623" name="a95b3ced348f233051435095ac90b9623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b3ced348f233051435095ac90b9623">&#9670;&nbsp;</a></span>MouseTrackingStopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCCustomLuaWindow::MouseTrackingStopped </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_f_c_control.html">FCControl</a> *&#160;</td>
+          <td class="paramname"><em>pControl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual handler method that is called when a mouse tracking stops. Currently only supported fo <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>. </p>
+<p >Lua-supported through a callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pControl</td><td>the control where mouse tracking stared. (Currently only works with <a class="el" href="class_f_c_ctrl_slider.html" title="Control class for sliders.">FCCtrlSlider</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_____f_c_user_window.html#aeb158c96c258b51084193e5caaeff31c">__FCUserWindow</a>.</p>
+
+</div>
+</div>
 <a id="a91234f4f259f6b019245ef8de5524fbd" name="a91234f4f259f6b019245ef8de5524fbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91234f4f259f6b019245ef8de5524fbd">&#9670;&nbsp;</a></span>OkButtonPressed()</h2>
 
@@ -1694,7 +1787,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </table>
 </div><div class="memdoc">
 
-<p>Virtual handle method that is called after a menu command is executed. </p>
+<p>Virtual handler method that is called after a menu command is executed. </p>
 <p >Lua-supported through a callback function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2260,6 +2353,78 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 
 </div>
 </div>
+<a id="a7adf95cce0a718dd7fc6389d06e481ae" name="a7adf95cce0a718dd7fc6389d06e481ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7adf95cce0a718dd7fc6389d06e481ae">&#9670;&nbsp;</a></span>RegisterMouseTrackingStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterMouseTrackingStarted </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50" title="Virtual handler method that is called when a mouse tracking starts. Currently only supported fo FCCtr...">MouseTrackingStarted()</a> event handler. </p>
+<p >Lua-supported (0.72).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aa40eb0180fec407b0dad11058060be50" title="Virtual handler method that is called when a mouse tracking starts. Currently only supported fo FCCtr...">MouseTrackingStarted</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
+<a id="ab4caea8ecd2be83fb4a3621f692e0cb5" name="ab4caea8ecd2be83fb4a3621f692e0cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4caea8ecd2be83fb4a3621f692e0cb5">&#9670;&nbsp;</a></span>RegisterMouseTrackingStopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCCustomLuaWindow::RegisterMouseTrackingStopped </td>
+          <td>(</td>
+          <td class="paramtype">luabridge::LuaRef&#160;</td>
+          <td class="paramname"><em>lua_callback_function</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623" title="Virtual handler method that is called when a mouse tracking stops. Currently only supported fo FCCtrl...">MouseTrackingStopped()</a> event handler. </p>
+<p >Lua-supported (0.72).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#a95b3ced348f233051435095ac90b9623" title="Virtual handler method that is called when a mouse tracking stops. Currently only supported fo FCCtrl...">MouseTrackingStopped</a> event handler for the callback syntax.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on succesful callback registration. </dd></dl>
+
+</div>
+</div>
 <a id="a7f941e207cd7e4397c7f30adfd21fb43" name="a7f941e207cd7e4397c7f30adfd21fb43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f941e207cd7e4397c7f30adfd21fb43">&#9670;&nbsp;</a></span>RegisterOSMenuCommandExecuted()</h2>
 
@@ -2284,13 +2449,13 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler. </p>
+<p>Registers a Lua function to the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handler method that is called after a menu command is executed.">OSMenuCommandExecuted()</a> event handler. </p>
 <p >See <a class="el" href="class_f_c_u_i.html#a5213a34f8a6e4a91aa6791ad0e43cad4" title="Returns the OS-dependent menu command for a specific item in one of Finale&#39;s main menus.">FCUI::GetOSMenuCommandFromItemText</a> for more information about OS menu commands.</p>
 <p >An example usage of this callback is allowing a modeless window to track whether a menu item has been executed as a trigger for an update of its display. These might include tracking if the user calls Undo or creates a Bookmark.</p>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handle method that is called after a menu command is executed.">OSMenuCommandExecuted</a> event handler for the callback syntax.</td></tr>
+    <tr><td class="paramname">lua_callback_function</td><td>The Lua callback function. Please refer to the documentation for the <a class="el" href="class_f_c_custom_lua_window.html#aacc4b3823a52f731c5b0a1808d4647ce" title="Virtual handler method that is called after a menu command is executed.">OSMenuCommandExecuted</a> event handler for the callback syntax.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2535,7 +2700,7 @@ twobyte&#160;</td><td class="memItemRight" valign="bottom"><b>GetModalResult</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 9 2024 18:49:49 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Mar 31 2024 17:37:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

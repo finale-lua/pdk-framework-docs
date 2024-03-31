@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
    </div>
   </td>
  </tr>
@@ -149,9 +149,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCompositeBottom</b
 <tr class="separator:a0bf29549ce1085d06d7da086fbda9740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1e862dce8f4f4cf9ec0901edc346ac"><td class="memItemLeft" align="right" valign="top">TimeEdu32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_time_signature.html#a5a1e862dce8f4f4cf9ec0901edc346ac">CalcNextBeatPosition</a> (TimeEdu32 eduposition)</td></tr>
 <tr class="separator:a5a1e862dce8f4f4cf9ec0901edc346ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e9b181d9e49ad7662d7ad137c832876"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_time_signature.html#a5e9b181d9e49ad7662d7ad137c832876">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) override</td></tr>
-<tr class="memdesc:a5e9b181d9e49ad7662d7ad137c832876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the time signature is identical to the compared time signature.  <a href="class_f_c_time_signature.html#a5e9b181d9e49ad7662d7ad137c832876">More...</a><br /></td></tr>
-<tr class="separator:a5e9b181d9e49ad7662d7ad137c832876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1fc01d63a607bcbda73601f03f6aca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_time_signature.html#a3e1fc01d63a607bcbda73601f03f6aca">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const override</td></tr>
+<tr class="memdesc:a3e1fc01d63a607bcbda73601f03f6aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the time signature is identical to the compared time signature.  <a href="class_f_c_time_signature.html#a3e1fc01d63a607bcbda73601f03f6aca">More...</a><br /></td></tr>
+<tr class="separator:a3e1fc01d63a607bcbda73601f03f6aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522cf3ce7777c6366ec56a339b51e58a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_time_signature.html#a522cf3ce7777c6366ec56a339b51e58a">IsCompound</a> ()</td></tr>
 <tr class="memdesc:a522cf3ce7777c6366ec56a339b51e58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the time signature is a compound meter, such as 3/8, 6/8, etc.  <a href="class_f_c_time_signature.html#a522cf3ce7777c6366ec56a339b51e58a">More...</a><br /></td></tr>
 <tr class="separator:a522cf3ce7777c6366ec56a339b51e58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,97 +400,98 @@ Additional Inherited Members</h2></td></tr>
 , <b>FCID_INSTRUMENTDEF</b>
 , <b>FCID_INSTRUMENTPLAYBACKDATA</b>
 , <br />
-&#160;&#160;<b>FCID_KEYSIGNATURE</b>
+&#160;&#160;<b>FCID_KEYMODEDEF</b>
+, <b>FCID_KEYSIGNATURE</b>
 , <b>FCID_LAYERPREFS</b>
 , <b>FCID_LYRICSBASELINE</b>
-, <b>FCID_LYRICSPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_MEASURE</b>
+&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_MEASURE</b>
 , <b>FCID_MEASURENUMBERREGION</b>
 , <b>FCID_METATOOLASSIGNMENT</b>
-, <b>FCID_MIDIEXPRESSION</b>
 , <br />
-&#160;&#160;<b>FCID_MISCDOCPREFS</b>
+&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MISCDOCPREFS</b>
 , <b>FCID_MULTIMEASUREREST</b>
 , <b>FCID_MULTIMEASURERESTPREFS</b>
-, <b>FCID_MULTISTAFFINSTRUMENT</b>
 , <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENTS</b>
 , <b>FCID_MUSICCHARACTERPREFS</b>
 , <b>FCID_MUSICSPACINGPREFS</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
 , <br />
-&#160;&#160;<b>FCID_NOTEHEADMOD</b>
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <b>FCID_NOTEHEADMOD</b>
 , <b>FCID_OTHERINCI</b>
 , <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <b>FCID_PERCUSSIONSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
+&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERFORMANCEMOD</b>
 , <b>FCID_PAGE</b>
 , <b>FCID_PAGEFORMATPREFS</b>
-, <b>FCID_PAGEGRAPHIC</b>
 , <br />
-&#160;&#160;<b>FCID_PAGETEXT</b>
+&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGETEXT</b>
 , <b>FCID_PART</b>
 , <b>FCID_PARTEXTRACTPREFS</b>
-, <b>FCID_PARTSCOPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
+&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
 , <b>FCID_PERCUSSIONNOTEMOD</b>
 , <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
 , <b>FCID_REPEATPREFS</b>
 , <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_BEAMEXTENSIONMOD</b>
 , <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
 , <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
 , <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
 , <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
 , <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
 , <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
 , <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
 , <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
 , <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
 , <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
 , <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
 , <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
 <tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
@@ -1015,8 +1016,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e9b181d9e49ad7662d7ad137c832876" name="a5e9b181d9e49ad7662d7ad137c832876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9b181d9e49ad7662d7ad137c832876">&#9670;&nbsp;</a></span>IsIdentical()</h2>
+<a id="a3e1fc01d63a607bcbda73601f03f6aca" name="a3e1fc01d63a607bcbda73601f03f6aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1fc01d63a607bcbda73601f03f6aca">&#9670;&nbsp;</a></span>IsIdentical()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1029,7 +1030,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td>
           <td class="paramname"><em>pCompareObject</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1046,7 +1047,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported. <br  />
  </p>
 
-<p>Reimplemented from <a class="el" href="class_____f_c_base.html#a5c3f33c925b4d20a49a6e20981c5e46d">__FCBase</a>.</p>
+<p>Reimplemented from <a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">__FCBase</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1269,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 9 2024 18:49:51 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Mar 31 2024 17:37:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

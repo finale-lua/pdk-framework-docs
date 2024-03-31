@@ -39,12 +39,14 @@ var searchData=
   ['preprocess_36',['PreProcess',['../class_f_c_iterator_handler.html#a65120bd25fc4d09c0f49f9d31a656799',1,'FCIteratorHandler']]],
   ['preprocessifexist_37',['PreProcessIfExist',['../class_f_c_iterator_handler.html#a19f18ca5d098a83dd6aa46ffe9c7e4be',1,'FCIteratorHandler']]],
   ['previous_38',['Previous',['../class_f_c_note_entry.html#af09160ac47e9299c9d4db6ed2f37692a',1,'FCNoteEntry']]],
-  ['previousinframe_39',['PreviousInFrame',['../class_f_c_note_entry.html#ad33f08873dee4157819f17edf42a9bf7',1,'FCNoteEntry']]],
-  ['print_40',['Print',['../class_f_c_document.html#a36257a11274feb4ae6f09ff201af8316',1,'FCDocument::Print()'],['../class_f_c_part.html#a53b29ef79528cd6cb72423ed8a5ff81e',1,'FCPart::Print()']]],
-  ['printcurrent_41',['PrintCurrent',['../class_f_c_print_settings.html#a25934a6deb817a88fed3fc4083522b4c',1,'FCPrintSettings']]],
-  ['printdocument_42',['PrintDocument',['../class_f_c_print_settings.html#a0860167416208607b8029377c09927c2',1,'FCPrintSettings']]],
-  ['printoddeven_5fall_43',['PRINTODDEVEN_ALL',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235abe72fdbb7ca84ca0112e0fe0a14c9a1b',1,'FCPrintSettings']]],
-  ['printoddeven_5feven_44',['PRINTODDEVEN_EVEN',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235a702e815d8047ee663dca240369f517c0',1,'FCPrintSettings']]],
-  ['printoddeven_5fodd_45',['PRINTODDEVEN_ODD',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235a5782629efc2afb31c1fcd4c6b01d89d3',1,'FCPrintSettings']]],
-  ['printoddevenmodes_46',['PRINTODDEVENMODES',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235',1,'FCPrintSettings']]]
+  ['previousinbeamedgroup_39',['PreviousInBeamedGroup',['../class_f_c_note_entry.html#a0f2b1f5f35d42b73d85747c85eb2994f',1,'FCNoteEntry']]],
+  ['previousinframe_40',['PreviousInFrame',['../class_f_c_note_entry.html#ad33f08873dee4157819f17edf42a9bf7',1,'FCNoteEntry']]],
+  ['previoussamevinframe_41',['PreviousSameVInFrame',['../class_f_c_note_entry.html#ab1eae1eada94f06f68454af6db4f7447',1,'FCNoteEntry']]],
+  ['print_42',['Print',['../class_f_c_document.html#a36257a11274feb4ae6f09ff201af8316',1,'FCDocument::Print()'],['../class_f_c_part.html#a53b29ef79528cd6cb72423ed8a5ff81e',1,'FCPart::Print()']]],
+  ['printcurrent_43',['PrintCurrent',['../class_f_c_print_settings.html#a25934a6deb817a88fed3fc4083522b4c',1,'FCPrintSettings']]],
+  ['printdocument_44',['PrintDocument',['../class_f_c_print_settings.html#a0860167416208607b8029377c09927c2',1,'FCPrintSettings']]],
+  ['printoddeven_5fall_45',['PRINTODDEVEN_ALL',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235abe72fdbb7ca84ca0112e0fe0a14c9a1b',1,'FCPrintSettings']]],
+  ['printoddeven_5feven_46',['PRINTODDEVEN_EVEN',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235a702e815d8047ee663dca240369f517c0',1,'FCPrintSettings']]],
+  ['printoddeven_5fodd_47',['PRINTODDEVEN_ODD',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235a5782629efc2afb31c1fcd4c6b01d89d3',1,'FCPrintSettings']]],
+  ['printoddevenmodes_48',['PRINTODDEVENMODES',['../class_f_c_print_settings.html#a99f64654bd808dd2befd1d94dd390235',1,'FCPrintSettings']]]
 ];

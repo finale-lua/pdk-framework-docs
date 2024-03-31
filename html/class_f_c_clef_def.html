@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.71</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
    </div>
   </td>
  </tr>
@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_f_c_clef_def-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">FCClefDef Class Reference<div class="ingroups"><a class="el" href="group__data__classes.html">Data Classes</a> &#124; <a class="el" href="group__lua__classes.html">Lua Classes</a></div></div></div>
@@ -85,6 +86,213 @@ Inheritance diagram for FCClefDef:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1c8cdfe86007ae7365a20d4b9e8699c8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8">DEFAULTCLEFIDS</a> { <br />
+&#160;&#160;<a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a6aee1951b60f9a4ddf162d38c3935e42">DEFAULTCLEFID_TREBLE</a> = CLEF_TREBLE
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a14f23719d03d609e266ec469bf745c3e">DEFAULTCLEFID_ALTO</a> = CLEF_ALTO
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8ad665eaa7320ab5bc6a83306065d245d4">DEFAULTCLEFID_TENOR</a> = CLEF_TENOR
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a7d4961edec766701620d19d4cd0aec47">DEFAULTCLEFID_BASS</a> = CLEF_BASS
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a041dabe2235f825265f07359cb7dbe58">DEFAULTCLEFID_PERCUSSION</a> = CLEF_PERCUSSION
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a42163f38fbb00a158ca5bb8502ad065a">DEFAULTCLEFID_TREBLE8VB</a> = CLEF_TREBLE8VB
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a6f951a82a9d3553bf9471d2b9ae4192e">DEFAULTCLEFID_BASS8VB</a> = CLEF_BASS8VB
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8ab02dd3f53f3496603f1eba3d04865531">DEFAULTCLEFID_BARITONE</a> = CLEF_BARITONE
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a7f100dbf82c3ebeb795128f93fd0a1ca">DEFAULTCLEFID_FRENCHVIOLIN</a> = CLEF_FRENCHVIOLIN
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a5b5fc80667a9145cd65e3fb8a1872294">DEFAULTCLEFID_BARITONEC</a> = CLEF_BARITONEC
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8ad37d9c4ee32836be3ea2598e758c0c36">DEFAULTCLEFID_MEZZOSOPRANO</a> = CLEF_MEZZOSOPRANO
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8aa2f60d185664b9da4b80ca62e6490a5e">DEFAULTCLEFID_SOPRANO</a> = CLEF_SOPRANO
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a567bbefb845aa73f1d405a642cc5fd6d">DEFAULTCLEFID_ALTPERCUSSION</a> = CLEF_ALTPERCUSSION
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a6bd65629df313d60f2131e13e78cd3b7">DEFAULTCLEFID_TREBLE8VA</a> = CLEF_TREBLE8VA
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8ad34d776bd6ef7f42e8fd1cb9c2f2eb9f">DEFAULTCLEFID_BASS8VA</a> = CLEF_BASS8VA
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a8692ff2fdc5dae95fed7e8a3630f2364">DEFAULTCLEFID_BLANK</a> = CLEF_BLANK
+, <br />
+&#160;&#160;<a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8aa022e59a91ae985b15f08ef6b3dfcd2a">DEFAULTCLEFID_TAB1</a> = CLEF_TAB1
+, <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8afe88fa33eaf38aee0b2bb971803aa97b">DEFAULTCLEFID_TAB2</a> = CLEF_TAB2
+<br />
+ }</td></tr>
+<tr class="memdesc:a1c8cdfe86007ae7365a20d4b9e8699c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="class_f_c_clef_def.html#a035029dac54f776d763097ffc001a5b3" title="Returns the 0-based clef index/ID.">GetClefIndex</a> values. If the clefs have not been modified in the clef designer, their indices match these values.  <a href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8">More...</a><br /></td></tr>
+<tr class="separator:a1c8cdfe86007ae7365a20d4b9e8699c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
+<tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
+&#160;&#160;<b>FCID_UNKNOWN</b> = 0
+, <b>FCID_ACCIDENTALMOD</b>
+, <b>FCID_ACTIVELYRIC</b>
+, <b>FCID_ALLOTMENT</b>
+, <br />
+&#160;&#160;<b>FCID_ARTICULATION</b>
+, <b>FCID_ARTICULATIONDEF</b>
+, <b>FCID_BACKWARDREPEAT</b>
+, <b>FCID_BASELINE</b>
+, <br />
+&#160;&#160;<b>FCID_BEAMMOD</b>
+, <b>FCID_BEATCHARTELEMENT</b>
+, <b>FCID_BOOKMARK</b>
+, <b>FCID_BROKENBEAMMOD</b>
+, <br />
+&#160;&#160;<b>FCID_CATEGORYDEF</b>
+, <b>FCID_CELLCLEFCHANGE</b>
+, <b>FCID_CELLFRAMEHOLD</b>
+, <b>FCID_CELLGRAPHIC</b>
+, <br />
+&#160;&#160;<b>FCID_CELLTEXT</b>
+, <b>FCID_CENTERSMARTSHAPE</b>
+, <b>FCID_CHORD</b>
+, <b>FCID_CHORDPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
+, <b>FCID_CHORUSSYLLABLE</b>
+, <b>FCID_CLEFDEF</b>
+, <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
+, <b>FCID_CROSSSTAFFMOD</b>
+, <b>FCID_CUSTOMSMARTLINEDEF</b>
+, <b>FCID_CUSTOMSTEMMOD</b>
+, <br />
+&#160;&#160;<b>FCID_DISTANCEPREFS</b>
+, <b>FCID_DOTMOD</b>
+, <b>FCID_ENCLOSURE</b>
+, <b>FCID_ENDINGREPEAT</b>
+, <br />
+&#160;&#160;<b>FCID_ENIGMATEXTSTYLE</b>
+, <b>FCID_ENTRYALTERMOD</b>
+, <b>FCID_EXECUTABLESHAPEDEF</b>
+, <b>FCID_EXPRESSION</b>
+, <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
+, <b>FCID_FONTPREFS</b>
+, <b>FCID_FREEZESYSTEM</b>
+, <b>FCID_FRETBOARDSTYLEDEF</b>
+, <br />
+&#160;&#160;<b>FCID_FRETBOARDSTYLEDEFS</b>
+, <b>FCID_FRETBOARDGROUPDEF</b>
+, <b>FCID_FRETBOARDGROUPDEFS</b>
+, <b>FCID_FRETINSTRUMENTDEF</b>
+, <br />
+&#160;&#160;<b>FCID_GENERALPREFS</b>
+, <b>FCID_GRIDSGUIDESPREFS</b>
+, <b>FCID_GROUP</b>
+, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_HUMANPLAYBACKPREFS</b>
+, <b>FCID_INDEPENDENTCELLDETAIL</b>
+, <b>FCID_INSTRUMENTDEF</b>
+, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
+, <br />
+&#160;&#160;<b>FCID_KEYMODEDEF</b>
+, <b>FCID_KEYSIGNATURE</b>
+, <b>FCID_LAYERPREFS</b>
+, <b>FCID_LYRICSBASELINE</b>
+, <br />
+&#160;&#160;<b>FCID_LYRICSPREFS</b>
+, <b>FCID_MEASURE</b>
+, <b>FCID_MEASURENUMBERREGION</b>
+, <b>FCID_METATOOLASSIGNMENT</b>
+, <br />
+&#160;&#160;<b>FCID_MIDIEXPRESSION</b>
+, <b>FCID_MISCDOCPREFS</b>
+, <b>FCID_MULTIMEASUREREST</b>
+, <b>FCID_MULTIMEASURERESTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENT</b>
+, <b>FCID_MULTISTAFFINSTRUMENTS</b>
+, <b>FCID_MUSICCHARACTERPREFS</b>
+, <b>FCID_MUSICSPACINGPREFS</b>
+, <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
+, <b>FCID_NOTEHEADMOD</b>
+, <b>FCID_OTHERINCI</b>
+, <b>FCID_PERCUSSIONLAYOUTNOTE</b>
+, <br />
+&#160;&#160;<b>FCID_PERCUSSIONSTAFF</b>
+, <b>FCID_PERFORMANCEMOD</b>
+, <b>FCID_PAGE</b>
+, <b>FCID_PAGEFORMATPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_PAGEGRAPHIC</b>
+, <b>FCID_PAGETEXT</b>
+, <b>FCID_PART</b>
+, <b>FCID_PARTEXTRACTPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_PARTSCOPEPREFS</b>
+, <b>FCID_PARTSTAFFVOICING</b>
+, <b>FCID_PERCUSSIONNOTEMOD</b>
+, <b>FCID_PIANOBRACEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_PLAYBACKPREFS</b>
+, <b>FCID_RAWTEXT</b>
+, <b>FCID_REPEATPREFS</b>
+, <b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <br />
+&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+, <b>FCID_SECTIONSYLLABLE</b>
+, <b>FCID_SEPARATEMEASURENUMBER</b>
+, <b>FCID_SEPARATEPLACEMENT</b>
+, <br />
+&#160;&#160;<b>FCID_SHAPEDEF</b>
+, <b>FCID_SHAPEEXPRESSIONDEF</b>
+, <b>FCID_SLURCONTOURPREFS</b>
+, <b>FCID_SIZEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_SMARTSHAPE</b>
+, <b>FCID_SMARTSHAPEENTRYMARK</b>
+, <b>FCID_SMARTSHAPEMEASUREMARK</b>
+, <b>FCID_SMARTSHAPEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_STAFF</b>
+, <b>FCID_STAFFLIST</b>
+, <b>FCID_STAFFNAMEPOSITION</b>
+, <b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+, <b>FCID_STAFFSTYLEDEF</b>
+, <b>FCID_STAFFSYSTEM</b>
+, <b>FCID_STEMCONNECTIONTABLE</b>
+, <br />
+&#160;&#160;<b>FCID_STEMMOD</b>
+, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
+, <b>FCID_SYLLABLEENTRYMOD</b>
+, <b>FCID_SYSTEMSTAFF</b>
+, <br />
+&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+, <b>FCID_TEMPOELEMENT</b>
+, <b>FCID_TEXTBLOCK</b>
+, <b>FCID_TEXTEXPRESSIONDEF</b>
+, <br />
+&#160;&#160;<b>FCID_TEXTREPEAT</b>
+, <b>FCID_TEXTREPEATDEF</b>
+, <b>FCID_TIEMOD</b>
+, <b>FCID_TIEPREFS</b>
+, <br />
+&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+, <b>FCID_TIEPLACEMENTPREFS</b>
+, <b>FCID_TIMESIGNATURE</b>
+, <b>FCID_TUPLET</b>
+, <br />
+&#160;&#160;<b>FCID_TUPLETPREFS</b>
+, <b>FCID_VERSESYLLABLE</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
+<tr class="separator:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a> { <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a707eba9499cef193373ede69bfef3736">MEASUREMENTUNIT_DEFAULT</a> = UNIT_DEFAULT
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a0b105c0bf10993d38a0bb6fdb30a5478">MEASUREMENTUNIT_EVPUS</a> = UNIT_EVPUS
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6afbf3b5209071bd18acbf1fb1ca6909d3">MEASUREMENTUNIT_INCHES</a> = UNIT_INCHES
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a22fedb5fa471001b099cc7d8dafd3ca1">MEASUREMENTUNIT_CENTIMETERS</a> = UNIT_CENTS
+, <br />
+&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36e86e89f3029e219b9cc1723626faa">MEASUREMENTUNIT_POINTS</a> = UNIT_POINTS
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6af382bf4d11095cdd20603b966ba92b16">MEASUREMENTUNIT_PICAS</a> = UNIT_PICAS
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36860d891171922f1fdf33c912daee5">MEASUREMENTUNIT_SPACES</a> = UNIT_SPACES
+, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a9eb7891cfe1766026f0a3f6b747f64a0">MEASUREMENTUNIT_MILLIMETERS</a> = 100
+<br />
+ }</td></tr>
+<tr class="memdesc:a9c34d7730c8104ce6e2275c55fc04de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for Finale's standard measurement units.  <a href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">More...</a><br /></td></tr>
+<tr class="separator:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a857e5d7a1830fe12e45548e413a8c1e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#a857e5d7a1830fe12e45548e413a8c1e6">FCClefDef</a> ()</td></tr>
@@ -105,9 +313,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f02f3ee9dbace695fd035f40f0b461f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#a6f02f3ee9dbace695fd035f40f0b461f">GetUseCustomFont</a> () const</td></tr>
 <tr class="memdesc:a6f02f3ee9dbace695fd035f40f0b461f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a custom font is used.  <a href="class_f_c_clef_def.html#a6f02f3ee9dbace695fd035f40f0b461f">More...</a><br /></td></tr>
 <tr class="separator:a6f02f3ee9dbace695fd035f40f0b461f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe83a77cd990f90b5490992c841ae543"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#afe83a77cd990f90b5490992c841ae543">GetFontInfo</a> (<a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFontInfo)</td></tr>
-<tr class="memdesc:afe83a77cd990f90b5490992c841ae543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font for the clef.  <a href="class_f_c_clef_def.html#afe83a77cd990f90b5490992c841ae543">More...</a><br /></td></tr>
-<tr class="separator:afe83a77cd990f90b5490992c841ae543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d696649e316a5101a00b46cdbd347a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#ad0d696649e316a5101a00b46cdbd347a">GetFontInfo</a> (<a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pFontInfo) const</td></tr>
+<tr class="memdesc:ad0d696649e316a5101a00b46cdbd347a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the custom font for the clef.  <a href="class_f_c_clef_def.html#ad0d696649e316a5101a00b46cdbd347a">More...</a><br /></td></tr>
+<tr class="separator:ad0d696649e316a5101a00b46cdbd347a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3badc8e2b9f9659488432f362424d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#a3e3badc8e2b9f9659488432f362424d2">CreateEffectiveFontInfo</a> () const</td></tr>
+<tr class="memdesc:a3e3badc8e2b9f9659488432f362424d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the effective font for the clef. If the clef does not use a custom font or if the clef is a shape clef, it returns the document's default font for clefs (<a class="el" href="class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fcae37f4877473ab5c7aa7bb0ce02404725">FCFontPrefs::FONTPREF_CLEF</a>).  <a href="class_f_c_clef_def.html#a3e3badc8e2b9f9659488432f362424d2">More...</a><br /></td></tr>
+<tr class="separator:a3e3badc8e2b9f9659488432f362424d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035029dac54f776d763097ffc001a5b3"><td class="memItemLeft" align="right" valign="top">CMPER&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_clef_def.html#a035029dac54f776d763097ffc001a5b3">GetClefIndex</a> () const</td></tr>
 <tr class="memdesc:a035029dac54f776d763097ffc001a5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based clef index/ID.  <a href="class_f_c_clef_def.html#a035029dac54f776d763097ffc001a5b3">More...</a><br /></td></tr>
 <tr class="separator:a035029dac54f776d763097ffc001a5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,9 +513,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 <tr class="memitem:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">GetUserData2</a> () const</td></tr>
 <tr class="memdesc:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the additional user data attached to the instance of an object.  <a href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">More...</a><br /></td></tr>
 <tr class="separator:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3f33c925b4d20a49a6e20981c5e46d inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a5c3f33c925b4d20a49a6e20981c5e46d">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject)</td></tr>
-<tr class="memdesc:a5c3f33c925b4d20a49a6e20981c5e46d inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a5c3f33c925b4d20a49a6e20981c5e46d">More...</a><br /></td></tr>
-<tr class="separator:a5c3f33c925b4d20a49a6e20981c5e46d inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const</td></tr>
+<tr class="memdesc:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">More...</a><br /></td></tr>
+<tr class="separator:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">StoreXML_String</a> (tinyxml2::XMLElement *pParentNode, const char *pszElementName, <a class="el" href="class_f_c_string.html">FCString</a> *pStringValue)</td></tr>
 <tr class="memdesc:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to store <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> objects in the XML file.  <a href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">More...</a><br /></td></tr>
 <tr class="separator:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -356,182 +567,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
-<tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
-&#160;&#160;<b>FCID_UNKNOWN</b> = 0
-, <b>FCID_ACCIDENTALMOD</b>
-, <b>FCID_ACTIVELYRIC</b>
-, <b>FCID_ALLOTMENT</b>
-, <br />
-&#160;&#160;<b>FCID_ARTICULATION</b>
-, <b>FCID_ARTICULATIONDEF</b>
-, <b>FCID_BACKWARDREPEAT</b>
-, <b>FCID_BASELINE</b>
-, <br />
-&#160;&#160;<b>FCID_BEAMMOD</b>
-, <b>FCID_BEATCHARTELEMENT</b>
-, <b>FCID_BOOKMARK</b>
-, <b>FCID_BROKENBEAMMOD</b>
-, <br />
-&#160;&#160;<b>FCID_CATEGORYDEF</b>
-, <b>FCID_CELLCLEFCHANGE</b>
-, <b>FCID_CELLFRAMEHOLD</b>
-, <b>FCID_CELLGRAPHIC</b>
-, <br />
-&#160;&#160;<b>FCID_CELLTEXT</b>
-, <b>FCID_CENTERSMARTSHAPE</b>
-, <b>FCID_CHORD</b>
-, <b>FCID_CHORDPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_CHORDSUFFIXELEMENT</b>
-, <b>FCID_CHORUSSYLLABLE</b>
-, <b>FCID_CLEFDEF</b>
-, <b>FCID_COMPOSITETIMESIGBOTTOMELEMENT</b>
-, <br />
-&#160;&#160;<b>FCID_COMPOSITETIMESIGTOPELEMENT</b>
-, <b>FCID_CROSSSTAFFMOD</b>
-, <b>FCID_CUSTOMSMARTLINEDEF</b>
-, <b>FCID_CUSTOMSTEMMOD</b>
-, <br />
-&#160;&#160;<b>FCID_DISTANCEPREFS</b>
-, <b>FCID_DOTMOD</b>
-, <b>FCID_ENCLOSURE</b>
-, <b>FCID_ENDINGREPEAT</b>
-, <br />
-&#160;&#160;<b>FCID_ENIGMATEXTSTYLE</b>
-, <b>FCID_ENTRYALTERMOD</b>
-, <b>FCID_EXECUTABLESHAPEDEF</b>
-, <b>FCID_EXPRESSION</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a2aca2ff0d93d7e1701c6634585d072d9">FCID_FONTINFO</a>
-, <b>FCID_FONTPREFS</b>
-, <b>FCID_FREEZESYSTEM</b>
-, <b>FCID_FRETBOARDSTYLEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_FRETBOARDSTYLEDEFS</b>
-, <b>FCID_FRETBOARDGROUPDEF</b>
-, <b>FCID_FRETBOARDGROUPDEFS</b>
-, <b>FCID_FRETINSTRUMENTDEF</b>
-, <br />
-&#160;&#160;<b>FCID_GENERALPREFS</b>
-, <b>FCID_GRIDSGUIDESPREFS</b>
-, <b>FCID_GROUP</b>
-, <b>FCID_GROUPNAMEPOSITIONPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_HUMANPLAYBACKPREFS</b>
-, <b>FCID_INDEPENDENTCELLDETAIL</b>
-, <b>FCID_INSTRUMENTDEF</b>
-, <b>FCID_INSTRUMENTPLAYBACKDATA</b>
-, <br />
-&#160;&#160;<b>FCID_KEYSIGNATURE</b>
-, <b>FCID_LAYERPREFS</b>
-, <b>FCID_LYRICSBASELINE</b>
-, <b>FCID_LYRICSPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_MEASURE</b>
-, <b>FCID_MEASURENUMBERREGION</b>
-, <b>FCID_METATOOLASSIGNMENT</b>
-, <b>FCID_MIDIEXPRESSION</b>
-, <br />
-&#160;&#160;<b>FCID_MISCDOCPREFS</b>
-, <b>FCID_MULTIMEASUREREST</b>
-, <b>FCID_MULTIMEASURERESTPREFS</b>
-, <b>FCID_MULTISTAFFINSTRUMENT</b>
-, <br />
-&#160;&#160;<b>FCID_MULTISTAFFINSTRUMENTS</b>
-, <b>FCID_MUSICCHARACTERPREFS</b>
-, <b>FCID_MUSICSPACINGPREFS</b>
-, <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239aeec4740513f6106b46093a3f4d6671d0">FCID_NUMBER</a>
-, <br />
-&#160;&#160;<b>FCID_NOTEHEADMOD</b>
-, <b>FCID_OTHERINCI</b>
-, <b>FCID_PERCUSSIONLAYOUTNOTE</b>
-, <b>FCID_PERCUSSIONSTAFF</b>
-, <br />
-&#160;&#160;<b>FCID_PERFORMANCEMOD</b>
-, <b>FCID_PAGE</b>
-, <b>FCID_PAGEFORMATPREFS</b>
-, <b>FCID_PAGEGRAPHIC</b>
-, <br />
-&#160;&#160;<b>FCID_PAGETEXT</b>
-, <b>FCID_PART</b>
-, <b>FCID_PARTEXTRACTPREFS</b>
-, <b>FCID_PARTSCOPEPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_PARTSTAFFVOICING</b>
-, <b>FCID_PERCUSSIONNOTEMOD</b>
-, <b>FCID_PIANOBRACEPREFS</b>
-, <b>FCID_PLAYBACKPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_RAWTEXT</b>
-, <b>FCID_REPEATPREFS</b>
-, <b>FCID_SECONDARYBEAMBREAKMOD</b>
-, <b>FCID_BEAMEXTENSIONMOD</b>
-, <br />
-&#160;&#160;<b>FCID_SECTIONSYLLABLE</b>
-, <b>FCID_SEPARATEMEASURENUMBER</b>
-, <b>FCID_SEPARATEPLACEMENT</b>
-, <b>FCID_SHAPEDEF</b>
-, <br />
-&#160;&#160;<b>FCID_SHAPEEXPRESSIONDEF</b>
-, <b>FCID_SLURCONTOURPREFS</b>
-, <b>FCID_SIZEPREFS</b>
-, <b>FCID_SMARTSHAPE</b>
-, <br />
-&#160;&#160;<b>FCID_SMARTSHAPEENTRYMARK</b>
-, <b>FCID_SMARTSHAPEMEASUREMARK</b>
-, <b>FCID_SMARTSHAPEPREFS</b>
-, <b>FCID_STAFF</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFLIST</b>
-, <b>FCID_STAFFNAMEPOSITION</b>
-, <b>FCID_STAFFNAMEPOSITIONPREFS</b>
-, <b>FCID_STAFFSTYLEASSIGN</b>
-, <br />
-&#160;&#160;<b>FCID_STAFFSTYLEDEF</b>
-, <b>FCID_STAFFSYSTEM</b>
-, <b>FCID_STEMCONNECTIONTABLE</b>
-, <b>FCID_STEMMOD</b>
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
-, <b>FCID_SYLLABLEENTRYMOD</b>
-, <b>FCID_SYSTEMSTAFF</b>
-, <b>FCID_TABLATURENOTEMOD</b>
-, <br />
-&#160;&#160;<b>FCID_TEMPOELEMENT</b>
-, <b>FCID_TEXTBLOCK</b>
-, <b>FCID_TEXTEXPRESSIONDEF</b>
-, <b>FCID_TEXTREPEAT</b>
-, <br />
-&#160;&#160;<b>FCID_TEXTREPEATDEF</b>
-, <b>FCID_TIEMOD</b>
-, <b>FCID_TIEPREFS</b>
-, <b>FCID_TIECONTOURPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_TIEPLACEMENTPREFS</b>
-, <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
-, <b>FCID_TUPLETPREFS</b>
-, <br />
-&#160;&#160;<b>FCID_VERSESYLLABLE</b>
-<br />
- }</td></tr>
-<tr class="memdesc:a7ccc66e6b4ff6aad32163e30bc515239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for the <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32" title="Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has...">GetClassID</a> method.  <a href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">More...</a><br /></td></tr>
-<tr class="separator:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a> { <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a707eba9499cef193373ede69bfef3736">MEASUREMENTUNIT_DEFAULT</a> = UNIT_DEFAULT
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a0b105c0bf10993d38a0bb6fdb30a5478">MEASUREMENTUNIT_EVPUS</a> = UNIT_EVPUS
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6afbf3b5209071bd18acbf1fb1ca6909d3">MEASUREMENTUNIT_INCHES</a> = UNIT_INCHES
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a22fedb5fa471001b099cc7d8dafd3ca1">MEASUREMENTUNIT_CENTIMETERS</a> = UNIT_CENTS
-, <br />
-&#160;&#160;<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36e86e89f3029e219b9cc1723626faa">MEASUREMENTUNIT_POINTS</a> = UNIT_POINTS
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6af382bf4d11095cdd20603b966ba92b16">MEASUREMENTUNIT_PICAS</a> = UNIT_PICAS
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36860d891171922f1fdf33c912daee5">MEASUREMENTUNIT_SPACES</a> = UNIT_SPACES
-, <a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6a9eb7891cfe1766026f0a3f6b747f64a0">MEASUREMENTUNIT_MILLIMETERS</a> = 100
-<br />
- }</td></tr>
-<tr class="memdesc:a9c34d7730c8104ce6e2275c55fc04de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants for Finale's standard measurement units.  <a href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">More...</a><br /></td></tr>
-<tr class="separator:a9c34d7730c8104ce6e2275c55fc04de6 inherit pub_types_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">DebugOutPtr</a> (const char *pszPrefixText, void *ptr)</td></tr>
 <tr class="memdesc:acf2380f50b740233ff79a78a36c91720 inherit pub_static_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static method that outputs a line for debugging purposes. The prefix text appears with the extra ptr (in hexadeximal representation) appearing afterwards.  <a href="class_____f_c_base.html#acf2380f50b740233ff79a78a36c91720">More...</a><br /></td></tr>
@@ -624,7 +659,63 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Data class for the global clef definitions. </p>
 <p >The first clef definition is stored at position 0. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a1c8cdfe86007ae7365a20d4b9e8699c8" name="a1c8cdfe86007ae7365a20d4b9e8699c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8cdfe86007ae7365a20d4b9e8699c8">&#9670;&nbsp;</a></span>DEFAULTCLEFIDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8">FCClefDef::DEFAULTCLEFIDS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Default <a class="el" href="class_f_c_clef_def.html#a035029dac54f776d763097ffc001a5b3" title="Returns the 0-based clef index/ID.">GetClefIndex</a> values. If the clefs have not been modified in the clef designer, their indices match these values. </p>
+<p >Lua-supported (0.72) </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a6aee1951b60f9a4ddf162d38c3935e42" name="a1c8cdfe86007ae7365a20d4b9e8699c8a6aee1951b60f9a4ddf162d38c3935e42"></a>DEFAULTCLEFID_TREBLE&#160;</td><td class="fielddoc"><p >treble clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a14f23719d03d609e266ec469bf745c3e" name="a1c8cdfe86007ae7365a20d4b9e8699c8a14f23719d03d609e266ec469bf745c3e"></a>DEFAULTCLEFID_ALTO&#160;</td><td class="fielddoc"><p >alto clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8ad665eaa7320ab5bc6a83306065d245d4" name="a1c8cdfe86007ae7365a20d4b9e8699c8ad665eaa7320ab5bc6a83306065d245d4"></a>DEFAULTCLEFID_TENOR&#160;</td><td class="fielddoc"><p >tenor clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a7d4961edec766701620d19d4cd0aec47" name="a1c8cdfe86007ae7365a20d4b9e8699c8a7d4961edec766701620d19d4cd0aec47"></a>DEFAULTCLEFID_BASS&#160;</td><td class="fielddoc"><p >tenor clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a041dabe2235f825265f07359cb7dbe58" name="a1c8cdfe86007ae7365a20d4b9e8699c8a041dabe2235f825265f07359cb7dbe58"></a>DEFAULTCLEFID_PERCUSSION&#160;</td><td class="fielddoc"><p >percussion clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a42163f38fbb00a158ca5bb8502ad065a" name="a1c8cdfe86007ae7365a20d4b9e8699c8a42163f38fbb00a158ca5bb8502ad065a"></a>DEFAULTCLEFID_TREBLE8VB&#160;</td><td class="fielddoc"><p >treble 8vb clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a6f951a82a9d3553bf9471d2b9ae4192e" name="a1c8cdfe86007ae7365a20d4b9e8699c8a6f951a82a9d3553bf9471d2b9ae4192e"></a>DEFAULTCLEFID_BASS8VB&#160;</td><td class="fielddoc"><p >bass 8vb clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8ab02dd3f53f3496603f1eba3d04865531" name="a1c8cdfe86007ae7365a20d4b9e8699c8ab02dd3f53f3496603f1eba3d04865531"></a>DEFAULTCLEFID_BARITONE&#160;</td><td class="fielddoc"><p >baritone clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a7f100dbf82c3ebeb795128f93fd0a1ca" name="a1c8cdfe86007ae7365a20d4b9e8699c8a7f100dbf82c3ebeb795128f93fd0a1ca"></a>DEFAULTCLEFID_FRENCHVIOLIN&#160;</td><td class="fielddoc"><p >French violin clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a5b5fc80667a9145cd65e3fb8a1872294" name="a1c8cdfe86007ae7365a20d4b9e8699c8a5b5fc80667a9145cd65e3fb8a1872294"></a>DEFAULTCLEFID_BARITONEC&#160;</td><td class="fielddoc"><p >baritone C clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8ad37d9c4ee32836be3ea2598e758c0c36" name="a1c8cdfe86007ae7365a20d4b9e8699c8ad37d9c4ee32836be3ea2598e758c0c36"></a>DEFAULTCLEFID_MEZZOSOPRANO&#160;</td><td class="fielddoc"><p >mezzosoprano clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8aa2f60d185664b9da4b80ca62e6490a5e" name="a1c8cdfe86007ae7365a20d4b9e8699c8aa2f60d185664b9da4b80ca62e6490a5e"></a>DEFAULTCLEFID_SOPRANO&#160;</td><td class="fielddoc"><p >soprano clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a567bbefb845aa73f1d405a642cc5fd6d" name="a1c8cdfe86007ae7365a20d4b9e8699c8a567bbefb845aa73f1d405a642cc5fd6d"></a>DEFAULTCLEFID_ALTPERCUSSION&#160;</td><td class="fielddoc"><p >alternate percussion clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a6bd65629df313d60f2131e13e78cd3b7" name="a1c8cdfe86007ae7365a20d4b9e8699c8a6bd65629df313d60f2131e13e78cd3b7"></a>DEFAULTCLEFID_TREBLE8VA&#160;</td><td class="fielddoc"><p >treble 8va clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8ad34d776bd6ef7f42e8fd1cb9c2f2eb9f" name="a1c8cdfe86007ae7365a20d4b9e8699c8ad34d776bd6ef7f42e8fd1cb9c2f2eb9f"></a>DEFAULTCLEFID_BASS8VA&#160;</td><td class="fielddoc"><p >bass 8va clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8a8692ff2fdc5dae95fed7e8a3630f2364" name="a1c8cdfe86007ae7365a20d4b9e8699c8a8692ff2fdc5dae95fed7e8a3630f2364"></a>DEFAULTCLEFID_BLANK&#160;</td><td class="fielddoc"><p >blank clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8aa022e59a91ae985b15f08ef6b3dfcd2a" name="a1c8cdfe86007ae7365a20d4b9e8699c8aa022e59a91ae985b15f08ef6b3dfcd2a"></a>DEFAULTCLEFID_TAB1&#160;</td><td class="fielddoc"><p >TAB 1 clef </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1c8cdfe86007ae7365a20d4b9e8699c8afe88fa33eaf38aee0b2bb971803aa97b" name="a1c8cdfe86007ae7365a20d4b9e8699c8afe88fa33eaf38aee0b2bb971803aa97b"></a>DEFAULTCLEFID_TAB2&#160;</td><td class="fielddoc"><p >TAB 2 clef </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a857e5d7a1830fe12e45548e413a8c1e6" name="a857e5d7a1830fe12e45548e413a8c1e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a857e5d7a1830fe12e45548e413a8c1e6">&#9670;&nbsp;</a></span>FCClefDef()</h2>
 
@@ -654,6 +745,28 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3e3badc8e2b9f9659488432f362424d2" name="a3e3badc8e2b9f9659488432f362424d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3badc8e2b9f9659488432f362424d2">&#9670;&nbsp;</a></span>CreateEffectiveFontInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * FCClefDef::CreateEffectiveFontInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates the effective font for the clef. If the clef does not use a custom font or if the clef is a shape clef, it returns the document's default font for clefs (<a class="el" href="class_f_c_font_prefs.html#aea5171854ff6c09db3eabbf35c0114fcae37f4877473ab5c7aa7bb0ce02404725">FCFontPrefs::FONTPREF_CLEF</a>). </p>
+<p >C callers must free the return value, either with delete or with a smart pointer.</p>
+<p >Lua-supported (0.72)</p>
+<dl class="section return"><dt>Returns</dt><dd>effective font info for the clef or NULL if error or no open document. </dd></dl>
+
+</div>
+</div>
 <a id="a3aa4a156e508770e2ce4cf9c82af0b11" name="a3aa4a156e508770e2ce4cf9c82af0b11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3aa4a156e508770e2ce4cf9c82af0b11">&#9670;&nbsp;</a></span>GetBaselineOffset()</h2>
 
@@ -723,8 +836,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="afe83a77cd990f90b5490992c841ae543" name="afe83a77cd990f90b5490992c841ae543"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe83a77cd990f90b5490992c841ae543">&#9670;&nbsp;</a></span>GetFontInfo()</h2>
+<a id="ad0d696649e316a5101a00b46cdbd347a" name="ad0d696649e316a5101a00b46cdbd347a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d696649e316a5101a00b46cdbd347a">&#9670;&nbsp;</a></span>GetFontInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -734,14 +847,14 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
           <td class="paramname"><em>pFontInfo</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the font for the clef. </p>
+<p>Gets the custom font for the clef. </p>
 <p >Lua-supported.</p>
-<dl class="section return"><dt>Returns</dt><dd>True on success. Method will not do anything with shape clefs or if custom font isn't used. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. Method does not do anything with shape clefs or if custom font isn't used (and returns false). </dd></dl>
 
 </div>
 </div>
@@ -1025,7 +1138,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 9 2024 18:49:48 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sun Mar 31 2024 17:37:11 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -135,7 +135,7 @@ var searchData=
   ['analyzeentrychord_132',['AnalyzeEntryChord',['../class_f_c_chord.html#ad3fe8389f25bd0de66f737d81d3248e8',1,'FCChord']]],
   ['append_133',['Append',['../class_f_c_measures.html#a65e92e9a7ea178375247d7bb93139f33',1,'FCMeasures::Append()'],['../class_f_c_staves.html#a128ff714da48ad9ce41248834a871774',1,'FCStaves::Append()']]],
   ['appendblank_134',['AppendBlank',['../class_f_c_pages.html#abb0e3b24a75ab43f8fa48f39a7d29a37',1,'FCPages']]],
-  ['appendcharacter_135',['AppendCharacter',['../class_f_c_string.html#a5985956ecb64d284340a5845a0dc94ae',1,'FCString']]],
+  ['appendcharacter_135',['AppendCharacter',['../class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662',1,'FCString']]],
   ['appendcstring_136',['AppendCString',['../class_f_c_string.html#acbb717cd3289d9fb55542f53a2597297',1,'FCString']]],
   ['appendentriesinlayer_137',['AppendEntriesInLayer',['../class_f_c_note_entry_cell.html#a2f29d54b6eb9ce0218ed8a240f23ca68',1,'FCNoteEntryCell']]],
   ['appendeol_138',['AppendEOL',['../class_f_c_string.html#a017b633575f8430ad016258bf442944b',1,'FCString']]],
