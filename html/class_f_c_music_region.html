@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
    </div>
   </td>
  </tr>
@@ -328,9 +328,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCMusicRegion</b>
 <tr class="memitem:a1d0549d2fa30ac696dd9b4696f684083"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a1d0549d2fa30ac696dd9b4696f684083">IsCellPosWithin</a> (const <a class="el" href="class_f_c_cell.html">FCCell</a> *pCell, const TimeEdu32 pos)</td></tr>
 <tr class="memdesc:a1d0549d2fa30ac696dd9b4696f684083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a cell position is within the region. This checks for partial measures.  <a href="class_f_c_music_region.html#a1d0549d2fa30ac696dd9b4696f684083">More...</a><br /></td></tr>
 <tr class="separator:a1d0549d2fa30ac696dd9b4696f684083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477742c57dcbadbce36bec2acc3481f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a477742c57dcbadbce36bec2acc3481f0">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const override</td></tr>
-<tr class="memdesc:a477742c57dcbadbce36bec2acc3481f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden virtual method.  <a href="class_f_c_music_region.html#a477742c57dcbadbce36bec2acc3481f0">More...</a><br /></td></tr>
-<tr class="separator:a477742c57dcbadbce36bec2acc3481f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bca5aab3cc66dd9c1ae9e48b535537"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a09bca5aab3cc66dd9c1ae9e48b535537">IsIdentical</a> (const <a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const override</td></tr>
+<tr class="memdesc:a09bca5aab3cc66dd9c1ae9e48b535537"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden virtual method.  <a href="class_f_c_music_region.html#a09bca5aab3cc66dd9c1ae9e48b535537">More...</a><br /></td></tr>
+<tr class="separator:a09bca5aab3cc66dd9c1ae9e48b535537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f475d97e28a68fe366c1a23d6f0512"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#af6f475d97e28a68fe366c1a23d6f0512">IsEntryPosWithin</a> (const <a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *pEntry)</td></tr>
 <tr class="memdesc:af6f475d97e28a68fe366c1a23d6f0512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a entry is within the region. This checks for partial measures.  <a href="class_f_c_music_region.html#af6f475d97e28a68fe366c1a23d6f0512">More...</a><br /></td></tr>
 <tr class="separator:af6f475d97e28a68fe366c1a23d6f0512"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -501,6 +501,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetEnigmaRegion</b> (
 <tr class="memitem:abe6efe31a193a41de51f00587cc539f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#abe6efe31a193a41de51f00587cc539f0">PlaybackSingleStaff</a> (eStaff staffnum, bool playtoend=false) const</td></tr>
 <tr class="memdesc:abe6efe31a193a41de51f00587cc539f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playback a single staff in the region. Only entire measures play back, so playback starts at the beginning of the first measure and stops at the end of the last measure of the <a class="el" href="class_f_c_music_region.html" title="Class that encapsulates EREGION and provides additional functionality to region handling.">FCMusicRegion</a>.  <a href="class_f_c_music_region.html#abe6efe31a193a41de51f00587cc539f0">More...</a><br /></td></tr>
 <tr class="separator:abe6efe31a193a41de51f00587cc539f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0246af5aa4404b4ceb91c5734abcab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a9e0246af5aa4404b4ceb91c5734abcab">FixMeasureWidthsInScore</a> () const</td></tr>
+<tr class="memdesc:a9e0246af5aa4404b4ceb91c5734abcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Works around a bug in Finale when modifying measure widths with a part in edit focus.  <a href="class_f_c_music_region.html#a9e0246af5aa4404b4ceb91c5734abcab">More...</a><br /></td></tr>
+<tr class="separator:a9e0246af5aa4404b4ceb91c5734abcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97557f5700ad859d17e9ba021ea8e8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_music_region.html#a97557f5700ad859d17e9ba021ea8e8ca">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a97557f5700ad859d17e9ba021ea8e8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_f_c_music_region.html#a97557f5700ad859d17e9ba021ea8e8ca">More...</a><br /></td></tr>
 <tr class="separator:a97557f5700ad859d17e9ba021ea8e8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1127,6 +1130,35 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a9e0246af5aa4404b4ceb91c5734abcab" name="a9e0246af5aa4404b4ceb91c5734abcab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0246af5aa4404b4ceb91c5734abcab">&#9670;&nbsp;</a></span>FixMeasureWidthsInScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCMusicRegion::FixMeasureWidthsInScore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Works around a bug in Finale when modifying measure widths with a part in edit focus. </p>
+<p >As of at least Finale 27.4 (the last version tested), Finale contains a bug that occasionally wreaks havoc on score spacing if you change the width of a measure with a part in edit focus. The bug is not limited to plugins. It also can happen if a user simply applies Note Spacing from the menu while the part is in view. What triggers the bug is the user executing Undo then Redo immediately following the part edit.</p>
+<p >This function implements a workaround that side-steps the bug, at least in the test cases that have reproduced it. It checks if the score is in edit focus. If not, it</p>
+<ul>
+<li>switches edit focus to the score.</li>
+<li>loads each measure in the region.</li>
+<li>adds 1 to its width, saves, subtracts 1 from its width, and saves.</li>
+<li>switches edit focus back to the part.</li>
+</ul>
+<p >This function should be called with the part in edit focus and be part of the same Undo block as the measure width edits in the part.</p>
+<p >Lua-supported (0.73). </p>
+
+</div>
+</div>
 <a id="aa97fdd8c8d79c754346c8aced7345485" name="aa97fdd8c8d79c754346c8aced7345485"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa97fdd8c8d79c754346c8aced7345485">&#9670;&nbsp;</a></span>ForEachStaff()</h2>
 
@@ -1616,8 +1648,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a477742c57dcbadbce36bec2acc3481f0" name="a477742c57dcbadbce36bec2acc3481f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a477742c57dcbadbce36bec2acc3481f0">&#9670;&nbsp;</a></span>IsIdentical()</h2>
+<a id="a09bca5aab3cc66dd9c1ae9e48b535537" name="a09bca5aab3cc66dd9c1ae9e48b535537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bca5aab3cc66dd9c1ae9e48b535537">&#9670;&nbsp;</a></span>IsIdentical()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1628,7 +1660,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCMusicRegion::IsIdentical </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td>
           <td class="paramname"><em>pCompareObject</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1644,7 +1676,7 @@ Additional Inherited Members</h2></td></tr>
 <p >It does NOT check the instrument list (comparison against start/end staves).</p>
 <p >Lua-supported. </p>
 
-<p>Reimplemented from <a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">__FCBase</a>.</p>
+<p>Reimplemented from <a class="el" href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">__FCBase</a>.</p>
 
 </div>
 </div>
@@ -2644,7 +2676,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 17:37:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Apr 11 2024 10:07:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

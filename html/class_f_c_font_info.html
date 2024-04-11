@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
    </div>
   </td>
  </tr>
@@ -318,9 +318,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9bbd4e77379b3657e86d9d8ef2b576b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ae9bbd4e77379b3657e86d9d8ef2b576b">GetNameString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
 <tr class="memdesc:ae9bbd4e77379b3657e86d9d8ef2b576b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font name and puts it in a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object.  <a href="class_f_c_font_info.html#ae9bbd4e77379b3657e86d9d8ef2b576b">More...</a><br /></td></tr>
 <tr class="separator:ae9bbd4e77379b3657e86d9d8ef2b576b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51f8c170a151f5ebd1b8f96681c3587"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#aa51f8c170a151f5ebd1b8f96681c3587">GetName</a> () const</td></tr>
-<tr class="memdesc:aa51f8c170a151f5ebd1b8f96681c3587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font name (const C-string version).  <a href="class_f_c_font_info.html#aa51f8c170a151f5ebd1b8f96681c3587">More...</a><br /></td></tr>
-<tr class="separator:aa51f8c170a151f5ebd1b8f96681c3587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc72c0b0fc5b0c47107502938fbbbae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#adfc72c0b0fc5b0c47107502938fbbbae">GetName</a> () const</td></tr>
+<tr class="memdesc:adfc72c0b0fc5b0c47107502938fbbbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font name (const C-string version).  <a href="class_f_c_font_info.html#adfc72c0b0fc5b0c47107502938fbbbae">More...</a><br /></td></tr>
+<tr class="separator:adfc72c0b0fc5b0c47107502938fbbbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f92d6e16d0e42e4046e314f0c70c88"><td class="memItemLeft" align="right" valign="top">EFONTID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88">GetIDByName</a> () const</td></tr>
 <tr class="memdesc:af9f92d6e16d0e42e4046e314f0c70c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal Enigma font ID for the current document by searching for the font name. The value in <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal font ID.">GetFontID</a> is used only to determine if this instance refers to the Default Music Font. If so, the font ID of the Default Music Font is returned (which is always zero in any document).  <a href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88">More...</a><br /></td></tr>
 <tr class="separator:af9f92d6e16d0e42e4046e314f0c70c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,18 +357,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnigmaFont</b> (
 <tr class="separator:af733c2b56f86ba97702cd3393e0e5a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a222dace75097a81ca52939454a40764f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a222dace75097a81ca52939454a40764f">CreateDescription</a> () const</td></tr>
 <tr class="separator:a222dace75097a81ca52939454a40764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7634e5d73b77cfcc393c6b30c10d96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a4a7634e5d73b77cfcc393c6b30c10d96">SetName</a> (const char *pszName)</td></tr>
-<tr class="memdesc:a4a7634e5d73b77cfcc393c6b30c10d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name.  <a href="class_f_c_font_info.html#a4a7634e5d73b77cfcc393c6b30c10d96">More...</a><br /></td></tr>
-<tr class="separator:a4a7634e5d73b77cfcc393c6b30c10d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f07a71b26d25615a0d0d83466fbf87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a51f07a71b26d25615a0d0d83466fbf87">SetName</a> (const std::string &amp;pszName)</td></tr>
+<tr class="memdesc:a51f07a71b26d25615a0d0d83466fbf87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name.  <a href="class_f_c_font_info.html#a51f07a71b26d25615a0d0d83466fbf87">More...</a><br /></td></tr>
+<tr class="separator:a51f07a71b26d25615a0d0d83466fbf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ae3dc60cabc855691219f5eccb192f"><td class="memItemLeft" align="right" valign="top">EFONTID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f">GetFontID</a> () const</td></tr>
 <tr class="memdesc:a89ae3dc60cabc855691219f5eccb192f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal font ID.  <a href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f">More...</a><br /></td></tr>
 <tr class="separator:a89ae3dc60cabc855691219f5eccb192f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">SetFontID</a> (EFONTID fontID)</td></tr>
 <tr class="memdesc:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal font ID.  <a href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">More...</a><br /></td></tr>
 <tr class="separator:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3beee4aa5fabcd88958e504287850dca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a3beee4aa5fabcd88958e504287850dca">SetNameString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
-<tr class="memdesc:a3beee4aa5fabcd88958e504287850dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version).  <a href="class_f_c_font_info.html#a3beee4aa5fabcd88958e504287850dca">More...</a><br /></td></tr>
-<tr class="separator:a3beee4aa5fabcd88958e504287850dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21caf92bcd6a498e5664c1826c94509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ad21caf92bcd6a498e5664c1826c94509">SetNameString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;value)</td></tr>
+<tr class="memdesc:ad21caf92bcd6a498e5664c1826c94509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version).  <a href="class_f_c_font_info.html#ad21caf92bcd6a498e5664c1826c94509">More...</a><br /></td></tr>
+<tr class="separator:ad21caf92bcd6a498e5664c1826c94509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4acce56f99ee87a5b5e0c8abede5f568"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a4acce56f99ee87a5b5e0c8abede5f568">SetNameByID</a> (EFONTID id)</td></tr>
 <tr class="memdesc:a4acce56f99ee87a5b5e0c8abede5f568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name by using the document's internal Enigma font ID.  <a href="class_f_c_font_info.html#a4acce56f99ee87a5b5e0c8abede5f568">More...</a><br /></td></tr>
 <tr class="separator:a4acce56f99ee87a5b5e0c8abede5f568"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,9 +402,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnigmaFont</b> (
 <tr class="memitem:a0ed6665f705b7d52fc0e09edf22222d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a0ed6665f705b7d52fc0e09edf22222d7">IsName</a> (const char *pszTestName) const</td></tr>
 <tr class="memdesc:a0ed6665f705b7d52fc0e09edf22222d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the font name is a perfect match to the C-string test string.  <a href="class_f_c_font_info.html#a0ed6665f705b7d52fc0e09edf22222d7">More...</a><br /></td></tr>
 <tr class="separator:a0ed6665f705b7d52fc0e09edf22222d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602d33074f38f8f9ec2cfd1ae40552ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a602d33074f38f8f9ec2cfd1ae40552ee">IsNameString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pTestName) const</td></tr>
-<tr class="memdesc:a602d33074f38f8f9ec2cfd1ae40552ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the font name is a perfect match to the test string.  <a href="class_f_c_font_info.html#a602d33074f38f8f9ec2cfd1ae40552ee">More...</a><br /></td></tr>
-<tr class="separator:a602d33074f38f8f9ec2cfd1ae40552ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8be97400de9fbb984f019843fd2e08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#add8be97400de9fbb984f019843fd2e08">IsNameString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;pTestName) const</td></tr>
+<tr class="memdesc:add8be97400de9fbb984f019843fd2e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the font name is a perfect match to the test string.  <a href="class_f_c_font_info.html#add8be97400de9fbb984f019843fd2e08">More...</a><br /></td></tr>
+<tr class="separator:add8be97400de9fbb984f019843fd2e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2915f0c35ddfbb19429c74566626559"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ab2915f0c35ddfbb19429c74566626559">IsPlain</a> ()</td></tr>
 <tr class="memdesc:ab2915f0c35ddfbb19429c74566626559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the font has no special style flags.  <a href="class_f_c_font_info.html#ab2915f0c35ddfbb19429c74566626559">More...</a><br /></td></tr>
 <tr class="separator:ab2915f0c35ddfbb19429c74566626559"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -432,12 +432,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnigmaFont</b> (
 <tr class="memitem:a34078edaec6e6fe8b790bd51d9f20cae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a34078edaec6e6fe8b790bd51d9f20cae">IsMacSymbolFont</a> () const</td></tr>
 <tr class="memdesc:a34078edaec6e6fe8b790bd51d9f20cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true i the font is a Mac Symbol font.  <a href="class_f_c_font_info.html#a34078edaec6e6fe8b790bd51d9f20cae">More...</a><br /></td></tr>
 <tr class="separator:a34078edaec6e6fe8b790bd51d9f20cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ee582dc3b2536e856b5dea66f5b984"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a91ee582dc3b2536e856b5dea66f5b984">IsIdenticalTo</a> (<a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *pCompareWith)</td></tr>
-<tr class="memdesc:a91ee582dc3b2536e856b5dea66f5b984"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all font information is identical to the compared object.  <a href="class_f_c_font_info.html#a91ee582dc3b2536e856b5dea66f5b984">More...</a><br /></td></tr>
-<tr class="separator:a91ee582dc3b2536e856b5dea66f5b984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af475313f4762e9a2a377d945f12d0a10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#af475313f4762e9a2a377d945f12d0a10">MakeDefaultMusicFont</a> ()</td></tr>
-<tr class="memdesc:af475313f4762e9a2a377d945f12d0a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the document's default music font.  <a href="class_f_c_font_info.html#af475313f4762e9a2a377d945f12d0a10">More...</a><br /></td></tr>
-<tr class="separator:af475313f4762e9a2a377d945f12d0a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7271389adae998fcf5f8669c6814509"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ac7271389adae998fcf5f8669c6814509">IsIdenticalTo</a> (const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> &amp;compareWith) const</td></tr>
+<tr class="memdesc:ac7271389adae998fcf5f8669c6814509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if all font information is identical to the compared object.  <a href="class_f_c_font_info.html#ac7271389adae998fcf5f8669c6814509">More...</a><br /></td></tr>
+<tr class="separator:ac7271389adae998fcf5f8669c6814509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1298496921ab0d78b2a54ced1300e658"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a1298496921ab0d78b2a54ced1300e658">MakeDefaultMusicFont</a> ()</td></tr>
+<tr class="memdesc:a1298496921ab0d78b2a54ced1300e658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the document's default music font to match this instance of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> and modifies this instance to be the default music font (if successful).  <a href="class_f_c_font_info.html#a1298496921ab0d78b2a54ced1300e658">More...</a><br /></td></tr>
+<tr class="separator:a1298496921ab0d78b2a54ced1300e658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079b50432f1c56e987b3eb8556f43f35"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a079b50432f1c56e987b3eb8556f43f35">CalcAverageRomanCharacterWidthEVPUs</a> () const</td></tr>
 <tr class="memdesc:a079b50432f1c56e987b3eb8556f43f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the average width of the roman characters in the font in EVPUs.  <a href="class_f_c_font_info.html#a079b50432f1c56e987b3eb8556f43f35">More...</a><br /></td></tr>
 <tr class="separator:a079b50432f1c56e987b3eb8556f43f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,9 +504,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 <tr class="memitem:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">GetUserData2</a> () const</td></tr>
 <tr class="memdesc:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the additional user data attached to the instance of an object.  <a href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">More...</a><br /></td></tr>
 <tr class="separator:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const</td></tr>
-<tr class="memdesc:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">More...</a><br /></td></tr>
-<tr class="separator:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f441d76fd1f5c1e7b4c616a2cc580ca inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">IsIdentical</a> (const <a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const</td></tr>
+<tr class="memdesc:a8f441d76fd1f5c1e7b4c616a2cc580ca inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">More...</a><br /></td></tr>
+<tr class="separator:a8f441d76fd1f5c1e7b4c616a2cc580ca inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">StoreXML_String</a> (tinyxml2::XMLElement *pParentNode, const char *pszElementName, <a class="el" href="class_f_c_string.html">FCString</a> *pStringValue)</td></tr>
 <tr class="memdesc:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to store <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> objects in the XML file.  <a href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">More...</a><br /></td></tr>
 <tr class="separator:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1202,14 +1202,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa51f8c170a151f5ebd1b8f96681c3587" name="aa51f8c170a151f5ebd1b8f96681c3587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa51f8c170a151f5ebd1b8f96681c3587">&#9670;&nbsp;</a></span>GetName()</h2>
+<a id="adfc72c0b0fc5b0c47107502938fbbbae" name="adfc72c0b0fc5b0c47107502938fbbbae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc72c0b0fc5b0c47107502938fbbbae">&#9670;&nbsp;</a></span>GetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * FCFontInfo::GetName </td>
+          <td class="memname">std::string FCFontInfo::GetName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1218,8 +1218,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the font name (const C-string version). </p>
-<p >This is not a recommended method on Finale 25 or later, since font names can be Unicode there. The <a class="el" href="class_f_c_font_info.html#ae9bbd4e77379b3657e86d9d8ef2b576b" title="Gets the font name and puts it in a FCString object.">GetNameString()</a>.</p>
-<p >Lua-supported (also as property). </p>
+<p >Lua-supported (also as property).</p>
+<dl class="section return"><dt>Returns</dt><dd>The font name. Starting with version 0.73 this is UTF8-encoded. </dd></dl>
 
 </div>
 </div>
@@ -1424,8 +1424,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a91ee582dc3b2536e856b5dea66f5b984" name="a91ee582dc3b2536e856b5dea66f5b984"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91ee582dc3b2536e856b5dea66f5b984">&#9670;&nbsp;</a></span>IsIdenticalTo()</h2>
+<a id="ac7271389adae998fcf5f8669c6814509" name="ac7271389adae998fcf5f8669c6814509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7271389adae998fcf5f8669c6814509">&#9670;&nbsp;</a></span>IsIdenticalTo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1433,9 +1433,9 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCFontInfo::IsIdenticalTo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td>
-          <td class="paramname"><em>pCompareWith</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="class_f_c_font_info.html">FCFontInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>compareWith</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1486,7 +1486,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pszTestName</td><td>Pointer to the font name to test for.</td></tr>
+    <tr><td class="paramname">pszTestName</td><td>Pointer to the font name to test for. Starting with version 0.73, this should be UTF-8 encoded.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1494,8 +1494,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a602d33074f38f8f9ec2cfd1ae40552ee" name="a602d33074f38f8f9ec2cfd1ae40552ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a602d33074f38f8f9ec2cfd1ae40552ee">&#9670;&nbsp;</a></span>IsNameString()</h2>
+<a id="add8be97400de9fbb984f019843fd2e08" name="add8be97400de9fbb984f019843fd2e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8be97400de9fbb984f019843fd2e08">&#9670;&nbsp;</a></span>IsNameString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1503,7 +1503,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCFontInfo::IsNameString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
           <td class="paramname"><em>pTestName</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1514,7 +1514,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pTestName</td><td>Pointer to the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object to test.</td></tr>
+    <tr><td class="paramname">pTestName</td><td>Reference to the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object to test.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1579,14 +1579,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af475313f4762e9a2a377d945f12d0a10" name="af475313f4762e9a2a377d945f12d0a10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af475313f4762e9a2a377d945f12d0a10">&#9670;&nbsp;</a></span>MakeDefaultMusicFont()</h2>
+<a id="a1298496921ab0d78b2a54ced1300e658" name="a1298496921ab0d78b2a54ced1300e658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1298496921ab0d78b2a54ced1300e658">&#9670;&nbsp;</a></span>MakeDefaultMusicFont()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void FCFontInfo::MakeDefaultMusicFont </td>
+          <td class="memname">bool FCFontInfo::MakeDefaultMusicFont </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1594,8 +1594,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the document's default music font. </p>
-<p >Lua-supported. </p>
+<p>Changes the document's default music font to match this instance of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> and modifies this instance to be the default music font (if successful). </p>
+<p >Lua-supported.</p>
+<dl class="section return"><dt>Returns</dt><dd>true if success </dd></dl>
 
 </div>
 </div>
@@ -1963,8 +1964,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a7634e5d73b77cfcc393c6b30c10d96" name="a4a7634e5d73b77cfcc393c6b30c10d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7634e5d73b77cfcc393c6b30c10d96">&#9670;&nbsp;</a></span>SetName()</h2>
+<a id="a51f07a71b26d25615a0d0d83466fbf87" name="a51f07a71b26d25615a0d0d83466fbf87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51f07a71b26d25615a0d0d83466fbf87">&#9670;&nbsp;</a></span>SetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1972,7 +1973,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCFontInfo::SetName </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>pszName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1983,7 +1984,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported (also as property).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pszName</td><td>The C-style string name. </td></tr>
+    <tr><td class="paramname">pszName</td><td>The C-style string name. Starting with version 0.73 this can (and should) be UTF8-encoded. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2011,8 +2012,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3beee4aa5fabcd88958e504287850dca" name="a3beee4aa5fabcd88958e504287850dca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3beee4aa5fabcd88958e504287850dca">&#9670;&nbsp;</a></span>SetNameString()</h2>
+<a id="ad21caf92bcd6a498e5664c1826c94509" name="ad21caf92bcd6a498e5664c1826c94509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21caf92bcd6a498e5664c1826c94509">&#9670;&nbsp;</a></span>SetNameString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2020,8 +2021,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCFontInfo::SetNameString </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
-          <td class="paramname"><em>pString</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2204,7 +2205,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 17:37:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Apr 11 2024 10:07:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

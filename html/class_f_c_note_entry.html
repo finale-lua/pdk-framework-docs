@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
    </div>
   </td>
  </tr>
@@ -885,9 +885,9 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>ForEachIndex</
 <tr class="memitem:a23c38b245094cc2bbd686e9c2616cd80 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a23c38b245094cc2bbd686e9c2616cd80">MoveFrom</a> (<a class="el" href="class_____f_c_collection.html">__FCCollection</a> *pOtherCollection, bool unique=false)</td></tr>
 <tr class="memdesc:a23c38b245094cc2bbd686e9c2616cd80 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves elements from another collection into this collection. The other will be empty after the operation.  <a href="class_____f_c_collection.html#a23c38b245094cc2bbd686e9c2616cd80">More...</a><br /></td></tr>
 <tr class="separator:a23c38b245094cc2bbd686e9c2616cd80 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d144862b7e44abcbdb9170511f5df3 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#ad8d144862b7e44abcbdb9170511f5df3">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const override</td></tr>
-<tr class="memdesc:ad8d144862b7e44abcbdb9170511f5df3 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if two collections are considered to be identical.  <a href="class_____f_c_collection.html#ad8d144862b7e44abcbdb9170511f5df3">More...</a><br /></td></tr>
-<tr class="separator:ad8d144862b7e44abcbdb9170511f5df3 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71535fe3b2f63397b343e4c261b74ed inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#ae71535fe3b2f63397b343e4c261b74ed">IsIdentical</a> (const <a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const override</td></tr>
+<tr class="memdesc:ae71535fe3b2f63397b343e4c261b74ed inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if two collections are considered to be identical.  <a href="class_____f_c_collection.html#ae71535fe3b2f63397b343e4c261b74ed">More...</a><br /></td></tr>
+<tr class="separator:ae71535fe3b2f63397b343e4c261b74ed inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d6b6111fafca2c224ed89702fe3c25 inherit pub_methods_class_____f_c_collection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_collection.html#a47d6b6111fafca2c224ed89702fe3c25">DebugDump</a> () override</td></tr>
 <tr class="memdesc:a47d6b6111fafca2c224ed89702fe3c25 inherit pub_methods_class_____f_c_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <a href="class_____f_c_collection.html#a47d6b6111fafca2c224ed89702fe3c25">More...</a><br /></td></tr>
 <tr class="separator:a47d6b6111fafca2c224ed89702fe3c25 inherit pub_methods_class_____f_c_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5105,7 +5105,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the "Freeze Stem" state for the note entry. </p>
-<p >Lua-supported (also as property). </p>
+<dl class="section remark"><dt>Remarks</dt><dd>If you flip the stem from its current direction using <a class="el" href="class_f_c_note_entry.html#ae522ec9104e7bb89c500766cab984fb2" title="Sets the &quot;Freeze Stem&quot; state for the note entry.">SetFreezeStem</a> or any other mechanism, you must save all entries and rebuild metrics (<a class="el" href="class_f_c_note_entry.html#afce30991c44a98750785a9ccbff56dc0" title="Static method that mark that the entry-related layout info needs to be rebuilt (for CalcStemUp(),...">MarkEntryMetricsForUpdate</a>) before creating or modifying any of the entry mods that depend on stem direction. Examples of entry mods that depend on stem direction include <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a>, <a class="el" href="class_f_c_custom_stem_mod.html" title="Class for custom stem shapes (in Finale&#39;s Special Tools). The data is connected to either an upstem o...">FCCustomStemMod</a>, and <a class="el" href="class_f_c_beam_extension_mod.html" title="Class for beam extensions (in Finale&#39;s Special Tools).">FCBeamExtensionMod</a>.</dd></dl>
+<p>Lua-supported (also as property). </p>
 
 </div>
 </div>
@@ -5823,8 +5824,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the "stem up" flag for the entry. </p>
-<p >The stem will use this setting if it's a "beam/beat" entry (if it's not a continuation of a beamed group).</p>
-<p >Lua-supported (also as property).</p>
+<p >The stem will use this setting if it is a "beam/beat" entry (in other words, if it is not a continuation of a beamed group).</p>
+<dl class="section remark"><dt>Remarks</dt><dd>See comments at <a class="el" href="class_f_c_note_entry.html#ae522ec9104e7bb89c500766cab984fb2" title="Sets the &quot;Freeze Stem&quot; state for the note entry.">SetFreezeStem</a> about flipping the current stem direction. If you want the up/down status here to stick, you must also set <a class="el" href="class_f_c_note_entry.html#ae522ec9104e7bb89c500766cab984fb2" title="Sets the &quot;Freeze Stem&quot; state for the note entry.">SetFreezeStem</a> to <code>true</code>.</dd></dl>
+<p>Lua-supported (also as property).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td><b>True</b> to put the stems up. </td></tr>
@@ -5988,7 +5990,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 17:37:13 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Apr 11 2024 10:07:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.72</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
    </div>
   </td>
  </tr>
@@ -342,9 +342,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc486112a9fbe13bb3140f3748447b7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_category_def.html#adc486112a9fbe13bb3140f3748447b7e">FCCategoryDef</a> ()</td></tr>
 <tr class="memdesc:adc486112a9fbe13bb3140f3748447b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_category_def.html#adc486112a9fbe13bb3140f3748447b7e">More...</a><br /></td></tr>
 <tr class="separator:adc486112a9fbe13bb3140f3748447b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a584a454906e8621681de0eb7e998b372"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_category_def.html#a584a454906e8621681de0eb7e998b372">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pObject) const override</td></tr>
-<tr class="memdesc:a584a454906e8621681de0eb7e998b372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden method to provide comparison of category definitions.  <a href="class_f_c_category_def.html#a584a454906e8621681de0eb7e998b372">More...</a><br /></td></tr>
-<tr class="separator:a584a454906e8621681de0eb7e998b372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8996066e0666861b5a79e7268d53c40f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_category_def.html#a8996066e0666861b5a79e7268d53c40f">IsIdentical</a> (const <a class="el" href="class_____f_c_base.html">__FCBase</a> *pObject) const override</td></tr>
+<tr class="memdesc:a8996066e0666861b5a79e7268d53c40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden method to provide comparison of category definitions.  <a href="class_f_c_category_def.html#a8996066e0666861b5a79e7268d53c40f">More...</a><br /></td></tr>
+<tr class="separator:a8996066e0666861b5a79e7268d53c40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2069afe5f90c9b1f7d3769d4a11c0775"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_category_def.html#a2069afe5f90c9b1f7d3769d4a11c0775">GetBreakMMRest</a> () const</td></tr>
 <tr class="memdesc:a2069afe5f90c9b1f7d3769d4a11c0775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the "Break Multi-measure rest" option from the category definition. For many categories, this options isn't used.  <a href="class_f_c_category_def.html#a2069afe5f90c9b1f7d3769d4a11c0775">More...</a><br /></td></tr>
 <tr class="separator:a2069afe5f90c9b1f7d3769d4a11c0775"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1821,8 +1821,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
-<a id="a584a454906e8621681de0eb7e998b372" name="a584a454906e8621681de0eb7e998b372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a584a454906e8621681de0eb7e998b372">&#9670;&nbsp;</a></span>IsIdentical()</h2>
+<a id="a8996066e0666861b5a79e7268d53c40f" name="a8996066e0666861b5a79e7268d53c40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8996066e0666861b5a79e7268d53c40f">&#9670;&nbsp;</a></span>IsIdentical()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1831,9 +1831,9 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool FCCategoryDef::IsIdentical </td>
+          <td class="memname">bool FCCategoryDef::IsIdentical </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_____f_c_base.html">__FCBase</a> *&#160;</td>
           <td class="paramname"><em>pObject</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1848,7 +1848,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <p>Overridden method to provide comparison of category definitions. </p>
 <p >Compares the ID, flags and name. </p>
 
-<p>Reimplemented from <a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">__FCBase</a>.</p>
+<p>Reimplemented from <a class="el" href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">__FCBase</a>.</p>
 
 </div>
 </div>
@@ -2452,7 +2452,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 17:37:11 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Apr 11 2024 10:07:28 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
