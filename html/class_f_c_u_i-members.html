@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_u_i.html#a37302a54705ad30e2cf8ea5fe4cfe813">DisplaySymbolDialog</a>(FCFontInfo *pFontInfo, eUniChar32 symbolinit=0)</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_u_i.html#ad732dd70640d13950a864132534be78d">DisplayTextExpressionDialog</a>(CMPER cmperinit=0)</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_u_i.html#a3e0501cad4093647ec0e37238607903d">DisplayWebURL</a>(FCString *pURLString)</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_f_c_u_i.html#afd4b22c9dcc626f02feb5e85484610c6">ExecuteOSMenuCommand</a>(EMENUID osmenucmd)</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_f_c_u_i.html#a004fbd5bb0e848eb401d7acbacf9467c">ExecuteOSMenuCommand</a>(EMENUID osmenucmd, bool usemacfinaleapi=false) const</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FCID_ACCIDENTALMOD</b> enum value (defined in <a class="el" href="class_____f_c_base.html">__FCBase</a>)</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>FCID_ACTIVELYRIC</b> enum value (defined in <a class="el" href="class_____f_c_base.html">__FCBase</a>)</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FCID_ALLOTMENT</b> enum value (defined in <a class="el" href="class_____f_c_base.html">__FCBase</a>)</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
@@ -269,7 +269,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_u_i.html#a5d90abfcb046d0de7fdf9c1892a50a2b">GetUserLocaleName</a>(FCString *pString)</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_u_i.html#aa47c8497c9a6b11f624d34f68d803f72">GetZoomLevel</a>() const</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_u_i.html#ab27513f9bbba2692a7381d88a377e371">IsFontAvailable</a>(FCString *pFontName)</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">IsIdentical</a>(__FCBase *pCompareObject) const</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">IsIdentical</a>(const __FCBase *pCompareObject) const</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_u_i.html#ab638ce7de614139ca3125dd4154d0a46">IsLayerVisible</a>(twobyte layernum) const</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_u_i.html#a081813059cbc9620b0287ee71a028f87">IsOnMac</a>() const</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_u_i.html#aa31464429df573abc3e0e46c88558534">IsOnWindows</a>() const</td><td class="entry"><a class="el" href="class_f_c_u_i.html">FCUI</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -389,7 +389,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 5 2024 07:31:38 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Apr 11 2024 10:07:31 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

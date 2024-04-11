@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
    </div>
   </td>
  </tr>
@@ -102,14 +102,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FCString</b> (const eUniChar16 *pszCString)</td></tr>
 <tr class="memdesc:a23680e7e7bf8318f71b6c6aaa15ddb9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor version that takes a Unicode 16 string as argument. <br /></td></tr>
 <tr class="separator:a23680e7e7bf8318f71b6c6aaa15ddb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1475f723b0437657a45529272e8f40"><td class="memItemLeft" align="right" valign="top"><a id="aba1475f723b0437657a45529272e8f40" name="aba1475f723b0437657a45529272e8f40"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FCString</b> (const char16_t *pszCString)</td></tr>
-<tr class="memdesc:aba1475f723b0437657a45529272e8f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor version that takes a char16_t string as argument. <br /></td></tr>
-<tr class="separator:aba1475f723b0437657a45529272e8f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac387a6868b58bcd4dc5f2f336d0d77e3"><td class="memItemLeft" align="right" valign="top"><a id="ac387a6868b58bcd4dc5f2f336d0d77e3" name="ac387a6868b58bcd4dc5f2f336d0d77e3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FCString</b> (const WCHAR *pszCString)</td></tr>
-<tr class="memdesc:ac387a6868b58bcd4dc5f2f336d0d77e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor version that takes a WCHAR string as argument. (Windows only) <br /></td></tr>
-<tr class="separator:ac387a6868b58bcd4dc5f2f336d0d77e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf33ef1efd98dfad392d4d3eabcddf4"><td class="memItemLeft" align="right" valign="top"><a id="a1cf33ef1efd98dfad392d4d3eabcddf4" name="a1cf33ef1efd98dfad392d4d3eabcddf4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FCString</b> (const _fcStringChar *pszCString)</td></tr>
+<tr class="memdesc:a1cf33ef1efd98dfad392d4d3eabcddf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor version that takes a the platform UTF16 type as argument. <br /></td></tr>
+<tr class="separator:a1cf33ef1efd98dfad392d4d3eabcddf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b91478a35935694358ae0b8ccc6e22"><td class="memItemLeft" align="right" valign="top"><a id="ae6b91478a35935694358ae0b8ccc6e22" name="ae6b91478a35935694358ae0b8ccc6e22"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCString</b> ()</td></tr>
 <tr class="memdesc:ae6b91478a35935694358ae0b8ccc6e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor. Deletes the string storage as well as the C-string pointer (if any). <br /></td></tr>
@@ -123,7 +119,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCString</b> ()</
 <tr class="memdesc:af63e4d78854769d6a10fa14bb838e743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator (required for classes that allocate memory.) <br /></td></tr>
 <tr class="separator:af63e4d78854769d6a10fa14bb838e743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0366c6037f40a6d9c848b932a5e49662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662">AppendCharacter</a> (eUniChar32 character)</td></tr>
-<tr class="memdesc:a0366c6037f40a6d9c848b932a5e49662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a character to the string. As of version 0.72, <a class="el" href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662" title="Appends a character to the string. As of version 0.72, AppendCharacter correctly handles Unicode code...">AppendCharacter</a> correctly handles Unicode code points greater than 16-bits.  <a href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662">More...</a><br /></td></tr>
+<tr class="memdesc:a0366c6037f40a6d9c848b932a5e49662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a character to the string.  <a href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662">More...</a><br /></td></tr>
 <tr class="separator:a0366c6037f40a6d9c848b932a5e49662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a84349d5f50caf8284fded14b5d855"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a92a84349d5f50caf8284fded14b5d855">AppendString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pOtherString)</td></tr>
 <tr class="memdesc:a92a84349d5f50caf8284fded14b5d855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends another string object to the string.  <a href="class_f_c_string.html#a92a84349d5f50caf8284fded14b5d855">More...</a><br /></td></tr>
@@ -152,12 +148,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCString</b> ()</
 <tr class="memitem:aa06e665d83ef029a6da64abf304c5b93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa06e665d83ef029a6da64abf304c5b93">EncodeToMacRoman</a> ()</td></tr>
 <tr class="memdesc:aa06e665d83ef029a6da64abf304c5b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-encodes the string from true Unicode to faux MacRoman.  <a href="class_f_c_string.html#aa06e665d83ef029a6da64abf304c5b93">More...</a><br /></td></tr>
 <tr class="separator:aa06e665d83ef029a6da64abf304c5b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef4b305375c6a4ff4d40af73f79db94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#acef4b305375c6a4ff4d40af73f79db94">SplitAt</a> (int splitpointindex, <a class="el" href="class_f_c_string.html">FCString</a> *pFirstString, <a class="el" href="class_f_c_string.html">FCString</a> *pSecondString, bool includesplitposchar)</td></tr>
-<tr class="memdesc:acef4b305375c6a4ff4d40af73f79db94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into 2 substrings at a specific split point character position.  <a href="class_f_c_string.html#acef4b305375c6a4ff4d40af73f79db94">More...</a><br /></td></tr>
-<tr class="separator:acef4b305375c6a4ff4d40af73f79db94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4f743c5420a8e811fd44f060d53fbac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#af4f743c5420a8e811fd44f060d53fbac">SplitToPathAndFile</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pPathPart, <a class="el" href="class_f_c_string.html">FCString</a> *pFilePart)</td></tr>
-<tr class="memdesc:af4f743c5420a8e811fd44f060d53fbac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a fully qualified file path into path part and file part copies.  <a href="class_f_c_string.html#af4f743c5420a8e811fd44f060d53fbac">More...</a><br /></td></tr>
-<tr class="separator:af4f743c5420a8e811fd44f060d53fbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41da4ae47c6f106f79802aa223cb5496"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a41da4ae47c6f106f79802aa223cb5496">SplitAt</a> (int splitpointindex, <a class="el" href="class_f_c_string.html">FCString</a> *pFirstString, <a class="el" href="class_f_c_string.html">FCString</a> *pSecondString, bool includesplitposchar) const</td></tr>
+<tr class="memdesc:a41da4ae47c6f106f79802aa223cb5496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a string into 2 substrings at a specific split point character position.  <a href="class_f_c_string.html#a41da4ae47c6f106f79802aa223cb5496">More...</a><br /></td></tr>
+<tr class="separator:a41da4ae47c6f106f79802aa223cb5496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f76dcc6e47551eb65dc6f122b256ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a16f76dcc6e47551eb65dc6f122b256ae">SplitToPathAndFile</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pPathPart, <a class="el" href="class_f_c_string.html">FCString</a> *pFilePart) const</td></tr>
+<tr class="memdesc:a16f76dcc6e47551eb65dc6f122b256ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a fully qualified file path into path part and file part copies.  <a href="class_f_c_string.html#a16f76dcc6e47551eb65dc6f122b256ae">More...</a><br /></td></tr>
+<tr class="separator:a16f76dcc6e47551eb65dc6f122b256ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d66247a81989feeb8ccaa8ad411c84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab7d66247a81989feeb8ccaa8ad411c84">SetUserPath</a> ()</td></tr>
 <tr class="memdesc:ab7d66247a81989feeb8ccaa8ad411c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to the user path on the running system.  <a href="class_f_c_string.html#ab7d66247a81989feeb8ccaa8ad411c84">More...</a><br /></td></tr>
 <tr class="separator:ab7d66247a81989feeb8ccaa8ad411c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,59 +202,65 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FCString</b> ()</
 <tr class="memitem:ab60001937e0878291fb5c021938e2514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab60001937e0878291fb5c021938e2514">Clear</a> ()</td></tr>
 <tr class="memdesc:ab60001937e0878291fb5c021938e2514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty string.  <a href="class_f_c_string.html#ab60001937e0878291fb5c021938e2514">More...</a><br /></td></tr>
 <tr class="separator:ab60001937e0878291fb5c021938e2514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc98d51106a85611b179f8afa9463ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a9cc98d51106a85611b179f8afa9463ad">Compare</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString2) const</td></tr>
-<tr class="memdesc:a9cc98d51106a85611b179f8afa9463ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares string against another string.  <a href="class_f_c_string.html#a9cc98d51106a85611b179f8afa9463ad">More...</a><br /></td></tr>
-<tr class="separator:a9cc98d51106a85611b179f8afa9463ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d4d92cd15420cd1cd1fa83eadea91e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a5d4d92cd15420cd1cd1fa83eadea91e4">CompareNoCase</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString2) const</td></tr>
-<tr class="memdesc:a5d4d92cd15420cd1cd1fa83eadea91e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case insensitive version of <a class="el" href="class_f_c_string.html#a9cc98d51106a85611b179f8afa9463ad" title="Compares string against another string.">Compare</a>.  <a href="class_f_c_string.html#a5d4d92cd15420cd1cd1fa83eadea91e4">More...</a><br /></td></tr>
-<tr class="separator:a5d4d92cd15420cd1cd1fa83eadea91e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd3dc59ef78234f4d6ca4bbc0e218ea9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#acd3dc59ef78234f4d6ca4bbc0e218ea9">ContainsString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pSubString)</td></tr>
-<tr class="memdesc:acd3dc59ef78234f4d6ca4bbc0e218ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found within the string.  <a href="class_f_c_string.html#acd3dc59ef78234f4d6ca4bbc0e218ea9">More...</a><br /></td></tr>
-<tr class="separator:acd3dc59ef78234f4d6ca4bbc0e218ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5a84c29acf01aec397004b3c0c5220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a4c5a84c29acf01aec397004b3c0c5220">ContainsCString</a> (const char *pszSubString)</td></tr>
-<tr class="memdesc:a4c5a84c29acf01aec397004b3c0c5220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found within the string. C-string version.  <a href="class_f_c_string.html#a4c5a84c29acf01aec397004b3c0c5220">More...</a><br /></td></tr>
-<tr class="separator:a4c5a84c29acf01aec397004b3c0c5220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaa1bf9e134ab8918c4ff41741cf156d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#acaa1bf9e134ab8918c4ff41741cf156d">ContainsStringFrom</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pSubString, int startindex)</td></tr>
-<tr class="memdesc:acaa1bf9e134ab8918c4ff41741cf156d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found within the string from a certain position.  <a href="class_f_c_string.html#acaa1bf9e134ab8918c4ff41741cf156d">More...</a><br /></td></tr>
-<tr class="separator:acaa1bf9e134ab8918c4ff41741cf156d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada215eb00dfb901fca7bc03ffd2bbadb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ada215eb00dfb901fca7bc03ffd2bbadb">ContainsCStringFrom</a> (const char *pszSubString, int startindex)</td></tr>
-<tr class="memdesc:ada215eb00dfb901fca7bc03ffd2bbadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found from a certain position within the string. C-string version.  <a href="class_f_c_string.html#ada215eb00dfb901fca7bc03ffd2bbadb">More...</a><br /></td></tr>
-<tr class="separator:ada215eb00dfb901fca7bc03ffd2bbadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe91ced68e0986d30deec0015f420376"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#abe91ced68e0986d30deec0015f420376">CalcStringPos</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pSubString)</td></tr>
-<tr class="memdesc:abe91ced68e0986d30deec0015f420376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs.  <a href="class_f_c_string.html#abe91ced68e0986d30deec0015f420376">More...</a><br /></td></tr>
-<tr class="separator:abe91ced68e0986d30deec0015f420376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4b39411b9f78aba52ab67d5fff320c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a5c4b39411b9f78aba52ab67d5fff320c">CalcCStringPos</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pSubString, const char *pszSubString)</td></tr>
-<tr class="memdesc:a5c4b39411b9f78aba52ab67d5fff320c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs. C-string version.  <a href="class_f_c_string.html#a5c4b39411b9f78aba52ab67d5fff320c">More...</a><br /></td></tr>
-<tr class="separator:a5c4b39411b9f78aba52ab67d5fff320c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fcf8a8d88c6728b8201d8eb26fc2ffc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a5fcf8a8d88c6728b8201d8eb26fc2ffc">CalcStringPosFrom</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pSubString, int startindex)</td></tr>
-<tr class="memdesc:a5fcf8a8d88c6728b8201d8eb26fc2ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs, from a starting point.  <a href="class_f_c_string.html#a5fcf8a8d88c6728b8201d8eb26fc2ffc">More...</a><br /></td></tr>
-<tr class="separator:a5fcf8a8d88c6728b8201d8eb26fc2ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9472889962796d62dfb17189e1c4a63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae9472889962796d62dfb17189e1c4a63">CalcCStringPosFrom</a> (const char *pszSubString, int startindex)</td></tr>
-<tr class="memdesc:ae9472889962796d62dfb17189e1c4a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs, from a starting point. C-string version.  <a href="class_f_c_string.html#ae9472889962796d62dfb17189e1c4a63">More...</a><br /></td></tr>
-<tr class="separator:ae9472889962796d62dfb17189e1c4a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3a50e78b25d1a09ffe09ce1c0d0545"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#abb3a50e78b25d1a09ffe09ce1c0d0545">Compare</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;value) const</td></tr>
+<tr class="memdesc:abb3a50e78b25d1a09ffe09ce1c0d0545"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares string against another string.  <a href="class_f_c_string.html#abb3a50e78b25d1a09ffe09ce1c0d0545">More...</a><br /></td></tr>
+<tr class="separator:abb3a50e78b25d1a09ffe09ce1c0d0545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a5c39b605ae95573fd9d61c08ee46d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a99a5c39b605ae95573fd9d61c08ee46d">CompareNoCase</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;value) const</td></tr>
+<tr class="memdesc:a99a5c39b605ae95573fd9d61c08ee46d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case insensitive version of <a class="el" href="class_f_c_string.html#abb3a50e78b25d1a09ffe09ce1c0d0545" title="Compares string against another string.">Compare</a>.  <a href="class_f_c_string.html#a99a5c39b605ae95573fd9d61c08ee46d">More...</a><br /></td></tr>
+<tr class="separator:a99a5c39b605ae95573fd9d61c08ee46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770edef50a67dd0f926c013e30063c4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a770edef50a67dd0f926c013e30063c4e">ContainsString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;pSubString) const</td></tr>
+<tr class="memdesc:a770edef50a67dd0f926c013e30063c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found within the string.  <a href="class_f_c_string.html#a770edef50a67dd0f926c013e30063c4e">More...</a><br /></td></tr>
+<tr class="separator:a770edef50a67dd0f926c013e30063c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65c65778074a3b811b1a339b6fe89b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad65c65778074a3b811b1a339b6fe89b2">ContainsCString</a> (const char *pszSubString) const</td></tr>
+<tr class="memdesc:ad65c65778074a3b811b1a339b6fe89b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found within the string. C-string version.  <a href="class_f_c_string.html#ad65c65778074a3b811b1a339b6fe89b2">More...</a><br /></td></tr>
+<tr class="separator:ad65c65778074a3b811b1a339b6fe89b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429a17203e383209c3ff21dc830664ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a429a17203e383209c3ff21dc830664ad">ContainsStringFrom</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;pSubString, int startindex) const</td></tr>
+<tr class="memdesc:a429a17203e383209c3ff21dc830664ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found within the string from a certain position.  <a href="class_f_c_string.html#a429a17203e383209c3ff21dc830664ad">More...</a><br /></td></tr>
+<tr class="separator:a429a17203e383209c3ff21dc830664ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903e8190c079c3728e128119ac930aee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a903e8190c079c3728e128119ac930aee">ContainsCStringFrom</a> (const char *pszSubString, int startindex) const</td></tr>
+<tr class="memdesc:a903e8190c079c3728e128119ac930aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the substring is found from a certain position within the string.  <a href="class_f_c_string.html#a903e8190c079c3728e128119ac930aee">More...</a><br /></td></tr>
+<tr class="separator:a903e8190c079c3728e128119ac930aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0731182cb778b576395d2c0fbf3b758d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a0731182cb778b576395d2c0fbf3b758d">CalcStringPos</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;subString) const</td></tr>
+<tr class="memdesc:a0731182cb778b576395d2c0fbf3b758d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs.  <a href="class_f_c_string.html#a0731182cb778b576395d2c0fbf3b758d">More...</a><br /></td></tr>
+<tr class="separator:a0731182cb778b576395d2c0fbf3b758d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2879b154442fe0e627ab604e47006398"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a2879b154442fe0e627ab604e47006398">CalcCStringPos</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pSubString, const char *pszSubString) const</td></tr>
+<tr class="memdesc:a2879b154442fe0e627ab604e47006398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs. C-string version.  <a href="class_f_c_string.html#a2879b154442fe0e627ab604e47006398">More...</a><br /></td></tr>
+<tr class="separator:a2879b154442fe0e627ab604e47006398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028ea83eb005e28358d7c4ea3280ccb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a028ea83eb005e28358d7c4ea3280ccb4">CalcStringPosFrom</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;subString, int startindex) const</td></tr>
+<tr class="memdesc:a028ea83eb005e28358d7c4ea3280ccb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs, from a starting point.  <a href="class_f_c_string.html#a028ea83eb005e28358d7c4ea3280ccb4">More...</a><br /></td></tr>
+<tr class="separator:a028ea83eb005e28358d7c4ea3280ccb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d0b9972e24a480587ad2c2800a57a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad8d0b9972e24a480587ad2c2800a57a7">CalcCStringPosFrom</a> (const char *pszSubString, int startindex) const</td></tr>
+<tr class="memdesc:ad8d0b9972e24a480587ad2c2800a57a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first position where a substring occurs, from a starting point. C-string version.  <a href="class_f_c_string.html#ad8d0b9972e24a480587ad2c2800a57a7">More...</a><br /></td></tr>
+<tr class="separator:ad8d0b9972e24a480587ad2c2800a57a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6b799917cabc7f4f0194959edff9b3"><td class="memItemLeft" align="right" valign="top"><a id="a9e6b799917cabc7f4f0194959edff9b3" name="a9e6b799917cabc7f4f0194959edff9b3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToPascal</b> (Str255 &amp;pascalString)</td></tr>
 <tr class="memdesc:a9e6b799917cabc7f4f0194959edff9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the string contents to a Str255 pascal string. <br /></td></tr>
 <tr class="separator:a9e6b799917cabc7f4f0194959edff9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2214fd8140497513946ef5a7337863d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae2214fd8140497513946ef5a7337863d">_SetCFURLRefPath</a> (void *cfurl)</td></tr>
 <tr class="separator:ae2214fd8140497513946ef5a7337863d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95042d8ab88730e5054590370c433de9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a95042d8ab88730e5054590370c433de9">ContainsEnigmaTextInsert</a> (bool only_file_info_inserts=true)</td></tr>
-<tr class="memdesc:a95042d8ab88730e5054590370c433de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the text block contains a text insert.  <a href="class_f_c_string.html#a95042d8ab88730e5054590370c433de9">More...</a><br /></td></tr>
-<tr class="separator:a95042d8ab88730e5054590370c433de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54d1a017c51d31cc802814cf4ac7dff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab54d1a017c51d31cc802814cf4ac7dff">ContainsEnigmaTextInsert</a> (bool only_file_info_inserts=true) const</td></tr>
+<tr class="memdesc:ab54d1a017c51d31cc802814cf4ac7dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the text block contains a text insert.  <a href="class_f_c_string.html#ab54d1a017c51d31cc802814cf4ac7dff">More...</a><br /></td></tr>
+<tr class="separator:ab54d1a017c51d31cc802814cf4ac7dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c469d32fc14a3051664c30e35f090e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_strings.html">FCStrings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a1c469d32fc14a3051664c30e35f090e2">CreateEnigmaComponents</a> () const</td></tr>
 <tr class="memdesc:a1c469d32fc14a3051664c30e35f090e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string collection that consists of the components from an Enigma text command (with correct syntax).  <a href="class_f_c_string.html#a1c469d32fc14a3051664c30e35f090e2">More...</a><br /></td></tr>
 <tr class="separator:a1c469d32fc14a3051664c30e35f090e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35660066559e2a16543a9f81440e0872"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_strings.html">FCStrings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a35660066559e2a16543a9f81440e0872">CreateEnigmaStrings</a> (bool include_non_commands=false) const</td></tr>
 <tr class="memdesc:a35660066559e2a16543a9f81440e0872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string collection of every enigma text tag found in the string.  <a href="class_f_c_string.html#a35660066559e2a16543a9f81440e0872">More...</a><br /></td></tr>
 <tr class="separator:a35660066559e2a16543a9f81440e0872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc815e2135dc86fcf4829388b31e03d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#adbc815e2135dc86fcf4829388b31e03d">CreateLastFontInfo</a> ()</td></tr>
-<tr class="memdesc:adbc815e2135dc86fcf4829388b31e03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> object with the last font information (based on the Enigma text tags) found in the string.  <a href="class_f_c_string.html#adbc815e2135dc86fcf4829388b31e03d">More...</a><br /></td></tr>
-<tr class="separator:adbc815e2135dc86fcf4829388b31e03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06b7af3d85885edca1cfadc906fbe33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae06b7af3d85885edca1cfadc906fbe33">CreateLastFontInfo</a> () const</td></tr>
+<tr class="memdesc:ae06b7af3d85885edca1cfadc906fbe33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> object with the last font information (based on the Enigma text tags) found in the string.  <a href="class_f_c_string.html#ae06b7af3d85885edca1cfadc906fbe33">More...</a><br /></td></tr>
+<tr class="separator:ae06b7af3d85885edca1cfadc906fbe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a170ac6af6066153ac9d407c178378120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_strings.html">FCStrings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a170ac6af6066153ac9d407c178378120">CreateParsedStrings</a> (const char *pszSeparators) const</td></tr>
 <tr class="memdesc:a170ac6af6066153ac9d407c178378120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a collection of strings based on the separator characters. C-style string version.  <a href="class_f_c_string.html#a170ac6af6066153ac9d407c178378120">More...</a><br /></td></tr>
 <tr class="separator:a170ac6af6066153ac9d407c178378120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7960f5a2d19aaf619f6c8b0715163e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_strings.html">FCStrings</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad7960f5a2d19aaf619f6c8b0715163e8">CreateRows</a> () const</td></tr>
 <tr class="separator:ad7960f5a2d19aaf619f6c8b0715163e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a05146606d277133021f2650afbcf9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#af1a05146606d277133021f2650afbcf9">DeleteCodePointAt</a> (int index)</td></tr>
+<tr class="memdesc:af1a05146606d277133021f2650afbcf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the Unicode codepoint at the 0-based index position.  <a href="class_f_c_string.html#af1a05146606d277133021f2650afbcf9">More...</a><br /></td></tr>
+<tr class="separator:af1a05146606d277133021f2650afbcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75f4b052420e64fd057bc4b4b45b2e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad75f4b052420e64fd057bc4b4b45b2e9">DeleteCodePointsAt</a> (int index, int count)</td></tr>
+<tr class="memdesc:ad75f4b052420e64fd057bc4b4b45b2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a range of Unicode codepoints, starting at the 0-based index position.  <a href="class_f_c_string.html#ad75f4b052420e64fd057bc4b4b45b2e9">More...</a><br /></td></tr>
+<tr class="separator:ad75f4b052420e64fd057bc4b4b45b2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae53c241a0aeec5d9c235b0e469e1adbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae53c241a0aeec5d9c235b0e469e1adbd">DeleteCharacterAt</a> (int index)</td></tr>
 <tr class="memdesc:ae53c241a0aeec5d9c235b0e469e1adbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a character at the 0-based index position.  <a href="class_f_c_string.html#ae53c241a0aeec5d9c235b0e469e1adbd">More...</a><br /></td></tr>
 <tr class="separator:ae53c241a0aeec5d9c235b0e469e1adbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,12 +270,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToPascal</b> (
 <tr class="memitem:a1f76698217eadede1320e955419c5e06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a1f76698217eadede1320e955419c5e06">ExtractFileExtension</a> ()</td></tr>
 <tr class="memdesc:a1f76698217eadede1320e955419c5e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes everything except the file extension part of a file name.  <a href="class_f_c_string.html#a1f76698217eadede1320e955419c5e06">More...</a><br /></td></tr>
 <tr class="separator:a1f76698217eadede1320e955419c5e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd797dca5b7ba43935580694f15c4084"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#acd797dca5b7ba43935580694f15c4084">FindFirst</a> (const char *pszSubStr)</td></tr>
-<tr class="memdesc:acd797dca5b7ba43935580694f15c4084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based index for the first occurence of the substring.  <a href="class_f_c_string.html#acd797dca5b7ba43935580694f15c4084">More...</a><br /></td></tr>
-<tr class="separator:acd797dca5b7ba43935580694f15c4084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa08ad5a0f40200fc06583aa4413fc18d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa08ad5a0f40200fc06583aa4413fc18d">FindLast</a> (const char *pszSubStr)</td></tr>
-<tr class="memdesc:aa08ad5a0f40200fc06583aa4413fc18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based index for the last occurence of the substring.  <a href="class_f_c_string.html#aa08ad5a0f40200fc06583aa4413fc18d">More...</a><br /></td></tr>
-<tr class="separator:aa08ad5a0f40200fc06583aa4413fc18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98b602f6f75fed3daa3b5d91bb99743"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad98b602f6f75fed3daa3b5d91bb99743">FindFirst</a> (const char *pszSubStr) const</td></tr>
+<tr class="memdesc:ad98b602f6f75fed3daa3b5d91bb99743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based index for the first occurence of the substring.  <a href="class_f_c_string.html#ad98b602f6f75fed3daa3b5d91bb99743">More...</a><br /></td></tr>
+<tr class="separator:ad98b602f6f75fed3daa3b5d91bb99743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd6771037cc356125f6850cb65a1773"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#abfd6771037cc356125f6850cb65a1773">FindLast</a> (const char *pszSubStr) const</td></tr>
+<tr class="memdesc:abfd6771037cc356125f6850cb65a1773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 0-based index for the last occurence of the substring.  <a href="class_f_c_string.html#abfd6771037cc356125f6850cb65a1773">More...</a><br /></td></tr>
+<tr class="separator:abfd6771037cc356125f6850cb65a1773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afecf0420f27b06a2993349a50392ccf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#afecf0420f27b06a2993349a50392ccf4">FormatCStringArgs</a> (const char *fmt, va_list args)</td></tr>
 <tr class="memdesc:afecf0420f27b06a2993349a50392ccf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a string from an args list. Supports either UTF8 or platform encoding.  <a href="class_f_c_string.html#afecf0420f27b06a2993349a50392ccf4">More...</a><br /></td></tr>
 <tr class="separator:afecf0420f27b06a2993349a50392ccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -283,9 +285,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToPascal</b> (
 <tr class="memitem:a82639d46c5a390017146e6c7786e8a31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a82639d46c5a390017146e6c7786e8a31">FormatString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *fmt,...)</td></tr>
 <tr class="memdesc:a82639d46c5a390017146e6c7786e8a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a string using the same syntax and manner as the printf() function in C. The version of the method supports Unicode on Finale 2012 and later.  <a href="class_f_c_string.html#a82639d46c5a390017146e6c7786e8a31">More...</a><br /></td></tr>
 <tr class="separator:a82639d46c5a390017146e6c7786e8a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa648a64a8262084190c971386a17f114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa648a64a8262084190c971386a17f114">FormatCharacterNumber</a> (eUniChar16 character)</td></tr>
-<tr class="memdesc:aa648a64a8262084190c971386a17f114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a 16-bit character (symbol) number to a string for presentation purposes.  <a href="class_f_c_string.html#aa648a64a8262084190c971386a17f114">More...</a><br /></td></tr>
-<tr class="separator:aa648a64a8262084190c971386a17f114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b521a895d6700cdce7c642da1126fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a9b521a895d6700cdce7c642da1126fdf">FormatCharacterNumber</a> (eUniChar32 character)</td></tr>
+<tr class="memdesc:a9b521a895d6700cdce7c642da1126fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a 16-bit character (symbol) number to a string for presentation purposes.  <a href="class_f_c_string.html#a9b521a895d6700cdce7c642da1126fdf">More...</a><br /></td></tr>
+<tr class="separator:a9b521a895d6700cdce7c642da1126fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d145b7b1215627dfcc475024854307"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a84d145b7b1215627dfcc475024854307">GetCString</a> () const</td></tr>
 <tr class="memdesc:a84d145b7b1215627dfcc475024854307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a C-string version of the string.  <a href="class_f_c_string.html#a84d145b7b1215627dfcc475024854307">More...</a><br /></td></tr>
 <tr class="separator:a84d145b7b1215627dfcc475024854307"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,18 +308,21 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetUTF8String
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNSString</b> (void *pNSString)</td></tr>
 <tr class="memdesc:a8f9f28d7ec1a7ddea4b996b7e31360e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to a NSString* value. <br /></td></tr>
 <tr class="separator:a8f9f28d7ec1a7ddea4b996b7e31360e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa429831db45adfea515305643d42eaed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa429831db45adfea515305643d42eaed">GetInteger</a> (int index=0)</td></tr>
-<tr class="memdesc:aa429831db45adfea515305643d42eaed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the decimal string contents to an integer value.  <a href="class_f_c_string.html#aa429831db45adfea515305643d42eaed">More...</a><br /></td></tr>
-<tr class="separator:aa429831db45adfea515305643d42eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb7a69fadee453c9127ec9640d7bc422"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#afb7a69fadee453c9127ec9640d7bc422">GetHex</a> ()</td></tr>
-<tr class="memdesc:afb7a69fadee453c9127ec9640d7bc422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the unsigned hexadecimal string to an integer value. The string can only contain valid hexadecimal characters.  <a href="class_f_c_string.html#afb7a69fadee453c9127ec9640d7bc422">More...</a><br /></td></tr>
-<tr class="separator:afb7a69fadee453c9127ec9640d7bc422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efb9979b771ffa835329153581d7928"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a8efb9979b771ffa835329153581d7928">GetFloat</a> (int index=0)</td></tr>
-<tr class="memdesc:a8efb9979b771ffa835329153581d7928"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the decimal string contents to a floating point value.  <a href="class_f_c_string.html#a8efb9979b771ffa835329153581d7928">More...</a><br /></td></tr>
-<tr class="separator:a8efb9979b771ffa835329153581d7928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a675fe588eeb690a38594f1a2ea7745a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a675fe588eeb690a38594f1a2ea7745a6">GetInteger</a> (int index=0) const</td></tr>
+<tr class="memdesc:a675fe588eeb690a38594f1a2ea7745a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the decimal string contents to an integer value.  <a href="class_f_c_string.html#a675fe588eeb690a38594f1a2ea7745a6">More...</a><br /></td></tr>
+<tr class="separator:a675fe588eeb690a38594f1a2ea7745a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6347f2ac81903dabced8a6645f1db1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#abf6347f2ac81903dabced8a6645f1db1">GetHex</a> () const</td></tr>
+<tr class="memdesc:abf6347f2ac81903dabced8a6645f1db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the unsigned hexadecimal string to an integer value. The string can only contain valid hexadecimal characters.  <a href="class_f_c_string.html#abf6347f2ac81903dabced8a6645f1db1">More...</a><br /></td></tr>
+<tr class="separator:abf6347f2ac81903dabced8a6645f1db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3cda536b6ece3267eba5f44a91b4c51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa3cda536b6ece3267eba5f44a91b4c51">GetFloat</a> (int index=0) const</td></tr>
+<tr class="memdesc:aa3cda536b6ece3267eba5f44a91b4c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the decimal string contents to a floating point value.  <a href="class_f_c_string.html#aa3cda536b6ece3267eba5f44a91b4c51">More...</a><br /></td></tr>
+<tr class="separator:aa3cda536b6ece3267eba5f44a91b4c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c75a546078406584b9492b2ebd3a902"><td class="memItemLeft" align="right" valign="top">eUniChar16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a1c75a546078406584b9492b2ebd3a902">GetCharacterAt</a> (int index) const</td></tr>
 <tr class="memdesc:a1c75a546078406584b9492b2ebd3a902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the character at the index position.  <a href="class_f_c_string.html#a1c75a546078406584b9492b2ebd3a902">More...</a><br /></td></tr>
 <tr class="separator:a1c75a546078406584b9492b2ebd3a902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108e7036ccd7c65c21b06df4e95cabf4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; eUniChar32, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a108e7036ccd7c65c21b06df4e95cabf4">GetCodePointAt</a> (int index) const</td></tr>
+<tr class="memdesc:a108e7036ccd7c65c21b06df4e95cabf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Unicode codepoint at the index position. If the index position points to the high surrogate, the codepoint returned actually starts at index - 1.  <a href="class_f_c_string.html#a108e7036ccd7c65c21b06df4e95cabf4">More...</a><br /></td></tr>
+<tr class="separator:a108e7036ccd7c65c21b06df4e95cabf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22411b4ae557606b2eea1a255f648e5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a22411b4ae557606b2eea1a255f648e5f">GetLength</a> () const</td></tr>
 <tr class="memdesc:a22411b4ae557606b2eea1a255f648e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the string.  <a href="class_f_c_string.html#a22411b4ae557606b2eea1a255f648e5f">More...</a><br /></td></tr>
 <tr class="separator:a22411b4ae557606b2eea1a255f648e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,10 +332,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNSString</b> (void
 <tr class="memitem:ad74dae869392556304d16e23849aabeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad74dae869392556304d16e23849aabeb">Insert</a> (const char *pszString, int insertindex=0)</td></tr>
 <tr class="memdesc:ad74dae869392556304d16e23849aabeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a C string to the string at a specified index position.  <a href="class_f_c_string.html#ad74dae869392556304d16e23849aabeb">More...</a><br /></td></tr>
 <tr class="separator:ad74dae869392556304d16e23849aabeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f10264d109eed465051c175a419b36d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a4f10264d109eed465051c175a419b36d">InsertString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString, int insertindex=0)</td></tr>
-<tr class="memdesc:a4f10264d109eed465051c175a419b36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a string object to the string at a specified index position. <br  />
-  <a href="class_f_c_string.html#a4f10264d109eed465051c175a419b36d">More...</a><br /></td></tr>
-<tr class="separator:a4f10264d109eed465051c175a419b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca832fac4ebe452e6414bd5fceac16b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a4ca832fac4ebe452e6414bd5fceac16b">InsertString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString, int insertindex=0)</td></tr>
+<tr class="memdesc:a4ca832fac4ebe452e6414bd5fceac16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a string object to the string at a specified index position.  <a href="class_f_c_string.html#a4ca832fac4ebe452e6414bd5fceac16b">More...</a><br /></td></tr>
+<tr class="separator:a4ca832fac4ebe452e6414bd5fceac16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab58b977d9783a3d8f1c70a8490e4bad5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ab58b977d9783a3d8f1c70a8490e4bad5">IsDigit</a> (int index) const</td></tr>
 <tr class="memdesc:ab58b977d9783a3d8f1c70a8490e4bad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the character at the specified 0-based index position is a digit (0 through 9).  <a href="class_f_c_string.html#ab58b977d9783a3d8f1c70a8490e4bad5">More...</a><br /></td></tr>
 <tr class="separator:ab58b977d9783a3d8f1c70a8490e4bad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,21 +344,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNSString</b> (void
 <tr class="memitem:a9e7ab6f61f14818a81be79c86da34ec2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a9e7ab6f61f14818a81be79c86da34ec2">IsNumber</a> () const</td></tr>
 <tr class="memdesc:a9e7ab6f61f14818a81be79c86da34ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string is a number.  <a href="class_f_c_string.html#a9e7ab6f61f14818a81be79c86da34ec2">More...</a><br /></td></tr>
 <tr class="separator:a9e7ab6f61f14818a81be79c86da34ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc700473039f18d072699ea8f3a8888"><td class="memItemLeft" align="right" valign="top"><a id="a4fc700473039f18d072699ea8f3a8888" name="a4fc700473039f18d072699ea8f3a8888"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEqualCString</b> (const char *pszString) const</td></tr>
-<tr class="memdesc:a4fc700473039f18d072699ea8f3a8888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string is identical with the parameter. (C-style string version.) <br  />
- <br /></td></tr>
+<tr class="memitem:a4fc700473039f18d072699ea8f3a8888"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a4fc700473039f18d072699ea8f3a8888">IsEqualCString</a> (const char *pszString) const</td></tr>
+<tr class="memdesc:a4fc700473039f18d072699ea8f3a8888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string is identical with the parameter. (C-style string version.)  <a href="class_f_c_string.html#a4fc700473039f18d072699ea8f3a8888">More...</a><br /></td></tr>
 <tr class="separator:a4fc700473039f18d072699ea8f3a8888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20b54a6031d474381fc509a58b794e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae20b54a6031d474381fc509a58b794e2">IsEqual</a> (const char *pszString) const</td></tr>
 <tr class="memdesc:ae20b54a6031d474381fc509a58b794e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string is identical with the parameter. <br  />
   <a href="class_f_c_string.html#ae20b54a6031d474381fc509a58b794e2">More...</a><br /></td></tr>
 <tr class="separator:ae20b54a6031d474381fc509a58b794e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a214df350b573e5b8a522d3e98c59304c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a214df350b573e5b8a522d3e98c59304c">IsEqualString</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
-<tr class="memdesc:a214df350b573e5b8a522d3e98c59304c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string is identical with the parameter. (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> string version.)  <a href="class_f_c_string.html#a214df350b573e5b8a522d3e98c59304c">More...</a><br /></td></tr>
-<tr class="separator:a214df350b573e5b8a522d3e98c59304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b8b7437468386000c00684f075f428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#af6b8b7437468386000c00684f075f428">IsCharacter</a> (int index, eUniChar16 character) const</td></tr>
-<tr class="memdesc:af6b8b7437468386000c00684f075f428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the character at the index matches the supplied character.  <a href="class_f_c_string.html#af6b8b7437468386000c00684f075f428">More...</a><br /></td></tr>
-<tr class="separator:af6b8b7437468386000c00684f075f428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae110de239de0b6b9c89b42a763358060"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae110de239de0b6b9c89b42a763358060">IsEqualString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;value) const</td></tr>
+<tr class="memdesc:ae110de239de0b6b9c89b42a763358060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string is identical with the parameter. (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> string version.)  <a href="class_f_c_string.html#ae110de239de0b6b9c89b42a763358060">More...</a><br /></td></tr>
+<tr class="separator:ae110de239de0b6b9c89b42a763358060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61ae2babb90615170b83892cab58788"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae61ae2babb90615170b83892cab58788">IsCharacter</a> (int index, eUniChar32 character) const</td></tr>
+<tr class="memdesc:ae61ae2babb90615170b83892cab58788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the character at the index matches the supplied character.  <a href="class_f_c_string.html#ae61ae2babb90615170b83892cab58788">More...</a><br /></td></tr>
+<tr class="separator:ae61ae2babb90615170b83892cab58788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cfe8f1d0090e2328d44160c1fb3aa54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a9cfe8f1d0090e2328d44160c1fb3aa54">IsCharacters</a> (int index, const char *pChars) const</td></tr>
 <tr class="memdesc:a9cfe8f1d0090e2328d44160c1fb3aa54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the character at the index matches any of the supplied character.  <a href="class_f_c_string.html#a9cfe8f1d0090e2328d44160c1fb3aa54">More...</a><br /></td></tr>
 <tr class="separator:a9cfe8f1d0090e2328d44160c1fb3aa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -433,9 +435,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFloat</b> (double 
 <tr class="memitem:aec27084cd1608c7877db17ad2c89aa74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aec27084cd1608c7877db17ad2c89aa74">SetMeasurement</a> (double value, twobyte unit)</td></tr>
 <tr class="memdesc:aec27084cd1608c7877db17ad2c89aa74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to an EVPU measurement value, formatted to a specific unit.  <a href="class_f_c_string.html#aec27084cd1608c7877db17ad2c89aa74">More...</a><br /></td></tr>
 <tr class="separator:aec27084cd1608c7877db17ad2c89aa74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeacc2d9a31b963b298b92c86357d96de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aeacc2d9a31b963b298b92c86357d96de">GetMeasurement</a> (_ENUMCODE(<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a>) _LUACODE(twobyte) unit)</td></tr>
-<tr class="memdesc:aeacc2d9a31b963b298b92c86357d96de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the string to an EVPU measurement value, based on a specific unit.  <a href="class_f_c_string.html#aeacc2d9a31b963b298b92c86357d96de">More...</a><br /></td></tr>
-<tr class="separator:aeacc2d9a31b963b298b92c86357d96de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2185107597a84a4d2fc07732ac2b85"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a5b2185107597a84a4d2fc07732ac2b85">GetMeasurement</a> (_ENUMCODE(<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a>) _LUACODE(twobyte) unit) const</td></tr>
+<tr class="memdesc:a5b2185107597a84a4d2fc07732ac2b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the string to an EVPU measurement value, based on a specific unit.  <a href="class_f_c_string.html#a5b2185107597a84a4d2fc07732ac2b85">More...</a><br /></td></tr>
+<tr class="separator:a5b2185107597a84a4d2fc07732ac2b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50899560ee55792a71b1ae63e51a531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#aa50899560ee55792a71b1ae63e51a531">SetString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:aa50899560ee55792a71b1ae63e51a531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a string.  <a href="class_f_c_string.html#aa50899560ee55792a71b1ae63e51a531">More...</a><br /></td></tr>
 <tr class="separator:aa50899560ee55792a71b1ae63e51a531"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -449,7 +451,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFloat</b> (double 
 <tr class="memdesc:a716a0ce878bc5eeae618e349b7dc6bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the string to the current time in hh:mm:ss format.  <a href="class_f_c_string.html#a716a0ce878bc5eeae618e349b7dc6bf4">More...</a><br /></td></tr>
 <tr class="separator:a716a0ce878bc5eeae618e349b7dc6bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7cc2fe997c462ad109f79a2598127cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ae7cc2fe997c462ad109f79a2598127cd">Replace</a> (const char *pszSource, const char *pszReplacement)</td></tr>
-<tr class="memdesc:ae7cc2fe997c462ad109f79a2598127cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces a source pattern with a replacement string.  <a href="class_f_c_string.html#ae7cc2fe997c462ad109f79a2598127cd">More...</a><br /></td></tr>
+<tr class="memdesc:ae7cc2fe997c462ad109f79a2598127cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces all occurrences of a source pattern with a replacement string.  <a href="class_f_c_string.html#ae7cc2fe997c462ad109f79a2598127cd">More...</a><br /></td></tr>
 <tr class="separator:ae7cc2fe997c462ad109f79a2598127cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f264c06eb59fa3d71201e5c1a4e7411"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a3f264c06eb59fa3d71201e5c1a4e7411">EndsWith</a> (const char *pszString) const</td></tr>
 <tr class="memdesc:a3f264c06eb59fa3d71201e5c1a4e7411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string ends with the parameter string.  <a href="class_f_c_string.html#a3f264c06eb59fa3d71201e5c1a4e7411">More...</a><br /></td></tr>
@@ -554,9 +556,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBitCount</b> (FLAG_
 <tr class="memitem:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">GetUserData2</a> () const</td></tr>
 <tr class="memdesc:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the additional user data attached to the instance of an object.  <a href="class_____f_c_base.html#a80b223f81a66dc348574fb8c3b9dd063">More...</a><br /></td></tr>
 <tr class="separator:a80b223f81a66dc348574fb8c3b9dd063 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">IsIdentical</a> (<a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const</td></tr>
-<tr class="memdesc:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a1b05a184232075e7a1ab7b8327fd2cd1">More...</a><br /></td></tr>
-<tr class="separator:a1b05a184232075e7a1ab7b8327fd2cd1 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f441d76fd1f5c1e7b4c616a2cc580ca inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">IsIdentical</a> (const <a class="el" href="class_____f_c_base.html">__FCBase</a> *pCompareObject) const</td></tr>
+<tr class="memdesc:a8f441d76fd1f5c1e7b4c616a2cc580ca inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the data in the passed object is considered to be identical to the current object, otherwise false.  <a href="class_____f_c_base.html#a8f441d76fd1f5c1e7b4c616a2cc580ca">More...</a><br /></td></tr>
+<tr class="separator:a8f441d76fd1f5c1e7b4c616a2cc580ca inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">StoreXML_String</a> (tinyxml2::XMLElement *pParentNode, const char *pszElementName, <a class="el" href="class_f_c_string.html">FCString</a> *pStringValue)</td></tr>
 <tr class="memdesc:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to store <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> objects in the XML file.  <a href="class_____f_c_base.html#a62711324f4e02f11f2111618eb5a9390">More...</a><br /></td></tr>
 <tr class="separator:a62711324f4e02f11f2111618eb5a9390 inherit pub_methods_class_____f_c_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -930,7 +932,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Appends a character to the string. As of version 0.72, <a class="el" href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662" title="Appends a character to the string. As of version 0.72, AppendCharacter correctly handles Unicode code...">AppendCharacter</a> correctly handles Unicode code points greater than 16-bits. </p>
+<p>Appends a character to the string. </p>
+<p >Starting with version 0.73, <a class="el" href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662" title="Appends a character to the string.">AppendCharacter</a> breaks Unicode code points greater than 16-bits into their surrogate pairs and appends them both. Values below 0x10000 are added without examination (as before). This means you can add half a surrogate pair without adding the other half, but then you will end up with a malformed string.</p>
 <p >Lua-supported. </p>
 
 </div>
@@ -952,7 +955,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Appends a C-style string to the string. </p>
-<p >For JW Lua, use <a class="el" href="class_f_c_string.html#a04898ed069ab068d6075f9eb4f0b568e" title="Appends a Lua string to the string. This method supports UTF-8.">AppendLuaString()</a> instead. </p>
+<p >Lua callers should use <a class="el" href="class_f_c_string.html#a04898ed069ab068d6075f9eb4f0b568e" title="Appends a Lua string to the string. This method supports UTF-8.">AppendLuaString()</a> instead. </p>
 
 </div>
 </div>
@@ -1046,7 +1049,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pOtherString</td><td>Pointer to a UTF-8 Lua string character buffer. If it's NULL, nothing will be appended. </td></tr>
+    <tr><td class="paramname">pOtherString</td><td>Pointer to a UTF-8-encoded Lua string character buffer. If it is NULL, nothing will be appended. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1103,8 +1106,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c4b39411b9f78aba52ab67d5fff320c" name="a5c4b39411b9f78aba52ab67d5fff320c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c4b39411b9f78aba52ab67d5fff320c">&#9670;&nbsp;</a></span>CalcCStringPos()</h2>
+<a id="a2879b154442fe0e627ab604e47006398" name="a2879b154442fe0e627ab604e47006398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2879b154442fe0e627ab604e47006398">&#9670;&nbsp;</a></span>CalcCStringPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1115,7 +1118,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int FCString::CalcCStringPos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pSubString</em>, </td>
         </tr>
         <tr>
@@ -1127,7 +1130,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1138,13 +1141,22 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the first position where a substring occurs. C-string version. </p>
+<p >This function is not guaranteed to work for non-ASCII characters.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>use <a class="el" href="class_f_c_string.html#a0731182cb778b576395d2c0fbf3b758d" title="Returns the first position where a substring occurs.">CalcStringPos</a> instead.</dd></dl>
 <p >Lua-supported (as "CalcLuaStringPos").</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pSubString</td><td>not used. Left in for backwards compatibility. </td></tr>
+    <tr><td class="paramname">pszSubString</td><td>the C string or Lua string version of the substring.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>-1 if the substring isn't found. Otherwise, the 0-based position where the substring is found. </dd></dl>
 
 </div>
 </div>
-<a id="ae9472889962796d62dfb17189e1c4a63" name="ae9472889962796d62dfb17189e1c4a63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9472889962796d62dfb17189e1c4a63">&#9670;&nbsp;</a></span>CalcCStringPosFrom()</h2>
+<a id="ad8d0b9972e24a480587ad2c2800a57a7" name="ad8d0b9972e24a480587ad2c2800a57a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d0b9972e24a480587ad2c2800a57a7">&#9670;&nbsp;</a></span>CalcCStringPosFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1167,7 +1179,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1178,13 +1190,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the first position where a substring occurs, from a starting point. C-string version. </p>
+<p >This function is not guaranteed to work for non-ASCII characters.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>use <a class="el" href="class_f_c_string.html#a028ea83eb005e28358d7c4ea3280ccb4" title="Returns the first position where a substring occurs, from a starting point.">CalcStringPosFrom</a> instead.</dd></dl>
 <p >Lua-supported (as "CalcLuaStringPosFrom").</p>
 <dl class="section return"><dt>Returns</dt><dd>-1 if the substring isn't found. Otherwise, the 0-based position where the substring is found. </dd></dl>
 
 </div>
 </div>
-<a id="abe91ced68e0986d30deec0015f420376" name="abe91ced68e0986d30deec0015f420376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe91ced68e0986d30deec0015f420376">&#9670;&nbsp;</a></span>CalcStringPos()</h2>
+<a id="a0731182cb778b576395d2c0fbf3b758d" name="a0731182cb778b576395d2c0fbf3b758d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0731182cb778b576395d2c0fbf3b758d">&#9670;&nbsp;</a></span>CalcStringPos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1195,9 +1209,9 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int FCString::CalcStringPos </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
-          <td class="paramname"><em>pSubString</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>subString</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1213,8 +1227,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fcf8a8d88c6728b8201d8eb26fc2ffc" name="a5fcf8a8d88c6728b8201d8eb26fc2ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fcf8a8d88c6728b8201d8eb26fc2ffc">&#9670;&nbsp;</a></span>CalcStringPosFrom()</h2>
+<a id="a028ea83eb005e28358d7c4ea3280ccb4" name="a028ea83eb005e28358d7c4ea3280ccb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028ea83eb005e28358d7c4ea3280ccb4">&#9670;&nbsp;</a></span>CalcStringPosFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1222,8 +1236,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int FCString::CalcStringPosFrom </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
-          <td class="paramname"><em>pSubString</em>, </td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>subString</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1234,7 +1248,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1303,8 +1317,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9cc98d51106a85611b179f8afa9463ad" name="a9cc98d51106a85611b179f8afa9463ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc98d51106a85611b179f8afa9463ad">&#9670;&nbsp;</a></span>Compare()</h2>
+<a id="abb3a50e78b25d1a09ffe09ce1c0d0545" name="abb3a50e78b25d1a09ffe09ce1c0d0545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb3a50e78b25d1a09ffe09ce1c0d0545">&#9670;&nbsp;</a></span>Compare()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1315,8 +1329,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int FCString::Compare </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
-          <td class="paramname"><em>pString2</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1333,8 +1347,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d4d92cd15420cd1cd1fa83eadea91e4" name="a5d4d92cd15420cd1cd1fa83eadea91e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d4d92cd15420cd1cd1fa83eadea91e4">&#9670;&nbsp;</a></span>CompareNoCase()</h2>
+<a id="a99a5c39b605ae95573fd9d61c08ee46d" name="a99a5c39b605ae95573fd9d61c08ee46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a5c39b605ae95573fd9d61c08ee46d">&#9670;&nbsp;</a></span>CompareNoCase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1345,8 +1359,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int FCString::CompareNoCase </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
-          <td class="paramname"><em>pString2</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1357,13 +1371,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Case insensitive version of <a class="el" href="class_f_c_string.html#a9cc98d51106a85611b179f8afa9463ad" title="Compares string against another string.">Compare</a>. </p>
+<p>Case insensitive version of <a class="el" href="class_f_c_string.html#abb3a50e78b25d1a09ffe09ce1c0d0545" title="Compares string against another string.">Compare</a>. </p>
 <p >Lua-supported. </p>
 
 </div>
 </div>
-<a id="a4c5a84c29acf01aec397004b3c0c5220" name="a4c5a84c29acf01aec397004b3c0c5220"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5a84c29acf01aec397004b3c0c5220">&#9670;&nbsp;</a></span>ContainsCString()</h2>
+<a id="ad65c65778074a3b811b1a339b6fe89b2" name="ad65c65778074a3b811b1a339b6fe89b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65c65778074a3b811b1a339b6fe89b2">&#9670;&nbsp;</a></span>ContainsCString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1376,7 +1390,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>pszSubString</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1387,13 +1401,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if the substring is found within the string. C-string version. </p>
+<p >This function does not work correctly with Unicode code points above 255.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_f_c_string.html#a770edef50a67dd0f926c013e30063c4e" title="Returns true if the substring is found within the string.">ContainsString</a> instead.</dd></dl>
 <p >Lua-supported (as "ContainsLuaString"). <br  />
  </p>
 
 </div>
 </div>
-<a id="ada215eb00dfb901fca7bc03ffd2bbadb" name="ada215eb00dfb901fca7bc03ffd2bbadb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada215eb00dfb901fca7bc03ffd2bbadb">&#9670;&nbsp;</a></span>ContainsCStringFrom()</h2>
+<a id="a903e8190c079c3728e128119ac930aee" name="a903e8190c079c3728e128119ac930aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a903e8190c079c3728e128119ac930aee">&#9670;&nbsp;</a></span>ContainsCStringFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1416,7 +1432,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1426,13 +1442,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns true if the substring is found from a certain position within the string. C-string version. </p>
+<p>Returns true if the substring is found from a certain position within the string. </p>
+<p >This function does not work correctly with Unicode code points above 255.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_f_c_string.html#a429a17203e383209c3ff21dc830664ad" title="Returns true if the substring is found within the string from a certain position.">ContainsStringFrom</a> instead.</dd></dl>
 <p >Lua-supported (as "ContainsLuaStringFrom"). </p>
 
 </div>
 </div>
-<a id="a95042d8ab88730e5054590370c433de9" name="a95042d8ab88730e5054590370c433de9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95042d8ab88730e5054590370c433de9">&#9670;&nbsp;</a></span>ContainsEnigmaTextInsert()</h2>
+<a id="ab54d1a017c51d31cc802814cf4ac7dff" name="ab54d1a017c51d31cc802814cf4ac7dff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab54d1a017c51d31cc802814cf4ac7dff">&#9670;&nbsp;</a></span>ContainsEnigmaTextInsert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1442,7 +1460,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>only_file_info_inserts</em> = <code>true</code></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1459,8 +1477,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acd3dc59ef78234f4d6ca4bbc0e218ea9" name="acd3dc59ef78234f4d6ca4bbc0e218ea9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd3dc59ef78234f4d6ca4bbc0e218ea9">&#9670;&nbsp;</a></span>ContainsString()</h2>
+<a id="a770edef50a67dd0f926c013e30063c4e" name="a770edef50a67dd0f926c013e30063c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770edef50a67dd0f926c013e30063c4e">&#9670;&nbsp;</a></span>ContainsString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1468,9 +1486,9 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCString::ContainsString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
           <td class="paramname"><em>pSubString</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1480,8 +1498,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acaa1bf9e134ab8918c4ff41741cf156d" name="acaa1bf9e134ab8918c4ff41741cf156d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaa1bf9e134ab8918c4ff41741cf156d">&#9670;&nbsp;</a></span>ContainsStringFrom()</h2>
+<a id="a429a17203e383209c3ff21dc830664ad" name="a429a17203e383209c3ff21dc830664ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429a17203e383209c3ff21dc830664ad">&#9670;&nbsp;</a></span>ContainsStringFrom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1489,7 +1507,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCString::ContainsStringFrom </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
           <td class="paramname"><em>pSubString</em>, </td>
         </tr>
         <tr>
@@ -1501,7 +1519,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1624,8 +1642,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adbc815e2135dc86fcf4829388b31e03d" name="adbc815e2135dc86fcf4829388b31e03d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbc815e2135dc86fcf4829388b31e03d">&#9670;&nbsp;</a></span>CreateLastFontInfo()</h2>
+<a id="ae06b7af3d85885edca1cfadc906fbe33" name="ae06b7af3d85885edca1cfadc906fbe33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae06b7af3d85885edca1cfadc906fbe33">&#9670;&nbsp;</a></span>CreateLastFontInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1634,7 +1652,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="class_f_c_font_info.html">FCFontInfo</a> * FCString::CreateLastFontInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1735,6 +1753,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool FCString::DeleteCharacterAt </td>
@@ -1744,9 +1765,15 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Removes a character at the 0-based index position. </p>
+<p >This function is not safe for UTF-16 surrogate pairs. External callers should use <a class="el" href="class_f_c_string.html#af1a05146606d277133021f2650afbcf9" title="Removes the Unicode codepoint at the 0-based index position.">DeleteCodePointAt</a> instead.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1785,6 +1812,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Removes a range of characters, starting at the 0-based index position. </p>
+<p >This function is not safe for UTF-16 surrogate pairs. External callers should use <a class="el" href="class_f_c_string.html#ad75f4b052420e64fd057bc4b4b45b2e9" title="Removes a range of Unicode codepoints, starting at the 0-based index position.">DeleteCodePointsAt</a> instead.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1794,6 +1822,83 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+
+</div>
+</div>
+<a id="af1a05146606d277133021f2650afbcf9" name="af1a05146606d277133021f2650afbcf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a05146606d277133021f2650afbcf9">&#9670;&nbsp;</a></span>DeleteCodePointAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCString::DeleteCodePointAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the Unicode codepoint at the 0-based index position. </p>
+<p >This function always removes the complete codepoint, even if <code>index</code> points to a low surrogate.</p>
+<p >Lua-supported (0.73).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The 0-based position in the string. -1 means the last character in the string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. False if the string is malformed UTF16 or the index is out of range. </dd></dl>
+
+</div>
+</div>
+<a id="ad75f4b052420e64fd057bc4b4b45b2e9" name="ad75f4b052420e64fd057bc4b4b45b2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75f4b052420e64fd057bc4b4b45b2e9">&#9670;&nbsp;</a></span>DeleteCodePointsAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCString::DeleteCodePointsAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a range of Unicode codepoints, starting at the 0-based index position. </p>
+<p >This function always removes complete codepoints, even if <code>index</code> points to a low surrogate and/or the count does not encompass a complete surrogate pair.</p>
+<p >Lua-supported (0.73).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The 0-based character index position in the string. </td></tr>
+    <tr><td class="paramname">count</td><td>Number of characters to remove.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. False if the string is malformed UTF16 or the index is out of range. </dd></dl>
 
 </div>
 </div>
@@ -1915,8 +2020,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acd797dca5b7ba43935580694f15c4084" name="acd797dca5b7ba43935580694f15c4084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd797dca5b7ba43935580694f15c4084">&#9670;&nbsp;</a></span>FindFirst()</h2>
+<a id="ad98b602f6f75fed3daa3b5d91bb99743" name="ad98b602f6f75fed3daa3b5d91bb99743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98b602f6f75fed3daa3b5d91bb99743">&#9670;&nbsp;</a></span>FindFirst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1929,7 +2034,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>pszSubStr</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1940,7 +2045,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the 0-based index for the first occurence of the substring. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This legacy function does not work for non-ASCII characters. Use <a class="el" href="class_f_c_string.html#abe91ced68e0986d30deec0015f420376" title="Returns the first position where a substring occurs.">CalcStringPos</a> instead.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This legacy function does not work for non-ASCII input characters. Use <a class="el" href="class_f_c_string.html#a0731182cb778b576395d2c0fbf3b758d" title="Returns the first position where a substring occurs.">CalcStringPos</a> instead.</dd></dl>
 <p>Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1952,8 +2057,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa08ad5a0f40200fc06583aa4413fc18d" name="aa08ad5a0f40200fc06583aa4413fc18d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa08ad5a0f40200fc06583aa4413fc18d">&#9670;&nbsp;</a></span>FindLast()</h2>
+<a id="abfd6771037cc356125f6850cb65a1773" name="abfd6771037cc356125f6850cb65a1773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfd6771037cc356125f6850cb65a1773">&#9670;&nbsp;</a></span>FindLast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1966,7 +2071,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>pszSubStr</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -1977,7 +2082,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the 0-based index for the last occurence of the substring. </p>
-<dl class="section warning"><dt>Warning</dt><dd>This legacy function does not work for non-ASCII characters.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This legacy function does not work for non-ASCII input characters.</dd></dl>
 <p>Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1989,8 +2094,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa648a64a8262084190c971386a17f114" name="aa648a64a8262084190c971386a17f114"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa648a64a8262084190c971386a17f114">&#9670;&nbsp;</a></span>FormatCharacterNumber()</h2>
+<a id="a9b521a895d6700cdce7c642da1126fdf" name="a9b521a895d6700cdce7c642da1126fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b521a895d6700cdce7c642da1126fdf">&#9670;&nbsp;</a></span>FormatCharacterNumber()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1998,7 +2103,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCString::FormatCharacterNumber </td>
           <td>(</td>
-          <td class="paramtype">eUniChar16&#160;</td>
+          <td class="paramtype">eUniChar32&#160;</td>
           <td class="paramname"><em>character</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2010,7 +2115,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">character</td><td>The number of the character. Please note that only the 16-bit character range is supported. </td></tr>
+    <tr><td class="paramname">character</td><td>The number of the character. As of 0.73, all Unicode codepoints are supported (0..0x10FFFF). </td></tr>
   </table>
   </dd>
 </dl>
@@ -2149,7 +2254,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the character at the index position. </p>
 <dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> represents characters internally as UTF-16-encoded code points. If the string includes characters outside the Basic Multilingual Plane (BMP), this function could potentially return a partial character. Lua clients should use particular care with this function, because converting from indices on UTF-8 strings to indices on UTF-16 strings is not straightforward. A much safer approach for Lua would be to load the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> into a Lua string and then use the built-in <code>utf8</code> Lua library to process the string.</dd></dl>
-<p>Lua-supported.</p>
+<p>This is a legacy function. External callers should use <a class="el" href="class_f_c_string.html#a108e7036ccd7c65c21b06df4e95cabf4" title="Returns the Unicode codepoint at the index position. If the index position points to the high surroga...">GetCodePointAt</a>.</p>
+<p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>The 0-based index position in the string. -1 means the last character in the string.</td></tr>
@@ -2188,6 +2294,37 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported (also read-only property) (0.55). </p>
 
 <p>Reimplemented from <a class="el" href="class_____f_c_base.html#af6614232541d894894a764bb6b59ff32">__FCBase</a>.</p>
+
+</div>
+</div>
+<a id="a108e7036ccd7c65c21b06df4e95cabf4" name="a108e7036ccd7c65c21b06df4e95cabf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a108e7036ccd7c65c21b06df4e95cabf4">&#9670;&nbsp;</a></span>GetCodePointAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; eUniChar32, int &gt; FCString::GetCodePointAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Unicode codepoint at the index position. If the index position points to the high surrogate, the codepoint returned actually starts at index - 1. </p>
+<p >External callers should use this function instead of <a class="el" href="class_f_c_string.html#a1c75a546078406584b9492b2ebd3a902" title="Returns the character at the index position.">GetCharacterAt</a> wherever possible.</p>
+<p >Lua-supported (0.73)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The 0-based index position in the string. -1 means the last character in the string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>first: the Unicode codepoint (valued from 0 to 0x10FFFF) </dd>
+<dd>
+second: the next 0-based codepoint index in the string. </dd></dl>
 
 </div>
 </div>
@@ -2232,8 +2369,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8efb9979b771ffa835329153581d7928" name="a8efb9979b771ffa835329153581d7928"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8efb9979b771ffa835329153581d7928">&#9670;&nbsp;</a></span>GetFloat()</h2>
+<a id="aa3cda536b6ece3267eba5f44a91b4c51" name="aa3cda536b6ece3267eba5f44a91b4c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3cda536b6ece3267eba5f44a91b4c51">&#9670;&nbsp;</a></span>GetFloat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2243,7 +2380,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2261,8 +2398,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="afb7a69fadee453c9127ec9640d7bc422" name="afb7a69fadee453c9127ec9640d7bc422"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb7a69fadee453c9127ec9640d7bc422">&#9670;&nbsp;</a></span>GetHex()</h2>
+<a id="abf6347f2ac81903dabced8a6645f1db1" name="abf6347f2ac81903dabced8a6645f1db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6347f2ac81903dabced8a6645f1db1">&#9670;&nbsp;</a></span>GetHex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2271,7 +2408,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">int FCString::GetHex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2282,8 +2419,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa429831db45adfea515305643d42eaed" name="aa429831db45adfea515305643d42eaed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa429831db45adfea515305643d42eaed">&#9670;&nbsp;</a></span>GetInteger()</h2>
+<a id="a675fe588eeb690a38594f1a2ea7745a6" name="a675fe588eeb690a38594f1a2ea7745a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a675fe588eeb690a38594f1a2ea7745a6">&#9670;&nbsp;</a></span>GetInteger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2293,7 +2430,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2302,7 +2439,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Optional index start position in the string.</td></tr>
+    <tr><td class="paramname">index</td><td>Optional index start position in the string. (As of version 0.73, it is optional on Lua as well.)</td></tr>
   </table>
   </dd>
 </dl>
@@ -2359,8 +2496,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aeacc2d9a31b963b298b92c86357d96de" name="aeacc2d9a31b963b298b92c86357d96de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeacc2d9a31b963b298b92c86357d96de">&#9670;&nbsp;</a></span>GetMeasurement()</h2>
+<a id="a5b2185107597a84a4d2fc07732ac2b85" name="a5b2185107597a84a4d2fc07732ac2b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2185107597a84a4d2fc07732ac2b85">&#9670;&nbsp;</a></span>GetMeasurement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2370,7 +2507,7 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype">_ENUMCODE(<a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a>) _LUACODE(twobyte)&#160;</td>
           <td class="paramname"><em>unit</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2436,6 +2573,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Inserts a C string to the string at a specified index position. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_f_c_string.html#a4ca832fac4ebe452e6414bd5fceac16b" title="Inserts a string object to the string at a specified index position.">InsertString</a> instead.</dd></dl>
 <p >Lua-supported. <br  />
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2448,8 +2586,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f10264d109eed465051c175a419b36d" name="a4f10264d109eed465051c175a419b36d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f10264d109eed465051c175a419b36d">&#9670;&nbsp;</a></span>InsertString()</h2>
+<a id="a4ca832fac4ebe452e6414bd5fceac16b" name="a4ca832fac4ebe452e6414bd5fceac16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca832fac4ebe452e6414bd5fceac16b">&#9670;&nbsp;</a></span>InsertString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2457,7 +2595,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void FCString::InsertString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
           <td class="paramname"><em>pString</em>, </td>
         </tr>
         <tr>
@@ -2474,8 +2612,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inserts a string object to the string at a specified index position. <br  />
- </p>
+<p>Inserts a string object to the string at a specified index position. </p>
+<p >Beginning with version 0.73, this function is safe for UTF-16. If <code>insertindex</code> splits a surrogate pair, the input string is inserted at the next Unicode character boundary after <code>insertindex</code>.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2508,8 +2646,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af6b8b7437468386000c00684f075f428" name="af6b8b7437468386000c00684f075f428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6b8b7437468386000c00684f075f428">&#9670;&nbsp;</a></span>IsCharacter()</h2>
+<a id="ae61ae2babb90615170b83892cab58788" name="ae61ae2babb90615170b83892cab58788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61ae2babb90615170b83892cab58788">&#9670;&nbsp;</a></span>IsCharacter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2523,7 +2661,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">eUniChar16&#160;</td>
+          <td class="paramtype">eUniChar32&#160;</td>
           <td class="paramname"><em>character</em>&#160;</td>
         </tr>
         <tr>
@@ -2539,7 +2677,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>The 0-based index to the position in the string. This method is "index safe", so if the index is out of range <b>false</b> will be returned. </td></tr>
-    <tr><td class="paramname">character</td><td>The character to check for match.</td></tr>
+    <tr><td class="paramname">character</td><td>The character to check for match. As of version 0.73, this value can be any Unicode code point from 0..0x10FFFF</td></tr>
   </table>
   </dd>
 </dl>
@@ -2856,25 +2994,54 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns true if the string is identical with the parameter. <br  />
  </p>
-<p >The C string version is considered to be the "standard" method in this particular case.</p>
+<p >As of version 0.73, you should pass UTF8-encoded strings to this function.</p>
 <p >Lua-supported. </p>
 
 </div>
 </div>
-<a id="a214df350b573e5b8a522d3e98c59304c" name="a214df350b573e5b8a522d3e98c59304c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a214df350b573e5b8a522d3e98c59304c">&#9670;&nbsp;</a></span>IsEqualString()</h2>
+<a id="a4fc700473039f18d072699ea8f3a8888" name="a4fc700473039f18d072699ea8f3a8888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc700473039f18d072699ea8f3a8888">&#9670;&nbsp;</a></span>IsEqualCString()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool FCString::IsEqualString </td>
+          <td class="memname">bool FCString::IsEqualCString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
-          <td class="paramname"><em>pString</em></td><td>)</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pszString</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+<p>Returns true if the string is identical with the parameter. (C-style string version.) </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Use <a class="el" href="class_f_c_string.html#ae20b54a6031d474381fc509a58b794e2" title="Returns true if the string is identical with the parameter.">IsEqual</a> or <a class="el" href="class_f_c_string.html#ae110de239de0b6b9c89b42a763358060" title="Returns true if the string is identical with the parameter. (FCString string version....">IsEqualString</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="ae110de239de0b6b9c89b42a763358060" name="ae110de239de0b6b9c89b42a763358060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae110de239de0b6b9c89b42a763358060">&#9670;&nbsp;</a></span>IsEqualString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCString::IsEqualString </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns true if the string is identical with the parameter. (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> string version.) </p>
@@ -3160,7 +3327,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates a substring from the string. </p>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> represents characters internally as UTF-16-encoded code points. If the string includes characters outside the Basic Multilingual Plane (BMP), this function could potentially return a partial character. Lua clients should use particular care with this function, because converting from indices on UTF-8 strings to indices on UTF-16 strings is not straightforward. A much safer approach for Lua would be to load the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> into a Lua string and then use the built-in <code>utf8</code> Lua library to process the string.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd><a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> represents characters internally as UTF-16-encoded code points. If the string includes characters outside the Basic Multilingual Plane (BMP), this function extends the range implied by <code>startindex</code> and <code>substringlength</code> on either end as need to include both surrogate pairs of code points outside the BMP. That means the length of the output string could be greater than <code>substringlength</code>.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Lua clients should use particular care with this function, because converting from indices on UTF-8 strings to indices on UTF-16 strings is not straightforward. An alternative approach for Lua would be to load the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> into a Lua string and then use the built-in <code>utf8</code> Lua library to process the string. The approach you choose should be dictated by the specific requirments of your program.</dd></dl>
 <p>Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3170,7 +3338,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. False on bad index or malformed UTF-16 encoding. </dd></dl>
 
 </div>
 </div>
@@ -3200,7 +3368,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Replaces a source pattern with a replacement string. </p>
+<p>Replaces all occurrences of a source pattern with a replacement string. </p>
+<p >As of version 0.73, the source and replacement strings should be UTF8-encoded, and the function supports source and replacement strings that contain any Unicode code points.</p>
 <p >Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3352,7 +3521,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the character at the index position. </p>
-<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> represents characters internally as UTF-16-encoded code points. If the string includes characters outside the Basic Multilingual Plane (BMP), this function could corrupt the encoding. Lua clients should use particular care with this function, because converting from indices on UTF-8 strings to indices on UTF-16 strings is not straightforward. A much safer approach for Lua would be to load the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> into a Lua string and then use the built-in <code>utf8</code> Lua library to process the string.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> represents characters internally as UTF-16-encoded code points. If the string includes characters outside the Basic Multilingual Plane (BMP), this function could corrupt the encoding. Lua clients should use particular care with this function, because converting from indices on UTF-8 strings to indices on UTF-16 strings is not straightforward. A much safer approach for Lua would be to load the <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> into a Lua string and then use the built-in <code>utf8</code> Lua library to process the string.</dd>
+<dd>
+<a class="el" href="class_f_c_string.html#a4ca832fac4ebe452e6414bd5fceac16b" title="Inserts a string object to the string at a specified index position.">InsertString</a> and (as of 0.73) <a class="el" href="class_f_c_string.html#a0366c6037f40a6d9c848b932a5e49662" title="Appends a character to the string.">AppendCharacter</a> are both safe for modifying strings containing Unicode code points outside the BMP. <a class="el" href="class_f_c_string.html#af5f534030c765a5d3745436132a96cb0" title="Sets the character at the index position.">SetCharacterAt</a> is not safe.</dd></dl>
 <p>Lua-supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4002,8 +4173,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acef4b305375c6a4ff4d40af73f79db94" name="acef4b305375c6a4ff4d40af73f79db94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acef4b305375c6a4ff4d40af73f79db94">&#9670;&nbsp;</a></span>SplitAt()</h2>
+<a id="a41da4ae47c6f106f79802aa223cb5496" name="a41da4ae47c6f106f79802aa223cb5496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41da4ae47c6f106f79802aa223cb5496">&#9670;&nbsp;</a></span>SplitAt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4038,7 +4209,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -4063,8 +4234,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af4f743c5420a8e811fd44f060d53fbac" name="af4f743c5420a8e811fd44f060d53fbac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4f743c5420a8e811fd44f060d53fbac">&#9670;&nbsp;</a></span>SplitToPathAndFile()</h2>
+<a id="a16f76dcc6e47551eb65dc6f122b256ae" name="a16f76dcc6e47551eb65dc6f122b256ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f76dcc6e47551eb65dc6f122b256ae">&#9670;&nbsp;</a></span>SplitToPathAndFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4087,7 +4258,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -4408,7 +4579,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 5 2024 07:31:37 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Thu Apr 11 2024 10:07:30 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
