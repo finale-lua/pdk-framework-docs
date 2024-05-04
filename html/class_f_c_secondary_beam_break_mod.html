@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0598ad6545aec2594d01d0bed611a3a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_break_mod.html#a0598ad6545aec2594d01d0bed611a3a1">SetBreakAll</a> (bool value)</td></tr>
 <tr class="memdesc:a0598ad6545aec2594d01d0bed611a3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if all secondary beams should break or not.  <a href="class_f_c_secondary_beam_break_mod.html#a0598ad6545aec2594d01d0bed611a3a1">More...</a><br /></td></tr>
 <tr class="separator:a0598ad6545aec2594d01d0bed611a3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb1dd9fe46e69756b53f317a5aff33a"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_break_mod.html#aeeb1dd9fe46e69756b53f317a5aff33a">CalcLowestBreak</a> () const</td></tr>
+<tr class="memdesc:aeeb1dd9fe46e69756b53f317a5aff33a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the beam number (0-8 where 0 is the 16th note beam, 1 is the 32nd note beam, etc.) that is set to break;.  <a href="class_f_c_secondary_beam_break_mod.html#aeeb1dd9fe46e69756b53f317a5aff33a">More...</a><br /></td></tr>
+<tr class="separator:aeeb1dd9fe46e69756b53f317a5aff33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a245677c00cf91f07873167d246fd5756"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_break_mod.html#a245677c00cf91f07873167d246fd5756">GetBreak</a> (int beamindex) const</td></tr>
 <tr class="memdesc:a245677c00cf91f07873167d246fd5756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the secondary beam should break.  <a href="class_f_c_secondary_beam_break_mod.html#a245677c00cf91f07873167d246fd5756">More...</a><br /></td></tr>
 <tr class="separator:a245677c00cf91f07873167d246fd5756"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -665,6 +668,35 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeeb1dd9fe46e69756b53f317a5aff33a" name="aeeb1dd9fe46e69756b53f317a5aff33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb1dd9fe46e69756b53f317a5aff33a">&#9670;&nbsp;</a></span>CalcLowestBreak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">twobyte FCSecondaryBeamBreakMod::CalcLowestBreak </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the beam number (0-8 where 0 is the 16th note beam, 1 is the 32nd note beam, etc.) that is set to break;. </p>
+<p >Lua-supported (0.74).</p>
+<dl class="section return"><dt>Returns</dt><dd>0-8 where 0 is the 16th note beam, 1 is the 32nd note beam, etc.; -1 if none. </dd></dl>
+
+</div>
+</div>
 <a id="a33f6f2301a1d6857ddd144cc2e483d2e" name="a33f6f2301a1d6857ddd144cc2e483d2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33f6f2301a1d6857ddd144cc2e483d2e">&#9670;&nbsp;</a></span>ClassName()</h2>
 
@@ -1130,7 +1162,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 10:22:09 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:43 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

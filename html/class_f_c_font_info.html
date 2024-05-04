@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -287,10 +287,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abef6002f8eeefa7bfeb46e737a8413cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal class ID for the PDK Framework class. This is implemented mostly because Lua has problems to resolve the true classes of inherited objects.  <a href="class_f_c_font_info.html#abef6002f8eeefa7bfeb46e737a8413cd">More...</a><br /></td></tr>
 <tr class="separator:abef6002f8eeefa7bfeb46e737a8413cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0a63dd78be20993380366d8272b47f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#aa0a63dd78be20993380366d8272b47f9">FCFontInfo</a> ()</td></tr>
-<tr class="memdesc:aa0a63dd78be20993380366d8272b47f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_font_info.html#aa0a63dd78be20993380366d8272b47f9">More...</a><br /></td></tr>
+<tr class="memdesc:aa0a63dd78be20993380366d8272b47f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. This constructor does not add the font to the current document. However, if you call any method that requires the internal font ID, the font will be added to the current document when that method is called, if it is not already there. (See the detailed description of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> for more information.)  <a href="class_f_c_font_info.html#aa0a63dd78be20993380366d8272b47f9">More...</a><br /></td></tr>
 <tr class="separator:aa0a63dd78be20993380366d8272b47f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab833aa9f6b5a507318a25fcb552f6aaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ab833aa9f6b5a507318a25fcb552f6aaa">FCFontInfo</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;name, double size, FLAG_16 enigmastyles=<a class="el" href="class_f_c_font_info.html#ac52dd376a24069038ac379c8b8fe8cddaafd7866780faea5e675484018baeb280">ENIGMASTYLE_PLAIN</a>)</td></tr>
-<tr class="memdesc:ab833aa9f6b5a507318a25fcb552f6aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with name and size and optional styles.  <a href="class_f_c_font_info.html#ab833aa9f6b5a507318a25fcb552f6aaa">More...</a><br /></td></tr>
+<tr class="memdesc:ab833aa9f6b5a507318a25fcb552f6aaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with name and size and optional styles. This constructor adds the font to the current document if it is not already there, so you must manage the undo block appropriately when using this constructor.  <a href="class_f_c_font_info.html#ab833aa9f6b5a507318a25fcb552f6aaa">More...</a><br /></td></tr>
 <tr class="separator:ab833aa9f6b5a507318a25fcb552f6aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb1548783e617f2daec3b62b2d5888b"><td class="memItemLeft" align="right" valign="top"><a id="a8fb1548783e617f2daec3b62b2d5888b" name="a8fb1548783e617f2daec3b62b2d5888b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FCFontInfo</b> (const ETextStyle &amp;style)</td></tr>
@@ -322,7 +322,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adfc72c0b0fc5b0c47107502938fbbbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the font name (const C-string version).  <a href="class_f_c_font_info.html#adfc72c0b0fc5b0c47107502938fbbbae">More...</a><br /></td></tr>
 <tr class="separator:adfc72c0b0fc5b0c47107502938fbbbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f92d6e16d0e42e4046e314f0c70c88"><td class="memItemLeft" align="right" valign="top">EFONTID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88">GetIDByName</a> () const</td></tr>
-<tr class="memdesc:af9f92d6e16d0e42e4046e314f0c70c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal Enigma font ID for the current document by searching for the font name. The value in <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal font ID.">GetFontID</a> is used only to determine if this instance refers to the Default Music Font. If so, the font ID of the Default Music Font is returned (which is always zero in any document).  <a href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88">More...</a><br /></td></tr>
+<tr class="memdesc:af9f92d6e16d0e42e4046e314f0c70c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal Enigma font ID for the current document by searching for the font name. The value in <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal document-specific font ID. It may not yet have been assigned a value,...">GetFontID</a> is used only to determine if this instance refers to the Default Music Font. If so, the font ID of the Default Music Font is returned (which is always zero in any document).  <a href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88">More...</a><br /></td></tr>
 <tr class="separator:af9f92d6e16d0e42e4046e314f0c70c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8290c94466e7ec33444038948d73fef"><td class="memItemLeft" align="right" valign="top">EFONTID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ad8290c94466e7ec33444038948d73fef">GetNameByID</a> () const</td></tr>
 <tr class="memdesc:ad8290c94466e7ec33444038948d73fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy version of <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> with incorrect name.  <a href="class_f_c_font_info.html#ad8290c94466e7ec33444038948d73fef">More...</a><br /></td></tr>
@@ -361,10 +361,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnigmaFont</b> (
 <tr class="memdesc:a51f07a71b26d25615a0d0d83466fbf87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name.  <a href="class_f_c_font_info.html#a51f07a71b26d25615a0d0d83466fbf87">More...</a><br /></td></tr>
 <tr class="separator:a51f07a71b26d25615a0d0d83466fbf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89ae3dc60cabc855691219f5eccb192f"><td class="memItemLeft" align="right" valign="top">EFONTID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f">GetFontID</a> () const</td></tr>
-<tr class="memdesc:a89ae3dc60cabc855691219f5eccb192f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal font ID.  <a href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f">More...</a><br /></td></tr>
+<tr class="memdesc:a89ae3dc60cabc855691219f5eccb192f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the internal document-specific font ID. It may not yet have been assigned a value, depending on which constructor you used. Unless you have a specific reason to inspect the current value, it is safer to use <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> to get the internal font ID. Note, however, that <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> modifies the document by adding the font to it, if the font is not currently in the document.  <a href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f">More...</a><br /></td></tr>
 <tr class="separator:a89ae3dc60cabc855691219f5eccb192f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">SetFontID</a> (EFONTID fontID)</td></tr>
-<tr class="memdesc:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal font ID.  <a href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">More...</a><br /></td></tr>
+<tr class="memdesc:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal document-specific font ID.  <a href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c">More...</a><br /></td></tr>
 <tr class="separator:abb96d23ef4563ecdd21ba3ca83b36e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad21caf92bcd6a498e5664c1826c94509"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_font_info.html#ad21caf92bcd6a498e5664c1826c94509">SetNameString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> &amp;value)</td></tr>
 <tr class="memdesc:ad21caf92bcd6a498e5664c1826c94509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the font name (<a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> version).  <a href="class_f_c_font_info.html#ad21caf92bcd6a498e5664c1826c94509">More...</a><br /></td></tr>
@@ -609,7 +609,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for document-independent font information. </p>
-<p >This class also has some support for absolute font IDs, which is required for font operations within the same document. </p>
+<p >Finale documents maintain a list of internal font IDs which are specific to that document. These font IDs are required for most font operations within the document. For example "Time New Roman" may have font ID 7 in one document and 11 in another. It appears that Finale assigns the ID values as fonts are referenced by the document.</p>
+<p >This has the consequence that any time the ID is required, the font may be added to the document to obtain the ID. This can result in an unexpected modification of the document that must be managed as part of an Undo block. Note that all Lua scripts have an automatic Undo block in the main execution path, but you must decide whether to save the document with the font added or roll the changes back by canceling the Undo block. (A <code>true</code> setting for either <code>HandlesUndo</code> or <code>NoStore</code> in the <code>finaleplugin</code> namespace causes an automatic rollback.)</p>
+<p >Examples of methods and functions that require the internal font ID include (but are not limited to)</p><ul>
+<li><a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a></li>
+<li><a class="el" href="class_f_c_font_info.html#abdbc82f519333f69fe4065809d8e7afe" title="Returns true if the font is a SMuFL font.">GetIsSMuFLFont</a></li>
+<li><a class="el" href="class_f_c_font_info.html#a34078edaec6e6fe8b790bd51d9f20cae" title="returns true i the font is a Mac Symbol font.">IsMacSymbolFont</a></li>
+<li><a class="el" href="class_f_c_font_info.html#a1298496921ab0d78b2a54ced1300e658" title="Changes the document&#39;s default music font to match this instance of FCFontInfo and modifies this inst...">MakeDefaultMusicFont</a></li>
+<li>Loading <a class="el" href="class_f_c_text_metrics.html" title="A class that fetches the metrics for text (for how Finale will render it), such as the boundary boxes...">FCTextMetrics</a></li>
+<li>Any method of any class that contains <code>Set...FontInfo</code> in its name, with the exception of <a class="el" href="class_f_c_control.html" title="Base class for all UI controls in a dialog.">FCControl</a> and its subclasses. </li>
+</ul>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ac52dd376a24069038ac379c8b8fe8cdd" name="ac52dd376a24069038ac379c8b8fe8cdd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac52dd376a24069038ac379c8b8fe8cdd">&#9670;&nbsp;</a></span>ENIGMASTYLES</h2>
@@ -660,7 +669,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The constructor. </p>
+<p>Default constructor. This constructor does not add the font to the current document. However, if you call any method that requires the internal font ID, the font will be added to the current document when that method is called, if it is not already there. (See the detailed description of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> for more information.) </p>
 <p >Defaults to 12 point Times New Roman.</p>
 <p >Lua-supported. </p>
 
@@ -698,7 +707,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructor with name and size and optional styles. </p>
+<p>Constructor with name and size and optional styles. This constructor adds the font to the current document if it is not already there, so you must manage the undo block appropriately when using this constructor. </p>
 <p >Lua-supported (0.68).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1087,8 +1096,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the internal font ID. </p>
-<p >See comments at <a class="el" href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c" title="Sets the internal font ID.">SetFontID</a>.</p>
+<p>Gets the internal document-specific font ID. It may not yet have been assigned a value, depending on which constructor you used. Unless you have a specific reason to inspect the current value, it is safer to use <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> to get the internal font ID. Note, however, that <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> modifies the document by adding the font to it, if the font is not currently in the document. </p>
+<p >See further comments at <a class="el" href="class_f_c_font_info.html#abb96d23ef4563ecdd21ba3ca83b36e1c" title="Sets the internal document-specific font ID.">SetFontID</a>.</p>
 <p >Lua-supported (also as property) (0.72)</p>
 <dl class="section return"><dt>Returns</dt><dd>the internal font ID. </dd></dl>
 
@@ -1137,9 +1146,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the internal Enigma font ID for the current document by searching for the font name. The value in <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal font ID.">GetFontID</a> is used only to determine if this instance refers to the Default Music Font. If so, the font ID of the Default Music Font is returned (which is always zero in any document). </p>
-<p >Note that <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> <em>does not modify</em> the internal font number of the current instance. You can use <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> reliably to assign properties of an <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> from one document to an instance from another. This is not guaranteed to work for <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal font ID.">GetFontID</a>.</p>
-<p >Lua-supported (0.72).</p>
+<p>Gets the internal Enigma font ID for the current document by searching for the font name. The value in <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal document-specific font ID. It may not yet have been assigned a value,...">GetFontID</a> is used only to determine if this instance refers to the Default Music Font. If so, the font ID of the Default Music Font is returned (which is always zero in any document). </p>
+<p >Note that <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> <em>does not modify</em> the internal font number of the current instance. You can use <a class="el" href="class_f_c_font_info.html#af9f92d6e16d0e42e4046e314f0c70c88" title="Gets the internal Enigma font ID for the current document by searching for the font name....">GetIDByName</a> reliably to assign properties of an <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> from one document to an instance from another. This is not guaranteed to work for <a class="el" href="class_f_c_font_info.html#a89ae3dc60cabc855691219f5eccb192f" title="Gets the internal document-specific font ID. It may not yet have been assigned a value,...">GetFontID</a>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>If the current Finale document does not contain the font specified by the name, this function adds it to the document.</dd></dl>
+<p>Lua-supported (0.72).</p>
 <dl class="section return"><dt>Returns</dt><dd>the document-specific font number for the current instance. </dd></dl>
 
 </div>
@@ -1882,8 +1892,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the internal font ID. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>The font ID is not document-independent and it isn't fully supported by all <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> related methods and classes. However, it can be useful when working withing a specific documents, especially when working with a font that is also assigned as the default music font.</dd></dl>
+<p>Sets the internal document-specific font ID. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>The internal font ID for a given font varies from document to document. Furthermore, it need not always be assigned a value, since most methods and properties of <a class="el" href="class_f_c_font_info.html" title="Class for document-independent font information.">FCFontInfo</a> recalculate it every time (for cross-document support). However, it can be useful when working within a specific document, especially when working with a font that is also assigned as the default music font.</dd></dl>
 <p>Lua-supported (also as property) (0.72)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2205,7 +2215,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 10:22:07 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:42 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

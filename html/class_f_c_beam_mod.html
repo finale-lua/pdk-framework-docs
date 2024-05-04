@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af999e83a8e3a7697a35455b0fd84d2a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_mod.html#af999e83a8e3a7697a35455b0fd84d2a6">SaveNew</a> () override</td></tr>
 <tr class="memdesc:af999e83a8e3a7697a35455b0fd84d2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden <a class="el" href="class_f_c_beam_mod.html#af999e83a8e3a7697a35455b0fd84d2a6" title="Overridden SaveNew() method for FCBeamMod.">SaveNew()</a> method for <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a>.  <a href="class_f_c_beam_mod.html#af999e83a8e3a7697a35455b0fd84d2a6">More...</a><br /></td></tr>
 <tr class="separator:af999e83a8e3a7697a35455b0fd84d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad952f17ee034f7e837e94a561b02f2f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_mod.html#ad952f17ee034f7e837e94a561b02f2f3">UseUpStemData</a> (bool useupstem)</td></tr>
+<tr class="memdesc:ad952f17ee034f7e837e94a561b02f2f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if upstem or downstem data should be loaded/saved.  <a href="class_f_c_beam_mod.html#ad952f17ee034f7e837e94a561b02f2f3">More...</a><br /></td></tr>
+<tr class="separator:ad952f17ee034f7e837e94a561b02f2f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4f08ca987dc58cc179a5defa156637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637">SetNoteEntry</a> (<a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *pEntry) override</td></tr>
 <tr class="memdesc:a0b4f08ca987dc58cc179a5defa156637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden method to assign a note entry with the data.  <a href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637">More...</a><br /></td></tr>
 <tr class="separator:a0b4f08ca987dc58cc179a5defa156637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -663,7 +666,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 <div class="textblock"><p >Class for custom beam adjustments (in Finale's Special Tools). </p>
 <p >This class must be set to the correct beaming mode (controlled by the user in the Beaming Style in Document Options), using the <a class="el" href="class_f_c_beam_mod.html#a6dc233c1edcf3bb549649d7b5b4dbe69" title="Sets the Beaming Style mode where the beam data will be &quot;active&quot;. This mode is controlled by Document...">SetMode</a> method for the beam data to "be active".</p>
 <p >For secondary beams, this class controls only the left and right vertical position offsets, not the beam width.</p>
-<p >This class uses many different Enigma tags, but this is handled automatically by the constructor and <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>.</p>
+<p >This class uses many different Enigma tags, but this is handled automatically by the constructor and <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>. You can manually override the stem direction for the data with <a class="el" href="class_f_c_beam_mod.html#ad952f17ee034f7e837e94a561b02f2f3" title="Sets if upstem or downstem data should be loaded/saved.">UseUpStemData</a>, but it must be done before loading the data.</p>
 <p >New data for secondary beams must be connected with the <a class="el" href="class_f_c_beam_mod.html#a9f3218eea87fd4e38f75287cbb2f5675" title="Sets the 1-based beam that the data is connected to. Don&#39;t change this for loaded data.">SetBeamNumber</a> method. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaf66ffc422f46fc1fd799d99c512541a" name="aaf66ffc422f46fc1fd799d99c512541a"></a>
@@ -1610,10 +1613,50 @@ For primary beams, the UI does not show this value, even though it is there. For
 
 </div>
 </div>
+<a id="ad952f17ee034f7e837e94a561b02f2f3" name="ad952f17ee034f7e837e94a561b02f2f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad952f17ee034f7e837e94a561b02f2f3">&#9670;&nbsp;</a></span>UseUpStemData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCBeamMod::UseUpStemData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useupstem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if upstem or downstem data should be loaded/saved. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Normally this value is set automatically by <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>. However in certain circumstances, when you will be flipping or reversing stem directions, you may need to override the automatic setting. If you need to do so, call <a class="el" href="class_f_c_beam_mod.html#ad952f17ee034f7e837e94a561b02f2f3" title="Sets if upstem or downstem data should be loaded/saved.">UseUpStemData</a> immediately after calling <a class="el" href="class_f_c_beam_mod.html#a0b4f08ca987dc58cc179a5defa156637" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>.</dd>
+<dd>
+Note that an entry can store data for both upstem and downstem. Entries can be displayed in contexts where they are upstem and other contexts where they are downstem, for example when displaying concert pitch versus transposed pitch or when displaying the entry in a part versus the score. The direction of the stem in context determines which version of <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a> Finale displays.</dd>
+<dd>
+Generally speaking, neither staff crossing nor stem reversal change the stem context for which <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a> data Finale uses. This can lead to confusing situations. The first note of a beam with stems up can be crossed to a higher staff, and with stem reversal it appears to be down-stem. However, for the purposes of <a class="el" href="class_f_c_beam_mod.html" title="Class for custom beam adjustments (in Finale&#39;s Special Tools).">FCBeamMod</a> it is still up-stem.</dd></dl>
+<p>Lua-supported (0.74)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useupstem</td><td><b>True</b> - use the data for stem up. <b>False</b> - use the data for stem down. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 10:22:06 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:41 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

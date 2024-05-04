@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -301,9 +301,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetUTF8String
 <tr class="memitem:a543feb14fab29aa0f5cbe8ad304f379c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a543feb14fab29aa0f5cbe8ad304f379c">CopyToUnicodeBuffer</a> (eUniChar16 *pBuffer, int maxbufferlen=0) const</td></tr>
 <tr class="memdesc:a543feb14fab29aa0f5cbe8ad304f379c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the string to a 16-bit Unicode buffer. The buffer must be big enough to have room for an ending 0.  <a href="class_f_c_string.html#a543feb14fab29aa0f5cbe8ad304f379c">More...</a><br /></td></tr>
 <tr class="separator:a543feb14fab29aa0f5cbe8ad304f379c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f5a0ac5583b9c2969f5c8bbc7fd391b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a6f5a0ac5583b9c2969f5c8bbc7fd391b">GetNSString</a> ()</td></tr>
-<tr class="memdesc:a6f5a0ac5583b9c2969f5c8bbc7fd391b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a NSString* version of the string (on Cocoa only).  <a href="class_f_c_string.html#a6f5a0ac5583b9c2969f5c8bbc7fd391b">More...</a><br /></td></tr>
-<tr class="separator:a6f5a0ac5583b9c2969f5c8bbc7fd391b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ca481f1ebacbafaf0ef1b2966a0b97"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a68ca481f1ebacbafaf0ef1b2966a0b97">GetNSString</a> () const</td></tr>
+<tr class="memdesc:a68ca481f1ebacbafaf0ef1b2966a0b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a NSString* version of the string (on Cocoa only).  <a href="class_f_c_string.html#a68ca481f1ebacbafaf0ef1b2966a0b97">More...</a><br /></td></tr>
+<tr class="separator:a68ca481f1ebacbafaf0ef1b2966a0b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f9f28d7ec1a7ddea4b996b7e31360e1"><td class="memItemLeft" align="right" valign="top"><a id="a8f9f28d7ec1a7ddea4b996b7e31360e1" name="a8f9f28d7ec1a7ddea4b996b7e31360e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNSString</b> (void *pNSString)</td></tr>
 <tr class="memdesc:a8f9f28d7ec1a7ddea4b996b7e31360e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the string to a NSString* value. <br /></td></tr>
@@ -465,10 +465,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFloat</b> (double 
 <tr class="memitem:ad69591bf916da0d02f3df2ee6a5a0be7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#ad69591bf916da0d02f3df2ee6a5a0be7">StartsWithString</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pString) const</td></tr>
 <tr class="memdesc:ad69591bf916da0d02f3df2ee6a5a0be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the string starts with the parameter string.  <a href="class_f_c_string.html#ad69591bf916da0d02f3df2ee6a5a0be7">More...</a><br /></td></tr>
 <tr class="separator:ad69591bf916da0d02f3df2ee6a5a0be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc5cfafe6c11fd6b62ba47a3d6d05722"><td class="memItemLeft" align="right" valign="top"><a id="abc5cfafe6c11fd6b62ba47a3d6d05722" name="abc5cfafe6c11fd6b62ba47a3d6d05722"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ToUnicode</b> (eUniChar16 *pBuffer, int maxsize)</td></tr>
-<tr class="memdesc:abc5cfafe6c11fd6b62ba47a3d6d05722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the string to a 16-bit Unicode string buffer. <br /></td></tr>
-<tr class="separator:abc5cfafe6c11fd6b62ba47a3d6d05722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e4214a65941413f86558aa5cf24ae5"><td class="memItemLeft" align="right" valign="top"><a id="a97e4214a65941413f86558aa5cf24ae5" name="a97e4214a65941413f86558aa5cf24ae5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ToUnicode</b> (eUniChar16 *pBuffer, int maxsize) const</td></tr>
+<tr class="memdesc:a97e4214a65941413f86558aa5cf24ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the string to a 16-bit Unicode string buffer. <br /></td></tr>
+<tr class="separator:a97e4214a65941413f86558aa5cf24ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17977de1a914981e42fd4f5102171f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_string.html#a17977de1a914981e42fd4f5102171f72">ToLowerCase</a> ()</td></tr>
 <tr class="memdesc:a17977de1a914981e42fd4f5102171f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the string to lower case.  <a href="class_f_c_string.html#a17977de1a914981e42fd4f5102171f72">More...</a><br /></td></tr>
 <tr class="separator:a17977de1a914981e42fd4f5102171f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2525,8 +2525,8 @@ second: the next 0-based codepoint index in the string. </dd></dl>
 
 </div>
 </div>
-<a id="a6f5a0ac5583b9c2969f5c8bbc7fd391b" name="a6f5a0ac5583b9c2969f5c8bbc7fd391b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f5a0ac5583b9c2969f5c8bbc7fd391b">&#9670;&nbsp;</a></span>GetNSString()</h2>
+<a id="a68ca481f1ebacbafaf0ef1b2966a0b97" name="a68ca481f1ebacbafaf0ef1b2966a0b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ca481f1ebacbafaf0ef1b2966a0b97">&#9670;&nbsp;</a></span>GetNSString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2535,7 +2535,7 @@ second: the next 0-based codepoint index in the string. </dd></dl>
           <td class="memname">void * FCString::GetNSString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4579,7 +4579,7 @@ second: the next 0-based codepoint index in the string. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 10:22:09 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:44 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

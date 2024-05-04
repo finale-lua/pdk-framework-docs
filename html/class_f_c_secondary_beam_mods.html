@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -95,9 +95,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cb193136f17b694b56d408a72858da5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_mods.html#a3cb193136f17b694b56d408a72858da5">FCSecondaryBeamMods</a> (<a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *pConnectEntry)</td></tr>
 <tr class="memdesc:a3cb193136f17b694b56d408a72858da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_secondary_beam_mods.html#a3cb193136f17b694b56d408a72858da5">More...</a><br /></td></tr>
 <tr class="separator:a3cb193136f17b694b56d408a72858da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac811298724b88ac2c60fe0102f57059f"><td class="memItemLeft" align="right" valign="top"><a id="ac811298724b88ac2c60fe0102f57059f" name="ac811298724b88ac2c60fe0102f57059f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUpStem</b> ()</td></tr>
-<tr class="memdesc:ac811298724b88ac2c60fe0102f57059f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if it's upstem data. <br /></td></tr>
+<tr class="memitem:a39e4d2d1d8860c58fe4de819e9afbb5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_mods.html#a39e4d2d1d8860c58fe4de819e9afbb5a">UseUpStemData</a> (bool useupstem)</td></tr>
+<tr class="memdesc:a39e4d2d1d8860c58fe4de819e9afbb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if upstem or downstem data should be loaded/saved.  <a href="class_f_c_secondary_beam_mods.html#a39e4d2d1d8860c58fe4de819e9afbb5a">More...</a><br /></td></tr>
+<tr class="separator:a39e4d2d1d8860c58fe4de819e9afbb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac811298724b88ac2c60fe0102f57059f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_mods.html#ac811298724b88ac2c60fe0102f57059f">IsUpStem</a> ()</td></tr>
+<tr class="memdesc:ac811298724b88ac2c60fe0102f57059f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if it's upstem data.  <a href="class_f_c_secondary_beam_mods.html#ac811298724b88ac2c60fe0102f57059f">More...</a><br /></td></tr>
 <tr class="separator:ac811298724b88ac2c60fe0102f57059f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a3cc2fd3cd5c61f8b9252667bf3913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_beam_mod.html">FCBeamMod</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_secondary_beam_mods.html#a49a3cc2fd3cd5c61f8b9252667bf3913">GetOrCreateBeam</a> (int beamno)</td></tr>
 <tr class="memdesc:a49a3cc2fd3cd5c61f8b9252667bf3913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a beam object (based on the beam number). If it doesn't exist, a new object is created and added to the collection.  <a href="class_f_c_secondary_beam_mods.html#a49a3cc2fd3cd5c61f8b9252667bf3913">More...</a><br /></td></tr>
@@ -797,10 +799,74 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ac811298724b88ac2c60fe0102f57059f" name="ac811298724b88ac2c60fe0102f57059f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac811298724b88ac2c60fe0102f57059f">&#9670;&nbsp;</a></span>IsUpStem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCSecondaryBeamMods::IsUpStem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns true if it's upstem data. </p>
+<p >Lua-supported (0.74) </p>
+
+</div>
+</div>
+<a id="a39e4d2d1d8860c58fe4de819e9afbb5a" name="a39e4d2d1d8860c58fe4de819e9afbb5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e4d2d1d8860c58fe4de819e9afbb5a">&#9670;&nbsp;</a></span>UseUpStemData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCSecondaryBeamMods::UseUpStemData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useupstem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if upstem or downstem data should be loaded/saved. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Normally this value is set automatically when you construct the collection. However in certain circumstances, when you will be flipping or reversing stem directions, you may need to override the automatic setting. If you need to do so, call <a class="el" href="class_f_c_secondary_beam_mods.html#a39e4d2d1d8860c58fe4de819e9afbb5a" title="Sets if upstem or downstem data should be loaded/saved.">UseUpStemData</a> before calling <a class="el" href="class_____f_c_collection_entry_detail.html#ad4f35e89f2e107f164be4694bffe4a9f" title="Overloaded version of LoadAll. It will load all elements for the current entry number.">LoadAll</a>. See further remarks at <a class="el" href="class_f_c_beam_mod.html#ad952f17ee034f7e837e94a561b02f2f3" title="Sets if upstem or downstem data should be loaded/saved.">FCBeamMod::UseUpStemData</a>.</dd></dl>
+<p>Lua-supported (0.74)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useupstem</td><td><b>True</b> - use the data for stem up. <b>False</b> - use the data for stem down. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 10:22:09 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:43 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

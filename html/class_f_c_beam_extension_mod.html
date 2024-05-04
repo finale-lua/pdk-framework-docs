@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74b1</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a050d11c32acbaf8c7b41814f7c9f0d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_extension_mod.html#a050d11c32acbaf8c7b41814f7c9f0d85">FCBeamExtensionMod</a> ()</td></tr>
 <tr class="memdesc:a050d11c32acbaf8c7b41814f7c9f0d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_beam_extension_mod.html#a050d11c32acbaf8c7b41814f7c9f0d85">More...</a><br /></td></tr>
 <tr class="separator:a050d11c32acbaf8c7b41814f7c9f0d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af804108df6ec394a4b3ec48078805deb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb">UseUpStemData</a> (bool useupstem)</td></tr>
+<tr class="memdesc:af804108df6ec394a4b3ec48078805deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if upstem or downstem data should be loaded/saved.  <a href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb">More...</a><br /></td></tr>
+<tr class="separator:af804108df6ec394a4b3ec48078805deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1a59000108084c80083b34c7c2d232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232">SetNoteEntry</a> (<a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *pEntry) override</td></tr>
 <tr class="memdesc:aad1a59000108084c80083b34c7c2d232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden method to assign a note entry with the data.  <a href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232">More...</a><br /></td></tr>
 <tr class="separator:aad1a59000108084c80083b34c7c2d232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1347,10 +1350,50 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 
 </div>
 </div>
+<a id="af804108df6ec394a4b3ec48078805deb" name="af804108df6ec394a4b3ec48078805deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af804108df6ec394a4b3ec48078805deb">&#9670;&nbsp;</a></span>UseUpStemData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCBeamExtensionMod::UseUpStemData </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useupstem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if upstem or downstem data should be loaded/saved. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Normally this value is set automatically by <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>. However in certain circumstances, when you will be flipping or reversing stem directions, you may need to override the automatic setting. If you need to do so, call <a class="el" href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb" title="Sets if upstem or downstem data should be loaded/saved.">UseUpStemData</a> immediately after calling <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>.</dd>
+<dd>
+Note that an entry can store data for both upstem and downstem. Entries can be displayed in contexts where they are upstem and other contexts where they are downstem, for example when displaying concert pitch versus transposed pitch or when displaying the entry in a part versus the score. The direction of the stem in context determines which version of <a class="el" href="class_f_c_beam_extension_mod.html" title="Class for beam extensions (in Finale&#39;s Special Tools).">FCBeamExtensionMod</a> Finale displays.</dd>
+<dd>
+Generally speaking, neither staff crossing nor stem reversal change the stem context for which <a class="el" href="class_f_c_beam_extension_mod.html" title="Class for beam extensions (in Finale&#39;s Special Tools).">FCBeamExtensionMod</a> data Finale uses. This can lead to confusing situations. The first note of a beam with stems up can be crossed to a higher staff, and with stem reversal it appears to be down-stem. However, for the purposes of <a class="el" href="class_f_c_beam_extension_mod.html" title="Class for beam extensions (in Finale&#39;s Special Tools).">FCBeamExtensionMod</a> it is still up-stem.</dd></dl>
+<p>Lua-supported (0.74)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">useupstem</td><td><b>True</b> - use the data for stem up. <b>False</b> - use the data for stem down. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 13 2024 10:22:06 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:41 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
