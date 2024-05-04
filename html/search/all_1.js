@@ -60,7 +60,7 @@ var searchData=
   ['addrmoveto_57',['AddRMoveTo',['../class_f_c_shape_def_instructions.html#a8ccfdec5efc883da6942e102fd3f0dc6',1,'FCShapeDefInstructions']]],
   ['addrow_58',['AddRow',['../class_f_c_ctrl_data_list.html#a22d62332176af49e9d53cdb0f37ee95c',1,'FCCtrlDataList']]],
   ['addselectedline_59',['AddSelectedLine',['../class_f_c_ctrl_data_list.html#add3344e3262634566ab80fa5f3bf94ca',1,'FCCtrlDataList']]],
-  ['addsession_60',['AddSession',['../class_f_c_undo_block.html#a2a1b2ee7f603e25ae8478155161bc83d',1,'FCUndoBlock']]],
+  ['addsession_60',['AddSession',['../class_f_c_undo_controller.html#a44b285a6e0f42183e790b59cd146aaad',1,'FCUndoController']]],
   ['addsetdash_61',['AddSetDash',['../class_f_c_shape_def_instructions.html#a3b1d03ad4c4e8a9d5045d8545b1042cb',1,'FCShapeDefInstructions']]],
   ['addsetfont_62',['AddSetFont',['../class_f_c_shape_def_instructions.html#a78c57671033defe9379da7173d2a43c3',1,'FCShapeDefInstructions']]],
   ['addsetgrey_63',['AddSetGrey',['../class_f_c_shape_def_instructions.html#a1cee399f4e68e135f572d467e028b891',1,'FCShapeDefInstructions']]],

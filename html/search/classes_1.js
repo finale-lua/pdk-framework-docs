@@ -312,7 +312,7 @@ var searchData=
   ['fctupletprefs_309',['FCTupletPrefs',['../class_f_c_tuplet_prefs.html',1,'']]],
   ['fctuplets_310',['FCTuplets',['../class_f_c_tuplets.html',1,'']]],
   ['fcui_311',['FCUI',['../class_f_c_u_i.html',1,'']]],
-  ['fcundoblock_312',['FCUndoBlock',['../class_f_c_undo_block.html',1,'']]],
+  ['fcundocontroller_312',['FCUndoController',['../class_f_c_undo_controller.html',1,'']]],
   ['fcverselyricstext_313',['FCVerseLyricsText',['../class_f_c_verse_lyrics_text.html',1,'']]],
   ['fcversesyllable_314',['FCVerseSyllable',['../class_f_c_verse_syllable.html',1,'']]],
   ['fcversesyllables_315',['FCVerseSyllables',['../class_f_c_verse_syllables.html',1,'']]]

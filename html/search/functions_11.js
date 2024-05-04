@@ -60,11 +60,11 @@ var searchData=
   ['removeelement_57',['RemoveElement',['../class_f_c_staff_list.html#a0e2672adb82444b113f80889b4516bcf',1,'FCStaffList']]],
   ['removeentryfilter_58',['RemoveEntryFilter',['../class_f_c_lua_iterator.html#a97c8dc615643f2ffb916b303d59c8a75',1,'FCLuaIterator']]],
   ['removeindependenttimesigfordisplay_59',['RemoveIndependentTimeSigForDisplay',['../class_f_c_cell.html#a117d892069b593ef81ebbb764f28b335',1,'FCCell']]],
-  ['removelastundostring_60',['RemoveLastUndoString',['../class_f_c_document.html#af0794e87cb554d1f5be7e860f0aca8dd',1,'FCDocument']]],
-  ['removenotationstylefilter_61',['RemoveNotationStyleFilter',['../class_f_c_lua_iterator.html#a135f882e3de58d74eeecfca6359ea6e9',1,'FCLuaIterator']]],
-  ['removenotefilter_62',['RemoveNoteFilter',['../class_f_c_lua_iterator.html#a630c0a1fed97c4de86de0bc75a3ef082',1,'FCLuaIterator']]],
-  ['removestaff_63',['RemoveStaff',['../class_f_c_staff_list.html#a33abc39a68797c655c539bdb85656734',1,'FCStaffList']]],
-  ['removetopstaff_64',['RemoveTopStaff',['../class_f_c_staff_list.html#aa2ed84c298744a75156552d90d920a49',1,'FCStaffList']]],
+  ['removenotationstylefilter_60',['RemoveNotationStyleFilter',['../class_f_c_lua_iterator.html#a135f882e3de58d74eeecfca6359ea6e9',1,'FCLuaIterator']]],
+  ['removenotefilter_61',['RemoveNoteFilter',['../class_f_c_lua_iterator.html#a630c0a1fed97c4de86de0bc75a3ef082',1,'FCLuaIterator']]],
+  ['removestaff_62',['RemoveStaff',['../class_f_c_staff_list.html#a33abc39a68797c655c539bdb85656734',1,'FCStaffList']]],
+  ['removetopstaff_63',['RemoveTopStaff',['../class_f_c_staff_list.html#aa2ed84c298744a75156552d90d920a49',1,'FCStaffList']]],
+  ['removeundoblock_64',['RemoveUndoBlock',['../class_f_c_undo_controller.html#af3dd71539443f35966505db6cea19064',1,'FCUndoController']]],
   ['repaint_65',['Repaint',['../class_f_c_control.html#a704664187dd7ce7e202bf8a524f12d31',1,'FCControl::Repaint()'],['../class_f_c_ctrl_tree.html#a88d0a7c93bd89ef5f922ca6e3a7389f4',1,'FCCtrlTree::Repaint()']]],
   ['replace_66',['Replace',['../class_f_c_string.html#ae7cc2fe997c462ad109f79a2598127cd',1,'FCString']]],
   ['replacecategoryfonts_67',['ReplaceCategoryFonts',['../class_f_c_string.html#aacce721fb79a11eb539dfca2f8558369',1,'FCString']]],
@@ -79,7 +79,8 @@ var searchData=
   ['resetundostate_76',['ResetUndoState',['../class_f_c_ctrl_text_editor.html#ab86c0731fab2db4116344847c8a67983',1,'FCCtrlTextEditor']]],
   ['resizerelative_77',['ResizeRelative',['../class_f_c_control.html#ade6d50db38ae0b704e44273cc1de83cb',1,'FCControl']]],
   ['restoreposition_78',['RestorePosition',['../class_____f_c_user_window.html#a624bf8a8c19db0f267d35fddb08b90aa',1,'__FCUserWindow']]],
-  ['retrieveboolvalue_79',['RetrieveBoolValue',['../class_f_c_settings_pairs.html#a3c2d3ac1bb6fdbca1f6c6a36873a0485',1,'FCSettingsPairs']]],
-  ['retrieveintvalue_80',['RetrieveIntValue',['../class_f_c_settings_pairs.html#a887b05849924a1aa807c2bce7d51a535',1,'FCSettingsPairs']]],
-  ['returnperformancetiming_81',['ReturnPerformanceTiming',['../class_f_c_u_i.html#adb692c0f354aa1c626530c183fcb0fdf',1,'FCUI']]]
+  ['resumeundo_79',['ResumeUndo',['../class_f_c_undo_controller.html#a796645c7b6d1d3bd2f7628c3474040d0',1,'FCUndoController']]],
+  ['retrieveboolvalue_80',['RetrieveBoolValue',['../class_f_c_settings_pairs.html#a3c2d3ac1bb6fdbca1f6c6a36873a0485',1,'FCSettingsPairs']]],
+  ['retrieveintvalue_81',['RetrieveIntValue',['../class_f_c_settings_pairs.html#a887b05849924a1aa807c2bce7d51a535',1,'FCSettingsPairs']]],
+  ['returnperformancetiming_82',['ReturnPerformanceTiming',['../class_f_c_u_i.html#adb692c0f354aa1c626530c183fcb0fdf',1,'FCUI']]]
 ];

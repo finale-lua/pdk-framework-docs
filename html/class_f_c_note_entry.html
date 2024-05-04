@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.73</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
    </div>
   </td>
  </tr>
@@ -710,6 +710,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSameMeasurePosAs</b
 <tr class="memitem:a96c9daa7b3994a33e9481ca5e46687a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a96c9daa7b3994a33e9481ca5e46687a6">CalcBeamStartEntry</a> ()</td></tr>
 <tr class="memdesc:a96c9daa7b3994a33e9481ca5e46687a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the start entry of the beamed group where the entry belongs. If the "Extend beams over rests" option is set, this method might return a rest.  <a href="class_f_c_note_entry.html#a96c9daa7b3994a33e9481ca5e46687a6">More...</a><br /></td></tr>
 <tr class="separator:a96c9daa7b3994a33e9481ca5e46687a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404ecf90ad003dc490cae2d0885c3872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a404ecf90ad003dc490cae2d0885c3872">CalcLowestBeamStart</a> ()</td></tr>
+<tr class="memdesc:a404ecf90ad003dc490cae2d0885c3872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lowest beam number starting at this entry, where 1 = 8th note beam, 2 = 16th note beam, etc.  <a href="class_f_c_note_entry.html#a404ecf90ad003dc490cae2d0885c3872">More...</a><br /></td></tr>
+<tr class="separator:a404ecf90ad003dc490cae2d0885c3872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4187cfffbb2f4a362f78d5c1fa6b97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a9e4187cfffbb2f4a362f78d5c1fa6b97">CalcLowestBeamEnd</a> ()</td></tr>
+<tr class="memdesc:a9e4187cfffbb2f4a362f78d5c1fa6b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lowest beam number ending at this entry, where 1 = 8th note beam, 2 = 16th note beam, etc.  <a href="class_f_c_note_entry.html#a9e4187cfffbb2f4a362f78d5c1fa6b97">More...</a><br /></td></tr>
+<tr class="separator:a9e4187cfffbb2f4a362f78d5c1fa6b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae700e223cfc951bfc72bf37288b70d3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#ae700e223cfc951bfc72bf37288b70d3b">CalcLowestBeamStub</a> ()</td></tr>
+<tr class="memdesc:ae700e223cfc951bfc72bf37288b70d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the lowest beam number that is a stand-alone beam stub. 1 = 8th note beam, 2 = 16th note beam, etc.  <a href="class_f_c_note_entry.html#ae700e223cfc951bfc72bf37288b70d3b">More...</a><br /></td></tr>
+<tr class="separator:ae700e223cfc951bfc72bf37288b70d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87df8a16ec94baa8a9f81395fe2f943e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_note_entry.html#a87df8a16ec94baa8a9f81395fe2f943e">CalcLargestNoteheadResize</a> (<a class="el" href="class_f_c_number.html">FCNumber</a> *pLargestFontSize, <a class="el" href="class_f_c_number.html">FCNumber</a> *pLargestResize)</td></tr>
 <tr class="memdesc:a87df8a16ec94baa8a9f81395fe2f943e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the largest point size and the largest notehead % resize for the entry.  <a href="class_f_c_note_entry.html#a87df8a16ec94baa8a9f81395fe2f943e">More...</a><br /></td></tr>
 <tr class="separator:a87df8a16ec94baa8a9f81395fe2f943e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1761,6 +1770,72 @@ Additional Inherited Members</h2></td></tr>
 <p>Scans forward and returns the end entry of a tuplet that's connected to this entry object. </p>
 <p >Lua-supported.</p>
 <dl class="section return"><dt>Returns</dt><dd>NULL on error, or if the end entry isn't found. </dd></dl>
+
+</div>
+</div>
+<a id="a9e4187cfffbb2f4a362f78d5c1fa6b97" name="a9e4187cfffbb2f4a362f78d5c1fa6b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4187cfffbb2f4a362f78d5c1fa6b97">&#9670;&nbsp;</a></span>CalcLowestBeamEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCNoteEntry::CalcLowestBeamEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the lowest beam number ending at this entry, where 1 = 8th note beam, 2 = 16th note beam, etc. </p>
+<p >This method requires that PDK_FRAMEWORK_PREFS is defined.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 if not beamed or no beam ends on this entry; 1 if the primary (8th note) beam ends on this entry; 2 or higher if a secondary beam ends on this entry.</dd></dl>
+<p>Lua-supported (0.74). </p>
+
+</div>
+</div>
+<a id="a404ecf90ad003dc490cae2d0885c3872" name="a404ecf90ad003dc490cae2d0885c3872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a404ecf90ad003dc490cae2d0885c3872">&#9670;&nbsp;</a></span>CalcLowestBeamStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCNoteEntry::CalcLowestBeamStart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the lowest beam number starting at this entry, where 1 = 8th note beam, 2 = 16th note beam, etc. </p>
+<p >This method requires that PDK_FRAMEWORK_PREFS is defined.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 if not beamed or no beam starts on this entry; 1 if the primary (8th note) beam starts on this entry; 2 or higher if a secondary beam starts on this entry.</dd></dl>
+<p>Lua-supported (0.74). </p>
+
+</div>
+</div>
+<a id="ae700e223cfc951bfc72bf37288b70d3b" name="ae700e223cfc951bfc72bf37288b70d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae700e223cfc951bfc72bf37288b70d3b">&#9670;&nbsp;</a></span>CalcLowestBeamStub()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FCNoteEntry::CalcLowestBeamStub </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the lowest beam number that is a stand-alone beam stub. 1 = 8th note beam, 2 = 16th note beam, etc. </p>
+<p >This method requires that PDK_FRAMEWORK_PREFS is defined.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 if not beamed or no beam stub exists on this entry; 1 if the primary (8th note) beam is a beam stub; 2 or higher if a secondary beam is a beam stub.</dd></dl>
+<p>Lua-supported (0.74). </p>
 
 </div>
 </div>
@@ -5990,7 +6065,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 11 2024 10:07:29 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat May 4 2024 09:27:43 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
