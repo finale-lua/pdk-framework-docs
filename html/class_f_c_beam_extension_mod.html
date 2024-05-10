@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a050d11c32acbaf8c7b41814f7c9f0d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_f_c_beam_extension_mod.html#a050d11c32acbaf8c7b41814f7c9f0d85">More...</a><br /></td></tr>
 <tr class="separator:a050d11c32acbaf8c7b41814f7c9f0d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af804108df6ec394a4b3ec48078805deb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb">UseUpStemData</a> (bool useupstem)</td></tr>
-<tr class="memdesc:af804108df6ec394a4b3ec48078805deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if upstem or downstem data should be loaded/saved.  <a href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb">More...</a><br /></td></tr>
+<tr class="memdesc:af804108df6ec394a4b3ec48078805deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if upstem or downstem data should be loaded/saved. Finale stores upstem and downstem data in separate pools with different locator keys. It then applies one of them based on the current stem direction in the current view (for example, the part or the score).  <a href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb">More...</a><br /></td></tr>
 <tr class="separator:af804108df6ec394a4b3ec48078805deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad1a59000108084c80083b34c7c2d232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232">SetNoteEntry</a> (<a class="el" href="class_f_c_note_entry.html">FCNoteEntry</a> *pEntry) override</td></tr>
 <tr class="memdesc:aad1a59000108084c80083b34c7c2d232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overridden method to assign a note entry with the data.  <a href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232">More...</a><br /></td></tr>
@@ -1374,8 +1374,8 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Sets if upstem or downstem data should be loaded/saved. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Normally this value is set automatically by <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>. However in certain circumstances, when you will be flipping or reversing stem directions, you may need to override the automatic setting. If you need to do so, call <a class="el" href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb" title="Sets if upstem or downstem data should be loaded/saved.">UseUpStemData</a> immediately after calling <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a>.</dd>
+<p>Sets if upstem or downstem data should be loaded/saved. Finale stores upstem and downstem data in separate pools with different locator keys. It then applies one of them based on the current stem direction in the current view (for example, the part or the score). </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Normally this value is set automatically by <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a> using <a class="el" href="class_f_c_note_entry.html#ac4c7f4babe448dbf6d29bbaf922725d1" title="Returns the direction of the beam.">FCNoteEntry::CalcStemUp</a>. However in certain circumstances, when you will be flipping or reversing stem directions, you may need to override the automatic setting. If you need to do so, call <a class="el" href="class_f_c_beam_extension_mod.html#af804108df6ec394a4b3ec48078805deb" title="Sets if upstem or downstem data should be loaded/saved. Finale stores upstem and downstem data in sep...">UseUpStemData</a> immediately after calling <a class="el" href="class_f_c_beam_extension_mod.html#aad1a59000108084c80083b34c7c2d232" title="Overridden method to assign a note entry with the data.">SetNoteEntry</a> and before calling any <b>Load</b>, <b>Save</b>, or <b>Delete</b> function.</dd>
 <dd>
 Note that an entry can store data for both upstem and downstem. Entries can be displayed in contexts where they are upstem and other contexts where they are downstem, for example when displaying concert pitch versus transposed pitch or when displaying the entry in a part versus the score. The direction of the stem in context determines which version of <a class="el" href="class_f_c_beam_extension_mod.html" title="Class for beam extensions (in Finale&#39;s Special Tools).">FCBeamExtensionMod</a> Finale displays.</dd>
 <dd>
@@ -1393,7 +1393,7 @@ Generally speaking, neither staff crossing nor stem reversal change the stem con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 4 2024 09:27:41 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri May 10 2024 06:59:50 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
