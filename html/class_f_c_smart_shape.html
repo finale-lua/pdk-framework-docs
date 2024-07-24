@@ -146,11 +146,11 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a29b94a28426154f61cb5bf57d14a8b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smart shape types.  <a href="class_f_c_smart_shape.html#a29b94a28426154f61cb5bf57d14a8b42">More...</a><br /></td></tr>
 <tr class="separator:a29b94a28426154f61cb5bf57d14a8b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71586f1948b98b11de6bb9015f24eb5e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5e">SMARTSHAPE_3STATE</a> { <b>SS_OFFSTATE</b> = 0
-, <b>SS_ONSTATE</b>
-, <b>SS_AUTOSTATE</b>
+<tr class="memitem:a71586f1948b98b11de6bb9015f24eb5e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5e">SMARTSHAPE_3STATE</a> { <a class="el" href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5eac854b957fbcee36d880d7f6737fc15b3">SS_OFFSTATE</a> = 0
+, <a class="el" href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5eaea300442c8ce89426d6e78a7627a4f76">SS_ONSTATE</a>
+, <a class="el" href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5ea7543d7f2123a0b6680fc6b36b8d2ae61">SS_AUTOSTATE</a>
  }</td></tr>
-<tr class="memdesc:a71586f1948b98b11de6bb9015f24eb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum used for the methods that need a 3-state auto/on/off.  <a href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5e">More...</a><br /></td></tr>
+<tr class="memdesc:a71586f1948b98b11de6bb9015f24eb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum used for the methods that need a 3-state auto/on/off. Currently used by the <a class="el" href="class_f_c_smart_shape.html#ac058447ee8c7fc14b3ea5c6b4a4b307b" title="Gets the &#39;avoid accidentals&#39; setting to any of the auto/on/off states.">GetAvoidAccidentals</a> and <a class="el" href="class_f_c_smart_shape.html#ad6784e8dbf138babf869fd3d415ef854" title="Returns the engraver slur state for the slur.">GetEngraverSlur</a> properties.  <a href="class_f_c_smart_shape.html#a71586f1948b98b11de6bb9015f24eb5e">More...</a><br /></td></tr>
 <tr class="separator:a71586f1948b98b11de6bb9015f24eb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_____f_c_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_____f_c_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_____f_c_base.html">__FCBase</a></td></tr>
 <tr class="memitem:a7ccc66e6b4ff6aad32163e30bc515239 inherit pub_types_class_____f_c_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> { <br />
@@ -849,8 +849,18 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
       </table>
 </div><div class="memdoc">
 
-<p>An enum used for the methods that need a 3-state auto/on/off. </p>
+<p>An enum used for the methods that need a 3-state auto/on/off. Currently used by the <a class="el" href="class_f_c_smart_shape.html#ac058447ee8c7fc14b3ea5c6b4a4b307b" title="Gets the &#39;avoid accidentals&#39; setting to any of the auto/on/off states.">GetAvoidAccidentals</a> and <a class="el" href="class_f_c_smart_shape.html#ad6784e8dbf138babf869fd3d415ef854" title="Returns the engraver slur state for the slur.">GetEngraverSlur</a> properties. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The ON and OFF values are currently coded backwards, meaning the ON constant specifies the Off state and the OFF constant value specifies On state. It is possible that a future release may fix this. If so, a new set of constants will be defined with different names and possibly different numerical values. The current enum will be deprecated at that time.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Add new enum names and values to specify the correct corresponding values in Finale.</dd></dl>
 <p >Lua-supported. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a71586f1948b98b11de6bb9015f24eb5eac854b957fbcee36d880d7f6737fc15b3" name="a71586f1948b98b11de6bb9015f24eb5eac854b957fbcee36d880d7f6737fc15b3"></a>SS_OFFSTATE&#160;</td><td class="fielddoc"><p >Misnamed. Species the On state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71586f1948b98b11de6bb9015f24eb5eaea300442c8ce89426d6e78a7627a4f76" name="a71586f1948b98b11de6bb9015f24eb5eaea300442c8ce89426d6e78a7627a4f76"></a>SS_ONSTATE&#160;</td><td class="fielddoc"><p >Misnamed. Species the Off state. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71586f1948b98b11de6bb9015f24eb5ea7543d7f2123a0b6680fc6b36b8d2ae61" name="a71586f1948b98b11de6bb9015f24eb5ea7543d7f2123a0b6680fc6b36b8d2ae61"></a>SS_AUTOSTATE&#160;</td><td class="fielddoc"><p >Automatically determine the state from other Finale settings. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -2595,7 +2605,7 @@ EDataID&#160;</td><td class="memItemRight" valign="bottom"><b>_dataid</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 10 2024 06:59:52 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Wed Jul 24 2024 18:39:14 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
