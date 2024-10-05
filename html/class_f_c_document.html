@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.75</span>
    </div>
   </td>
  </tr>
@@ -130,18 +130,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_SetID</b> (EDOCID do
 <tr class="memitem:a7490f9f875efbf45af3173b9355bbdbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a7490f9f875efbf45af3173b9355bbdbf">Save</a> ()</td></tr>
 <tr class="memdesc:a7490f9f875efbf45af3173b9355bbdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current document at the current document path.  <a href="class_f_c_document.html#a7490f9f875efbf45af3173b9355bbdbf">More...</a><br /></td></tr>
 <tr class="separator:a7490f9f875efbf45af3173b9355bbdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79c264eb413d66553a2fb11950755874"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a79c264eb413d66553a2fb11950755874">Open</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pFilePath, bool createwindow, const <a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits, _state_ptr S=nullptr)</td></tr>
-<tr class="memdesc:a79c264eb413d66553a2fb11950755874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file as a new Finale document. The new document automatically gets editing focus. This is the equivalent of calling <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>, which means that any call to <a class="el" href="class_f_c_document.html#a79c264eb413d66553a2fb11950755874" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> should be balanced with a call to <a class="el" href="class_f_c_document.html#a882a2b7f15e057971c2aa88bc4cba6c5" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a>.  <a href="class_f_c_document.html#a79c264eb413d66553a2fb11950755874">More...</a><br /></td></tr>
-<tr class="separator:a79c264eb413d66553a2fb11950755874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6c528665f01121b896bf7e107620b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6">Open</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pFilePath, bool createwindow, const <a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits, bool addtorecents, bool hidedialogs, _state_ptr S=nullptr)</td></tr>
+<tr class="memdesc:aff6c528665f01121b896bf7e107620b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file as a new Finale document. The new document automatically gets editing focus. This is the equivalent of calling <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. That means that any call to <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> should be balanced with a call to <a class="el" href="class_f_c_document.html#a882a2b7f15e057971c2aa88bc4cba6c5" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a>, even if the call to <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> fails.  <a href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6">More...</a><br /></td></tr>
+<tr class="separator:aff6c528665f01121b896bf7e107620b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346085b3dad732a432de8b651a94670c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a346085b3dad732a432de8b651a94670c">New</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits, _state_ptr S=nullptr)</td></tr>
 <tr class="memdesc:a346085b3dad732a432de8b651a94670c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an new untitled Finale documnent. The new document automatically gets editing focus. This is the equivalent of calling <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>, which means that any call to <a class="el" href="class_f_c_document.html#a346085b3dad732a432de8b651a94670c" title="Creates an new untitled Finale documnent. The new document automatically gets editing focus....">New</a> should be balanced with a call to <a class="el" href="class_f_c_document.html#a882a2b7f15e057971c2aa88bc4cba6c5" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a>.  <a href="class_f_c_document.html#a346085b3dad732a432de8b651a94670c">More...</a><br /></td></tr>
 <tr class="separator:a346085b3dad732a432de8b651a94670c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed27a30142edf89862c53c9d59acc23d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#aed27a30142edf89862c53c9d59acc23d">CloseCurrentDocumentWindow</a> (_state_ptr S _NOLUACODE(=nullptr))</td></tr>
-<tr class="memdesc:aed27a30142edf89862c53c9d59acc23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the current document Window.  <a href="class_f_c_document.html#aed27a30142edf89862c53c9d59acc23d">More...</a><br /></td></tr>
-<tr class="separator:aed27a30142edf89862c53c9d59acc23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada03958e5dcc636444df7c72a64066ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#ada03958e5dcc636444df7c72a64066ca">Close</a> (_state_ptr S _NOLUACODE(=nullptr))</td></tr>
-<tr class="memdesc:ada03958e5dcc636444df7c72a64066ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the document.  <a href="class_f_c_document.html#ada03958e5dcc636444df7c72a64066ca">More...</a><br /></td></tr>
-<tr class="separator:ada03958e5dcc636444df7c72a64066ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a51015d6829ce949547b53c5929b88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a59a51015d6829ce949547b53c5929b88">CloseCurrentDocumentAndWindow</a> (bool saveedits=true, _state_ptr S=nullptr)</td></tr>
+<tr class="memdesc:a59a51015d6829ce949547b53c5929b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the current document and any windows it has open. Use this function to close a document if you opened a document window when you called <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a>.  <a href="class_f_c_document.html#a59a51015d6829ce949547b53c5929b88">More...</a><br /></td></tr>
+<tr class="separator:a59a51015d6829ce949547b53c5929b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b14febe66821d00b6c07f4d958a796b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a0b14febe66821d00b6c07f4d958a796b">Close</a> (bool saveedits=true, _state_ptr S=nullptr)</td></tr>
+<tr class="memdesc:a0b14febe66821d00b6c07f4d958a796b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the document. Use this function to close a document if you did <em>not</em> open a document window when you called <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a>.  <a href="class_f_c_document.html#a0b14febe66821d00b6c07f4d958a796b">More...</a><br /></td></tr>
+<tr class="separator:a0b14febe66821d00b6c07f4d958a796b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36257a11274feb4ae6f09ff201af8316"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a36257a11274feb4ae6f09ff201af8316">Print</a> (<a class="el" href="class_f_c_print_settings.html">FCPrintSettings</a> *pSettings)</td></tr>
 <tr class="memdesc:a36257a11274feb4ae6f09ff201af8316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the document, using the specified printer settings.  <a href="class_f_c_document.html#a36257a11274feb4ae6f09ff201af8316">More...</a><br /></td></tr>
 <tr class="separator:a36257a11274feb4ae6f09ff201af8316"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -551,8 +551,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ada03958e5dcc636444df7c72a64066ca" name="ada03958e5dcc636444df7c72a64066ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada03958e5dcc636444df7c72a64066ca">&#9670;&nbsp;</a></span>Close()</h2>
+<a id="a0b14febe66821d00b6c07f4d958a796b" name="a0b14febe66821d00b6c07f4d958a796b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b14febe66821d00b6c07f4d958a796b">&#9670;&nbsp;</a></span>Close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -560,36 +560,72 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCDocument::Close </td>
           <td>(</td>
-          <td class="paramtype">_state_ptr S &#160;</td>
-          <td class="paramname"><em>_NOLUACODE</em>=nullptr</td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>saveedits</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">_state_ptr&#160;</td>
+          <td class="paramname"><em>S</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Closes the document. </p>
+<p>Closes the document. Use this function to close a document if you did <em>not</em> open a document window when you called <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a>. </p>
+<p >Lua-supported (0.75).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveedits</td><td>[in] If true, save any edits that have been applied to the document. </td></tr>
+    <tr><td class="paramname">S</td><td>[in] State pointer. See comments at <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. Lua callers omit this parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the document was successfully closed. </dd></dl>
 
 </div>
 </div>
-<a id="aed27a30142edf89862c53c9d59acc23d" name="aed27a30142edf89862c53c9d59acc23d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed27a30142edf89862c53c9d59acc23d">&#9670;&nbsp;</a></span>CloseCurrentDocumentWindow()</h2>
+<a id="a59a51015d6829ce949547b53c5929b88" name="a59a51015d6829ce949547b53c5929b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a51015d6829ce949547b53c5929b88">&#9670;&nbsp;</a></span>CloseCurrentDocumentAndWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool FCDocument::CloseCurrentDocumentWindow </td>
+          <td class="memname">bool FCDocument::CloseCurrentDocumentAndWindow </td>
           <td>(</td>
-          <td class="paramtype">_state_ptr S &#160;</td>
-          <td class="paramname"><em>_NOLUACODE</em>=nullptr</td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>saveedits</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">_state_ptr&#160;</td>
+          <td class="paramname"><em>S</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Closes the current document Window. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if the document was successfully closed. </dd></dl>
+<p>Closes the current document and any windows it has open. Use this function to close a document if you opened a document window when you called <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a>. </p>
+<p >Lua-supported (0.75).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">saveedits</td><td>[in] If true, save any edits that have been applied to the document. </td></tr>
+    <tr><td class="paramname">S</td><td>[in] State pointer. See comments at <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. Lua callers omit this parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>This is the value returned by Finale. It may be false even when the window was successfully closed, so it probably is not worth checking. </dd></dl>
 
 </div>
 </div>
@@ -835,8 +871,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a79c264eb413d66553a2fb11950755874" name="a79c264eb413d66553a2fb11950755874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79c264eb413d66553a2fb11950755874">&#9670;&nbsp;</a></span>Open()</h2>
+<a id="aff6c528665f01121b896bf7e107620b6" name="aff6c528665f01121b896bf7e107620b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff6c528665f01121b896bf7e107620b6">&#9670;&nbsp;</a></span>Open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -868,6 +904,18 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>addtorecents</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>hidedialogs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">_state_ptr&#160;</td>
           <td class="paramname"><em>S</em> = <code>nullptr</code>&#160;</td>
         </tr>
@@ -879,14 +927,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Opens a file as a new Finale document. The new document automatically gets editing focus. This is the equivalent of calling <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>, which means that any call to <a class="el" href="class_f_c_document.html#a79c264eb413d66553a2fb11950755874" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> should be balanced with a call to <a class="el" href="class_f_c_document.html#a882a2b7f15e057971c2aa88bc4cba6c5" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a>. </p>
+<p>Opens a file as a new Finale document. The new document automatically gets editing focus. This is the equivalent of calling <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. That means that any call to <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> should be balanced with a call to <a class="el" href="class_f_c_document.html#a882a2b7f15e057971c2aa88bc4cba6c5" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a>, even if the call to <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> fails. </p>
+<p >Lua-supported (0.75).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pFilePath</td><td>[in] The full path to the file that should be opened. </td></tr>
     <tr><td class="paramname">createwindow</td><td>[in] True if a visual document window should be created in the Finale UI. </td></tr>
-    <tr><td class="paramname">saveedits</td><td>[in] True if any current changes should be saved. </td></tr>
     <tr><td class="paramname">pUndoString</td><td>[in] The undo string to be used for the document. NULL to use the last value. </td></tr>
-    <tr><td class="paramname">S</td><td>[in] State pointer. See comments at <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>.</td></tr>
+    <tr><td class="paramname">saveedits</td><td>[in] True if any current changes should be saved. </td></tr>
+    <tr><td class="paramname">addtorecents</td><td>[in] True if this file should be added to the recent files opened list. Only works in Finale 26.1 and higher. </td></tr>
+    <tr><td class="paramname">hidedialogs</td><td>[in] True if this file should be opened without any popup dialogs. (Useful for batch processing.) Only works in Finale 26.1 and higher. </td></tr>
+    <tr><td class="paramname">S</td><td>[in] State pointer. See comments at <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. Lua callers omit this parameter.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1103,7 +1154,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 24 2024 18:39:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Oct 4 2024 19:50:56 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>

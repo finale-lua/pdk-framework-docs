@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.74</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.75</span>
    </div>
   </td>
  </tr>
@@ -71,8 +71,8 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_base.html#a19492e2b21a7db8115c11e9f82f935f5">__FCBase</a>()</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_document.html#acc7a6c75256ebd13cc906eac2d41654b">_SetID</a>(EDOCID docID)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_document.html#a1b372f366c31ad37b9dcf6d458894657">ClassName</a>() const override</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_f_c_document.html#ada03958e5dcc636444df7c72a64066ca">Close</a>(_state_ptr S _NOLUACODE(=nullptr))</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_f_c_document.html#aed27a30142edf89862c53c9d59acc23d">CloseCurrentDocumentWindow</a>(_state_ptr S _NOLUACODE(=nullptr))</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_f_c_document.html#a0b14febe66821d00b6c07f4d958a796b">Close</a>(bool saveedits=true, _state_ptr S=nullptr)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_f_c_document.html#a59a51015d6829ce949547b53c5929b88">CloseCurrentDocumentAndWindow</a>(bool saveedits=true, _state_ptr S=nullptr)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#afe56757edda61ebf652720f809bc691f">DebugDataByteArrayDump</a>()</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_base.html#ae0da6e7b94b34fa4ce6f21acc5dc6974">DebugDataDump</a>()</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_document.html#a8649116e672fe8287a8ce85ae6830d06">DebugDump</a>() override</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
@@ -244,7 +244,7 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6ab36860d891171922f1fdf33c912daee5">MEASUREMENTUNIT_SPACES</a> enum value</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_____f_c_base.html#a9c34d7730c8104ce6e2275c55fc04de6">MEASUREMENTUNITS</a> enum name</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_f_c_document.html#a346085b3dad732a432de8b651a94670c">New</a>(const FCString *pUndoString, bool saveedits, _state_ptr S=nullptr)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_f_c_document.html#a79c264eb413d66553a2fb11950755874">Open</a>(const FCString *pFilePath, bool createwindow, const FCString *pUndoString, bool saveedits, _state_ptr S=nullptr)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6">Open</a>(const FCString *pFilePath, bool createwindow, const FCString *pUndoString, bool saveedits, bool addtorecents, bool hidedialogs, _state_ptr S=nullptr)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239">PDKFRAMEWORK_CLASSID</a> enum name</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_f_c_document.html#a36257a11274feb4ae6f09ff201af8316">Print</a>(FCPrintSettings *pSettings)</td><td class="entry"><a class="el" href="class_f_c_document.html">FCDocument</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_____f_c_base.html#acc9a627e1efb124dbdaf19bfcf553233">ReadFromXML</a>(tinyxml2::XMLElement *pParentNode)</td><td class="entry"><a class="el" href="class_____f_c_base.html">__FCBase</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
@@ -277,7 +277,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 24 2024 18:39:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Fri Oct 4 2024 19:50:56 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
