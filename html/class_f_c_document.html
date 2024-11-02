@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.75</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.76</span>
    </div>
   </td>
  </tr>
@@ -127,9 +127,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_SetID</b> (EDOCID do
 <tr class="memitem:aa47154f7a0d93ba55ff2495154021d4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#aa47154f7a0d93ba55ff2495154021d4f">DisplayVisually</a> ()</td></tr>
 <tr class="memdesc:aa47154f7a0d93ba55ff2495154021d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the visual focus to the document.  <a href="class_f_c_document.html#aa47154f7a0d93ba55ff2495154021d4f">More...</a><br /></td></tr>
 <tr class="separator:aa47154f7a0d93ba55ff2495154021d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7490f9f875efbf45af3173b9355bbdbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a7490f9f875efbf45af3173b9355bbdbf">Save</a> ()</td></tr>
-<tr class="memdesc:a7490f9f875efbf45af3173b9355bbdbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current document at the current document path.  <a href="class_f_c_document.html#a7490f9f875efbf45af3173b9355bbdbf">More...</a><br /></td></tr>
-<tr class="separator:a7490f9f875efbf45af3173b9355bbdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fb5e64409f1dbfcbb2b535a87b14ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#a36fb5e64409f1dbfcbb2b535a87b14ee">Save</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pFilePath=nullptr)</td></tr>
+<tr class="memdesc:a36fb5e64409f1dbfcbb2b535a87b14ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current document at the current document path or the specified document path.  <a href="class_f_c_document.html#a36fb5e64409f1dbfcbb2b535a87b14ee">More...</a><br /></td></tr>
+<tr class="separator:a36fb5e64409f1dbfcbb2b535a87b14ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6c528665f01121b896bf7e107620b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6">Open</a> (const <a class="el" href="class_f_c_string.html">FCString</a> *pFilePath, bool createwindow, const <a class="el" href="class_f_c_string.html">FCString</a> *pUndoString, bool saveedits, bool addtorecents, bool hidedialogs, _state_ptr S=nullptr)</td></tr>
 <tr class="memdesc:aff6c528665f01121b896bf7e107620b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file as a new Finale document. The new document automatically gets editing focus. This is the equivalent of calling <a class="el" href="class_f_c_document.html#ac2521d2bb92650b55e6f09d0cac9a781" title="Switch document focus to this document and start a new undo/redo record, without closing the previous...">SwitchTo</a>. That means that any call to <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> should be balanced with a call to <a class="el" href="class_f_c_document.html#a882a2b7f15e057971c2aa88bc4cba6c5" title="Ends the started edit block and switch back to the previous document.">SwitchBack</a>, even if the call to <a class="el" href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6" title="Opens a file as a new Finale document. The new document automatically gets editing focus....">Open</a> fails.  <a href="class_f_c_document.html#aff6c528665f01121b896bf7e107620b6">More...</a><br /></td></tr>
 <tr class="separator:aff6c528665f01121b896bf7e107620b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -762,8 +762,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the full path of the document in a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object. </p>
-<p >Please note that untitled documents are treated differently between the platforms. On the Mac, an untitled document will result in an empty string. On Windows, an untitled document will result in the document window name.</p>
-<p >Lua-supported. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Please note that untitled documents are treated differently between the platforms. On macOS, depending on the Finale version, an untitled document may result in an empty string or the document window name relative to <code>./</code>. On Windows, an untitled document results in the document window name.</dd></dl>
+<p>Lua-supported. </p>
 
 </div>
 </div>
@@ -972,8 +972,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a7490f9f875efbf45af3173b9355bbdbf" name="a7490f9f875efbf45af3173b9355bbdbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7490f9f875efbf45af3173b9355bbdbf">&#9670;&nbsp;</a></span>Save()</h2>
+<a id="a36fb5e64409f1dbfcbb2b535a87b14ee" name="a36fb5e64409f1dbfcbb2b535a87b14ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fb5e64409f1dbfcbb2b535a87b14ee">&#9670;&nbsp;</a></span>Save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -981,14 +981,22 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool FCDocument::Save </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="class_f_c_string.html">FCString</a> *&#160;</td>
+          <td class="paramname"><em>pFilePath</em> = <code>nullptr</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Saves the current document at the current document path. </p>
-<p >Lua-supported.</p>
+<p>Saves the current document at the current document path or the specified document path. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If you specify a new file location, the file is moved to that location and may be removed from the previous location. Finale's behavior is not 100% consistent in this regard. It appears that if the new location already exists, it is overwritten but the previous location is preserved. However, if the new location does <em>not</em> already exist, the previous location is removed.</dd></dl>
+<p>Lua-supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pFilePath</td><td>[optional] the full path and file name where to save the document. (Not available before 0.76.) </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the document was successfully saved to disk. </dd></dl>
 
 </div>
@@ -1154,7 +1162,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2024 07:28:12 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+Generated on Sat Nov 2 2024 14:57:55 for Finale PDK Framework by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
 </small></address>
 </body>
 </html>
