@@ -1,0 +1,27 @@
+var class_f_c_beat_chart_element =
+[
+    [ "FCBeatChartElement", "class_f_c_beat_chart_element.html#ac5533a5cfbf4dfbc41d38ce3cde3bb2d", null ],
+    [ "CalcWidth", "class_f_c_beat_chart_element.html#adf953ca692736487bfcc0f75960c9c86", null ],
+    [ "ClassName", "class_f_c_beat_chart_element.html#a6603ec3dcad2a9780cd6670a54bf5e94", null ],
+    [ "DebugDump", "class_f_c_beat_chart_element.html#aeba4106ff477dd330dfb884caea7b28f", null ],
+    [ "GetClassID", "class_f_c_beat_chart_element.html#ab2483510c2e736ab8214344df42aea89", null ],
+    [ "GetFullSpan", "class_f_c_beat_chart_element.html#ae4f30ff9426812c360e6173e330fb0a5", null ],
+    [ "GetHorizontalPosition", "class_f_c_beat_chart_element.html#a9c99a0e2a4c08298c1aa7899faa51421", null ],
+    [ "GetInitElement", "class_f_c_beat_chart_element.html#a77779959414bae98cd9bf7b1b03ed958", null ],
+    [ "GetMeasurePos", "class_f_c_beat_chart_element.html#ad9769d6394ee3337c15e3799c97e3f70", null ],
+    [ "GetMinimumPosition", "class_f_c_beat_chart_element.html#a0e2426f607986ab126da80f3bc099811", null ],
+    [ "GetMinimumWidth", "class_f_c_beat_chart_element.html#abba8089f3223cad346d109898bb7d46d", null ],
+    [ "GetNextHorizontalPosition", "class_f_c_beat_chart_element.html#aa0efceac694fe646ca67bda7d478cae5", null ],
+    [ "GetReferenceWidth", "class_f_c_beat_chart_element.html#a645ee5f390c601b04640bdf5b27d01ee", null ],
+    [ "GetTotalDuration", "class_f_c_beat_chart_element.html#abb17da97b98af40b4b781b2ba0bf8e9f", null ],
+    [ "MoveHorizontalPosition", "class_f_c_beat_chart_element.html#ac9292d936679617068b1e85cd3a4e2e2", null ],
+    [ "SetFullSpan", "class_f_c_beat_chart_element.html#a99b65c17d081a722cdd2076166f9169a", null ],
+    [ "SetHorizontalPosition", "class_f_c_beat_chart_element.html#a70db4e23f38ed662028a8fec709fd3df", null ],
+    [ "SetMeasurePos", "class_f_c_beat_chart_element.html#aa15a4d50ef8244a4632716f50b251d91", null ],
+    [ "SetMinimumPosition", "class_f_c_beat_chart_element.html#a3e4cf626d524104d865b1ad0dc900484", null ],
+    [ "SetMinimumWidth", "class_f_c_beat_chart_element.html#ad57c2e343179953f06254eeac03d13c1", null ],
+    [ "SetNextHorizontalPosition", "class_f_c_beat_chart_element.html#a14e2452bc3c138b850c3c9741bb0cefe", null ],
+    [ "SetReferenceWidth", "class_f_c_beat_chart_element.html#ae35247bc90f0891044fbcc47458c8193", null ],
+    [ "SetTotalDuration", "class_f_c_beat_chart_element.html#af7141cd68010debb9776e17bbffb33d2", null ],
+    [ "SetWidth", "class_f_c_beat_chart_element.html#af17b2204552d6eeb0f17c87b7623e5bc", null ]
+];

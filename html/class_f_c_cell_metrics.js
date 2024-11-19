@@ -1,0 +1,27 @@
+var class_f_c_cell_metrics =
+[
+    [ "FCCellMetrics", "class_f_c_cell_metrics.html#aef5d18bd709f4fafae9cb851110f966d", null ],
+    [ "ClassName", "class_f_c_cell_metrics.html#a7838bcf848b2c8cfb718c25d68b276b1", null ],
+    [ "DebugDump", "class_f_c_cell_metrics.html#a1bd5189252e29c1c568e3a1930372fd6", null ],
+    [ "FreeMetrics", "class_f_c_cell_metrics.html#a3227c2b9b902e8e3b49ea4c7c6027378", null ],
+    [ "GetAttachment", "class_f_c_cell_metrics.html#a6a2b78ad525172f3562c7a57febf4d87", null ],
+    [ "GetAttachmentCount", "class_f_c_cell_metrics.html#a80957afa18da9e75959f9e2288e4fafc", null ],
+    [ "GetBackRepeatWidth", "class_f_c_cell_metrics.html#a7959e64fb7fbe2a6083b05ef14add57c", null ],
+    [ "GetBottomStafflinePos", "class_f_c_cell_metrics.html#a7c783336df148b7a3969dc982de6aadf", null ],
+    [ "GetFrontRepeatWidth", "class_f_c_cell_metrics.html#abc91ccdbd08ff048f13c05172e103828", null ],
+    [ "GetHorizontalStretch", "class_f_c_cell_metrics.html#af4057418a7d9bb0ecf15ee2ac9d89b00", null ],
+    [ "GetLeftEdge", "class_f_c_cell_metrics.html#a8bd94bb524a4d5877b7c974cf5a5233c", null ],
+    [ "GetMusicStartPos", "class_f_c_cell_metrics.html#a15e8490ad10afd1f6a8821bdf84f7779", null ],
+    [ "GetMusicWidth", "class_f_c_cell_metrics.html#ae16321d80cf2f1edf346776f54197b18", null ],
+    [ "GetReferenceLinePos", "class_f_c_cell_metrics.html#a284bcc07432176f6b7dc5fef746d688b", null ],
+    [ "GetRightBarlineWidth", "class_f_c_cell_metrics.html#aabed8702b334ee141ceb643d2a4ab055", null ],
+    [ "GetSlotNumber", "class_f_c_cell_metrics.html#abf024f9458e5ce6d274e0ae5fd48d64c", null ],
+    [ "GetStaffScaling", "class_f_c_cell_metrics.html#a70ba11b4193e1575c7a0ee0607f85cf0", null ],
+    [ "GetStaffSystem", "class_f_c_cell_metrics.html#a6332250eb0e43b37aa9b23123b58b45f", null ],
+    [ "GetSystemScaling", "class_f_c_cell_metrics.html#a908a2078ae9ef2861dba9dc3edf1c69a", null ],
+    [ "GetSystemTopPos", "class_f_c_cell_metrics.html#a1b6c71be290b48d72da708e6cac425fd", null ],
+    [ "GetTopStafflinePos", "class_f_c_cell_metrics.html#a9122060cc11f2caae25f319dd59c56ef", null ],
+    [ "GetWidth", "class_f_c_cell_metrics.html#a0af412de5ed7a9ccf19aa9ca1d684e45", null ],
+    [ "LoadAtCell", "class_f_c_cell_metrics.html#a9a7db5d1a658b47335690a13dc319636", null ],
+    [ "LoadAtEntry", "class_f_c_cell_metrics.html#a0b0a63c5c1ea077b3668ae5fe4cff539", null ]
+];
