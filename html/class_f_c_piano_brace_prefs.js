@@ -1,0 +1,28 @@
+var class_f_c_piano_brace_prefs =
+[
+    [ "FCPianoBracePrefs", "class_f_c_piano_brace_prefs.html#a476452744b691302f1be43d7f1f7e38b", null ],
+    [ "ClassName", "class_f_c_piano_brace_prefs.html#aa93795e8e8cb7f662dabff8ba6af29fa", null ],
+    [ "GetCenterThickness", "class_f_c_piano_brace_prefs.html#a0a862f26187d27736c888fa98be36707", null ],
+    [ "GetClassID", "class_f_c_piano_brace_prefs.html#aa482f0f3a98af228644c1fa375dbe17c", null ],
+    [ "GetHorizontalInnerBody", "class_f_c_piano_brace_prefs.html#af36ccd54296f8c71d01c822917fa9304", null ],
+    [ "GetHorizontalInnerTip", "class_f_c_piano_brace_prefs.html#a281c5492bc41df67ce6fea28a7219afe", null ],
+    [ "GetHorizontalOuterBody", "class_f_c_piano_brace_prefs.html#ab5ef58cbd57755ae78de7cfd1380cd08", null ],
+    [ "GetHorizontalOuterTip", "class_f_c_piano_brace_prefs.html#a1b00fe7382fa764b6d4d1015eaa3a4d0", null ],
+    [ "GetTipThickness", "class_f_c_piano_brace_prefs.html#a216fd6eaac09f02e2d13ff3d638fe9bb", null ],
+    [ "GetVerticalInnerBody", "class_f_c_piano_brace_prefs.html#a2846f48d8b41e1221b08cfc8d0738313", null ],
+    [ "GetVerticalInnerTip", "class_f_c_piano_brace_prefs.html#a80295b116533be33622ef7ec07be999f", null ],
+    [ "GetVerticalOuterBody", "class_f_c_piano_brace_prefs.html#af918697280d90350914348ecc6808bda", null ],
+    [ "GetVerticalOuterTip", "class_f_c_piano_brace_prefs.html#a88c2ff14eaef177fe158bae8b865b7e0", null ],
+    [ "GetWidth", "class_f_c_piano_brace_prefs.html#ab5224a4e073e016d112d02e3b06fd77f", null ],
+    [ "SetCenterThickness", "class_f_c_piano_brace_prefs.html#a2ff6b9a9f75edb5cd229831e153876a3", null ],
+    [ "SetHorizontalInnerBody", "class_f_c_piano_brace_prefs.html#a15f1f448582223e2b361d2f7910f536a", null ],
+    [ "SetHorizontalInnerTip", "class_f_c_piano_brace_prefs.html#af16d406548acf2e924eaa8976479b4b1", null ],
+    [ "SetHorizontalOuterBody", "class_f_c_piano_brace_prefs.html#a9fe25e05e5e188e81651437e8100aa19", null ],
+    [ "SetHorizontalOuterTip", "class_f_c_piano_brace_prefs.html#a9b34d720f432533ac70882e9346fd59e", null ],
+    [ "SetTipThickness", "class_f_c_piano_brace_prefs.html#aee6034a9588986671bdbe7d467790ed0", null ],
+    [ "SetVerticalInnerBody", "class_f_c_piano_brace_prefs.html#af214eec41c30aeda03278a20466ab783", null ],
+    [ "SetVerticalInnerTip", "class_f_c_piano_brace_prefs.html#af59fe3b24eed74fd04a008e9804a4974", null ],
+    [ "SetVerticalOuterBody", "class_f_c_piano_brace_prefs.html#ab77b5cd4ee0d7f9d397572e7279119ad", null ],
+    [ "SetVerticalOuterTip", "class_f_c_piano_brace_prefs.html#afba37d9f32f0c5b3c88b7e079a6e5e6c", null ],
+    [ "SetWidth", "class_f_c_piano_brace_prefs.html#a30d8a160c6e23a9b7dae1949f763c702", null ]
+];

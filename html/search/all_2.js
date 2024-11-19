@@ -28,5 +28,6 @@ var searchData=
   ['bookmarktype_5fpageview_25',['BOOKMARKTYPE_PAGEVIEW',['../class_f_c_bookmark.html#abb6a579d5da333d002471d01e1ff6b61a2d0889fea7aafe4ebcea8e9ac001db21',1,'FCBookmark']]],
   ['bookmarktype_5fscrollview_26',['BOOKMARKTYPE_SCROLLVIEW',['../class_f_c_bookmark.html#abb6a579d5da333d002471d01e1ff6b61a2e7f7e0804e48c6499f37418416c4c8f',1,'FCBookmark']]],
   ['bookmarktypes_27',['BOOKMARKTYPES',['../class_f_c_bookmark.html#abb6a579d5da333d002471d01e1ff6b61',1,'FCBookmark']]],
-  ['bracketmode_28',['BRACKETMODE',['../class_f_c_tuplet.html#a9c9277a5374761bbe20d3035e860e847',1,'FCTuplet']]]
+  ['bracketmode_28',['BRACKETMODE',['../class_f_c_tuplet.html#a9c9277a5374761bbe20d3035e860e847',1,'FCTuplet']]],
+  ['browser_20classes_29',['Data Browser Classes',['../group__data__browsers.html',1,'']]]
 ];

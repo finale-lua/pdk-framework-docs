@@ -1,0 +1,27 @@
+var class_f_c_p_d_f_page =
+[
+    [ "FCPDFPage", "class_f_c_p_d_f_page.html#a6e6b4f7e54c90ed8c9a430ec16731672", null ],
+    [ "DrawBlackBorderRect", "class_f_c_p_d_f_page.html#af600dbe6a1c4f3d79b1d44207194cd52", null ],
+    [ "DrawBlackLine", "class_f_c_p_d_f_page.html#ac19583e6e175890f2cec016adc96326b", null ],
+    [ "DrawLine", "class_f_c_p_d_f_page.html#a0d5d53f08dc03be0c1f3d8bc884d3a6b", null ],
+    [ "DrawString", "class_f_c_p_d_f_page.html#ad306db58fe3c358d12bb22c547347383", null ],
+    [ "DrawTextRect", "class_f_c_p_d_f_page.html#a263cb5d06d823486dee24f2b54d8bc8f", null ],
+    [ "GetGrayFill", "class_f_c_p_d_f_page.html#a64c5c3a7c4f433767761752ae190c06b", null ],
+    [ "GetGrayStroke", "class_f_c_p_d_f_page.html#ae09d0000b6c6ed9cf2dda3d52bea5e0a", null ],
+    [ "GetHeight", "class_f_c_p_d_f_page.html#a6ed5a9664aef8a7901fcd7924934e4a3", null ],
+    [ "GetInnerBottom", "class_f_c_p_d_f_page.html#a9f8c5cf9a52aaa482d4e2ce1091af0a5", null ],
+    [ "GetInnerLeft", "class_f_c_p_d_f_page.html#a5cffcfc47a132bc2f8283d497e4445af", null ],
+    [ "GetInnerRight", "class_f_c_p_d_f_page.html#a14bd3e77ffd888d35e63115434964a4c", null ],
+    [ "GetInnerTop", "class_f_c_p_d_f_page.html#ab98e703eafc2c0f2598618075d10ff2b", null ],
+    [ "GetLastTextPosX", "class_f_c_p_d_f_page.html#a86f49a1566ceae083ec21f5ad26b6886", null ],
+    [ "GetLastTextPosY", "class_f_c_p_d_f_page.html#ad85d62211930470686beb879a425ff71", null ],
+    [ "GetLineWidth", "class_f_c_p_d_f_page.html#a9dde35c20201d699aacc7915e55f34e6", null ],
+    [ "GetWidth", "class_f_c_p_d_f_page.html#acbaa173d910a5e2728cdfef9d0e0158d", null ],
+    [ "SetFontAndSize", "class_f_c_p_d_f_page.html#aeb2c08c122ed66396823f4f1a4c8e271", null ],
+    [ "SetGrayFill", "class_f_c_p_d_f_page.html#a111466faaa156f2e12ff4799292c732d", null ],
+    [ "SetGrayStroke", "class_f_c_p_d_f_page.html#ab4c56b12f256c1fd310437ce90ab2474", null ],
+    [ "SetHeight", "class_f_c_p_d_f_page.html#a126a458f270c7c7a9929f4dcc0239dbd", null ],
+    [ "SetLineWidth", "class_f_c_p_d_f_page.html#a17b8e84280d93872663a8a6c3b9a94b0", null ],
+    [ "SetMargins", "class_f_c_p_d_f_page.html#a88e851f7718fa1f329c3ac183b7ced2b", null ],
+    [ "SetWidth", "class_f_c_p_d_f_page.html#ae28eb425571bd46ef379dc30a6bc3730", null ]
+];

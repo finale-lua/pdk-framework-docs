@@ -1,0 +1,28 @@
+var class_f_c_shape_def_instructions =
+[
+    [ "AddBracket", "class_f_c_shape_def_instructions.html#ae41730708bbe7febaa2cf93fe3938671", null ],
+    [ "AddClosePath", "class_f_c_shape_def_instructions.html#a70d517ec111efe60fd7ee084f3b79c1c", null ],
+    [ "AddCurveTo", "class_f_c_shape_def_instructions.html#a34e9c7b825b39343456545b6eda14133", null ],
+    [ "AddCurveToDetails", "class_f_c_shape_def_instructions.html#a204fc139ddf3fc8103cebcdfb8a540f2", null ],
+    [ "AddDrawChar", "class_f_c_shape_def_instructions.html#a3d7559631ea71a4db459f7385d60f359", null ],
+    [ "AddDrawChars", "class_f_c_shape_def_instructions.html#afcc5842744d55e765092501610ad888e", null ],
+    [ "AddDrawCharsString", "class_f_c_shape_def_instructions.html#af7dcb6ed2e7ed5896d81a2f6e0b3edf4", null ],
+    [ "AddEllipse", "class_f_c_shape_def_instructions.html#a8f3d96f713bc116395e95d064fd7864e", null ],
+    [ "AddEndGroup", "class_f_c_shape_def_instructions.html#ab8399e5959a36777d450014c2f6123a8", null ],
+    [ "AddFillSolid", "class_f_c_shape_def_instructions.html#ab470b18a5a756281e501219da6d2b9fc", null ],
+    [ "AddLineWidth", "class_f_c_shape_def_instructions.html#aa74f67142bda9c0ea9625b2e4f5da931", null ],
+    [ "AddNull", "class_f_c_shape_def_instructions.html#aa9d62c5ca19b13a74b42bd83a45a989d", null ],
+    [ "AddRectangle", "class_f_c_shape_def_instructions.html#aeddeb77e342592c8a26834e9c433ed62", null ],
+    [ "AddRLineTo", "class_f_c_shape_def_instructions.html#a91aef77d0723746e66418aba8a468e64", null ],
+    [ "AddRMoveTo", "class_f_c_shape_def_instructions.html#a8ccfdec5efc883da6942e102fd3f0dc6", null ],
+    [ "AddSetDash", "class_f_c_shape_def_instructions.html#a3b1d03ad4c4e8a9d5045d8545b1042cb", null ],
+    [ "AddSetFont", "class_f_c_shape_def_instructions.html#a78c57671033defe9379da7173d2a43c3", null ],
+    [ "AddSetGrey", "class_f_c_shape_def_instructions.html#a1cee399f4e68e135f572d467e028b891", null ],
+    [ "AddSlur", "class_f_c_shape_def_instructions.html#adf03df3dcf65c945db12e8251d1e5644", null ],
+    [ "AddSolidLineStyle", "class_f_c_shape_def_instructions.html#a8f455682864da243021aeca207ea4ef9", null ],
+    [ "AddStartGroup", "class_f_c_shape_def_instructions.html#a07a916636f7492823011bb1ae74eb302", null ],
+    [ "AddStartObject", "class_f_c_shape_def_instructions.html#abe24124896d691cf5d93ca62e3d44bbf", null ],
+    [ "AddStroke", "class_f_c_shape_def_instructions.html#a794185ffeaebdf491f7d5fb0403e576d", null ],
+    [ "ClassName", "class_f_c_shape_def_instructions.html#a55645cfb5ec94e7a5f96c69a675a7088", null ],
+    [ "GetItemAt", "class_f_c_shape_def_instructions.html#a68fdd67a6980e72617991adb704f998a", null ]
+];

@@ -23,7 +23,7 @@ var searchData=
   ['textrepjust_5fleft_20',['TEXTREPJUST_LEFT',['../class_f_c_text_repeat_def.html#ad910e4c3f4272664ab899379c8a1654eabcf02a07121b4c4518e8ebe6fa8449e0',1,'FCTextRepeatDef']]],
   ['textrepjust_5fright_21',['TEXTREPJUST_RIGHT',['../class_f_c_text_repeat_def.html#ad910e4c3f4272664ab899379c8a1654eac07615da0d41c638edca4ab4ccbbfe88',1,'FCTextRepeatDef']]],
   ['textselectionchanged_22',['TextSelectionChanged',['../class_____f_c_user_window.html#a065f5f0a9c78c52d91b53ff744d92731',1,'__FCUserWindow::TextSelectionChanged()'],['../class_f_c_custom_lua_window.html#aa0e632f1a24899849b3600c03bc57219',1,'FCCustomLuaWindow::TextSelectionChanged()']]],
-  ['texttoclipboard_23',['TextToClipboard',['../class_f_c_u_i.html#a1a87597779f2130f9209c4cc357a2bdf',1,'FCUI::TextToClipboard()'],['../class_f_c_ctrl_text_editor.html#a8514e7341b853889c6679eced2a2d291',1,'FCCtrlTextEditor::TextToClipboard()']]],
+  ['texttoclipboard_23',['TextToClipboard',['../class_f_c_ctrl_text_editor.html#a8514e7341b853889c6679eced2a2d291',1,'FCCtrlTextEditor::TextToClipboard()'],['../class_f_c_u_i.html#a1a87597779f2130f9209c4cc357a2bdf',1,'FCUI::TextToClipboard(const char *pszText)']]],
   ['texttoclipboardutf8_24',['TextToClipboardUTF8',['../class_f_c_u_i.html#ac31f85aa8cf9f40a9d11582ffd845c14',1,'FCUI']]],
   ['textvertalign_5fbottom_25',['TEXTVERTALIGN_BOTTOM',['../class_f_c_page_text.html#aad2672cbd757582abe95c7406959b278a466366ec0bff35f81da804d5a7a7a816',1,'FCPageText']]],
   ['textvertalign_5fcenter_26',['TEXTVERTALIGN_CENTER',['../class_f_c_page_text.html#aad2672cbd757582abe95c7406959b278a910d48047e564ffa97fcd841b210130c',1,'FCPageText']]],

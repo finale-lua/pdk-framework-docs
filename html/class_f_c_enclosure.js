@@ -1,0 +1,47 @@
+var class_f_c_enclosure =
+[
+    [ "ENCLOSUREMODES", "class_f_c_enclosure.html#a109c0798d731a1b7db0964b2883c2ebb", [
+      [ "ENCLOSUREMODE_NONE", "class_f_c_enclosure.html#a109c0798d731a1b7db0964b2883c2ebba8dc8252b7c8ad5bbf77bcc76b8aabf93", null ],
+      [ "ENCLOSUREMODE_MINWIDTH", "class_f_c_enclosure.html#a109c0798d731a1b7db0964b2883c2ebba829b517e0a2a44124ff966972bb3eec1", null ],
+      [ "ENCLOSUREMODE_MATCHDIMENSIONS", "class_f_c_enclosure.html#a109c0798d731a1b7db0964b2883c2ebba9defa7758eaaab9a7f0eb854fe2cb1d4", null ]
+    ] ],
+    [ "ENCLOSURESHAPE", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399", [
+      [ "ENCLOSURE_NONE", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399ab9d02ac9b1761adc229c7ade612e14ab", null ],
+      [ "ENCLOSURE_RECTANGLE", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399a76ea93b976afae52273ead5a3e13e40c", null ],
+      [ "ENCLOSURE_ELLIPSE", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399a0e4044d06d42a7debeba482c78beae1b", null ],
+      [ "ENCLOSURE_TRIANGLE", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399a6ef98f59631f7a6e839403fcba930ecc", null ],
+      [ "ENCLOSURE_DIAMOND", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399a20b287d822f7287bd864f507f0230171", null ],
+      [ "ENCLOSURE_PENTAGON", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399a0f22278ea58c73fe16639db3d0758eae", null ],
+      [ "ENCLOSURE_HEXAGON", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399af7c0211d9320b2421191cda9791e5863", null ],
+      [ "ENCLOSURE_SEPTAGON", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399ae77e9503b21e45d345f713d01182150f", null ],
+      [ "ENCLOSURE_OCTAGON", "class_f_c_enclosure.html#abd2d0bb2e9f9f5aa9f99f43eefcae399a2f86479fc23018258cdb31dd7fb54e2f", null ]
+    ] ],
+    [ "FCEnclosure", "class_f_c_enclosure.html#af50427bf26f7554b72157ae297fe6050", null ],
+    [ "_AssignEDTEnclosure", "class_f_c_enclosure.html#a6cea6cfa345c55b30aa83c4ce16cf08e", null ],
+    [ "ClassName", "class_f_c_enclosure.html#a821c70d3da2aa35f87a8da972ae08114", null ],
+    [ "DebugDump", "class_f_c_enclosure.html#aa5d0e252b9da04d401c55e4fd9e9e0d9", null ],
+    [ "GetClassID", "class_f_c_enclosure.html#a4055a86bf58609a76820aa6deda6b788", null ],
+    [ "GetFixedSize", "class_f_c_enclosure.html#a787715009518cee76a57697f6b45fe62", null ],
+    [ "GetHorizontalMargin", "class_f_c_enclosure.html#adeb7dfea60fc7d62c6c45775a1333c7e", null ],
+    [ "GetHorizontalOffset", "class_f_c_enclosure.html#a8ccf94f4738b4d38a070f4f57a8fe284", null ],
+    [ "GetLineWidth", "class_f_c_enclosure.html#a021e9c20306819e8f1d7617d834d9a87", null ],
+    [ "GetMode", "class_f_c_enclosure.html#ac9121ba21babbcab2d77670a04d724ad", null ],
+    [ "GetOpaque", "class_f_c_enclosure.html#a231c5a1773a65ddd49747a2767d48752", null ],
+    [ "GetRoundedCornerRadius", "class_f_c_enclosure.html#aea8d5d7507be88e520aa231852aa55f6", null ],
+    [ "GetRoundedCorners", "class_f_c_enclosure.html#abafb14cc6f87585ba6406adcc78bdcfd", null ],
+    [ "GetShape", "class_f_c_enclosure.html#a8ccd05295833728df0af49587b0dd194", null ],
+    [ "GetVerticalMargin", "class_f_c_enclosure.html#af50f704ea2437e28f3a0fe09c2e79969", null ],
+    [ "GetVerticalOffset", "class_f_c_enclosure.html#accbc1878f589ec8ea8daf50b5065e4c0", null ],
+    [ "SaveAs", "class_f_c_enclosure.html#a1ab13a17bc456b32868630f5ce0384bb", null ],
+    [ "SetFixedSize", "class_f_c_enclosure.html#a8ae0f82ef92399926546d401737104cd", null ],
+    [ "SetHorizontalMargin", "class_f_c_enclosure.html#a63e4af6a432430734e514085f75dbd8c", null ],
+    [ "SetHorizontalOffset", "class_f_c_enclosure.html#a148c536635e468cfedcb2c98492e3b52", null ],
+    [ "SetLineWidth", "class_f_c_enclosure.html#a8e910998b8837fc8c57a04e60e9d75e8", null ],
+    [ "SetMode", "class_f_c_enclosure.html#a05ffdaf135cc9f1858429458a6d11a55", null ],
+    [ "SetOpaque", "class_f_c_enclosure.html#a05ead4a5104f24c488380b6109dcec8d", null ],
+    [ "SetRoundedCornerRadius", "class_f_c_enclosure.html#a0dadf720df366fd676d9165f58687595", null ],
+    [ "SetRoundedCorners", "class_f_c_enclosure.html#a46f2ef8d443bfd1ff0133c33b6360b5e", null ],
+    [ "SetShape", "class_f_c_enclosure.html#af12f55fcae66ea99ba65c3b65707eae7", null ],
+    [ "SetVerticalMargin", "class_f_c_enclosure.html#ab671f4abfbb0d16d1939c80516818573", null ],
+    [ "SetVerticalOffset", "class_f_c_enclosure.html#a6ad58b76e453b95928d0aaf978eec81b", null ]
+];
