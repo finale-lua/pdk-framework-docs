@@ -30,9 +30,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.77</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.78</span>
    </div>
-   <div id="projectbrief">Power Up Your Finale Music Software</div>
+   <div id="projectbrief">Lua Power for Finale Music Software</div>
   </td>
  </tr>
  </tbody>
@@ -2137,7 +2137,7 @@ $(function(){initNavTree('ff__celldetails_8h_source.html',''); initResizable(tru
 <div class="ttc" id="aclass_____f_c_no_inci_cell_detail_html_a86e084539b1448b89248c3c0c36e41b1"><div class="ttname"><a href="class_____f_c_no_inci_cell_detail.html#a86e084539b1448b89248c3c0c36e41b1">__FCNoInciCellDetail::Load</a></div><div class="ttdeci">bool Load()</div><div class="ttdoc">Loads the data for the connected cell. Make sure to call ConnectCell first.</div><div class="ttdef"><b>Definition</b> ff_celldetails.h:173</div></div>
 <div class="ttc" id="aclass_____f_c_no_inci_cell_detail_html_aa07bb11131ff68ae1c28a096ec74947e"><div class="ttname"><a href="class_____f_c_no_inci_cell_detail.html#aa07bb11131ff68ae1c28a096ec74947e">__FCNoInciCellDetail::ClassName</a></div><div class="ttdeci">const char * ClassName() const override</div><div class="ttdoc">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child...</div><div class="ttdef"><b>Definition</b> ff_celldetails.h:163</div></div>
 <div class="ttc" id="aclass_____f_c_no_inci_other_html_a1429959c85002c3a59b0f156c03ad3fb"><div class="ttname"><a href="class_____f_c_no_inci_other.html#a1429959c85002c3a59b0f156c03ad3fb">__FCNoInciOther::Load</a></div><div class="ttdeci">virtual bool Load(CMPER itemno)</div><div class="ttdoc">Loads the indicated item.</div><div class="ttdef"><b>Definition</b> finaleframework.cpp:4719</div></div>
-<div class="ttc" id="aclass_f_c_cell_clef_change_html"><div class="ttname"><a href="class_f_c_cell_clef_change.html">FCCellClefChange</a></div><div class="ttdoc">Contains a clef change inside a cell. This is an item member in a FCCellClefChanges collection (creat...</div><div class="ttdef"><b>Definition</b> ff_other.h:25850</div></div>
+<div class="ttc" id="aclass_f_c_cell_clef_change_html"><div class="ttname"><a href="class_f_c_cell_clef_change.html">FCCellClefChange</a></div><div class="ttdoc">Contains a clef change inside a cell. This is an item member in a FCCellClefChanges collection (creat...</div><div class="ttdef"><b>Definition</b> ff_other.h:25870</div></div>
 <div class="ttc" id="aclass_f_c_cell_clef_changes_html"><div class="ttname"><a href="class_f_c_cell_clef_changes.html">FCCellClefChanges</a></div><div class="ttdoc">Collection class for FCCellClefChange class objects, containing all mid-clef changes in a cell.</div><div class="ttdef"><b>Definition</b> ff_othercollection.h:2247</div></div>
 <div class="ttc" id="aclass_f_c_cell_frame_hold_html"><div class="ttname"><a href="class_f_c_cell_frame_hold.html">FCCellFrameHold</a></div><div class="ttdoc">Class that holds the TGF frames and the clef changes of a TGF frame.</div><div class="ttdef"><b>Definition</b> ff_celldetails.h:956</div></div>
 <div class="ttc" id="aclass_f_c_cell_frame_hold_html_a05147ddf2a1d7cdea937dbbf432407ad"><div class="ttname"><a href="class_f_c_cell_frame_hold.html#a05147ddf2a1d7cdea937dbbf432407ad">FCCellFrameHold::MakeCellSingleClef</a></div><div class="ttdeci">bool MakeCellSingleClef(const FCCellClefChange *pClefInfo=nullptr)</div><div class="ttdoc">Converts the current FCCellFrameHold instance to single-clef, using the input FCCellClefChange....</div><div class="ttdef"><b>Definition</b> finaleframework.cpp:22451</div></div>
@@ -2289,7 +2289,7 @@ $(function(){initNavTree('ff__celldetails_8h_source.html',''); initResizable(tru
 <div class="ttc" id="aclass_f_c_chords_html_abcf4b4ade4f3caa9db70dbc88d10fc00"><div class="ttname"><a href="class_f_c_chords.html#abcf4b4ade4f3caa9db70dbc88d10fc00">FCChords::ClassName</a></div><div class="ttdeci">const char * ClassName() const override</div><div class="ttdoc">Returns the name of the class, for diagnostic purposes. This method MUST be overwritten in each child...</div><div class="ttdef"><b>Definition</b> ff_celldetails.h:2542</div></div>
 <div class="ttc" id="aclass_f_c_enclosure_html"><div class="ttname"><a href="class_f_c_enclosure.html">FCEnclosure</a></div><div class="ttdoc">Class to encapsulate enclosures (available for example in expressions and measure numbers....</div><div class="ttdef"><b>Definition</b> ff_other.h:2872</div></div>
 <div class="ttc" id="aclass_f_c_enclosure_html_a6cea6cfa345c55b30aa83c4ce16cf08e"><div class="ttname"><a href="class_f_c_enclosure.html#a6cea6cfa345c55b30aa83c4ce16cf08e">FCEnclosure::_AssignEDTEnclosure</a></div><div class="ttdeci">void _AssignEDTEnclosure(void *pPointer)</div><div class="ttdoc">For internal use ONLY! Assigns enclosure data to the class (for structures that doesn't load their ow...</div><div class="ttdef"><b>Definition</b> ff_other.h:3070</div></div>
-<div class="ttc" id="aclass_f_c_fretboard_group_def_html"><div class="ttname"><a href="class_f_c_fretboard_group_def.html">FCFretboardGroupDef</a></div><div class="ttdoc">Class that stores one record of a fretboard chord definition.</div><div class="ttdef"><b>Definition</b> ff_other.h:22540</div></div>
+<div class="ttc" id="aclass_f_c_fretboard_group_def_html"><div class="ttname"><a href="class_f_c_fretboard_group_def.html">FCFretboardGroupDef</a></div><div class="ttdoc">Class that stores one record of a fretboard chord definition.</div><div class="ttdef"><b>Definition</b> ff_other.h:22560</div></div>
 <div class="ttc" id="aclass_f_c_independent_cell_detail_html"><div class="ttname"><a href="class_f_c_independent_cell_detail.html">FCIndependentCellDetail</a></div><div class="ttdoc">Class that contains independent key/time signatures for a cell.</div><div class="ttdef"><b>Definition</b> ff_celldetails.h:2568</div></div>
 <div class="ttc" id="aclass_f_c_independent_cell_detail_html_a05c0469c7981629a7fbef4d7c5e4c1f2"><div class="ttname"><a href="class_f_c_independent_cell_detail.html#a05c0469c7981629a7fbef4d7c5e4c1f2">FCIndependentCellDetail::FCIndependentCellDetail</a></div><div class="ttdeci">FCIndependentCellDetail()</div><div class="ttdoc">The constructor.</div><div class="ttdef"><b>Definition</b> ff_celldetails.h:2613</div></div>
 <div class="ttc" id="aclass_f_c_independent_cell_detail_html_a0825477c79dc1f6381584c65b91cd94e"><div class="ttname"><a href="class_f_c_independent_cell_detail.html#a0825477c79dc1f6381584c65b91cd94e">FCIndependentCellDetail::SetTimeSignatureBeatDuration</a></div><div class="ttdeci">void SetTimeSignatureBeatDuration(twobyte beatduration)</div><div class="ttdoc">Sets the beat duration for the time signature.</div><div class="ttdef"><b>Definition</b> finaleframework.cpp:22771</div></div>
@@ -2430,7 +2430,7 @@ $(function(){initNavTree('ff__celldetails_8h_source.html',''); initResizable(tru
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ff_celldetails.h</b></li>
-    <li class="footer">Generated on Tue Nov 19 2024 11:35:21 for Finale PDK Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Tue Dec 23 2025 10:46:17 for Finale PDK Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

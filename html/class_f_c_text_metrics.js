@@ -18,7 +18,7 @@ var class_f_c_text_metrics =
     [ "GetRightPoints", "class_f_c_text_metrics.html#aa2dc491c88297dec4585fc057856ac52", null ],
     [ "GetTopEVPUs", "class_f_c_text_metrics.html#a2feccacb2f776555a69e7e74be49a1cd", null ],
     [ "GetTopPoints", "class_f_c_text_metrics.html#ab559729e72a1165ebe215a34c1dfbfdc", null ],
-    [ "LoadArticulation", "class_f_c_text_metrics.html#a49e6bb7da48e8425b5028298433cbd12", null ],
-    [ "LoadString", "class_f_c_text_metrics.html#a78ac3277f682be59e35437e623a54e2f", null ],
-    [ "LoadSymbol", "class_f_c_text_metrics.html#aeb1177c508d2f5d6ff46ab9d736509e5", null ]
+    [ "LoadArticulation", "class_f_c_text_metrics.html#add2699885131e78512f846ec8b40c392", null ],
+    [ "LoadString", "class_f_c_text_metrics.html#ac5826393ee7dc46c1ec5b076723dae85", null ],
+    [ "LoadSymbol", "class_f_c_text_metrics.html#a939b8b3a51237eb9e87743e654f5e039", null ]
 ];

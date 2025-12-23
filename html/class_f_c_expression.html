@@ -30,9 +30,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.77</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.78</span>
    </div>
-   <div id="projectbrief">Power Up Your Finale Music Software</div>
+   <div id="projectbrief">Lua Power for Finale Music Software</div>
   </td>
  </tr>
  </tbody>
@@ -399,6 +399,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b603c79a5a312144d42d60576cbe507" id="r_a0b603c79a5a312144d42d60576cbe507"><td class="memItemLeft" align="right" valign="top">twobyte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b603c79a5a312144d42d60576cbe507">GetGraceNoteIndex</a> () const</td></tr>
 <tr class="memdesc:a0b603c79a5a312144d42d60576cbe507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the grace note index that the expression is connected to.  <br /></td></tr>
 <tr class="separator:a0b603c79a5a312144d42d60576cbe507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095b3e68f6631fed67d75ee57f357bb6" id="r_a095b3e68f6631fed67d75ee57f357bb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a095b3e68f6631fed67d75ee57f357bb6">GetTracksVoice2</a> () const</td></tr>
+<tr class="memdesc:a095b3e68f6631fed67d75ee57f357bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the assignment tracks Voice 2.  <br /></td></tr>
+<tr class="separator:a095b3e68f6631fed67d75ee57f357bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dc40c8d4209b151f0f7038caaa8a10a" id="r_a9dc40c8d4209b151f0f7038caaa8a10a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dc40c8d4209b151f0f7038caaa8a10a">IsVisibleOnStaff</a> (twobyte staff)</td></tr>
 <tr class="memdesc:a9dc40c8d4209b151f0f7038caaa8a10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the expression is displayed on the staff. This method takes both individual expressions and staff lists into account.  <br /></td></tr>
 <tr class="separator:a9dc40c8d4209b151f0f7038caaa8a10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -474,6 +477,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8600982d0b958d0ffa795741c1c20782" id="r_a8600982d0b958d0ffa795741c1c20782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8600982d0b958d0ffa795741c1c20782">SetGraceNoteIndex</a> (twobyte index)</td></tr>
 <tr class="memdesc:a8600982d0b958d0ffa795741c1c20782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the grace note index, for when expression are connected to grace notes.  <br /></td></tr>
 <tr class="separator:a8600982d0b958d0ffa795741c1c20782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f8c7a0860367a477462e57085c0a67" id="r_a29f8c7a0860367a477462e57085c0a67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f8c7a0860367a477462e57085c0a67">SetTracksVoice2</a> (bool value)</td></tr>
+<tr class="memdesc:a29f8c7a0860367a477462e57085c0a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the assignment tracks Voice 2.  <br /></td></tr>
+<tr class="separator:a29f8c7a0860367a477462e57085c0a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa74b99375492caea9346af4238eda3c9" id="r_aa74b99375492caea9346af4238eda3c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa74b99375492caea9346af4238eda3c9">DebugDump</a> () override</td></tr>
 <tr class="memdesc:aa74b99375492caea9346af4238eda3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the class data/information for debugging purposes.  <br /></td></tr>
 <tr class="separator:aa74b99375492caea9346af4238eda3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1586,6 +1592,36 @@ slow.
 
 </div>
 </div>
+<a id="a095b3e68f6631fed67d75ee57f357bb6" name="a095b3e68f6631fed67d75ee57f357bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a095b3e68f6631fed67d75ee57f357bb6">&#9670;&#160;</a></span>GetTracksVoice2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FCExpression::GetTracksVoice2 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns if the assignment tracks Voice 2. </p>
+<p>Normally expression assignments track Voice 1 expressions only, but you can use this setting to have the expression track Voice 2 expressions instead. Finale does not provide a UI for this setting, but it uses it when upgrading a file from pre-Finale 2009 versions.</p>
+<p>Lua-supported (also as property) (0.78).</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the assignment tracks Voice 2. </dd></dl>
+
+</div>
+</div>
 <a id="add931590481a4605e080b0ded3f72b03" name="add931590481a4605e080b0ded3f72b03"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add931590481a4605e080b0ded3f72b03">&#9670;&#160;</a></span>GetVerticalPos()</h2>
 
@@ -2280,6 +2316,35 @@ slow.
 
 </div>
 </div>
+<a id="a29f8c7a0860367a477462e57085c0a67" name="a29f8c7a0860367a477462e57085c0a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f8c7a0860367a477462e57085c0a67">&#9670;&#160;</a></span>SetTracksVoice2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FCExpression::SetTracksVoice2 </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets if the assignment tracks Voice 2. </p>
+<p>See comments at <a class="el" href="#a095b3e68f6631fed67d75ee57f357bb6" title="Returns if the assignment tracks Voice 2.">GetTracksVoice2</a> for more information.</p>
+<p>Lua-supported (also as property) (0.78). </p>
+
+</div>
+</div>
 <a id="ac34ab6c3e53c01593b14a439e235fae1" name="ac34ab6c3e53c01593b14a439e235fae1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac34ab6c3e53c01593b14a439e235fae1">&#9670;&#160;</a></span>SetVerticalPos()</h2>
 
@@ -2374,7 +2439,7 @@ slow.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_f_c_expression.html">FCExpression</a></li>
-    <li class="footer">Generated on Tue Nov 19 2024 11:35:23 for Finale PDK Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Tue Dec 23 2025 10:46:19 for Finale PDK Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

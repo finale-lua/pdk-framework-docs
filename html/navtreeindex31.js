@@ -1,5 +1,9 @@
 var NAVTREEINDEX31 =
 {
+"class_f_c_part_extract_prefs.html#a79478ad4bf43f13a9f0aff441eee7408":[3,0,239,25],
+"class_f_c_part_extract_prefs.html#a7a36331ef680251a8a1cb06f26c65a49":[3,0,239,1],
+"class_f_c_part_extract_prefs.html#a7eb0b61ef399a557938a075536bab718":[3,0,239,23],
+"class_f_c_part_extract_prefs.html#a83b712046e4e14c942cce501617795bd":[3,0,239,2],
 "class_f_c_part_extract_prefs.html#a8a031739fe4924b36b30044425ed6e46":[3,0,239,27],
 "class_f_c_part_extract_prefs.html#a8e36b37d5ee6610d146b588203b985dd":[3,0,239,17],
 "class_f_c_part_extract_prefs.html#a90b85400aa68f618500b82e9257ffd22":[3,0,239,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX31 =
 "class_f_c_percussion_note_types.html#ac29f4cab30fedab236c3337a8645d5bc":[3,0,255,5],
 "class_f_c_percussion_note_types.html#acb8e43945aab60ecea78462a3df1e6de":[3,0,255,3],
 "class_f_c_percussion_note_types.html#ae75b2c3f6b76d04480da8e8dce962600":[3,0,255,2],
-"class_f_c_percussion_staff.html":[3,0,256],
-"class_f_c_percussion_staff.html#a05d7984195eebf4762b1a79356d43e21":[3,0,256,0],
-"class_f_c_percussion_staff.html#a1fe8d0ef5fb729d93667e67560656b7d":[3,0,256,3],
-"class_f_c_percussion_staff.html#a4a1010b0b5f7da6b5310be7ae6ad5c28":[3,0,256,5],
-"class_f_c_percussion_staff.html#a564a3acf8c0c9665f5b0ceef6df10f3a":[3,0,256,4]
+"class_f_c_percussion_staff.html":[3,0,256]
 };

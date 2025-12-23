@@ -33,6 +33,7 @@ var class_f_c_expression =
     [ "GetStaff", "class_f_c_expression.html#aba44e5a5e55f3835d8f3a0b6eb6bcf98", null ],
     [ "GetStaffGroupID", "class_f_c_expression.html#a2d517153d57604718f35fff513601d95", null ],
     [ "GetStaffListID", "class_f_c_expression.html#a624067f9fba16a7d1285cc98bac8c8a5", null ],
+    [ "GetTracksVoice2", "class_f_c_expression.html#a095b3e68f6631fed67d75ee57f357bb6", null ],
     [ "GetVerticalPos", "class_f_c_expression.html#add931590481a4605e080b0ded3f72b03", null ],
     [ "GetVisible", "class_f_c_expression.html#a0ef34444af61f91fe5f038092a396140", null ],
     [ "HasStaffValue", "class_f_c_expression.html#a5c2aa8b9e87c282ab2f5dfc3c1a17fdd", null ],
@@ -56,6 +57,7 @@ var class_f_c_expression =
     [ "SetStaff", "class_f_c_expression.html#adaa6a71c6513cf28fc6935e7629cfd7d", null ],
     [ "SetStaffGroupID", "class_f_c_expression.html#ae68fa8651351176ddb7f59625e39b0eb", null ],
     [ "SetStaffListID", "class_f_c_expression.html#a6fa02708c017af2102541d7a43ed8b44", null ],
+    [ "SetTracksVoice2", "class_f_c_expression.html#a29f8c7a0860367a477462e57085c0a67", null ],
     [ "SetVerticalPos", "class_f_c_expression.html#ac34ab6c3e53c01593b14a439e235fae1", null ],
     [ "SetVisible", "class_f_c_expression.html#a5f8bd5bfdb7de26edc12cb3875638eba", null ],
     [ "Tag", "class_f_c_expression.html#adfc0184adef03034c860b293c19bbe7b", null ]

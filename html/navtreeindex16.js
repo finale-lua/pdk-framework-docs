@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"class_f_c_font_info.html#a8e06a1afe5eda1ab3af3226c37f89970":[2,6,1,18],
+"class_f_c_font_info.html#a8fb1548783e617f2daec3b62b2d5888b":[2,6,1,3],
+"class_f_c_font_info.html#a904573e3711e03d0d7b12e1c045b72c6":[2,6,1,10],
+"class_f_c_font_info.html#a94ff24c0a6f189def5487a0e8d981aa9":[2,6,1,53],
 "class_f_c_font_info.html#a9bd88b1024ccee410fcc51ec3bdbca61":[2,6,1,38],
 "class_f_c_font_info.html#a9cf46e5a08a515012cc3bd6aa939af31":[2,6,1,12],
 "class_f_c_font_info.html#aa0a63dd78be20993380366d8272b47f9":[2,6,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "class_f_c_fretboard_style_def.html#a0b041cdf02e4552c93bfa63a9e8f99db":[2,0,58,32],
 "class_f_c_fretboard_style_def.html#a0b041cdf02e4552c93bfa63a9e8f99db":[2,6,126,32],
 "class_f_c_fretboard_style_def.html#a0ccf64f7084d5b6bc6604bd41860336e":[2,0,58,19],
-"class_f_c_fretboard_style_def.html#a0ccf64f7084d5b6bc6604bd41860336e":[2,6,126,19],
-"class_f_c_fretboard_style_def.html#a0ce196c8cb626fbd658ba0d0c4e7c0fd":[2,0,58,23],
-"class_f_c_fretboard_style_def.html#a0ce196c8cb626fbd658ba0d0c4e7c0fd":[2,6,126,23],
-"class_f_c_fretboard_style_def.html#a14255c8476f9537f8c297a9c65a118a8":[2,0,58,45],
-"class_f_c_fretboard_style_def.html#a14255c8476f9537f8c297a9c65a118a8":[2,6,126,45]
+"class_f_c_fretboard_style_def.html#a0ccf64f7084d5b6bc6604bd41860336e":[2,6,126,19]
 };
