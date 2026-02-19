@@ -65,7 +65,7 @@ var searchData=
   ['defaultclefid_5ftreble8vb_62',['DEFAULTCLEFID_TREBLE8VB',['../class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8a42163f38fbb00a158ca5bb8502ad065a',1,'FCClefDef']]],
   ['defaultclefids_63',['DEFAULTCLEFIDS',['../class_f_c_clef_def.html#a1c8cdfe86007ae7365a20d4b9e8699c8',1,'FCClefDef']]],
   ['defaultenharmonictranspose_64',['DefaultEnharmonicTranspose',['../class_f_c_transposer.html#a458aaf91c78c70981c03c8933d56c30c',1,'FCTransposer']]],
-  ['delete_65',['Delete',['../class_f_c_fretboard_group_item.html#ad71e1732ddaa3341e9698d067403f31d',1,'FCFretboardGroupItem::Delete()'],['../class_f_c_measures.html#a78649b570abbb6da90bb399095475eda',1,'FCMeasures::Delete()'],['../class_f_c_staves.html#a8a90b80bc203f7ce426ab1e890887fb3',1,'FCStaves::Delete()']]],
+  ['delete_65',['Delete',['../class_f_c_fretboard_group_item.html#ad71e1732ddaa3341e9698d067403f31d',1,'FCFretboardGroupItem::Delete()'],['../class_f_c_measures.html#a78649b570abbb6da90bb399095475eda',1,'FCMeasures::Delete()'],['../class_f_c_staves.html#a8a90b80bc203f7ce426ab1e890887fb3',1,'FCStaves::Delete()'],['../class_f_c_raw_data.html#ae1f9b655fc4a616e34207337eb4d19fd',1,'FCRawData::Delete()']]],
   ['deleteall_66',['DeleteAll',['../class_f_c_ctrl_data_list.html#aba6595e01d41d3a3e68c52d7ffd4f9ac',1,'FCCtrlDataList']]],
   ['deleteallcolumns_67',['DeleteAllColumns',['../class_f_c_ctrl_data_list.html#ac57710d9ccb6540325962bab50da94d2',1,'FCCtrlDataList']]],
   ['deleteallnonconnectedrestframes_68',['DeleteAllNonconnectedRestFrames',['../class_f_c_note_entry_layer.html#a768a3a4aed72c450e3e8e32cfa6b250e',1,'FCNoteEntryLayer']]],

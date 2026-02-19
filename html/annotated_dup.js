@@ -266,6 +266,7 @@ var annotated_dup =
     [ "FCPrintSettings", "class_f_c_print_settings.html", "class_f_c_print_settings" ],
     [ "FCRange", "class_f_c_range.html", "class_f_c_range" ],
     [ "FCRanges", "class_f_c_ranges.html", "class_f_c_ranges" ],
+    [ "FCRawData", "class_f_c_raw_data.html", "class_f_c_raw_data" ],
     [ "FCRawText", "class_f_c_raw_text.html", "class_f_c_raw_text" ],
     [ "FCRepeatPrefs", "class_f_c_repeat_prefs.html", "class_f_c_repeat_prefs" ],
     [ "FCResourceWindow", "class_f_c_resource_window.html", "class_f_c_resource_window" ],

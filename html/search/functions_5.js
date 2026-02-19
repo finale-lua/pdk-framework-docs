@@ -16,10 +16,11 @@ var searchData=
   ['executemodal_13',['ExecuteModal',['../class_f_c_resource_window.html#a36c82a61638d0b4014a986adca2be501',1,'FCResourceWindow']]],
   ['executemodal_5fewnd_14',['ExecuteModal_EWND',['../class_f_c_resource_window.html#a194c32e97981b8730a5c9c6c0daafbb2',1,'FCResourceWindow']]],
   ['executeosmenucommand_15',['ExecuteOSMenuCommand',['../class_f_c_u_i.html#a004fbd5bb0e848eb401d7acbacf9467c',1,'FCUI']]],
-  ['expandallcontainers_16',['ExpandAllContainers',['../class_f_c_ctrl_tree.html#a57d804856e9cf08cd34ef43038f0e5aa',1,'FCCtrlTree']]],
-  ['expandlastcolumn_17',['ExpandLastColumn',['../class_f_c_ctrl_data_list.html#a77c1e6585c5efcad264945c14f58c335',1,'FCCtrlDataList']]],
-  ['expandnode_18',['ExpandNode',['../class_f_c_ctrl_tree.html#a778dcb601115be0fa229283d438c800d',1,'FCCtrlTree']]],
-  ['expandtofitrecords_19',['ExpandToFitRecords',['../class_f_c_other_incis.html#a1d6cd54a81ae3f82d6065b9be40f6227',1,'FCOtherIncis']]],
-  ['exportassvgfile_20',['ExportAsSVGFile',['../class_f_c_shape_def.html#a9804d461834ccd1403323271203fee58',1,'FCShapeDef']]],
-  ['extractfileextension_21',['ExtractFileExtension',['../class_f_c_string.html#a1f76698217eadede1320e955419c5e06',1,'FCString']]]
+  ['exists_16',['Exists',['../class_f_c_raw_data.html#a216c047c4b24c2c915cb626dbf2b3fd1',1,'FCRawData']]],
+  ['expandallcontainers_17',['ExpandAllContainers',['../class_f_c_ctrl_tree.html#a57d804856e9cf08cd34ef43038f0e5aa',1,'FCCtrlTree']]],
+  ['expandlastcolumn_18',['ExpandLastColumn',['../class_f_c_ctrl_data_list.html#a77c1e6585c5efcad264945c14f58c335',1,'FCCtrlDataList']]],
+  ['expandnode_19',['ExpandNode',['../class_f_c_ctrl_tree.html#a778dcb601115be0fa229283d438c800d',1,'FCCtrlTree']]],
+  ['expandtofitrecords_20',['ExpandToFitRecords',['../class_f_c_other_incis.html#a1d6cd54a81ae3f82d6065b9be40f6227',1,'FCOtherIncis']]],
+  ['exportassvgfile_21',['ExportAsSVGFile',['../class_f_c_shape_def.html#a9804d461834ccd1403323271203fee58',1,'FCShapeDef']]],
+  ['extractfileextension_22',['ExtractFileExtension',['../class_f_c_string.html#a1f76698217eadede1320e955419c5e06',1,'FCString']]]
 ];

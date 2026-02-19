@@ -97,6 +97,7 @@ var class_____f_c_base =
       [ "FCID_PIANOBRACEPREFS", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a40ab47fb877526ae215c10c4403a698e", null ],
       [ "FCID_PLAYBACKPREFS", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a3308eaf7a8070966b1b2f1bee583790c", null ],
       [ "FCID_RAWTEXT", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a0ff5857369724fbf6505ac0ea7e380f0", null ],
+      [ "FCID_RAWDATA", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a9e11b38c317230e3a3346fed3eff297c", null ],
       [ "FCID_REPEATPREFS", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a6fa669b3265f139932d66f8e59b6dc66", null ],
       [ "FCID_SECONDARYBEAMBREAKMOD", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239ab50431869607a88fa1b1ef42806c4818", null ],
       [ "FCID_BEAMEXTENSIONMOD", "class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239a24570307b02d75ca1ea5248998c04019", null ],

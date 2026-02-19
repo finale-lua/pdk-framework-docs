@@ -55,6 +55,7 @@ var hierarchy =
       [ "FCPoint", "class_f_c_point.html", null ],
       [ "FCPrintSettings", "class_f_c_print_settings.html", null ],
       [ "FCRange", "class_f_c_range.html", null ],
+      [ "FCRawData", "class_f_c_raw_data.html", null ],
       [ "FCSettingsPair", "class_f_c_settings_pair.html", null ],
       [ "FCShapeDefInstruction", "class_f_c_shape_def_instruction.html", null ],
       [ "FCSmartShapeCtrlPointAdjust", "class_f_c_smart_shape_ctrl_point_adjust.html", null ],

@@ -30,7 +30,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.78</span>
+   <div id="projectname">Finale PDK Framework<span id="projectnumber">&#160;0.79</span>
    </div>
    <div id="projectbrief">Lua Power for Finale Music Software</div>
   </td>
@@ -147,6 +147,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUntitled</b> ()</td
 <tr class="memitem:a72c3e385d960488c04b6dbe54e328f08" id="r_a72c3e385d960488c04b6dbe54e328f08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72c3e385d960488c04b6dbe54e328f08">GetPath</a> (<a class="el" href="class_f_c_string.html">FCString</a> *pString)</td></tr>
 <tr class="memdesc:a72c3e385d960488c04b6dbe54e328f08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the full path of the document in a <a class="el" href="class_f_c_string.html" title="Class that provides storage for text. This is to achieve platform-transparent text handling,...">FCString</a> object.  <br /></td></tr>
 <tr class="separator:a72c3e385d960488c04b6dbe54e328f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ee917a3aa05860de404bde27c6bd84" id="r_a96ee917a3aa05860de404bde27c6bd84"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ee917a3aa05860de404bde27c6bd84">GetCreatedDate</a> () const</td></tr>
+<tr class="memdesc:a96ee917a3aa05860de404bde27c6bd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the document creation date from the file header in ISO format.  <br /></td></tr>
+<tr class="separator:a96ee917a3aa05860de404bde27c6bd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98939243a6ed1712901f67da833f721" id="r_ae98939243a6ed1712901f67da833f721"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae98939243a6ed1712901f67da833f721">GetModifiedDate</a> () const</td></tr>
+<tr class="memdesc:ae98939243a6ed1712901f67da833f721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the document modified date from the file header in ISO format.  <br /></td></tr>
+<tr class="separator:ae98939243a6ed1712901f67da833f721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad618649f89fd6dc74a8f185dce4fb3e" id="r_aad618649f89fd6dc74a8f185dce4fb3e"><td class="memItemLeft" align="right" valign="top">EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad618649f89fd6dc74a8f185dce4fb3e">GetCreatedVersion</a> () const</td></tr>
+<tr class="memdesc:aad618649f89fd6dc74a8f185dce4fb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Enigma version from the "created" file header field.  <br /></td></tr>
+<tr class="separator:aad618649f89fd6dc74a8f185dce4fb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b8be47f346f19cd1151bc65e676316" id="r_a06b8be47f346f19cd1151bc65e676316"><td class="memItemLeft" align="right" valign="top">EVERSION&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06b8be47f346f19cd1151bc65e676316">GetModifiedVersion</a> () const</td></tr>
+<tr class="memdesc:a06b8be47f346f19cd1151bc65e676316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Enigma version from the "modified" file header field.  <br /></td></tr>
+<tr class="separator:a06b8be47f346f19cd1151bc65e676316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52616a932befbb135456bbddbb6d7bca" id="r_a52616a932befbb135456bbddbb6d7bca"><td class="memItemLeft" align="right" valign="top"><a id="a52616a932befbb135456bbddbb6d7bca" name="a52616a932befbb135456bbddbb6d7bca"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPathSpec</b> (void *pathspec, EVERSION convertversion)</td></tr>
 <tr class="memdesc:a52616a932befbb135456bbddbb6d7bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the document path to a path spec. <br /></td></tr>
@@ -414,55 +426,56 @@ Additional Inherited Members</h2></td></tr>
 , <br />
 &#160;&#160;<b>FCID_PLAYBACKPREFS</b>
 , <b>FCID_RAWTEXT</b>
+, <b>FCID_RAWDATA</b>
 , <b>FCID_REPEATPREFS</b>
-, <b>FCID_SECONDARYBEAMBREAKMOD</b>
 , <br />
-&#160;&#160;<b>FCID_BEAMEXTENSIONMOD</b>
+&#160;&#160;<b>FCID_SECONDARYBEAMBREAKMOD</b>
+, <b>FCID_BEAMEXTENSIONMOD</b>
 , <b>FCID_SECTIONSYLLABLE</b>
 , <b>FCID_SEPARATEMEASURENUMBER</b>
-, <b>FCID_SEPARATEPLACEMENT</b>
 , <br />
-&#160;&#160;<b>FCID_SHAPEDEF</b>
+&#160;&#160;<b>FCID_SEPARATEPLACEMENT</b>
+, <b>FCID_SHAPEDEF</b>
 , <b>FCID_SHAPEEXPRESSIONDEF</b>
 , <b>FCID_SLURCONTOURPREFS</b>
-, <b>FCID_SIZEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_SMARTSHAPE</b>
+&#160;&#160;<b>FCID_SIZEPREFS</b>
+, <b>FCID_SMARTSHAPE</b>
 , <b>FCID_SMARTSHAPEENTRYMARK</b>
 , <b>FCID_SMARTSHAPEMEASUREMARK</b>
-, <b>FCID_SMARTSHAPEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_STAFF</b>
+&#160;&#160;<b>FCID_SMARTSHAPEPREFS</b>
+, <b>FCID_STAFF</b>
 , <b>FCID_STAFFLIST</b>
 , <b>FCID_STAFFNAMEPOSITION</b>
-, <b>FCID_STAFFNAMEPOSITIONPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_STAFFSTYLEASSIGN</b>
+&#160;&#160;<b>FCID_STAFFNAMEPOSITIONPREFS</b>
+, <b>FCID_STAFFSTYLEASSIGN</b>
 , <b>FCID_STAFFSTYLEDEF</b>
 , <b>FCID_STAFFSYSTEM</b>
-, <b>FCID_STEMCONNECTIONTABLE</b>
 , <br />
-&#160;&#160;<b>FCID_STEMMOD</b>
+&#160;&#160;<b>FCID_STEMCONNECTIONTABLE</b>
+, <b>FCID_STEMMOD</b>
 , <a class="el" href="class_____f_c_base.html#a7ccc66e6b4ff6aad32163e30bc515239afa5899aa55d12ad6de79bd2e79c95789">FCID_STRING</a>
 , <b>FCID_SYLLABLEENTRYMOD</b>
-, <b>FCID_SYSTEMSTAFF</b>
 , <br />
-&#160;&#160;<b>FCID_TABLATURENOTEMOD</b>
+&#160;&#160;<b>FCID_SYSTEMSTAFF</b>
+, <b>FCID_TABLATURENOTEMOD</b>
 , <b>FCID_TEMPOELEMENT</b>
 , <b>FCID_TEXTBLOCK</b>
-, <b>FCID_TEXTEXPRESSIONDEF</b>
 , <br />
-&#160;&#160;<b>FCID_TEXTREPEAT</b>
+&#160;&#160;<b>FCID_TEXTEXPRESSIONDEF</b>
+, <b>FCID_TEXTREPEAT</b>
 , <b>FCID_TEXTREPEATDEF</b>
 , <b>FCID_TIEMOD</b>
-, <b>FCID_TIEPREFS</b>
 , <br />
-&#160;&#160;<b>FCID_TIECONTOURPREFS</b>
+&#160;&#160;<b>FCID_TIEPREFS</b>
+, <b>FCID_TIECONTOURPREFS</b>
 , <b>FCID_TIEPLACEMENTPREFS</b>
 , <b>FCID_TIMESIGNATURE</b>
-, <b>FCID_TUPLET</b>
 , <br />
-&#160;&#160;<b>FCID_TUPLETPREFS</b>
+&#160;&#160;<b>FCID_TUPLET</b>
+, <b>FCID_TUPLETPREFS</b>
 , <b>FCID_VERSESYLLABLE</b>
 <br />
  }</td></tr>
@@ -714,6 +727,48 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a96ee917a3aa05860de404bde27c6bd84" name="a96ee917a3aa05860de404bde27c6bd84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ee917a3aa05860de404bde27c6bd84">&#9670;&#160;</a></span>GetCreatedDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FCDocument::GetCreatedDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the document creation date from the file header in ISO format. </p>
+<p>The return value format is <code>"YYYY-MM-DD"</code>. The document must be current (see <a class="el" href="#ac2b68748eede96d191f03e981642f485" title="Returns true if the current document is the current document.">IsCurrent()</a>).</p>
+<p>Lua-supported (also as a read-only property) (0.79). </p>
+
+</div>
+</div>
+<a id="aad618649f89fd6dc74a8f185dce4fb3e" name="aad618649f89fd6dc74a8f185dce4fb3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad618649f89fd6dc74a8f185dce4fb3e">&#9670;&#160;</a></span>GetCreatedVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EVERSION FCDocument::GetCreatedVersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Enigma version from the "created" file header field. </p>
+<p>The document must be current (see <a class="el" href="#ac2b68748eede96d191f03e981642f485" title="Returns true if the current document is the current document.">IsCurrent()</a>).</p>
+<p>Lua-supported (also as a read-only property) (0.79). </p>
+
+</div>
+</div>
 <a id="ab5c8d944347589a1e9945e330586dbe3" name="ab5c8d944347589a1e9945e330586dbe3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5c8d944347589a1e9945e330586dbe3">&#9670;&#160;</a></span>GetDirty()</h2>
 
@@ -767,6 +822,48 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns the document ID. </p>
 <p>Lua-supported (also as a read-only property) </p>
+
+</div>
+</div>
+<a id="ae98939243a6ed1712901f67da833f721" name="ae98939243a6ed1712901f67da833f721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98939243a6ed1712901f67da833f721">&#9670;&#160;</a></span>GetModifiedDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string FCDocument::GetModifiedDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the document modified date from the file header in ISO format. </p>
+<p>The return value format is <code>"YYYY-MM-DD"</code>. The document must be current (see <a class="el" href="#ac2b68748eede96d191f03e981642f485" title="Returns true if the current document is the current document.">IsCurrent()</a>).</p>
+<p>Lua-supported (also as a read-only property) (0.79). </p>
+
+</div>
+</div>
+<a id="a06b8be47f346f19cd1151bc65e676316" name="a06b8be47f346f19cd1151bc65e676316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b8be47f346f19cd1151bc65e676316">&#9670;&#160;</a></span>GetModifiedVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EVERSION FCDocument::GetModifiedVersion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Enigma version from the "modified" file header field. </p>
+<p>The document must be current (see <a class="el" href="#ac2b68748eede96d191f03e981642f485" title="Returns true if the current document is the current document.">IsCurrent()</a>).</p>
+<p>Lua-supported (also as a read-only property) (0.79). </p>
 
 </div>
 </div>
@@ -1150,7 +1247,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_f_c_document.html">FCDocument</a></li>
-    <li class="footer">Generated on Tue Dec 23 2025 10:46:18 for Finale PDK Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Thu Feb 19 2026 08:07:04 for Finale PDK Framework by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
